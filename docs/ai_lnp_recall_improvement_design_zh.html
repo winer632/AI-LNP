@@ -494,6 +494,35 @@ format:   html
   </div>
 
   <div class="warn">
+    <b>v13 · 可复现性：此前从 GitHub 全新 clone 只能跑出 9/15</b><br>
+    §九 说「可复现性是这个项目的立身之本」，但 union 的 manifest 引用了三个
+    <b>从未提交</b>的临时目录（<code>repair_v2_merged</code>、<code>extraction_sc</code>、
+    <code>extraction_p3_compact</code>）——51 条记录里 <b>35 条</b>来自 clone 中不存在的地方。
+    也就是说：新用户能<b>评测</b>这个 union，却无法<b>重建</b>它，那个数字对他而言是声明而非结果。
+    <div class="scroll">
+    <table>
+      <thead><tr><th>union 构成</th><th class="num">recall</th><th class="num">precision</th><th class="num">记录</th></tr></thead>
+      <tbody>
+        <tr><td>五个 root 全在（本机）</td><td class="num">11/15</td><td class="num">0.2157</td><td class="num">51</td></tr>
+        <tr><td><b>仅用当时已提交的数据</b></td><td class="num no">9/15</td><td class="num">0.3462</td><td class="num">26</td></tr>
+      </tbody>
+    </table>
+    </div>
+    丢的是 <b>GO-004</b>（来自 <code>extraction_p3_compact</code>）和 <b>GO-006</b>（来自 <code>extraction_sc</code>）。
+    另有 5 条虽被归属于缺失的 root，但删掉后仍然存活——一对一匹配会把它们重新分配给此前落选的记录。
+    <br><br>
+    <b>处理方式：先证明，再提交。</b>那三个目录在本机仍然存在，但没有直接拷进来了事——
+    而是先用它们重建 union，验证能<b>逐字节复现</b> manifest、以及全部 51 条记录的负载、顺序和
+    <code>source_run</code>。全部一致，才说明提交它们是<b>恢复历史</b>而非编造历史。
+    现在 <code>docs/extraction/union_provenance.md</code> 记录了重建命令，
+    <code>tests/test_union_provenance.py</code>（10 个测试）会实际跑它，
+    并断言 manifest 引用的每个 root 都存在于仓库中。
+    <br><br>
+    <b>默认单次跑的 11/15 从未受影响</b>——它的五个 <code>RESULT_ROOTS</code> 一直都在仓库里。
+    受影响的是 union 口径的 11/15 和视觉 union 的 12/15。
+  </div>
+
+  <div class="warn">
     <b>v12 · 被数据否决的方案（含我自己提的那个）</b>
     <div class="scroll">
     <table>
