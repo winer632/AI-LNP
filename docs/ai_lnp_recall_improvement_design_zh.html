@@ -122,7 +122,7 @@
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
     当前 15 条金标准结果只恢复了 10 条。经实测排查，剩下 5 条没有一条卡在「模型不够强」。
-    <b>v4 更新：P0-a / P0-b / P1 与工程改造已落地并推送 main，测试 160 → 472。
+    <b>v4 更新：P0-a / P0-b / P1 与工程改造已落地并推送 main，测试 160 → 591。
     证据可得性门已通过（<code>1.01</code> 命中 0 → 4），同 harness 消融 recall 6/15 → 8/15。
     但 GO-006 仍未被恢复 —— 证据可得是必要条件、不是充分条件。</b>
   </p>
@@ -377,7 +377,7 @@ format:   html
         <td><code>src/rag/uniparse_client.py</code>（<code>heading_level_*</code> 三重断言禁止发送）；
             block schema 扩 <code>figure</code>/<code>caption</code>/<code>heading</code>/<code>table_row</code>
             + 5 个可选字段；<code>_source_id()</code> 哈希不变并有测试钉住；
-            Europe PMC 提为主路径。<b>验收：GP-006 语料 54 → 260 blocks，
+            Europe PMC 提为主路径。<b>验收：GP-006 语料 54 → 259 blocks，
             <code>1.01</code> 命中 0 → 4</b></td>
         <td class="yes">已完成（v12 更正）：有补充 PDF 的 5 篇全部重建——GP-001/004/006/007/008 分别 27/304/221/150/281 个 uniparse 块。<b>全仓库已无一个 <code>pdf_page</code> 块</b></td>
       </tr>
@@ -449,7 +449,7 @@ format:   html
     <thead><tr><th>开关</th><th class="num">默认</th><th>实测依据</th></tr></thead>
     <tbody>
       <tr><td><code>uniparse_ingestion</code></td><td class="num yes">开</td>
-          <td>GP-006 语料 54 → 260 blocks；<code>1.01</code> 出现 4 次（原为 0 次），该值即 GO-006。
+          <td>GP-006 语料 54 → 259 blocks；<code>1.01</code> 出现 4 次（原为 0 次），该值即 GO-006。
               服务不可达时降级到 pymupdf 并留告警，<b>已实测</b>，故默认开是安全的</td></tr>
       <tr><td><code>candidate_slot_enforcement</code></td><td class="num yes">开</td>
           <td>恢复 GO-004；<code>unsupported_extracted_disposition</code> 拦下 83 条无据声明中的 76 条。
@@ -625,8 +625,23 @@ format:   html
       </tbody>
     </table>
     </div>
-    <b>GP-004 的证据：</b>那两页是普通矢量文字、不是难解析的图，渲染像素与文字层一致 ——
-    所以是模型在编，不是裁剪出错。45 条序列里 <b>42 条</b>在该页自己的文字层中根本不存在。
+    <b>⚠ v17 更正：这一条的机制我写错了，而且错在替自己代码开脱的方向上。</b>
+    独立验收对照源 PDF 复核后发现：uniparse <b>并没有</b>把 Luciferase 的序列安到 eGFP/HGF 行上——
+    eGFP 行与真实 eGFP 序列相似度 <b>0.977</b>（与 Luciferase 仅 0.113），HGF 行开头是真正的 HGF 信号肽。
+    <b>每一行拿到的都是自己基因的序列。</b>
+    <br><br>
+    假象出自<b>我们自己的解析代码</b>：<code>table_row_entries</code> 无条件把 <code>grid[0]</code> 当表头，
+    而 Supplementary Table 2 是<b>无表头</b>的两列表，于是 Luciferase 的整条序列变成了「列名」被贴进其余每一行——
+    截断到 160 字符看，就正好像「eGFP 行拿了 Luciferase 的序列」。
+    同一个 bug 还<b>把 Luciferase 行当表头吃掉了</b>，它根本没有生成任何块——
+    <b>语料里每一个无表头表格都在静默丢失第一个数据行。</b>已修，并有 4 个测试在旧实现上验证会失败。
+    <br><br>
+    <b>但幻觉是真的，而且比我描述的更严重：</b>第 11 页 uniparse 吐出了一段<b>解码器重复循环</b>——
+    23-mer <code>GCTGCTCCCTGCGCTGCTCCCTG</code> 重复 <b>173 次</b>，源文中一次都没有；
+    EGF 行与真实序列相似度仅 <b>0.026</b>；HGF 被截断到 2184 个碱基中的 353 个。
+    解析器修好后 contradicted 从 5 个变 <b>6 个</b>（Luciferase 行终于存在、可被审判），
+    eGFP 行仍被判 contradicted——页面印的是 <code>ATGGTGAGC…TTCACC</code>，uniparse 写的是
+    <code>ATGGTAGC…TTTCACC</code>。<b>校验层在正确地报告真实的碱基级损坏。</b>
     没有任何 gold 证据引用它们，所以不影响任何已有测量，但未来的抽取会把编造读成解析结果。
     <br><br>
     <b>GO-006 反而被这一层洗清了：</b>那个 bbox <b>完全没有文字层</b>（<code>get_text(clip=…)</code> 返回空），
