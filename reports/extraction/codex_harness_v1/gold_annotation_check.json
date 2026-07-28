@@ -1,0 +1,31 @@
+{
+  "report_version": "gold-annotation-check-1.0.0",
+  "finding": "GO-003 and GO-004 cite the same evidence id, and that evidence does not contain GO-004 value.",
+  "detail": {
+    "GO-003": {
+      "endpoint": "GFP_expression_in_LYVE1_positive_LSECs",
+      "value": null,
+      "evidence_id": "EVID-007"
+    },
+    "GO-004": {
+      "endpoint": "hepatocyte_to_LSEC_luciferase_expression_ratio",
+      "value": "17 fold",
+      "evidence_id": "EVID-007"
+    },
+    "EVID-007": {
+      "location_type": "xml_paragraph_and_figure",
+      "figure": "Figure 2B",
+      "text": "Mice received 1.2 mg/kg GFP mRNA-LNP intravenously. Six hours later, liver immunostaining showed colocalization of GFP and the LSEC marker LYVE-1.",
+      "contains_17": false,
+      "contains_fold": false,
+      "contains_luciferase": false
+    }
+  },
+  "consequence": "The cell_target_effect scope returning zero outcomes was correct behaviour: all six of its candidates are qualitative colocalisation statements, none supports a 17-fold ratio.",
+  "possibilities": [
+    "the evidence_id on GO-004 is wrong and should point at a passage carrying the ratio",
+    "the ratio is only legible in Figure 2B, which would place GO-004 with GO-002/GO-018 in the vision-dependent set",
+    "the ratio was inferred from the image at annotation time, in which case the project rule would make it visually_estimated and human-review, not reported_approximate"
+  ],
+  "implication": "If the ratio exists only in the figure, four of the fifteen gold outcomes depend on reading images and the recall target is reachable only through the vision path."
+}
