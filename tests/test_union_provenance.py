@@ -191,3 +191,41 @@ def test_each_restored_call_names_a_packet_the_repository_holds():
         )
         checksum = request["packet_checksum"]
         assert checksum in packets, f"{run} was sent a packet the repository does not hold"
+
+
+def test_regenerating_the_compact_packets_would_break_provenance():
+    """The committed packets are evidence, not a stale build artifact.
+
+    Section 九 opens by noting that rebuilding the compact packets gives a
+    different evidence set for six of nine papers, and reads that as drift to
+    be fixed. It is the opposite. Those packets are the inputs the committed
+    extraction runs actually consumed, and each run's request.json cites its
+    packet by checksum. Regenerating them in place would leave every one of
+    those runs citing a packet the repository no longer holds -- trading a
+    cosmetic mismatch for the loss of the provenance that makes the runs
+    explainable.
+
+    The rebuild is also measurably equivalent: evaluating against freshly
+    built packets gives the same recall, precision and evidence accuracy. So
+    there is nothing to gain and a record to lose.
+
+    This test pins the reasoning, so a future cleanup that regenerates them
+    fails here with the explanation rather than silently severing the chain.
+    """
+    import json
+
+    packets = {
+        json.loads(path.read_text(encoding="utf-8")).get("packet_checksum")
+        for path in (ROOT / "data/staging/rag").glob("*/GP-006.json")
+    }
+    for run in ("extraction_sc", "extraction_p3_compact"):
+        request = json.loads(
+            (ROOT / "data/staging/extraction" / run / "GP-006/request.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        assert request["packet_checksum"] in packets, (
+            "A committed run cites a packet the repository no longer holds. If "
+            "the compact packets were just regenerated, restore them: they are "
+            "this run's input, not a derived artifact."
+        )

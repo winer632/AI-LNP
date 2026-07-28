@@ -30,6 +30,11 @@ from .models import StrictModel
 
 
 OUTPUT_ROOT = ROOT / "data" / "staging" / "rag" / "compact_api_packets_v1"
+
+
+def _repo_path(path: Path) -> str:
+    """Repo-relative when the path is inside the repo, absolute otherwise."""
+    return str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else str(path)
 SCHEMA_PATH = (
     ROOT
     / "docs"
@@ -608,8 +613,14 @@ def build_all(
         papers.append(
             {
                 "paper_id": api_packet.paper_id,
-                "packet_path": str(packet_path.relative_to(ROOT)),
-                "manifest_path": str(manifest_path.relative_to(ROOT)),
+                # Relative when the output lives under the repo, absolute
+                # otherwise. relative_to raises on any outside path, so
+                # --output-dir pointing elsewhere crashed after the work was
+                # already done -- which made it impossible to build the packets
+                # somewhere else and diff them against the committed ones, the
+                # exact check a reproducibility claim needs.
+                "packet_path": _repo_path(packet_path),
+                "manifest_path": _repo_path(manifest_path),
                 **manifest["counts"],
                 "estimated_input_tokens": manifest["estimated_input_tokens"],
                 "blocked_fields": api_packet.blocked_fields,
