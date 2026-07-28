@@ -493,6 +493,66 @@ format:   html
     写成文本等于把否定读成肯定；这条由 <code>test_a_denied_relation_cannot_satisfy_the_gold_it_denies</code> 钉住。
   </div>
 
+  <div class="ok">
+    <b>v14 · §十 的校验层建起来了，并立刻查出真实的 uniparse 幻觉</b><br>
+    §十 把这一层称为<b>必需</b>，理由是「否则只是把幻觉从抽取阶段挪到解析阶段」——
+    结果这句话在本仓库里正在发生。校验层做法：每个块都记着
+    <code>source_path</code> + <code>page_number</code> + <code>bbox</code>，
+    于是按该几何裁剪原始 PDF，用<b>没有参与该次解析</b>的读取器重新读：
+    PDF 文字层（免费、确定性）、600 dpi 渲染图的 OCR（macOS Vision / Tesseract，无网络）、
+    以及把该区域单独切成一页重新解析。解析声称的每个数字，都必须至少被一个独立读取器读到。
+    <div class="scroll">
+    <table>
+      <thead><tr><th>论文</th><th class="num">verified</th><th class="num">contradicted</th><th class="num">unverified</th><th>结论</th></tr></thead>
+      <tbody>
+        <tr><td>GP-004</td><td class="num">29</td><td class="num no">5</td><td class="num">0</td>
+            <td class="no"><b>查出编造</b>：Supplementary Table 2 的 eGFP 和 HGF 行被安上了 <b>Luciferase 的序列</b></td></tr>
+        <tr><td>GP-006</td><td class="num">—</td><td class="num">0</td><td class="num mid">18</td>
+            <td>含 GO-006 的 <code>1.01</code> 那一块<b>通过校验</b>（见下）</td></tr>
+        <tr><td>GP-001 / 007 / 008</td><td class="num yes">23 / 18 / 81</td><td class="num yes">0</td><td class="num">0</td><td class="yes">全部通过</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>GP-004 的证据：</b>那两页是普通矢量文字、不是难解析的图，渲染像素与文字层一致 ——
+    所以是模型在编，不是裁剪出错。45 条序列里 <b>42 条</b>在该页自己的文字层中根本不存在。
+    没有任何 gold 证据引用它们，所以不影响任何已有测量，但未来的抽取会把编造读成解析结果。
+    <br><br>
+    <b>GO-006 反而被这一层洗清了：</b>那个 bbox <b>完全没有文字层</b>（<code>get_text(clip=…)</code> 返回空），
+    解析确实是唯一来源——但整行 12 个数字全部被裁剪图 OCR 复现，
+    且把该区域单独切出重新解析，返回的表格 HTML <b>逐字节相同</b>。
+    <br><br>
+    <b>两个设计判断值得记：</b>①「佐证」与「证否」<b>刻意不对称</b>，且是被测量逼出来的——
+    第一版让任何读取器的沉默都能证否，结果把 GP-006 正确的 <code>0.91</code> 判成了 contradicted，
+    因为 Vision OCR 把它读成 <code>0.92</code>（置信度 0.5，而它读对的每个格子都是 1.0）。
+    改为：噪声读取里找到算数，但一个自报不确定的读取器<b>无权证否</b>。
+    ② <b>永不删块，只盖判定戳</b>——删掉未确证的块，等于用幻觉风险换静默漏报风险，
+    而后者正是这个项目一直在打的仗。
+  </div>
+
+  <div class="ok">
+    <b>v14 · §九 两项完成，repair 第五因修复（recall +0）</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>项</th><th>结果</th></tr></thead>
+      <tbody>
+        <tr><td>§九 确定性可读证据 ID</td>
+            <td>含 GO-006 <code>1.01</code> 的格子现在是
+                <code>GP-006-mmc1-p02-tabS2-r3-c7</code>。<b>增量而非替换</b>：
+                <code>_source_id</code> 被<b>收窄</b>为只对冻结字段元组求哈希，
+                验证全部 <b>3022 条</b>已提交 source location 摘要逐字节不变</td></tr>
+        <tr><td>§九 幂等 upsert</td>
+            <td>选的是<b>「收敛或拒绝」</b>而非「总是版本化」——守卫存在的目的是阻止重跑毁掉已完成运行，
+                悄悄存版本只会让破坏<b>不可见</b>而非不可能。内容相同则一个字节都不写（mtime 不动）</td></tr>
+        <tr><td>§二·六.7 repair 重定向</td>
+            <td>查出<b>第五个原因</b>：任务契约只给实验 <b>ID</b> 不给实验<b>记录</b>，
+                模型捞回 outcome 后无处可挂，只能返回 <code>unresolved</code>。
+                契约升到 1.1.0 后，39 个任务从<b>零记录</b>变成捞回 <b>10 条</b>并能合法挂到已有实验 ——
+                <b>但合并后新增 0 条，recall 不动</b>。按负结果记录</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
   <div class="warn">
     <b>v13 · 可复现性：此前从 GitHub 全新 clone 只能跑出 9/15</b><br>
     §九 说「可复现性是这个项目的立身之本」，但 union 的 manifest 引用了三个
