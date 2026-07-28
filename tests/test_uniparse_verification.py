@@ -109,6 +109,27 @@ class _RecordedOcr:
         return list(self._lines)
 
 
+def on_readable_pdf(block):
+    """Repoint a block at whichever copy of its page is actually present.
+
+    verify_blocks resolves ROOT / block.source_path itself, so a test holding a
+    committed block cannot redirect it from outside. Rewriting source_path and
+    page_number on a copy keeps the fixture out of production code while
+    letting these tests run in a clone. A no-op when the source is present.
+    """
+    # Only the two real supplements have fixtures. A synthetic block, or one
+    # with no page, is returned untouched -- resolving it would turn a test
+    # about missing geometry into a fixture lookup failure.
+    known = {"mmc1.pdf", "41467_2021_20903_MOESM1_ESM.pdf"}
+    if Path(block.source_path).name not in known or block.page_number is None:
+        return block
+    path, page = resolve_pdf(block.source_path, block.page_number)
+    relative = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
+    return block.model_copy(
+        update={"source_path": str(relative), "page_number": page}
+    )
+
+
 def _find(paper_id: str, marker: str):
     """Return the one corpus block whose text contains `marker`."""
     import json
@@ -145,9 +166,51 @@ def _read(method, tokens, *, decisive=False, deterministic=False, text=""):
     )
 
 
-needs_mmc1 = pytest.mark.skipif(not MMC1.exists(), reason="GP-006 supplement not present")
+# The source supplements live under data/raw/fulltext/, which is gitignored, so
+# these tests used to skip in a fresh clone -- and they are the evidence for
+# section 十, the one the design document calls mandatory. Eighteen of the
+# nineteen skips in a clone were these. Committing the two pages they actually
+# read makes the claim checkable by anyone who clones the repository, which is
+# what section 九 asks of every claim here.
+#
+# The fixtures are single pages cut from PMC open-access packages: 315 KB and
+# 98 KB against a 7.7 MB source.
+FIXTURE_PAGES = ROOT / "tests/fixtures/pdf_pages"
+MMC1_FIXTURE = FIXTURE_PAGES / "GP-006_mmc1_p02.pdf"
+MMC1_REL = "data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf"
+GP004_FIXTURE = FIXTURE_PAGES / "GP-004_MOESM1_p10-11.pdf"
+
+# The fixtures keep the source's page numbering -- pages before the one we need
+# are present but blank, which costs almost nothing and means no code anywhere
+# has to translate a page number. A mapping would have been one more thing to
+# get wrong, and it was: the first attempt renumbered the pages and every block
+# came back unverified because the crop asked a one-page PDF for its page 2.
+
+
+def resolve_pdf(source_relative: str, page_number: int) -> tuple[Path, int]:
+    """Return a readable PDF and the page to read, preferring the real source.
+
+    Falls back to the committed page fixture, translating the page number.
+    Tests that use this run identically with or without the untracked source.
+    """
+    real = ROOT / source_relative
+    if real.exists():
+        return real, page_number
+    name = Path(source_relative).name
+    fixture = MMC1_FIXTURE if name == "mmc1.pdf" else GP004_FIXTURE
+    assert fixture.exists(), (
+        f"neither {source_relative} nor its page fixture is present"
+    )
+    return fixture, page_number
+
+
+needs_mmc1 = pytest.mark.skipif(
+    not (MMC1.exists() or MMC1_FIXTURE.exists()),
+    reason="neither the GP-006 supplement nor its page fixture is present",
+)
 needs_gp004 = pytest.mark.skipif(
-    not GP004_SUPPLEMENT.exists(), reason="GP-004 supplement not present"
+    not (GP004_SUPPLEMENT.exists() or GP004_FIXTURE.exists()),
+    reason="neither the GP-004 supplement nor its page fixture is present",
 )
 
 
@@ -302,7 +365,7 @@ def test_the_region_that_supplies_go_006_has_no_text_layer():
     is a rendered image, so before this module the sole evidence for GO-006's
     1.01 was one VLM's transcription of a picture.
     """
-    crop = render_crop(MMC1, 2, TABLE_S2_BBOX)
+    crop = render_crop(*resolve_pdf("data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf", 2), TABLE_S2_BBOX)
     assert crop.text_layer.strip() == ""
     assert crop.png[:4] == b"\x89PNG"
 
@@ -310,8 +373,8 @@ def test_the_region_that_supplies_go_006_has_no_text_layer():
 @needs_mmc1
 def test_rendering_the_same_region_twice_gives_the_same_bytes():
     """A crop is evidence, so it has to be reproducible and citable by digest."""
-    first = render_crop(MMC1, 2, TABLE_S2_BBOX)
-    second = render_crop(MMC1, 2, TABLE_S2_BBOX)
+    first = render_crop(*resolve_pdf("data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf", 2), TABLE_S2_BBOX)
+    second = render_crop(*resolve_pdf("data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf", 2), TABLE_S2_BBOX)
     assert first.sha256 == second.sha256
 
 
@@ -326,7 +389,7 @@ def test_go_006_table_row_verifies_against_an_independent_read_of_the_crop():
     block = _load("GP-006", GO_006_BLOCK)
     assert "1.01 ± 0.38 %" in block.text
     engine = _RecordedOcr()
-    report = verify_blocks([block], ocr_engine=engine)
+    report = verify_blocks([on_readable_pdf(block)], ocr_engine=engine)
 
     verdict = report.blocks[0]
     assert engine.calls == 1
@@ -345,7 +408,7 @@ def test_a_misread_digit_in_that_row_would_not_have_verified():
     block = _load("GP-006", GO_006_BLOCK).model_copy(
         update={"text": _load("GP-006", GO_006_BLOCK).text.replace("1.01", "7.01")}
     )
-    verdict = verify_blocks([block], ocr_engine=_RecordedOcr()).blocks[0]
+    verdict = verify_blocks([on_readable_pdf(block)], ocr_engine=_RecordedOcr()).blocks[0]
     assert verdict.status != "verified"
     assert "7.01" in verdict.uncorroborated
     assert verdict.requires_human_review
@@ -361,7 +424,7 @@ def test_the_whole_table_block_is_held_back_by_the_cell_ocr_could_not_resolve():
     as "contradicted" would have been wrong, because uniparse was right.
     """
     block = _load("GP-006", "GP-006-B-023023d8f9c02eef0936")
-    verdict = verify_blocks([block], ocr_engine=_RecordedOcr()).blocks[0]
+    verdict = verify_blocks([on_readable_pdf(block)], ocr_engine=_RecordedOcr()).blocks[0]
     assert verdict.status == "unverified"
     assert verdict.uncorroborated == ["0.91"]
     assert verdict.contradicting_methods == []
@@ -405,7 +468,7 @@ def test_the_second_read_is_handed_the_recorded_region_and_nothing_else(tmp_path
     """
     import pymupdf
 
-    destination = crop_pdf_region(MMC1, 2, TABLE_S2_BBOX, tmp_path / "crop.pdf")
+    destination = crop_pdf_region(*resolve_pdf("data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf", 2), TABLE_S2_BBOX, tmp_path / "crop.pdf")
     with pymupdf.open(destination) as cut:
         assert cut.page_count == 1
         page = cut[0]
@@ -426,7 +489,7 @@ def test_a_second_read_of_the_region_alone_settles_what_ocr_could_not():
     block = _load("GP-006", "GP-006-B-023023d8f9c02eef0936")
     reread = _FakeReread(block.table_html)
     verdict = verify_blocks(
-        [block], ocr_engine=_RecordedOcr(), reread_client=reread
+        [on_readable_pdf(block)], ocr_engine=_RecordedOcr(), reread_client=reread
     ).blocks[0]
 
     assert reread.seen, "the re-read client was never called"
@@ -440,7 +503,7 @@ def test_a_second_read_that_disagrees_is_a_contradiction_not_a_shrug():
     """Two independent parses of the same pixels disagreeing is a real signal."""
     block = _load("GP-006", GO_006_BLOCK)
     reread = _FakeReread("<table><tr><td>LSEC</td><td>7.01 ± 0.38 %</td></tr></table>")
-    verdict = verify_blocks([block], ocr_engine=None, reread_client=reread).blocks[0]
+    verdict = verify_blocks([on_readable_pdf(block)], ocr_engine=None, reread_client=reread).blocks[0]
 
     assert verdict.status == "contradicted"
     assert "uniparse_reread" in verdict.contradicting_methods
@@ -461,7 +524,7 @@ def test_gp004_sequence_row_is_contradicted_by_the_pages_own_text_layer():
     stream says something else.
     """
     block = _find("GP-004", GP004_SEQUENCE_MARKER)
-    verdict = verify_blocks([block]).blocks[0]
+    verdict = verify_blocks([on_readable_pdf(block)]).blocks[0]
     assert verdict.status == "contradicted"
     assert verdict.fabricated_long_tokens
     assert verdict.long_tokens == len(verdict.fabricated_long_tokens)
@@ -479,12 +542,11 @@ def test_a_correct_sequence_transcription_would_have_passed_the_same_check():
     """
     block = _find("GP-004", GP004_SEQUENCE_MARKER)
     truth = render_crop(
-        ROOT / block.source_path,
-        block.page_number,
+        *resolve_pdf(block.source_path, block.page_number),
         (block.bbox.x0, block.bbox.y0, block.bbox.x1, block.bbox.y1),
     ).text_layer
     honest = block.model_copy(update={"text": f"EGF | sequence: {truth}"})
-    verdict = verify_blocks([honest]).blocks[0]
+    verdict = verify_blocks([on_readable_pdf(honest)]).blocks[0]
     assert verdict.status == "verified"
     assert verdict.fabricated_long_tokens == []
 
@@ -504,7 +566,7 @@ def test_verification_stamps_the_verdict_and_never_drops_a_block():
         _load("GP-006", "GP-006-B-023023d8f9c02eef0936"),
     ]
     warnings: list[str] = []
-    stamped = verify_and_stamp(blocks, ocr_engine=_RecordedOcr(), warnings=warnings)
+    stamped = verify_and_stamp([on_readable_pdf(b) for b in blocks], ocr_engine=_RecordedOcr(), warnings=warnings)
 
     assert [row.block_id for row in stamped] == [row.block_id for row in blocks]
     assert [row.text for row in stamped] == [row.text for row in blocks]
@@ -523,7 +585,7 @@ def test_one_crop_and_one_read_serve_a_table_and_all_of_its_rows():
         _load("GP-006", "GP-006-B-8979d7c9e13813ada1f9"),
     ]
     engine = _RecordedOcr()
-    verify_blocks(blocks, ocr_engine=engine)
+    verify_blocks([on_readable_pdf(b) for b in blocks], ocr_engine=engine)
     assert engine.calls == 1
 
 
@@ -534,7 +596,7 @@ def test_a_block_that_asserts_numbers_without_geometry_is_not_waved_through():
         text="LSEC | total insertion frequency: 1.01 ± 0.38 %",
         char_end=10, parser="uniparse-1.1.0", parser_confidence=0.9,
     )
-    verdict = verify_blocks([block]).blocks[0]
+    verdict = verify_blocks([on_readable_pdf(block)]).blocks[0]
     assert verdict.status == "no_geometry"
     assert verdict.requires_human_review
 
@@ -546,7 +608,7 @@ def test_pmc_xml_tables_are_out_of_scope():
         section_path="Body", block_type="table_row", text="LSEC | 1.01 ± 0.38 %",
         char_end=10, parser="pmc_xml", parser_confidence=1.0,
     )
-    assert verify_blocks([block]).blocks == []
+    assert verify_blocks([on_readable_pdf(block)]).blocks == []
 
 
 def test_document_block_verification_fields_are_optional():
@@ -606,7 +668,7 @@ def _mmc1_client():
 def test_pdf_blocks_stamps_every_verifiable_block_when_the_flag_is_on(tmp_path):
     with override(uniparse_ingestion=True, uniparse_crop_verification=True):
         blocks = pdf_blocks(
-            "GP-006", MMC1, client=_mmc1_client(), image_root=tmp_path,
+            "GP-006", resolve_pdf(MMC1_REL, 2)[0], client=_mmc1_client(), image_root=tmp_path,
             ocr_engine=_RecordedOcr(),
         )
     verifiable = [
@@ -625,7 +687,7 @@ def test_pdf_blocks_leaves_no_verdict_behind_when_the_flag_is_off(tmp_path):
     """Off must mean "not checked", not "checked and fine"."""
     with override(uniparse_ingestion=True, uniparse_crop_verification=False):
         blocks = pdf_blocks(
-            "GP-006", MMC1, client=_mmc1_client(), image_root=tmp_path,
+            "GP-006", resolve_pdf(MMC1_REL, 2)[0], client=_mmc1_client(), image_root=tmp_path,
             ocr_engine=_RecordedOcr(),
         )
     assert blocks
@@ -650,6 +712,50 @@ def test_a_broken_verifier_never_degrades_to_the_unstructured_page_dump(
     with override(uniparse_ingestion=True, uniparse_crop_verification=True):
         with pytest.raises(RuntimeError, match="verifier defect"):
             pdf_blocks(
-                "GP-006", MMC1, client=_mmc1_client(), image_root=tmp_path,
+                "GP-006", resolve_pdf(MMC1_REL, 2)[0], client=_mmc1_client(), image_root=tmp_path,
                 ocr_engine=_RecordedOcr(),
             )
+
+
+def test_a_contradicted_block_is_stamped_and_never_dropped():
+    """The rule the module states, pinned for the verdict it matters most for.
+
+    `test_verification_stamps_the_verdict_and_never_drops_a_block` exercises
+    verified and unverified blocks only. Making verify_and_stamp drop
+    contradicted blocks passed the entire suite -- the one verdict where
+    dropping is tempting was the one nothing checked. Dropping an unverified
+    block trades a hallucination risk for the silent-omission risk this project
+    is already fighting, which is worse.
+    """
+    from src.rag.uniparse_verification import load_corpus, verify_and_stamp
+
+    blocks = load_corpus("GP-004")
+    stamped = verify_and_stamp(blocks)
+
+    assert len(stamped) == len(blocks), "verification changed the block count"
+    contradicted = [
+        block for block in stamped
+        if getattr(block, "verification_status", None) == "contradicted"
+    ]
+    assert contradicted, "GP-004 should still carry contradicted blocks"
+    ids = {block.block_id for block in stamped}
+    assert {block.block_id for block in contradicted} <= ids
+
+
+def test_the_long_token_boundary_is_pinned():
+    """24 characters is what caught GP-004; nothing asserted it.
+
+    A run of 24+ alphanumerics is a sequence, an accession or an identifier --
+    something a parser must transcribe exactly rather than paraphrase. Moving
+    the boundary to 20 would sweep in ordinary long words, and to 28 would let
+    a 24-mer through. Neither change failed a test before this one.
+    """
+    from src.rag.uniparse_verification import LONG_TOKEN_CHARS, long_token_claims
+
+    assert LONG_TOKEN_CHARS == 24
+
+    just_under = "A" * (LONG_TOKEN_CHARS - 1)
+    exactly = "ATGGAGGACGCCAAGAACATCAAG"
+    assert len(exactly) == LONG_TOKEN_CHARS
+    assert exactly in long_token_claims(f"sequence {exactly} end")
+    assert just_under not in long_token_claims(f"word {just_under} end")
