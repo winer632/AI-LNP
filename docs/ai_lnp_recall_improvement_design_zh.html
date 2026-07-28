@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-LNP Recall 提升改造设计 · v3 · 2026-07-29</title>
+  <meta name="description" content="基于实测证据的 AI-LNP 证据恢复率改造设计。v2 加入 GP-006 前置验证结果：GO-006 已确认可解。">
+  <style>
+    :root{
+      --ink:#17201d; --muted:#64706b; --paper:#f6f2e9; --card:rgba(255,255,255,.82);
+      --line:#d8d4c8; --green:#245b4a; --mint:#dceae3; --amber:#a65f20;
+      --peach:#f3dfce; --red:#a33c32; --code:#1d2622;
+      --shadow:0 18px 55px rgba(23,32,29,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+    body{
+      margin:0; color:var(--ink); line-height:1.72;
+      background:
+        radial-gradient(circle at 85% 3%, rgba(220,234,227,.9), transparent 26rem),
+        radial-gradient(circle at 8% 18%, rgba(243,223,206,.7), transparent 24rem),
+        var(--paper);
+      font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    }
+    a{color:var(--green)}
+    .shell{width:min(1080px,calc(100% - 32px)); margin:0 auto}
+
+    header{padding:26px 0 54px}
+    .brand{font-weight:800; letter-spacing:.09em; text-transform:uppercase; font-size:.76rem; color:var(--green)}
+    .ver{display:inline-block; margin-left:8px; padding:2px 9px; border-radius:999px;
+      background:var(--green); color:#fff; font-size:.68rem; letter-spacing:.04em}
+    .eyebrow{display:inline-flex; gap:9px; align-items:center; color:var(--amber); font-weight:750;
+      letter-spacing:.07em; text-transform:uppercase; font-size:.72rem; margin-top:38px}
+    .eyebrow::before{content:""; width:26px; height:2px; background:currentColor}
+    h1{margin:16px 0 16px; font-family:Georgia,"Times New Roman","Songti SC",serif;
+      font-size:clamp(2.1rem,6.4vw,4.3rem); line-height:1.02; letter-spacing:-.04em; font-weight:600}
+    .lede{max-width:760px; margin:0; font-size:clamp(1rem,2.4vw,1.22rem); color:#46514c}
+
+    .verdict{margin-top:34px; padding:22px 24px; border-radius:18px; background:var(--mint);
+      border:1px solid #bfd3c9; font-size:1.02rem}
+    .verdict b{color:var(--green)}
+    .verdict.hot{background:#e2f0e7; border-color:#a9c9b8}
+
+    .strip{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:26px}
+    .stat{padding:16px 14px; border:1px solid var(--line); background:rgba(255,255,255,.6); border-radius:15px}
+    .stat strong{display:block; font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.4rem,4.4vw,2.3rem); line-height:1.05}
+    .stat span{color:var(--muted); font-size:.8rem}
+    .stat.bad strong{color:var(--red)}
+    .stat.good strong{color:var(--green)}
+
+    nav.toc{margin:38px 0 0; padding:20px 22px; border:1px solid var(--line);
+      border-radius:16px; background:rgba(255,255,255,.55)}
+    nav.toc h2{margin:0 0 10px; font-size:.78rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); font-family:inherit}
+    nav.toc ol{margin:0; padding-left:1.15rem; columns:2; column-gap:26px}
+    nav.toc li{margin:3px 0; break-inside:avoid}
+    nav.toc a{text-decoration:none}
+    nav.toc a:hover{text-decoration:underline}
+
+    section{padding:52px 0; border-top:1px solid var(--line)}
+    h2{margin:0 0 6px; font-family:Georgia,"Times New Roman","Songti SC",serif;
+      font-size:clamp(1.55rem,4.2vw,2.5rem); line-height:1.14; letter-spacing:-.025em}
+    .sub{margin:0 0 26px; color:var(--muted); font-size:1.02rem}
+    h3{margin:30px 0 8px; font-size:1.08rem}
+    h4{margin:20px 0 6px; font-size:.96rem; color:var(--green)}
+    p{margin:0 0 14px}
+    ul,ol{padding-left:1.25rem; margin:0 0 14px}
+    li{margin:5px 0}
+
+    .scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:0 0 16px;
+      border:1px solid var(--line); border-radius:12px; background:rgba(255,255,255,.62)}
+    table{border-collapse:collapse; width:100%; min-width:520px; font-size:.92rem}
+    th,td{padding:10px 13px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top}
+    th{background:rgba(36,91,74,.07); font-weight:700; white-space:nowrap}
+    tr:last-child td{border-bottom:0}
+    td.num,th.num{text-align:right; white-space:nowrap}
+    .yes{color:var(--green); font-weight:700}
+    .no{color:var(--red); font-weight:700}
+    .mid{color:var(--amber); font-weight:700}
+    .hl{background:rgba(36,91,74,.10)}
+
+    pre{margin:0 0 16px; padding:16px 18px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+      background:var(--code); color:#e8efe9; border-radius:12px; font-size:.83rem; line-height:1.6}
+    code{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace}
+    p code,li code,td code{background:rgba(36,91,74,.09); color:#1c3f34; padding:1px 5px; border-radius:5px; font-size:.87em}
+    pre code{background:none; color:inherit; padding:0}
+    pre .mark{color:#9ae6b4; font-weight:700}
+
+    .note{padding:16px 18px; border-radius:12px; border-left:4px solid var(--amber);
+      background:var(--peach); margin:0 0 16px}
+    .warn{padding:16px 18px; border-radius:12px; border-left:4px solid var(--red);
+      background:#f6dedb; margin:0 0 16px}
+    .ok{padding:16px 18px; border-radius:12px; border-left:4px solid var(--green);
+      background:var(--mint); margin:0 0 16px}
+    .note b,.warn b,.ok b{display:block; margin-bottom:4px}
+
+    .phase{padding:24px; border:1px solid var(--line); border-radius:18px;
+      background:var(--card); box-shadow:var(--shadow); margin:0 0 18px}
+    .phase .tag{display:inline-block; padding:3px 11px; border-radius:999px; font-size:.74rem;
+      font-weight:800; letter-spacing:.05em; background:var(--peach); color:var(--amber); margin-bottom:12px}
+    .phase .tag.p0{background:#d7ece1; color:var(--green)}
+    .phase .tag.done{background:var(--green); color:#fff}
+    .phase h3{margin:0 0 6px; font-size:1.22rem; font-family:Georgia,"Songti SC",serif}
+    .phase .meta{color:var(--muted); font-size:.87rem; margin:0 0 14px}
+
+    footer{padding:30px 0 60px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem}
+
+    @media (max-width:760px){
+      .strip{grid-template-columns:1fr 1fr}
+      nav.toc ol{columns:1}
+      section{padding:40px 0}
+      .phase{padding:18px}
+      pre{font-size:.76rem; padding:13px 14px}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+
+<header class="shell">
+  <div class="brand">AI-LNP · 改造设计<span class="ver">v3 · 完成度盘点 + 开发计划</span></div>
+  <div class="eyebrow">证据恢复率 · 2026 年 7 月 29 日</div>
+  <h1>把「看不见」<br>变成「看得见」</h1>
+  <p class="lede">
+    当前 15 条金标准结果只恢复了 10 条。经实测排查，剩下 5 条没有一条卡在「模型不够强」。
+    <b>v2 更新：GP-006 前置验证已完成，GO-006 确认可解，两类失败模式已被实测彻底区分。</b>
+  </p>
+
+  <div class="verdict hot">
+    <b>✓ 前置验证结果（2026-07-29）</b>
+    uniparse 从 GP-006 补充材料 <code>mmc1.pdf</code> 第 1 页抽出 <b>Table S2</b>，
+    LSEC 行 <code>total insertion frequency</code> 列 = <b><code>1.01 ± 0.38 %</code></b>，
+    与 GO-006 金标准逐字段吻合。而同一批数据在 AI-LNP 现有解析中
+    <code>1.01</code> 与 <code>0.38</code> 命中数均为 <b>0</b>。
+    <b>P1 的投入已有确定依据。</b>
+  </div>
+
+  <div class="strip">
+    <div class="stat bad"><strong>10/15</strong><span>当前最终恢复</span></div>
+    <div class="stat good"><strong>已验证</strong><span>GO-006 可解</span></div>
+    <div class="stat bad"><strong>0</strong><span>现有精度指标</span></div>
+    <div class="stat good"><strong>13–14</strong><span>现实目标</span></div>
+  </div>
+
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+      <li><a href="#s1">缺失归因</a></li>
+      <li><a href="#s2">前置验证结果 ★</a></li>
+      <li><a href="#s2b">完成度盘点与开发计划 ★</a></li>
+      <li><a href="#s3">解析层实测对比</a></li>
+      <li><a href="#s4">P0-a 完整证据视图</a></li>
+      <li><a href="#s5">P0-b 精度指标</a></li>
+      <li><a href="#s6">P1 uniparse 接入</a></li>
+      <li><a href="#s7">P2 视觉观察</a></li>
+      <li><a href="#s8">P3 候选必答</a></li>
+      <li><a href="#s9">确定性 ID</a></li>
+      <li><a href="#s10">风险与边界</a></li>
+      <li><a href="#s11">验收标准与排期</a></li>
+    </ol>
+  </nav>
+</header>
+
+<main class="shell">
+
+<section id="s1">
+  <h2>一、5 条缺失的逐条归因</h2>
+  <p class="sub">全部基于实测。「证据在 block 里吗」一列为 v2 新增的实测确认。</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>ID</th><th>论文</th><th>终点</th><th>证据在 block 里吗</th><th>根因</th><th>方案</th><th>把握</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>GO-002</b></td><td>GP-004</td><td>eGFP in F4/80+ cells（定性）</td>
+        <td class="yes">在</td>
+        <td>Day7 v4.1 曾从全文恢复；紧凑包压掉了</td>
+        <td>P0-a</td><td class="yes">高</td>
+      </tr>
+      <tr class="hl">
+        <td><b>GO-003</b></td><td>GP-006</td><td>GFP in LYVE1+ LSECs（定性）</td>
+        <td class="yes">在（<code>LYVE</code> ×10）</td>
+        <td><b>实测确认</b>：证据已解析出来，但紧凑包里只剩 1 次 → 选择问题</td>
+        <td>P0-a</td><td class="yes">高</td>
+      </tr>
+      <tr class="hl">
+        <td><b>GO-006</b></td><td>GP-006</td><td>LSEC 插入频率 1.01 ± 0.38 %</td>
+        <td class="no">不在（<code>1.01</code> ×0）</td>
+        <td><b>实测确认</b>：值只存在于补充材料表格，pymupdf 读不出单元格 → 解析问题</td>
+        <td>P1</td><td class="yes">已验证</td>
+      </tr>
+      <tr>
+        <td><b>GO-018</b></td><td>GP-008</td><td>reporter 接受细胞（marker 共定位）</td>
+        <td class="mid">图像</td>
+        <td>需读图。Day8 object vision 已能读 panel/channel 标签</td>
+        <td>P1 + P2</td><td class="mid">中</td>
+      </tr>
+      <tr>
+        <td><b>GO-017</b></td><td>GP-008</td><td>活化 HSC 消除</td>
+        <td class="mid">争议</td>
+        <td>Day7 与 Day8 两次独立裁定均判为<b>推断而非实测</b>（D8M-0108）</td>
+        <td>裁定标准</td><td class="no">低</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <b>v2 核心结论：两类失败模式已被实测彻底区分</b>
+    GO-003 的证据<b>已经在解析产物里</b>（<code>LYVE</code> 出现 10 次），是被打分器压出了 packet ——
+    属<b>证据选择问题</b>，P0-a 解决。<br>
+    GO-006 的证据<b>从未进入解析产物</b>（<code>1.01</code> 出现 0 次），是表格单元格没被读出来 ——
+    属<b>解析问题</b>，P1 解决。<br>
+    两者互不重叠，因此 P0-a 与 P1 不是二选一，而是必须都做。
+  </div>
+
+  <h3>历史指标回溯</h3>
+  <p>紧凑路线相对旧工作流实际上是<b>召回倒退</b>：</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>阶段</th><th>日期</th><th>精度类指标</th><th class="num">结果召回</th></tr></thead>
+    <tbody>
+      <tr><td>Day5 abstract-first</td><td>07-23</td><td>reviewed precision 69.0% → FAIL</td><td class="num">—</td></tr>
+      <tr><td>full-text RAG 证据图 v4</td><td>07-23/24</td><td><b>critical_field_precision 1.0</b>（人工裁定后）</td><td class="num">6/15 = 40%</td></tr>
+      <tr><td>Day7 v4.1 completeness repair</td><td>07-24</td><td>—</td><td class="num"><b>12/15 = 80%</b></td></tr>
+      <tr><td>紧凑恢复工作流</td><td>07-28</td><td><b>未测量</b></td><td class="num">10/15 = 66.7%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>
+    紧凑路线的恢复集合是 v4.1 的<b>真子集</b>，净丢失 GO-002 与 GO-003，未新增任何一条，
+    同时精度指标被丢弃。这两点是 P0-a 与 P0-b 的直接依据。
+  </p>
+</section>
+
+<section id="s2">
+  <h2>二、前置验证结果 ★</h2>
+  <p class="sub">2026-07-29 完成。零 API 成本，仅调用 PMC 与 uniparse。</p>
+
+  <h3>1. 验证目标</h3>
+  <p>
+    回答一个问题：GO-006 需要的 <code>1.01 ± 0.38 %</code> 是否能被 uniparse 从
+    GP-006（PMC11617921，OMTN 2024，CRISPR-Cas9 FVIII）的补充材料中提取出来。
+    若能，则 P1 的全部投入有确定依据；若不能，则需重新评估。
+  </p>
+
+  <h3>2. 结果：命中，且逐字段吻合</h3>
+<pre><code>uniparse 输出 · mmc1.pdf 第 1 页
+
+caption:  Table S2. Insertion Frequency Patterns Following Cas9/sgRNA LNP Treatment.
+bbox:     [70, 537, 550, 603]
+img_path: images/page_001_block_006_table_4011ddf074.png
+format:   html
+
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;          &lt;td&gt;+1&lt;/td&gt;          &lt;td&gt;+2&lt;/td&gt;  …  &lt;td&gt;total insertion frequency&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Hepatocyte&lt;/td&gt;&lt;td&gt;3.39 ± 0.91 %&lt;/td&gt;&lt;td&gt;0.83 ± 0.27 %&lt;/td&gt; … &lt;td&gt;4.23 ± 1.17 %&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;LSEC&lt;/td&gt;      &lt;td&gt;0.78 ± 0.27 %&lt;/td&gt;&lt;td&gt;0.21 ± 0.10 %&lt;/td&gt; … &lt;td&gt;<span class="mark">1.01 ± 0.38 %</span>&lt;/td&gt;&lt;/tr&gt;
+
+金标准 GO-006:
+  endpoint    = total_insertion_frequency_in_LSECs
+  value       = 1.01 percent
+  uncertainty = 0.38 (SD)
+  status      = reported</code></pre>
+  <p>行 = LSEC、列 = total insertion frequency、值 = 1.01、不确定度 = 0.38，<b>四项全中</b>。
+     相邻的 Table S1 同时给出 LSEC <code>16.50 ± 2.96 %</code>，即 GO-005。</p>
+
+  <h3>3. 与现有解析的对照</h3>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>检索词</th><th class="num">AI-LNP 现有 54 个 block</th><th class="num">uniparse</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr class="hl"><td><code>1.01</code></td><td class="num no">0</td><td class="num yes">3</td><td>GO-006 的值</td></tr>
+      <tr class="hl"><td><code>0.38</code></td><td class="num no">0</td><td class="num yes">4</td><td>GO-006 的不确定度</td></tr>
+      <tr><td><code>Table S2</code></td><td class="num">4</td><td class="num">—</td><td><b>知道这张表存在</b></td></tr>
+      <tr><td><code>insertion frequency</code></td><td class="num">2</td><td class="num">—</td><td><b>知道这张表讲什么</b></td></tr>
+      <tr><td><code>16.50</code> / <code>2.96</code></td><td class="num yes">2 / 2</td><td class="num yes">✓</td><td>GO-005，已恢复</td></tr>
+      <tr><td><code>LYVE</code></td><td class="num yes">10</td><td class="num yes">12</td><td>GO-003 的证据</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>最有说服力的一条</b>
+    AI-LNP 现有解析<b>知道 Table S2 存在</b>（命中 4 次）、<b>知道它讲插入频率</b>（命中 2 次），
+    但<b>读不出格子里的数字</b>。这不是检索问题，也不是模型问题，就是解析问题。
+  </div>
+
+  <h3>4. GO-005 与 GO-006 的机制差异</h3>
+  <p>为什么同一张补充材料里，相邻两表一个能恢复一个不能？因为 GO-005 的值在<b>正文里被引用了</b>：</p>
+<pre><code>block_type = paragraph   source_kind = pmc_xml
+
+  "…whereas LSECs showed gene editing rates of approximately
+   <span class="mark">16.50% ± 2.96%</span> (Figure 6A; Table S1)."</code></pre>
+  <p>
+    而<b>正文从头到尾没有引用过插入频率的数值</b>。<code>1.01</code> 只存在于 Table S2 的单元格里。
+    于是规律非常清楚：
+  </p>
+  <ul>
+    <li><b>被正文引用的数值</b> → 现有链路可恢复</li>
+    <li><b>只存在于补充材料表格的数值</b> → 现有链路不可见，必然丢失</li>
+  </ul>
+  <p>uniparse 恢复的正是后一类。</p>
+
+  <h3>5. 实测运行数据</h3>
+  <div class="scroll">
+  <table>
+    <thead><tr><th></th><th>mmc1.pdf</th><th>mmc2.pdf</th></tr></thead>
+    <tbody>
+      <tr><td>大小 / 页数</td><td>336 KB / 2 页</td><td>4.93 MB / 14 页</td></tr>
+      <tr><td>耗时</td><td>34.8 s</td><td>≈ 45 s</td></tr>
+      <tr><td>结构</td><td>heading 2 · text 3 · <b>table 2</b> · image 1</td><td>heading 33 · text 137 · <b>table 3</b> · image 34</td></tr>
+      <tr><td>图片回传</td><td>3 张</td><td>37 张</td></tr>
+      <tr><td><code>1.01</code>/<code>0.38</code></td><td class="yes">3 / 4</td><td class="yes">3 / 4</td></tr>
+      <tr><td><code>LYVE</code></td><td>—</td><td class="yes">12</td></tr>
+      <tr><td>HTTP</td><td class="yes">200</td><td class="yes">200</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>
+    2 + 14 = 16 页，与 AI-LNP 现有的 <b>16 个 <code>pdf_page</code> block</b> 数量一致，
+    确认解析的是同一批文件。全程 <code>skip_image_elements=false</code>，
+    <b>不传 <code>heading_level_enabled</code></b>，两次均 200。
+  </p>
+
+  <h3>6. 顺带发现：下载脚本的两个失效点</h3>
+  <div class="warn">
+    <b><code>src/screening/retrieve_gold_oa_packages.py</code> 主路径已失效</b>
+    <ul style="margin-top:8px">
+      <li>第 23 行的 OA API 主机已失效：<br>
+        ✗ <code>https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi</code> → <b>HTTP 404</b><br>
+        ✓ <code>https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi</code> → <b>HTTP 200</b></li>
+      <li>即使修好 URL，它返回的包地址也拿不到：<br>
+        <code>ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/…</code> → FTP 550 拒绝目录<br>
+        同路径的 https 镜像 → HTTP 404</li>
+    </ul>
+  </div>
+  <div class="ok">
+    <b>实际可用路径：仓库自己的 Europe PMC fallback</b>
+    一次请求拿到 7.09 MB zip，含 <code>mmc1.pdf</code>、<code>mmc2.pdf</code> 及 16 个图片文件。
+    <b>建议把它提升为主路径。</b>
+<pre style="margin-top:10px"><code>https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11617921/supplementaryFiles
+  → HTTP 200, application/zip, 7,085,045 bytes</code></pre>
+  </div>
+</section>
+
+<section id="s2b">
+  <h2>二·五、完成度盘点与开发计划 ★</h2>
+  <p class="sub">v3 新增。由 4 个独立评估 Agent 从不同维度扫描 <code>/Users/wangxinxin/Desktop/LNP/AI-LNP</code> 得出。</p>
+
+  <h3>1. 各部分完成度</h3>
+  <p>验收口径：<b>代码存在 · 测试通过 · 已推送 main · 关键链路跑通 · recall 达标</b>。</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>模块</th><th class="num">完成度</th><th>已具备</th><th>缺口</th></tr></thead>
+    <tbody>
+      <tr class="hl">
+        <td><b>P1</b> uniparse ingestion</td><td class="num no">8%</td>
+        <td>Europe PMC 常量 URL 已存在且逐字符一致；下游已「超前」支持 <code>table_row</code>/<code>figure</code>/<code>caption</code> 语义；<code>parser</code> 为自由 str 可零改动</td>
+        <td>uniparse 客户端全仓 0 命中；<code>bbox</code>/<code>table_html</code>/<code>caption_text</code>/<code>image_ref</code>/<code>image_sha256</code> 五字段全无；<code>pdf_page</code> 仍是唯一 PDF 产物</td>
+      </tr>
+      <tr class="hl">
+        <td><b>P0-b</b> 精度指标</td><td class="num no">12%</td>
+        <td>一对一匹配器、结果定位、JSON 落盘就位；<code>result_outcomes</code> 已在手边；<code>unresolved_items</code> 数据已存在</td>
+        <td>4 个目标字段 <b>0/4</b>；<code>evaluate()</code> 依赖模块级全局常量不可注入；测试覆盖 1/8 函数约 14%</td>
+      </tr>
+      <tr>
+        <td><b>P3</b> 候选必答前移</td><td class="num no">25%</td>
+        <td>repair 阶段 <code>missing_record_contracts</code> 已强制 disposition + unresolved_reason</td>
+        <td><code>run_compact_one_call.py:120</code> 算出候选却<b>从不下发</b>（<code>:163</code> 只发 packet）；无槽位覆盖校验</td>
+      </tr>
+      <tr>
+        <td><b>P0-a</b> 完整证据视图</td><td class="num mid">30%</td>
+        <td><b>最大不确定性已消除</b>：<code>full_corpus_view()</code> 返回类型就是 <code>CompactApiPacket</code>，checksum 与 <code>load_packet()</code> 实测互通</td>
+        <td><code>run_one</code> 与 full view 零连接；<code>PACKET_ROOT</code> 硬编码；tag 阈值未校准；无 input-token 护栏</td>
+      </tr>
+      <tr>
+        <td>工程就绪度</td><td class="num mid">45%</td>
+        <td>162 用例收集零错误、160 通过；pydantic 契约 + SHA256 版本锁定扎实；付费闸门健壮</td>
+        <td><b>零 CI</b>；测试非幂等（回写 3 个 tracked 文件）；<code>.env.example</code> 覆盖 3/18；<code>pymupdf</code> 不在 requirements</td>
+      </tr>
+      <tr>
+        <td><b>P2</b> 视觉观察</td><td class="num mid">65%</td>
+        <td><code>SelectiveVisionResponse</code> 完整；<code>enforce_visual_safety</code> <b>已强制</b>「估算值→人工审核」，即设计文档的 abstain 硬规则</td>
+        <td><code>printed_labels</code> 逐字标签；与 uniparse panel 对象未打通</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="warn">
+    <b>最关键的单点发现：上线开关是假的</b>
+    <code>config/extraction/compact_route_v1.yaml</code> 结尾的 <code>activation_gate.active: false</code>
+    <b>没有任何 <code>src/</code> 代码读取</b>——唯一的读取方是 <code>tests/test_compact_prompt_route.py:15</code>，
+    只用来断言它是 false。把它改成 <code>true</code> 对程序行为<b>零影响</b>。
+    也就是说验收标准里「打开开关正式上线」这一条，<b>当前根本没有对应机制</b>，必须先建。
+  </div>
+
+  <h3>2. 开发架构设计</h3>
+  <p>按「谁依赖谁」分层，而不是按验收项罗列。灰底为本次新增：</p>
+
+<pre><code>                    ┌─────────────────────────────┐
+                    │  config_flags  (新)          │  ← 集中式 feature flag
+                    │  is_enabled("uniparse_...")  │    env 可覆盖，新能力默认 off
+                    └──────────────┬──────────────┘
+                                   │ 被以下各层查询
+   ┌───────────────────────────────┼───────────────────────────────┐
+   │                               │                               │
+┌──▼──────────────┐   ┌────────────▼─────────────┐   ┌─────────────▼────────┐
+│ 获取层           │   │ 解析层  (P1)              │   │ 评估层  (P0-b)        │
+│ Europe PMC       │──▶│ uniparse_client (新)      │   │ evaluate_final_gold  │
+│ supplementary    │   │ ingestion: table/figure/  │   │  + precision         │
+│ Files 提为主路径 │   │   caption/heading/table_row│   │  + false_additions   │
+└─────────────────┘   │ models.py schema 扩展      │   │  + evidence_accuracy │
+                      └────────────┬─────────────┘   │  + unresolved_declared│
+                                   │ blocks.jsonl     └──────────▲───────────┘
+                      ┌────────────▼─────────────┐               │
+                      │ 证据层  (P0-a)            │               │
+                      │ full_api_packet (新)      │               │
+                      │ full_corpus_view →落盘    │               │
+                      └────────────┬─────────────┘               │
+                                   │ CompactApiPacket             │
+                      ┌────────────▼─────────────┐               │
+                      │ 抽取层  (P3)              │               │
+                      │ run_compact_one_call      │               │
+                      │  --evidence-view {compact,full}           │
+                      │  + 候选槽位下发 + 必答校验 │               │
+                      └────────────┬─────────────┘               │
+                                   │ result.json ─────────────────┘
+                      ┌────────────▼─────────────┐
+                      │ 视觉层  (P2)              │
+                      │ uniparse panel crop → VLM │
+                      │ + printed_labels          │
+                      └──────────────────────────┘</code></pre>
+
+  <div class="ok">
+    <b>三条设计原则</b>
+    <b>①向后兼容</b>：所有新 schema 字段一律 <code>| None = None</code>，已提交的 9 个 <code>blocks.jsonl</code> 必须继续可加载；
+    <code>_source_id()</code> 哈希输入<b>不得变更</b>，否则全部 <code>FC-S-*</code> 漂移。<br>
+    <b>②灰度可回退</b>：每项新能力挂一个 flag，默认 off；compact 视图下的现有行为必须逐位不变。<br>
+    <b>③零付费默认</b>：所有评估/校验路径 <code>paid_api_requests</code> 必须为 0；付费调用保留 <code>--confirm-paid-call</code> 强制闸门。
+  </div>
+
+  <h3>3. 开发步骤计划</h3>
+  <p>并行度按文件归属切分，避免多 Agent 写同一文件：</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>批次</th><th>工作流</th><th>独占文件</th><th>验收</th></tr></thead>
+    <tbody>
+      <tr>
+        <td rowspan="2"><b>批次 1</b><br>并行</td>
+        <td>P0-b 精度指标</td>
+        <td><code>evaluate_final_gold_dynamic.py</code><br><code>tests/test_final_gold_dynamic.py</code></td>
+        <td>输出 12 键；recovered 仍 10/15；<code>paid_api_requests=0</code></td>
+      </tr>
+      <tr>
+        <td>P0-a 完整证据视图</td>
+        <td><code>full_api_packet.py</code>(新)<br><code>run_compact_one_call.py</code><br><code>assess_outcome_complexity.py</code></td>
+        <td>9 篇 full packet 落盘；<code>load_packet</code> 校验通过；compact 路径行为不变</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><b>批次 2</b><br>并行</td>
+        <td>P1 uniparse ingestion</td>
+        <td><code>uniparse_client.py</code>(新)<br><code>models.py</code> / <code>ingestion.py</code><br><code>compact_packet.py</code> / <code>index.py</code><br><code>retrieve_gold_oa_packages.py</code></td>
+        <td><b>解析 mmc1.pdf 必须拿到 <code>1.01 ± 0.38 %</code></b>（现状命中 0）</td>
+      </tr>
+      <tr>
+        <td>工程就绪度 + 开关</td>
+        <td><code>config_flags.py</code>(新)<br><code>.env.example</code> / <code>requirements.txt</code><br><code>.github/workflows/ci.yml</code>(新)</td>
+        <td>162 全绿；pytest 后 <code>git status</code> 干净；flag 可运行时切换</td>
+      </tr>
+      <tr>
+        <td><b>批次 3</b></td>
+        <td>P3 候选必答前移 + P2 补齐</td>
+        <td><code>compact_prompt_v1.py</code><br><code>compact_contracts.py</code><br><code>compact_validation.py</code></td>
+        <td>GP-001/003/009 不再「返回 0 条且无说明」</td>
+      </tr>
+      <tr class="hl">
+        <td><b>批次 4</b></td>
+        <td>端到端 + recall 验收</td>
+        <td>—</td>
+        <td><b>需要 <code>OPENAI_API_KEY</code> 并授权付费调用</b>；目标 13–14/15</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="warn">
+    <b>批次 4 是外部依赖阻塞项</b>
+    「recall 达到预期」无法离线验证。仓库无 <code>.env</code>，
+    <code>run_compact_one_call.py:282</code> 需要 <code>OPENAI_API_KEY</code>；
+    且已缓存的 <code>response.json</code> 全部对应<b>旧的紧凑包输入</b>，
+    换成 full view / uniparse 表格后必须重新发起付费调用，缓存无法复用。
+    批次 1–3 可全部离线完成并验证，批次 4 需要密钥与明确的付费授权。
+  </div>
+</section>
+
+<section id="s3">
+  <h2>三、解析层实测对比</h2>
+  <p class="sub">AI-LNP 现状 vs uniparse。</p>
+
+  <h3>AI-LNP 现状（GP-006）</h3>
+<pre><code>data/staging/rag/gold_v1/GP-006.blocks.jsonl —— 共 54 个 block
+
+  block_type: title 1 | abstract 1 | paragraph 36 | pdf_page 16
+  source_kind: pmc_xml 38 | pdf 16
+  parser:      pymupdf
+  caption / figure / table 类 block: 0 个
+
+补充材料（mmc1 2 页 + mmc2 14 页）被压成 16 个整页文本块，平均 3,920 字符</code></pre>
+  <p><code>block_type</code> 里<b>没有 table 和 figure 这两个概念</b>，表格行列结构在解析阶段即丢失。</p>
+
+  <h3>uniparse（同一批文件）</h3>
+<pre><code>mmc1.pdf   2 页: heading 2 · text 3 · table 2 · image 1   · images 3 张
+mmc2.pdf  14 页: heading 33 · text 137 · table 3 · image 34 · images 37 张
+
+表格为 text_format=html，行列完整，带 caption / bbox / 裁剪 PNG
+图为 panel 级独立对象，带 bbox 与 caption 片段
+页眉页脚分离到 others，不污染正文</code></pre>
+
+  <h3>已排除的两条路径</h3>
+  <div class="warn">
+    <b>不要走 OCR MCP Server</b>
+    实测：印刷体论文永远路由到 uniparse 分支（多模态大模型一次都不会被调用），
+    随后 <code>python/main.py:1001-1061</code> 按 <code>(y1,x1)</code> 坐标把内容块重排成假
+    <code>&lt;table&gt;</code>，注释明写「bbox 只用于计算位置，输出的是 text 内容」。
+    真实表格被摧毁，正文段落与作者单位混入单元格。且线上只暴露 4 个 tool，
+    <code>uniparse_parse_pdf</code> 被 <code>OCR_MCP_EXPOSE_UNIPARSE=false</code> 隐藏。
+  </div>
+  <div class="warn">
+    <b>不要走 documentparser /upload</b>
+    <code>DocumentParserClient.parse()</code> 签名为 <code>-&gt; str</code>，
+    注释「Parse a document and return Markdown text」——
+    <code>pages[]</code> / <code>bbox</code> / <code>captions</code> 全部丢弃。
+  </div>
+  <div class="ok">
+    <b>正确做法</b>
+    直连 <code>http://100.67.181.118:8020/api/v1/parse</code>，拿完整结构化响应。
+  </div>
+</section>
+
+<section id="s4">
+  <h2>四、P0-a｜完整证据视图接到抽取输入</h2>
+  <p class="sub">打 GO-002 / GO-003。与 uniparse 无关，改动最小，应最先做。</p>
+
+  <div class="phase">
+    <span class="tag p0">P0-a</span>
+    <h3>让抽取看到检测能看到的东西</h3>
+    <p class="meta">目标：GO-002、GO-003 ｜ 验证成本：2 次 API 调用</p>
+
+    <p>
+      <code>build_full_outcome_inventory.py</code> 已在构建<b>不受 token 预算限制</b>的完整本地证据视图 ——
+      这正是候选检测能达到 15/15 的原因。问题是这个视图<b>只喂给了检测，没有喂给抽取</b>。
+    </p>
+
+<pre><code>现状
+  compact_api_packet.py（打分选 top-k，填满 16k token）  ──►  第一次 LLM 调用
+  build_full_outcome_inventory.py（完整视图，无预算限制）  ──►  仅 coverage 检测
+
+改为
+  build_full_outcome_inventory.py（完整视图）  ──┬──►  第一次 LLM 调用
+                                                └──►  coverage 检测</code></pre>
+
+    <h4>v2 新增实测依据</h4>
+    <p>
+      GP-006 的 <code>LYVE</code> 在 <b>blocks 里出现 10 次</b>，但<b>紧凑包里只剩 1 次</b>。
+      GO-003 要的正是「GFP expression in LYVE1-positive LSECs」。
+      <b>证据已经被解析出来了，是打分器把它排到了预算之外。</b>
+      这一条现在有了直接数据支撑，不再是推断。
+    </p>
+
+    <h4>验证方式</h4>
+<pre><code># 全文源是已提交的语料 blocks（9 篇齐全）
+data/staging/rag/gold_v1/GP-004.blocks.jsonl
+data/staging/rag/gold_v1/GP-006.blocks.jsonl
+
+# 经 full_corpus_view() 构造 full packet，再喂给抽取
+# 观察 GO-002 / GO-003 是否直接回来</code></pre>
+
+<div class="warn">
+  <b>v3 更正</b>
+  v1/v2 曾写「用 <code>data/staging/rag/retrieval_packets/</code> 全文包验证」——<b>这是错的</b>。
+  该目录是<b>检索包</b>不是全文包：每篇仅 6 个 field group × top-10 = 60 条 hit，
+  <b>没有 <code>evidence_id</code></b>（而 <code>validate_candidate</code> 强依赖它），
+  且包内 <code>ready_for_extraction: false</code>、<code>important</code> 字段明写
+  "These are source evidence packets, not extracted answers"。
+  真正的全文源是 <code>data/staging/rag/gold_v1/GP-00X.blocks.jsonl</code>，
+  经 <code>full_corpus_view()</code> 转成 <code>CompactApiPacket</code>。
+</div>
+
+    <h4>token 成本不是约束</h4>
+    <p>
+      实测 9 篇首轮调用合计 <b>180,780 input + 26,108 output</b> token，按前沿模型挂牌价不到 1 美元。
+      紧凑路线相对 Day8（360,104 input）只降了约 2 倍，却换来召回从 80% 跌到 66.7%。
+      <b>在 n=9 的规模上，紧凑化优化的是一个不存在的瓶颈。</b>
+    </p>
+  </div>
+</section>
+
+<section id="s5">
+  <h2>五、P0-b｜先把精度指标补回来</h2>
+  <p class="sub">没有它，后面所有召回数字都不可信。</p>
+
+  <div class="phase">
+    <span class="tag p0">P0-b</span>
+    <h3>evaluate_final_gold_dynamic.py 增加精度与误报</h3>
+    <p class="meta">目标：全部阶段的前提 ｜ 成本：纯本地代码</p>
+
+    <p>当前 <code>reports/extraction/final_gold_dynamic_v1/evaluation.json</code> 只输出：</p>
+<pre><code>{
+  "recovered": 10,
+  "total": 15,
+  "rate": 0.6667,
+  "missing_gold_outcome_ids": [...]
+}
+// 没有精度、没有误报、没有 false additions</code></pre>
+
+    <p>
+      匹配器是词重叠打分加 <code>minimum_score = 0.42</code> 阈值。
+      <b>只要抽取得更激进，recall 就会上升，而多出来的噪音完全不可见。</b>
+    </p>
+
+    <div class="scroll">
+    <table>
+      <thead><tr><th>字段</th><th>定义</th><th>为什么需要</th></tr></thead>
+      <tbody>
+        <tr><td><code>precision</code></td><td>匹配上金标准的记录 / 最终结果中的全部 outcome 记录</td><td>07-24 那版曾达 1.0，紧凑路线丢失了这个纪律</td></tr>
+        <tr><td><code>false_additions</code></td><td>无法匹配任何金标准的 outcome 数量与清单</td><td>今天 roadmap 第 4 条已列出但未实现</td></tr>
+        <tr><td><code>evidence_accuracy</code></td><td>被匹配记录中，evidence 引用确实支持该值的比例</td><td>防止「值对了但证据是编的」</td></tr>
+        <tr><td><code>unresolved_declared</code></td><td>显式声明为 unresolved 的候选数</td><td>区分「真没有」与「静默漏掉」</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="warn">
+      <b>为什么 v2 把这一步的优先级提得更高</b>
+      前置验证已确认马上要向库里新增至少 1 条（GO-006）来自表格的记录，
+      并将引入整类新的 evidence（table_html、视觉观察）。
+      <b>在精度指标缺位的情况下引入新证据源，等于在看不见噪音的前提下扩大输入面。</b>
+    </div>
+  </div>
+</section>
+
+<section id="s6">
+  <h2>六、P1｜引入 uniparse 重做 ingestion</h2>
+  <p class="sub">已通过前置验证。直接打 GO-006。</p>
+
+  <div class="phase">
+    <span class="tag done">P1 · 依据已验证</span>
+    <h3>src/rag/ingestion.py 增加结构化解析分支</h3>
+    <p class="meta">目标：GO-006（并为 P2 提供输入）｜ 成本：中</p>
+
+    <h4>1. 论文与补充材料获取（v2 修正）</h4>
+    <div class="note">
+      <b>不要用现有的 OA tgz 主路径</b>
+      见第二节第 6 点：OA API 主机已 404，且返回的包地址 FTP 550 / HTTPS 404。
+      改用 Europe PMC 的 <code>supplementaryFiles</code> 端点，实测一次到位。
+    </div>
+<pre><code>SUPPL = "https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/supplementaryFiles"
+
+resp = requests.get(SUPPL.format(pmcid="PMC11617921"), timeout=180)
+# -> application/zip, 含 mmc1.pdf / mmc2.pdf / gr*.jpg / gr*.gif
+
+# 若仍需 OA tgz，先把主机改成:
+#   https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi</code></pre>
+
+    <h4>2. 调用契约（已实测验证）</h4>
+    <div class="ok">
+      <b>AI-LNP 不传 heading_level_enabled</b>
+      线上容器 <code>/app/config.yaml</code> 的 <code>heading_level_llm.base_url</code>
+      仍是未替换的部署模板 <code>http://&lt;llm-server-openai&gt;:&lt;port&gt;/v1/</code>。
+      一旦传 <code>heading_level_enabled=true</code>，服务端抛
+      <code>Invalid port: '&lt;port&gt;'</code> 并返回 <b>HTTP 500</b>。
+      AI-LNP 需要的是 table / image / bbox / caption，走的是另一条路径，本就不需要标题分级。
+      <b>因此：不传该参数。</b>
+    </div>
+
+<pre><code>import requests
+
+UNIPARSE_URL = "http://100.67.181.118:8020/api/v1/parse"   # 直连 8020
+
+with open(pdf_path, "rb") as fh:
+    resp = requests.post(
+        UNIPARSE_URL,
+        files={"file": (pdf_path.name, fh, "application/pdf")},
+        data={
+            "skip_image_elements": "false",   # 需要图片裁剪，必须为 false
+            # 不传 heading_level_enabled  —— 见上方说明
+            # 不传 heading_level_method
+        },
+        timeout=1800,
+    )
+resp.raise_for_status()
+result = resp.json()      # meta / pages / images / markdown</code></pre>
+
+    <p>实测行为矩阵：</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>skip_image_elements</th><th>heading_level_enabled</th><th>heading_level_method</th><th>结果</th></tr></thead>
+      <tbody>
+        <tr class="hl"><td>false（保留图片）</td><td><b>不传</b></td><td><b>不传</b></td><td class="yes">200 ← 本项目采用</td></tr>
+        <tr><td>true</td><td>不传</td><td>不传</td><td class="yes">200</td></tr>
+        <tr><td>true</td><td>true</td><td>不传</td><td class="no">500 Invalid port</td></tr>
+        <tr><td>false</td><td>true</td><td>不传</td><td class="no">500 Invalid port</td></tr>
+        <tr><td>true</td><td>true</td><td>rule</td><td class="yes">200</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h4>3. Block schema 扩展</h4>
+    <p>现有 block 已有 <code>parser</code> / <code>parser_confidence</code> / <code>page_number</code> / <code>table_number</code> / <code>figure_number</code>，扩展是自然的：</p>
+
+<pre><code># 新增 block_type
+  "table"    # uniparse type=table
+  "figure"   # uniparse type=image
+  "caption"  # uniparse captions[] / footnotes[]
+  "heading"  # uniparse type=heading
+
+# 新增字段
+  bbox:        [x0, y0, x1, y1]   # 页面坐标，溯源用
+  page_id:     int                # 0-based
+  table_html:  str                # type=table 时的 &lt;table&gt; 原文（行列完整）
+  caption_text:str                # 关联的图注/表注
+  image_ref:   str                # 裁剪 PNG 落盘路径
+  image_sha256:str                # 校验值
+  parser:      "uniparse-1.1.0"   # 复用已有字段，区分来源
+
+# 丢弃
+  pdf_page     # 整页文本 blob，被上述结构化 block 取代</code></pre>
+
+    <div class="note">
+      <b>table_html 必须作为一等 evidence 进入证据池</b>
+      前置验证表明，GO-006 这类值<b>只以单元格形式存在</b>。
+      若把 <code>table_html</code> 再次拍平成纯文本，等于把刚拿到的结构又丢掉。
+      建议按「表 → 行 → 单元格」建立可寻址的 evidence 粒度，
+      使 <code>(Table S2, LSEC, total insertion frequency) = 1.01 ± 0.38 %</code> 可被精确引用。
+    </div>
+
+    <div class="note">
+      <b>页眉页脚</b>
+      uniparse 把 header / footer 分离到 <code>others</code>。这些<b>不应</b>进入 evidence 池 ——
+      现状它们混在 <code>pdf_page</code> 文本里，是检索噪音来源。
+    </div>
+
+    <h4>4. 运行约束</h4>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>约束</th><th>值</th><th>依据</th></tr></thead>
+      <tbody>
+        <tr><td>并发</td><td><b>必须为 1</b></td><td>平台代码写死 <code>SP_WEB_CRAWL_CONCURRENCY must be 1: autopdf/uniparse downstream capacity is single-concurrency</code>，另有全局租约 <code>parser_global_leases</code></td></tr>
+        <tr><td>耗时</td><td>2 页 35s；14 页 45s；17 页 47s</td><td>实测；9 篇串行约 7–10 分钟</td></tr>
+        <tr><td>超时</td><td>建议 1800s</td><td>平台默认 7200s，1805 页 PDF 约 30–40 分钟</td></tr>
+        <tr><td>网络</td><td>走 tailscale IP</td><td>内网 <code>10.119.70.11:8020</code> 实测不可达；
+          <code>10.210.0.61</code> 跳板 2026-07-28 曾整体中断，tailscale 直连未受影响</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="s7">
+  <h2>七、P2｜视觉观察</h2>
+  <p class="sub">打 GO-018。输入由 P1 直接提供。</p>
+
+  <div class="phase">
+    <span class="tag">P2</span>
+    <h3>用 panel crop 生成结构化观察，而非自由结论</h3>
+    <p class="meta">目标：GO-018 ｜ 依赖：P1</p>
+
+    <p>
+      P1 完成后 VLM 的输入已经现成：<b>panel 级 bbox + 裁好的 PNG + 该 panel 的 caption</b>。
+      实测 uniparse 已能把 marker 标签单独抽出（如 <code>"F4/80"</code>、
+      <code>"Antibody staining of Kupffer cells"</code>），
+      GP-006 的 mmc2 中 <code>LYVE</code> 也命中 12 次 ——
+      这正是 GO-002/003/017/018 那一类共定位证据的形态。
+    </p>
+
+<pre><code>{
+  "object_id":    "GP-008-p5-b009",     // 对应 uniparse block
+  "page_id":      5,
+  "bbox":         [302, 334, 542, 573],
+  "image_sha256": "…",                   // 与落盘 PNG 校验一致
+  "panel_label":  "C",
+  "printed_labels": ["F4/80", "GFP"],    // 图中印刷文字，逐字
+  "value":        null,                  // 仅当数值印刷可见时填写
+  "unit":         null,
+  "relationship": "colocalized",         // 受控词表
+  "confidence":   "high|medium|low",
+  "abstained":    false                  // 看不清必须主动拒答
+}</code></pre>
+
+    <div class="warn">
+      <b>硬规则</b>
+      只接受<b>印刷可见</b>或<b>确定性推导</b>的数值。目测估算一律
+      <code>abstained = true</code> 转人工审核。这条规则必须同时作用于 VLM 输出
+      <b>和</b> uniparse 的表格 HTML —— 见第十节。
+    </div>
+  </div>
+</section>
+
+<section id="s8">
+  <h2>八、P3｜候选必答前移</h2>
+  <p class="sub">防止新的静默遗漏。</p>
+
+  <div class="phase">
+    <span class="tag">P3</span>
+    <h3>把 repair 阶段的约束前移到第一次调用</h3>
+    <p class="meta">目标：结构性防漏 ｜ 成本：改 prompt 与 contract</p>
+
+    <p><code>docs/extraction/corrected_compact_workflow.md</code> 已经写明这条原则：</p>
+<pre><code>A task response must account for every candidate ID;
+silence is not a valid disposition.</code></pre>
+
+    <p>
+      <b>但它只在 repair 阶段执行，第一次调用没有执行。</b>
+      结果是 GP-001 / GP-003 / GP-009 第一次调用返回 <b>0 条 outcome</b>，
+      而没有人知道这是「论文里真没有」还是「模型漏了」。
+    </p>
+
+    <ol>
+      <li>抽取前，从完整证据视图确定性枚举出 <code>(实验 × 终点)</code> 网格</li>
+      <li>每个格子是一个<b>必须回答</b>的槽位，随 packet 一并下发</li>
+      <li>模型对每个槽位必须给出「值」或「显式 unresolved + 理由」</li>
+      <li>validation 校验槽位覆盖完整性，缺失即判定 invalid</li>
+    </ol>
+
+    <div class="note">
+      <b>思路来源</b>
+      cuhk_law 项目的核心可迁移经验：<b>用确定性枚举取代相似度选择</b>。
+      它按 chapter 把该章全部法条无差别拉出（无 top-k、无预算裁剪），
+      召回由架构保证而非由打分器决定。可迁移的是这个<b>原则</b>，
+      不是知识图谱本身 —— 引入 Neo4j 对提高单篇 recall 帮助有限。
+    </div>
+  </div>
+</section>
+
+<section id="s9">
+  <h2>九、确定性 ID</h2>
+  <p class="sub">可复现性是这个项目的立身之本。</p>
+
+  <p>
+    实测：用当前代码重建 compact packet，<b>9 篇里有 6 篇</b>的 evidence 集合与已提交基线不同
+    （GP-001/002/003/006/008/009，GP-006 差异 596 行）。同机重跑是确定性的，
+    因此这是代码/数据漂移 —— 仓库里的基线 packet 并非当前代码从当前 retrieval_packets 生成。
+  </p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th></th><th>现状</th><th>建议</th></tr></thead>
+    <tbody>
+      <tr><td>Evidence ID</td><td><code>GP-001-E-0431f0f16a6f0571</code>（内容 hash，内容一动即漂移）</td><td>结构化确定性 ID，如 <code>GP-006-mmc1-p01-tabS2-r2-c7</code></td></tr>
+      <tr><td>写入语义</td><td>覆盖式</td><td>幂等 upsert，重跑结果一致</td></tr>
+      <tr><td>非确定性</td><td><code>run_enforced_compact_workflow_local</code> 因 set 迭代序，两次运行 text_tasks 不同</td><td>固定 <code>PYTHONHASHSEED</code>，或对集合显式排序</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s10">
+  <h2>十、风险与边界</h2>
+
+  <div class="warn">
+    <b>uniparse 是 VLM 驱动的解析器，不是确定性解析器</b>
+    它跑在 vLLM 上（<code>/app/models/uniparse</code>，max ctx 16384）。
+    那份漂亮的表格 HTML <b>是模型输出，不是版面真值</b>。
+    前置验证证明它在 GP-006 上是对的，<b>但这不等于它在所有论文上都对</b>。
+    必须对 uniparse 的表格与图注结果<b>额外加一层校验</b>（建议：与表格裁剪 PNG 交叉核对，
+    或对关键数值要求人工确认），否则只是把幻觉从抽取阶段挪到解析阶段 ——
+    而且更隐蔽，因为它长得像结构化数据。
+  </div>
+
+  <div class="warn">
+    <b>不要因为召回上升就宣布成功</b>
+    在 P0-b 完成前，任何召回提升都无法与「抽得更激进带来的噪音」区分开。
+  </div>
+
+  <div class="note">
+    <b>GO-017 的性质</b>
+    Day7 v4.1 与 Day8 两次独立裁定均判定可得文本属推断而非实测（D8M-0108）。
+    这是<b>科学裁定标准</b>问题，不是工程问题。
+    强行做到 15/15 大概率意味着放松了裁定标准 —— 那不是提升，是拆门槛。
+    <b>现实终点是 13–14/15。</b>
+  </div>
+
+  <div class="note">
+    <b>7022 服务端不做改动（已确认）</b>
+    该容器的 <code>heading_level_llm</code> 配置缺陷已定位，但<b>不重启、不改配置</b>：
+    GPU4 由 7 个容器共享（uniparse 45.7 GB / 其余 26.0 GB / 共 71.7 of 81.9 GB），
+    而 vLLM 以 <code>--gpu-memory-utilization 0.8</code>（65.5 GB）启动，
+    停机后可用仅约 55.9 GB，<b>重启大概率因显存不足失败</b>，
+    且 <code>RestartPolicy = no</code> 无自动恢复。此外 <code>config.yaml</code> 在镜像层内、
+    无挂载，改动不持久。
+    AI-LNP 侧「不传 <code>heading_level_enabled</code>」即可完全规避，零风险。
+    治本的代码补丁已另行提交至本地分支 <code>fix/heading-level-llm-base-url-validation</code>
+    （上游仓库为 <code>gitlab.sh.sensetime.com/llm-data/uniparse-pdf</code>，未推送）。
+  </div>
+</section>
+
+<section id="s11">
+  <h2>十一、验收标准与排期</h2>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>#</th><th>阶段</th><th>状态</th><th>成本</th><th>目标</th><th>验收标准</th></tr></thead>
+    <tbody>
+      <tr class="hl">
+        <td>0</td><td><b>P1 前置验证</b></td><td class="yes">✓ 已完成</td><td>0 API</td><td>GO-006 可行性</td>
+        <td class="yes">已通过：uniparse 从 Table S2 提取出 <code>1.01 ± 0.38 %</code>，与金标准逐字段吻合</td>
+      </tr>
+      <tr>
+        <td>1</td><td><b>P0-b</b> 精度指标</td><td>待做</td><td>纯本地</td><td>全部前提</td>
+        <td>evaluation.json 输出 precision / false_additions / evidence_accuracy；对当前 10/15 基线给出精度基准值</td>
+      </tr>
+      <tr>
+        <td>2</td><td><b>P0-a</b> 完整证据视图</td><td>待做</td><td>2 次调用</td><td>GO-002/003</td>
+        <td>GP-004、GP-006 用全文包重跑；GO-003 回来则确认打分器压制为主因（<code>LYVE</code> 在 blocks 中有 10 次）</td>
+      </tr>
+      <tr>
+        <td>3</td><td><b>P1</b> uniparse ingestion</td><td>待做</td><td>中</td><td>GO-006</td>
+        <td>GP-006 补充材料入库后，<code>(Table S2, LSEC, total insertion frequency)</code> 可作为单元格级 evidence 被精确引用</td>
+      </tr>
+      <tr>
+        <td>4</td><td><b>P2</b> 视觉观察</td><td>待做</td><td>中</td><td>GO-018</td>
+        <td>panel crop 产出符合契约的结构化观察；无印刷依据的数值全部 abstained</td>
+      </tr>
+      <tr>
+        <td>5</td><td><b>P3</b> 候选必答前移</td><td>待做</td><td>改 prompt</td><td>防新漏</td>
+        <td>GP-001/003/009 不再出现「返回 0 条且无说明」；每个候选均有 disposition</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <b>建议的下一步</b>
+    前置验证已消除 P1 的不确定性，因此顺序建议为：
+    <b>先做 P0-b（纯本地、零成本）</b> —— 因为紧接着就要向库里引入 table_html 与视觉观察两类新证据源，
+    在精度指标缺位时扩大输入面是危险的；<b>再做 P0-a</b>（2 次调用，验证 GO-003）；<b>然后 P1</b>。
+  </div>
+
+  <h3>不做什么</h3>
+  <ul>
+    <li><b>不为省钱更换抽取引擎。</b>9 篇金标准全流程 token 成本不到 1 美元，成本从来不是约束条件。</li>
+    <li><b>不引入 Neo4j 做全局图。</b>只有跨论文查询才划算，对提高单篇 recall 帮助有限。先解决「看不见」，再考虑「怎么存」。</li>
+    <li><b>不走 OCR MCP Server 或 documentparser /upload。</b>两者都会碾平你唯一需要的结构。</li>
+    <li><b>不重启 7022 的 uniparse 容器。</b>见第十节。</li>
+    <li><b>不追 15/15。</b>见第十节。</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="shell">
+    AI-LNP · 改造设计 v2 · 2026-07-29 ·
+    实测数据来自对 uniparse 7022 容器、OCR MCP Server（leapstack-ocr v1.27.1）、
+    PMC / Europe PMC 与 AI-LNP 仓库基线的直接验证。
+    GP-006 前置验证已通过；现实目标 13–14/15，非 15/15。
+  </div>
+</footer>
+
+</body>
+</html>
