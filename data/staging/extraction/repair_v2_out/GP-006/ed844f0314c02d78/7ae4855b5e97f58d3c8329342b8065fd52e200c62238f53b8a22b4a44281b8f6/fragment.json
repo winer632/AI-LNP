@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-6b23a27057538b1e"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The supplied evidence is a partial methods statement describing liver perfusion and NATEM/ROTEM measurement, but does not report an outcome endpoint, result, comparator, value, unit, or sufficient experiment context."
+}

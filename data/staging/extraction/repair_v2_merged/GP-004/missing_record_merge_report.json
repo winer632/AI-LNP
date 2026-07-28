@@ -1,0 +1,88 @@
+{
+  "merge_version": "missing-record-merge-1.0.0",
+  "paper_id": "GP-004",
+  "source_result_sha256": "05a6a5f1b834d1fbccc91489dcc416423e8712a060414d2527b6282101f0467a",
+  "result_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_merged/GP-004/final_result.json",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-4a2f1296751af41e",
+    "OC-675ff78454d65c26",
+    "OC-d16b5d218b5f5f5a",
+    "OC-d76e38c26ff535e0",
+    "OC-e42d02cd0aa8f42f",
+    "OC-ec2f4916beb7b305",
+    "OC-f83a3866b46afe29"
+  ],
+  "inputs": [
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_06.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/0abe31900c41ebcb/108188a3d0f1df377bde2a64d7cfb03453239a443018a5ac28c4ea824aea1ec8/fragment.json",
+      "candidate_ids": [
+        "OC-ec2f4916beb7b305"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_01.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/1c3bb6d244dd6d58/05a123e000cd9cf556c20204de6ce4caf36c1d39b582f197ae46856fe8973d95/fragment.json",
+      "candidate_ids": [
+        "OC-675ff78454d65c26"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_07.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/38554e6ef0a94721/de83ebcef665ec5a6a599af1d002adea6dbcf7b805a0895c824f98c1a4bee47c/fragment.json",
+      "candidate_ids": [
+        "OC-d16b5d218b5f5f5a"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_04.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/91251bf9aec0e485/adb955e0cb86cd93273ba52b80e57fafc8970c16aa68e1a4b0b5824068405481/fragment.json",
+      "candidate_ids": [
+        "OC-e42d02cd0aa8f42f"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_05.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/9f240ee672569146/ef2bfcdc29353b576e6bced3e173900a49668c86622064d4119d159597c1038a/fragment.json",
+      "candidate_ids": [
+        "OC-4a2f1296751af41e"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_03.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/a1f982be9d827ce4/0ba59996033ddc8cdc1d20bd23d9acf5017027e5b2c46029a341f762646545ad/fragment.json",
+      "candidate_ids": [
+        "OC-f83a3866b46afe29"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_02.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/f57e5b8667c81d18/84dd5d679e4bce82bf89e2718ca95c8e9075b3f30491a181b6fcaf056ee62f87/fragment.json",
+      "candidate_ids": [
+        "OC-d76e38c26ff535e0"
+      ],
+      "disposition": "unresolved"
+    }
+  ],
+  "validation_status": "valid",
+  "coverage_status": "review_unmatched_groups",
+  "coverage_unresolved_candidate_ids": [
+    "OC-4a2f1296751af41e",
+    "OC-675ff78454d65c26",
+    "OC-6ef5a85bdd95807e",
+    "OC-ac30f8413d9525a1",
+    "OC-d16b5d218b5f5f5a",
+    "OC-d76e38c26ff535e0",
+    "OC-e42d02cd0aa8f42f",
+    "OC-ec2f4916beb7b305",
+    "OC-f83a3866b46afe29"
+  ],
+  "finalization_allowed": false
+}

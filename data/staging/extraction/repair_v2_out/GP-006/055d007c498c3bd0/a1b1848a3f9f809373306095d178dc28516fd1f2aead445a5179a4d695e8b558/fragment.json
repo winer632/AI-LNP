@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-d6d8ec31fcbb44d8"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The evidence reports FVIII activity in HemA mice but does not identify the experiment or formulation needed to link a new outcome record without inventing an association."
+}

@@ -1,0 +1,55 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-e2d4bb67d2cf343a"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-e2d4bb67d2cf343a",
+      "experiment_id": "E1",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "endpoint": {
+        "value": "insertion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ef798f3259752156"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reported only as less than 1%; no exact numeric value provided."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reported only as part of an inequality."
+      },
+      "qualitative_outcome": {
+        "value": "Less than 1% insertion frequency was observed.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ef798f3259752156"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

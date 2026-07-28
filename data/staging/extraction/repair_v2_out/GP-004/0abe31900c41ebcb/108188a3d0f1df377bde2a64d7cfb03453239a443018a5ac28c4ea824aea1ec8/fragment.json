@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-ec2f4916beb7b305"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The evidence reports increased CD45+ cell influx after 3 weeks of CDE diet versus untreated mice, but does not identify an experiment or formulation linkage required to create a non-duplicative outcome record."
+}

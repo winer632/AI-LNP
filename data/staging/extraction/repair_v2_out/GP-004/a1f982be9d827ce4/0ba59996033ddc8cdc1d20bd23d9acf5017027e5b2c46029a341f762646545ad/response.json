@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-f83a3866b46afe29\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports similar liver protein-expression levels and kinetics for two IV routes, but does not identify the experiment, formulation, payload, routes, assay, or a permissible record identifier needed to create a non-duplicative outcome.\"}",
+  "elapsed_seconds": 10.266,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-f83a3866b46afe29\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports similar liver protein-expression levels and kinetics for two IV routes, but does not identify the experiment, formulation, payload, routes, assay, or a permissible record identifier needed to create a non-duplicative outcome.\"}\n"
+}

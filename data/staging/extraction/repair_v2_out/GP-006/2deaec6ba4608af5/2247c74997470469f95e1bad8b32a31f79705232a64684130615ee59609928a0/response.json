@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-703929685a082d76\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence reports only luciferase-expression normalization and the unit RLU/mg; it does not provide an outcome value, endpoint-specific result, comparator, or experiment linkage sufficient to recover a new record.\"}",
+  "elapsed_seconds": 8.795,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-703929685a082d76\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence reports only luciferase-expression normalization and the unit RLU/mg; it does not provide an outcome value, endpoint-specific result, comparator, or experiment linkage sufficient to recover a new record.\"}\n"
+}

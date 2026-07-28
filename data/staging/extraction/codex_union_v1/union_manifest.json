@@ -2,9 +2,9 @@
   "union_version": "union-extraction-1.0.0",
   "note": "Recall-first ensemble over configurations. Every record was produced and validated by one of the input runs.",
   "run_roots": [
-    "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_merged",
-    "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/p1_exp/extraction_sc",
-    "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/p1_exp/extraction_p3_compact",
+    "data/staging/extraction/repair_v2_merged",
+    "data/staging/extraction/extraction_sc",
+    "data/staging/extraction/extraction_p3_compact",
     "data/staging/extraction/codex_treatment_full_v1",
     "data/staging/extraction/codex_control_compact_v1"
   ],

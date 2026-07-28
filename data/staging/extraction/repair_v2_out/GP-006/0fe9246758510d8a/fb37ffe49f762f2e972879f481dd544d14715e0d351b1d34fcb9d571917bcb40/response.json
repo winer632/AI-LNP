@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-be6096c1e0cde0ec\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports two insertion-pattern frequencies but does not identify the corresponding experiment, assay, endpoint mapping, or comparator; assigning an outcome record would require unsupported identifiers or fields.\"}",
+  "elapsed_seconds": 8.976,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-be6096c1e0cde0ec\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports two insertion-pattern frequencies but does not identify the corresponding experiment, assay, endpoint mapping, or comparator; assigning an outcome record would require unsupported identifiers or fields.\"}\n"
+}

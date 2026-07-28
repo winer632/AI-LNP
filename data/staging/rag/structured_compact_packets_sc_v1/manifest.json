@@ -1,0 +1,21 @@
+{
+  "packet_version": "structured-compact-1.0.0",
+  "budget_tokens": 16000,
+  "papers": [
+    {
+      "budget_tokens": 16000,
+      "selected_evidence": 204,
+      "structured_evidence": 91,
+      "filler_evidence": 113,
+      "excluded_evidence": 1573,
+      "estimated_evidence_tokens": 15976,
+      "structured_evidence_tokens": 5619,
+      "structured_evidence_over_budget": false,
+      "paper_id": "GP-006",
+      "full_view_evidence": 1777,
+      "full_view_sources": 288,
+      "selected_sources": 62,
+      "packet_checksum": "20cec0036412741b9ca34e14e920fbe244f19ee48f50d33a6b25c35d6d303bd1"
+    }
+  ]
+}

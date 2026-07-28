@@ -223,5 +223,7 @@ committed.
 
 - `docs/extraction/corrected_compact_workflow.md`
 - `docs/extraction/outcome_complexity_workflow.md`
+- `docs/extraction/union_provenance.md` — which run produced each of the union's
+  51 records, and the command that rebuilds the union from a fresh clone
 - `reports/extraction/final_gold_dynamic_v1/evaluation.json`
 - `reports/extraction/day5_afternoon_g1/comparison.md`

@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-dea418b08fadbcee"
+  ],
+  "candidate_ids": [
+    "OC-e2d4bb67d2cf343a"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-ef798f3259752156",
+      "text": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed.",
+      "source_ids": [
+        "S-23e0134068c1"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "c3a92021bee7660ee07c0732d688b8af84c2d032bbeaa13deeb7392e17b81d21"
+}

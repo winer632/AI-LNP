@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-68cb6932fdd69017\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence describes an in vitro incubation setup but reports no assay result, endpoint, comparator, or outcome value needed to recover the candidate outcome.\"}",
+  "elapsed_seconds": 6.4,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-68cb6932fdd69017\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence describes an in vitro incubation setup but reports no assay result, endpoint, comparator, or outcome value needed to recover the candidate outcome.\"}\n"
+}

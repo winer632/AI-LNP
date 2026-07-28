@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-827d27435abdd312"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The supplied evidence is a fragmented statement without a recoverable experiment context, assay, endpoint, comparator, or unambiguous outcome value/unit for a new record."
+}

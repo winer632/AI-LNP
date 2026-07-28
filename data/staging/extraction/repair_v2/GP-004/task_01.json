@@ -1,0 +1,38 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-004",
+  "route_ids": [
+    "RT-ed9949b39ed7f8fa"
+  ],
+  "candidate_ids": [
+    "OC-675ff78454d65c26"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-004-E-440906cb169c4960",
+      "text": "Thereafter, bioluminescence decreased progressively with an average rate of one log per day to finally reach baseline activity at day 8 post-injection (Fig.",
+      "source_ids": [
+        "S-6206e3e3ebaa"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "05a6a5f1b834d1fbccc91489dcc416423e8712a060414d2527b6282101f0467a",
+  "source_inventory_sha256": "04e58e5184b63b163e448c327fc7498492ce7825c27638a818fb2cb0df99243b",
+  "task_checksum": "ff27376cb0f932a31aa7d56adb66116e9c0e26107d132e53d9858123f0287459"
+}

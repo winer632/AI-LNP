@@ -1,0 +1,37 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-008",
+  "route_ids": [
+    "RT-9c1a9bb712371a19"
+  ],
+  "candidate_ids": [
+    "OC-150f3861bcac0be7"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-d3d28c55624f3463",
+      "text": "(F) Vlnplot analysis of the 458 markers gene expression in various macrophage clusters between the Fibrosis (blue) and LNP 459 (pink) groups.",
+      "source_ids": [
+        "S-cdd3cd145a49"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1",
+    "F2"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "source_inventory_sha256": "b211de83b66b98330a8f0f537b44161c4be0b31874ce7aa5f20f7b8667588ad8",
+  "task_checksum": "c9892fac280ea570baf729a4ca229670ed2bf1ad0aee6f782e3361163511cb90"
+}

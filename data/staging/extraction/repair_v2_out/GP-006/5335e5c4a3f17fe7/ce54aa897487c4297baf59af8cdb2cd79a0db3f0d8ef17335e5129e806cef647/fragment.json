@@ -1,0 +1,61 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-fa3d41fbbfb8dbc9"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-fa3d41fbbfb8dbc9",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "genomic DNA indel analysis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "indel mutation rate in mouse F8 exon 1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 23.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "mF8sgRNA induced an indel variant in mouse F8 exon 1.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

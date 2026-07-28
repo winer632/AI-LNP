@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-005",
+  "route_ids": [
+    "RT-5c8efc12f850dc64"
+  ],
+  "candidate_ids": [
+    "OC-88bd456605ba8727"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-005-E-e37191a51c55b744",
+      "text": "In the final stage of gene expression analysis, we focused on identifying specific key genes that fell into 3 distinct categories: a) genes specific to each cell type that did not respond to LNP, b) genes upregulated, and c) genes downregulated by LNP in KC or HC.",
+      "source_ids": [
+        "S-b0969b78caec"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "68b3be509bff85ef6da30298dd2465fc9a94053327583f70462fbfa542840cb2",
+  "source_inventory_sha256": "48c0cab28d0e0209b751acee15f0337ecec0b0090c3bbcb0de80eb4d8248a3c6",
+  "task_checksum": "132fb8b32a047388fa6d96d6c836cbcf1bc663cfc13a33a25244c476eea02c2b"
+}

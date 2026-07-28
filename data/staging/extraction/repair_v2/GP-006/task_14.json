@@ -1,0 +1,41 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-43b77c62349ed264"
+  ],
+  "candidate_ids": [
+    "OC-703929685a082d76"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-42aad5557a4b8d6e",
+      "text": "Luciferase expression was normalized by total protein, measured by BCA assay kit (Bio-Rad, USA), and reported as RLU/mg.",
+      "source_ids": [
+        "S-03587aa43190"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-e77f320b73e493a8",
+      "text": "Luciferase expression was normalized by total protein, measured by BCA assay kit (Bio- Statistical analyses Rad, USA), and reported as RLU/mg.",
+      "source_ids": [
+        "S-d439bf18428e"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "f2c76c98a2482890adab98db9a6c01cd20a6b0cdc89edc45304f42f38f83c8b1"
+}

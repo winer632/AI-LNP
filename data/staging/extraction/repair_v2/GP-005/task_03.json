@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-005",
+  "route_ids": [
+    "RT-69991ad0ed8e1d56"
+  ],
+  "candidate_ids": [
+    "OC-2415ff8ef701f5db"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-005-E-ac7e05a4c142ccbb",
+      "text": "We therefore studied the spatial distribution of EGFP in vivo using IVM following intravenous injection of LNP1 at the dosage of 2 mg k−1g into C57BL6J wild‐type mice (Figure 1A).",
+      "source_ids": [
+        "S-1d9698a854c4"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "68b3be509bff85ef6da30298dd2465fc9a94053327583f70462fbfa542840cb2",
+  "source_inventory_sha256": "48c0cab28d0e0209b751acee15f0337ecec0b0090c3bbcb0de80eb4d8248a3c6",
+  "task_checksum": "e8dc02d6fcd12b7f8252c17f9aa9d5d529d540909a1f6db04d840cb37ca94ef6"
+}

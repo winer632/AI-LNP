@@ -1,0 +1,35 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-f5ffd82016406bd1"
+  ],
+  "candidate_ids": [
+    "OC-1aae7f686c18db97"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-a646b1030db7fdba",
+      "text": "(B) To determine the LSEC-targeting ability, mice were intravenously injected with 1.2 mg/kg of GFP LNPs.",
+      "source_ids": [
+        "S-55f0be143c71",
+        "S-fec7cd0399d1"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "a332db62dddcde95f8963ee09f26160b36f7cb56443d2c9b5f1b587964b50522"
+}

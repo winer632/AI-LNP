@@ -1,0 +1,346 @@
+{
+  "inventory_version": "full-outcome-inventory-1.0.0",
+  "paper_id": "GP-004",
+  "source_packet_checksum": "af5d0698a9739e760babbf53724965cddb1716e3ab89188e5258425239f68e22",
+  "raw_candidate_count": 14,
+  "retained_candidates": [
+    {
+      "candidate_id": "OC-e42d02cd0aa8f42f",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-e29c5e3c31a38827",
+        "GP-004-E-b293f56409c89709"
+      ],
+      "source_ids": [
+        "S-042decafcf9d"
+      ],
+      "evidence_text": "Mice were either 10–12 week-old Bl6/C57 female for the liver injury models or 7–8 week-old Balb/c female (purchased from the Jackson Laboratory, Bar Harbor, ME) to study the kinetics of expression and identity of cell types transfected in vivo using luciferase- and eGFP mRNA-LNP at homeostasis. Mice were administered 100 μl of diluted mRNA-LNP-encoding luciferase (5 μg), eGFP (10 μg), HGF (10 μg), Poly(C) (10 μg), or combination HGF (5 μg) + EGF (5 μg) intravenously by either retro-orbital or tail vein injections using 1/2cc lo-dose insulin syringes (EXELINT).",
+      "direct_signal_terms": [
+        "12 week",
+        "8 week",
+        "5 μg",
+        "10 μg"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-518896544650d441",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-a72862f18ec2ffcd",
+        "GP-004-E-ac5ffef51d25a107",
+        "GP-004-E-fd825b27dcaebf09",
+        "GP-004-E-9727e33fb834be68"
+      ],
+      "source_ids": [
+        "S-263a2be8ee47"
+      ],
+      "evidence_text": "To further evaluate the histologic specificity of IV-injected mRNA-LNP, we performed immunostaining on sections from liver, lung, intestine, and spleen 5 h following a single injection of mRNA-LNP encoding enhanced green fluorescent protein (eGFP) (10 μg eGFP mRNA-LNP/20 g body weight) to identify eGFP+ transfected cells. 1), eGFP expression was absent in parenchymal cells of the other organs analyzed (Supplementary Figs. Notable eGFP expression was observed in the red pulp area of spleen that mainly overlapped with CD45 and CD31 expression, suggesting that the eGFP+ cells in spleen were blood and endothelial cells (Supplementary Fig. The same pattern was observed for intestine where eGFP expression was confined to the lamina propria, which contains small blood and lymph vessels as well as blood cells (Supplementary Fig.",
+      "direct_signal_terms": [
+        "10 μg",
+        "absent",
+        "table eGFP",
+        "observed",
+        "Fig. The"
+      ],
+      "figure_or_table": "Supplementary Fig. The",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_result_language"
+      ]
+    },
+    {
+      "candidate_id": "OC-88f65d75fdf21989",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-1f28a42d83d7b914",
+        "GP-004-E-0e95fa28bea7a24c"
+      ],
+      "source_ids": [
+        "S-cc46e53e45ad"
+      ],
+      "evidence_text": "eGFP expression was absent in CK19+ cholangiocytes and α-SMA+ vascular smooth muscle cells, while few F4/80+ Kupffer cells expressed eGFP. Significant percentages of these cell populations express eGFP, including 41.5 ± 14.6% CD11b+ cells, 34.1 ± 2.2% CD45+ cells, and 70.7 ± 9% CD31+ cells (Fig.",
+      "direct_signal_terms": [
+        "absent",
+        "few",
+        "Significant",
+        "±",
+        "14.6%",
+        "2.2%",
+        "9%"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-4a2f1296751af41e",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-5231570dd3626ea0",
+        "GP-004-E-4e62cb53c25d4df7"
+      ],
+      "source_ids": [
+        "S-14fea9da55ba",
+        "S-9f22cf8ace89"
+      ],
+      "evidence_text": "Moreover, lower ASGPR expression observed in the event of diseases such as hepatocellular carcinoma and hepatitis may diminish effectiveness of the ASGPR-based strategy treatment 36.” 2.",
+      "direct_signal_terms": [
+        "lower",
+        "observed"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-f83a3866b46afe29",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-aa1c2885867bfc0a"
+      ],
+      "source_ids": [
+        "S-6206e3e3ebaa"
+      ],
+      "evidence_text": "Both IV delivery routes resulted in similar protein expression levels and kinetics, indicating either approach can be employed for transient expression of proteins into the liver.Fig.",
+      "direct_signal_terms": [
+        "resulted"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-d76e38c26ff535e0",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-67be9e835a79ab2f",
+        "GP-004-E-525e4ad8fb4e4525"
+      ],
+      "source_ids": [
+        "S-6206e3e3ebaa"
+      ],
+      "evidence_text": "Here, we determined the organ distribution and duration of protein activity produced by firefly luciferase encoding mRNA-LNP (Luc mRNA-LNP) during a 1-week time course (at 5 h, days 1, 2, 3, 6, and 8) following a single IV injection (5 μg Luc mRNA-LNP/20 g body weight). Both delivery methods led to liver restricted Luc mRNA-LNP expression as measured by bioluminescence (Fig.",
+      "direct_signal_terms": [
+        "5 μg",
+        "measured"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-6ef5a85bdd95807e",
+      "paper_id": "GP-004",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "source_ids": [
+        "S-d7b338b15c20"
+      ],
+      "evidence_text": "In addition to the PolyC loaded LNP, we have utilized LNP loaded with Luciferase mRNA, and showed that the combination of HGF/EGF mRNA-LNP greatly reduce steatosis by inducing release of cholesterol in serum and decrease of Oil Red O staining as well as restoring baseline levels of serum ALT compared to both PolyC RNA-LNPs and Luciferase mRNA-LNP with the same significance (p<0.005) for both controls (new Figure 4C and 4D, new Supplementary Figure 8).",
+      "direct_signal_terms": [
+        "showed",
+        "compared",
+        "Figure 4C",
+        "Figure 8"
+      ],
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-d16b5d218b5f5f5a",
+      "paper_id": "GP-004",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-004-E-fc1b2e9e166859e2"
+      ],
+      "source_ids": [
+        "S-d7b338b15c20"
+      ],
+      "evidence_text": "We showed that single injections of either HGF or EGF mRNA-LNPs decreased steatosis, although combination of both mRNA-LNP consistently resulted in significantly more efficient steatosis reversion (Fig.",
+      "direct_signal_terms": [
+        "showed",
+        "decreased",
+        "resulted",
+        "significant"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_result_language"
+      ]
+    },
+    {
+      "candidate_id": "OC-675ff78454d65c26",
+      "paper_id": "GP-004",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-004-E-440906cb169c4960"
+      ],
+      "source_ids": [
+        "S-6206e3e3ebaa"
+      ],
+      "evidence_text": "Thereafter, bioluminescence decreased progressively with an average rate of one log per day to finally reach baseline activity at day 8 post-injection (Fig.",
+      "direct_signal_terms": [
+        "decreased"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-ac30f8413d9525a1",
+      "paper_id": "GP-004",
+      "endpoint_family": "toxicity",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "source_ids": [
+        "S-d7b338b15c20"
+      ],
+      "evidence_text": "In addition to the PolyC loaded LNP, we have utilized LNP loaded with Luciferase mRNA, and showed that the combination of HGF/EGF mRNA-LNP greatly reduce steatosis by inducing release of cholesterol in serum and decrease of Oil Red O staining as well as restoring baseline levels of serum ALT compared to both PolyC RNA-LNPs and Luciferase mRNA-LNP with the same significance (p<0.005) for both controls (new Figure 4C and 4D, new Supplementary Figure 8).",
+      "direct_signal_terms": [
+        "showed",
+        "compared",
+        "Figure 4C",
+        "Figure 8"
+      ],
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-ec2f4916beb7b305",
+      "paper_id": "GP-004",
+      "endpoint_family": "toxicity",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "source_ids": [
+        "S-a96b8533bdb9",
+        "S-f83607381c9a"
+      ],
+      "evidence_text": "As described in the CDE-induced liver injury model, influx of CD45+ cells increased after 3 weeks of CDE diet compared to untreated mice.",
+      "direct_signal_terms": [
+        "increased",
+        "3 weeks",
+        "compared"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    }
+  ],
+  "dispositions": [
+    {
+      "candidate_id": "OC-e42d02cd0aa8f42f",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-e42d02cd0aa8f42f",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-518896544650d441",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-518896544650d441",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-88f65d75fdf21989",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-88f65d75fdf21989",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-4a2f1296751af41e",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-4a2f1296751af41e",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-f83a3866b46afe29",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-f83a3866b46afe29",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-497fb2743cabc900",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-4a2f1296751af41e",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-d1bcdf6d436f92d1",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-e42d02cd0aa8f42f",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-d76e38c26ff535e0",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-d76e38c26ff535e0",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-6ef5a85bdd95807e",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-6ef5a85bdd95807e",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-d16b5d218b5f5f5a",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-d16b5d218b5f5f5a",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-675ff78454d65c26",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-675ff78454d65c26",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-ac30f8413d9525a1",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-ac30f8413d9525a1",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-ec2f4916beb7b305",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-ec2f4916beb7b305",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-cfd19f26417f2c38",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-ec2f4916beb7b305",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    }
+  ],
+  "candidate_recall_gate": "needs_human_review",
+  "paid_api_requests": 0
+}

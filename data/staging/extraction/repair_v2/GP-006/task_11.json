@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-cfff9d04e3cf9c72"
+  ],
+  "candidate_ids": [
+    "OC-d6d8ec31fcbb44d8"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-0e932dc79aa7ba74",
+      "text": "HemA mice displayed approximately 2.6% FVIII activity (Fig- ure 4A).",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "addb8a3bd3e037a411b48c4b396dfb79ba085dfe27ffa0d22718109571251e56"
+}

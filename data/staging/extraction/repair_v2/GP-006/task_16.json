@@ -1,0 +1,35 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-ef4a5f14a5bb69f8"
+  ],
+  "candidate_ids": [
+    "OC-992ce3528e9ad840"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-566609fc939d51d8",
+      "text": "Colocalization of LNPs and vascular cells were indicated by white arrowheads.",
+      "source_ids": [
+        "S-55f0be143c71",
+        "S-fec7cd0399d1"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "40300a11348f83f2ee90fc90eff219ca2ad4268de2f1382100cbc4ab68fdffc2"
+}

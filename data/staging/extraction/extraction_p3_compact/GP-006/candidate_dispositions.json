@@ -1,0 +1,197 @@
+[
+  {
+    "candidate_id": "OC-992ce3528e9ad840",
+    "disposition": "unresolved",
+    "reason": "Colocalization is reported but the packet gives no usable quantitative result."
+  },
+  {
+    "candidate_id": "OC-cf67f0bbb37c4d51",
+    "disposition": "unresolved",
+    "reason": "Colocalization is reported but the packet gives no usable quantitative result."
+  },
+  {
+    "candidate_id": "OC-1aae7f686c18db97",
+    "disposition": "not_an_outcome",
+    "reason": "This is an injection-method statement, not a reported result."
+  },
+  {
+    "candidate_id": "OC-7ef949313622e346",
+    "disposition": "not_an_outcome",
+    "reason": "This is an injection-method statement, not a reported result."
+  },
+  {
+    "candidate_id": "OC-83293575f233009f",
+    "disposition": "not_an_outcome",
+    "reason": "This is prior hydrodynamic plasmid work, not an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-703929685a082d76",
+    "disposition": "not_an_outcome",
+    "reason": "This describes assay normalization, not a result."
+  },
+  {
+    "candidate_id": "OC-42b55c575d866122",
+    "disposition": "not_an_outcome",
+    "reason": "This describes assay normalization, not a result."
+  },
+  {
+    "candidate_id": "OC-563eb562f6be8a11",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-179a7e222a4e1927",
+    "disposition": "not_an_outcome",
+    "reason": "The cited result is from a non-LNP in-vitro sgRNA experiment."
+  },
+  {
+    "candidate_id": "OC-f4662bac9b4a5cc3",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-842707c55fd53a55",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-827d27435abdd312",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-be6096c1e0cde0ec",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-c0903300f94dcdae",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-fbed8d047f393e0b",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-6b23a27057538b1e",
+    "disposition": "not_an_outcome",
+    "reason": "This is a cell-isolation and assay-method statement."
+  },
+  {
+    "candidate_id": "OC-34271609df560893",
+    "disposition": "not_an_outcome",
+    "reason": "This reports sgRNA target design, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-577d7d7fe2448951",
+    "disposition": "not_an_outcome",
+    "reason": "This is a hydrodynamic plasmid-delivery result, not an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-da7b686c24311491",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-c028b1bbdc56681a",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-1c3f88c83b5cb897",
+    "disposition": "unresolved",
+    "reason": "The packet's merged text does not provide a usable LNP-linked off-target result."
+  },
+  {
+    "candidate_id": "OC-84d16f36e8abc183",
+    "disposition": "not_an_outcome",
+    "reason": "The cited indel result is from a non-LNP in-vitro experiment."
+  },
+  {
+    "candidate_id": "OC-bb6af130607dd944",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-fa3d41fbbfb8dbc9",
+    "disposition": "not_an_outcome",
+    "reason": "The cited indel result is from a non-LNP in-vitro experiment."
+  },
+  {
+    "candidate_id": "OC-a5cbad64b11d3b45",
+    "disposition": "not_an_outcome",
+    "reason": "This is an interpretation of results, not a measured value."
+  },
+  {
+    "candidate_id": "OC-3b3796b7e0c32c07",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-f3f78b36f67b4f7c",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-e2d4bb67d2cf343a",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-29c27b72a5ac6690",
+    "disposition": "not_an_outcome",
+    "reason": "The cited indel result is from a non-LNP in-vitro experiment."
+  },
+  {
+    "candidate_id": "OC-22a1c323615b9066",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-4ec099151fb53107",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-d6d8ec31fcbb44d8",
+    "disposition": "not_an_outcome",
+    "reason": "This FVIII result follows hydrodynamic plasmid injection, not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-7e02be28ef250a82",
+    "disposition": "not_an_outcome",
+    "reason": "This is an assay-method statement for hydrodynamic plasmid injection."
+  },
+  {
+    "candidate_id": "OC-49c42aadb9e52528",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-85f7147389be1c5a",
+    "disposition": "not_an_outcome",
+    "reason": "This FVIII result follows hydrodynamic plasmid injection, not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-46a32d7d3a3de39d",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-002e3262a80d3391",
+    "disposition": "not_an_outcome",
+    "reason": "The cited text is a merged fragment and does not provide a usable LNP-linked outcome."
+  },
+  {
+    "candidate_id": "OC-da9a3d11dcdc94d9",
+    "disposition": "not_an_outcome",
+    "reason": "This is an interpretation of clotting results, not a directly reported measurement."
+  },
+  {
+    "candidate_id": "OC-c649312dff81a308",
+    "disposition": "not_an_outcome",
+    "reason": "The cited text is an assay-method statement and merged fragment, not a usable result."
+  }
+]

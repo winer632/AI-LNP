@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-8d2b5381931531a4"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The evidence reports phagocytic-index and flow-cytometry phagocytic-activity analyses across unspecified formulations, but provides no formulation-specific result, comparator, value, unit, or linkage to an existing or uniquely recoverable experiment."
+}

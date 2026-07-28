@@ -1,0 +1,62 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-8ce1f5d32557e2ad"
+  ],
+  "candidate_ids": [
+    "OC-c0903300f94dcdae"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-e2cb259904655a7d",
+      "text": "Our data showed that the in vivo gene editing 3 days after transfection to estimate overall gene editing efﬁciency efﬁciency of NSGHAsgRNA was comparable to that of using T7 endonuclease (T7E1) assay.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-31c0ada2828d03ec",
+      "text": "As expected, NSGHAsgRNA showed no Following these results, we selected NSGHAsgRNA for subsequent editing activity in WT F8 gene.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-b0e824a66a4f04c1",
+      "text": "The NSGHAsgRNA was encapsulated with Cas9 Evaluation of in vivo gene editing of mutant F8 in HemA NSG mRNA into MC3 LNP and intravenously injected into NSG HemA mouse model mice at a dosage of 4 mg/kg of Cas9/sgRNA LNP.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-c880de483e81461c",
+      "text": "Following injection, Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about we euthanized the treated mice and extracted genomic DNA 52.7% in total liver cells.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-5b17d5bf9a42504e",
+      "text": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells.",
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "5e07f9ac16eaf334ef3ccd1edfd0d9e4ca50ab4da2cd70b65b3acd9d117e5d6d"
+}

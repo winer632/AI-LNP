@@ -1,0 +1,274 @@
+{
+  "routing_version": "compact-routing-1.0.0",
+  "paper_id": "GP-006",
+  "complexity_route": "complex",
+  "ordinary_validation_status": "valid",
+  "coverage_status": "review_unmatched_groups",
+  "routes": [
+    {
+      "route_id": "RT-ef4a5f14a5bb69f8",
+      "source": "outcome_coverage",
+      "source_id": "OC-992ce3528e9ad840",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-566609fc939d51d8"
+      ]
+    },
+    {
+      "route_id": "RT-f5ffd82016406bd1",
+      "source": "outcome_coverage",
+      "source_id": "OC-1aae7f686c18db97",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-a646b1030db7fdba"
+      ]
+    },
+    {
+      "route_id": "RT-36a3c264c1b7997a",
+      "source": "outcome_coverage",
+      "source_id": "OC-83293575f233009f",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-1d1871fe74140517"
+      ]
+    },
+    {
+      "route_id": "RT-43b77c62349ed264",
+      "source": "outcome_coverage",
+      "source_id": "OC-703929685a082d76",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-42aad5557a4b8d6e",
+        "GP-006-E-e77f320b73e493a8"
+      ]
+    },
+    {
+      "route_id": "RT-75aac66926f13a5b",
+      "source": "outcome_coverage",
+      "source_id": "OC-563eb562f6be8a11",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-3c6e73bc825c5293"
+      ]
+    },
+    {
+      "route_id": "RT-c0b306e3d6099318",
+      "source": "outcome_coverage",
+      "source_id": "OC-179a7e222a4e1927",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf",
+        "GP-006-E-8fbb0d1c6f7ead81"
+      ]
+    },
+    {
+      "route_id": "RT-4d6a3cfad978ba35",
+      "source": "outcome_coverage",
+      "source_id": "OC-842707c55fd53a55",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-9c61cae7b3cbdfda"
+      ]
+    },
+    {
+      "route_id": "RT-e5af553ea08ba83c",
+      "source": "outcome_coverage",
+      "source_id": "OC-827d27435abdd312",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-d51e57e7bfc1ef65"
+      ]
+    },
+    {
+      "route_id": "RT-b967daf903d98613",
+      "source": "outcome_coverage",
+      "source_id": "OC-be6096c1e0cde0ec",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ]
+    },
+    {
+      "route_id": "RT-8ce1f5d32557e2ad",
+      "source": "outcome_coverage",
+      "source_id": "OC-c0903300f94dcdae",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-e2cb259904655a7d",
+        "GP-006-E-31c0ada2828d03ec",
+        "GP-006-E-b0e824a66a4f04c1",
+        "GP-006-E-c880de483e81461c",
+        "GP-006-E-5b17d5bf9a42504e"
+      ]
+    },
+    {
+      "route_id": "RT-bf0ad35a3b4f5f0b",
+      "source": "outcome_coverage",
+      "source_id": "OC-6b23a27057538b1e",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-d18589e268d50539"
+      ]
+    },
+    {
+      "route_id": "RT-685182d05c674166",
+      "source": "outcome_coverage",
+      "source_id": "OC-34271609df560893",
+      "route": "selective_vision",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-f3dda9c744c9ef01"
+      ]
+    },
+    {
+      "route_id": "RT-cdcc62075b27ec38",
+      "source": "outcome_coverage",
+      "source_id": "OC-577d7d7fe2448951",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-ab6a59c6da34953c"
+      ]
+    },
+    {
+      "route_id": "RT-34e93394fc1b31d3",
+      "source": "outcome_coverage",
+      "source_id": "OC-1c3f88c83b5cb897",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-191ac0774ac7347b"
+      ]
+    },
+    {
+      "route_id": "RT-94a82c6737e77984",
+      "source": "outcome_coverage",
+      "source_id": "OC-bb6af130607dd944",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-d9c30e3abca70fcb"
+      ]
+    },
+    {
+      "route_id": "RT-a05b26d20af622b4",
+      "source": "outcome_coverage",
+      "source_id": "OC-fa3d41fbbfb8dbc9",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-1893c0cd1beb2ee9"
+      ]
+    },
+    {
+      "route_id": "RT-b64a8d6f1239a21d",
+      "source": "outcome_coverage",
+      "source_id": "OC-a5cbad64b11d3b45",
+      "route": "selective_vision",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-8af0fe6c0065d45c"
+      ]
+    },
+    {
+      "route_id": "RT-dea418b08fadbcee",
+      "source": "outcome_coverage",
+      "source_id": "OC-e2d4bb67d2cf343a",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-ef798f3259752156"
+      ]
+    },
+    {
+      "route_id": "RT-bac16a8c7b594a05",
+      "source": "outcome_coverage",
+      "source_id": "OC-4ec099151fb53107",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-0062483addf27f5e"
+      ]
+    },
+    {
+      "route_id": "RT-cfff9d04e3cf9c72",
+      "source": "outcome_coverage",
+      "source_id": "OC-d6d8ec31fcbb44d8",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-0e932dc79aa7ba74"
+      ]
+    },
+    {
+      "route_id": "RT-2cd30b9707f791f9",
+      "source": "outcome_coverage",
+      "source_id": "OC-7e02be28ef250a82",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-61352269ff3b61f2",
+        "GP-006-E-0043b99ab0bf3320"
+      ]
+    },
+    {
+      "route_id": "RT-24889422be1441a7",
+      "source": "outcome_coverage",
+      "source_id": "OC-85f7147389be1c5a",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-5f1df7ac5c7ec3f9"
+      ]
+    },
+    {
+      "route_id": "RT-060cdf2dece81dab",
+      "source": "outcome_coverage",
+      "source_id": "OC-46a32d7d3a3de39d",
+      "route": "missing_record_text",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-8e9084aadcfe157d",
+        "GP-006-E-d9a16a0c73e6b6b2"
+      ]
+    },
+    {
+      "route_id": "RT-3f77a96b109b2111",
+      "source": "outcome_coverage",
+      "source_id": "OC-da9a3d11dcdc94d9",
+      "route": "selective_vision",
+      "reason": "Credible outcome candidate has no one-to-one extracted record.",
+      "evidence_ids": [
+        "GP-006-E-8f4df2feafb0205d"
+      ]
+    },
+    {
+      "route_id": "RT-bf982b0b03660850",
+      "source": "inventory",
+      "source_id": "OC-f4662bac9b4a5cc3",
+      "route": "human_review",
+      "reason": "Plausible outcome lacking a direct high-confidence signal.",
+      "evidence_ids": [
+        "GP-006-E-7066b69b1d22a88d"
+      ]
+    }
+  ],
+  "finalization_allowed": false,
+  "finalization_blockers": [
+    "complex_outcome_coverage_incomplete",
+    "candidate_adjudication_incomplete",
+    "repair_or_vision_routes_pending"
+  ],
+  "paid_api_requests": 0
+}

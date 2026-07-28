@@ -1,0 +1,37 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-008",
+  "route_ids": [
+    "RT-21d4587cd5ac0c7a"
+  ],
+  "candidate_ids": [
+    "OC-75f5e516703d38c8"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-9aafff74f2f915dc",
+      "text": "(H-K) The qPCR analysis of CD80, IL-6, 375 CD206, and IL-10 expression of the screened macrophages.",
+      "source_ids": [
+        "S-bd13c7ee602b"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1",
+    "F2"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "source_inventory_sha256": "b211de83b66b98330a8f0f537b44161c4be0b31874ce7aa5f20f7b8667588ad8",
+  "task_checksum": "2ddd6a152e1429f1d0726870be8dbe7d691cfa737f11e5b9e76bef4176ffc179"
+}

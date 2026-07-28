@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-005",
+  "route_ids": [
+    "RT-54fd015d8acc5a41"
+  ],
+  "candidate_ids": [
+    "OC-68cb6932fdd69017"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-005-E-7a4317dc270edf63",
+      "text": "Stimulated by the surprisingly low level of EGFP‐derived signals in KC, we studied the uptake of LNP1 in vitro by incubating primary murine hepatocytes, the murine hepatoma cell line Hepa 1–6, human cervical cancer cells (HeLa), murine L929 fibroblasts, human endothelial cells (EA.hy926), murine J774.1 macrophages, and murine KC for 24 h with LNP in medium with 5% serum.",
+      "source_ids": [
+        "S-0bf4ba4b4584"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "68b3be509bff85ef6da30298dd2465fc9a94053327583f70462fbfa542840cb2",
+  "source_inventory_sha256": "48c0cab28d0e0209b751acee15f0337ecec0b0090c3bbcb0de80eb4d8248a3c6",
+  "task_checksum": "4ff0742fb1baa5ca8d9aabf7cbe5c0948b359f092a03e6f69b5dca1292a3c025"
+}

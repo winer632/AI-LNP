@@ -1,0 +1,25 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-005",
+  "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-005/task_02.json",
+  "task_checksum": "4ff0742fb1baa5ca8d9aabf7cbe5c0948b359f092a03e6f69b5dca1292a3c025",
+  "candidate_ids": [
+    "OC-68cb6932fdd69017"
+  ],
+  "route_ids": [
+    "RT-54fd015d8acc5a41"
+  ],
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "prompt_version": "codex-missing-record-prompt-1.0.0",
+  "paid_prompt_version": "missing-record-repair-prompt-1.0.0",
+  "prompt_sha256": "ff3bce3f5bbfa0becac3687740f5a6224babc5e7fd9286dcd56b9adf48d02ef2",
+  "prompt_characters": 1452,
+  "schema_sha256": "6c1d23acea39e7523130fb07fa7861338fab07eb8814512043970805d99aca49",
+  "fingerprint": "ba462f3b2fdf57243aa328b2464e70303a6d365394058b6824164c7beaa2d056",
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "evidence_ids": [
+    "GP-005-E-7a4317dc270edf63"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-b967daf903d98613"
+  ],
+  "candidate_ids": [
+    "OC-be6096c1e0cde0ec"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-b9606d3f1fb87b4c",
+      "text": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2).",
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "03e5d9c91601c4cfcbf7c5002140f08e9ef01ae17768149595e435e9295c09f8"
+}

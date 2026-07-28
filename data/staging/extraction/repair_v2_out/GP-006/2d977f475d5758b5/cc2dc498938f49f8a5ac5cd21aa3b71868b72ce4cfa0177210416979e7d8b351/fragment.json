@@ -1,0 +1,57 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-1c3f88c83b5cb897"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-1c3f88c83b5cb897",
+      "experiment_id": "E1",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay method was not reported."
+      },
+      "endpoint": {
+        "value": "Indel variants at five top predicted potential off-target sites",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-191ac0774ac7347b"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "un-editing experiments",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-191ac0774ac7347b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric outcome value was reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No outcome unit was reported."
+      },
+      "qualitative_outcome": {
+        "value": "No indel variants were found in the WT F8 gene.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-191ac0774ac7347b"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

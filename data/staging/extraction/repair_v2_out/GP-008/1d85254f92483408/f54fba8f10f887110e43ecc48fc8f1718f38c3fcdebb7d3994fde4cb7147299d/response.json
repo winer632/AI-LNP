@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-58807a11fad15b65\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports a qualitative hepatic IHC finding but does not identify a corresponding experiment ID or provide sufficient experimental details to create a new linked record without inventing identifiers or fields.\"}",
+  "elapsed_seconds": 8.655,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-58807a11fad15b65\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports a qualitative hepatic IHC finding but does not identify a corresponding experiment ID or provide sufficient experimental details to create a new linked record without inventing identifiers or fields.\"}\n"
+}

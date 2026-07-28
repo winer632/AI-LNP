@@ -1,0 +1,1229 @@
+{
+  "harness": "codex-exec",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "prompt_version": "codex-missing-record-prompt-1.0.0",
+  "tasks": 38,
+  "validated": 37,
+  "recovered": 10,
+  "unresolved": 27,
+  "failed": 1,
+  "openai_api_requests": 0,
+  "codex_exec_turns": 38,
+  "results": [
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_01.json",
+      "task_checksum": "ff27376cb0f932a31aa7d56adb66116e9c0e26107d132e53d9858123f0287459",
+      "candidate_ids": [
+        "OC-675ff78454d65c26"
+      ],
+      "fingerprint": "05a123e000cd9cf556c20204de6ce4caf36c1d39b582f197ae46856fe8973d95",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:24:21.163329+00:00",
+      "completed_at": "2026-07-28T18:24:33.563449+00:00",
+      "elapsed_seconds": 12.398,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-675ff78454d65c26"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/1c3bb6d244dd6d58/05a123e000cd9cf556c20204de6ce4caf36c1d39b582f197ae46856fe8973d95/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_02.json",
+      "task_checksum": "436e885c3a63f087a22272893ad08643eeebf96a049d3849eb9122887e17c6d1",
+      "candidate_ids": [
+        "OC-d76e38c26ff535e0"
+      ],
+      "fingerprint": "84dd5d679e4bce82bf89e2718ca95c8e9075b3f30491a181b6fcaf056ee62f87",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:24:33.576342+00:00",
+      "completed_at": "2026-07-28T18:24:44.716136+00:00",
+      "elapsed_seconds": 11.138,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-d76e38c26ff535e0"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/f57e5b8667c81d18/84dd5d679e4bce82bf89e2718ca95c8e9075b3f30491a181b6fcaf056ee62f87/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_03.json",
+      "task_checksum": "f7187f327c80c71eba9c240473b973e2f99b9468c45921554fec15b89cf19c8d",
+      "candidate_ids": [
+        "OC-f83a3866b46afe29"
+      ],
+      "fingerprint": "0ba59996033ddc8cdc1d20bd23d9acf5017027e5b2c46029a341f762646545ad",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:24:44.726234+00:00",
+      "completed_at": "2026-07-28T18:24:54.993428+00:00",
+      "elapsed_seconds": 10.266,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-f83a3866b46afe29"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/a1f982be9d827ce4/0ba59996033ddc8cdc1d20bd23d9acf5017027e5b2c46029a341f762646545ad/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_04.json",
+      "task_checksum": "4aadfe6f831978fc7862c99786465593e6a8c67d5f959b0a878690ce3748ec71",
+      "candidate_ids": [
+        "OC-e42d02cd0aa8f42f"
+      ],
+      "fingerprint": "adb955e0cb86cd93273ba52b80e57fafc8970c16aa68e1a4b0b5824068405481",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:24:55.004218+00:00",
+      "completed_at": "2026-07-28T18:25:03.006474+00:00",
+      "elapsed_seconds": 8.0,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-e42d02cd0aa8f42f"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/91251bf9aec0e485/adb955e0cb86cd93273ba52b80e57fafc8970c16aa68e1a4b0b5824068405481/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_05.json",
+      "task_checksum": "e815720801d0702dbd6fe38f8d06a2dbc6966427984b4043ba56e328084fda4e",
+      "candidate_ids": [
+        "OC-4a2f1296751af41e"
+      ],
+      "fingerprint": "ef2bfcdc29353b576e6bced3e173900a49668c86622064d4119d159597c1038a",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:25:03.018019+00:00",
+      "completed_at": "2026-07-28T18:25:19.086242+00:00",
+      "elapsed_seconds": 16.067,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-4a2f1296751af41e"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/9f240ee672569146/ef2bfcdc29353b576e6bced3e173900a49668c86622064d4119d159597c1038a/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_06.json",
+      "task_checksum": "b00aac3e2fb0a8a8f12286b18dcd488f54d3b195fc902016e4a230d4913fc72f",
+      "candidate_ids": [
+        "OC-ec2f4916beb7b305"
+      ],
+      "fingerprint": "108188a3d0f1df377bde2a64d7cfb03453239a443018a5ac28c4ea824aea1ec8",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:25:19.096017+00:00",
+      "completed_at": "2026-07-28T18:25:29.242541+00:00",
+      "elapsed_seconds": 10.145,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-ec2f4916beb7b305"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/0abe31900c41ebcb/108188a3d0f1df377bde2a64d7cfb03453239a443018a5ac28c4ea824aea1ec8/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-004/task_07.json",
+      "task_checksum": "4a061c8d36e2d03727e79c13268bcbb956401aca270ce92955d39a178b0e503a",
+      "candidate_ids": [
+        "OC-d16b5d218b5f5f5a"
+      ],
+      "fingerprint": "de83ebcef665ec5a6a599af1d002adea6dbcf7b805a0895c824f98c1a4bee47c",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:25:29.252384+00:00",
+      "completed_at": "2026-07-28T18:25:37.795774+00:00",
+      "elapsed_seconds": 8.542,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-d16b5d218b5f5f5a"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-004/38554e6ef0a94721/de83ebcef665ec5a6a599af1d002adea6dbcf7b805a0895c824f98c1a4bee47c/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-005/task_01.json",
+      "task_checksum": "ec0c17f61b055bfa67a4191c84c95051fe0139aec049e6e106e56b3d736deab2",
+      "candidate_ids": [
+        "OC-3bd6c98e48bb9894"
+      ],
+      "fingerprint": "d2c2393bab88315fc43e322869bc6531e61e16d156fc7a264ddf9b6040e1166f",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:25:37.804313+00:00",
+      "completed_at": "2026-07-28T18:25:54.135776+00:00",
+      "elapsed_seconds": 16.33,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-3bd6c98e48bb9894"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-005/fd4cd56648e4dcf1/d2c2393bab88315fc43e322869bc6531e61e16d156fc7a264ddf9b6040e1166f/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-005/task_02.json",
+      "task_checksum": "4ff0742fb1baa5ca8d9aabf7cbe5c0948b359f092a03e6f69b5dca1292a3c025",
+      "candidate_ids": [
+        "OC-68cb6932fdd69017"
+      ],
+      "fingerprint": "ba462f3b2fdf57243aa328b2464e70303a6d365394058b6824164c7beaa2d056",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:25:54.144993+00:00",
+      "completed_at": "2026-07-28T18:26:00.546836+00:00",
+      "elapsed_seconds": 6.4,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-68cb6932fdd69017"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-005/dd8fdeb50ecb0fd3/ba462f3b2fdf57243aa328b2464e70303a6d365394058b6824164c7beaa2d056/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-005/task_03.json",
+      "task_checksum": "e8dc02d6fcd12b7f8252c17f9aa9d5d529d540909a1f6db04d840cb37ca94ef6",
+      "candidate_ids": [
+        "OC-2415ff8ef701f5db"
+      ],
+      "fingerprint": "6d74321861148c473b2463ac6908fee0de1dcc13b1f673604324d3cc615078ae",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:26:00.556950+00:00",
+      "completed_at": "2026-07-28T18:26:09.275699+00:00",
+      "elapsed_seconds": 8.717,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-2415ff8ef701f5db"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-005/cf44e05a1f10bf90/6d74321861148c473b2463ac6908fee0de1dcc13b1f673604324d3cc615078ae/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-005/task_04.json",
+      "task_checksum": "132fb8b32a047388fa6d96d6c836cbcf1bc663cfc13a33a25244c476eea02c2b",
+      "candidate_ids": [
+        "OC-88bd456605ba8727"
+      ],
+      "fingerprint": "4a7a9d7d1f8f927fd7ec6fe53f1214370f3689828fe6804d0db71a04da8014a9",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:26:09.285535+00:00",
+      "completed_at": "2026-07-28T18:26:19.503837+00:00",
+      "elapsed_seconds": 10.217,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-88bd456605ba8727"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-005/64afc2a4aa5c5519/4a7a9d7d1f8f927fd7ec6fe53f1214370f3689828fe6804d0db71a04da8014a9/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_01.json",
+      "task_checksum": "cf745c54f397536aa2bcaf5322aa3dbd134071fc1c8e5c4b27a8cdf044abac6e",
+      "candidate_ids": [
+        "OC-179a7e222a4e1927"
+      ],
+      "fingerprint": "7619ebeaa5b40357cc6445fd7b0968dd2d60ce2a17713ebe60f7ff16132595c5",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:26:19.511735+00:00",
+      "completed_at": "2026-07-28T18:26:35.945531+00:00",
+      "elapsed_seconds": 16.432,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-179a7e222a4e1927"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/e6063764964c9ddb/7619ebeaa5b40357cc6445fd7b0968dd2d60ce2a17713ebe60f7ff16132595c5/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_02.json",
+      "task_checksum": "78387dd3ad09be62cacb4c83285eaca400f2457e6bb344434e794bae7c1dd64d",
+      "candidate_ids": [
+        "OC-46a32d7d3a3de39d"
+      ],
+      "fingerprint": "bb53dca37f2950ad580717199c17ee19d19ec63b0a90f6d6674ffca611b9b30e",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:26:35.956906+00:00",
+      "completed_at": "2026-07-28T18:26:59.899098+00:00",
+      "elapsed_seconds": 23.941,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-46a32d7d3a3de39d"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/f0ab56457d6776d0/bb53dca37f2950ad580717199c17ee19d19ec63b0a90f6d6674ffca611b9b30e/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_03.json",
+      "task_checksum": "20b96af81afe35d3e5f73fc471d7fbfe91c533c1743b0c5ff7c82eb0a20208d2",
+      "candidate_ids": [
+        "OC-4ec099151fb53107"
+      ],
+      "fingerprint": "04ee850fd34a2fd3563bc0093bd7bef829506550561b999f7abc2d7014f73b9d",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:26:59.910821+00:00",
+      "completed_at": "2026-07-28T18:27:08.395977+00:00",
+      "elapsed_seconds": 8.484,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-4ec099151fb53107"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/1d9f54282786d465/04ee850fd34a2fd3563bc0093bd7bef829506550561b999f7abc2d7014f73b9d/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_04.json",
+      "task_checksum": "8ee97e325a9b61dfe42fce39cf4ced3e977076403c15b0a16c4b367945a62d0a",
+      "candidate_ids": [
+        "OC-577d7d7fe2448951"
+      ],
+      "fingerprint": "d24a61a8382cc44ff54e80cc386f5beeb753ab6a420ee41017a945b3f633dc37",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:27:08.407289+00:00",
+      "completed_at": "2026-07-28T18:27:26.540276+00:00",
+      "elapsed_seconds": 18.131,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-577d7d7fe2448951"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/cf13cce769e90026/d24a61a8382cc44ff54e80cc386f5beeb753ab6a420ee41017a945b3f633dc37/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_05.json",
+      "task_checksum": "874ea6806ee1c9d959700622cd69be564153f4cf02f8d72ce6a167cdbcded7b5",
+      "candidate_ids": [
+        "OC-7e02be28ef250a82"
+      ],
+      "fingerprint": "35ffa0e0cab4c425f87afee8320e9e5e5e7a2d9e0fac998841c580f3d5ea320b",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:27:26.552883+00:00",
+      "completed_at": "2026-07-28T18:27:42.064355+00:00",
+      "elapsed_seconds": 15.51,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-7e02be28ef250a82"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/585ff5a25fd24acd/35ffa0e0cab4c425f87afee8320e9e5e5e7a2d9e0fac998841c580f3d5ea320b/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_06.json",
+      "task_checksum": "0d90b387fe30e250e459215109d6d759c4f799a6382c777d26cfc07a583e0501",
+      "candidate_ids": [
+        "OC-83293575f233009f"
+      ],
+      "fingerprint": "95195b62247c714059c552380fb7a19a7c29e7feba928aa8c536ed2ec2c87006",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:27:42.073305+00:00",
+      "completed_at": "2026-07-28T18:27:50.799488+00:00",
+      "elapsed_seconds": 8.724,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-83293575f233009f"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/40de9f89f174e306/95195b62247c714059c552380fb7a19a7c29e7feba928aa8c536ed2ec2c87006/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_07.json",
+      "task_checksum": "4e5f0e058b04090683f0ed0844697cce462ffa35e6715a39614e1ad0c071dba4",
+      "candidate_ids": [
+        "OC-842707c55fd53a55"
+      ],
+      "fingerprint": "25a0df181a5a118319bdf3675ff5511aa02401c115e9099039962c6a502ba4df",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:27:50.813496+00:00",
+      "completed_at": "2026-07-28T18:28:07.270786+00:00",
+      "elapsed_seconds": 16.455,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-842707c55fd53a55"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/07e863c8aa42ca65/25a0df181a5a118319bdf3675ff5511aa02401c115e9099039962c6a502ba4df/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_08.json",
+      "task_checksum": "97a7a352d5bbab61f3b4d4581f6aa860d025e623688bfed29cdef6af918b3a4f",
+      "candidate_ids": [
+        "OC-85f7147389be1c5a"
+      ],
+      "fingerprint": "8b090816b2827734cc9a4fddc923930c81e51462ef5d211e3dac3c8e6a62be8c",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:28:07.282589+00:00",
+      "completed_at": "2026-07-28T18:28:22.634800+00:00",
+      "elapsed_seconds": 15.351,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-85f7147389be1c5a"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/6ab6c85f393988f1/8b090816b2827734cc9a4fddc923930c81e51462ef5d211e3dac3c8e6a62be8c/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_09.json",
+      "task_checksum": "03e5d9c91601c4cfcbf7c5002140f08e9ef01ae17768149595e435e9295c09f8",
+      "candidate_ids": [
+        "OC-be6096c1e0cde0ec"
+      ],
+      "fingerprint": "fb37ffe49f762f2e972879f481dd544d14715e0d351b1d34fcb9d571917bcb40",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:28:22.642407+00:00",
+      "completed_at": "2026-07-28T18:28:31.619521+00:00",
+      "elapsed_seconds": 8.976,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-be6096c1e0cde0ec"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/0fe9246758510d8a/fb37ffe49f762f2e972879f481dd544d14715e0d351b1d34fcb9d571917bcb40/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_10.json",
+      "task_checksum": "5e07f9ac16eaf334ef3ccd1edfd0d9e4ca50ab4da2cd70b65b3acd9d117e5d6d",
+      "candidate_ids": [
+        "OC-c0903300f94dcdae"
+      ],
+      "fingerprint": "c4e656e07608ef888d590e8c7cd1323ab05c35ea411aa0ddc96829ad57e0231a",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:28:31.628598+00:00",
+      "completed_at": "2026-07-28T18:28:48.131399+00:00",
+      "elapsed_seconds": 16.501,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-c0903300f94dcdae"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/50f58df2339b47f1/c4e656e07608ef888d590e8c7cd1323ab05c35ea411aa0ddc96829ad57e0231a/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_11.json",
+      "task_checksum": "addb8a3bd3e037a411b48c4b396dfb79ba085dfe27ffa0d22718109571251e56",
+      "candidate_ids": [
+        "OC-d6d8ec31fcbb44d8"
+      ],
+      "fingerprint": "a1b1848a3f9f809373306095d178dc28516fd1f2aead445a5179a4d695e8b558",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:28:48.144819+00:00",
+      "completed_at": "2026-07-28T18:28:57.011519+00:00",
+      "elapsed_seconds": 8.865,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-d6d8ec31fcbb44d8"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/055d007c498c3bd0/a1b1848a3f9f809373306095d178dc28516fd1f2aead445a5179a4d695e8b558/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_12.json",
+      "task_checksum": "84b677d115e589ee5af28bcbd93871badb83b369ce4332c9ddeaa2fdaa907107",
+      "candidate_ids": [
+        "OC-fa3d41fbbfb8dbc9"
+      ],
+      "fingerprint": "ce54aa897487c4297baf59af8cdb2cd79a0db3f0d8ef17335e5129e806cef647",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:28:57.022875+00:00",
+      "completed_at": "2026-07-28T18:29:13.073697+00:00",
+      "elapsed_seconds": 16.049,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-fa3d41fbbfb8dbc9"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/5335e5c4a3f17fe7/ce54aa897487c4297baf59af8cdb2cd79a0db3f0d8ef17335e5129e806cef647/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_13.json",
+      "task_checksum": "8965873c7587b2984dccefb2ef66f083fb227a5a9f8b58fa9cb7670364111c05",
+      "candidate_ids": [
+        "OC-6b23a27057538b1e"
+      ],
+      "fingerprint": "7ae4855b5e97f58d3c8329342b8065fd52e200c62238f53b8a22b4a44281b8f6",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:29:13.081359+00:00",
+      "completed_at": "2026-07-28T18:29:21.113392+00:00",
+      "elapsed_seconds": 8.031,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-6b23a27057538b1e"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/ed844f0314c02d78/7ae4855b5e97f58d3c8329342b8065fd52e200c62238f53b8a22b4a44281b8f6/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_14.json",
+      "task_checksum": "f2c76c98a2482890adab98db9a6c01cd20a6b0cdc89edc45304f42f38f83c8b1",
+      "candidate_ids": [
+        "OC-703929685a082d76"
+      ],
+      "fingerprint": "2247c74997470469f95e1bad8b32a31f79705232a64684130615ee59609928a0",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:29:21.123843+00:00",
+      "completed_at": "2026-07-28T18:29:29.919922+00:00",
+      "elapsed_seconds": 8.795,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-703929685a082d76"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/2deaec6ba4608af5/2247c74997470469f95e1bad8b32a31f79705232a64684130615ee59609928a0/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_15.json",
+      "task_checksum": "a332db62dddcde95f8963ee09f26160b36f7cb56443d2c9b5f1b587964b50522",
+      "candidate_ids": [
+        "OC-1aae7f686c18db97"
+      ],
+      "fingerprint": "b19b1a0a26e13c1cdb3281b2c3fc6df9919915c85bc4ce79a69504d78b9e91c7",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:29:29.933397+00:00",
+      "completed_at": "2026-07-28T18:29:38.811614+00:00",
+      "elapsed_seconds": 8.876,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-1aae7f686c18db97"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/ae6c029f824348d6/b19b1a0a26e13c1cdb3281b2c3fc6df9919915c85bc4ce79a69504d78b9e91c7/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_16.json",
+      "task_checksum": "40300a11348f83f2ee90fc90eff219ca2ad4268de2f1382100cbc4ab68fdffc2",
+      "candidate_ids": [
+        "OC-992ce3528e9ad840"
+      ],
+      "fingerprint": "1091543ad395c33d395fe55102ded097afbd1dc702b94fab0380383288d5cf19",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:29:38.824967+00:00",
+      "completed_at": "2026-07-28T18:29:46.889907+00:00",
+      "elapsed_seconds": 8.063,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-992ce3528e9ad840"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/c1da857eae6f8f47/1091543ad395c33d395fe55102ded097afbd1dc702b94fab0380383288d5cf19/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_17.json",
+      "task_checksum": "b6c6b3ce43e097b92a47b37c76197078239d9546550084fb50f7b4b55eee9cae",
+      "candidate_ids": [
+        "OC-bb6af130607dd944"
+      ],
+      "fingerprint": "174bc03b82db8881e620f161cfa41c02e510be8e86fc0abf9d9aa4e0dd355335",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:29:46.903442+00:00",
+      "completed_at": "2026-07-28T18:29:54.292206+00:00",
+      "elapsed_seconds": 7.387,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-bb6af130607dd944"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/5ef8267467c124fd/174bc03b82db8881e620f161cfa41c02e510be8e86fc0abf9d9aa4e0dd355335/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_18.json",
+      "task_checksum": "59703fb68d620f4792d9d1bf3b69daad217d661471b841a61258c3e66498d181",
+      "candidate_ids": [
+        "OC-1c3f88c83b5cb897"
+      ],
+      "fingerprint": "cc2dc498938f49f8a5ac5cd21aa3b71868b72ce4cfa0177210416979e7d8b351",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:29:54.305760+00:00",
+      "completed_at": "2026-07-28T18:30:15.639784+00:00",
+      "elapsed_seconds": 21.333,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-1c3f88c83b5cb897"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/2d977f475d5758b5/cc2dc498938f49f8a5ac5cd21aa3b71868b72ce4cfa0177210416979e7d8b351/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "rejected",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_19.json",
+      "task_checksum": "bbb98b6ee8514677a95951f9f76d9cbc28261865c0ccedb79a0397d747a0aacd",
+      "candidate_ids": [
+        "OC-563eb562f6be8a11"
+      ],
+      "fingerprint": "93e0b7f789c92e0518639ad33a3dc2e06a2bb88c25e85971c70e87807d6fe47b",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:30:15.647311+00:00",
+      "completed_at": "2026-07-28T18:30:35.971948+00:00",
+      "elapsed_seconds": 20.323,
+      "response_validated": false,
+      "validation_error": "ValidationError: 4 validation errors for MissingRecordFragment\noutcomes.0.assay\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...y method not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error\noutcomes.0.comparator\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...mparator not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error\noutcomes.0.outcome_value\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...me value not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error\noutcomes.0.outcome_unit\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...ome unit not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+      "disposition": null,
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": null,
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_20.json",
+      "task_checksum": "09d172d3adc7fd51c0dbd879e55f7d485c089d93c7b880dc2349a73a778dbf91",
+      "candidate_ids": [
+        "OC-827d27435abdd312"
+      ],
+      "fingerprint": "01a253a5e5112dc2a52fd686a43a345cd0d53d45c42e0e2d061fc22114941d0f",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:30:35.982565+00:00",
+      "completed_at": "2026-07-28T18:30:44.950029+00:00",
+      "elapsed_seconds": 8.966,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-827d27435abdd312"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/496b9875128e6c10/01a253a5e5112dc2a52fd686a43a345cd0d53d45c42e0e2d061fc22114941d0f/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_21.json",
+      "task_checksum": "c3a92021bee7660ee07c0732d688b8af84c2d032bbeaa13deeb7392e17b81d21",
+      "candidate_ids": [
+        "OC-e2d4bb67d2cf343a"
+      ],
+      "fingerprint": "488f309fc8394fbf0098b7db0bb42956491714355efbedd6d62d5afa07309dcf",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:30:44.958000+00:00",
+      "completed_at": "2026-07-28T18:31:01.920372+00:00",
+      "elapsed_seconds": 16.961,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "recovered",
+      "recovered_candidate_ids": [
+        "OC-e2d4bb67d2cf343a"
+      ],
+      "unresolved_candidate_ids": [],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/4b4887b1e28dc04f/488f309fc8394fbf0098b7db0bb42956491714355efbedd6d62d5afa07309dcf/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_01.json",
+      "task_checksum": "c9892fac280ea570baf729a4ca229670ed2bf1ad0aee6f782e3361163511cb90",
+      "candidate_ids": [
+        "OC-150f3861bcac0be7"
+      ],
+      "fingerprint": "bc7c868b695af4aa23df14d7813795e3ca6ed0c75215931faee98f3adea45c57",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:31:01.932271+00:00",
+      "completed_at": "2026-07-28T18:31:14.218166+00:00",
+      "elapsed_seconds": 12.285,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-150f3861bcac0be7"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/8d482bacc8b9bb67/bc7c868b695af4aa23df14d7813795e3ca6ed0c75215931faee98f3adea45c57/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_02.json",
+      "task_checksum": "a99cd2a2e390329f92760c6de9464639b3428ca41f68d2bbdce47661c3220d0c",
+      "candidate_ids": [
+        "OC-9343dfa7f5af16e4"
+      ],
+      "fingerprint": "8f953f5f9d5f06a8f8d6e9295d546be6a22c1e26f52b9b7d9afd43f3958f07b6",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:31:14.225397+00:00",
+      "completed_at": "2026-07-28T18:31:23.536335+00:00",
+      "elapsed_seconds": 9.31,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-9343dfa7f5af16e4"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/7d001e0b041aa9f1/8f953f5f9d5f06a8f8d6e9295d546be6a22c1e26f52b9b7d9afd43f3958f07b6/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_03.json",
+      "task_checksum": "2ddd6a152e1429f1d0726870be8dbe7d691cfa737f11e5b9e76bef4176ffc179",
+      "candidate_ids": [
+        "OC-75f5e516703d38c8"
+      ],
+      "fingerprint": "9b5e3d0b4c282967a2af6ae9bc73f228c9a25cfa4ab18ad7eecea9ece2c36372",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:31:23.543983+00:00",
+      "completed_at": "2026-07-28T18:31:31.921029+00:00",
+      "elapsed_seconds": 8.376,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-75f5e516703d38c8"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/4c0b39c2bb9439ca/9b5e3d0b4c282967a2af6ae9bc73f228c9a25cfa4ab18ad7eecea9ece2c36372/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_04.json",
+      "task_checksum": "0377169f8fae335a70e907058bd0c7c7d0f1554b4daa131b98efa952dfba3f34",
+      "candidate_ids": [
+        "OC-8d2b5381931531a4"
+      ],
+      "fingerprint": "e1b7eb0aef2695f8dc686cd292576057a0e9ee4f5cadbd2f2292c62417be5473",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:31:31.929365+00:00",
+      "completed_at": "2026-07-28T18:31:43.231225+00:00",
+      "elapsed_seconds": 11.301,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-8d2b5381931531a4"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/bc1cc1682b16aae6/e1b7eb0aef2695f8dc686cd292576057a0e9ee4f5cadbd2f2292c62417be5473/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_05.json",
+      "task_checksum": "84d63897c8df6d7a1b2cf22d7f2ea4eb2ab0f74c8be81fbb352fcd5adaf97088",
+      "candidate_ids": [
+        "OC-58807a11fad15b65"
+      ],
+      "fingerprint": "f54fba8f10f887110e43ecc48fc8f1718f38c3fcdebb7d3994fde4cb7147299d",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:31:43.239565+00:00",
+      "completed_at": "2026-07-28T18:31:51.895828+00:00",
+      "elapsed_seconds": 8.655,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-58807a11fad15b65"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/1d85254f92483408/f54fba8f10f887110e43ecc48fc8f1718f38c3fcdebb7d3994fde4cb7147299d/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    },
+    {
+      "status": "completed_pending_merge",
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_06.json",
+      "task_checksum": "8c68a10734c3620a3868d4ec006db4498fc8eb8f7cb5d733407e0398b24aa683",
+      "candidate_ids": [
+        "OC-10e46c995546bedf"
+      ],
+      "fingerprint": "ac9593f0a4be454231e8f952027435e12bac711e82a2fc49b5564e4c9e4099e3",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T18:31:51.906930+00:00",
+      "completed_at": "2026-07-28T18:31:59.918601+00:00",
+      "elapsed_seconds": 8.009,
+      "response_validated": true,
+      "validation_error": null,
+      "disposition": "unresolved",
+      "recovered_candidate_ids": [],
+      "unresolved_candidate_ids": [
+        "OC-10e46c995546bedf"
+      ],
+      "record_counts": {
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/86c2f297b778d1bf/ac9593f0a4be454231e8f952027435e12bac711e82a2fc49b5564e4c9e4099e3/fragment.json",
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "cache_hit": false
+    }
+  ]
+}

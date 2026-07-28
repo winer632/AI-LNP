@@ -1,0 +1,37 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-008",
+  "route_ids": [
+    "RT-77e6a2f43e0ba9bc"
+  ],
+  "candidate_ids": [
+    "OC-58807a11fad15b65"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-54366734b908d658",
+      "text": "IHC analyses of hepatic tissue further validated that αCD163/LNP-FAPCAR treatment enabled targeted elimination of FAP+ cells (SI Appendix, Fig.",
+      "source_ids": [
+        "S-789c810554d5"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1",
+    "F2"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "source_inventory_sha256": "b211de83b66b98330a8f0f537b44161c4be0b31874ce7aa5f20f7b8667588ad8",
+  "task_checksum": "84d63897c8df6d7a1b2cf22d7f2ea4eb2ab0f74c8be81fbb352fcd5adaf97088"
+}

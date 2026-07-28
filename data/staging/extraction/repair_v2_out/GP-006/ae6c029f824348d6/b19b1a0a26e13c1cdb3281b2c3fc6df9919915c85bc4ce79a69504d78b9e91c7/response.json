@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-1aae7f686c18db97\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence reports only an intravenous 1.2 mg/kg GFP-LNP administration to mice for assessing LSEC targeting; it reports no outcome, assay result, comparator, or new experiment identifier.\"}",
+  "elapsed_seconds": 8.876,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-1aae7f686c18db97\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence reports only an intravenous 1.2 mg/kg GFP-LNP administration to mice for assessing LSEC targeting; it reports no outcome, assay result, comparator, or new experiment identifier.\"}\n"
+}

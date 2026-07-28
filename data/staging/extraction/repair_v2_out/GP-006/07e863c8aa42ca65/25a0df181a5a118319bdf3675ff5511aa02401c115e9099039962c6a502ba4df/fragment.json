@@ -1,0 +1,63 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-842707c55fd53a55"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-842707c55fd53a55",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "gene editing pattern analysis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "one base-pair deletions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "total deletions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 46.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "One base-pair deletions constituted the highest editing pattern in LSECs.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

@@ -1,0 +1,332 @@
+{
+  "inventory_version": "full-outcome-inventory-1.0.0",
+  "paper_id": "GP-008",
+  "source_packet_checksum": "3788ce2d243eaa90b4de38e5b8e25f30c9b59860f39337b86adc06802ba96673",
+  "raw_candidate_count": 13,
+  "retained_candidates": [
+    {
+      "candidate_id": "OC-baf2d08bb4cc9e88",
+      "paper_id": "GP-008",
+      "endpoint_family": "cell_target_effect",
+      "evidence_ids": [
+        "GP-008-E-1bf7bda856a91d0c",
+        "GP-008-E-6dea751ac521de5e"
+      ],
+      "source_ids": [
+        "S-479d9bc0ce1e"
+      ],
+      "evidence_text": "IF colocalization studies corroborated these findings, fibrotic liver tissue exhibited FAP/F4/80 double-positive macrophages, whereas such populations were virtually eradicated following αCD163/LNP-FAPCAR administration (SI Appendix, Fig. The results indicated that LNP treatment altered the proportions of different macrophage cluster subtypes, especially increasing MMP12 expression in macrophage subtypes involved in scar elimination.",
+      "direct_signal_terms": [
+        "colocaliz",
+        "eradicated",
+        "Fig. The",
+        "eliminat"
+      ],
+      "figure_or_table": "Fig. The",
+      "route_hint": "vision",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_result_language",
+        "visual_result_location"
+      ]
+    },
+    {
+      "candidate_id": "OC-58807a11fad15b65",
+      "paper_id": "GP-008",
+      "endpoint_family": "cell_target_effect",
+      "evidence_ids": [
+        "GP-008-E-54366734b908d658"
+      ],
+      "source_ids": [
+        "S-789c810554d5"
+      ],
+      "evidence_text": "IHC analyses of hepatic tissue further validated that αCD163/LNP-FAPCAR treatment enabled targeted elimination of FAP+ cells (SI Appendix, Fig.",
+      "direct_signal_terms": [
+        "eliminat"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-8d2b5381931531a4",
+      "paper_id": "GP-008",
+      "endpoint_family": "cell_target_effect",
+      "evidence_ids": [
+        "GP-008-E-c0d7ee15259a1fc7",
+        "GP-008-E-bc0ebbca3fa4955f"
+      ],
+      "source_ids": [
+        "S-bd13c7ee602b"
+      ],
+      "evidence_text": "(C-D) Confocal microscopy images display the phagocytosis of FAP+ LX-2 cells 369 by macrophages subjected to various formulations and the quantitative analysis of the 370 phagocytic index (scale bar=10 μm). (E-F) Flow cytometry was employed to detect the 371 phagocytic activity of macrophages in response to various formulations, using 372 pHrodo-labeled FAP+ LX-2 cells and statistical analysis.",
+      "direct_signal_terms": [
+        "phagocyt",
+        "analysis"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-f437510fa0871b58",
+      "paper_id": "GP-008",
+      "endpoint_family": "cell_target_effect",
+      "evidence_ids": [
+        "GP-008-E-9f1c889c86f7fdfa",
+        "GP-008-E-1de638e9a94e767b"
+      ],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "evidence_text": "(A) Confocal microscopy images showed phagocytosis of FAP+JS-1 cells by BMDMs treated with various formulations. (Scale bar, 10 μm.) (B) Quantitative analysis of the phagocytic index in BMDMs.",
+      "direct_signal_terms": [
+        "showed",
+        "phagocyt",
+        "analysis"
+      ],
+      "figure_or_table": "fig. 2.",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-98d4db1f890a608a",
+      "paper_id": "GP-008",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-008-E-e9466266dec9786d"
+      ],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "evidence_text": "(Scale bar, 10 μm.) (J) Representative GFP expression in BMDMs through flow cytometry and (K) the analysis of GFP expression.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": "fig. 1.",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-10e46c995546bedf",
+      "paper_id": "GP-008",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-008-E-493c040b06dba178"
+      ],
+      "source_ids": [
+        "S-606d887e5207"
+      ],
+      "evidence_text": "(H-J) Flow cytometry analysis of ZsGreen and CD163 expression in the screened 390 macrophages and the analysis.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-75f5e516703d38c8",
+      "paper_id": "GP-008",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-008-E-9aafff74f2f915dc"
+      ],
+      "source_ids": [
+        "S-bd13c7ee602b"
+      ],
+      "evidence_text": "(H-K) The qPCR analysis of CD80, IL-6, 375 CD206, and IL-10 expression of the screened macrophages.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-d49efe6a06da914e",
+      "paper_id": "GP-008",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-008-E-17f3f355e8b1e062"
+      ],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "evidence_text": "(H and I) Statistical analysis and representative confocal fluorescence images of BMDMs transfected with mRNA, LNP-mRNA, or αCD163/LNP-mRNA.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": "fig. 1.",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-446035e072c83c6b",
+      "paper_id": "GP-008",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-008-E-ba71b1c4bd111b87"
+      ],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "evidence_text": "(G and H) Flow cytometry analysis of CD80 and CD206 expression in the screened BMDMs and the analysis.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": "fig. 2.",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-fc5377fba2c3a51c",
+      "paper_id": "GP-008",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-008-E-202999ae6268273e"
+      ],
+      "source_ids": [
+        "S-9b36f545d675"
+      ],
+      "evidence_text": "(C) Vlnplot analysis of the marker gene expression in various macrophage clusters.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": "fig. 5.",
+      "route_hint": "vision",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-9343dfa7f5af16e4",
+      "paper_id": "GP-008",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-008-E-f92f9c6b8d5e5931"
+      ],
+      "source_ids": [
+        "S-479d9bc0ce1e"
+      ],
+      "evidence_text": "The results showed that, compared with nonfibrotic liver tissues, liver fibrosis caused by various etiologies was associated with increased FAP expression (SI Appendix, Fig.",
+      "direct_signal_terms": [
+        "showed",
+        "compared",
+        "increased"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-150f3861bcac0be7",
+      "paper_id": "GP-008",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-008-E-d3d28c55624f3463"
+      ],
+      "source_ids": [
+        "S-cdd3cd145a49"
+      ],
+      "evidence_text": "(F) Vlnplot analysis of the 458 markers gene expression in various macrophage clusters between the Fibrosis (blue) and LNP 459 (pink) groups.",
+      "direct_signal_terms": [
+        "analysis"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    }
+  ],
+  "dispositions": [
+    {
+      "candidate_id": "OC-baf2d08bb4cc9e88",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-baf2d08bb4cc9e88",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-58807a11fad15b65",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-58807a11fad15b65",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-8d2b5381931531a4",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-8d2b5381931531a4",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-f437510fa0871b58",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-f437510fa0871b58",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-98d4db1f890a608a",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-98d4db1f890a608a",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-10e46c995546bedf",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-10e46c995546bedf",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-e8124051820d575e",
+      "decision": "rejected_formula",
+      "canonical_candidate_id": null,
+      "reason": "Formula or environmental percentage without a biological result."
+    },
+    {
+      "candidate_id": "OC-75f5e516703d38c8",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-75f5e516703d38c8",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-d49efe6a06da914e",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-d49efe6a06da914e",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-446035e072c83c6b",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-446035e072c83c6b",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-fc5377fba2c3a51c",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-fc5377fba2c3a51c",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-9343dfa7f5af16e4",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-9343dfa7f5af16e4",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-150f3861bcac0be7",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-150f3861bcac0be7",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    }
+  ],
+  "candidate_recall_gate": "needs_human_review",
+  "paid_api_requests": 0
+}

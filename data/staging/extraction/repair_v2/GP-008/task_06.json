@@ -1,0 +1,37 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-008",
+  "route_ids": [
+    "RT-8aaa2b1230da6375"
+  ],
+  "candidate_ids": [
+    "OC-10e46c995546bedf"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-493c040b06dba178",
+      "text": "(H-J) Flow cytometry analysis of ZsGreen and CD163 expression in the screened 390 macrophages and the analysis.",
+      "source_ids": [
+        "S-606d887e5207"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1",
+    "F2"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "source_inventory_sha256": "b211de83b66b98330a8f0f537b44161c4be0b31874ce7aa5f20f7b8667588ad8",
+  "task_checksum": "8c68a10734c3620a3868d4ec006db4498fc8eb8f7cb5d733407e0398b24aa683"
+}

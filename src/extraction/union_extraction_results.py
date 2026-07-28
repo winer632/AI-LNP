@@ -30,6 +30,22 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[2]
 
 
+def _cite(root: Path) -> str:
+    """Name a run root the way a reader of the manifest can act on it.
+
+    A run root inside the repository is recorded relative to it. Absolute paths
+    were how the union lost its own provenance: the manifest cited three roots
+    under a working directory that no clone has, so 35 of the 51 records named
+    an origin nobody could open. Recording the path relative to the repository
+    also makes the manifest independent of the directory the build ran from,
+    which is what lets a rebuild be compared byte for byte at all.
+    """
+    resolved = root.resolve()
+    if resolved.is_relative_to(ROOT):
+        return str(resolved.relative_to(ROOT))
+    return str(root)
+
+
 def _load(path: Path) -> dict[str, Any] | None:
     for name in ("final_result.json", "result.json"):
         candidate = path / name
@@ -124,7 +140,7 @@ def build(
             "Recall-first ensemble over configurations. Every record was "
             "produced and validated by one of the input runs."
         ),
-        "run_roots": [str(root) for root in run_roots],
+        "run_roots": [_cite(root) for root in run_roots],
         "papers": [],
     }
     for paper_id in paper_ids:

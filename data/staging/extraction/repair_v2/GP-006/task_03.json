@@ -1,0 +1,35 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-bac16a8c7b594a05"
+  ],
+  "candidate_ids": [
+    "OC-4ec099151fb53107"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-0062483addf27f5e",
+      "text": "The effect of LNP treatment showed signiﬁcant improvement of FVIII activity.",
+      "source_ids": [
+        "S-1385dd7253d2",
+        "S-b35a38070366"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "20b96af81afe35d3e5f73fc471d7fbfe91c533c1743b0c5ff7c82eb0a20208d2"
+}

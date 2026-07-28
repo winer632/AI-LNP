@@ -1,0 +1,41 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-2cd30b9707f791f9"
+  ],
+  "candidate_ids": [
+    "OC-7e02be28ef250a82"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-61352269ff3b61f2",
+      "text": "Following injection, we measured endogenous FVIII activity in the treated mice using activated partial thromboplastin time (aPTT) assay.",
+      "source_ids": [
+        "S-620e08261866"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-0043b99ab0bf3320",
+      "text": "Following injection, we measured endogenous FVIII that Cas9/sgRNA LNP-treated mice exhibited shorter CT and CFT activity in the treated mice using activated partial thromboplastin durations compared with untreated mice, displaying a clotting ability time (aPTT) assay.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "874ea6806ee1c9d959700622cd69be564153f4cf02f8d72ce6a167cdbcded7b5"
+}

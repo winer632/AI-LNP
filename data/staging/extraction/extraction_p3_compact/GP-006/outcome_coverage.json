@@ -1,0 +1,371 @@
+{
+  "coverage_version": "outcome-coverage-1.1.0",
+  "paper_id": "GP-006",
+  "complexity_route": "complex",
+  "candidate_groups": 39,
+  "extracted_outcomes": 7,
+  "matched_candidates": [
+    {
+      "candidate_id": "OC-563eb562f6be8a11",
+      "outcome_id": "O4",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-f4662bac9b4a5cc3",
+      "outcome_id": "O2",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-827d27435abdd312",
+      "outcome_id": "O5",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-c0903300f94dcdae",
+      "outcome_id": "O3",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-da7b686c24311491",
+      "outcome_id": "O1",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-bb6af130607dd944",
+      "outcome_id": "O7",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-4ec099151fb53107",
+      "outcome_id": "O6",
+      "score": 1.0
+    }
+  ],
+  "unmatched_candidates": [
+    {
+      "candidate_id": "OC-179a7e222a4e1927",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf",
+        "GP-006-E-8fbb0d1c6f7ead81"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-842707c55fd53a55",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-9c61cae7b3cbdfda"
+      ],
+      "figure_or_table": "figures",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-be6096c1e0cde0ec",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "figure_or_table": "table s2",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-fbed8d047f393e0b",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-5b17d5bf9a42504e"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-34271609df560893",
+      "endpoint_family": "gene_editing",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-f3dda9c744c9ef01"
+      ],
+      "figure_or_table": "figure 3a",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-577d7d7fe2448951",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-ab6a59c6da34953c"
+      ],
+      "figure_or_table": "figure 4b",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-c028b1bbdc56681a",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d010646bb645e446"
+      ],
+      "figure_or_table": "figure 6a",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-fa3d41fbbfb8dbc9",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1893c0cd1beb2ee9"
+      ],
+      "figure_or_table": "figure 3b",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-a5cbad64b11d3b45",
+      "endpoint_family": "gene_editing",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-8af0fe6c0065d45c"
+      ],
+      "figure_or_table": "figure 6gene",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-3b3796b7e0c32c07",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d51e57e7bfc1ef65"
+      ],
+      "figure_or_table": "table s2",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-e2d4bb67d2cf343a",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-ef798f3259752156"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-d6d8ec31fcbb44d8",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0e932dc79aa7ba74"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-85f7147389be1c5a",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-5f1df7ac5c7ec3f9"
+      ],
+      "figure_or_table": "figure 4a",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-46a32d7d3a3de39d",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-8e9084aadcfe157d"
+      ],
+      "figure_or_table": "figure 5a",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-002e3262a80d3391",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d9a16a0c73e6b6b2"
+      ],
+      "figure_or_table": "figure 5a",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-da9a3d11dcdc94d9",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-8f4df2feafb0205d"
+      ],
+      "figure_or_table": "figures",
+      "confidence": "high"
+    }
+  ],
+  "review_candidates": [
+    {
+      "candidate_id": "OC-992ce3528e9ad840",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-566609fc939d51d8"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-cf67f0bbb37c4d51",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-566609fc939d51d8"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-1aae7f686c18db97",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-a646b1030db7fdba"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-7ef949313622e346",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-a646b1030db7fdba"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-83293575f233009f",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1d1871fe74140517"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-703929685a082d76",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-42aad5557a4b8d6e"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-42b55c575d866122",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-e77f320b73e493a8"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-6b23a27057538b1e",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d18589e268d50539"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-1c3f88c83b5cb897",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-191ac0774ac7347b"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-7e02be28ef250a82",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-61352269ff3b61f2"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-49c42aadb9e52528",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0062483addf27f5e"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-c649312dff81a308",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0043b99ab0bf3320"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-84d16f36e8abc183",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf"
+      ],
+      "figure_or_table": null,
+      "reason": "duplicate_or_overlapping_high_confidence_group"
+    },
+    {
+      "candidate_id": "OC-f3f78b36f67b4f7c",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "figure_or_table": "table s2",
+      "reason": "duplicate_or_overlapping_high_confidence_group"
+    },
+    {
+      "candidate_id": "OC-29c27b72a5ac6690",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf"
+      ],
+      "figure_or_table": null,
+      "reason": "duplicate_or_overlapping_high_confidence_group"
+    },
+    {
+      "candidate_id": "OC-22a1c323615b9066",
+      "endpoint_family": "gene_editing",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "figure_or_table": "table s2",
+      "reason": "duplicate_or_overlapping_high_confidence_group"
+    }
+  ],
+  "status": "review_unmatched_groups",
+  "paid_api_requests": 0
+}
