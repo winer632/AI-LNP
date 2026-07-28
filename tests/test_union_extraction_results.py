@@ -98,8 +98,19 @@ def test_every_record_names_the_run_that_produced_it():
         for root in (CONTROL_RUN, TREATMENT_RUN)
         for row in _outcomes(root)
     }
+    # source_run and source_outcome_id are added by the union, and a record
+    # whose id collided with one already taken is renumbered -- runs number
+    # their own records from O1, so collisions across sources are normal and
+    # keeping both numbering schemes would make the evaluator credit one
+    # record's match to the other. Strip all three and the payload must be
+    # byte-identical to a record some input run actually produced.
     for row in merged["outcomes"]:
-        stripped = {k: v for k, v in row.items() if k != "source_run"}
+        stripped = {
+            key: value
+            for key, value in row.items()
+            if key not in {"source_run", "source_outcome_id"}
+        }
+        stripped["outcome_id"] = row.get("source_outcome_id", row["outcome_id"])
         assert json.dumps(stripped, sort_keys=True, ensure_ascii=False) in originals
 
 

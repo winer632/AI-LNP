@@ -125,6 +125,39 @@ flags:
     integration_points:
       - src/extraction/evaluate_final_gold_dynamic.py
 
+  vision_relationship_polarity:
+    # No design-document priority id: this is a follow-on to P0-b/P2 rather
+    # than a numbered roadmap item, and the id doubles as a lookup alias.
+    default: true
+    status: enabled
+    rationale: >-
+      Enabled on measurement, and on safety. No result record in any
+      shipped root carries vision_relationship, so turning this on moves
+      no existing number: default stays 10/15 and codex_union_v1 stays
+      11/15. On a union+vision root it takes recall 11/15 -> 12/15 and
+      precision 0.3585 -> 0.3774, admitting GO-003 while GO-002 stays
+      refused. The safety half is why it is not off: without it a
+      not_colocalized read satisfies a gold row asserting colocalized,
+      because tokenising the denial leaves "colocalized" in place. Off
+      means that hole is open whenever vision records are merged.
+    description: >-
+      Judge a record that declares a vision relationship on that structured
+      declaration rather than on its prose. Reads the vision contract's closed
+      VisualRelationship vocabulary from the record's vision_relationship
+      field: a denial of the relation a gold row asserts fails the polarity
+      gate outright, and an affirmation discharges that one term while any
+      other distinctive term still has to be met. Records that declare nothing
+      -- every record from the text route -- are unaffected. Deliberately not a
+      loosening of the token lexicon: equivalence classes over that lexicon
+      were built and rejected for accepting 30% of 500 generated
+      opposite-polarity candidates.
+    aliases: [vision_polarity, relationship_polarity]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/evaluate_final_gold_dynamic.py
+
   # ----------------------------------------------------------------------- P2
   local_vlm_vision:
     priority: P2

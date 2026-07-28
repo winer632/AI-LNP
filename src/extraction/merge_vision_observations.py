@@ -8,7 +8,24 @@ extraction result.
 Only ``resolved`` observations are converted. ``missing``, ``ambiguous`` and
 ``human_review`` are carried into the report but never become records: an
 observation that abstained must not silently turn into a claim, which is the
-whole point of the abstain rule.
+whole point of the abstain rule. An abstaining observation therefore never
+acquires a ``vision_relationship`` either -- it returns before the field is
+written.
+
+The observation's ``relationship`` is carried through as a structured field
+rather than dropped. It is a closed seven-value vocabulary
+(:data:`~src.extraction.selective_vision_contracts.VisualRelationship`) that
+the vision model chose under schema constraint, having never seen the gold
+set, so carrying it propagates a structured judgement the pipeline already
+made rather than injecting benchmark vocabulary. The evaluator can then
+compare a declared relation against a gold claim structurally instead of
+guessing at polarity from prose.
+
+It is deliberately NOT spliced into any text field. The negative member is
+spelled with the positive one inside it, so a text encoding of
+"not_colocalized" tokenises to {"not", "colocalized"} and reads to a
+bag-of-words matcher as an affirmation of the very relation it denies. The
+field is structured precisely so that no consumer has to survive that.
 """
 
 from __future__ import annotations
@@ -67,6 +84,10 @@ def observation_to_outcome(
         "source_stage": "vision",
         "vision_panel": observation.get("panel_or_table_cell"),
         "printed_labels": list(observation.get("printed_labels") or []),
+        # Structured, never folded into the text above. See the module
+        # docstring: the enum's negative member contains its own positive
+        # member as a substring, so only a structured comparison is safe.
+        "vision_relationship": observation.get("relationship"),
     }
 
 
