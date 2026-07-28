@@ -56,6 +56,60 @@ flags:
     integration_points:
       - src/rag/ingestion.py
 
+  uniparse_crop_verification:
+    # Section 十 of the design document, which calls this layer mandatory. It is
+    # not a numbered roadmap priority, so it registers no priority id.
+    default: true
+    status: enabled
+    rationale: >-
+      Enabled on measurement, and enabled because the alternative is
+      citing a VLM transcription with nothing behind it. Section 十 says
+      an unaudited uniparse parse "只是把幻觉从抽取阶段挪到解析阶段" --
+      it merely moves hallucination from extraction to parsing, where it
+      is harder to see because it looks like structured data. Measured on
+      the block that carries GO-006's value: GP-006-B-098d79d1de1fdd6819a5,
+      "Table S2 | LSEC | ... total insertion frequency: 1.01 ± 0.38 %",
+      mmc1.pdf page 2. That region has no text layer at all --
+      page.get_text() returns "" inside the recorded bbox -- so the parse
+      was the only account of it. All 12 of the row's numbers are
+      corroborated by macOS Vision OCR of a 600 dpi crop, and a second
+      uniparse read of the region cut out on its own returns table HTML
+      byte-identical to the first. The transcription is correct. But the
+      same sweep over all 248 uniparse table/caption blocks in the corpus
+      found five that are not: 42 of the 45 distinct sequence-length runs
+      uniparse produced for GP-004's Supplementary Tables 2 and 3
+      (41467_2021_20903_MOESM1_ESM.pdf pages 10-11) do not occur in those
+      pages' own text layer. It gave the eGFP and HGF rows the Luciferase
+      row's sequence, and corrupted the bases besides. Those pages are
+      ordinary vector text, so a deterministic reader gets them right and
+      the VLM did not. That is what section 十 warned about and what this
+      flag exists to surface. Safe to default on because it
+      costs no network call (the second read is opt-in), never drops a
+      block, and degrades to "unverified" plus a warning when no reader is
+      available -- which is the honest verdict, not a failure.
+    description: >-
+      Cross-check every uniparse table and caption block against a fresh crop of
+      the page region it records. Renders the bbox with PyMuPDF, then re-reads it
+      with readers that did not produce the parse -- the PDF text layer, local
+      OCR of the crop, and optionally a second uniparse parse of the region cut
+      out on its own -- and requires every number the parse asserts to appear in
+      at least one of them. Sequence-length runs (24-plus alphanumeric
+      characters: nucleotides, accessions) additionally have to occur in the
+      region's own text layer, which is the check that caught GP-004. The
+      verdict is stamped on the block as
+      verification_status. Corroboration and contradiction are asymmetric on
+      purpose: a token found in a noisy read counts, a token missing from one
+      does not condemn the parse unless the reader was confident. On the GP-006
+      crop macOS Vision misread two Hepatocyte cells (0.92 for 0.91, 0.02 for
+      0.01) at confidence 0.5 and 0.3 while uniparse had them right, so a naive
+      OCR-equality rule would have raised two false alarms on a correct table.
+    aliases: [crop_verification, table_crop_crosscheck]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/rag/ingestion.py
+
   # --------------------------------------------------------------------- P0-a
   full_evidence_view:
     priority: P0-a
