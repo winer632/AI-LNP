@@ -11,10 +11,11 @@ This document separates three questions that must never be confused:
 | Stage | Main file | What it does | Paid call? |
 |---|---|---|---|
 | Ingest | `src/ingestion.py` / pipeline ingestion modules | Parse the paper and preserve text, tables, figures, locations, and identifiers. | No |
-| Compact evidence | `src/rag/compact_api_packet.py` | Select evidence for the first extraction call. | No |
-| Full local evidence view | `src/extraction/build_full_outcome_inventory.py` | Rejoins all locally parsed blocks so recall checking is not limited by the first-call token budget. | No |
-| Complexity census | `src/extraction/assess_outcome_complexity.py` | Before the first call, label the paper simple or complex from inexpensive signals. | No |
-| First extraction | `src/extraction/run_compact_one_call.py` | Extract records from the compact API packet. | Yes, one call per uncached paper |
+| Compact evidence view | `src/rag/compact_api_packet.py` | Select a token-budgeted slice of retrieval evidence for the first extraction call. | No |
+| Full local evidence view | `src/extraction/build_full_outcome_inventory.py` | Rejoins all locally parsed blocks so neither extraction nor recall checking is limited by the first-call token budget. | No |
+| Full API packet | `src/rag/full_api_packet.py` | Writes that full view to `data/staging/rag/full_api_packets_v1/{paper_id}.json` with a manifest, in the same packet type and checksum rule as the compact packet. | No |
+| Complexity census | `src/extraction/assess_outcome_complexity.py` | Before the first call, label the paper simple or complex from inexpensive signals, using thresholds calibrated per evidence view. | No |
+| First extraction | `src/extraction/run_compact_one_call.py` | Extract records from the selected evidence view: `--evidence-view compact` for the budgeted packet, `--evidence-view full` for the complete local evidence. | Yes, one call per uncached paper |
 | Ordinary validation | `src/extraction/compact_validation.py` | Check schema, IDs, links, field status, and evidence labels. | No |
 | Candidate inventory | `src/extraction/build_outcome_candidates.py` + `consolidate_outcome_candidates.py` | For complex papers, build and deduplicate possible outcome groups from the full local evidence view. | No |
 | Coverage | `src/extraction/check_outcome_coverage.py` | Match candidates to returned outcomes one-to-one. Unmatched candidates remain explicit. | No |
@@ -25,6 +26,30 @@ This document separates three questions that must never be confused:
 | Merge | `src/extraction/merge_missing_records.py` and `merge_compact_results.py` | Reject stale tasks, ID collisions, invented evidence, bad links, and unresolved candidates; never overwrite the source result. | No |
 | Revalidation and coverage | same merge plus local validators | Re-run schema/evidence checks and complex-paper coverage after records are added. | No |
 | Final benchmark | `src/extraction/evaluate_final_gold_dynamic.py` | Measure final one-to-one recovery from actual merged records without hard-coded recovered IDs. | No |
+
+## Evidence views
+
+Both views are the same `CompactApiPacket` type, are signed with the same
+checksum rule, and are read by the same `load_packet`, so any consumer accepts
+either one.
+
+- **Compact view** (`data/staging/rag/compact_api_packets_v1/`): retrieval
+  evidence ranked by priority and truncated to a 16,000-token budget. Frozen
+  behavior; its prompt cache key is unchanged.
+- **Full view** (`data/staging/rag/full_api_packets_v1/`): the same retrieval
+  evidence rejoined with every locally parsed block. Evidence added by the
+  corpus expansion is tagged only `outcomes` or `full_corpus` and carries no
+  experiment anchors, so it is weaker than retrieval-tagged evidence.
+
+Consequences that are enforced in code:
+
+- The request fingerprint carries the view, so the two views never share a
+  prompt cache key.
+- `run_compact_one_call` estimates input size before sending and refuses any
+  request above `--max-input-tokens` (default 150,000) instead of paying for it.
+- The complexity census scales its volume-based thresholds for the full view and
+  weights `full_corpus`-only passages at half, so corpus volume alone cannot
+  route every paper to `complex`. Compact-view scoring is unchanged.
 
 ## Simple versus complex behavior
 

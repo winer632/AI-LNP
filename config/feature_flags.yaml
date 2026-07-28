@@ -1,0 +1,134 @@
+# Central feature-flag registry for AI-LNP.
+#
+# This file is the single source of truth for which optional capabilities exist,
+# what they default to, and which environment variable overrides them at run
+# time. It is read by `src/config_flags.py`; nothing else should parse it.
+#
+# Resolution order for every flag (highest priority first):
+#   1. an explicit `default=` argument passed to `is_enabled(...)`  (unknown flags only)
+#   2. the flag's own environment variable (`env:` below, if declared)
+#   3. the conventional environment variable `AI_LNP_FLAG_<NAME_IN_UPPER_CASE>`
+#   4. `yaml_source:` below, when the flag mirrors another config file
+#   5. `default:` below
+#
+# Accepted environment values (case-insensitive):
+#   true  -> 1 true t yes y on enable enabled
+#   false -> 0 false f no n off disable disabled
+#   An empty or whitespace-only value is treated as "not set" so that
+#   `AI_LNP_FLAG_X= command` falls back to the configured default instead of
+#   silently meaning false.
+#
+# New capabilities default to `false` so they can be rolled out gradually.
+
+flags_version: feature-flags-1.0.0
+env_prefix: AI_LNP_FLAG_
+
+flags:
+
+  # --------------------------------------------------------------------- P0-a
+  uniparse_ingestion:
+    priority: P1
+    default: false
+    status: in_development
+    description: >-
+      Route document ingestion through the external UniParse structural parsing
+      service (see UNIPARSE_BASE_URL in .env.example) instead of the in-repo
+      PDF/XML parser. Preserves sections, captions, tables, cells, and reading
+      order so figure/table objects survive into the evidence graph.
+    aliases: [P1, p1, uniparse]
+    integration_points:
+      - src/rag/ingestion.py
+      - src/rag/index.py
+      - src/screening/retrieve_gold_oa_packages.py
+
+  # --------------------------------------------------------------------- P0-b
+  full_evidence_view:
+    priority: P0-a
+    default: false
+    status: in_development
+    description: >-
+      Send the full local evidence inventory to the extraction call instead of
+      the token-budgeted compact packet. Trades input cost for recall on papers
+      whose evidence does not fit the compact budget.
+    aliases: [P0-a, p0a, full_view]
+    integration_points:
+      - src/rag/compact_packet.py
+      - src/rag/models.py
+      - src/extraction/build_full_outcome_inventory.py
+      - src/extraction/run_compact_one_call.py
+
+  # ----------------------------------------------------------------------- P1
+  precision_metrics:
+    priority: P0-b
+    default: false
+    status: in_development
+    description: >-
+      Compute dynamic precision/recall metrics during final gold evaluation
+      rather than reporting only one-to-one recovery counts.
+    aliases: [P0-b, p0b]
+    integration_points:
+      - src/extraction/evaluate_final_gold_dynamic.py
+
+  # ----------------------------------------------------------------------- P2
+  local_vlm_vision:
+    priority: P2
+    default: false
+    status: planned
+    description: >-
+      Use a local vision-language model (Ollama + Gemma) for targeted figure and
+      table observation instead of a paid multimodal call. Output must stay
+      structured observations with explicit abstention, never conclusions.
+    aliases: [P2, p2]
+    integration_points:
+      - src/extraction/assess_outcome_complexity.py
+      - src/extraction/run_selective_vision.py
+
+  # ----------------------------------------------------------------------- P3
+  expanded_discovery:
+    priority: roadmap
+    default: false
+    status: planned
+    description: >-
+      Expand literature discovery beyond PubMed and Europe PMC (OpenAlex,
+      semantic similarity, backward/forward citation chaining) while keeping
+      deduplication and the complete search manifest.
+    aliases: [discovery_expansion]
+    integration_points:
+      - src/search/
+
+  # ------------------------------------------------------------------ baseline
+  # ---------------------------------------------------------------------- P3
+  candidate_slot_enforcement:
+    priority: P3
+    default: false
+    status: in_development
+    description: >-
+      Send the locally enumerated outcome-candidate slots with the first
+      extraction call and require the model to account for every candidate id.
+      Today the candidates are computed before the call but never sent, so a
+      response that silently omits an experiment still passes schema validation.
+    aliases: [P3, p3, candidate_must_answer]
+    integration_points:
+      - src/extraction/run_compact_one_call.py
+      - src/extraction/compact_prompt_v1.py
+      - src/extraction/compact_validation.py
+
+  compact_route:
+    priority: baseline
+    status: gated
+    # The compact route's activation gate used to be a dead config value that no
+    # runtime code read. It is now a real switch: this flag mirrors the YAML key
+    # below, and `is_enabled("compact_route")` is the only supported way to ask
+    # whether the compact route may replace the baseline route.
+    default: false
+    yaml_source:
+      path: config/extraction/compact_route_v1.yaml
+      key: activation_gate.active
+    description: >-
+      Allow the compact extraction route to replace the
+      fulltext-rag-evidence-graph-v4 baseline. Stays off until the compact route
+      has been implemented and gold-evaluated end to end.
+    aliases: [compact_activation_gate, activation_gate]
+    integration_points:
+      - src/extraction/run_compact_one_call.py
+      - config/extraction/compact_route_v1.yaml

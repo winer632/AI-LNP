@@ -23,11 +23,12 @@ from src.extraction.compact_prompt_v1 import (
     PROMPT_VERSION,
     prompt_sha256,
 )
-from src.rag.compact_api_packet import CompactApiPacket
+from src.rag.compact_api_packet import CompactApiPacket, estimate_tokens
 
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKET_ROOT = ROOT / "data" / "staging" / "rag" / "compact_api_packets_v1"
+FULL_PACKET_ROOT = ROOT / "data" / "staging" / "rag" / "full_api_packets_v1"
 OUTPUT_ROOT = ROOT / "data" / "staging" / "extraction" / "compact_one_call_v1"
 SCHEMA_PATH = (
     ROOT
@@ -37,6 +38,14 @@ SCHEMA_PATH = (
     / "compact_v1"
     / "compact_extraction_response.schema.json"
 )
+DEFAULT_EVIDENCE_VIEW = "compact"
+PACKET_ROOT_BY_VIEW = {
+    "compact": PACKET_ROOT,
+    "full": FULL_PACKET_ROOT,
+}
+# The full view ships every parsed block, so an oversized or wrongly built
+# packet must fail locally instead of becoming a very expensive request.
+DEFAULT_MAX_INPUT_TOKENS = 150_000
 
 
 def _canonical_json(value: Any) -> str:
@@ -67,19 +76,52 @@ def load_packet(paper_id: str, packet_root: Path = PACKET_ROOT) -> CompactApiPac
     return packet
 
 
-def request_fingerprint(packet: CompactApiPacket, model: str) -> str:
-    return _sha256(
-        _canonical_json(
-            {
-                "paper_id": packet.paper_id,
-                "packet_checksum": packet.packet_checksum,
-                "prompt_version": PROMPT_VERSION,
-                "prompt_checksum": prompt_sha256(),
-                "schema_checksum": _sha256(SCHEMA_PATH.read_bytes()),
-                "model": model,
-            }
-        )
+def packet_root_for(evidence_view: str = DEFAULT_EVIDENCE_VIEW) -> Path:
+    try:
+        return PACKET_ROOT_BY_VIEW[evidence_view]
+    except KeyError:
+        raise ValueError(
+            f"Unknown evidence view {evidence_view!r}; "
+            f"expected one of {sorted(PACKET_ROOT_BY_VIEW)}"
+        ) from None
+
+
+def estimated_input_tokens(packet_payload: dict[str, Any]) -> dict[str, int]:
+    """Estimate the request's input size with the packet builder's own method."""
+    prompt_tokens = estimate_tokens(COMPACT_EXTRACTION_PROMPT)
+    schema_tokens = estimate_tokens(
+        json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     )
+    packet_tokens = estimate_tokens(packet_payload)
+    return {
+        "prompt": prompt_tokens,
+        "response_schema": schema_tokens,
+        "evidence_packet": packet_tokens,
+        "total": prompt_tokens + schema_tokens + packet_tokens,
+    }
+
+
+def request_fingerprint(
+    packet: CompactApiPacket,
+    model: str,
+    evidence_view: str = DEFAULT_EVIDENCE_VIEW,
+) -> str:
+    """Identify one request, and never let two views share a prompt cache key.
+
+    The compact view's fingerprint payload is frozen: the view key is added only
+    for other views, so already-cached compact requests keep their cache key.
+    """
+    payload = {
+        "paper_id": packet.paper_id,
+        "packet_checksum": packet.packet_checksum,
+        "prompt_version": PROMPT_VERSION,
+        "prompt_checksum": prompt_sha256(),
+        "schema_checksum": _sha256(SCHEMA_PATH.read_bytes()),
+        "model": model,
+    }
+    if evidence_view != DEFAULT_EVIDENCE_VIEW:
+        payload["evidence_view"] = evidence_view
+    return _sha256(_canonical_json(payload))
 
 
 def _refusals(response: Any) -> list[str]:
@@ -97,11 +139,20 @@ def run_one(
     *,
     model: str,
     client: OpenAI,
-    packet_root: Path = PACKET_ROOT,
+    packet_root: Path | None = None,
     output_root: Path = OUTPUT_ROOT,
     max_output_tokens: int = 12_000,
+    evidence_view: str = DEFAULT_EVIDENCE_VIEW,
+    max_input_tokens: int = DEFAULT_MAX_INPUT_TOKENS,
 ) -> dict[str, Any]:
     """Make one paid request and persist its request, response, result, and usage."""
+    if packet_root is None:
+        packet_root = packet_root_for(evidence_view)
+    elif evidence_view not in PACKET_ROOT_BY_VIEW:
+        raise ValueError(
+            f"Unknown evidence view {evidence_view!r}; "
+            f"expected one of {sorted(PACKET_ROOT_BY_VIEW)}"
+        )
     packet = load_packet(paper_id, packet_root)
     run_dir = output_root / paper_id
     result_path = run_dir / "result.json"
@@ -109,6 +160,14 @@ def run_one(
     if result_path.exists() or raw_response_path.exists():
         raise FileExistsError(
             f"A completed response already exists for {paper_id}; refusing a duplicate paid call."
+        )
+    packet_payload = packet.model_dump(mode="json", exclude_none=True)
+    input_tokens = estimated_input_tokens(packet_payload)
+    if input_tokens["total"] > max_input_tokens:
+        raise ValueError(
+            f"Estimated input for {paper_id} in the {evidence_view} view is "
+            f"{input_tokens['total']:,} tokens, above the "
+            f"{max_input_tokens:,} token limit; refusing to send the request."
         )
     run_dir.mkdir(parents=True, exist_ok=True)
     complexity = assess(packet)
@@ -128,11 +187,14 @@ def run_one(
             encoding="utf-8",
         )
 
-    packet_payload = packet.model_dump(mode="json", exclude_none=True)
-    fingerprint = request_fingerprint(packet, model)
+    fingerprint = request_fingerprint(packet, model, evidence_view)
     request_snapshot = {
         "paper_id": paper_id,
         "model": model,
+        "evidence_view": evidence_view,
+        "packet_root": str(packet_root),
+        "estimated_input_tokens": input_tokens,
+        "max_input_tokens": max_input_tokens,
         "reasoning_effort": "low",
         "store": False,
         "service_tier": "default",
@@ -227,6 +289,10 @@ def run_one(
         "model_returned": response.model,
         "response_id": response.id,
         "request_fingerprint": fingerprint,
+        "evidence_view": evidence_view,
+        "packet_root": str(packet_root),
+        "estimated_input_tokens": input_tokens,
+        "max_input_tokens": max_input_tokens,
         "packet_checksum": packet.packet_checksum,
         "prompt_version": PROMPT_VERSION,
         "prompt_checksum": prompt_sha256(),
@@ -268,6 +334,31 @@ def main() -> None:
     )
     parser.add_argument("--paper-id", required=True)
     parser.add_argument(
+        "--evidence-view",
+        choices=sorted(PACKET_ROOT_BY_VIEW),
+        default=DEFAULT_EVIDENCE_VIEW,
+        help=(
+            "Which evidence view to send: the budgeted compact packet, or the "
+            "full local view containing every parsed block. Selects the default "
+            "--packet-root."
+        ),
+    )
+    parser.add_argument(
+        "--packet-root",
+        type=Path,
+        default=None,
+        help=(
+            "Relative or absolute directory holding {paper_id}.json packets; "
+            "overrides the directory implied by --evidence-view."
+        ),
+    )
+    parser.add_argument(
+        "--max-input-tokens",
+        type=int,
+        default=DEFAULT_MAX_INPUT_TOKENS,
+        help="Refuse to send a request whose estimated input exceeds this size.",
+    )
+    parser.add_argument(
         "--confirm-paid-call",
         action="store_true",
         help="Required guard acknowledging that exactly one paid API request may be made.",
@@ -275,6 +366,12 @@ def main() -> None:
     args = parser.parse_args()
     if not args.confirm_paid_call:
         parser.error("--confirm-paid-call is required")
+
+    packet_root = packet_root_for(args.evidence_view)
+    if args.packet_root is not None:
+        packet_root = args.packet_root.expanduser()
+        if not packet_root.is_absolute():
+            packet_root = (Path.cwd() / packet_root).resolve()
 
     load_dotenv(ROOT / ".env")
     model = os.getenv("COMPACT_EXTRACTION_MODEL", "gpt-5.6-terra")
@@ -284,7 +381,14 @@ def main() -> None:
         timeout=300.0,
         max_retries=0,
     )
-    manifest = run_one(args.paper_id, model=model, client=client)
+    manifest = run_one(
+        args.paper_id,
+        model=model,
+        client=client,
+        packet_root=packet_root,
+        evidence_view=args.evidence_view,
+        max_input_tokens=args.max_input_tokens,
+    )
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
 
 

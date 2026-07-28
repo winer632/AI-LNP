@@ -36,6 +36,12 @@ baseline:
   route: fulltext-rag-evidence-graph-v4
   manifest: docs/extraction/baselines/fulltext_rag_v4.json
 
+# `active` is a real runtime switch, not documentation. It is the configured
+# default of the `compact_route` feature flag; read it through
+# `src.config_flags.is_enabled("compact_route")` so that the
+# AI_LNP_FLAG_COMPACT_ROUTE environment override is honoured. See
+# config/feature_flags.yaml.
 activation_gate:
   active: false
+  feature_flag: compact_route
   requirement: implement_and_gold_evaluate_compact_route_before_replacing_baseline

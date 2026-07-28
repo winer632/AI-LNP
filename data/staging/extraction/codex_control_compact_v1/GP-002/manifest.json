@@ -1,0 +1,39 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-002",
+  "evidence_view": "compact",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T16:55:10.820232+00:00",
+  "completed_at": "2026-07-28T16:55:59.081900+00:00",
+  "elapsed_seconds": 48.26,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-002-E-328622aa8f5533ce",
+      "GP-002-E-e8e9fe5cd896c926",
+      "GP-002-E-39062576eea8789d",
+      "GP-002-E-919bac300948d680",
+      "GP-002-E-3b62dd9a6e6a70a1"
+    ],
+    "explanation": "Original in vivo mouse experiment reports an identifiable SM-102 mRNA-LNP, intravenous eGFP-mRNA delivery, eGFP staining in hepatocytes, and linked formulation and outcome evidence."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 4,
+    "experiments": 1,
+    "outcomes": 1,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}

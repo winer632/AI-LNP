@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  # The test suite must never reach a paid API. Blanking the credentials makes
+  # any accidental call fail fast instead of spending money, and keeps a run
+  # from silently depending on a secret that CI does not have.
+  OPENAI_API_KEY: ""
+  SENSENOVA_API_KEY: ""
+  # Feature flags stay at their configured defaults so CI tests the shipped
+  # configuration rather than a locally enabled capability.
+  AI_LNP_FLAG_UNIPARSE_INGESTION: ""
+  AI_LNP_FLAG_FULL_EVIDENCE_VIEW: ""
+  AI_LNP_FLAG_PRECISION_METRICS: ""
+  AI_LNP_FLAG_LOCAL_VLM_VISION: ""
+  AI_LNP_FLAG_EXPANDED_DISCOVERY: ""
+  AI_LNP_FLAG_COMPACT_ROUTE: ""
+
+jobs:
+  test:
+    name: pytest
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Assert the test run left the working tree clean
+        # The suite used to rewrite tracked reports with a fresh timestamp on
+        # every run. Writers now resolve an injectable output root
+        # (src/output_paths.py) that points outside the checkout under pytest.
+        # This step keeps that regression from coming back, and also catches
+        # stray generated files that are neither tracked nor git-ignored.
+        run: |
+          git status --porcelain > "${RUNNER_TEMP}/tree-after.txt"
+          if [ -s "${RUNNER_TEMP}/tree-after.txt" ]; then
+            echo "::error::pytest modified the working tree. Tests must not write into the checkout."
+            echo "--- git status --porcelain ---"
+            cat "${RUNNER_TEMP}/tree-after.txt"
+            echo "--- git diff ---"
+            git --no-pager diff
+            exit 1
+          fi
+          echo "Working tree is clean after pytest."
+
+      - name: Report the effective feature-flag configuration
+        if: always()
+        run: python -m src.config_flags

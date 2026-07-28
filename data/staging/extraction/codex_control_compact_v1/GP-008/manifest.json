@@ -1,0 +1,42 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-008",
+  "evidence_view": "compact",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T17:00:16.431085+00:00",
+  "completed_at": "2026-07-28T17:01:44.457881+00:00",
+  "elapsed_seconds": 88.025,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-008-E-38bead8279685734",
+      "GP-008-E-9f4e4aba562731a4",
+      "GP-008-E-536ddd1a9e1a2ad1",
+      "GP-008-E-88b49512db93fee5",
+      "GP-008-E-723b0b7a8fcc6107",
+      "GP-008-E-c2f49c1ec1cd78d3",
+      "GP-008-E-314b6997ecd0e60c",
+      "GP-008-E-d32251f9c2db82ae"
+    ],
+    "explanation": "Original experiments report CD163-antibody-targeted LNP delivery of mRNA to macrophage-related cells, including hepatic macrophage evidence, with linked mouse liver-fibrosis outcomes."
+  },
+  "record_counts": {
+    "formulations": 2,
+    "components": 5,
+    "experiments": 2,
+    "outcomes": 3,
+    "unresolved_items": 4
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}

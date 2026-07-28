@@ -7,10 +7,17 @@ from pathlib import Path
 
 from src.extraction.contracts_v4 import EvidenceGraphV4
 from src.extraction.run_abstract_first import ROOT
+from src.output_paths import artifact_path
 
 
 RUN_ROOT = ROOT / "data" / "staging" / "extraction" / "g1_fulltext_rag"
+
+# Canonical output locations. The actual write targets are resolved per call
+# through `src.output_paths` so a test run redirects them instead of rewriting
+# tracked files. See `finalize`.
 REPORT_ROOT = ROOT / "reports" / "rag"
+REPORT_PARTS = ("reports", "rag")
+ELIGIBLE_PARTS = ("data", "staging", "extraction", "g1_fulltext_rag", "eligible")
 
 POSITIVE_PAPERS = ("GP-002", "GP-004", "GP-005", "GP-006", "GP-007", "GP-008")
 NEGATIVE_REASONS = {
@@ -64,9 +71,18 @@ def empty_graph(paper_id: str) -> EvidenceGraphV4:
     )
 
 
-def finalize() -> dict:
-    REPORT_ROOT.mkdir(parents=True, exist_ok=True)
-    eligible_root = RUN_ROOT / "eligible"
+def finalize(*, output_root: Path | str | None = None) -> dict:
+    """Freeze the final full-text RAG G1 result.
+
+    ``output_root`` overrides where the eligible graphs, the negative-control
+    CSV, and the metric/decision reports are written. When omitted the target
+    comes from :func:`src.output_paths.output_root`, which resolves to the
+    repository for a real run and to a scratch directory under pytest so the
+    tracked artifacts are never rewritten by the test suite.
+    """
+    report_root = artifact_path(*REPORT_PARTS, root=output_root, create_parents=False)
+    report_root.mkdir(parents=True, exist_ok=True)
+    eligible_root = artifact_path(*ELIGIBLE_PARTS, root=output_root, create_parents=False)
     eligible_root.mkdir(parents=True, exist_ok=True)
 
     reviewed_claims = 0
@@ -111,7 +127,7 @@ def finalize() -> dict:
             "reason": reason,
         })
 
-    negative_csv = REPORT_ROOT / "g1_negative_control_evidence.csv"
+    negative_csv = report_root / "g1_negative_control_evidence.csv"
     with negative_csv.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(
             handle,
@@ -178,7 +194,7 @@ def finalize() -> dict:
             ),
         },
     }
-    json_path = REPORT_ROOT / "g1_fulltext_final_metrics.json"
+    json_path = report_root / "g1_fulltext_final_metrics.json"
     json_path.write_text(json.dumps(result, indent=2) + "\n")
 
     lines = [
@@ -213,7 +229,7 @@ def finalize() -> dict:
         ", ".join(sorted(ALL_GOLD_OUTCOMES - RECOVERED_GOLD_OUTCOMES)),
         "",
     ]
-    (REPORT_ROOT / "g1_fulltext_final_decision.md").write_text(
+    (report_root / "g1_fulltext_final_decision.md").write_text(
         "\n".join(lines)
     )
     return result

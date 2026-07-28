@@ -6,13 +6,21 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.output_paths import artifact_path
+
 from .run_abstract_first import ROOT
 
 
 RUN = ROOT / "data" / "staging" / "extraction" / "g1_v3_boundaries"
 REVIEW = ROOT / "data" / "review" / "day5_g1_v3_boundary_review.jsonl"
+
+# Canonical locations of the frozen artifacts. The actual write targets are
+# resolved per call through `src.output_paths` so a test run redirects them
+# instead of rewriting tracked files. See `freeze`.
 FROZEN = ROOT / "data" / "staging" / "extraction" / "g1_v3_frozen_boundaries"
 REPORT = ROOT / "reports" / "extraction" / "day5_g1_v3_frozen_boundaries.json"
+FROZEN_PARTS = ("data", "staging", "extraction", "g1_v3_frozen_boundaries")
+REPORT_PARTS = ("reports", "extraction")
 
 
 CUSTOM_GP007 = [
@@ -25,12 +33,22 @@ CUSTOM_GP007 = [
 ]
 
 
-def freeze() -> dict:
+def freeze(*, output_root: Path | str | None = None) -> dict:
+    """Freeze the human-approved v3 experiment boundaries.
+
+    ``output_root`` overrides where the frozen boundary files and the report are
+    written. When omitted the target comes from
+    :func:`src.output_paths.output_root`, which resolves to the repository for a
+    real run and to a scratch directory under pytest so the tracked artifacts
+    are never rewritten by the test suite.
+    """
     reviews = [json.loads(line) for line in REVIEW.read_text(encoding="utf-8").splitlines() if line.strip()]
     incomplete = [row["paper_id"] for row in reviews if row.get("boundary_decision") not in {"reader_a", "reader_b", "custom_required"} or not row.get("reviewer_reason")]
     if incomplete:
         raise ValueError(f"Incomplete boundary decisions: {incomplete}")
-    FROZEN.mkdir(parents=True, exist_ok=True)
+    frozen_dir = artifact_path(*FROZEN_PARTS, root=output_root, create_parents=False)
+    frozen_dir.mkdir(parents=True, exist_ok=True)
+    report_path = artifact_path(*REPORT_PARTS, REPORT.name, root=output_root)
     frozen_papers = []
     for row in reviews:
         paper_id = row["paper_id"]
@@ -69,10 +87,10 @@ def freeze() -> dict:
                 for index, experiment in enumerate(experiments, 1)
             ],
         }
-        (FROZEN / f"{paper_id}.json").write_text(json.dumps(frozen, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        (frozen_dir / f"{paper_id}.json").write_text(json.dumps(frozen, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         frozen_papers.append({"paper_id": paper_id, "experiments": len(experiments), "source": source_reader})
     report = {"frozen_at": datetime.now(timezone.utc).isoformat(), "papers": frozen_papers, "status": "ready_for_experiment_scoped_extraction"}
-    REPORT.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report
 
 

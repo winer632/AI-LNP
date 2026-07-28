@@ -1,0 +1,22 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-001",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "UNSUPPORTED_PAYLOAD",
+      "NOT_ELIGIBLE_LNP"
+    ],
+    "evidence_ids": [
+      "GP-001-E-2ccc4dd1032f3bb2",
+      "GP-001-E-b4f9fa2fb6f8a619"
+    ],
+    "explanation": "The reported formulation is a solid lipid nanoparticle carrying CTD, not an LNP delivering mRNA, siRNA, saRNA, or circRNA."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_items": []
+}

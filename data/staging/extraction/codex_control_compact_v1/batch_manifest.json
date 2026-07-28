@@ -1,0 +1,345 @@
+{
+  "harness": "codex-exec",
+  "evidence_view": "compact",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "papers": [
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-001",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:54:55.007165+00:00",
+      "completed_at": "2026-07-28T16:55:10.792525+00:00",
+      "elapsed_seconds": 15.783,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "UNSUPPORTED_PAYLOAD",
+          "NOT_ELIGIBLE_LNP"
+        ],
+        "evidence_ids": [
+          "GP-001-E-2ccc4dd1032f3bb2",
+          "GP-001-E-b4f9fa2fb6f8a619"
+        ],
+        "explanation": "The reported formulation is a solid lipid nanoparticle carrying CTD, not an LNP delivering mRNA, siRNA, saRNA, or circRNA."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 0
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-002",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:55:10.820232+00:00",
+      "completed_at": "2026-07-28T16:55:59.081900+00:00",
+      "elapsed_seconds": 48.26,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-002-E-328622aa8f5533ce",
+          "GP-002-E-e8e9fe5cd896c926",
+          "GP-002-E-39062576eea8789d",
+          "GP-002-E-919bac300948d680",
+          "GP-002-E-3b62dd9a6e6a70a1"
+        ],
+        "explanation": "Original in vivo mouse experiment reports an identifiable SM-102 mRNA-LNP, intravenous eGFP-mRNA delivery, eGFP staining in hepatocytes, and linked formulation and outcome evidence."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 1,
+        "outcomes": 1,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-003",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:55:59.096773+00:00",
+      "completed_at": "2026-07-28T16:56:14.630819+00:00",
+      "elapsed_seconds": 15.532,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "NOT_ORIGINAL_RESEARCH"
+        ],
+        "evidence_ids": [
+          "GP-003-E-240d9595395015cf",
+          "GP-003-E-93c2af1bcf62a929"
+        ],
+        "explanation": "The supplied paper explicitly identifies itself as a review/state-of-the-art overview, not an original experimental research report."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 0
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:56:14.653861+00:00",
+      "completed_at": "2026-07-28T16:57:30.021238+00:00",
+      "elapsed_seconds": 75.366,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e",
+          "GP-004-E-dd2583840b74edd5",
+          "GP-004-E-3cadcaa508e40b67",
+          "GP-004-E-53de397122977467"
+        ],
+        "explanation": "Original mouse experiments report mRNA-LNP delivery to hepatocytes, Kupffer cells, and endothelial cells, with linked formulation, treatment, and outcomes."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 3,
+        "outcomes": 4,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:57:30.046430+00:00",
+      "completed_at": "2026-07-28T16:58:18.452002+00:00",
+      "elapsed_seconds": 48.404,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-005-E-23cde312d42649c2",
+          "GP-005-E-ac7e05a4c142ccbb",
+          "GP-005-E-5476ac363ed05d4c",
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "explanation": "Original in vivo LNP1 experiment delivered EGFP-encoding mRNA to identified hepatocytes and Kupffer cells, with intravital-imaging outcomes linked to the formulation."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 1,
+        "outcomes": 1,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:58:18.480585+00:00",
+      "completed_at": "2026-07-28T16:59:14.074999+00:00",
+      "elapsed_seconds": 55.592,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d",
+          "GP-006-E-6a0db3e1706fd8f7",
+          "GP-006-E-d010646bb645e446"
+        ],
+        "explanation": "Original mouse experiments used MC3 LNPs to deliver Cas9 mRNA/NSGHAsgRNA, with cell-specific gene-editing outcomes reported for isolated hepatocytes and LSECs."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 1,
+        "outcomes": 2,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-007",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T16:59:14.113825+00:00",
+      "completed_at": "2026-07-28T17:00:16.408379+00:00",
+      "elapsed_seconds": 62.293,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE",
+          "FORMULATION_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a",
+          "GP-007-E-ed5fce0eb33d0dce",
+          "GP-007-E-8a573add8f5b7936",
+          "GP-007-E-2cee26f38a1d4591",
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "explanation": "Original mouse HIRI experiments tested siMicu1-LNPs, with outcomes relevant to LSECs; the formulation, intervention, and outcomes are linked, although its composition is incomplete."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 1,
+        "outcomes": 3,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T17:00:16.431085+00:00",
+      "completed_at": "2026-07-28T17:01:44.457881+00:00",
+      "elapsed_seconds": 88.025,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-008-E-38bead8279685734",
+          "GP-008-E-9f4e4aba562731a4",
+          "GP-008-E-536ddd1a9e1a2ad1",
+          "GP-008-E-88b49512db93fee5",
+          "GP-008-E-723b0b7a8fcc6107",
+          "GP-008-E-c2f49c1ec1cd78d3",
+          "GP-008-E-314b6997ecd0e60c",
+          "GP-008-E-d32251f9c2db82ae"
+        ],
+        "explanation": "Original experiments report CD163-antibody-targeted LNP delivery of mRNA to macrophage-related cells, including hepatic macrophage evidence, with linked mouse liver-fibrosis outcomes."
+      },
+      "record_counts": {
+        "formulations": 2,
+        "components": 5,
+        "experiments": 2,
+        "outcomes": 3,
+        "unresolved_items": 4
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-009",
+      "evidence_view": "compact",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T17:01:44.493547+00:00",
+      "completed_at": "2026-07-28T17:02:00.302139+00:00",
+      "elapsed_seconds": 15.806,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "NO_TARGET_CELL_EVIDENCE",
+          "NO_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-009-E-9f8f06cd49f73aa6",
+          "GP-009-E-6e3f276531062d8c",
+          "GP-009-E-e33dffc47de2c216"
+        ],
+        "explanation": "The packet reports original LNP-mRNA experiments and liver-level outcomes, but it does not directly report delivery to hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. Liver tissue uptake/expression is not cell-type evidence."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 1
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    }
+  ]
+}

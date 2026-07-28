@@ -1,0 +1,38 @@
+{
+  "paper_id": "GP-009",
+  "full_view_version": "full-api-packet-1.0.0",
+  "packet_version": "compact-api-packet-1.0.0",
+  "evidence_view": "full",
+  "full_packet_checksum": "8553891b5d5c63b9b15519360de55e8baa556a6b47b382bbdf2e0eb3f9f0fed2",
+  "source_review_packet_checksum": "d884c8f5e04d48e21ff6dc0350ba91b263838ed0a1745d52940e2b9dfe41d670",
+  "corpus_path": "data/staging/rag/gold_v1/GP-009.blocks.jsonl",
+  "corpus_available": true,
+  "token_estimation_method": "ceil(compact UTF-8 JSON bytes / 4)",
+  "estimated_input_tokens": {
+    "prompt": 273,
+    "response_schema": 1883,
+    "evidence_packet": 50817,
+    "total": 52973
+  },
+  "counts": {
+    "evidence": 530,
+    "sources": 71,
+    "retrieval_evidence": 222,
+    "corpus_expanded_evidence": 308,
+    "outcome_tagged_evidence": 164,
+    "full_corpus_only_evidence": 245
+  },
+  "blocked_fields": [],
+  "compact_packet_comparison": {
+    "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-009.json",
+    "compact_packet_checksum": "01eb5a359674ae7e47c8ea5fe291130b45b6c654601ca9a4a51bfcff6749833e",
+    "compact_evidence": 139,
+    "compact_sources": 21,
+    "compact_evidence_packet_tokens": 15992,
+    "added_evidence": 391,
+    "added_sources": 50,
+    "added_evidence_packet_tokens": 34825,
+    "evidence_multiple": 3.81,
+    "evidence_packet_token_multiple": 3.18
+  }
+}

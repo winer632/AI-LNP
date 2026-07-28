@@ -114,6 +114,21 @@ def _sha(value: bytes | str) -> str:
     return hashlib.sha256(value).hexdigest()
 
 
+def _portable(path: Path) -> str:
+    """Record a path as repository-relative so signed tasks survive a fresh clone.
+
+    Absolute developer paths baked into a committed task file make the task
+    unloadable on every other machine, and the path is covered by the task
+    checksum so it cannot be patched afterwards without re-signing. Paths
+    outside the repository (an explicit temporary output root, for instance)
+    are recorded verbatim.
+    """
+    try:
+        return path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return str(path)
+
+
 def _result_path(paper_id: str) -> Path:
     choices = [
         ROOT / f"data/staging/extraction/compact_merged_v1_1/{paper_id}/final_result.json",
@@ -178,10 +193,10 @@ def build_one(paper_id: str, *, output_root: Path = OUTPUT_ROOT) -> Consolidated
         assets.append(
             RecoveryVisualAsset(
                 label=item["label"],
-                image_path=str(image_path),
+                image_path=_portable(image_path),
                 image_sha256=image_sha,
                 crop_evidence_id=f"V-{image_sha[:16]}",
-                source_path=str(source_path),
+                source_path=_portable(source_path),
                 page_number=page_number,
             )
         )
@@ -244,7 +259,7 @@ def build_all(*, output_root: Path = OUTPUT_ROOT) -> list[ConsolidatedRecoveryTa
                 "visual_assets": len(row.visual_assets),
                 "permitted_new_outcomes": row.permitted_new_outcomes,
                 "permitted_new_outcome_ids": row.permitted_new_outcome_ids,
-                "task_path": str(output_root / row.paper_id / "task.json"),
+                "task_path": _portable(output_root / row.paper_id / "task.json"),
             }
             for row in tasks
         ],

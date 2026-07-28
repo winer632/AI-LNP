@@ -1,0 +1,239 @@
+[
+  {
+    "candidate_id": "OC-0f4be59f35687e4f",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-7a4317dc270edf63"
+    ],
+    "source_ids": [
+      "S-0bf4ba4b4584"
+    ],
+    "evidence_text": "Stimulated by the surprisingly low level of EGFP‐derived signals in KC, we studied the uptake of LNP1 in vitro by incubating primary murine hepatocytes, the murine hepatoma cell line Hepa 1–6, human cervical cancer cells (HeLa), murine L929 fibroblasts, human endothelial cells (EA.hy926), murine J774.1 macrophages, and murine KC for 24 h with LNP in medium with 5% serum.",
+    "direct_signal_terms": [
+      "5%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2415ff8ef701f5db",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-ac7e05a4c142ccbb"
+    ],
+    "source_ids": [
+      "S-1d9698a854c4"
+    ],
+    "evidence_text": "We therefore studied the spatial distribution of EGFP in vivo using IVM following intravenous injection of LNP1 at the dosage of 2 mg k−1g into C57BL6J wild‐type mice (Figure 1A).",
+    "direct_signal_terms": [
+      "2 mg",
+      "Figure 1A"
+    ],
+    "figure_or_table": "figure 1a",
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d0cb7a9d4e02e1cb",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-3e3477b19e76bf8c"
+    ],
+    "source_ids": [
+      "S-cf3f6dff56d6"
+    ],
+    "evidence_text": "We observed using flow cytometry that HeLa cells translated the mRNA of all formulations into EGFP protein at significant amounts (Figure 2G).",
+    "direct_signal_terms": [
+      "observed",
+      "significant",
+      "Figure 2G"
+    ],
+    "figure_or_table": "figure 2g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-16670e847db0838c",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-bf37b0dd6479f376"
+    ],
+    "source_ids": [
+      "S-15b4d7d934b6"
+    ],
+    "evidence_text": "We found that the big hepatocytes (subset 5) also expressed the highest levels of EGFP as detected in flow cytometry (Figure 7I), and these were statistically significant in this subset only (Figure 7J).",
+    "direct_signal_terms": [
+      "Figure 7I",
+      "significant",
+      "Figure 7J"
+    ],
+    "figure_or_table": "figure 7i",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f5f0c57168120096",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-c9f12905dd851418"
+    ],
+    "source_ids": [
+      "S-0bf4ba4b4584"
+    ],
+    "evidence_text": "We used quantitative Realtime‐PCR (qPCR) to assess the uptake of Egfp mRNA relative to the amount of total RNA in each cell type (details in Figure S2, TableS1, Supporting Information).",
+    "direct_signal_terms": [
+      "Figure S2",
+      "TableS1"
+    ],
+    "figure_or_table": "figure s2",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-23847b1f40f8d0f8",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-3532fce2d99ba238"
+    ],
+    "source_ids": [
+      "S-cf3f6dff56d6"
+    ],
+    "evidence_text": "The COVID‐19 vaccines have employed modified mRNA with the uridine derivatives N1‐methyl‐Pseudouridine (m1Ψ)[ 17 ] and 5‐methoxyuridine (5moU).[ 18 ] We therefore generated and characterized 5 additional LNP formulations LNP3‐LNP7 (Table 1) which included combinations of the ionizable lipid SM‐102 and m1Ψ or 5moU modified Egfp mRNA (Figure 2F).",
+    "direct_signal_terms": [
+      "Table 1",
+      "Figure 2F"
+    ],
+    "figure_or_table": "table 1",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3bd6c98e48bb9894",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-4055debc1dbe30c4"
+    ],
+    "source_ids": [
+      "S-aeda5edf430c"
+    ],
+    "evidence_text": "Overall, the gene expression data enabled a comprehensive understanding of the response of each cell type to LNP: in hepatocytes, the observed upregulation of APP such as Hp, Saa2, and Hpx, coupled with the concurrent downregulation of the negative APP albumin, suggests the initiation of an acute phase response.",
+    "direct_signal_terms": [
+      "observed"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-88bd456605ba8727",
+    "paper_id": "GP-005",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-005-E-e37191a51c55b744"
+    ],
+    "source_ids": [
+      "S-b0969b78caec"
+    ],
+    "evidence_text": "In the final stage of gene expression analysis, we focused on identifying specific key genes that fell into 3 distinct categories: a) genes specific to each cell type that did not respond to LNP, b) genes upregulated, and c) genes downregulated by LNP in KC or HC.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-99f79f569341fa57",
+    "paper_id": "GP-005",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-005-E-ee80aa13e910bb11"
+    ],
+    "source_ids": [
+      "S-a0766c29d034"
+    ],
+    "evidence_text": "Quantification of cell numbers across the 4 stages of the cell cycle revealed a slight increase in the 4n and >4n hepatocytes, along with a reduction in 2n cells when hepatocytes were treated with LNP (Figure S10C, Supporting Information).",
+    "direct_signal_terms": [
+      "Figure S10C"
+    ],
+    "figure_or_table": "figure s10c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-68cb6932fdd69017",
+    "paper_id": "GP-005",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-005-E-7a4317dc270edf63"
+    ],
+    "source_ids": [
+      "S-0bf4ba4b4584"
+    ],
+    "evidence_text": "Stimulated by the surprisingly low level of EGFP‐derived signals in KC, we studied the uptake of LNP1 in vitro by incubating primary murine hepatocytes, the murine hepatoma cell line Hepa 1–6, human cervical cancer cells (HeLa), murine L929 fibroblasts, human endothelial cells (EA.hy926), murine J774.1 macrophages, and murine KC for 24 h with LNP in medium with 5% serum.",
+    "direct_signal_terms": [
+      "5%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-5600df0e097f196e",
+    "paper_id": "GP-005",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-005-E-43684e77da05b1d0"
+    ],
+    "source_ids": [
+      "S-0bf4ba4b4584"
+    ],
+    "evidence_text": "We observed that KC, followed by hepatocytes and the Hepa 1–6 cells, internalized the largest amounts of LNP1 (Figure 2A).",
+    "direct_signal_terms": [
+      "observed",
+      "Figure 2A"
+    ],
+    "figure_or_table": "figure 2a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-79d1365295bbc192",
+    "paper_id": "GP-005",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-005-E-c9f12905dd851418"
+    ],
+    "source_ids": [
+      "S-0bf4ba4b4584"
+    ],
+    "evidence_text": "We used quantitative Realtime‐PCR (qPCR) to assess the uptake of Egfp mRNA relative to the amount of total RNA in each cell type (details in Figure S2, TableS1, Supporting Information).",
+    "direct_signal_terms": [
+      "Figure S2",
+      "TableS1"
+    ],
+    "figure_or_table": "figure s2",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  }
+]

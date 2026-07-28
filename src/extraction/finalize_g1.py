@@ -8,19 +8,35 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.output_paths import artifact_path
+
 
 ROOT = Path(__file__).resolve().parents[2]
 AUDIT_PATH = ROOT / "reports" / "extraction" / "day5_g1_evidence_audit.json"
 REVIEW_PATH = ROOT / "data" / "review" / "day5_g1_human_review.jsonl"
+
+# Canonical locations of the frozen artifacts. The actual write target is
+# resolved per call through `src.output_paths`, so a test run redirects the
+# writes instead of rewriting these tracked files. See `finalize`.
 OUTPUT_JSON = ROOT / "reports" / "extraction" / "day5_g1_final_metrics.json"
 OUTPUT_MD = ROOT / "reports" / "extraction" / "day5_g1_final_decision.md"
+OUTPUT_PARTS = ("reports", "extraction")
 
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
-def finalize() -> dict[str, Any]:
+def finalize(*, output_root: Path | str | None = None) -> dict[str, Any]:
+    """Freeze the reviewed Day 5 G1 metrics.
+
+    ``output_root`` overrides where the two artifacts are written. When it is
+    omitted the target comes from :func:`src.output_paths.output_root`, which
+    resolves to the repository for a real run and to a scratch directory under
+    pytest so the tracked reports are never rewritten by the test suite.
+    """
+    output_json = artifact_path(*OUTPUT_PARTS, OUTPUT_JSON.name, root=output_root)
+    output_md = artifact_path(*OUTPUT_PARTS, OUTPUT_MD.name, root=output_root)
     audit = json.loads(AUDIT_PATH.read_text(encoding="utf-8"))
     reviews = load_jsonl(REVIEW_PATH)
     incomplete = [
@@ -91,8 +107,8 @@ def finalize() -> dict[str, Any]:
             "Replace or repair the unreliable model response path and rerun all gold papers.",
         ],
     }
-    OUTPUT_JSON.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    OUTPUT_MD.write_text(
+    output_json.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    output_md.write_text(
         "# Day 5 G1 final decision\n\n"
         "**Decision: FAIL**\n\n"
         f"- Reviewed semantic precision: {reviewed_semantic_precision:.1%}\n"

@@ -1,0 +1,148 @@
+{
+  "coverage_version": "outcome-coverage-1.1.0",
+  "paper_id": "GP-004",
+  "complexity_route": "complex",
+  "candidate_groups": 14,
+  "extracted_outcomes": 4,
+  "matched_candidates": [
+    {
+      "candidate_id": "OC-88f65d75fdf21989",
+      "outcome_id": "O1",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-518896544650d441",
+      "outcome_id": "O2",
+      "score": 0.4118
+    }
+  ],
+  "unmatched_candidates": [
+    {
+      "candidate_id": "OC-d16b5d218b5f5f5a",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-fc1b2e9e166859e2"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    }
+  ],
+  "review_candidates": [
+    {
+      "candidate_id": "OC-e42d02cd0aa8f42f",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-e29c5e3c31a38827",
+        "GP-004-E-b293f56409c89709"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-4a2f1296751af41e",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-5231570dd3626ea0"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-f83a3866b46afe29",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-aa1c2885867bfc0a"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-497fb2743cabc900",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-4e62cb53c25d4df7"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-d1bcdf6d436f92d1",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-e29c5e3c31a38827",
+        "GP-004-E-b293f56409c89709"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-d76e38c26ff535e0",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-67be9e835a79ab2f",
+        "GP-004-E-525e4ad8fb4e4525"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-6ef5a85bdd95807e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "figure_or_table": "figure 4c",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-675ff78454d65c26",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-440906cb169c4960"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ac30f8413d9525a1",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "figure_or_table": "figure 4c",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ec2f4916beb7b305",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-cfd19f26417f2c38",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    }
+  ],
+  "status": "review_unmatched_groups",
+  "paid_api_requests": 0
+}

@@ -58,13 +58,26 @@ def _image(path: Path) -> str:
     )
 
 
+def asset_path(value: str) -> Path:
+    """Resolve a recorded visual-asset path against the repository.
+
+    Signed task files record repository-relative paths so that a task stays
+    valid in any checkout instead of only on the machine that generated it. The
+    recorded string is part of the task checksum, so it must not be rewritten
+    here; only the lookup is resolved. Absolute paths are honoured unchanged for
+    backward compatibility with older task files.
+    """
+    path = Path(value)
+    return path if path.is_absolute() else (ROOT / path)
+
+
 def load_task(path: Path) -> ConsolidatedRecoveryTask:
     task = ConsolidatedRecoveryTask.model_validate_json(path.read_text(encoding="utf-8"))
     unsigned = task.model_dump(mode="json", exclude={"task_checksum"})
     if _sha(_canonical(unsigned)) != task.task_checksum:
         raise ValueError("Consolidated recovery task checksum mismatch")
     for asset in task.visual_assets:
-        if _sha(Path(asset.image_path).read_bytes()) != asset.image_sha256:
+        if _sha(asset_path(asset.image_path).read_bytes()) != asset.image_sha256:
             raise ValueError(f"Visual asset checksum mismatch: {asset.label}")
     return task
 
@@ -175,7 +188,7 @@ def run(
     content.extend(
         {
             "type": "input_image",
-            "image_url": _image(Path(asset.image_path)),
+            "image_url": _image(asset_path(asset.image_path)),
             "detail": "original",
         }
         for asset in task.visual_assets

@@ -17,7 +17,7 @@
         "O5",
         "O6"
       ],
-      "task_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-004/task.json"
+      "task_path": "data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-004/task.json"
     },
     {
       "paper_id": "GP-006",
@@ -32,7 +32,7 @@
         "O8",
         "O9"
       ],
-      "task_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-006/task.json"
+      "task_path": "data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-006/task.json"
     },
     {
       "paper_id": "GP-008",
@@ -48,7 +48,7 @@
         "O5",
         "O6"
       ],
-      "task_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-008/task.json"
+      "task_path": "data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-008/task.json"
     }
   ]
 }

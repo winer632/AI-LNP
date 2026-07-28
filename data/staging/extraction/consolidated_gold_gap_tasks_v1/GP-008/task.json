@@ -54,26 +54,26 @@
   "visual_assets": [
     {
       "label": "Figure 2",
-      "image_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig02.jpg",
+      "image_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig02.jpg",
       "image_sha256": "33606bcd95c98206fdf7fd4176579216ffa41e2bd7feb0fe920ac8f3a34b688e",
       "crop_evidence_id": "V-33606bcd95c98206",
-      "source_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig02.jpg",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig02.jpg",
       "page_number": null
     },
     {
       "label": "Figure 6",
-      "image_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig06.jpg",
+      "image_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig06.jpg",
       "image_sha256": "0a24b98cd89e98ca9a741f84f6048730a7273cb2a16b3c10be9cad0d78cbb39b",
       "crop_evidence_id": "V-0a24b98cd89e98ca",
-      "source_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig06.jpg",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123fig06.jpg",
       "page_number": null
     },
     {
       "label": "Supplementary Figure 5, page 19",
-      "image_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-008/asset_03.png",
+      "image_path": "data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-008/asset_03.png",
       "image_sha256": "784e837ef94bbff38b3110bf61018cde90e46dab86b5e3ac54d235979a51ba28",
       "crop_evidence_id": "V-784e837ef94bbff3",
-      "source_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
       "page_number": 19
     }
   ],
@@ -538,5 +538,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "9c7bf46ea8eba858450d93f7e5c9c8de35ac8a8097f273d06ab510137b784e93",
   "source_inventory_sha256": "8d996891c23d542f579d62055797920980c9bb2e8428d3f2dfd5421de0fe9fa2",
-  "task_checksum": "e5f37477e7806d877a87b47567ce5fd4266600daa7a7f9cc7fe4859c28bc1e67"
+  "task_checksum": "05664c04524a281bc15b460f46bd1f939fcd10278eddb7be8f2654bad2941b3a"
 }

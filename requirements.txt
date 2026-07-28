@@ -36,6 +36,9 @@ pydantic==2.13.4
 pydantic_core==2.46.4
 pydeck==0.9.3
 Pygments==2.20.0
+# Required by the PDF region rendering used in selective-vision and gap-recovery
+# task building, which the test suite imports. Also pinned in requirements-rag.txt.
+pymupdf==1.28.0
 pytest==9.1.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.2

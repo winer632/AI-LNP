@@ -1,0 +1,214 @@
+[
+  {
+    "candidate_id": "OC-6ae042a5e6c4ec59",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-1844c6e99e829834"
+    ],
+    "source_ids": [
+      "S-2e8ac4bab714",
+      "S-401b9faa3e2b",
+      "S-65230eac3b20"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9c2a8cdaf3b01111",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-1844c6e99e829834",
+      "GP-001-E-8ea413a376130c4f"
+    ],
+    "source_ids": [
+      "S-2e8ac4bab714",
+      "S-401b9faa3e2b",
+      "S-65230eac3b20"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3. The data are expressed as the means ± SDs, n = 4.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 4.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d62bf69eb1bdb37a",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-1844c6e99e829834"
+    ],
+    "source_ids": [
+      "S-2e8ac4bab714",
+      "S-401b9faa3e2b",
+      "S-65230eac3b20"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 5.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-672d4b9d22fc1193",
+    "paper_id": "GP-001",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-001-E-396fb5c771577626"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "However, all serum biochemical indicators of the GA-CSLNs group, FA-CSLNs group, and GA-FA-CSLNs group were within the normal range, and no obvious liver or kidney function damage was observed, suggesting that GA and FA ligand modification could significantly reduce the hepatotoxicity and nephrotoxicity of CTD.",
+    "direct_signal_terms": [
+      "observed",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2a91221fd904245f",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-E-fa7338c29ac71fbd"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "This indicated that GA-FA-CSLNs could significantly prolong the survival time of nude mice, with a better effect than the single-ligand modified groups and the positive drug group.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-411a5ae6f57b0f99",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-E-be64c844dfb248d1"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "Survival curve results (Figure 5B) showed that after 14 days of treatment, the survival rates of nude mice in the CSLNs group and GA-CSLNs group were 83.33%, and the survival rate of the GA-FA-CSLNs group reached 100%, while the survival rate of the positive drug group was only 66.67%.",
+    "direct_signal_terms": [
+      "Figure 5B",
+      "showed",
+      "14 days",
+      "83.33%",
+      "reached",
+      "100%",
+      "66.67%"
+    ],
+    "figure_or_table": "figure 5b",
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result"
+    ]
+  },
+  {
+    "candidate_id": "OC-4311765f166d50a2",
+    "paper_id": "GP-001",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-001-E-471b48044e702afd"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "The results showed that the serum Cr level in the free CTD group was significantly increased (Figure 5C), and the AST and BUN levels in the CSLNs group and positive drug group showed significant abnormalities.",
+    "direct_signal_terms": [
+      "showed",
+      "significant",
+      "increased",
+      "Figure 5C"
+    ],
+    "figure_or_table": "figure 5c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-99f79026211fc8de",
+    "paper_id": "GP-001",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-001-E-198e0da882acb9f6"
+    ],
+    "source_ids": [
+      "S-63aed168ef13"
+    ],
+    "evidence_text": "This dual-targeting platform significantly improved the tumor-specific delivery of MMAE while reducing toxicity to normal tissues.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3266908ba34856bc",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-E-0a6c0815d6383edc",
+      "GP-001-E-fe70809e816e7652"
+    ],
+    "source_ids": [
+      "S-1ddf553a0607"
+    ],
+    "evidence_text": "The results showed that when FA receptors were saturated, the intracellular fluorescent signal of the FA-C6-SLNs group was significantly weakened (almost no fluorescence), indicating that its cellular uptake was effectively inhibited. Even if a single targeting pathway was blocked, efficient cellular uptake could still be achieved through the pathway mediated by the other ligand, significantly improving the reliability of targeted drug delivery.",
+    "direct_signal_terms": [
+      "showed",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-22f6e9befb9310c8",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-E-2cd80ac2114421cb",
+      "GP-001-E-0bb25cf6ead04d2f"
+    ],
+    "source_ids": [
+      "S-63aed168ef13"
+    ],
+    "evidence_text": "GA specifically binds to GA receptors highly expressed on hepatocellular carcinoma cells, mediating active targeting uptake and significantly enhancing antitumor activity. (2020) demonstrated that dual-ligand-modified doxorubicin (DOX) carriers exhibited significant advantages in enhancing cellular uptake by hepatoma cells, improving in vitro and in vivo antitumor activity, and reducing systemic toxicity.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  }
+]

@@ -18,11 +18,23 @@ RESULT_ROOTS = [
     ROOT / "data/staging/extraction/compact_merged_v1",
     ROOT / "data/staging/extraction/compact_one_call_v1",
 ]
+PACKET_ROOT = ROOT / "data/staging/rag/compact_api_packets_v1_1"
+GOLD_GAP_TASK_ROOT = ROOT / "data/staging/extraction/consolidated_gold_gap_tasks_v1"
 STOP = {
     "the", "and", "of", "in", "to", "a", "an", "was", "were", "with",
     "from", "for", "after", "outcome", "cells", "cell", "reported", "result",
     "value", "activity", "expression",
 }
+# Generic English function words carry no factual claim, so they are dropped
+# before the literal evidence check. Polarity words ("no", "few", "not") are
+# deliberately absent: they change what an outcome asserts.
+FUNCTION_WORDS = {
+    "at", "as", "be", "been", "both", "but", "by", "had", "has", "have",
+    "into", "is", "it", "its", "on", "or", "over", "than", "that", "their",
+    "them", "there", "these", "they", "this", "those", "which", "while",
+    "whereas", "during", "between", "per", "via", "when", "where", "within",
+}
+_NUMBER = re.compile(r"[0-9][0-9,]*(?:\.[0-9]+)?(?:[eE][-+]?[0-9]+)?")
 
 
 def _rows(path: Path) -> list[dict[str, str]]:
@@ -50,13 +62,162 @@ def _tokens(text: str) -> set[str]:
     return found
 
 
-def _result_path(paper_id: str) -> Path:
-    for root in RESULT_ROOTS:
+def _result_path(paper_id: str, result_roots: list[Path] | None = None) -> Path:
+    for root in result_roots if result_roots is not None else RESULT_ROOTS:
         for name in ("final_result.json", "result.json"):
             path = root / paper_id / name
             if path.exists():
                 return path
     raise FileNotFoundError(paper_id)
+
+
+def _evidence_ids(value) -> set[str]:
+    """Collect every evidence_id referenced anywhere inside a record."""
+    if isinstance(value, dict):
+        found = set(value.get("evidence_ids") or [])
+        for child in value.values():
+            found |= _evidence_ids(child)
+        return found
+    if isinstance(value, list):
+        found = set()
+        for child in value:
+            found |= _evidence_ids(child)
+        return found
+    return set()
+
+
+def _evidence_texts(
+    paper_id: str,
+    *,
+    packet_root: Path = PACKET_ROOT,
+    task_root: Path = GOLD_GAP_TASK_ROOT,
+) -> dict[str, str]:
+    """Load offline evidence text for one paper.
+
+    Two local sources are merged, no network access is performed: the compact
+    API packet and, when the paper went through consolidated gold-gap
+    recovery, that task's extra evidence block. Visual assets (``V-*`` crop
+    ids) carry no text and are therefore absent from the mapping.
+    """
+    texts: dict[str, str] = {}
+    for path in (
+        packet_root / f"{paper_id}.json",
+        task_root / paper_id / "task.json",
+    ):
+        if not path.exists():
+            continue
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        for row in payload.get("evidence", []):
+            evidence_id = row.get("evidence_id")
+            text = row.get("text")
+            if evidence_id and isinstance(text, str):
+                texts[evidence_id] = text
+    return texts
+
+
+def _norm(value) -> str:
+    return re.sub(r"[^a-z0-9]+", "", str(value or "").lower())
+
+
+def _numbers_in_text(text: str) -> list[float]:
+    found = []
+    for match in _NUMBER.finditer(text):
+        try:
+            found.append(float(match.group(0).replace(",", "")))
+        except ValueError:
+            continue
+    return found
+
+
+def _number_in_text(value: float, text: str) -> bool:
+    """True when ``value`` occurs as a literal number in ``text``.
+
+    Formatting is tolerated so that a reported ``16.5`` still matches the
+    source string ``16.50%``; the numeric identity must hold exactly.
+    """
+    tolerance = max(1e-9, abs(value) * 1e-6)
+    return any(
+        abs(candidate - value) <= tolerance
+        for candidate in _numbers_in_text(text)
+    )
+
+
+def _claim_terms(text: str) -> set[str]:
+    return {token for token in _tokens(text) if token not in FUNCTION_WORDS}
+
+
+def _outcome_claim(outcome: dict) -> tuple[str, object]:
+    """Return the value this outcome record asserts, and how to check it.
+
+    ``outcome_value`` is the asserted value whenever the record reports one;
+    a record without a numeric or textual ``outcome_value`` asserts its
+    ``qualitative_outcome`` instead.
+    """
+    value = _value(outcome.get("outcome_value"))
+    if isinstance(value, bool):
+        value = None
+    if isinstance(value, (int, float)):
+        return "numeric", float(value)
+    if isinstance(value, str) and value.strip():
+        return "text", value
+    qualitative = _value(outcome.get("qualitative_outcome"))
+    if isinstance(qualitative, str) and qualitative.strip():
+        return "qualitative", qualitative
+    return "none", None
+
+
+def _evidence_supports(
+    outcome: dict,
+    evidence_texts: dict[str, str],
+) -> tuple[bool, bool, dict]:
+    """Check the record's asserted value against its own cited evidence.
+
+    Returns ``(checked, supported, detail)``. A record is *checked* when it
+    asserts something and at least one of its cited evidence ids resolves to
+    local text. Numeric claims must appear as a literal number; textual and
+    qualitative claims must have every content term present verbatim in the
+    cited text, so a paraphrase that introduces an unsupported term fails.
+    """
+    cited = sorted(_evidence_ids(outcome))
+    resolved = [eid for eid in cited if eid in evidence_texts]
+    source = " ".join(evidence_texts[eid] for eid in resolved)
+    claim_type, claim = _outcome_claim(outcome)
+    detail = {
+        "claim_type": claim_type,
+        "claim": claim,
+        "cited_evidence_ids": cited,
+        "resolved_evidence_ids": resolved,
+        "unsupported_terms": [],
+    }
+    if claim_type == "none" or not resolved:
+        return False, False, detail
+    if claim_type == "numeric":
+        return True, _number_in_text(float(claim), source), detail
+    if claim_type == "text" and _norm(claim) and _norm(claim) in _norm(source):
+        return True, True, detail
+    missing = sorted(_claim_terms(str(claim)) - _claim_terms(source))
+    detail["unsupported_terms"] = missing
+    return True, not missing, detail
+
+
+def _outcome_summary(paper_id: str, outcome: dict, experiment: dict | None) -> dict:
+    return {
+        "paper_id": paper_id,
+        "outcome_id": outcome.get("outcome_id"),
+        "experiment_id": outcome.get("experiment_id"),
+        "endpoint": _value(outcome.get("endpoint")),
+        "outcome_value": _value(outcome.get("outcome_value")),
+        "outcome_unit": _value(outcome.get("outcome_unit")),
+        "summary": _result_text(outcome, experiment),
+    }
+
+
+def _merge_candidate_count(result_path: Path) -> int:
+    report_path = result_path.parent / "merge_report.json"
+    if not report_path.exists():
+        return 0
+    report = json.loads(report_path.read_text(encoding="utf-8"))
+    return len(report.get("unresolved_candidate_ids") or [])
 
 
 def _result_text(outcome: dict, experiment: dict | None) -> str:
@@ -251,6 +412,9 @@ def evaluate(
     *,
     gold_root: Path = GOLD_ROOT,
     output_root: Path = OUTPUT_ROOT,
+    result_roots: list[Path] | None = None,
+    packet_root: Path = PACKET_ROOT,
+    task_root: Path = GOLD_GAP_TASK_ROOT,
 ) -> dict:
     outcomes = _rows(gold_root / "outcomes.csv")
     evidence = {
@@ -268,12 +432,25 @@ def evaluate(
         paper_id = experiments[gold["gold_experiment_id"]]["gold_paper_id"]
         by_paper.setdefault(paper_id, []).append(gold)
     results = []
+    result_outcome_count = 0
+    false_additions: list[dict] = []
+    unresolved_result_items = 0
+    unresolved_merge_candidates = 0
     for paper_id, gold_rows in by_paper.items():
-        result = json.loads(_result_path(paper_id).read_text(encoding="utf-8"))
+        result_path = _result_path(paper_id, result_roots)
+        result = json.loads(result_path.read_text(encoding="utf-8"))
         result_experiments = {
             row["experiment_id"]: row for row in result.get("experiments", [])
         }
         result_outcomes = result.get("outcomes", [])
+        result_outcome_count += len(result_outcomes)
+        unresolved_result_items += len(result.get("unresolved_items") or [])
+        unresolved_merge_candidates += _merge_candidate_count(result_path)
+        evidence_texts = _evidence_texts(
+            paper_id,
+            packet_root=packet_root,
+            task_root=task_root,
+        )
         scored = {}
         for gold_index, gold in enumerate(gold_rows):
             for outcome_index, outcome in enumerate(result_outcomes):
@@ -290,19 +467,49 @@ def evaluate(
             result_outcomes,
             scored,
         )
+        outcomes_by_id = {
+            outcome.get("outcome_id"): outcome for outcome in result_outcomes
+        }
         for gold in gold_rows:
             gold_id = gold["gold_outcome_id"]
+            match = matches.get(gold_id)
+            checked = supported = False
+            check_detail = None
+            if match is not None:
+                matched_outcome = outcomes_by_id.get(match["outcome_id"])
+                if matched_outcome is not None:
+                    checked, supported, check_detail = _evidence_supports(
+                        matched_outcome,
+                        evidence_texts,
+                    )
             results.append(
                 {
                     "gold_outcome_id": gold_id,
                     "paper_id": paper_id,
                     "recovered": gold_id in matches,
-                    "match": matches.get(gold_id),
+                    "match": match,
+                    "evidence_checked": checked,
+                    "evidence_supported": supported,
+                    "evidence_check": check_detail,
                 }
             )
+        matched_outcome_ids = {match["outcome_id"] for match in matches.values()}
+        for outcome in result_outcomes:
+            if outcome.get("outcome_id") in matched_outcome_ids:
+                continue
+            false_additions.append(
+                _outcome_summary(
+                    paper_id,
+                    outcome,
+                    result_experiments.get(outcome.get("experiment_id")),
+                )
+            )
     recovered = sum(row["recovered"] for row in results)
+    matched_records = result_outcome_count - len(false_additions)
+    evidence_checked = sum(row["evidence_checked"] for row in results)
+    evidence_supported = sum(row["evidence_supported"] for row in results)
     summary = {
-        "evaluation_version": "final-gold-dynamic-1.0.0",
+        "evaluation_version": "final-gold-dynamic-1.1.0",
         "matching": "semantic, numeric, one-to-one; no hard-coded recovered IDs",
         "recovered": recovered,
         "total": len(results),
@@ -310,6 +517,24 @@ def evaluate(
         "missing_gold_outcome_ids": [
             row["gold_outcome_id"] for row in results if not row["recovered"]
         ],
+        "precision": matched_records / result_outcome_count
+        if result_outcome_count
+        else 0.0,
+        "false_additions": {
+            "count": len(false_additions),
+            "items": false_additions,
+        },
+        "evidence_accuracy": {
+            "checked": evidence_checked,
+            "supported": evidence_supported,
+            "rate": evidence_supported / evidence_checked
+            if evidence_checked
+            else 0.0,
+        },
+        "unresolved_declared": {
+            "result_items": unresolved_result_items,
+            "merge_candidates": unresolved_merge_candidates,
+        },
         "results": results,
         "paid_api_requests": 0,
     }

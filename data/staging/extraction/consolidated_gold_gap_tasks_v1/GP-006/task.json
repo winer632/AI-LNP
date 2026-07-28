@@ -39,18 +39,18 @@
   "visual_assets": [
     {
       "label": "Figure 2",
-      "image_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC11617921/gr2.jpg",
+      "image_path": "data/raw/fulltext/oa_packages/PMC11617921/gr2.jpg",
       "image_sha256": "4f94262c8d768ec45e75c1ed78c901298422353c3d1f4f059317d75098ff1636",
       "crop_evidence_id": "V-4f94262c8d768ec4",
-      "source_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC11617921/gr2.jpg",
+      "source_path": "data/raw/fulltext/oa_packages/PMC11617921/gr2.jpg",
       "page_number": null
     },
     {
       "label": "Table S2",
-      "image_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-006/asset_02.png",
+      "image_path": "data/staging/extraction/consolidated_gold_gap_tasks_v1/GP-006/asset_02.png",
       "image_sha256": "f14f79dac89b0fae9e7ae36f397d72ce32ad4f215f3527ac76830d4f582583ee",
       "crop_evidence_id": "V-f14f79dac89b0fae",
-      "source_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf",
       "page_number": 2
     }
   ],
@@ -695,5 +695,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "cd985c9da0963a4c5b8a7490ab2b100a2c91ca46100ca361b4f11fbd3de69701",
   "source_inventory_sha256": "cd87e9e3d0610aebb331200a4c9acc9e56091040170a823144a2e3594c1832d9",
-  "task_checksum": "8daddd5f38ffd27eb01e8ce8a54e7c831a4ebdc4b46e2bf203762b4f2e036177"
+  "task_checksum": "081d8f679a2860b5e931bb41188ac5e3c6e8ca5799e3fd413a38417d42087c6f"
 }

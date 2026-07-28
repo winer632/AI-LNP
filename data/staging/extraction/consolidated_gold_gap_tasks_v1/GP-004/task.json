@@ -46,10 +46,10 @@
   "visual_assets": [
     {
       "label": "Figure 2",
-      "image_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_Fig2_HTML.jpg",
+      "image_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_Fig2_HTML.jpg",
       "image_sha256": "21ea3a21e96c00cae7d607a3fd59d4e07bcee348766f3ebeedf0de5fa737df06",
       "crop_evidence_id": "V-21ea3a21e96c00ca",
-      "source_path": "/Users/renemilywei/Desktop/AI-LNP/data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_Fig2_HTML.jpg",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_Fig2_HTML.jpg",
       "page_number": null
     }
   ],
@@ -642,5 +642,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "f40218e9fc74e50f4d5de656b9c8e8ae37d5ff145431599a41219fd612d2122b",
   "source_inventory_sha256": "625de626997466f8eeaf15273f2fc66df80aa2e46bf4f9f6c11f27874f5c1dc7",
-  "task_checksum": "f28266774997b0dd07abab0155e9d0bb4453868d269273f0b9c72dc9caec6202"
+  "task_checksum": "751cb2fa0dc289b03433ee4926bf07e44d54861fd177c96ecb78ebf6d7625fc5"
 }

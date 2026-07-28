@@ -1,0 +1,13 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-001",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "evidence_view": "compact",
+  "packet_root": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/compact_api_packets_v1",
+  "prompt_version": "compact-prompt-1.1.0",
+  "prompt_checksum": "b1589a1e37b5e0d9cc5c5aa250109da68a91c2f6f5ff40f51b021187172a8eb7",
+  "schema_checksum": "8d246f30fb045d2ff9cbd8c7eb790dfde7d894eaf00513f93936569ed5e8a685",
+  "packet_checksum": "0f1f82c5f4eaa10b599a8e4052f0fbde5a12a541b89604e1af809c7b2b6867fe",
+  "prompt_characters": 65102
+}
