@@ -30,6 +30,7 @@ RESULT_ROOTS = [
     ROOT / "data/staging/extraction/compact_one_call_v1",
 ]
 PACKET_ROOT = ROOT / "data/staging/rag/compact_api_packets_v1_1"
+FULL_PACKET_ROOT = ROOT / "data" / "staging" / "rag" / "full_api_packets_v1"
 STRUCTURED_PACKET_ROOT = ROOT / "data/staging/rag/structured_compact_packets_v1"
 GOLD_GAP_TASK_ROOT = ROOT / "data/staging/extraction/consolidated_gold_gap_tasks_v1"
 STOP = {
@@ -202,6 +203,7 @@ def _evidence_texts(
     packet_root: Path = PACKET_ROOT,
     task_root: Path = GOLD_GAP_TASK_ROOT,
     structured_packet_root: Path = STRUCTURED_PACKET_ROOT,
+    full_packet_root: Path = FULL_PACKET_ROOT,
 ) -> dict[str, str]:
     """Load offline evidence text for one paper.
 
@@ -233,6 +235,17 @@ def _evidence_texts(
     # Added rather than substituted -- an id both sources know keeps the
     # compact packet's text -- so no check that already ran can change answer.
     for row in _packet_evidence(structured_packet_root / f"{paper_id}.json"):
+        evidence_id = row.get("evidence_id")
+        text = row.get("text")
+        if evidence_id and isinstance(text, str):
+            texts.setdefault(evidence_id, text)
+            _record_locator_alias(row, text, aliases)
+    # The full view cites corpus evidence the compact and structured packets do
+    # not carry, so records it produced were counted as unchecked rather than
+    # checked -- the report stopped covering exactly the view with the best
+    # gold evidence coverage. Same setdefault discipline as above: this can add
+    # resolvable ids, never move one that already resolved.
+    for row in _packet_evidence(full_packet_root / f"{paper_id}.json"):
         evidence_id = row.get("evidence_id")
         text = row.get("text")
         if evidence_id and isinstance(text, str):
