@@ -60,6 +60,16 @@ VisualRelationship = Literal[
 # spelled with the positive one inside it, and any text-level test sees the
 # affirmation inside the denial -- tokenising "not_colocalized" yields
 # {"not", "colocalized"}, which reads as a match for "colocalized".
+#
+# Every value here is UNARY: it names a relation and never its arguments. A
+# consumer may therefore match a value against a claim asserting the same
+# relation, and must not extend it to a claim that names a target. Asked
+# whether "colocalized" could also answer a gold claim of localisation, the
+# answer measured out as no: one panel read asserts co-localisation with one
+# marker and non-localisation to another in the same sentence, so both values
+# are supported by the same evidence and the verdict would flip on which one
+# the model happened to emit. Expressing that needs arguments, which this
+# vocabulary does not carry -- widening it, not remapping it, is the fix.
 RELATIONSHIP_POLARITY: dict[str, tuple[str, bool]] = {
     "colocalized": ("colocalized", True),
     "not_colocalized": ("colocalized", False),

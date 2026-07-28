@@ -752,6 +752,102 @@ def test_records_that_declare_nothing_keep_the_unchanged_behaviour():
     assert not _polarity_gate(COLOCALIZED_GOLD, "Signals were distinct.")
 
 
+LOCALIZED_GOLD = (
+    "Reporter and FAPCAR expression localized to macrophages rather than "
+    "Desmin-positive HSCs."
+)
+
+
+def test_the_enum_vocabulary_does_not_cover_localisation():
+    """GO-018's term is "localized" and no enum value asserts it.
+
+    The discharge is identity between the declared relation and the gold
+    term, so a record declaring "colocalized" does not answer a gold row
+    asserting "localized" -- and must not be made to. Adding that edge was
+    measured and refused; see the test below for why.
+    """
+    assert "localized" in DISTINCTIVE_TERMS
+    covered = set()
+    for value, (base, _) in RELATIONSHIP_POLARITY.items():
+        covered |= _tokens(base)
+    assert "localized" not in covered, (
+        "an enum value now claims to assert localisation; re-run the "
+        "argument-structure control before relying on it"
+    )
+    assert not _polarity_gate(
+        LOCALIZED_GOLD,
+        "The panels support ZsGreen co-localization with F4/80-positive "
+        "macrophages.",
+        relationship="colocalized",
+    )
+
+
+def test_a_declared_relation_carries_no_target():
+    """Why "colocalized" must not be mapped onto "localized".
+
+    The enum is unary. It says co-presence happened, never with what, while
+    a gold row asserting localisation always names a compartment. One real
+    observation shows why that gap cannot be closed by a mapping: GP-008's
+    GO-018 read asserts co-localisation WITH F4/80 and, in the same
+    sentence, non-localisation TO Desmin. Both enum values are supported by
+    its own prose, and it can declare only one.
+
+    Under a colocalized -> localized mapping the gold row's fate would flip
+    on that arbitrary choice: "colocalized" would admit it and
+    "not_colocalized" would veto it, from identical evidence. Worse, a read
+    that declared "not_colocalized" because the signal is absent from Desmin
+    would veto a gold row asserting localisation to macrophages -- a
+    compartment it never examined, and a finding that corroborates the row.
+
+    Identity discharge has no such failure mode: neither value discharges a
+    term the vocabulary cannot express.
+    """
+    both_relations_supported = (
+        "FAPCAR co-localizes with F4/80-positive macrophages; these panels "
+        "do not support FAPCAR localization to Desmin-positive hepatic "
+        "stellate cells."
+    )
+    for declared in ("colocalized", "not_colocalized"):
+        assert not _polarity_gate(
+            LOCALIZED_GOLD, both_relations_supported, relationship=declared
+        ), f"{declared} must not decide a claim the vocabulary cannot express"
+
+
+def test_irrelevant_bulk_never_costs_a_record_score():
+    """Why a vision record must not be judged on a concatenated field.
+
+    ``lexical`` divides the overlap by ``min(len(expected), len(actual))``,
+    so once a candidate is larger than the gold text the denominator pins to
+    the gold side. Past that point extra tokens cannot dilute the score;
+    they can only add overlap. A record that concatenates several fields
+    into one competes on volume rather than on being the right measurement.
+
+    Pinned because it is what makes merged panel reads outscore the text
+    record that actually reports the measurement.
+    """
+    gold = {
+        "endpoint_name": "FAPCAR_or_GFP_positive_BMDMs",
+        "normalization_basis": "",
+        "qualitative_outcome": "Over 80% of BMDMs expressed GFP or FAPCAR.",
+        "outcome_value": "80",
+        "value_status": "reported_threshold",
+    }
+    evidence = {"evidence_text": "Over 80% of BMDMs expressed GFP or FAPCAR."}
+
+    def score(endpoint_text):
+        outcome = _outcome("X", qualitative="panels support expression")
+        outcome["endpoint"] = _field(endpoint_text, ["E-1"])
+        outcome["assay"] = _field("microscopy", ["E-1"])
+        return _score(gold, evidence, outcome, None, {})[0]
+
+    padding = " ".join(f"zqx{index}" for index in range(60))
+    lean = score("BMDMs expressing FAPCAR")
+    padded = score(f"BMDMs expressing FAPCAR {padding}")
+    assert padded >= lean - 0.1, "padding should not be penalised much"
+    # and an overlapping token added to the padded record is pure gain
+    assert score(f"BMDMs expressing FAPCAR {padding} GFP") > padded
+
+
 def test_the_declared_relation_is_matched_in_normalised_space():
     """The enum base must go through the tokeniser, not be compared raw.
 
