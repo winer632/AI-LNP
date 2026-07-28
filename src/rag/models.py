@@ -30,6 +30,20 @@ BlockType = Literal[
 ]
 SourceKind = Literal["pmc_xml", "pdf", "grobid_tei", "uniparse"]
 
+# Verdict of the uniparse cross-check layer (design document, section 十).
+# uniparse's table HTML is model output, not page truth, so a block that came
+# from it records whether an independent read of the same pixels agrees.
+#   verified     every number the parse asserts was found by another reader
+#   unverified   no reader could establish it -- refer to a human
+#   contradicted a confident independent reader did not produce a claimed value,
+#                or the region's own text layer does not contain a sequence the
+#                parse asserts
+#   no_claims    the block asserts no numbers, so there is nothing to cross-check
+#   no_geometry  the block asserts numbers but records no page/bbox to re-read
+VerificationStatus = Literal[
+    "verified", "unverified", "contradicted", "no_claims", "no_geometry"
+]
+
 
 class DocumentBlock(StrictModel):
     block_id: str
@@ -56,6 +70,11 @@ class DocumentBlock(StrictModel):
     caption_text: str | None = None
     image_ref: str | None = None
     image_sha256: str | None = None
+    # Set by src/rag/uniparse_verification.py when the cross-check layer runs.
+    # None means the check did not run for this block, which is not the same as
+    # "it passed" -- that distinction is the whole point of the field.
+    verification_status: VerificationStatus | None = None
+    verification_method: str | None = None
 
 
 class EntityCandidate(StrictModel):

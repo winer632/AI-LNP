@@ -23,6 +23,7 @@ from .uniparse_client import (
     UniparseDocument,
     save_images,
 )
+from .uniparse_verification import OcrEngine, available_ocr_engine, verify_and_stamp
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -33,6 +34,7 @@ CORPUS_ROOT = ROOT / "data" / "staging" / "rag" / "gold_v1"
 
 UNIPARSE_ENABLED_ENV = "UNIPARSE_ENABLED"
 UNIPARSE_FLAG = "uniparse_ingestion"
+UNIPARSE_VERIFICATION_FLAG = "uniparse_crop_verification"
 SUPPLEMENT_SECTION_ROOT = "Supplement"
 
 LABEL_PREFIX = r"(?:Supplementary\s+|Supplemental\s+|Extended\s+Data\s+)?"
@@ -333,6 +335,17 @@ def uniparse_enabled() -> bool:
     return is_enabled(UNIPARSE_FLAG)
 
 
+def uniparse_verification_enabled() -> bool:
+    """Resolve the section-十 cross-check flag through the registry.
+
+    Separate from ``uniparse_ingestion`` on purpose: the design document treats
+    the parser and the layer that audits the parser as two decisions, and an
+    operator must be able to keep structured ingestion while turning the
+    (slower) verification pass off, or run the verification without it.
+    """
+    return is_enabled(UNIPARSE_VERIFICATION_FLAG)
+
+
 def uniparse_blocks(
     paper_id: str,
     path: Path,
@@ -518,18 +531,27 @@ def pdf_blocks(
     image_root: Path = IMAGE_ROOT,
     warnings: list[str] | None = None,
     allow_fallback: bool = True,
+    ocr_engine: OcrEngine | None = None,
+    reread_client: UniparseClient | None = None,
 ) -> list[DocumentBlock]:
     """Parse a supplement PDF, preferring structured uniparse ingestion.
 
     Falls back to the legacy PyMuPDF page dump when uniparse is unavailable so
     that corpus building degrades instead of failing outright.
+
+    When ``uniparse_crop_verification`` is on, every table and caption block the
+    parse produced is cross-checked against a fresh crop of the region it claims
+    to come from, and carries the verdict. ``reread_client`` opts into the extra
+    uniparse second read; it is off here because ingestion must not silently
+    double its call volume, and the offline readers cost nothing.
     """
     if uniparse_enabled():
+        blocks: list[DocumentBlock] | None = None
         try:
             client = client or UniparseClient()
             document = client.parse_pdf(path)
             images = save_images(document, paper_id, image_root=image_root)
-            return uniparse_blocks(paper_id, path, document, images=images)
+            blocks = uniparse_blocks(paper_id, path, document, images=images)
         except Exception as error:  # noqa: BLE001 - degradation is the point
             message = (
                 f"uniparse ingestion failed for {relative_source(path)}: "
@@ -540,6 +562,20 @@ def pdf_blocks(
             if warnings is not None:
                 warnings.append(message)
             print(f"WARNING: {message}; falling back to pymupdf page blocks")
+        if blocks is not None:
+            # Deliberately outside the try above: a defect in the audit layer
+            # must not look like "uniparse is down" and quietly throw away a
+            # good structured parse for an unstructured page dump.
+            if uniparse_verification_enabled():
+                blocks = verify_and_stamp(
+                    blocks,
+                    ocr_engine=(
+                        available_ocr_engine() if ocr_engine is None else ocr_engine
+                    ),
+                    reread_client=reread_client,
+                    warnings=warnings,
+                )
+            return blocks
     return pymupdf_page_blocks(paper_id, path)
 
 
