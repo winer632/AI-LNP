@@ -1,0 +1,39 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-004",
+  "evidence_view": "structured",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T20:11:58.727312+00:00",
+  "completed_at": "2026-07-28T20:13:35.548580+00:00",
+  "elapsed_seconds": 96.819,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-004-FC-78a71536fc74bef2",
+      "GP-004-FC-60ea9f48c47b6c6e"
+    ],
+    "explanation": "The packet reports an in vivo HGF mRNA-LNP experiment with a hepatocyte proliferation outcome; LNP composition is not reported."
+  },
+  "record_counts": {
+    "formulations": 3,
+    "components": 0,
+    "experiments": 3,
+    "outcomes": 4,
+    "unresolved_items": 3
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 11
+}

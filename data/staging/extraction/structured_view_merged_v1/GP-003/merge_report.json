@@ -1,0 +1,12 @@
+{
+  "merge_version": "compact-merge-1.0.0",
+  "paper_id": "GP-003",
+  "status": "merged_valid",
+  "source_candidate_sha256": "acdeaa6a84ed0ae830c68be35053cdb1426ed82a755dd8becf207c18f26c72bf",
+  "source_validation_status": "valid",
+  "inputs": [],
+  "unresolved_finding_ids": [],
+  "final_validation_status": "valid",
+  "final_validation_findings": [],
+  "final_result_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/compact_merged_v1/GP-003/final_result.json"
+}

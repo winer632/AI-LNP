@@ -1,0 +1,28 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-007",
+  "eligibility": {
+    "decision": "uncertain",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "NO_TARGET_CELL_EVIDENCE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-007-E-42751544820dab75",
+      "GP-007-FC-0164ecc0c5a3a106"
+    ],
+    "explanation": "The packet reports LNPs-siMicu1 and a linked liver-histology result, but does not directly report LNP delivery or outcome evidence in hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. LNP composition is also not reported."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_items": [
+    "No directly reported target-cell evidence for the LNPs-siMicu1 experiment.",
+    "LNP component identities and composition are not reported in the packet.",
+    "The reported LNP outcome is liver-level histology and cannot be assigned to a specified target cell type."
+  ]
+}

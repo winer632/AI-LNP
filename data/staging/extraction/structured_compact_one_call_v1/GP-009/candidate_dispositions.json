@@ -1,0 +1,287 @@
+[
+  {
+    "candidate_id": "OC-1e7fa01fc72d66bd",
+    "disposition": "not_an_outcome",
+    "reason": "Describes in-vitro treatment setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-3f88ea422debcd2b",
+    "disposition": "unresolved",
+    "reason": "Reported liver-tissue gene-expression result cannot be extracted because no eligible hepatic target-cell evidence is provided."
+  },
+  {
+    "candidate_id": "OC-27aa7f23f5702904",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage-expression result cannot be extracted because the paper lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-7c186adc250dc630",
+    "disposition": "unresolved",
+    "reason": "Reported post-transplant result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-a29ec77c2e39042b",
+    "disposition": "unresolved",
+    "reason": "Figure caption identifies an endpoint but supplies no usable value."
+  },
+  {
+    "candidate_id": "OC-5018474106e4d820",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage-expression result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-9df3f623a3847ea6",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage-expression result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-108d1c4df31ea76c",
+    "disposition": "unresolved",
+    "reason": "Reported post-transplant result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-f31733fcf10ac25f",
+    "disposition": "unresolved",
+    "reason": "Reported post-transplant result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-6fa76f58fb92ec20",
+    "disposition": "not_an_outcome",
+    "reason": "Describes tissue harvesting after analysis, not a measured result."
+  },
+  {
+    "candidate_id": "OC-3c955fd698793e3f",
+    "disposition": "unresolved",
+    "reason": "Figure captions identify endpoints but provide no usable values."
+  },
+  {
+    "candidate_id": "OC-d715f61c5b60edc4",
+    "disposition": "unresolved",
+    "reason": "Figure caption identifies an endpoint but supplies no usable value."
+  },
+  {
+    "candidate_id": "OC-dadbd8679494f071",
+    "disposition": "not_an_outcome",
+    "reason": "Describes sample harvesting, not a measured result."
+  },
+  {
+    "candidate_id": "OC-29779631bb07db27",
+    "disposition": "unresolved",
+    "reason": "Figure captions identify endpoints but provide no usable values."
+  },
+  {
+    "candidate_id": "OC-69b0e48984be03b4",
+    "disposition": "not_an_outcome",
+    "reason": "Describes sample preparation, not a measured result."
+  },
+  {
+    "candidate_id": "OC-acfcc66004aa6f5e",
+    "disposition": "unresolved",
+    "reason": "Figure caption identifies an endpoint but supplies no usable value."
+  },
+  {
+    "candidate_id": "OC-90ee71e6b80a4d9c",
+    "disposition": "unresolved",
+    "reason": "Reported liver-tissue gene-expression result cannot be extracted because no eligible hepatic target-cell evidence is provided."
+  },
+  {
+    "candidate_id": "OC-6ce82e9e228b0c61",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-6d3406f2f4fb158d",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-0d0ae60d4ff77645",
+    "disposition": "not_an_outcome",
+    "reason": "States that luciferase was measured, without reporting a result."
+  },
+  {
+    "candidate_id": "OC-c78c2dd5117bb127",
+    "disposition": "not_an_outcome",
+    "reason": "Describes generation of an imaging formulation, not a measured result."
+  },
+  {
+    "candidate_id": "OC-eeb69e670b4e46ab",
+    "disposition": "unresolved",
+    "reason": "Reported expression comparison is incomplete and lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-1177168f48d8a869",
+    "disposition": "not_an_outcome",
+    "reason": "States that luciferase was measured, without reporting a result."
+  },
+  {
+    "candidate_id": "OC-c6c2a4f38efad2bf",
+    "disposition": "not_an_outcome",
+    "reason": "Describes generation of an imaging formulation, not a measured result."
+  },
+  {
+    "candidate_id": "OC-50e9955062b3c820",
+    "disposition": "not_an_outcome",
+    "reason": "Assay procedure, not a reported result."
+  },
+  {
+    "candidate_id": "OC-dd236ab675d15343",
+    "disposition": "unresolved",
+    "reason": "Reported expression comparison is incomplete and lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-7feffc1f3a13be54",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-f2c67c0b0e62d4a7",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-3efa534f85152552",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-308c49e44e56b400",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-3bdb0182e282909a",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-72703dcc62e5d69f",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-17b429ad73ceef01",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-ecf4fc477577d4bd",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level expression result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-63701aa5d5e39a45",
+    "disposition": "unresolved",
+    "reason": "Reported HSC result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-c1bfbda8a7abf730",
+    "disposition": "unresolved",
+    "reason": "Reported HSC result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-3799c09c2aa0b6e8",
+    "disposition": "unresolved",
+    "reason": "Figure caption identifies survival analysis but supplies no result value."
+  },
+  {
+    "candidate_id": "OC-507efbe893957a82",
+    "disposition": "unresolved",
+    "reason": "Figure caption identifies survival analysis but supplies no result value."
+  },
+  {
+    "candidate_id": "OC-79cde982f4e7f345",
+    "disposition": "unresolved",
+    "reason": "Reported survival comparison is truncated and lacks a usable comparator value."
+  },
+  {
+    "candidate_id": "OC-385eaaa001a56b1b",
+    "disposition": "unresolved",
+    "reason": "Reported inflammatory conclusion lacks a usable candidate-specific value."
+  },
+  {
+    "candidate_id": "OC-241e67019e1f3ad8",
+    "disposition": "unresolved",
+    "reason": "Reported IL-6 comparison lacks a usable numeric value and eligible target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-e733a4060c78650c",
+    "disposition": "unresolved",
+    "reason": "Reported IL-6 comparison lacks a usable numeric value and eligible target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-565edb721f10226a",
+    "disposition": "not_an_outcome",
+    "reason": "Describes biodistribution-study setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-242702171eb43232",
+    "disposition": "not_an_outcome",
+    "reason": "Describes uptake and cell-expression experiment setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-efd0e74fdee86684",
+    "disposition": "not_an_outcome",
+    "reason": "Describes in-vitro treatment setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-164c6785b221b927",
+    "disposition": "not_an_outcome",
+    "reason": "Reports protein-corona composition, not a measured LNP uptake outcome."
+  },
+  {
+    "candidate_id": "OC-1daf0fcc95f65f3e",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level uptake result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-e3ecde59804c477e",
+    "disposition": "not_an_outcome",
+    "reason": "Describes uptake and cell-expression experiment setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-e4e395d26a82ad68",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage-expression result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-28df28a294266792",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage-expression result is outside the required hepatic target-cell scope."
+  },
+  {
+    "candidate_id": "OC-db837d73d7902161",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic interpretation rather than a measured uptake result."
+  },
+  {
+    "candidate_id": "OC-20483474c22f2c3c",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level uptake result lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-41af842cca66cb5f",
+    "disposition": "not_an_outcome",
+    "reason": "Hypothesis about expected uptake, not a measured result."
+  },
+  {
+    "candidate_id": "OC-b90eb3b2426e003b",
+    "disposition": "not_an_outcome",
+    "reason": "Hypothesis about expected uptake, not a measured result."
+  },
+  {
+    "candidate_id": "OC-fe493608b63556dc",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level uptake comparison lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-f96456a3d1a1043b",
+    "disposition": "unresolved",
+    "reason": "Reported organ-level uptake comparison lacks eligible hepatic target-cell evidence."
+  },
+  {
+    "candidate_id": "OC-5db12202a400d14f",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic interpretation rather than a measured uptake result."
+  }
+]

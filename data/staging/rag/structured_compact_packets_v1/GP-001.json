@@ -1,0 +1,3843 @@
+{
+  "packet_version": "compact-api-packet-1.0.0",
+  "paper_id": "GP-001",
+  "blocked_fields": [
+    "lnp_composition_raw",
+    "payload"
+  ],
+  "sources": [
+    {
+      "source_id": "FC-S-06ad2153924ebb28",
+      "chunk_id": "GP-001-B-693c14251c4adb439e6d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-06cadb50a8f48a39",
+      "chunk_id": "GP-001-B-2ba9115783b3e9c90c0d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-10a543352bdc74e0",
+      "chunk_id": "GP-001-B-e6307a6cb0ce2d6c3a3e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-13c8581cf16bdbfc",
+      "chunk_id": "GP-001-B-6fea9b33121af9279ecc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Tumor targeting in vitro",
+      "figure_number": "Figure 2."
+    },
+    {
+      "source_id": "FC-S-14c04fcee30412cb",
+      "chunk_id": "GP-001-B-9c654a0b4f38784689f1",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-1df114ad22094045",
+      "chunk_id": "GP-001-B-2860c901010aec42371b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Optimization and characterization of SLNs",
+      "figure_number": "Figure 1."
+    },
+    {
+      "source_id": "FC-S-251da741eae88060",
+      "chunk_id": "GP-001-B-8fe628551f65820d4a42",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In vivo antitumor effects and safety",
+      "figure_number": "Figure 4."
+    },
+    {
+      "source_id": "FC-S-267fc032b629bcec",
+      "chunk_id": "GP-001-B-edee293e6b8817c857cc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "table_row",
+      "section": "Results",
+      "subsection": "Optimization and characterization of SLNs",
+      "xml_element_id": "t0001",
+      "table_number": "Table 1."
+    },
+    {
+      "source_id": "FC-S-3d9119b1c6a05504",
+      "chunk_id": "GP-001-B-ae5ca2c3a7a1c55f6f74",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "table_row",
+      "section": "Results",
+      "subsection": "Optimization and characterization of SLNs",
+      "xml_element_id": "t0001",
+      "table_number": "Table 1."
+    },
+    {
+      "source_id": "FC-S-58080c4c6aa648dd",
+      "chunk_id": "GP-001-B-1e645768d8f4e2a32bf7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-58ebda7d0578b2df",
+      "chunk_id": "GP-001-B-a158e81fed54c67090ec",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-5b265310ba27c6e4",
+      "chunk_id": "GP-001-B-8a77ee42f7c524b1a05b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In vivo antitumor effects and safety",
+      "figure_number": "Figure 5."
+    },
+    {
+      "source_id": "FC-S-66e2167e13cfca39",
+      "chunk_id": "GP-001-B-aa02187d5d76684fb3f0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Pharmacokinetic studies",
+      "figure_number": "Figure 6."
+    },
+    {
+      "source_id": "FC-S-6e094ed5b232b97d",
+      "chunk_id": "GP-001-B-767c478179eeb7249786",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-93088f726036ccee",
+      "chunk_id": "GP-001-B-7ce9f2c85e8fba5a889b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-9329e35b03549763",
+      "chunk_id": "GP-001-B-8d11f7c6bf2e564852fc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-9cdb9104c6b50bef",
+      "chunk_id": "GP-001-B-35a7916e59597d1fa573",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-9e7f077cc397fa08",
+      "chunk_id": "GP-001-B-6634395cbf223cd0831f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "table_row",
+      "section": "Results",
+      "subsection": "Optimization and characterization of SLNs",
+      "xml_element_id": "t0001",
+      "table_number": "Table 1."
+    },
+    {
+      "source_id": "FC-S-a112e37e360cc83a",
+      "chunk_id": "GP-001-B-4a51e3d3e0327fab0a3e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "table",
+      "section": "Results",
+      "subsection": "Optimization and characterization of SLNs",
+      "xml_element_id": "t0001",
+      "table_number": "Table 1."
+    },
+    {
+      "source_id": "FC-S-a3e11f809fba6a96",
+      "chunk_id": "GP-001-B-b5a1e9e68c3885cb772e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-a5be2caab0344082",
+      "chunk_id": "GP-001-B-18ee521a37b4cdd44f25",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In vitro antitumor analysis",
+      "figure_number": "Figure 3."
+    },
+    {
+      "source_id": "FC-S-a9dfa384bc051cf3",
+      "chunk_id": "GP-001-B-8d83fed98a04659730ce",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-ac6cd7f8fb2a2eb4",
+      "chunk_id": "GP-001-B-927f8e8068352b767285",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-ace3b84a139bcdcb",
+      "chunk_id": "GP-001-B-4570b5a61b53fc0e91cc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-b046c4256e54c6e5",
+      "chunk_id": "GP-001-B-9b087822d1ff9ca2b94f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "table_row",
+      "section": "Results",
+      "subsection": "Optimization and characterization of SLNs",
+      "xml_element_id": "t0001",
+      "table_number": "Table 1."
+    },
+    {
+      "source_id": "FC-S-b1625d46788e462b",
+      "chunk_id": "GP-001-B-fe64061b473f7ab5da34",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-b21ce8f0af9b26b9",
+      "chunk_id": "GP-001-B-c50c7bcfe153eb3e11e5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-b6282da616d6fa13",
+      "chunk_id": "GP-001-B-0263bc54b4e0ca00774e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-bb31b180a09336b6",
+      "chunk_id": "GP-001-B-97af713f620589d169a2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-bf9e4cec2bfebcd5",
+      "chunk_id": "GP-001-B-5c4d6b96b620487e20b4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-d7b2b7f9e1141946",
+      "chunk_id": "GP-001-B-1454480788b0bde255d8",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-dc8b09bfbd15a117",
+      "chunk_id": "GP-001-B-8cbff3ebbf31fb53fde5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The ARRIVE Essential 10",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-dfd730bf935b555c",
+      "chunk_id": "GP-001-B-6290a987d7e91e5e21da",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-ec5b319aa493db89",
+      "chunk_id": "GP-001-B-1d5e8fc945e4cde28ba8",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "The Recommended Set",
+      "page_number": 2
+    },
+    {
+      "source_id": "S-2e8ac4bab714",
+      "chunk_id": "GP-001-B-0c2f20b73087e518589f",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00001_PMC13244520.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In vivo antitumor effects and safety",
+      "figure_number": "Figure 5."
+    },
+    {
+      "source_id": "S-401b9faa3e2b",
+      "chunk_id": "GP-001-B-ce54a3e0b577276d3445",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00001_PMC13244520.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Tumor targeting in vitro",
+      "figure_number": "Figure 2."
+    },
+    {
+      "source_id": "S-65230eac3b20",
+      "chunk_id": "GP-001-B-c2fe9434834a2a0db694",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00001_PMC13244520.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In vivo antitumor effects and safety",
+      "figure_number": "Figure 4."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-001-E-03333d9f8e70e700",
+      "text": "(D) H&E staining of major organs in different treatment groups (×20.0).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-0f958fbaebd101d0",
+      "text": "(G, H) Expression and quantification of EphB4, Caspase 3, Bax, and Bcl-2 proteins.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-1844c6e99e829834",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714",
+        "S-401b9faa3e2b",
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-45f6ce6b64b927fe",
+      "text": "(E) Tumor images.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-4fcf2999b908ef87",
+      "text": "Scale = 50 μm.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-401b9faa3e2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-5344848d49076aba",
+      "text": "(A, B) In vivo fluorescence intensity in tumor-bearing mice after different treatments.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ],
+      "context_after_evidence_id": "GP-001-E-5f44a8f2435fbb4f"
+    },
+    {
+      "evidence_id": "GP-001-E-5a500f394f4745f8",
+      "text": "(B) Flow cytometry was used to detect cellular uptake.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-401b9faa3e2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-5f44a8f2435fbb4f",
+      "text": "(C) Tumor growth curves of the mice after various treatments.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ],
+      "context_before_evidence_id": "GP-001-E-5344848d49076aba"
+    },
+    {
+      "evidence_id": "GP-001-E-6980c6d45e54e31e",
+      "text": "*: compared with the saline group, #: compared with the sorafenib group, **## P < 0.01.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-6d976c5dda239606",
+      "text": "(A) CLSM images of Huh-7 cells after different treatments.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-401b9faa3e2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-866551dc94f65e89",
+      "text": "(C) Intake quantification results.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-401b9faa3e2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-8cf5254df4bc3de3",
+      "text": "Compared with the saline group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714",
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-8d8f8dae197bbcd0",
+      "text": "(B) Survival rates of mice treated with each preparation.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-8ea413a376130c4f",
+      "text": "The data are expressed as the means ± SDs, n = 4.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-9a1ab837b57e7430",
+      "text": "(C) Indicators of in vivo liver and kidney function after treatment.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-b92ba2b8fcfee4cd",
+      "text": "*: Compared with the saline group; #: compared with the sorafenib group; **## P < 0.01.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-be3411883f2ecca3",
+      "text": "(A) Weights of the different experimental groups after treatment.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-bf0ccd087e5a9313",
+      "text": "*P < 0.05, **P < 0.01.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-401b9faa3e2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-cff7b352baf0d260",
+      "text": "The curves for the CTD, FA-CSLNs, and GA-FA-CSLNs groups overlapped with that of the saline group.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2e8ac4bab714"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-d7773cc34ac4ab5b",
+      "text": "(F) H&E staining, TUNEL assay, and PCNA assay of tumors (H&E: × 30; TUNEL, PCNA: × 20).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-E-f92f2846e0bada5b",
+      "text": "(D) Tumor weight in each group at the end of treatment.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-65230eac3b20"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0208721986364818",
+      "text": "Conclusion",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58080c4c6aa648dd"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-050f30037af9bdd9",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-055b8ab7dcaaf615",
+      "text": "Clearly define all outcome measures assessed (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0750e0df3a480b3d",
+      "text": "Inclusion and exclusion criteria | Recommendation: 3 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-07d85927676bfde4",
+      "text": "Section: 2.3 Animals b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a9dfa384bc051cf3"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-083419dfa057f09d",
+      "text": "For hypothesis-testing studies, specify the primary outcome measure, i.e.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-09fd3fe6a0fe813b",
+      "text": "What was done, how it was done and what was used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0a1923be8b68d5ee",
+      "text": "Include sufficient scientific background to understand the rationale and context for the study, and explain the experimental approach.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0a1a32a13fdb8ee0",
+      "text": "(C) Tumor growth curves of the mice after various treatments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0a3e551caaf218da",
+      "text": "Section: No specific confounder control strategy reported ; Blinding | 5 Describe who was aware of the group allocation at the different stages of the experiment (during the allocation, the conduct of the experiment, the outcome assessment, and the data analysis).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0bf7c492cdeead55",
+      "text": "(G, H) Expression and quantification of EphB4, Caspase 3, Bax, and Bcl-2 proteins.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0c8aad4e5c328cf4",
+      "text": "Compared with the saline group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0dfb4e5750817c35",
+      "text": "Section: Funding",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0dfffe793191a843",
+      "text": "What was done, how it was done and what was used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0e198d954a53eb0d",
+      "text": "| Section: Discussion Section: Discussion ; Generalisability/translation | 18 Comment on whether, and how, the findings of this study are likely to generalise to other species or experimental conditions, including any relevance to human biology (where appropriate).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-0f9603480117b4fa",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-108d69907b6baf87",
+      "text": "When and how often.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-12a0f0f8e1c4c8af",
+      "text": "State whether randomisation was used to allocate experimental units to control and treatment groups.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-12ca74a66163f4e8",
+      "text": "Sample size | Recommendation: 2 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-12ecc2aad555440c",
+      "text": "Declare any potential conflicts of interest, including financial and non-financial.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-15aa603ea6a7eff9",
+      "text": "Describe the strategy used to minimise potential confounders such as the order of treatments and measurements, or animal/cage location.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-1611faa5f8f84fd4",
+      "text": "If the study did not have humane endpoints, state this.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-16265b029c1d062d",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-16d24964393047c9",
+      "text": "| Section: Researchers were aware of group allocation at all stages; blinding not implemented ; Outcome measures | 6 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-1a1a02f60c057510",
+      "text": "Protocol registration | Recommendation: 19 Provide a statement indicating whether a protocol (including the research question, key design features, and analysis plan) was prepared before the study, and if and where this protocol was registered.; Section/line number, or reason for not reporting: Study protocol not registered; no registration information reported",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b6282da616d6fa13"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-1aaa19cf69e906a9",
+      "text": "List all funding sources (including grant identifier) and the role of the funder(s) in the design, analysis and reporting of the study.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-1c302fa56e04d137",
+      "text": "Describe any criteria used for including and excluding animals (or experimental units) during the experiment, and data points during the analysis.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-1d0383332459dfb3",
+      "text": "Table 1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9e7f077cc397fa08"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-1fffe6a8384f5979",
+      "text": "Experimental animals | Recommendation: 8 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a9dfa384bc051cf3"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-20b6f54f87cbc002",
+      "text": "*: compared with the saline group, #: compared with the sorafenib group, **## P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2180d3e5ed36d910",
+      "text": "Section: 2.2 Cells, 2.3 Animals, 2.9 In vivo pharmacokinetics ; Sample size | 2 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-227da2d4a9f0ce0d",
+      "text": "Section: No methods for assessing statistical assumptions reported",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ace3b84a139bcdcb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-234a2cd8e9a6ec05",
+      "text": "Results | Recommendation: 10 For each experiment conducted, including independent replications, report: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-23c32f8b921c6c10",
+      "text": "Section: Introduction b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-23c434945f341511",
+      "text": "If applicable, the effect size with a confidence interval.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-25da459c353b0c6c",
+      "text": "If no criteria were set, state this explicitly.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-26627fccbd6c0548",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-27a39d55e551ca8c",
+      "text": "Table 1. | CSLNs | Mean size (nm): 123.4 ± 0.009; PDI: 0.201 ± 0.001; Zeta potential (mV): −1.26 ± 0.127; EE (%): 96.14 ± 0.39; DL (%): 0.559 ± 0.43",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b046c4256e54c6e5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2a11004e290bee08",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2ad934d24e987213",
+      "text": "The experimental unit (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2b5a01483806a113",
+      "text": "Introduction, 5.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2b5bf168ddb7cad3",
+      "text": "(A, B) In vivo fluorescence intensity in tumor-bearing mice after different treatments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2c23f7f7a6971c7a",
+      "text": "The groups being compared, including control groups.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2ca0aa8625247fc4",
+      "text": "The experimental unit (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2d68cca970c5f384",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2d96ffcf1e255a62",
+      "text": "If done, provide the method used to generate the randomisation sequence.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-2d9947961f945864",
+      "text": "List all funding sources (including grant identifier) and the role of the funder(s) in the design, analysis and reporting of the study.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-30ba5bd41b671f15",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3184398d9df863ce",
+      "text": "Section: 2.8.1 In vivo antitumor efficacy b.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-31a8b2bf401f8ddd",
+      "text": "Item | Recommendation | Section/line number, or reason for not reporting ; Study design | 1 For each experiment, provide brief details of study design including: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3304b8059a9d07be",
+      "text": "Table 1. | FA-CSLNs | Mean size (nm): 100.1 ± 0.007; PDI: 0.231 ± 0.050; Zeta potential (mV): −4.02 ± 0.099; EE (%): 96.22 ± 0.14; DL (%): 0.544 ± 0.12",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3d9119b1c6a05504"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-334deb3c3294cf53",
+      "text": "c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-33c05d270cf81965",
+      "text": "Section: 2.8.1 In vivo antitumor efficacy, 2.9 In vivo pharmacokinetics c.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-357ccdb565a1542f",
+      "text": "Interpretation/scientific implications | Recommendation: 17 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6e094ed5b232b97d"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-35f70a36632a065c",
+      "text": "Table 1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3d9119b1c6a05504"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3669acb74936b75f",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3834046e0d0d9450",
+      "text": "If no control group has been used, the rationale should be stated.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-38fffb97d5b97117",
+      "text": "Describe any criteria used for including and excluding animals (or experimental units) during the experiment, and data points during the analysis.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-393cb5d1e81fe193",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3a4ec7680c0ac131",
+      "text": "(B) Flow cytometry was used to detect cellular uptake.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c8581cf16bdbfc"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3ae85197bf7f2b4e",
+      "text": "Specify if these criteria were established a priori.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3bb284bd1db6377e",
+      "text": "Compared with the CTD group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3d4e785d6bd52864",
+      "text": "Describe any interventions or steps taken in the experimental protocols to reduce pain, suffering and distress.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3d7bc3f5d32f33d1",
+      "text": "Table 1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b046c4256e54c6e5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3e29b8af677cb19f",
+      "text": "If there were no exclusions, state so.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-3ebb21f4de0edfce",
+      "text": "(B) Pharmacokinetic parameters (mean ± SD, n = 6).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-66e2167e13cfca39"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-40084f28b19993d4",
+      "text": "The curves for the CTD, FA-CSLNs, and GA-FA-CSLNs groups overlapped with that of the saline group.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-40f3e000fa3ab604",
+      "text": "Compared with the control group: *P < 0.05, **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-419810dc7fe44452",
+      "text": "If confounders were not controlled, state this explicitly.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-4260aa1fb9d5041c",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-4346057113071535",
+      "text": "Declare any potential conflicts of interest, including financial and non-financial.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-43d525a7393a7934",
+      "text": "(C, D) Analysis and quantification of FITC-Annexin V/PI double staining in Huh-7 cells treated with different preparations.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-44e943c42e794f16",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3e11f809fba6a96"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-469ebfaa84c204ef",
+      "text": "Table 1. | GA-CSLNs | Mean size (nm): 112.8 ± 0.008; PDI: 0.239 ± 0.024; Zeta potential (mV): −4.36 ± 0.123; EE (%): 94.69 ± 0.25; DL (%): 0.582 ± 0.64",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9e7f077cc397fa08"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-474b7771b68c26ca",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ace3b84a139bcdcb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-484364d0d1d8dbaf",
+      "text": "Specify the exact number of experimental units allocated to each group, and the total number in each experiment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-48d83c335193e275",
+      "text": "When and how often.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-49c36ab7e499ed91",
+      "text": "Scale = 50 μm.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c8581cf16bdbfc"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-4a001b1ad6a080cf",
+      "text": "Provide further relevant information on the provenance of animals, health/immune status, genetic modification status, genotype, and any previous procedures.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a9dfa384bc051cf3"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-4a33ab04b648b950",
+      "text": "Declaration of interests | Recommendation: 21 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-4acfe22a6ef9ce9e",
+      "text": "Describe any methods used to assess whether the data met the assumptions of the statistical approach, and what was done if the assumptions were not met.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-4ca878fc5b1cc944",
+      "text": "c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-50cac0303ed694d5",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-51ca7ceb2f8e1006",
+      "text": "Introduction, 5.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-51e601c679d3bbce",
+      "text": "the outcome measure that was used to determine the sample size.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-52af6f0ab65e405c",
+      "text": "*P < 0.05, **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c8581cf16bdbfc"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-52de6fea6912b16f",
+      "text": "If there were no exclusions, state so.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-533d23c4ee3823af",
+      "text": "Section: 1.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-533ee2aa50a8ee45",
+      "text": "c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5363ea557513334e",
+      "text": "Compared with the control group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-567c5d233f383b47",
+      "text": "Section: Declaration of competing interest b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5685a9beadf6af1e",
+      "text": "Section: 2.3 Animals b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-56d9f10c794dde64",
+      "text": "(D) H&E staining of major organs in different treatment groups (×20.0).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-56f4b211b83733d6",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5937e1f07178cc2d",
+      "text": "Table 1.Characterization of SLNs (Mean ± SD, n = 3).SamplesMean size (nm)PDIZeta potential (mV)EE (%)DL (%)CSLNs123.4 ± 0.0090.201 ± 0.001−1.26 ± 0.12796.14 ± 0.390.559 ± 0.43FA-CSLNs100.1 ± 0.0070.231 ± 0.050−4.02 ± 0.09996.22 ± 0.140.544 ± 0.12GA-CSLNs112.8 ± 0.0080.239 ± 0.024−4.36 ± 0.12394.69 ± 0.250.582 ± 0.64GA-FA-CSLNs95.5 ± 0.0070.244 ± 0.012−4.11 ± 0.03596.59 ± 0.150.525 ± 0.57",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a112e37e360cc83a"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-59c8190e1c75fb94",
+      "text": "| Section: 1.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5adfd525bb5a89ce",
+      "text": "(E) Tumor images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5b14ce66504b92a3",
+      "text": "Also indicate the total number of animals used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5bd4411bca820286",
+      "text": "Section: 3.1 Optimization and Characterization of SLNs, 3.3 In vitro antitumor analysis, 3.4 In vivo antitumor effects and safety, 3.5 Pharmacokinetic studies b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5c80e389e4933bdc",
+      "text": "Section: 2.8.1 In vivo antitumor efficacy, 2.9 In vivo pharmacokinetics b.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5cf0c2e0ba191048",
+      "text": "Section: 1.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5cffe2387ab50a2c",
+      "text": "Provide species-appropriate details of the animals used, including species, strain and substrain, sex, age or developmental stage, and, if relevant, weight.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a9dfa384bc051cf3"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5dfb889d7c2827c6",
+      "text": "Section: 2.3 Animals b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5e2a7967fb16fe08",
+      "text": "Blinding | Recommendation: 5 Describe who was aware of the group allocation at the different stages of the experiment (during the allocation, the conduct of the experiment, the outcome assessment, and the data analysis).; Section/line number, or reason for not reporting: Section: Researchers were aware of group allocation at all stages; blinding not implemented",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9329e35b03549763"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5ede6acea0c3df12",
+      "text": "cell death, molecular markers, or behavioural changes).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-5f13216ed30b2498",
+      "text": "Discussion, 5.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-60b2d25830418f44",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-62738f4303a2a4f4",
+      "text": "(A) Huh-7 cell viability after 48 hours of treatment with different preparation groups (CTD, CSLNs, GA-CSLNs, FA-CSLNs, and GA-FA-CSLNs).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-629d457f2ec39c2b",
+      "text": "| Section: 2.3 Animals ; Animal care and monitoring | 16 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6422e29a0f2b9772",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-642ec4360b1ee06f",
+      "text": "a single animal, litter, or cage of animals).; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-64c6662eab50b8f0",
+      "text": "Explain how the animal species and model used address the scientific objectives and, where appropriate, the relevance to human biology.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-64f61bc0cc9ba7bb",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a9dfa384bc051cf3"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-657cd0e423d6ffe3",
+      "text": "The groups being compared, including control groups.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6602ef31982819da",
+      "text": "Describe any interventions or steps taken in the experimental protocols to reduce pain, suffering and distress.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-66cf026f02532d60",
+      "text": "For each analysis, report the exact value of n in each experimental group.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-688e2336298dea78",
+      "text": "Describe the humane endpoints established for the study, the signs that were monitored and the frequency of monitoring.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6a993ef45348a424",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6c2370608704aa94",
+      "text": "Where (including detail of any acclimatisation periods).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6c8efd67ac62bf56",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6d5460e23491d03b",
+      "text": "Provide details of any a priori sample size calculation, if done.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6da565331a944bfa",
+      "text": "For hypothesis-testing studies, specify the primary outcome measure, i.e.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6df6d9e0d79fd8f6",
+      "text": "(I, J) Expression and quantification of EphB4 protein.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6f0349f6a5293ccb",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-6ff860d7d6db29a6",
+      "text": "Section: No methods for assessing statistical assumptions reported ; Experimental animals | 8 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-70229a5470c963b2",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7157142345efeb73",
+      "text": "If done, provide the method used to generate the randomisation sequence.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-72aec9c9fed01038",
+      "text": "Explain how the sample size was decided.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-734ddcfd4ab14b84",
+      "text": "Randomisation | Recommendation: 4 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-748519943a21e44d",
+      "text": "d.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-752fe05275ddf179",
+      "text": "If no control group has been used, the rationale should be stated.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-75361f5e628931ae",
+      "text": "Section: No animals, experimental units, or data points excluded from analysis c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-76c691b257f0bb05",
+      "text": "Ethical statement | Recommendation: 14 Provide the name of the ethical review committee or equivalent that has approved the use of animals in this study, and any relevant licence or protocol numbers (if applicable).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bb31b180a09336b6"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-76e1ae2cec81de39",
+      "text": "Specify the exact number of experimental units allocated to each group, and the total number in each experiment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-77581cb6931f998d",
+      "text": "Report any expected or unexpected adverse events.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-77f4854d6b43e084",
+      "text": "Section: Humane endpoints not explicitly defined; tumor volume and body weight monitored regularly",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-793ff811a21df1bf",
+      "text": "Section: 2.10 Statistical analysis b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ace3b84a139bcdcb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-797a4b6efdbd386a",
+      "text": "Section: No a priori sample size calculation reported; sample size determined based on conventional experimental design in the field and previous study (Xu et al., 2022) ; Inclusion and exclusion criteria | 3 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-79f19a004fd73f3d",
+      "text": "Section: 3.3 In vitro antitumor analysis, 3.4 In vivo antitumor effects and safety, 3.5 Pharmacokinetic studies b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7a2ba7dc7a3be4ec",
+      "text": "Comment on the study limitations including potential sources of bias, limitations of the animal model, and imprecision associated with the results.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7a489855f2a2f4e0",
+      "text": "Statistical methods | Recommendation: 7 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ace3b84a139bcdcb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7b2699077a74bb03",
+      "text": "(E, F, G, H) Caspase 3, Bax, and Bcl-2 protein expression and quantification.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7b59bf07d2e8ce3f",
+      "text": "Section: No animals, experimental units, or data points excluded from analysis c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7d33a13148b0507b",
+      "text": "Conclusion",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7ecf1c2cce576005",
+      "text": "Section: 2.3 Animals ; Experimental procedures | 9 For each experimental group, including controls, describe the procedures in enough detail to allow others to replicate them, including: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7eec7ab137518cea",
+      "text": "Explain how the sample size was decided.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7f2bbddf7bf21554",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-7f9346e19e5957a1",
+      "text": "Section: No pre-established inclusion/exclusion criteria for animals or data b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-801f13ef09aa6574",
+      "text": "(C) Indicators of in vivo liver and kidney function after treatment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-810a1b81d4656d1d",
+      "text": "Section: Introduction",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3e11f809fba6a96"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-814f8f1377ffa254",
+      "text": "Section: 2.4 Preparation, 2.7 Antitumor effects in vivo, 2.8 In vivo experiment, 2.9 In vivo pharmacokinetics b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-82e3d46924c8b3f0",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-8431b44b04224ae2",
+      "text": "Section: 3.3 In vitro antitumor analysis, 3.4 In vivo antitumor effects and safety, 3.5 Pharmacokinetic studies b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-84e81c346a87c664",
+      "text": "a single animal, litter, or cage of animals).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-86d0230c57a28663",
+      "text": "Report any expected or unexpected adverse events.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-874d73fa60fcb03d",
+      "text": "If ethical approval was not sought or granted, provide a justification.; Section/line number, or reason for not reporting: Section: Ethics approval and consent to participate",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bb31b180a09336b6"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-8791d378d0d66934",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6e094ed5b232b97d"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-8c8df8ed9d2d3011",
+      "text": "c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-8dcd9154438dc6b8",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-8ece4a61502132fb",
+      "text": "Compared with the saline group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-92fc499a3aa8c29a",
+      "text": "For each analysis, report the exact value of n in each experimental group.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-941dff80830d67d7",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-959aaad9a9a50588",
+      "text": "Specify if these criteria were established a priori.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-972f8e77323e99a7",
+      "text": "Section: No specific confounder control strategy reported",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9743af3d158ef6d3",
+      "text": "Experimental procedures | Recommendation: 9 For each experimental group, including controls, describe the procedures in enough detail to allow others to replicate them, including: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-97afde0b0e2f252e",
+      "text": "Background | Recommendation: 12 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3e11f809fba6a96"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-98108dcace3199f7",
+      "text": "Also indicate the total number of animals used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-99807e8956afd310",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9ae8567987f94336",
+      "text": "Animal care and monitoring | Recommendation: 16 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9af65527066072b8",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9dec0ff504650323",
+      "text": "(A) CLSM images of Huh-7 cells after different treatments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c8581cf16bdbfc"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9e0b4844da1a47ff",
+      "text": "If none exist, this should be stated.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9e2572375575fa36",
+      "text": "For each experimental group, report any animals, experimental units or data points not included in the analysis and explain why.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9eb7e2b184a75cf6",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9f3c8beb08dc941b",
+      "text": "Section: 2.2 Cells, 2.3 Animals, 2.9 In vivo pharmacokinetics",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9f3e78bf0f2da3d3",
+      "text": "(B) IC50 values of different preparations.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-9ff52c475f037d4c",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a0b230337afdb363",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a1610c7311eccc20",
+      "text": "Item | Recommendation | Section/line number, or reason for not reporting ; Abstract | 11 Provide an accurate summary of the research objectives, animal species, strain and sex, key methods, principal findings, and study conclusions.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a17d33f681379447",
+      "text": "Section: Declaration of competing interest b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10a543352bdc74e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a2013b9f2151fe0b",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a2fbec6a63c5a31e",
+      "text": "Section: Introduction ; Objectives | 13 Clearly describe the research question, research objectives and, where appropriate, specific hypotheses being tested.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a3f9adf00d712ab8",
+      "text": "Provide details of the statistical methods used for each analysis, including software used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ace3b84a139bcdcb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a573513110a59637",
+      "text": "Objectives | Recommendation: 13 Clearly describe the research question, research objectives and, where appropriate, specific hypotheses being tested.; Section/line number, or reason for not reporting: Section: 1.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06cadb50a8f48a39"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a5ea8b5e8bcccbb7",
+      "text": "Include sufficient scientific background to understand the rationale and context for the study, and explain the experimental approach.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3e11f809fba6a96"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a808e2ebad712c5c",
+      "text": "Compared with the control group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5be2caab0344082"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-a9f4c1f5bd48abc2",
+      "text": "Provide details of any a priori sample size calculation, if done.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-aa11b16f8bd4a1b8",
+      "text": "c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-aac376b7d96d8962",
+      "text": "If ethical approval was not sought or granted, provide a justification.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ade5e06d99943327",
+      "text": "Section: No a priori sample size calculation reported; sample size determined based on conventional experimental design in the field and previous study (Xu et al., 2022)",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-af7a9da219a1e418",
+      "text": "Section: 3 Results (3.1, 3.3, 3.4, 3.5) b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-afbe0bcf3b4e65e6",
+      "text": "Provide species-appropriate details of the animals used, including species, strain and substrain, sex, age or developmental stage, and, if relevant, weight.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b099316c5877af52",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b1c17aef0f7800e4",
+      "text": "Section: 2.3 Animals, 2.8 In vivo experiment, 2.9 In vivo pharmacokinetics d.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b265de8234b54a5c",
+      "text": "(A) Blood drug concentration-time curve (mean ± SD, n = 6).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-66e2167e13cfca39"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b2e36774e286de7f",
+      "text": "Section: 3.4 In vivo antitumor effects and safety c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b3b24b0990195125",
+      "text": "Describe the strategy used to minimise potential confounders such as the order of treatments and measurements, or animal/cage location.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b5e9236662a51460",
+      "text": "d.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b71dd6b44ec6ce35",
+      "text": "Section: 2.8.1 In vivo antitumor efficacy b.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b8050b3b63906360",
+      "text": "Describe the humane endpoints established for the study, the signs that were monitored and the frequency of monitoring.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b8479e2957781345",
+      "text": "*: Compared with the saline group; #: compared with the sorafenib group; **## P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-b90b6b8cb66825b3",
+      "text": "Table 1. | GA-FA-CSLNs | Mean size (nm): 95.5 ± 0.007; PDI: 0.244 ± 0.012; Zeta potential (mV): −4.11 ± 0.035; EE (%): 96.59 ± 0.15; DL (%): 0.525 ± 0.57",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-267fc032b629bcec"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-babc8047003b1292",
+      "text": "(C) Intake quantification results.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c8581cf16bdbfc"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-bacab1815c5166f5",
+      "text": "State whether randomisation was used to allocate experimental units to control and treatment groups.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-bc21ee4603b6cdbe",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-bc6c8fbcd27882d5",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-be3db0c0d5c31066",
+      "text": "If applicable, the effect size with a confidence interval.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-bee5fae710969115",
+      "text": "If the study did not have humane endpoints, state this.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-bf3db5d3534622a2",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c13d67fcc2a2ccc2",
+      "text": "Section: 2.4 Preparation, 2.7 Antitumor effects in vivo, 2.8 In vivo experiment, 2.9 In vivo pharmacokinetics b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c14bf5378a27e523",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c2475b4fdc9202ab",
+      "text": "mean and SD, or median and range).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c2abf23a6ead7329",
+      "text": "Clearly define all outcome measures assessed (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c4c7282469a1e1a3",
+      "text": "Introduction, 5.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c4c9d8b01a67f2f7",
+      "text": "Section: Effect size and confidence interval not reported",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c5527dcb62cd1985",
+      "text": "Section: 3.1 Optimization and Characterization of SLNs, 3.3 In vitro antitumor analysis, 3.4 In vivo antitumor effects and safety, 3.5 Pharmacokinetic studies b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d7b2b7f9e1141946"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c56f2609cd55c62e",
+      "text": "Section: Introduction b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3e11f809fba6a96"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c5f6221e3dab3adf",
+      "text": "Data access | Recommendation: 20 Provide a statement describing if and where study data are available.; Section/line number, or reason for not reporting: Section: Availability of data and materials",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac6cd7f8fb2a2eb4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c6b1e483c0cd633d",
+      "text": "If none exist, this should be stated.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c7470a60dc090c63",
+      "text": "If confounders were not controlled, state this explicitly.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c7998117c689c304",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c79a610091a7be06",
+      "text": "Section: 3.4 In vivo antitumor effects and safety",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-c92d8968d567c3ce",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-cbcc81537711c80a",
+      "text": "Interpret the results, taking into account the study objectives and hypotheses, current theory and other relevant studies in the literature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6e094ed5b232b97d"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-cc7bd4b8221bc4ec",
+      "text": "Section: Funding",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-cca636ea6eff1a6d",
+      "text": "Why (provide rationale for procedures).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ccb5976e1b9f3b86",
+      "text": "| Study protocol not registered; no registration information reported ; Data access | 20 Provide a statement describing if and where study data are available.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ce875697ca6df761",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-cef9838efed41817",
+      "text": "Compared with the CSLNs group: *P < 0.1, **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-66e2167e13cfca39"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-cfc52331849be1e0",
+      "text": "(F) H&E staining, TUNEL assay, and PCNA assay of tumors (H&E: × 30; TUNEL, PCNA: × 20).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d173d7bc9a0b7a26",
+      "text": "Comment on the study limitations including potential sources of bias, limitations of the animal model, and imprecision associated with the results.; Section/line number, or reason for not reporting: Section: Discussion Section: Discussion",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6e094ed5b232b97d"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d1bb8fcf5d8b22e0",
+      "text": "the outcome measure that was used to determine the sample size.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d1c8a393cf02318f",
+      "text": "Provide further relevant information on the provenance of animals, health/immune status, genetic modification status, genotype, and any previous procedures.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d235993cff2eb2b3",
+      "text": "Section: No pre-established inclusion/exclusion criteria for animals or data b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d25a8046f5fb4a2b",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d4a930c829c62d2e",
+      "text": "| a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d4ec172c54e2ac13",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c8581cf16bdbfc"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d563ab7e74438908",
+      "text": "mean and SD, or median and range).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d665764df470dca8",
+      "text": "Table 1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-267fc032b629bcec"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d6b104442def9c73",
+      "text": "Section: 2.3 Animals b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d6ea7d83a36dc1fd",
+      "text": "Conclusion",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06cadb50a8f48a39"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d7196c899ba16ff6",
+      "text": "The data are expressed as the means ± SDs, n = 4.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-d9350350b9f0392a",
+      "text": "Conclusion ; Ethical statement | 14 Provide the name of the ethical review committee or equivalent that has approved the use of animals in this study, and any relevant licence or protocol numbers (if applicable).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-dc1f690dedd2fa7a",
+      "text": "Provide details of the statistical methods used for each analysis, including software used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-dc23a21a3aec42a1",
+      "text": "Section: 3 Results (3.1, 3.3, 3.4, 3.5) b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-dc5b9334786421ce",
+      "text": "(A) Weights of the different experimental groups after treatment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-dcaed3b5549be675",
+      "text": "Interpret the results, taking into account the study objectives and hypotheses, current theory and other relevant studies in the literature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e047d9d13c20d3c1",
+      "text": "cell death, molecular markers, or behavioural changes).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e0a7e177e44ef8e1",
+      "text": "Section: 2.3 Animals",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a9dfa384bc051cf3"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e168d1c9bfe80a75",
+      "text": "Compared with the saline group: **P < 0.01.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e1a85b0e2c1d10a7",
+      "text": "Abstract | Recommendation: 11 Provide an accurate summary of the research objectives, animal species, strain and sex, key methods, principal findings, and study conclusions.; Section/line number, or reason for not reporting: Section: Abstract",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58ebda7d0578b2df"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e21e77facd6536ce",
+      "text": "(B) Survival rates of mice treated with each preparation.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b265310ba27c6e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e224973b95177aa7",
+      "text": "The data are expressed as the means ± SDs, n = 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e25d291690a3c2a7",
+      "text": "Conclusion ; Results | 10 For each experiment conducted, including independent replications, report: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e52c459492ac37af",
+      "text": "Generalisability/translation | Recommendation: 18 Comment on whether, and how, the findings of this study are likely to generalise to other species or experimental conditions, including any relevance to human biology (where appropriate).; Section/line number, or reason for not reporting: Section: 4.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58080c4c6aa648dd"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e5e70fe857b4766a",
+      "text": "Conclusion ; Protocol registration | 19 Provide a statement indicating whether a protocol (including the research question, key design features, and analysis plan) was prepared before the study, and if and where this protocol was registered.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e659446d19d6138e",
+      "text": "Section: 3.4 In vivo antitumor effects and safety c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e7728bb7311f45c3",
+      "text": "| Section: Ethics approval and consent to participate ; Housing and husbandry | 15 Provide details of housing and husbandry conditions, including any environmental enrichment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e812d4075fa03789",
+      "text": "Section: 2.8.1 In vivo antitumor efficacy, 2.9 In vivo pharmacokinetics c.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e813e12db8fa8c3e",
+      "text": "Section: 2.8.1 In vivo antitumor efficacy, 2.9 In vivo pharmacokinetics b.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b21ce8f0af9b26b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-e950c5c1ab8684c9",
+      "text": "Discussion, 5.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58080c4c6aa648dd"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ea3b99fdf7390300",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9cdb9104c6b50bef"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ea47811451837d56",
+      "text": "For each experimental group, report any animals, experimental units or data points not included in the analysis and explain why.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-eac808d88ffdde83",
+      "text": "(D) Tumor weight in each group at the end of treatment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ead33f89609b9de2",
+      "text": "Section: Exact n values reported in relevant result sections ; Randomisation | 4 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ecb39835058df2d4",
+      "text": "TEM images (A, B) and particle size distribution (C) of GA-FA-CSLNs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-1df114ad22094045"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ecc585c3f913f950",
+      "text": "| Section: Abstract ; Background | 12 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ed223050722eadc0",
+      "text": "Why (provide rationale for procedures).; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ef58c987601e893f",
+      "text": "Section: Effect size and confidence interval not reported",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ef78ee5a8de7efa2",
+      "text": "If no criteria were set, state this explicitly.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ef85ca53bc0ad9d8",
+      "text": "b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-efebd88715c9cca2",
+      "text": "Summary/descriptive statistics for each experimental group, with a measure of variability where applicable (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f2125b3946865a4d",
+      "text": "Section: 2.10 Statistical analysis b.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f2953d4f05e434e8",
+      "text": "Section: Humane endpoints not explicitly defined; tumor volume and body weight monitored regularly ; Interpretation/scientific implications | 17 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f2e4fb2417ab6cd7",
+      "text": "Summary/descriptive statistics for each experimental group, with a measure of variability where applicable (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc8b09bfbd15a117"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f3131a239d48623c",
+      "text": "Describe any methods used to assess whether the data met the assumptions of the statistical approach, and what was done if the assumptions were not met.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ace3b84a139bcdcb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f3488090fd4bbeb3",
+      "text": "c.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f37956ac0b8808f0",
+      "text": "Section: Exact n values reported in relevant result sections",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-14c04fcee30412cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f3796d4f7b36937b",
+      "text": "The data are expressed as the means ± SDs, n = 4.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-251da741eae88060"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f4045722d7dc62bb",
+      "text": "Study design | Recommendation: 1 For each experiment, provide brief details of study design including: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-93088f726036ccee"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f4deeead74f87425",
+      "text": "Section: 2.3 Animals, 2.8 In vivo experiment, 2.9 In vivo pharmacokinetics d.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-f8a04fd9045188c0",
+      "text": "Housing and husbandry | Recommendation: 15 Provide details of housing and husbandry conditions, including any environmental enrichment.; Section/line number, or reason for not reporting: Section: 2.3 Animals",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ec5b319aa493db89"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-fa2db6a6c4b6e402",
+      "text": "Introduction, 5.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06cadb50a8f48a39"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-fb19cdc6099f48fe",
+      "text": "| Section: 4.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-fbf67bd8d8fff26f",
+      "text": "Explain how the animal species and model used address the scientific objectives and, where appropriate, the relevance to human biology.; Section/line number, or reason for not reporting: a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3e11f809fba6a96"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-fcd9dd3451c4bdaa",
+      "text": "Outcome measures | Recommendation: 6 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b1625d46788e462b"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-fd2927afaaec50b2",
+      "text": "| Section: Availability of data and materials ; Declaration of interests | 21 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfd730bf935b555c"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-fe8fab36aa04400f",
+      "text": "Section: 3.4 In vivo antitumor effects and safety ; Statistical methods | 7 a.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9e4cec2bfebcd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-001-FC-ff092ff44f3d401e",
+      "text": "Where (including detail of any acclimatisation periods).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ad2153924ebb28"
+      ]
+    }
+  ],
+  "packet_checksum": "ce4c323d497afd337df2783f13c63d3800f16a348ae9bb536c0d51ec27d4072c"
+}

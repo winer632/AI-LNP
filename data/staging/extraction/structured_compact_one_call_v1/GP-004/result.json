@@ -1,0 +1,628 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-004",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-004-FC-78a71536fc74bef2",
+      "GP-004-FC-60ea9f48c47b6c6e"
+    ],
+    "explanation": "The packet reports an in vivo HGF mRNA-LNP experiment with a hepatocyte proliferation outcome; LNP composition is not reported."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "HGF mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "LNP component composition is not reported."
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No composition basis is reported."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio is not reported."
+      }
+    },
+    {
+      "formulation_id": "F2",
+      "formulation_name": {
+        "value": "HGF/EGF mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "LNP component composition is not reported."
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No composition basis is reported."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio is not reported."
+      }
+    },
+    {
+      "formulation_id": "F3",
+      "formulation_name": {
+        "value": "eGFP mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "LNP component composition is not reported."
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No composition basis is reported."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio is not reported."
+      }
+    }
+  ],
+  "components": [],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "HGF mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "HGF",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No molecular target is reported."
+      },
+      "delivery_recipient_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "The delivered cell type is not directly reported."
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2",
+          "GP-004-FC-60ea9f48c47b6c6e"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "homeostasis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose is not reported."
+      },
+      "dose_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose unit is not reported."
+      },
+      "route": {
+        "value": "IV",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 48.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-60ea9f48c47b6c6e"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-60ea9f48c47b6c6e"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F2",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "HGF/EGF mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "HGF and EGF",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No molecular target is reported."
+      },
+      "delivery_recipient_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "The delivered cell type is not directly reported."
+      },
+      "therapeutic_target_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No target cell is directly reported for this experiment."
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-21ebbc555c6058ad"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "CDE-induced chronic liver injury",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose is not reported."
+      },
+      "dose_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose unit is not reported."
+      },
+      "route": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Administration route is not reported."
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Outcome timepoint is not reported in the candidate evidence."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Outcome timepoint unit is not reported."
+      }
+    },
+    {
+      "experiment_id": "E3",
+      "formulation_id": "F3",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "eGFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "eGFP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No molecular target is reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "lung blood cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No therapeutic target cell is reported."
+      },
+      "tissue_or_organ": {
+        "value": "lung",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Species is not reported in the candidate evidence."
+      },
+      "disease_model": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No disease model is reported."
+      },
+      "experimental_context": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Experimental context is not reported in the candidate evidence."
+      },
+      "dose": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose is not reported."
+      },
+      "dose_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose unit is not reported."
+      },
+      "route": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Administration route is not reported."
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Timepoint is not reported."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Timepoint unit is not reported."
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "EdU/HNF4α immunostaining",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-60ea9f48c47b6c6e"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "hepatocyte proliferation",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-60ea9f48c47b6c6e"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical proliferation value is reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome unit is reported."
+      },
+      "qualitative_outcome": {
+        "value": "HGF mRNA-LNP induced significant hepatocyte proliferation in homeostasis.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E2",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay is not reported in the candidate evidence."
+      },
+      "endpoint": {
+        "value": "restoration of liver function",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Comparator is not reported in the candidate evidence."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome value is reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome unit is reported."
+      },
+      "qualitative_outcome": {
+        "value": "HGF/EGF mRNA-LNP accelerated restoration of liver function during recovery from CDE-induced chronic liver injury.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-2e8f5a6d0e0a4294"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E3",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay is not reported in the candidate evidence."
+      },
+      "endpoint": {
+        "value": "cell targeting",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Comparator is not reported."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome value is reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome unit is reported."
+      },
+      "qualitative_outcome": {
+        "value": "eGFP mRNA-LNP targeted subpopulations of lung blood cells.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-cf9e37f897ca00db"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "E2",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay is not reported in the candidate evidence."
+      },
+      "endpoint": {
+        "value": "liver function",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-66ac09c4b5f261eb"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Comparator is not reported in the candidate evidence."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome value is reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical outcome unit is reported."
+      },
+      "qualitative_outcome": {
+        "value": "HGF/EGF mRNA-LNP ameliorated liver function during continuous CDE-induced chronic liver injury.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-66ac09c4b5f261eb"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "LNP component identities, composition basis, and N/P ratios are not reported.",
+    "The lung blood-cell subtype is described as 'most likely phagocytic' and is therefore not resolved as a measured cell identity.",
+    "Numerical outcome values are absent from the reported outcome evidence."
+  ]
+}

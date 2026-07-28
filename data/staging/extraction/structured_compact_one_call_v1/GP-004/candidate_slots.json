@@ -1,0 +1,115 @@
+[
+  {
+    "candidate_id": "OC-b924d98c5ee0c618",
+    "endpoint_family": "cell_target_effect",
+    "figure_or_table": null,
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-004-FC-22e032321011f16e",
+      "GP-004-FC-80ed9ef13fd5ae2d"
+    ],
+    "summary": "Dead cells were eliminated using the Zombie NIR viability die. Care was taken to include proper unstained and isotype controls to derive the compensation matrix.: Cells were first gated using the SSC and FSC parameters to help eliminate debris."
+  },
+  {
+    "candidate_id": "OC-f12ccc22e6498844",
+    "endpoint_family": "cell_target_effect",
+    "figure_or_table": null,
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-004-FC-17ea1941b359be56",
+      "GP-004-FC-e1fbe7fc2781550b"
+    ],
+    "summary": "; Instrument | Stratifiedigm S1000EXi flow cytometer ; Software | FlowJo v10 software ; Cell population abundance | we collected at least 20,000 cells ; Gating strategy | Cells were first gated using the SSC and FSC parameters to help eliminate debris. Dead cells were eliminated using the Zombie NIR viability die."
+  },
+  {
+    "candidate_id": "OC-fdc2e205d8bbc85d",
+    "endpoint_family": "cell_target_effect",
+    "figure_or_table": "figure 4",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-cf9e37f897ca00db"
+    ],
+    "summary": "4 Subpopulations of blood cells, most likely phagocytic cells of the lung, are targeted by eGFP mRNA-LNP."
+  },
+  {
+    "candidate_id": "OC-266f7215cca1dfa7",
+    "endpoint_family": "cell_target_effect",
+    "figure_or_table": "fig. 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-59b1322fd090722e"
+    ],
+    "summary": "White arrowheads indicate co-stained cells."
+  },
+  {
+    "candidate_id": "OC-31142d755597b87a",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 4",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-07ad4307450feadf",
+      "GP-004-FC-cf9e37f897ca00db"
+    ],
+    "summary": "White arrowheads represent co-stained \\(GFP^{+}\\) CD45\\(^{+}\\) cells. 4 Subpopulations of blood cells, most likely phagocytic cells of the lung, are targeted by eGFP mRNA-LNP."
+  },
+  {
+    "candidate_id": "OC-a0003dea2317b7f7",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 1",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-98235da2214e15c0"
+    ],
+    "summary": "Table 1 | GFP | Cat."
+  },
+  {
+    "candidate_id": "OC-4f4f95c7a5f70408",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-5220a7516469049f"
+    ],
+    "summary": "Table 2 | Luciferase | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCA…"
+  },
+  {
+    "candidate_id": "OC-1119599841842f36",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-8b19bcc24507c269"
+    ],
+    "summary": "Table 2 | eGFP | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCACCGTGG…"
+  },
+  {
+    "candidate_id": "OC-83b81cbc99e7d961",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-004-FC-5220a7516469049f"
+    ],
+    "summary": "Table 2 | Luciferase | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCA…"
+  },
+  {
+    "candidate_id": "OC-3aa23151f38aab3d",
+    "endpoint_family": "toxicity",
+    "figure_or_table": "fig. 4",
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-004-FC-2e8f5a6d0e0a4294"
+    ],
+    "summary": "HGF/EGF mRNA-LNP accelerate restoration of liver function during recovery from CDE-induced chronic liver injury.a Injury scheme timeline: mice were fed CDD choline deficient diet for 1 week followed by three weeks of CDD diet supplemented with 0.1% ethionine (CDE)."
+  },
+  {
+    "candidate_id": "OC-6d7c8567a5ab3d71",
+    "endpoint_family": "toxicity",
+    "figure_or_table": "fig. 5",
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-004-FC-66ac09c4b5f261eb"
+    ],
+    "summary": "HGF/EGF mRNA-LNP ameliorate liver function during continuous CDE-induced chronic liver injury.a Injury scheme timeline: mice were fed CDD choline deficient diet for 1 week followed by continuous CDD diet supplemented with 0.1% ethionine (CDE) for 4 weeks."
+  }
+]

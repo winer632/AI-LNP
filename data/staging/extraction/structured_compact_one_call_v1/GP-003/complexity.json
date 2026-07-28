@@ -1,0 +1,14 @@
+{
+  "assessment_version": "outcome-complexity-1.1.0",
+  "paper_id": "GP-003",
+  "complexity_score": 3,
+  "route": "simple",
+  "reasons": [
+    "four_to_seven_direct_outcome_groups",
+    "multiple_intervention_endpoint_families",
+    "full_corpus_view_thresholds"
+  ],
+  "candidate_groups": 14,
+  "endpoint_families": 1,
+  "visual_candidate_groups": 0
+}

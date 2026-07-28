@@ -70,6 +70,41 @@ flags:
     integration_points:
       - src/extraction/run_codex_one_call.py
 
+  # --------------------------------------------------------------------- P1-a
+  structured_evidence_view:
+    priority: P1-a
+    default: true
+    status: enabled
+    rationale: >-
+      Enabled on measurement. uniparse (P1) puts Table S2 into the corpus,
+      but the compact packet's ranker then drops the row again: the GP-006
+      compact packet contains 1.01 zero times while the committed structured
+      packet at the same 16k budget contains it four times (206 evidence, 98
+      structured, 15,995 tokens). With this on, the default run recovers
+      GO-006 -- exact_numeric, and the record's own cited evidence supports
+      it -- and single-run recall goes 10/15 -> 11/15. It costs precision,
+      0.3125 -> 0.2586, because a run that emits more records matches a
+      smaller fraction of them; precision_metrics carries that number.
+      Two papers overshoot the budget on purpose (GP-004 29.7k, GP-008
+      22.6k): structured evidence is never dropped, so a paper whose tables
+      alone exceed the budget costs more tokens rather than losing a row.
+    description: >-
+      Build the extraction packet with src/rag/structured_compact_packet.py
+      instead of the plain compact packet: keep every table, table_row,
+      caption, figure_caption and figure block the local parse produced, then
+      fill the remaining token budget by retrieval rank. Same budget, same
+      CompactApiPacket type, same checksum rule. Read by
+      run_codex_one_call.default_evidence_view, where full_evidence_view still
+      takes precedence when the compact route is off. The paid
+      run_compact_one_call path is deliberately not wired to it yet: this view
+      has only been measured through the codex-exec harness.
+    aliases: [P1-a, p1a, structured_view, structure_aware_packet]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/run_codex_one_call.py
+
   # ----------------------------------------------------------------------- P1
   precision_metrics:
     priority: P0-b

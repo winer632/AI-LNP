@@ -1,0 +1,23 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-001",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "NOT_ELIGIBLE_LNP",
+      "UNSUPPORTED_PAYLOAD"
+    ],
+    "evidence_ids": [
+      "GP-001-E-301bb7dfd8dbec31",
+      "GP-001-E-2ccc4dd1032f3bb2",
+      "GP-001-E-bb98c45555c74acd"
+    ],
+    "explanation": "The paper reports original experiments using CSLNs/GA-FA-CSLNs formulated with the small-molecule drug CTD, rather than an LNP delivering mRNA, siRNA, saRNA, or circRNA."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "unresolved_items": [],
+  "outcomes": []
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "candidate_id": "OC-0f4be59f35687e4f",
+    "endpoint_family": "expression",
+    "figure_or_table": null,
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-E-7a4317dc270edf63"
+    ],
+    "summary": "Stimulated by the surprisingly low level of EGFP‐derived signals in KC, we studied the uptake of LNP1 in vitro by incubating primary murine hepatocytes, the murine hepatoma cell line Hepa 1–6, human cervical cancer cells (HeLa), murine L929 fibroblasts, human endothelial cells (EA.hy926), murine J774.1 macrophages, and murine KC for 24 h with LNP in medium with 5% serum."
+  },
+  {
+    "candidate_id": "OC-2415ff8ef701f5db",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 1a",
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-E-ac7e05a4c142ccbb"
+    ],
+    "summary": "We therefore studied the spatial distribution of EGFP in vivo using IVM following intravenous injection of LNP1 at the dosage of 2 mg k−1g into C57BL6J wild‐type mice (Figure 1A)."
+  },
+  {
+    "candidate_id": "OC-d462097b2039baa9",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 1b",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-f3b6eafdb0a35892"
+    ],
+    "summary": "Surprisingly, no obvious signal was detected in any other hepatic cell type (Figure 1B) and in vivo staining of the KC marker F4/80 demonstrated that there were no EGFP+ KC."
+  },
+  {
+    "candidate_id": "OC-ecb610021381dd26",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 2",
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-FC-88097a687c9e2754",
+      "GP-005-FC-efd9ee910b0a3c87"
+    ],
+    "summary": "G) Hela cells were transfected with 1 µg mL−1 Egfp mRNA‐LNP for 24 h and then subjected to flow cytometry and compared to H) human primary macrophage with 1 µg mL−1 Egfp mRNA‐LNP. D) Uptake of AF488‐labelled Egfp mRNA by macrophages assessed by flow cytometry after different time‐points."
+  },
+  {
+    "candidate_id": "OC-5d4b8066ffcb5f67",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 2b",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-bffa32a057398b00"
+    ],
+    "summary": "It turned out that hepatocytes, and similarly the Hepa 1–6 cells, were most efficient in EGFP protein production (Figure 2B), quantifications of the immunoblot signals revealed that these differences were statistically significant (Figure S4C, Supporting Information)."
+  },
+  {
+    "candidate_id": "OC-d0cb7a9d4e02e1cb",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 2g",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-3e3477b19e76bf8c"
+    ],
+    "summary": "We observed using flow cytometry that HeLa cells translated the mRNA of all formulations into EGFP protein at significant amounts (Figure 2G)."
+  },
+  {
+    "candidate_id": "OC-642f98119c1744c1",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 4",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-a14598c204c97e01"
+    ],
+    "summary": "B) Flow cytometric analysis of the EGFP signals observed from human macrophages transfected with co‐encapsulated Egfp mRNA‐LNP on day 6 for 24 h and C) quantifications thereof."
+  },
+  {
+    "candidate_id": "OC-16670e847db0838c",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 7i",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-bf37b0dd6479f376"
+    ],
+    "summary": "We found that the big hepatocytes (subset 5) also expressed the highest levels of EGFP as detected in flow cytometry (Figure 7I), and these were statistically significant in this subset only (Figure 7J)."
+  },
+  {
+    "candidate_id": "OC-f5f0c57168120096",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure s2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-c9f12905dd851418"
+    ],
+    "summary": "We used quantitative Realtime‐PCR (qPCR) to assess the uptake of Egfp mRNA relative to the amount of total RNA in each cell type (details in Figure S2, TableS1, Supporting Information)."
+  },
+  {
+    "candidate_id": "OC-d4cf88c36060ca4d",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure s4a",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-d4d8276cf5338686"
+    ],
+    "summary": "We confirmed the low EGFP protein translation by KC using flow cytometry (Figure S4A)."
+  },
+  {
+    "candidate_id": "OC-419fbc601e0d1d52",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure s4b",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-76e2d8669a0b3782"
+    ],
+    "summary": "Since particularly hepatocytes exhibit autofluorescence which can lead to false positive signals in the green light region that also tracks EGFP (Figure S4B, Supporting Information), we analyzed protein translation using an immunoblot."
+  },
+  {
+    "candidate_id": "OC-610cb2a2a1f11cff",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 1",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-f726704c534ea6dd"
+    ],
+    "summary": "Table 1Physicochemical characterization of LNP with encapsulated Egfp mRNA."
+  },
+  {
+    "candidate_id": "OC-23847b1f40f8d0f8",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 1",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-3532fce2d99ba238"
+    ],
+    "summary": "The COVID‐19 vaccines have employed modified mRNA with the uridine derivatives N1‐methyl‐Pseudouridine (m1Ψ)[ 17 ] and 5‐methoxyuridine (5moU).[ 18 ] We therefore generated and characterized 5 additional LNP formulations LNP3‐LNP7 (Table 1) which included combinations of the ionizable lipid SM‐102 and m1Ψ or 5moU modified Egfp mRNA (Figure 2F)."
+  },
+  {
+    "candidate_id": "OC-c876c3491aa7a76a",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 5",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-4b45380e28e109cf"
+    ],
+    "summary": "Table 5Sequences of DNA primers for Realtime‐PCR.PrimerSpeciesSequence (5′–3′) Egfp Jellyfish Forward: AAGCAGAAGAACGGCATCAA Reverse: GGGGGTGTTCTGCTGGTAGT Gapdh Mouse Forward: TGTTGAAGTCACAGGAGACAACCT Reverse: AACCTGCCAAGTATGATGACATCA Rnase1 Mouse Forward: CCCCACCTACTGCAACCAAA Reverse: GACATCTGCCAAGGGCTCAT Rnh1 Mouse Forward: GCTTCGTTCTTCCTGAGACTG Reverse: CCAGCCTGACCACTTCGTAT Tlr4 Mouse Forward:…"
+  },
+  {
+    "candidate_id": "OC-3bd6c98e48bb9894",
+    "endpoint_family": "expression",
+    "figure_or_table": null,
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-E-4055debc1dbe30c4"
+    ],
+    "summary": "Overall, the gene expression data enabled a comprehensive understanding of the response of each cell type to LNP: in hepatocytes, the observed upregulation of APP such as Hp, Saa2, and Hpx, coupled with the concurrent downregulation of the negative APP albumin, suggests the initiation of an acute phase response."
+  },
+  {
+    "candidate_id": "OC-88bd456605ba8727",
+    "endpoint_family": "expression",
+    "figure_or_table": null,
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-E-e37191a51c55b744"
+    ],
+    "summary": "In the final stage of gene expression analysis, we focused on identifying specific key genes that fell into 3 distinct categories: a) genes specific to each cell type that did not respond to LNP, b) genes upregulated, and c) genes downregulated by LNP in KC or HC."
+  },
+  {
+    "candidate_id": "OC-0dda214a0d920829",
+    "endpoint_family": "expression",
+    "figure_or_table": "figure 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-9c87a5e07e9e08c0"
+    ],
+    "summary": "E) qPCR‐based analysis of the gene expression of selected ribonucleases on different cell types."
+  },
+  {
+    "candidate_id": "OC-8ec7e01e4ea07dc2",
+    "endpoint_family": "expression",
+    "figure_or_table": "table 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-1cd986fdefd1f6fa"
+    ],
+    "summary": "Table 2siRNA sequences and fluorescent labels.siRNA no.Name of siRNASequence and Label 1 (5′→3′)Sequence and Label 2 (5′→3′)1Negative control siRNA with one 3′ labelConfidential (Qiagen)‐siRNA‐AF647Confidential (Qiagen)‐siRNA‐AF6472Negative control siRNA with one 3′ labelrCrGrUrUrArArUrCrGrCrGrUrArUrA rArUrArCrGrCrGrUA‐T/3AlexF594N/ArUrArCrGrCrGrUrArUrUrArUrArC rGrCrGrArUrUrArArCrGrArC3Negative c…"
+  },
+  {
+    "candidate_id": "OC-cfa0eefe0fc5439b",
+    "endpoint_family": "knockdown",
+    "figure_or_table": "figure 7l",
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-FC-019e1c17bba42d7f"
+    ],
+    "summary": "Statistical quantifications on the cell cycle progression demonstrated that 100 ng mL−1 nocodazole or 200 ng mL−1 colchicine both led to a significantly reduced number of 2n and a significantly increased number of polyploid 4n cells (Figure 7L)."
+  },
+  {
+    "candidate_id": "OC-99f79f569341fa57",
+    "endpoint_family": "knockdown",
+    "figure_or_table": "figure s10c",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-ee80aa13e910bb11"
+    ],
+    "summary": "Quantification of cell numbers across the 4 stages of the cell cycle revealed a slight increase in the 4n and >4n hepatocytes, along with a reduction in 2n cells when hepatocytes were treated with LNP (Figure S10C, Supporting Information)."
+  },
+  {
+    "candidate_id": "OC-f61442a2ea35a186",
+    "endpoint_family": "knockdown",
+    "figure_or_table": "table 3",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-496fa73651485e14",
+      "GP-005-FC-96d97cd4a4d8aef7"
+    ],
+    "summary": "The siRNA used here can be seen in Table 2. Table 3Physicochemical characterization of LNP with unlabelled and labelled siRNA."
+  },
+  {
+    "candidate_id": "OC-1814282fd93847a1",
+    "endpoint_family": "knockdown",
+    "figure_or_table": "table 4",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-e1a394fd5e79c1d5"
+    ],
+    "summary": "Table 4Physicochemical characterization of LNP with coencapsulated mRNA and siRNA."
+  },
+  {
+    "candidate_id": "OC-68cb6932fdd69017",
+    "endpoint_family": "uptake",
+    "figure_or_table": null,
+    "route_hint": "text",
+    "evidence_ids": [
+      "GP-005-E-7a4317dc270edf63"
+    ],
+    "summary": "Stimulated by the surprisingly low level of EGFP‐derived signals in KC, we studied the uptake of LNP1 in vitro by incubating primary murine hepatocytes, the murine hepatoma cell line Hepa 1–6, human cervical cancer cells (HeLa), murine L929 fibroblasts, human endothelial cells (EA.hy926), murine J774.1 macrophages, and murine KC for 24 h with LNP in medium with 5% serum."
+  },
+  {
+    "candidate_id": "OC-076bcabcae72f9dc",
+    "endpoint_family": "uptake",
+    "figure_or_table": "figure 2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-e41e431937966fa5",
+      "GP-005-FC-efd9ee910b0a3c87"
+    ],
+    "summary": "A) Various different cell types were left untreated or were incubated with LNP1 and the uptake was assessed using quantitative Realtime‐PCR (expressed as parts per million, ppm of total RNA). D) Uptake of AF488‐labelled Egfp mRNA by macrophages assessed by flow cytometry after different time‐points."
+  },
+  {
+    "candidate_id": "OC-5600df0e097f196e",
+    "endpoint_family": "uptake",
+    "figure_or_table": "figure 2a",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-43684e77da05b1d0"
+    ],
+    "summary": "We observed that KC, followed by hepatocytes and the Hepa 1–6 cells, internalized the largest amounts of LNP1 (Figure 2A)."
+  },
+  {
+    "candidate_id": "OC-237e18739cedb8fd",
+    "endpoint_family": "uptake",
+    "figure_or_table": "figure 3",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-FC-02b85991ba7752ce"
+    ],
+    "summary": "B) Uptake of LNP containing labeled siRNA (LNP8:AF647; LNP9: AF594; LNP10: 2×594; LNP11: unlabelled; see Tables 2 and 3 for details) by human primary macrophages in vitro determined by flow cytometry (details on LNP are shown in Tables 2 and 3)."
+  },
+  {
+    "candidate_id": "OC-79d1365295bbc192",
+    "endpoint_family": "uptake",
+    "figure_or_table": "figure s2",
+    "route_hint": "vision",
+    "evidence_ids": [
+      "GP-005-E-c9f12905dd851418"
+    ],
+    "summary": "We used quantitative Realtime‐PCR (qPCR) to assess the uptake of Egfp mRNA relative to the amount of total RNA in each cell type (details in Figure S2, TableS1, Supporting Information)."
+  }
+]

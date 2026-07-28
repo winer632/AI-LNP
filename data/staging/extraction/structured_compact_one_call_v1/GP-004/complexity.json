@@ -1,0 +1,15 @@
+{
+  "assessment_version": "outcome-complexity-1.1.0",
+  "paper_id": "GP-004",
+  "complexity_score": 5,
+  "route": "complex",
+  "reasons": [
+    "visual_outcome_evidence",
+    "multiple_visual_outcome_locations",
+    "multiple_intervention_endpoint_families",
+    "full_corpus_view_thresholds"
+  ],
+  "candidate_groups": 2,
+  "endpoint_families": 1,
+  "visual_candidate_groups": 2
+}

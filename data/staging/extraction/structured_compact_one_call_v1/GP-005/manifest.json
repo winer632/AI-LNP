@@ -1,0 +1,40 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-005",
+  "evidence_view": "structured",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T20:11:16.720691+00:00",
+  "completed_at": "2026-07-28T20:12:55.010342+00:00",
+  "elapsed_seconds": 98.288,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-005-E-23cde312d42649c2",
+      "GP-005-E-ac7e05a4c142ccbb",
+      "GP-005-E-f3b6eafdb0a35892"
+    ],
+    "explanation": "Original in vivo and in vitro experiments report EGFP-mRNA LNP delivery and measured translation outcomes in hepatocytes and Kupffer cells; the complete lipid composition is not reported in the packet."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 1,
+    "experiments": 3,
+    "outcomes": 4,
+    "unresolved_items": 3
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 27
+}

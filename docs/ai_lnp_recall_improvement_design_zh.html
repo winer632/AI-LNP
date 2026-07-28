@@ -441,6 +441,31 @@ format:   html
     需要跨配置集成才能到 <b>11/15</b>。历史最高 12/15 是另一套架构且带人工裁决，不同口径。
   </div>
 
+  <div class="warn">
+    <b>v11 更新 · 默认单配置口径已从 10/15 变为 11/15（第 23 轮）</b><br>
+    上一轮查出的根因是接线漏了一段：<code>src/rag/structured_compact_packet.py</code>
+    早就写好也量过，但 <b>没有任何代码调用它</b> ——
+    <code>run_codex_one_call.PACKET_ROOT_BY_VIEW</code> 只认得 <code>compact</code> 和
+    <code>full</code>，默认跑法根本到不了这个包。同时 <code>uniparse_ingestion</code>
+    虽然默认已开，<b>提交在库里的语料却还是 pymupdf 时代的产物</b>，没人重跑过 ingestion。
+    两处一起补上之后：
+    <ul>
+      <li>语料按默认开关重建（5 篇带附件的文章，GP-006 由 54 → 259 blocks，<code>1.01</code> 出现 4 次）</li>
+      <li>新开关 <code>structured_evidence_view</code>（默认开）把结构化包接进默认路线</li>
+      <li>九篇全部再跑一遍结构化视图，按流水线既有的<b>增量合并</b>方式并入结果栈</li>
+    </ul>
+    <b>GO-006 由此被找回</b>：模型从 Table S2 行里读出 <code>1.01 ± 0.38%</code>，
+    exact_numeric 命中，三道门全过，且该记录的<b>自证据校验为 True</b>。
+    <br><br>
+    <b>代价必须一起报：</b>precision <b>0.3125 → 0.2586</b>，虚增记录 22 → 43，
+    记录总数 32 → 58。这是一对一匹配的结构性结果 ——
+    多加一个抽取阶段只能抬 recall、只能压 precision。
+    <br><br>
+    <b>口径说明：</b>这仍是<b>单一配置</b>（开关全在出厂默认位），
+    只是流水线本来就是「基线抽取 → 若干合并阶段」的栈，这里加的是同一配置下的又一个阶段，
+    与 <code>codex_union_v1</code> 那种跨配置并集不是一回事。
+  </div>
+
   <h3 id="s2b-flags">1·五 开关上线状态（v9 · 第 19–20 轮）</h3>
   <p>每个默认打开的开关都必须在注册表里带 <code>rationale</code> 字段写明实测依据，
      这条由 <code>test_a_flag_may_only_ship_enabled_with_a_recorded_rationale</code> 强制。</p>
@@ -451,6 +476,11 @@ format:   html
       <tr><td><code>uniparse_ingestion</code></td><td class="num yes">开</td>
           <td>GP-006 语料 54 → 260 blocks；<code>1.01</code> 出现 4 次（原为 0 次），该值即 GO-006。
               服务不可达时降级到 pymupdf 并留告警，<b>已实测</b>，故默认开是安全的</td></tr>
+      <tr><td><code>structured_evidence_view</code></td><td class="num yes">开</td>
+          <td>同一 16k 预算，换一种花法：表格、表行、题注一条都不丢，剩下的额度再按检索排序填。
+              GP-006 紧凑包里 <code>1.01</code> 出现 0 次，结构化包出现 4 次（206 条证据 / 98 条结构化）。
+              默认单跑 <b>10/15 → 11/15</b>，代价是 precision <b>0.3125 → 0.2586</b>。
+              目前只接在 codex-exec 路线上，付费路线未接</td></tr>
       <tr><td><code>candidate_slot_enforcement</code></td><td class="num yes">开</td>
           <td>恢复 GO-004；<code>unsupported_extracted_disposition</code> 拦下 83 条无据声明中的 76 条。
               槽位数大时退化（39 个全部回填，168 个不行），大文章需按 <code>max_slots_per_call</code> 分块</td></tr>

@@ -70,9 +70,11 @@ HARNESS = "codex-exec"
 CANDIDATE_SLOT_FLAG = "candidate_slot_enforcement"
 FULL_EVIDENCE_VIEW_FLAG = "full_evidence_view"
 COMPACT_ROUTE_FLAG = "compact_route"
+STRUCTURED_EVIDENCE_VIEW_FLAG = "structured_evidence_view"
 
 PACKET_ROOT_BY_VIEW = {
     "compact": ROOT / "data" / "staging" / "rag" / "compact_api_packets_v1",
+    "structured": ROOT / "data" / "staging" / "rag" / "structured_compact_packets_v1",
     "full": ROOT / "data" / "staging" / "rag" / "full_api_packets_v1",
 }
 DEFAULT_OUTPUT_ROOT = ROOT / "data" / "staging" / "extraction" / "codex_one_call_v1"
@@ -81,18 +83,28 @@ DEFAULT_OUTPUT_ROOT = ROOT / "data" / "staging" / "extraction" / "codex_one_call
 def default_evidence_view() -> str:
     """Resolve which evidence view a run uses from the flags.
 
-    Measured on the gold set, neither view dominates: the full view recovers
-    GO-015 and GO-007, the compact view plus slots recovers GO-004 and GO-006,
-    and 37 of the 51 records in the 11/15 union come from compact-spec runs.
-    So the compact route stays the default and the full view is the opt-in,
-    which is the opposite of what the earlier plan assumed.
+    Measured on the gold set, neither of the original two views dominates: the
+    full view recovers GO-015 and GO-007, the compact view plus slots recovers
+    GO-004, and 37 of the 51 records in the 11/15 union come from compact-spec
+    runs. So the full view stays the opt-in, which is the opposite of what the
+    earlier plan assumed.
 
-    With compact_route off and full_evidence_view off there is no route left,
-    so the compact packet is used and the caller is not silently given a run
-    that skipped evidence selection entirely.
+    The third view is the compact one's successor rather than a rival. It is
+    the same token budget, selected differently: ``structured_compact_packet``
+    keeps every table, table row and caption the local parse produced and only
+    then fills the remainder by retrieval rank. That matters because the plain
+    ranker drops exactly the rows a value lives in -- the GP-006 compact packet
+    contains ``1.01`` zero times while the structured one at the same budget
+    contains it four times -- so it is the default and ``compact`` is what a
+    run falls back to when it is switched off.
+
+    With every route off the compact packet is used, so the caller is not
+    silently given a run that skipped evidence selection entirely.
     """
     if is_enabled(FULL_EVIDENCE_VIEW_FLAG) and not is_enabled(COMPACT_ROUTE_FLAG):
         return "full"
+    if is_enabled(STRUCTURED_EVIDENCE_VIEW_FLAG):
+        return "structured"
     return "compact"
 
 
@@ -419,7 +431,13 @@ def main() -> None:
     )
     parser.add_argument("--paper-id", action="append", dest="paper_ids")
     parser.add_argument(
-        "--evidence-view", choices=sorted(PACKET_ROOT_BY_VIEW), default="compact"
+        "--evidence-view",
+        choices=sorted(PACKET_ROOT_BY_VIEW),
+        default=None,
+        help=(
+            "Pin the evidence view. Omit it to use whatever the feature flags "
+            "resolve to, which is what a default run measures."
+        ),
     )
     parser.add_argument("--packet-root", type=Path, default=None)
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
@@ -477,7 +495,11 @@ def main() -> None:
         json.dumps(
             {
                 "harness": HARNESS,
-                "evidence_view": args.evidence_view,
+                # Resolved, never the raw argument: `--evidence-view` may be
+                # omitted so the flags decide, and a manifest that recorded
+                # null would not say which view produced these results.
+                "evidence_view": args.evidence_view or default_evidence_view(),
+                "evidence_view_pinned": args.evidence_view is not None,
                 "model": args.model,
                 "reasoning_effort": args.reasoning_effort,
                 "papers": manifests,

@@ -1,0 +1,4730 @@
+{
+  "packet_version": "compact-api-packet-1.0.0",
+  "paper_id": "GP-004",
+  "blocked_fields": [],
+  "sources": [
+    {
+      "source_id": "FC-S-0786bdbf3897b1c2",
+      "chunk_id": "GP-004-B-a49446bf7af6b6c40937",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-0881ce8ea906bb90",
+      "chunk_id": "GP-004-B-6b22217d8956c2e0f456",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 6,
+      "figure_number": "Figure 6"
+    },
+    {
+      "source_id": "FC-S-08c42d429939328d",
+      "chunk_id": "GP-004-B-5b07d6020066fc558cc2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 7
+    },
+    {
+      "source_id": "FC-S-0bc3c6f3b99d12fc",
+      "chunk_id": "GP-004-B-78a7062848b37d01c7e6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-0ffcca03122d67ea",
+      "chunk_id": "GP-004-B-12afe17f390b43920684",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 2,
+      "figure_number": "Figure 2"
+    },
+    {
+      "source_id": "FC-S-134017bb5686dd27",
+      "chunk_id": "GP-004-B-fc550d7b1330dacba2d5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methodology",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-147fec34a6cfa2f7",
+      "chunk_id": "GP-004-B-ab3fe75079eb973234bf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Acquisition",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-16119154634c73a6",
+      "chunk_id": "GP-004-B-0d6f04db5debb1e1be0b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Antibodies",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-19dffd0d6ce5cbbd",
+      "chunk_id": "GP-004-B-c05c7bf68051a89900ff",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Experimental design",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-19f1510ab6d69522",
+      "chunk_id": "GP-004-B-c16be37524ee76efa729",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-1a8882107319a8b5",
+      "chunk_id": "GP-004-B-2b045f06f6a062fa685b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-208f62117919ad40",
+      "chunk_id": "GP-004-B-1a971cb1334fd7ef75c1",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Animals and other organisms.",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-20f46ef72370605a",
+      "chunk_id": "GP-004-B-5155b9103fe3ae3c98ed",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 7
+    },
+    {
+      "source_id": "FC-S-2669fba8033c033e",
+      "chunk_id": "GP-004-B-ae6873042284699a1d7a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Clinical data",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-2699b762e284bb62",
+      "chunk_id": "GP-004-B-d3583ced49d8670cd8a6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Animals and other organisms.",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-27cfa174c1ddc448",
+      "chunk_id": "GP-004-B-8b67b1718f24cf8b923b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-2945329c9dad7209",
+      "chunk_id": "GP-004-B-5a2ef0467f69cb1d6000",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Eukaryotic cell lines",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-2b6af2ee365d8e21",
+      "chunk_id": "GP-004-B-759379fbf99f7d0bf816",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Nucleoside-modified HGF mRNA-LNP induces hepatocyte proliferation in homeostasis",
+      "figure_number": "Fig. 3"
+    },
+    {
+      "source_id": "FC-S-2c9be0aba61a345e",
+      "chunk_id": "GP-004-B-a4e620449f9c82b0cc34",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 5,
+      "figure_number": "Figure 5"
+    },
+    {
+      "source_id": "FC-S-2ccb4a7089bf1ed6",
+      "chunk_id": "GP-004-B-96d37369ffe21015c7dd",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-2d694d0ef39c938c",
+      "chunk_id": "GP-004-B-01bda4681e7aaf24f818",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Experimental design",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-2f60aa504f4b7264",
+      "chunk_id": "GP-004-B-5054147e5759f9214d76",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-31258fbd50477520",
+      "chunk_id": "GP-004-B-3cc527a55105226d34a3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 8,
+      "figure_number": "Figure 8"
+    },
+    {
+      "source_id": "FC-S-3406c31194164e5c",
+      "chunk_id": "GP-004-B-b581e2221a92ae04d2ec",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Life sciences study design",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-38c6dbc67e12379c",
+      "chunk_id": "GP-004-B-a4fa0bd30beaa2289279",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Experimental design",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-38ff96256b03fee1",
+      "chunk_id": "GP-004-B-1115f55b38d8876ea767",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "Methodology",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-390deddbea4c41a2",
+      "chunk_id": "GP-004-B-d676f9cdcbad7e52d883",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-3ae6b8ee679512d6",
+      "chunk_id": "GP-004-B-f679d264aa54659448f8",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Eukaryotic cell lines",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-3be5637637582f1f",
+      "chunk_id": "GP-004-B-26a56b80ad0e3a450523",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-3bef0333c971ce07",
+      "chunk_id": "GP-004-B-b47e37494f973f430693",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 1
+    },
+    {
+      "source_id": "FC-S-4119c2ef4c6b2497",
+      "chunk_id": "GP-004-B-798ba3f449352f657c1b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Palaeontology and Archaeology",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-44987ccc05ab49b9",
+      "chunk_id": "GP-004-B-97df7e1b8eede4f26236",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-45c959ef50b0c1c5",
+      "chunk_id": "GP-004-B-49285f628feb800a2ec5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 11
+    },
+    {
+      "source_id": "FC-S-46eb210518b33e5c",
+      "chunk_id": "GP-004-B-3edf0439935cdb0a26f5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Acquisition",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-48ac0b7a14918643",
+      "chunk_id": "GP-004-B-040ccc40a414e7547a44",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 2"
+    },
+    {
+      "source_id": "FC-S-4972fefc2bc81f66",
+      "chunk_id": "GP-004-B-45826b05818206d9dbe5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Retro-orbital injection directs nucleoside-modified mRNA-LNP to liver",
+      "figure_number": "Fig. 1"
+    },
+    {
+      "source_id": "FC-S-553861bc92c1396a",
+      "chunk_id": "GP-004-B-47498bd799b733925def",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Acquisition",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-58eb81b7dd554417",
+      "chunk_id": "GP-004-B-0abf84ecdcbf54b7f3ac",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Animals and other organisms.",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-590ea12aaf7e625a",
+      "chunk_id": "GP-004-B-1887cf9ecad9730351c0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-5a12eb6c55ab0cd5",
+      "chunk_id": "GP-004-B-548e1896a92059fffd3b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Human research participants",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-6086dceb09aa8e81",
+      "chunk_id": "GP-004-B-8a51daf11aaca8627c90",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Eukaryotic cell lines",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-661546f3220cf90d",
+      "chunk_id": "GP-004-B-e31536e90381886b8f0f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methodology",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-66fb729ddd3f9843",
+      "chunk_id": "GP-004-B-b40863c4e6b390e27840",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-6966bf4f55edb5ae",
+      "chunk_id": "GP-004-B-ca16bb72fccfba153da2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Human research participants",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-6a15196a7b5120e5",
+      "chunk_id": "GP-004-B-7d29f11e08244c8397ce",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-6c6990e385807311",
+      "chunk_id": "GP-004-B-468b2a48ab848e687f5d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 3,
+      "figure_number": "Figure 3"
+    },
+    {
+      "source_id": "FC-S-6dad03f588c74f30",
+      "chunk_id": "GP-004-B-89fd494fe5479de996e6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-6f92a364c89d68fc",
+      "chunk_id": "GP-004-B-247afc6f2163840471a3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-6f9981331a7d943d",
+      "chunk_id": "GP-004-B-7350f11f6677d35602e7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Acquisition",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-6fc20cbab986264c",
+      "chunk_id": "GP-004-B-2ffbf1a2131c4f1e7ea5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Liver-targeted nucleoside-modified mRNA-LNP predominantly transfect hepatocytes",
+      "figure_number": "Fig. 2"
+    },
+    {
+      "source_id": "FC-S-7109a88b01fd8787",
+      "chunk_id": "GP-004-B-cf18cd1b8f0775d133ed",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methodology",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-78286c55facf77a5",
+      "chunk_id": "GP-004-B-282f9cb95d0c39f2315a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methods",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-79e6b0eb4286fd5e",
+      "chunk_id": "GP-004-B-bc49e231778bca4f94e5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-7a0cfc085b33aca7",
+      "chunk_id": "GP-004-B-2b082c1f2312c061266f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Methodology",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-7b2f8bedb08387a5",
+      "chunk_id": "GP-004-B-472b4a2306d995ee8008",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Life sciences study design",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-82c2a809d1838d37",
+      "chunk_id": "GP-004-B-45dcaa02399e81211017",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-83bad59a89cc2683",
+      "chunk_id": "GP-004-B-4f69535e3d4d35b749b9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Preprocessing",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-841998b3e4b03338",
+      "chunk_id": "GP-004-B-82369d5d7e5ec0f086aa",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Palaeontology and Archaeology",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-8425790f4b3b1b9e",
+      "chunk_id": "GP-004-B-046c18439033221d65b9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-871e6ae29cba52d4",
+      "chunk_id": "GP-004-B-4ef5bd8a10c22946e720",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-89a0b3e235d982cb",
+      "chunk_id": "GP-004-B-46bad11e3833877156c9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-8a828ecce515fbaa",
+      "chunk_id": "GP-004-B-1dfdda9a1a25dc1cb63b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Palaeontology and Archaeology",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-8fe85f12930e3763",
+      "chunk_id": "GP-004-B-1c83115c2e5b9d585b46",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Methods",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-90173e843b9faca5",
+      "chunk_id": "GP-004-B-e864cf29656096213f1e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Statistical modeling & inference",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-941c704a5ed9701b",
+      "chunk_id": "GP-004-B-85d12e2d19309906ac92",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Nucleoside-modified mRNA-LNP encoding HGF and EGF accelerate restoration of liver function in the acute acetaminophen-induced liver injury model",
+      "figure_number": "Fig. 6"
+    },
+    {
+      "source_id": "FC-S-9a13bbb81e70104a",
+      "chunk_id": "GP-004-B-450edc805bf031890433",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 4,
+      "figure_number": "Figure 4"
+    },
+    {
+      "source_id": "FC-S-9ab75b58c5dd5851",
+      "chunk_id": "GP-004-B-bb0adcdcfffbf2362641",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Nucleoside-modified mRNA-LNP encoding HGF and EGF accelerate restoration of liver function in a chronic liver injury model",
+      "figure_number": "Fig. 4"
+    },
+    {
+      "source_id": "FC-S-a042c20a8841a4ac",
+      "chunk_id": "GP-004-B-37125e7b6f586bd31073",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-ac94e725f54ca773",
+      "chunk_id": "GP-004-B-39e06ea806496a00f957",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Life sciences study design",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-ad692e31e06d7a78",
+      "chunk_id": "GP-004-B-bd764259628391480b05",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Clinical data",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-adcaec56feb9868d",
+      "chunk_id": "GP-004-B-942441a3ce7ac575dd85",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Clinical data",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-aeb2dea2c7fa9d6b",
+      "chunk_id": "GP-004-B-b669a38ce38b4365eb01",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-af76dd28e21a245a",
+      "chunk_id": "GP-004-B-3eebae7fa0bdd8c65b29",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Nucleoside-modified mRNA-LNP encoding HGF and EGF accelerate restoration of liver function in a chronic liver injury model",
+      "figure_number": "Fig. 5"
+    },
+    {
+      "source_id": "FC-S-b278733bc39221ae",
+      "chunk_id": "GP-004-B-23a84712c6e27d8bebab",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methodology",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-b442de1c36e12ef4",
+      "chunk_id": "GP-004-B-9ead2a5717a72e5ad5ae",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-b5f29363351cd9a1",
+      "chunk_id": "GP-004-B-c59baff6fe022a29ba05",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Palaeontology and Archaeology",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-b8d271cf72d1748d",
+      "chunk_id": "GP-004-B-33e68e80d0e644101368",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-b9451880e511f7ec",
+      "chunk_id": "GP-004-B-2ee13a8af0e1f9e42feb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 2"
+    },
+    {
+      "source_id": "FC-S-bd32bf9d4be0ea4a",
+      "chunk_id": "GP-004-B-923208c31c1c5232fd07",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Life sciences study design",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-c04ea7c2f3552d27",
+      "chunk_id": "GP-004-B-5cdb593855087f1404b6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Preprocessing",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-c1ae4abf77f860b7",
+      "chunk_id": "GP-004-B-dc631a300c61f48156ff",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methods",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-c2ed0d71b65867a5",
+      "chunk_id": "GP-004-B-e44638d3b91bb1123338",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Human research participants",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-c4272c9f7ef9de2a",
+      "chunk_id": "GP-004-B-0070a6c464930d4402ee",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 9,
+      "figure_number": "Figure 9"
+    },
+    {
+      "source_id": "FC-S-c7e5237290583746",
+      "chunk_id": "GP-004-B-7bf2ce845d534ec95b59",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Antibodies",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-cac01bae0d811bd8",
+      "chunk_id": "GP-004-B-e79e6916f5e0183fbe89",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-cf12ee2f612e4a13",
+      "chunk_id": "GP-004-B-602da4a8c1d3bd2974ad",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-cfa166aee167e487",
+      "chunk_id": "GP-004-B-b10cf9b65ae0e67364db",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 11
+    },
+    {
+      "source_id": "FC-S-d18a164e16095d8e",
+      "chunk_id": "GP-004-B-2ad90eaf44c51531be7f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Preprocessing",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-d97c9af815a367d8",
+      "chunk_id": "GP-004-B-5c606a45ee9327fe4efe",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Eukaryotic cell lines",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-da705209eff1602e",
+      "chunk_id": "GP-004-B-c7e16fd0a0baabccac86",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Life sciences study design",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-dbd7be07a0c0d046",
+      "chunk_id": "GP-004-B-c64724279d97018de1df",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Acquisition",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-e715d79532ad7b3a",
+      "chunk_id": "GP-004-B-e754e6a3804d8a192b88",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-e7276c7aa9051e05",
+      "chunk_id": "GP-004-B-6ab55cff097149d35572",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 2"
+    },
+    {
+      "source_id": "FC-S-e9e676be74ded085",
+      "chunk_id": "GP-004-B-71c32e8509f6ce90b67e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Preprocessing",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-ec11f4703eb28d70",
+      "chunk_id": "GP-004-B-32259ee0623145f3b2b4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-ec862fbec8ce48e6",
+      "chunk_id": "GP-004-B-5a016de10b96927e92cc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Materials & experimental systems",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-ed0117a146509736",
+      "chunk_id": "GP-004-B-00b52561e3ce4407ba99",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Methods",
+      "page_number": 2
+    },
+    {
+      "source_id": "FC-S-ee5ed1a07f22b3e6",
+      "chunk_id": "GP-004-B-90963c84a54d7a24e1df",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-f4ffbabed694ada9",
+      "chunk_id": "GP-004-B-a0c95059cf98a6d6ae22",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Preprocessing",
+      "page_number": 5
+    },
+    {
+      "source_id": "FC-S-f52706e536f268b9",
+      "chunk_id": "GP-004-B-f746b95862172d401186",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Animals and other organisms.",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-f973bec9011bedc0",
+      "chunk_id": "GP-004-B-0d35c696491602e58678",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "A. Supplementary Figures:",
+      "page_number": 7,
+      "figure_number": "Figure 7"
+    },
+    {
+      "source_id": "FC-S-fa2795efd7285043",
+      "chunk_id": "GP-004-B-f099c0df0c4e3e00525a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "B. Supplementary Tables",
+      "page_number": 10,
+      "table_number": "Table 2"
+    },
+    {
+      "source_id": "FC-S-ffffbc97ec1812a9",
+      "chunk_id": "GP-004-B-9a525fb7248155524ec9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Clinical data",
+      "page_number": 3
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-004-FC-000291a207fe0f1d",
+      "text": "7 Efficient expression of HGF and EGF proteins via injection of the corresponding mRNA-LNP into uninjured mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-00d7b9d591a0510f",
+      "text": "Blinding | We used mostly 3-4 mice per group tested in each experiment based on previous publications using the same injury models and assays to characterized the liver injury.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3406c31194164e5c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-00fbabc107244e84",
+      "text": "All group sizes are indicated in each figure legends.: No data were excluded",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7b2f8bedb08387a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-00fc46eb45c0c0c5",
+      "text": "Analyses of total serum cholesterol levels (c) and ALT levels (d) from 3 to 4 mice per group in duplicate or triplicate (n = 8–12) per time point treated with controls Poly(C) RNA-LNP or Luc mRNA-LNP, or single HGF(H), single EGF(E) or the combination H/E mRNA-LNP indicate sharp reversion of steatosis and restoration of basic levels of ALT after H/E mRNA-LNP injections.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-04ddaaf8884a24e9",
+      "text": "Data are presented as mean values ± SEM.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0526569bcf1492ec",
+      "text": "P values were calculated by two-sided student’s t test, ***<0.0001, **<0.001, *<0.05, n.s.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-05b1d6141800ea84",
+      "text": "Table 1 | HNF4α | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a042c20a8841a4ac"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-061ab5b5d8794fc2",
+      "text": "Scale bars are represented for each panel.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-065b4e4ca02bbc96",
+      "text": "□ | Involved in the study: Clinical data",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-82c2a809d1838d37"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-07ad4307450feadf",
+      "text": "White arrowheads represent co-stained \\(GFP^{+}\\) CD45\\(^{+}\\) cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-07d0289a0a551987",
+      "text": "CD31 eGFP DAPI",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-19f1510ab6d69522"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0917a29c9d227d08",
+      "text": "Following 10-minute incubations in wash media, both fractions were washed then resuspended in PBS.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-094f922828a722de",
+      "text": "Source data are provided as a Source Data file.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-09b58cd4e1334d9f",
+      "text": "Following antibody incubation, cells were washed and resuspended in FACS buffer.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0a0440d56f03957b",
+      "text": "Cell line source(s) | State the source of each cell line used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6086dceb09aa8e81"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0a3ed15b29910895",
+      "text": "Table 1 | Antibody | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cf12ee2f612e4a13"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0a8af98c3224a960",
+      "text": "All group sizes are indicated in each figure legends.: All tissue staining were analyzed by 4 blinded authors (the first 3 authors as well as the last author).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3406c31194164e5c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0abee904eee2bf2a",
+      "text": "Liver sections were immunostained for CD45 at T0 and T2, 0 and 2 days after the diet was discontinued.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0add5ebf92c6ddf0",
+      "text": "Field-collected samples | All mice were inbred female Black6C57.Blc from the Jackson Laboratory.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2699b762e284bb62"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0bd75940af043825",
+      "text": "Mice were fed normal diet (control No injury) or CDE diet for 3 weeks as explained in Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0e74210dbf002b9d",
+      "text": "Immunostaining for GFP and co-immunostaining for GFP/CD31 and GFP/CD45 are shown from intestine sections from mice injected with a single dose of Poly(C) RNA-LNP or eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0ffcca03122d67ea"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0e99199ad232ba9e",
+      "text": "Data are presented as mean values ± SEM.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0f4810b55cc1682b",
+      "text": "Immunostaining for GFP and co-immunostaining for GFP/CD31 and GFP/CD45 are shown from spleen sections from mice injected with a single dose of Poly(C) RNA-LNP or eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6c6990e385807311"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-0f89621aed846201",
+      "text": "Fractions were then separated into 100 μl wells and treated with 1 μg/100 μl Fc Block (BD Pharmingen #553141) for 10 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1054908a19dca1eb",
+      "text": "Mice were anaesthetized with ketamine/xylazine and then perfused by cannulation with a 24-gauge catheter through the inferior vena cava with 30mL 1X Liver Perfusion Medium (Gibco by Life Technologies), while the portal vein was cut to allow the perfusate to flow out.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-113e212cafad9069",
+      "text": "×200 magnification pictures and close-ups are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1205273eed2cd057",
+      "text": "eGFP Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6c6990e385807311"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-12b51c90e103544d",
+      "text": "collection, storage, sample pretreatment and measurement), where they were obtained (i.e.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1351839de1063670",
+      "text": "a Representative images from 3 mice injected with eGFP-mRNA-LNP and 2 mice injected with Poly(C) RNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-13b9b6bb4221b777",
+      "text": "collection, storage, sample pretreatment and measurement), where they were obtained (i.e.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-841998b3e4b03338"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-16a034d46ba97403",
+      "text": "The scale bar represents 50\\(\\mu\\)m for all 200X magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-16b263880a6ee0cb",
+      "text": "Antibodies used | All antibodies used in this study have been listed in the table in the supplementary data file.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-16119154634c73a6"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1709da5f341b2427",
+      "text": "= not significant.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-17614a8807fb5b8a",
+      "text": "Population characteristics | N/A ; Recruitment | N/A ; Ethics oversight | N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6966bf4f55edb5ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-176e5c3241fff5d6",
+      "text": "Table 1 | CD11b-PE efluor 610 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cac01bae0d811bd8"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-17ea1941b359be56",
+      "text": "; Instrument | Stratifiedigm S1000EXi flow cytometer ; Software | FlowJo v10 software ; Cell population abundance | we collected at least 20,000 cells ; Gating strategy | Cells were first gated using the SSC and FSC parameters to help eliminate debris.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1821a6963d365aba",
+      "text": "Validation | All antibodies used in this study have been listed in the table in the supplementary data file.: We validated specificity of each antibody for immuno-staining by using the corresponding isotype negative controls.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c7e5237290583746"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-19d21c2842d39302",
+      "text": "; Mycoplasma contamination | Confirm that all cell lines tested negative for mycoplasma contamination OR describe the results of the testing for mycoplasma contamination OR declare that the cell lines were not tested for mycoplasma contamination.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6086dceb09aa8e81"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-19f40ec95d86c28d",
+      "text": "Commonly misidentified lines (See ICLAC register) | State the source of each cell line used.: Name any commonly misidentified cell lines used in the study and provide a rationale for their use.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d97c9af815a367d8"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1a682bd9c9721d32",
+      "text": "Ethics oversight | Provide provenance information for specimens and describe permits that were obtained for the work (including the name of the issuing authority, the date of issue, and any identifying information).: Identify the organization(s) that approved or provided guidance on the study protocol, OR state that no ethical approval or guidance was required and explain why not.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8a828ecce515fbaa"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1ab64441216cf5eb",
+      "text": "The scale bar is included for each panel.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1ba5a72ac674fa5a",
+      "text": "lab name), the calibration program and the protocol for quality assurance OR state that no new dates are provided.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1c5f9f63b258577d",
+      "text": "Wild animals | All mice were inbred female Black6C57.Blc from the Jackson Laboratory.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-208f62117919ad40"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1cec6aacffdcc0e1",
+      "text": "CD45 eGFP",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6dad03f588c74f30"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1d1d920424bef0a2",
+      "text": "Following 10-minute incubations in wash media, both fractions were washed then resuspended in PBS.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1deaad312f976d3e",
+      "text": "Following 10-minute incubations in wash media, both fractions were washed then resuspended in PBS.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1efed32ac3bf3d95",
+      "text": "Data are presented as mean values +/- SD for n=3 mice per group.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c9be0aba61a345e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1f085d10f953da20",
+      "text": "Costaining for EdU/HNF4α (c) or EdU/CD45 (d) 48 h following injection of HGF mRNA-LNP or Poly(C) RNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-1fd75ba6593899ab",
+      "text": "The supernatant was discarded, pellet was resuspended in wash media, and solution was added to the other collection of NPCs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-20e69d3e6166d634",
+      "text": "Instrument | Liver was perfused according to the previously published method with minor modifications54.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-21ebbc555c6058ad",
+      "text": "Mice were injected with either controls Poly(C) RNA or Luc mRNA-LNP, or HGF(H) and EGF(E) single or combined (H/E) mRNA-LNP at the end of the CDE diet (T0), followed by another injection 4 days into recovery (T4).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-21fe1844bcf1c756",
+      "text": "eGFP",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2ccb4a7089bf1ed6"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-22e032321011f16e",
+      "text": "Dead cells were eliminated using the Zombie NIR viability die.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-23bce318f1111b94",
+      "text": "Identification of transfected liver cell types 5 h after IV eGFP mRNA-LNP injection.a Co-immunostaining for eGFP (green) and liver cell type specific markers (red).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-23c49e4f1d8457d7",
+      "text": "All solutions were pre-warmed to 40°C and delivered at a rate of 4 ml/min.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-24002e7fb4818219",
+      "text": "Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2411a1bbfcd39e35",
+      "text": "Mice were injected with either Poly(C) RNA-LNP or HGF/EGF(H/E) mRNA-LNP after 3 weeks of CDE diet (T0), followed by another round of injections 4 days later (T4).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2483d43333a48ee3",
+      "text": "×40 magnification pictures shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-24c4b8edf086be98",
+      "text": "Mice were provided by the Jackson laboratory.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-24ce663e732c3862",
+      "text": "Cells were filtered through 100 μm cell strainer and filtrate was centrifuged at 50 x g for 2 min at 4°C to obtain hepatocytes in the pellet while the supernatant was collected as the fraction of non-parenchymal cells (NPCs).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2528271742d26187",
+      "text": "= not significant.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-253163388780ced7",
+      "text": "100X magnification pictures of representative images from 3 mice injected with eGFP-mRNA-LNP are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-25458f878c22b668",
+      "text": "All group sizes are indicated in each figure legends.: All in vivo experiments were performed with 3-4 mice per group and per time point or otherwise indicated in the figure legends.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac94e725f54ca773"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-255242283e5a020d",
+      "text": "Cells were filtered through 100 μm cell strainer and filtrate was centrifuged at 50 x g for 2 min at 4°C to obtain hepatocytes in the pellet while the supernatant was collected as the fraction of non-parenchymal cells (NPCs).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-25dec61a54e108ab",
+      "text": "No: 602-670 (Abbomax); Species: Rabbit; Application: IHC-Fr; Dilution: 1:100",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6f92a364c89d68fc"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-25f6dd83cd000cb9",
+      "text": "Data exclusions | We used mostly 3-4 mice per group tested in each experiment based on previous publications using the same injury models and assays to characterized the liver injury.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7b2f8bedb08387a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-28076e0ee8105ec7",
+      "text": "Wells were then incubated with specific antibodies for 20 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-287e2cc29c170056",
+      "text": "The sample size was shown to be sufficient to identify statistical differences between groups for the specific assays used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7b2f8bedb08387a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2913a56217cf3f11",
+      "text": "Fractions were then separated into 100 μl wells and treated with 1 μg/100 μl Fc Block (BD Pharmingen #553141) for 10 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2931c0e079cf427a",
+      "text": "Cell population abundance | Liver was perfused according to the previously published method with minor modifications54.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2a3b37f60325f3ca",
+      "text": "No: 61-0451-80 (Invitrogen); Species: Rat; Application: FC; Dilution: 1:40",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b442de1c36e12ef4"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2cf19523a8303b67",
+      "text": "Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0881ce8ea906bb90"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2cfe0147d08b56bc",
+      "text": "P values were calculated by two-sided student’s t test, ***<0.0001, **<0.001, *<0.05, n.s.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2e32f4ea8effdb72",
+      "text": "4A and then injected with a single dose of HGF/EGF mRNA-LNP or Poly(C) RNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2e8f5a6d0e0a4294",
+      "text": "HGF/EGF mRNA-LNP accelerate restoration of liver function during recovery from CDE-induced chronic liver injury.a Injury scheme timeline: mice were fed CDD choline deficient diet for 1 week followed by three weeks of CDD diet supplemented with 0.1% ethionine (CDE).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2ef1d2e088c75765",
+      "text": "The hepatocyte pellet was resuspended in wash media (Hepatocyte Wash Medium by Gibco + 0.1mg/mL DNase I + 10% FBS).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2f074a8d88fa3919",
+      "text": "Care was taken to include proper unstained and isotype controls to derive the compensation matrix.: we collected at least 20,000 cells",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-2f4771ba526bacd0",
+      "text": "Control IgG are shown for each specific staining.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-318f6aa6bb86dfd0",
+      "text": "Immunostaining for GFP and co-immunostaining for GFP/CD31 and GFP/CD45 are shown from lung sections from mice injected with a single dose of Poly(C) RNA-LNP or eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-31d64c0050bf13f6",
+      "text": "Fractions were incubated in Zombie NIR Fixable Viability dye (1:2000, Biolegend # 423105) for 30 minutes at room temperature, washed, and resuspended in FACS buffer (2% FBS + 2mM EDTA at pH 8).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3218f8a443573398",
+      "text": "Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-32d17280faf391c3",
+      "text": "Liver sections were stained with Oil Red O to detect the lipid content in hepatocytes at T2 and T8, 2 and 8 days after the diet was discontinued.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3368896e00c16566",
+      "text": "Randomization | We used mostly 3-4 mice per group tested in each experiment based on previous publications using the same injury models and assays to characterized the liver injury.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-da705209eff1602e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-33c5b56d9f1ccaf5",
+      "text": "HGF/EGF mRNA-LNP accelerate liver recovery in the APAP-induced acute liver injury model.a Mice were exposed to the Whitten effect and an overnight fast prior to a single injection of APAP (550 mg/kg).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3667279869fa328a",
+      "text": "The hepatocyte pellet was resuspended in wash media (Hepatocyte Wash Medium by Gibco + 0.1mg/mL DNase I + 10% FBS).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3723404ac3fe0955",
+      "text": "□ | Involved in the study: Eukaryotic cell lines",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-aeb2dea2c7fa9d6b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-380137db2fa26789",
+      "text": "Mycoplasma contamination | State the source of each cell line used.: Confirm that all cell lines tested negative for mycoplasma contamination OR describe the results of the testing for mycoplasma contamination OR declare that the cell lines were not tested for mycoplasma contamination.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2945329c9dad7209"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-394a7d7299452235",
+      "text": "Mice were anaesthetized with ketamine/xylazine and then perfused by cannulation with a 24-gauge catheter through the inferior vena cava with 30mL 1X Liver Perfusion Medium (Gibco by Life Technologies), while the portal vein was cut to allow the perfusate to flow out.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-395aa54127c3fe25",
+      "text": "Close-ups from ×200 magnification pictures are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-39b469187c3648cf",
+      "text": "Representative images from 3 to 4 mice per group are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-39e83c2fb82692e2",
+      "text": "Table 1 | EGF | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b8d271cf72d1748d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3a9ad4cdd2e88c95",
+      "text": "INTESTINE PolyC eGFP DAPI",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-89a0b3e235d982cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3b07f1c1311d7fff",
+      "text": "The supernatant was discarded, pellet was resuspended in wash media, and solution was added to the other collection of NPCs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3b39bd0b3ba03e6b",
+      "text": "All solutions were pre-warmed to 40°C and delivered at a rate of 4 ml/min.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3b6a87411deb5a5c",
+      "text": "Table 1 | CD45 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-27cfa174c1ddc448"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3b74b025d8c8fd11",
+      "text": "The hepatocyte pellet was resuspended in wash media (Hepatocyte Wash Medium by Gibco + 0.1mg/mL DNase I + 10% FBS).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3bc27fd7efefb99c",
+      "text": "PolyC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3bef0333c971ce07"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3c2c49e827624171",
+      "text": "The scale bar represents 100\\(\\mu\\)m for all 100X magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3f36ada992db61f7",
+      "text": "Replication | We used mostly 3-4 mice per group tested in each experiment based on previous publications using the same injury models and assays to characterized the liver injury.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac94e725f54ca773"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3f9fab03b2f24d6b",
+      "text": "Data are presented as mean values ± SEM.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-3fd92249a74d6c0a",
+      "text": "Care was taken to include proper unstained and isotype controls to derive the compensation matrix.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4113514192a282e3",
+      "text": "b–e Mice were analyzed 32 h and 48 h after APAP injection for necrosis with ×100 magnification bright-field images of H&E staining (b), serum ALT levels (c, 3-4 mice per group in triplicate (n = 9–12) per time point, except Poly(C) treated mice at 32 h for which 2 mice were used (n = 6)), and observation of TUNEL+ necrotic and apoptotic cells in central vein liver tissue areas (d), that were quantified per ×40 magnification field (e, 3 mice per group per time point with 2 fields per mouse (n = 6)).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-414bc80c39c6bdf2",
+      "text": "a–d Representative images from 2 mice injected with either Poly(C) mRNA-LNP or HGF mRNA-LNP per time point.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-429fe88cfd02be4b",
+      "text": "The scale bar represents 100\\(\\mu\\)m for all images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0881ce8ea906bb90"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-446f0181c9287a22",
+      "text": "b Quantification of light intensity (photons/sec) over time.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4972fefc2bc81f66"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-453a6bbee3f5792a",
+      "text": "b, d Representative images from 3 to 4 mice per group per time point.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-45ce5b5c5b96809e",
+      "text": "The remaining cells were analyzed for receptor expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-46a04954976f0364",
+      "text": "No: sc-6556 (Santa Cruz); Species: Goat; Application: IHC-Fr; Dilution: 1:50",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a042c20a8841a4ac"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4767d1f64f7f801c",
+      "text": "All solutions were pre-warmed to 40°C and delivered at a rate of 4 ml/min.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-47b138ca9c3968e4",
+      "text": "Normalization template | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c04ea7c2f3552d27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4885269ef4199d2e",
+      "text": "Following antibody incubation, cells were washed and resuspended in FACS buffer.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4894162da0077ee2",
+      "text": "Fractions were then separated into 100 μl wells and treated with 1 μg/100 μl Fc Block (BD Pharmingen #553141) for 10 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-494db8ac3fb0dd6a",
+      "text": "CD45 eGFP DAPI",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2f60aa504f4b7264"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-49a7e2c13a5112df",
+      "text": "No: 61-0112-80 (Invitrogen); Species: Rat; Application: FC; Dilution: 1:80",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cac01bae0d811bd8"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-49ef5fd4730fa7be",
+      "text": "Plots represent the percent of cells positive for CD11b, CD45 (a), and CD31 (b) gated from live cell population (Zombie NIR-negative NPC fraction) compared to isotypes for each antibody (rat IgG2b kappa for CD11b and CD45; rat IgG2a kappa for CD31).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c9be0aba61a345e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4b431271c52b07a9",
+      "text": "Table 1 | α-SMA | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-590ea12aaf7e625a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4b7b0444c4cc1270",
+      "text": "Table 1 | HGF | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8425790f4b3b1b9e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4c2d11b49df3df53",
+      "text": "Cells were filtered through 100 μm cell strainer and filtrate was centrifuged at 50 x g for 2 min at 4°C to obtain hepatocytes in the pellet while the supernatant was collected as the fraction of non-parenchymal cells (NPCs).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4dee43d0ce54ab1b",
+      "text": "n/a | Involved in the study ; ☐ | ChiP-seq ; ☐ | Flow cytometry ; ☐ | MRI-based neuroimaging",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8fe85f12930e3763"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-4fab0252ffddcea6",
+      "text": "Analyses of total serum cholesterol levels (c) and ALT levels (d) in 3–4 mice per group in duplicate or triplicate (n = 8–12) per time point indicate significant release of cholesterol into the serum and amelioration of serum ALT to baseline levels in H/E mRNA-LNP treated mice compared to those in Poly(C) RNA-LNP treated group.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-50ab348176a0200d",
+      "text": "The scale bar represents 200 μm for all ×100 magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-50f5d3924af88621",
+      "text": "Design specifications | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2d694d0ef39c938c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5152ead986b81ad6",
+      "text": "Cells were run on a Strategigm S1000Exi flow cytometer and data analyzed with FlowJo v10 software.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-519553cade9adac2",
+      "text": "; Data exclusions | No data were excluded ; Replication | All in vivo experiments were performed with 3-4 mice per group and per time point or otherwise indicated in the figure legends.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5199fb43675bc21a",
+      "text": "Liver tissue staining or immunostaining-based data were quantified and supported by analyses of serum data from the same mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3406c31194164e5c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5220a7516469049f",
+      "text": "Table 2 | Luciferase | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCACCGTGGTGTTCGTGTCCAAGAAGGGCCTGCAGAAGATCCTGAACGTGCAGAAGAAGCTGCCCATCATCCAGA AGATCATCATGGACTCCAAGACCGACTACCAGGAGCTTCCAGTCCATGTACACCTTCGTGACCTCCCACCTGCCCCCGGCTTCAACG AGTACGACTTCGTGCCCCGAGTCCTTCGACCGCGACAAGACCATCGCCCTGATCATGAACTCCTCCGCTCAGCCGCTGCCCAAGGGC GTGGCCCTGCCCCACCGCACCGCACCGCTGCGTGCGCTTCTCCCACCGCGCGACCCCATCTTCGCGAACCCAGATCATCCCGCGACCCCATC CTGTCCGTGGTGCCCTTCCACCGACGGCTTCGCGATGTCACCACCCCTGGGCTACCTGATCTGCGGCTTCCGCGTGGTGCTGATGTACCGC TTCGAGGAGGAGCTGTTCCTGCGCTCCCTGCAGGACTACAAGATCCAGTCCGCCCTGCTGGTGCCCCACCTGTTCTCCTTCTTCGCCCAAG TCCACCCCTGATCGACAAGTACGACCTGTCCAACCTGCACGAGATCGCCTCCGCGCGGCCCCCCCTGTCCAAGGAGGTGGCGGAGGCCG TGGCCAAGCGTgTTCCACCTGCCCCGGCATCCGCCAGGGCTACGGCCTGACCGAGACCCACCTCCGCCATCTCCTGATCACCCCCGAGGGCGAC GACAAGCCCCGCGCCGTGGGCAAGGTGGTGCCCTTCTTCGAGGCCAAGGTGGTGGACCTGGACACCGCGCAAGACCCCTGGCGCGTGAAAC CAGCGCGCGGAGCTGTGCGTGCGCGCCCCATGATCATGTCCGGCTACGTGAACAACCCCGAGGCCACCAACCGCCCTGATCGACAAGG ACGGCTGGCTGCACTCCGGCGACATCGCCTACTGGGACGAGGACGAGCACTTCTTCATCGTGGACCGCCTGAAGTCCCTGATCAAGTAC AAGGGCTACCAGGTGGCCCCGCCGCGAGCTGGAGTCCATCCTGCTGCAGACCCCAACATCTTCGACGCCGCGTGGCCGCGCTGCCGCGACGACGACGCCGCGAGCTGCCGCCGCCGCGTGGTGGTGCTGGAGCACGGCAAGACCATGACCGAGAAGGAGATCGTGGACTACGTGG CCTCCCAGGTGACCACCGCCAAGAAGCTGCGCGCGGCGCGTGGTGTCGTGGACGAGGTGCCCAAGGGCCTGACCGCGCAAGCTGGACG CCCCMAAGATCCGCGAGATCCTGATCAAGGCCAAGAAGGGCGGCAAGATCGCCGTG ; eGFP | ATGGTAGCAAGGGCGAGGAGCTGTTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGACGGCGACGTAAACGGCCACAAGTTCCAGC GTGTCCGGCGAGGAGGCGGAGGGCGATGCCACCTACGGCAAGCTGACCCCTGAAGTTCATCTGCACCCACCGGCAAGCTGCCCGTGCCCTGGC CCACCCCTGTCGACCACCCTGACCTACGGCGTCGACCTGAGCTTCAGCCGCTACCCCGACCCACATGAAGCAGCACGACTTCTTCAAGTCCGCCA TGCCCCGAAGGCTACGTCCAGGAGCGCACCATCTTCTTCAAGGACGACGGCAACTACAAGACCCGCGCCGAGGTGAAGTTCGAGGGCGA CACCCTGGTGAACCGCATCGAGCTGAAGGGCATCGACTTCAAGGAGGACGGCAACATCCTGGGGCACAAAGCTGGAGTACAACTACAAC AGCCACAACGTCTATATCATGGGCCGACAAGCAAGAACGGCATCAAGGTGAACTTCAAGATCCGCCACAACATCGAGGACGGCAGCG TGCAGCTCGCCGACCACTACCAGCAGAACACCCCATCGGCGACGGCGGCCGTCGTGCTGCGCGCAACCACTACCTGAGCACCCAGTCC GCCCTGAGCAAAGACCCCAACGAGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACG AGCTGTACAAG ; HGF | ATGTGGGTGACCAAGCTGCTGCCCCGCCCTGCTGCTGCAGCACGTGCTGCTGCACCTGCTGCTGCCCATCGCCATCCCCTACGCCGA GGGCCAGCGCAAGCGCCGCAACACCATCCACGAGTTCAAGAAGTCCCGCCAAGACCACCCTGATCAAGATCGACCCCCGCCCTGAAGATC AAGACCAAGAAGGTGAACACCGCCGACCAGTGCGCCAACCGCTGACCCGCAACAAGGGCCTGCCCTTCACCTGCAAGGCCTTCGTGTT CGACAAGGCCCGCAAGCAGTCGCTGTGGTTCCCCTTCAACTCCATGTCCTCCGGCGTGAGAAGGAGTTCGGCCACGAGTTCGACCTGT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b9451880e511f7ec"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5232ed3c65a75785",
+      "text": "; Diffusion MRI ☐ Used | Not used",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dbd7be07a0c0d046"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-544eb53d1767a89d",
+      "text": "Ethics oversight | All mice were inbred female Black6C57.Blc from the Jackson Laboratory.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f52706e536f268b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5638be38568a8045",
+      "text": "Following antibody incubation, cells were washed and resuspended in FACS buffer.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-56bccd9b2d994422",
+      "text": "□ | Involved in the study: Animals and other organisms",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-1a8882107319a8b5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5958160ca291f8ec",
+      "text": "Scales represent light intensity in photons/sec.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4972fefc2bc81f66"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-59845d8104565c67",
+      "text": "Imaging type(s) | N/A ; Field strength | N/A ; Sequence & imaging parameters | N/A ; Area of acquisition | State whether a whole brain scan was used OR define the area of acquisition, describing how the region was determined.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dbd7be07a0c0d046"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-59b1322fd090722e",
+      "text": "White arrowheads indicate co-stained cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-59c197ddf1d949ca",
+      "text": "The remaining cells were analyzed for receptor expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5aeed136226447fe",
+      "text": "; Validation | We validated specificity of each antibody for immuno-staining by using the corresponding isotype negative controls.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-16119154634c73a6"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5af6acdd97c70c68",
+      "text": "= not significant.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5c1f3e6e220392d4",
+      "text": "n/a | Involved in the study ; □ | Antibodies ; □ | Eukaryotic cell lines ; □ | Palaeontology and archaeology ; □ | Animals and other organisms ; □ | Human research participants ; □ | Clinical data ; □ | Dual use research of concern",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ec862fbec8ce48e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5d5e57f121b4f21d",
+      "text": "Following antibody incubation, cells were washed and resuspended in FACS buffer.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5e97bd0dac79ce08",
+      "text": "A single dose of control Poly(C) RNA-LNP or HGF/EGF(H/E) mRNA-LNP was administered 24 h following APAP injection.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5ecc62241f34c7c7",
+      "text": "Histology of all lobes of each mouse livers were analyzed and 2-4 pictures taken to represent each liver.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac94e725f54ca773"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5ef7dca104df08e0",
+      "text": "Care was taken to include proper unstained and isotype controls to derive the compensation matrix.: FlowJo v10 software",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5f141d847ff9e469",
+      "text": "Livers were then extracted and mechanically dissociated in 10mL of Liver Digest Medium.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5fd1dad1f6521d48",
+      "text": "The cell fraction caught in the 100 μm strainer was further digested in NPC Digest Medium (2.5 mg/mL Collagenase IV + 0.1mg/mL DNase I), filtered through a 40 μm strainer, then centrifuged at 300 x g for 5 minutes at 4°C.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-5fdece24dd3ffd20",
+      "text": "3 Subpopulations of blood and endothelial cells of the spleen are targeted by eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6c6990e385807311"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-602bd63c2adecf98",
+      "text": "2 Subpopulations of blood and endothelial cells of the intestine are targeted by eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0ffcca03122d67ea"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-60a4b9d8a8b7e736",
+      "text": "Wells were then incubated with specific antibodies for 20 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-60ea9f48c47b6c6e",
+      "text": "e Quantification of the absolute numbers of EdU+ cells at ×40 magnification from 2 mice per group per time point with 2–3 fields per mouse (n = 4–6) following injection of either Poly(C) RNA-LNP or HGF mRNA-LNP; the percentage of EdU+ cells that are HNF4α+ (hepatocytes) or CD45+ cells (immune cells) from 1 to 2 fields at ×100 magnification from 2 mice per group at 48 h post-injection (n = 3–4); and the calculated absolute numbers of EdU+HNF4α+ hepatocytes and EdU+CD45+ immune cells per ×40 magnification field at 48 h based upon the counted percentages (n = 4–6).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6246491ba3468b58",
+      "text": "Mice were anaesthetized with ketamine/xylazine and then perfused by cannulation with a 24-gauge catheter through the inferior vena cava with 30mL 1X Liver Perfusion Medium (Gibco by Life Technologies), while the portal vein was cut to allow the perfusate to flow out.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-628f93b13be71920",
+      "text": "The sample size was shown to be sufficient to identify statistical differences between groups for the specific assays used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3406c31194164e5c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-641b53312bd1113f",
+      "text": "Mice were anaesthetized with ketamine/xylazine and then perfused by cannulation with a 24-gauge catheter through the inferior vena cava with 30mL 1X Liver Perfusion Medium (Gibco by Life Technologies), while the portal vein was cut to allow the perfusate to flow out.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-64cb1ac770466b40",
+      "text": "Representative pictures obtained for 4 mice per group per time point are shown (100X magnification).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-66ac09c4b5f261eb",
+      "text": "HGF/EGF mRNA-LNP ameliorate liver function during continuous CDE-induced chronic liver injury.a Injury scheme timeline: mice were fed CDD choline deficient diet for 1 week followed by continuous CDD diet supplemented with 0.1% ethionine (CDE) for 4 weeks.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-680e10df052a35cf",
+      "text": "eGFP Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0ffcca03122d67ea"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-687127db741a9bf8",
+      "text": "☐ | Involved in the study: MRI-based neuroimaging",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-78286c55facf77a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-694b566febfc1988",
+      "text": "15 mL of Earle's Balanced Salt Solution (EBSS) containing 10 mM Hepes (Ca++ and Mg++, pH 7.4) was then perfused, and finally followed with 30 mL of Liver Digest Medium (Gibco by Life Technologies) to allow complete dissociation of liver cells in situ.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6964eef8ad861f44",
+      "text": "c Representative gating strategy from CD45 staining to isolate live GFP+ CD45+ cells as compared to isotype control and Poly (C) RNA-injected cells.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c9be0aba61a345e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6a25034d455ab773",
+      "text": "Recruitment | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5a12eb6c55ab0cd5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6e06e6588ce5c278",
+      "text": "The hepatocyte pellet was resuspended in wash media (Hepatocyte Wash Medium by Gibco + 0.1mg/mL DNase I + 10% FBS).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6eec287ef3432252",
+      "text": "Data collection | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ad692e31e06d7a78"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6f27997090a70572",
+      "text": "No: 102429 (BioLegend); Species: Rat; Application: FC; Dilution: 1:40",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3be5637637582f1f"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-6feb636e8efd148c",
+      "text": "Liver tissue staining or immunostaining-based data were quantified and supported by analyses of serum data from the same mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7012388cb635f642",
+      "text": "Livers were then extracted and mechanically dissociated in 10mL of Liver Digest Medium.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-70f3a2278b1c40c0",
+      "text": "No: 557355 (BD Pharmingen); Species: Rat; Application: IHC-Fr; Dilution: 1:100",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-44987ccc05ab49b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-71bbc99c642bccb3",
+      "text": "Mice were provided by the Jackson laboratory.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-da705209eff1602e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-71fc3d16fe360779",
+      "text": "Immunostaining for HGF on liver sections 5, 24 and 48 hours after a single injection of Poly(C) RNA-LNP or HGF mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0881ce8ea906bb90"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-78a71536fc74bef2",
+      "text": "A single IV injection of HGF mRNA-LNP induces significant hepatocyte proliferation in homeostasis.a Immunostaining for HGF in mice sacrificed 5 h after IV injection of HGF mRNA-LNP or Poly(C) RNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-794bfc2f3fd8328a",
+      "text": "Wells were then incubated with specific antibodies for 20 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-795095d655085827",
+      "text": "; Randomization | Mice used in this study were inbred, all the same age, the same sex, and therefore about the same weight.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7c1005d7e090f275",
+      "text": "HGF",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-08c42d429939328d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7ce6c859d257f998",
+      "text": "Source data are provided as a Source Data file.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7d6bc4695fca3b16",
+      "text": "Following antibody incubation, cells were washed and resuspended in FACS buffer.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7d865f8ea75ef0b6",
+      "text": "No: NB100-77417 (Novus); Species: Rat; Application: IHC-Fr; Dilution: 1:100",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-27cfa174c1ddc448"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7d997c4e99abb08a",
+      "text": "200X magnification pictures are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-7e463d869e5b607b",
+      "text": "SPLEEN PolyC eGFP DAPI",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-871e6ae29cba52d4"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-80ed9ef13fd5ae2d",
+      "text": "Care was taken to include proper unstained and isotype controls to derive the compensation matrix.: Cells were first gated using the SSC and FSC parameters to help eliminate debris.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-82494c3dd8c8b679",
+      "text": "Field strength | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-147fec34a6cfa2f7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-82841da4468fa4ab",
+      "text": "; Wild animals | N/A ; Field-collected samples | N/A ; Ethics oversight | All studies with mice have been approved by the BU BMC AICUC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58eb81b7dd554417"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8326ec188d36fdf7",
+      "text": "The scale bar represents 100 μm for all ×200 magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-835de0f9f4fe10ff",
+      "text": "; Blinding | All tissue staining were analyzed by 4 blinded authors (the first 3 authors as well as the last author).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8474655d1dcac833",
+      "text": "No: 19245S (Cell Signaling); Species: Rabbit; Application: IHC-Fr; Dilution: 1:300",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-590ea12aaf7e625a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8528492243c92c17",
+      "text": "P values were calculated by two-sided student’s t test, ***<0.0001, **<0.001, *<0.05, n.s.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-854787162d132aed",
+      "text": "Their age varied between 10-12 weeks of age.: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-208f62117919ad40"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8594e88598e2f89f",
+      "text": "Mice were fed CDE diet for 3 weeks as explained in Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-87bba12deefa2459",
+      "text": "Care was taken to include proper unstained and isotype controls to derive the compensation matrix.: Stratifiedigm S1000EXi flow cytometer",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-89308bb3660aa43a",
+      "text": "Fractions were incubated in Zombie NIR Fixable Viability dye (1:2000, Biolegend # 423105) for 30 minutes at room temperature, washed, and resuspended in FACS buffer (2% FBS + 2mM EDTA at pH 8).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-893e5a28dbf20420",
+      "text": "8 Injection of both HGF/EGF mRNA-LNP decrease the lipid content in hepatocytes following CDE diet.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8afa210bc00b23e6",
+      "text": "Sample size | We used mostly 3-4 mice per group tested in each experiment based on previous publications using the same injury models and assays to characterized the liver injury.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8b19bcc24507c269",
+      "text": "Table 2 | eGFP | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCACCGTGGTGTTCGTGTCCAAGAAGGGCCTGCAGAAGATCCTGAACGTGCAGAAGAAGCTGCCCATCATCCAGA AGATCATCATGGACTCCAAGACCGACTACCAGGAGCTTCCAGTCCATGTACACCTTCGTGACCTCCCACCTGCCCCCGGCTTCAACG AGTACGACTTCGTGCCCCGAGTCCTTCGACCGCGACAAGACCATCGCCCTGATCATGAACTCCTCCGCTCAGCCGCTGCCCAAGGGC GTGGCCCTGCCCCACCGCACCGCACCGCTGCGTGCGCTTCTCCCACCGCGCGACCCCATCTTCGCGAACCCAGATCATCCCGCGACCCCATC CTGTCCGTGGTGCCCTTCCACCGACGGCTTCGCGATGTCACCACCCCTGGGCTACCTGATCTGCGGCTTCCGCGTGGTGCTGATGTACCGC TTCGAGGAGGAGCTGTTCCTGCGCTCCCTGCAGGACTACAAGATCCAGTCCGCCCTGCTGGTGCCCCACCTGTTCTCCTTCTTCGCCCAAG TCCACCCCTGATCGACAAGTACGACCTGTCCAACCTGCACGAGATCGCCTCCGCGCGGCCCCCCCTGTCCAAGGAGGTGGCGGAGGCCG TGGCCAAGCGTgTTCCACCTGCCCCGGCATCCGCCAGGGCTACGGCCTGACCGAGACCCACCTCCGCCATCTCCTGATCACCCCCGAGGGCGAC GACAAGCCCCGCGCCGTGGGCAAGGTGGTGCCCTTCTTCGAGGCCAAGGTGGTGGACCTGGACACCGCGCAAGACCCCTGGCGCGTGAAAC CAGCGCGCGGAGCTGTGCGTGCGCGCCCCATGATCATGTCCGGCTACGTGAACAACCCCGAGGCCACCAACCGCCCTGATCGACAAGG ACGGCTGGCTGCACTCCGGCGACATCGCCTACTGGGACGAGGACGAGCACTTCTTCATCGTGGACCGCCTGAAGTCCCTGATCAAGTAC AAGGGCTACCAGGTGGCCCCGCCGCGAGCTGGAGTCCATCCTGCTGCAGACCCCAACATCTTCGACGCCGCGTGGCCGCGCTGCCGCGACGACGACGCCGCGAGCTGCCGCCGCCGCGTGGTGGTGCTGGAGCACGGCAAGACCATGACCGAGAAGGAGATCGTGGACTACGTGG CCTCCCAGGTGACCACCGCCAAGAAGCTGCGCGCGGCGCGTGGTGTCGTGGACGAGGTGCCCAAGGGCCTGACCGCGCAAGCTGGACG CCCCMAAGATCCGCGAGATCCTGATCAAGGCCAAGAAGGGCGGCAAGATCGCCGTG: ATGGTAGCAAGGGCGAGGAGCTGTTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGACGGCGACGTAAACGGCCACAAGTTCCAGC GTGTCCGGCGAGGAGGCGGAGGGCGATGCCACCTACGGCAAGCTGACCCCTGAAGTTCATCTGCACCCACCGGCAAGCTGCCCGTGCCCTGGC CCACCCCTGTCGACCACCCTGACCTACGGCGTCGACCTGAGCTTCAGCCGCTACCCCGACCCACATGAAGCAGCACGACTTCTTCAAGTCCGCCA TGCCCCGAAGGCTACGTCCAGGAGCGCACCATCTTCTTCAAGGACGACGGCAACTACAAGACCCGCGCCGAGGTGAAGTTCGAGGGCGA CACCCTGGTGAACCGCATCGAGCTGAAGGGCATCGACTTCAAGGAGGACGGCAACATCCTGGGGCACAAAGCTGGAGTACAACTACAAC AGCCACAACGTCTATATCATGGGCCGACAAGCAAGAACGGCATCAAGGTGAACTTCAAGATCCGCCACAACATCGAGGACGGCAGCG TGCAGCTCGCCGACCACTACCAGCAGAACACCCCATCGGCGACGGCGGCCGTCGTGCTGCGCGCAACCACTACCTGAGCACCCAGTCC GCCCTGAGCAAAGACCCCAACGAGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACG AGCTGTACAAG",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fa2795efd7285043"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8b4d0b466e8acf88",
+      "text": "9 RNA-LNP treatment induces equally a mild inflammation in control Poly(C) RNA-LNP- and HGF/EGF mRNA-LNP- treated mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8bcee49e8f9a27cb",
+      "text": "The scale bar represents 100\\(\\mu\\)m for all 100X magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6c6990e385807311"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8bda30211d16b4f6",
+      "text": "; Specimen deposition | Indicate where the specimens have been deposited to permit free access by other researchers.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8d7c3ad14e6ab898",
+      "text": "All solutions were pre-warmed to 40°C and delivered at a rate of 4 ml/min.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8d836ed6cba25aa5",
+      "text": "No: MAB236-100; Species: Mouse; Application: IHC-Fr; Dilution: 1:30",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b8d271cf72d1748d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8e53aad169724eb7",
+      "text": "Table 2 | HGF | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCACCGTGGTGTTCGTGTCCAAGAAGGGCCTGCAGAAGATCCTGAACGTGCAGAAGAAGCTGCCCATCATCCAGA AGATCATCATGGACTCCAAGACCGACTACCAGGAGCTTCCAGTCCATGTACACCTTCGTGACCTCCCACCTGCCCCCGGCTTCAACG AGTACGACTTCGTGCCCCGAGTCCTTCGACCGCGACAAGACCATCGCCCTGATCATGAACTCCTCCGCTCAGCCGCTGCCCAAGGGC GTGGCCCTGCCCCACCGCACCGCACCGCTGCGTGCGCTTCTCCCACCGCGCGACCCCATCTTCGCGAACCCAGATCATCCCGCGACCCCATC CTGTCCGTGGTGCCCTTCCACCGACGGCTTCGCGATGTCACCACCCCTGGGCTACCTGATCTGCGGCTTCCGCGTGGTGCTGATGTACCGC TTCGAGGAGGAGCTGTTCCTGCGCTCCCTGCAGGACTACAAGATCCAGTCCGCCCTGCTGGTGCCCCACCTGTTCTCCTTCTTCGCCCAAG TCCACCCCTGATCGACAAGTACGACCTGTCCAACCTGCACGAGATCGCCTCCGCGCGGCCCCCCCTGTCCAAGGAGGTGGCGGAGGCCG TGGCCAAGCGTgTTCCACCTGCCCCGGCATCCGCCAGGGCTACGGCCTGACCGAGACCCACCTCCGCCATCTCCTGATCACCCCCGAGGGCGAC GACAAGCCCCGCGCCGTGGGCAAGGTGGTGCCCTTCTTCGAGGCCAAGGTGGTGGACCTGGACACCGCGCAAGACCCCTGGCGCGTGAAAC CAGCGCGCGGAGCTGTGCGTGCGCGCCCCATGATCATGTCCGGCTACGTGAACAACCCCGAGGCCACCAACCGCCCTGATCGACAAGG ACGGCTGGCTGCACTCCGGCGACATCGCCTACTGGGACGAGGACGAGCACTTCTTCATCGTGGACCGCCTGAAGTCCCTGATCAAGTAC AAGGGCTACCAGGTGGCCCCGCCGCGAGCTGGAGTCCATCCTGCTGCAGACCCCAACATCTTCGACGCCGCGTGGCCGCGCTGCCGCGACGACGACGCCGCGAGCTGCCGCCGCCGCGTGGTGGTGCTGGAGCACGGCAAGACCATGACCGAGAAGGAGATCGTGGACTACGTGG CCTCCCAGGTGACCACCGCCAAGAAGCTGCGCGCGGCGCGTGGTGTCGTGGACGAGGTGCCCAAGGGCCTGACCGCGCAAGCTGGACG CCCCMAAGATCCGCGAGATCCTGATCAAGGCCAAGAAGGGCGGCAAGATCGCCGTG: ATGTGGGTGACCAAGCTGCTGCCCCGCCCTGCTGCTGCAGCACGTGCTGCTGCACCTGCTGCTGCCCATCGCCATCCCCTACGCCGA GGGCCAGCGCAAGCGCCGCAACACCATCCACGAGTTCAAGAAGTCCCGCCAAGACCACCCTGATCAAGATCGACCCCCGCCCTGAAGATC AAGACCAAGAAGGTGAACACCGCCGACCAGTGCGCCAACCGCTGACCCGCAACAAGGGCCTGCCCTTCACCTGCAAGGCCTTCGTGTT CGACAAGGCCCGCAAGCAGTCGCTGTGGTTCCCCTTCAACTCCATGTCCTCCGGCGTGAGAAGGAGTTCGGCCACGAGTTCGACCTGT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-48ac0b7a14918643"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-8ef23f8f9518785d",
+      "text": "Gating strategy | Liver was perfused according to the previously published method with minor modifications54.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9026b314ff0c4337",
+      "text": "Laboratory animals | All mice were inbred female Black6C57.Blc from the Jackson Laboratory.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58eb81b7dd554417"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-928c2a677ebc9e97",
+      "text": "The scale bar represents 200 μm for all ×100 magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-92d9b04bedc9a7f9",
+      "text": "Cells were run on a Strategigm S1000Exi flow cytometer and data analyzed with FlowJo v10 software.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-935ab85e6c4c27b2",
+      "text": "Fractions were incubated in Zombie NIR Fixable Viability dye (1:2000, Biolegend # 423105) for 30 minutes at room temperature, washed, and resuspended in FACS buffer (2% FBS + 2mM EDTA at pH 8).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9366a4c64d83e110",
+      "text": "Dark grey: T0, light grey: control RNA, light blue: single mRNA, dark blue: combined mRNA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-944e1e8cf0de22fd",
+      "text": "5 Quantification of endothelial and blood cells from liver NPC fractions from mice injected IV with mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c9be0aba61a345e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9560362e7b39bba5",
+      "text": "Software | Liver was perfused according to the previously published method with minor modifications54.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-959aeb8592214b0f",
+      "text": "Normalization | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f4ffbabed694ada9"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-95aeb7ecd5f333c4",
+      "text": "; Dating methods | If new dates are provided, describe how they were obtained (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-95e6dcab3bec5d37",
+      "text": "In the lung, eGFP\\(^{+}\\) cells are mainly CD45\\(^{+}\\) blood cells.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-96587617b076f7bc",
+      "text": "In intestine, eGFP+ cells are CD31+ endothelial cells or CD45+ blood cells.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0ffcca03122d67ea"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-965bebfd3ba0d52a",
+      "text": "The CDE diet was then replaced with choline-sufficient diet.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9695663f07c7bcc7",
+      "text": "100X magnification pictures are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0881ce8ea906bb90"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-970a43e977f90216",
+      "text": "Cells were run on a Strategigm S1000Exi flow cytometer and data analyzed with FlowJo v10 software.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9732aab66a9e6e96",
+      "text": "Livers were then extracted and mechanically dissociated in 10mL of Liver Digest Medium.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-974f16c69f5e3ade",
+      "text": "Supplementary Table 1: List of antibodies",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ee5ed1a07f22b3e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-97f6348bd722e171",
+      "text": "No: AF-294-NA (R&D); Species: Goat; Application: IHC-Fr; Dilution: 1:20",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8425790f4b3b1b9e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-98235da2214e15c0",
+      "text": "Table 1 | GFP | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e715d79532ad7b3a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-99c03a1790e4ecf4",
+      "text": "□ | Involved in the study: Palaeontology and archaeology",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0786bdbf3897b1c2"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-99c8afbee1f1ef56",
+      "text": "Source data are provided as a Source Data file.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4972fefc2bc81f66"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9b365b5a4e5b22e6",
+      "text": "A single IV injection of Luc mRNA-LNP induces robust and restricted luciferase activity in liver.a Images of bioluminescence measurement from 5 h, day1 (d1) up to day 8 (d8) following tail vein (n = 2 mice) or retro-orbital (n = 6 mice) injection of Luc mRNA-LNP.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4972fefc2bc81f66"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9efef419c8450149",
+      "text": "b EdU staining on liver sections of mice 5, 24, or 48 h after injection with HGF mRNA-LNP or Poly(C) RNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9f0c4ee1cd12205e",
+      "text": "Design type | N/A ; Design specifications | N/A ; Behavioral performance measures | N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-38c6dbc67e12379c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-9fa9df40842c2021",
+      "text": "EGF",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-20f46ef72370605a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a0fd9ee8d462ec8d",
+      "text": "15 mL of Earle's Balanced Salt Solution (EBSS) containing 10 mM Hepes (Ca++ and Mg++, pH 7.4) was then perfused, and finally followed with 30 mL of Liver Digest Medium (Gibco by Life Technologies) to allow complete dissociation of liver cells in situ.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a1e67be47f3f3b61",
+      "text": "c, e Data are presented as mean values ± SEM.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a2268be115a47ea2",
+      "text": "All NPC fractions were gated for live cells present in Zombie NIR-negative populations.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a2499ace254b63db",
+      "text": "lab name), the calibration program and the protocol for quality assurance OR state that no new dates are provided.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-841998b3e4b03338"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a24d805e85f9ce16",
+      "text": "Specimen provenance | Provide provenance information for specimens and describe permits that were obtained for the work (including the name of the issuing authority, the date of issue, and any identifying information).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a32191d33e8961c9",
+      "text": "□ | Involved in the study: Antibodies",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-390deddbea4c41a2"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a353077a177cdbd4",
+      "text": "; Authentication | Describe the authentication procedures for each cell line used OR declare that none of the cell lines used were authenticated.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6086dceb09aa8e81"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a3f56b9e573fb164",
+      "text": "Table 1 | CD31-PE/Dazzle 594 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3be5637637582f1f"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a40c7dcda343269a",
+      "text": "Table 1 | F4/80 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6a15196a7b5120e5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a55a49139627c41e",
+      "text": "Source data are provided as a Source Data file.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a66e37975d3a35e8",
+      "text": "Data are presented as mean values ± SEM for n = 3 mice per group.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a6a1d68d54dddd80",
+      "text": "Their age varied between 10-12 weeks of age.: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2699b762e284bb62"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a77fb902de424c87",
+      "text": "Cells were run on a Strategigm S1000Exi flow cytometer and data analyzed with FlowJo v10 software.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-a7b9ff07aca32865",
+      "text": "Ethics oversight | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c2ed0d71b65867a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-aaf79b367cade115",
+      "text": "Sample preparation | Liver was perfused according to the previously published method with minor modifications54.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ab821d5b2b7f7508",
+      "text": "The cell fraction caught in the 100 μm strainer was further digested in NPC Digest Medium (2.5 mg/mL Collagenase IV + 0.1mg/mL DNase I), filtered through a 40 μm strainer, then centrifuged at 300 x g for 5 minutes at 4°C.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-aba9ec4d52fee3d5",
+      "text": "Sequence & imaging parameters | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-553861bc92c1396a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ac5b3a1934ce6cb7",
+      "text": "Preprocessing software | N/A ; Normalization | N/A ; Normalization template | N/A ; Noise and artifact removal | N/A ; Volume censoring | N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-83bad59a89cc2683"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ac99ea6513d83839",
+      "text": "Following 10-minute incubations in wash media, both fractions were washed then resuspended in PBS.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-acd20e276af61ed1",
+      "text": "Study protocol | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ffffbc97ec1812a9"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ad1e28cfd62ca961",
+      "text": "Noise and artifact removal | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e9e676be74ded085"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-adb9f5dbdd815e6d",
+      "text": "P values were calculated by two-sided student’s t test, ***<0.0001, **<0.001, *<0.05, n.s.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ae3c874d8055dfeb",
+      "text": "Dating methods | Provide provenance information for specimens and describe permits that were obtained for the work (including the name of the issuing authority, the date of issue, and any identifying information).: If new dates are provided, describe how they were obtained (e.g.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-841998b3e4b03338"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-aec5c9d16489ac40",
+      "text": "Their age varied between 10-12 weeks of age.: All studies with mice have been approved by the BU BMC AICUC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f52706e536f268b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-af1ad2a83c5ccb58",
+      "text": "The supernatant was discarded, pellet was resuspended in wash media, and solution was added to the other collection of NPCs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b0e6bede14922095",
+      "text": "6 Efficient expression of HGF protein following a single injection of HGF mRNA-LNP.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0881ce8ea906bb90"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b15348f2a6201134",
+      "text": "Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c9be0aba61a345e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b16058a65bfaf74b",
+      "text": "Table 1 | CK19 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6f92a364c89d68fc"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b4f7d910fa37c9b4",
+      "text": "The cell fraction caught in the 100 μm strainer was further digested in NPC Digest Medium (2.5 mg/mL Collagenase IV + 0.1mg/mL DNase I), filtered through a 40 μm strainer, then centrifuged at 300 x g for 5 minutes at 4°C.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b5620ce85727a102",
+      "text": "Area of acquisition | N/A: State whether a whole brain scan was used OR define the area of acquisition, describing how the region was determined.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-46eb210518b33e5c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b5d742cdf8be71b9",
+      "text": "Cells were run on a Strategigm S1000Exi flow cytometer and data analyzed with FlowJo v10 software.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b8593906af0ca7fc",
+      "text": "b Representative flow cytometry analyses showing percent of eGFP+ cells in CD11b+, CD45+, and CD31+ NPC fractions from mice injected with Poly(C) RNA-LNP or eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6fc20cbab986264c"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-b8c3cf5ed9f12af9",
+      "text": "All solutions were pre-warmed to 40°C and delivered at a rate of 4 ml/min.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ba49599eaa199d76",
+      "text": "CD31 eGFP",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0bc3c6f3b99d12fc"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-bdbec1956209e053",
+      "text": "Cells were filtered through 100 μm cell strainer and filtrate was centrifuged at 50 x g for 2 min at 4°C to obtain hepatocytes in the pellet while the supernatant was collected as the fraction of non-parenchymal cells (NPCs).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-be4e4e4424e4ac3b",
+      "text": "Authentication | State the source of each cell line used.: Describe the authentication procedures for each cell line used OR declare that none of the cell lines used were authenticated.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3ae6b8ee679512d6"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-bf21ee5f5bea56c6",
+      "text": "The scale bar represents 100\\(\\mu\\)m for all images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-bfa9721b6712e76c",
+      "text": "Representative images from 3 mice injected with either HGF mRNA-LNP or EGF mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-bfd7fc1980ce83b3",
+      "text": "Wells were then incubated with specific antibodies for 20 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c1a1cbbcafce8fe8",
+      "text": "15 mL of Earle's Balanced Salt Solution (EBSS) containing 10 mM Hepes (Ca++ and Mg++, pH 7.4) was then perfused, and finally followed with 30 mL of Liver Digest Medium (Gibco by Life Technologies) to allow complete dissociation of liver cells in situ.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c2149b2d8bb29b3d",
+      "text": "Table 1 | CD31 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-44987ccc05ab49b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c219e88e635cde3f",
+      "text": "The cell fraction caught in the 100 μm strainer was further digested in NPC Digest Medium (2.5 mg/mL Collagenase IV + 0.1mg/mL DNase I), filtered through a 40 μm strainer, then centrifuged at 300 x g for 5 minutes at 4°C.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c22f3b5793890e7a",
+      "text": "Fractions were then separated into 100 μl wells and treated with 1 μg/100 μl Fc Block (BD Pharmingen #553141) for 10 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c29e2f7efb318a6d",
+      "text": "Representative images from 2 mice injected with either Poly(C) mRNA-LNP or HGF mRNA-LNP per time point.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0881ce8ea906bb90"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c343669ce5f84ad0",
+      "text": "No | Species | Application | Dilution ; GFP | A10262 (Invitrogen) | Chicken | IHC-Fr | 1:300 ; HNF4α | sc-6556 (Santa Cruz) | Goat | IHC-Fr | 1:50 ; CK19 | 602-670 (Abbomax) | Rabbit | IHC-Fr | 1:100 ; CD31 | 557355 (BD Pharmingen) | Rat | IHC-Fr | 1:100 ; CD45 | NB100-77417 (Novus) | Rat | IHC-Fr | 1:100 ; α-SMA | 19245S (Cell Signaling) | Rabbit | IHC-Fr | 1:300 ; F4/80 | sc25830 (Santa Cruz) | Rabbit | IHC-Fr | 1:100 ; HGF | AF-294-NA (R&D) | Goat | IHC-Fr | 1:20 ; EGF | MAB236-100 | Mouse | IHC-Fr | 1:30 ; CD31-PE/Dazzle 594 | 102429 (BioLegend) | Rat | FC | 1:40 ; CD11b-PE efluor 610 | 61-0112-80 (Invitrogen) | Rat | FC | 1:80 ; CD45-PE efluor 610 | 61-0451-80 (Invitrogen) | Rat | FC | 1:40",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cf12ee2f612e4a13"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c3ec336dcf06bcc4",
+      "text": "Behavioral performance measures | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-19dffd0d6ce5cbbd"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c50cb96071c2880a",
+      "text": "b Bright-field images at ×100 magnification of Oil Red O staining show decreased lipid content in H/E mRNA-LNP treated mice at T8 compared to T2 and compared to control Poly(C) RNA-LNP treated groups.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c5e7ca2a647074b5",
+      "text": "Specimen deposition | Provide provenance information for specimens and describe permits that were obtained for the work (including the name of the issuing authority, the date of issue, and any identifying information).: Indicate where the specimens have been deposited to permit free access by other researchers.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4119c2ef4c6b2497"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c61f7d6642fb4be3",
+      "text": "The supernatant was discarded, pellet was resuspended in wash media, and solution was added to the other collection of NPCs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c66acba23e441f98",
+      "text": "The cell fraction caught in the 100 μm strainer was further digested in NPC Digest Medium (2.5 mg/mL Collagenase IV + 0.1mg/mL DNase I), filtered through a 40 μm strainer, then centrifuged at 300 x g for 5 minutes at 4°C.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c83a9dd3b83a14ac",
+      "text": "Source data are provided as a Source Data file.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c9456efff3fbae68",
+      "text": "Mice were analyzed at T2 and T8, 2 days and 8 days after the first mRNA-LNP administration.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c98a5e025cd9bd6d",
+      "text": "Grey: control RNA, blue: combined mRNA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-941c704a5ed9701b"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-c9f44cc879435677",
+      "text": "Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ca21d5436d1221e8",
+      "text": "□ | Involved in the study: Dual use research of concern",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-66fb729ddd3f9843"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cace670a5d42e400",
+      "text": "Source data are provided as a Source Data file.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cbcd098d7029d52a",
+      "text": "Images are ×100 magnification.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cc15de3705461a45",
+      "text": "Cells were filtered through 100 μm cell strainer and filtrate was centrifuged at 50 x g for 2 min at 4°C to obtain hepatocytes in the pellet while the supernatant was collected as the fraction of non-parenchymal cells (NPCs).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cde75bebe1a78ce1",
+      "text": "Livers were then extracted and mechanically dissociated in 10mL of Liver Digest Medium.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ce04a3e6e2fb7fa6",
+      "text": "b Bright-field images at ×100 magnification of Oil Red O staining showing lipid accumulation in hepatocytes at T2 and T8 in mice injected with either Poly(C) RNA-LNP or H/E mRNA-LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9ab75b58c5dd5851"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ce6b03d59e0f17ee",
+      "text": "100X magnification pictures of representative images from 3 mice injected with eGFP-mRNA-LNP are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0ffcca03122d67ea"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cf4ec28c5e65cc19",
+      "text": "IHC-Fr: Immunohistochemistry frozen fixed tissues; FC: Flow Cytometry",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-79e6b0eb4286fd5e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cf9e37f897ca00db",
+      "text": "4 Subpopulations of blood cells, most likely phagocytic cells of the lung, are targeted by eGFP mRNA-LNP.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a13bbb81e70104a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d0059a6c6e6e7e80",
+      "text": "The scale bar represents 100\\(\\mu\\)m for all 100X magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0ffcca03122d67ea"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d010656c7b3c96ca",
+      "text": "Supplementary Fig.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d02fa52e4c8420fb",
+      "text": "= not significant.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d1b241800d85651f",
+      "text": "Mice were injected with a single dose of HGF or EGF mRNA-LNP and liver sections analyzed 24 hours after injection.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f973bec9011bedc0"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d2e3a33b0c7fb30d",
+      "text": "; Ethics oversight | Identify the organization(s) that approved or provided guidance on the study protocol, OR state that no ethical approval or guidance was required and explain why not.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d2ecaadc36e83e94",
+      "text": "Diffusion MRI ☐ Used | N/A: Not used",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6f9981331a7d943d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d362848409b5cb4e",
+      "text": "EGF | ACGAGAACAAAGGACTACATCCGCAACTGCATCATCGGCAAGGGCCGCTCCTACAAGGGCACCGTGTCCATCACCAAGTCCGGCATCAA GTGCCAGCCCCTGGTCCTCCATGATCCCCCACGAGCACTCCTTCCTGCCCTCCTCCTACCGCGGCAAGGACCTGCAGGAGAACTACTGCCG CAACCCCCCGCGCGAGGAGGGCGGCCCTGGTGCTTCACCTCCAACCCCGAGGAGGTGCGCTACGAGGTGTGCGACATCCCCCAGTGCTCC GAGGTGGAGTGCATGACCTGAACGGCGAGTCTACCGCGGCGCTGATGGACCACCGAGTCCGCGAGAATCTGCCAGCGTGGGACCC ACCAGACCCCCACCGCCACAAAGTTCCCTGCCGAGCGTACCCCGACAAAGGCTTCGACGACAACTACTGCCGCAACCCCCGACGGCCAG CCCGCCCTGGTGCTACACCCCTGGACCCCCACACCCGCTGGGAGTACTGCGCCGACAACACCATGAACGACAC CGACGTGCCCTGGAGACCACCGAGTGCATCCAGGGCCAGGGCGAGGAGGCTACCGCGGACCGTGAACACCATCTGGAACGCGCATCCCC TGCCAGCGGCTGGGACTCCCAGTACCCCGACGAGCACGACGACATGACCCCCGAGAAACTTGTCAAGGACGCTGCGCGAGAACTACTGCC GCAACCCCCGACGGCTCGGAGTCCCCCTGGTGCTTACCCCGACGACCCCAACATCCGCGTGGGCTACTGCTCCCAGATCCCCCAACTGCGACA TGTCCCACGGCCAGGACTGCTACCGCGGCAACGGCAAGAACTACATGGGCAACCTGTCCCAGACCCGCTCGCCGCTGACCTGCTCCATG TGGGACAAGAACATGGAGGACCTGCACCGCCACATCTTCTGGGAGCCGACGCTCCAAGCTGAACGAGAACTACTGCCGCAACCCCCG ACGACGACGCCGCCCTGGTGCTACACCGCGCAACCCCGCTGATCCCCTGGGACTACTGCCCGTATCCCCTGCGAGGAGCGCAC ACCCCCCACCATCGTGAACCTGGACCACCCCGTGATCTCTGCGCCAAGACCAAGCTGCGCGTGGTGAACGCGCATCCCCACCCGCA CACATCGGCTGGATGGTGTCCCTGCGCTACCGCAACAAGCACATCTGCGCGGCGCTCCCTGATCAAGGAGTCCTGGGTGCTGACCGCCGCCAGTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGACT: ATGCTGACTACCETCATCCTGCTGCCGTGGTGTCCAAGTTCFTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAG",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cfa166aee167e487"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d53899f6be8d1246",
+      "text": "Tick this box to confirm that a figure exemplifying the gating strategy is provided in the Supplementary Information.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-38ff96256b03fee1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d66a67aee6daa119",
+      "text": "15 mL of Earle's Balanced Salt Solution (EBSS) containing 10 mM Hepes (Ca++ and Mg++, pH 7.4) was then perfused, and finally followed with 30 mL of Liver Digest Medium (Gibco by Life Technologies) to allow complete dissociation of liver cells in situ.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d6b1c49785dceb08",
+      "text": "In the spleen, eGFP+ cells are CD31+ endothelial cells or CD45+ blood cells.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6c6990e385807311"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d6d6afeb86328879",
+      "text": "Model type and settings | N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-90173e843b9faca5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d6ed46676b16c53c",
+      "text": "Their age varied between 10-12 weeks of age.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58eb81b7dd554417"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d754dfda4b8339ed",
+      "text": "Wells were then incubated with specific antibodies for 20 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-d9432f05c742f96d",
+      "text": "Outcomes | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-adcaec56feb9868d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-da42effe33492d4f",
+      "text": "Following 10-minute incubations in wash media, both fractions were washed then resuspended in PBS.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-da92b02a891f58b9",
+      "text": "Table 1 | CD45-PE efluor 610 | Cat.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b442de1c36e12ef4"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-dd3764669a7910a2",
+      "text": "The scale bar represents 200\\(\\mu\\)m for all 100X magnification images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e1fbe7fc2781550b",
+      "text": "Dead cells were eliminated using the Zombie NIR viability die.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e2dd70dff907e804",
+      "text": "Mice were anaesthetized with ketamine/xylazine and then perfused by cannulation with a 24-gauge catheter through the inferior vena cava with 30mL 1X Liver Perfusion Medium (Gibco by Life Technologies), while the portal vein was cut to allow the perfusate to flow out.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b278733bc39221ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e354af07ab01913b",
+      "text": "White arrowheads represent costained cells, while blue arrowheads represent single EdU stained cells.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b6af2ee365d8e21"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e5a846c82b310491",
+      "text": "a, b Representative flow cytometry analyses of NPC fractions from mice 5 hours after a single injection of Poly(C) RNA-LNP (n=3 mice) or eGFP mRNA-LNP (n=3 mice) are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c9be0aba61a345e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e627f7125d75db7e",
+      "text": "Histology of all lobes of each mouse livers were analyzed and 2-4 pictures taken to represent each liver.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e68937678f0c893e",
+      "text": "☐ | Involved in the study: Flow cytometry",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c1ae4abf77f860b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e694db9f9b4f9c5d",
+      "text": "Fractions were then separated into 100 μl wells and treated with 1 μg/100 μl Fc Block (BD Pharmingen #553141) for 10 minutes at room temperature.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-134017bb5686dd27"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e6a611990ba1e0f6",
+      "text": "Representative pictures obtained for 3-4 mice per group per time point are shown (100X magnification).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c4272c9f7ef9de2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e742f82784b280d4",
+      "text": "Supplementary Table 2: Sequences of nucleoside-modified mRNA",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e7276c7aa9051e05"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e75f61885cf7b2cd",
+      "text": "100X magnification pictures of representative images from 3 mice injected with eGFP-mRNA-LNP are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6c6990e385807311"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e78b0896a4f286cc",
+      "text": "Clinical trial registration | N/A ; Study protocol | N/A ; Data collection | N/A ; Outcomes | N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2669fba8033c033e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e8942b7c886368ca",
+      "text": "The hepatocyte pellet was resuspended in wash media (Hepatocyte Wash Medium by Gibco + 0.1mg/mL DNase I + 10% FBS).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e928f84699dace7e",
+      "text": "No: sc25830 (Santa Cruz); Species: Rabbit; Application: IHC-Fr; Dilution: 1:100",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6a15196a7b5120e5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e94c0f5bf716dfe5",
+      "text": "The sample size was shown to be sufficient to identify statistical differences between groups for the specific assays used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac94e725f54ca773"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-e9e5a2711d80aa38",
+      "text": "Livers were then extracted and mechanically dissociated in 10mL of Liver Digest Medium.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-eb1f4fcff52aa7af",
+      "text": "All group sizes are indicated in each figure legends.: Mice used in this study were inbred, all the same age, the same sex, and therefore about the same weight.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-da705209eff1602e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-eb29199a3dfbd9a3",
+      "text": "The sample size was shown to be sufficient to identify statistical differences between groups for the specific assays used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ed79e9070ee874a5",
+      "text": "; Commonly misidentified lines (See ICLAC register) | Name any commonly misidentified cell lines used in the study and provide a rationale for their use.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6086dceb09aa8e81"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ee776372cf461c6e",
+      "text": "Representative images from 4 mice per group per time point are shown.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ef716ebc3ca5f3a2",
+      "text": "Fractions were incubated in Zombie NIR Fixable Viability dye (1:2000, Biolegend # 423105) for 30 minutes at room temperature, washed, and resuspended in FACS buffer (2% FBS + 2mM EDTA at pH 8).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7109a88b01fd8787"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-efcc3427eeaa2081",
+      "text": "□ | Involved in the study: Human research participants",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ec11f4703eb28d70"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-f07ba66b7ff37a4d",
+      "text": "Dark grey: T0, light grey: control RNA, blue: combined mRNA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-af76dd28e21a245a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-f1bd08c110e93ce2",
+      "text": "; Tick this box to confirm that the raw and calibrated dates are available in the paper or in Supplementary Information.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b5f29363351cd9a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-f3e946cc4fe7619e",
+      "text": "The sample size was shown to be sufficient to identify statistical differences between groups for the specific assays used.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-da705209eff1602e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-faf8173bb3098e95",
+      "text": "Volume censoring | N/A: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d18a164e16095d8e"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-faf8e83983f645b6",
+      "text": "Fractions were incubated in Zombie NIR Fixable Viability dye (1:2000, Biolegend # 423105) for 30 minutes at room temperature, washed, and resuspended in FACS buffer (2% FBS + 2mM EDTA at pH 8).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-fb0963a8b19dbecc",
+      "text": "The supernatant was discarded, pellet was resuspended in wash media, and solution was added to the other collection of NPCs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a0cfc085b33aca7"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-fca2a3f2edc06628",
+      "text": "15 mL of Earle's Balanced Salt Solution (EBSS) containing 10 mM Hepes (Ca++ and Mg++, pH 7.4) was then perfused, and finally followed with 30 mL of Liver Digest Medium (Gibco by Life Technologies) to allow complete dissociation of liver cells in situ.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-661546f3220cf90d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-fceecbe397bdfd94",
+      "text": "Each dot represents one mouse.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4972fefc2bc81f66"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-fe63fc93b66d8582",
+      "text": "☐ | Involved in the study: ChiP-seq",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ed0117a146509736"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ff2b4f4842be699e",
+      "text": "| ACGAGAACAAAGGACTACATCCGCAACTGCATCATCGGCAAGGGCCGCTCCTACAAGGGCACCGTGTCCATCACCAAGTCCGGCATCAA GTGCCAGCCCCTGGTCCTCCATGATCCCCCACGAGCACTCCTTCCTGCCCTCCTCCTACCGCGGCAAGGACCTGCAGGAGAACTACTGCCG CAACCCCCCGCGCGAGGAGGGCGGCCCTGGTGCTTCACCTCCAACCCCGAGGAGGTGCGCTACGAGGTGTGCGACATCCCCCAGTGCTCC GAGGTGGAGTGCATGACCTGAACGGCGAGTCTACCGCGGCGCTGATGGACCACCGAGTCCGCGAGAATCTGCCAGCGTGGGACCC ACCAGACCCCCACCGCCACAAAGTTCCCTGCCGAGCGTACCCCGACAAAGGCTTCGACGACAACTACTGCCGCAACCCCCGACGGCCAG CCCGCCCTGGTGCTACACCCCTGGACCCCCACACCCGCTGGGAGTACTGCGCCGACAACACCATGAACGACAC CGACGTGCCCTGGAGACCACCGAGTGCATCCAGGGCCAGGGCGAGGAGGCTACCGCGGACCGTGAACACCATCTGGAACGCGCATCCCC TGCCAGCGGCTGGGACTCCCAGTACCCCGACGAGCACGACGACATGACCCCCGAGAAACTTGTCAAGGACGCTGCGCGAGAACTACTGCC GCAACCCCCGACGGCTCGGAGTCCCCCTGGTGCTTACCCCGACGACCCCAACATCCGCGTGGGCTACTGCTCCCAGATCCCCCAACTGCGACA TGTCCCACGGCCAGGACTGCTACCGCGGCAACGGCAAGAACTACATGGGCAACCTGTCCCAGACCCGCTCGCCGCTGACCTGCTCCATG TGGGACAAGAACATGGAGGACCTGCACCGCCACATCTTCTGGGAGCCGACGCTCCAAGCTGAACGAGAACTACTGCCGCAACCCCCG ACGACGACGCCGCCCTGGTGCTACACCGCGCAACCCCGCTGATCCCCTGGGACTACTGCCCGTATCCCCTGCGAGGAGCGCAC ACCCCCCACCATCGTGAACCTGGACCACCCCGTGATCTCTGCGCCAAGACCAAGCTGCGCGTGGTGAACGCGCATCCCCACCCGCA CACATCGGCTGGATGGTGTCCCTGCGCTACCGCAACAAGCACATCTGCGCGGCGCTCCCTGATCAAGGAGTCCTGGGTGCTGACCGCCGCCAGTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGCTGCTCCCTGCGACT ; EGF | ATGCTGACTACCETCATCCTGCTGCCGTGGTGTCCAAGTTCFTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAGGTGTGTCCCAGCAG",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-45c959ef50b0c1c5"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ff2e405f3588aba3",
+      "text": "4A and then injected with a single dose of HGF or EGF mRNA-LNP or combined together, while Poly(C) RNA-LNP and Luc mRNA-LNP were used as negative controls.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-31258fbd50477520"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ff474903221f36a1",
+      "text": "No: A10262 (Invitrogen); Species: Chicken; Application: IHC-Fr; Dilution: 1:300",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e715d79532ad7b3a"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-ffe4ac086b35f1f5",
+      "text": "All group sizes are indicated in each figure legends.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bd32bf9d4be0ea4a"
+      ]
+    }
+  ],
+  "packet_checksum": "17f03cf50f83f4a0198bf38e5eef4d2e8433881fa08c55e90f3fbc5bd416cb4d"
+}

@@ -1,0 +1,2313 @@
+{
+  "packet_version": "compact-api-packet-1.0.0",
+  "paper_id": "GP-002",
+  "blocked_fields": [],
+  "sources": [
+    {
+      "source_id": "FC-S-11408fdb12095cbf",
+      "chunk_id": "GP-002-B-47d59f63ebd1a6478989",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs in liver fibrosis and cirrhosis",
+      "xml_element_id": "p0080"
+    },
+    {
+      "source_id": "FC-S-192cee877b5f7ba2",
+      "chunk_id": "GP-002-B-6a950065b91fc88dca99",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Efficient delivery of mRNA-LNPs to the healthy mouse liver",
+      "xml_element_id": "p0065"
+    },
+    {
+      "source_id": "FC-S-2595afdacc091ca5",
+      "chunk_id": "GP-002-B-21371321ad04e0c321bf",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs in liver fibrosis and cirrhosis",
+      "xml_element_id": "p0085"
+    },
+    {
+      "source_id": "FC-S-2a0d4fce58560cbc",
+      "chunk_id": "GP-002-B-599ae64a87b45decb213",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0140"
+    },
+    {
+      "source_id": "FC-S-2b7a7904239daa72",
+      "chunk_id": "GP-002-B-4b773d8547aeb94e96bc",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to secondary liver tumors",
+      "xml_element_id": "p0160"
+    },
+    {
+      "source_id": "FC-S-321e0ac5ebc743c8",
+      "chunk_id": "GP-002-B-bbd3c3c0e8c364b157f1",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Efficient delivery of mRNA-LNPs to the healthy mouse liver",
+      "xml_element_id": "p0050"
+    },
+    {
+      "source_id": "FC-S-3350495d4306fad3",
+      "chunk_id": "GP-002-B-ec759093d6e5170e2322",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to spontaneous HCCs in situ",
+      "xml_element_id": "p0120"
+    },
+    {
+      "source_id": "FC-S-37fb45be12307b80",
+      "chunk_id": "GP-002-B-67df0251694ff87b3c35",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to secondary liver tumors",
+      "xml_element_id": "p0155"
+    },
+    {
+      "source_id": "FC-S-6abf3d905b4c5770",
+      "chunk_id": "GP-002-B-dbe495afba7e72701627",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0145"
+    },
+    {
+      "source_id": "FC-S-7aad2642cb3bbdf0",
+      "chunk_id": "GP-002-B-1f36eea451c52d2b4161",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0135"
+    },
+    {
+      "source_id": "FC-S-8b3a9b3d3139d3d1",
+      "chunk_id": "GP-002-B-d66fbf77b9105aebf740",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to spontaneous HCCs in situ",
+      "xml_element_id": "p0115"
+    },
+    {
+      "source_id": "FC-S-96a4d5f3155b37f1",
+      "chunk_id": "GP-002-B-a3249c7541eb45ff6a84",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0130"
+    },
+    {
+      "source_id": "FC-S-99fc8e00c41dcdf7",
+      "chunk_id": "GP-002-B-4aa9c6af146dbc5cc12c",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Efficient delivery of mRNA-LNPs to the healthy mouse liver",
+      "xml_element_id": "p0060"
+    },
+    {
+      "source_id": "FC-S-9c8997adc723ca8d",
+      "chunk_id": "GP-002-B-046d75816b57a47103a1",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to spontaneous HCCs in situ",
+      "xml_element_id": "p0110"
+    },
+    {
+      "source_id": "FC-S-aec5e74dcf65b3fd",
+      "chunk_id": "GP-002-B-2f8816ea52bba4ba8368",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to spontaneous HCCs in situ",
+      "xml_element_id": "p0105"
+    },
+    {
+      "source_id": "FC-S-c8a4f22994414fd2",
+      "chunk_id": "GP-002-B-5f52704754035f832a6a",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to secondary liver tumors",
+      "xml_element_id": "p0170"
+    },
+    {
+      "source_id": "FC-S-cfdb14172468d77f",
+      "chunk_id": "GP-002-B-37459d1976a891790a72",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to secondary liver tumors",
+      "xml_element_id": "p0150"
+    },
+    {
+      "source_id": "FC-S-d1b5e19d50beeab7",
+      "chunk_id": "GP-002-B-9515af61499a75ee72ec",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs in liver fibrosis and cirrhosis",
+      "xml_element_id": "p0075"
+    },
+    {
+      "source_id": "FC-S-d54d29012bc6c5a4",
+      "chunk_id": "GP-002-B-f3d1aa5b48d7d848368f",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0125"
+    },
+    {
+      "source_id": "FC-S-e93c5c12900c5ebf",
+      "chunk_id": "GP-002-B-7d2ecb2cf51a17b56330",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Efficient delivery of mRNA-LNPs to the healthy mouse liver",
+      "xml_element_id": "p0055"
+    },
+    {
+      "source_id": "FC-S-f53b6d8ce7cc33f1",
+      "chunk_id": "GP-002-B-87bc66c620c50eff1f30",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs in liver fibrosis and cirrhosis",
+      "xml_element_id": "p0070"
+    },
+    {
+      "source_id": "FC-S-fac22dd8c6408c03",
+      "chunk_id": "GP-002-B-fee7ddfbe7697e3e9743",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to spontaneous HCCs in situ",
+      "xml_element_id": "p0100"
+    },
+    {
+      "source_id": "FC-S-fc11a0cd962d3198",
+      "chunk_id": "GP-002-B-5cb5a2189101e5e0225b",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to secondary liver tumors",
+      "xml_element_id": "p0175"
+    },
+    {
+      "source_id": "S-012bbe0bf6f9",
+      "chunk_id": "GP-002-B-f56abdba975455879c84",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Materials and methods",
+      "subsection": "Fluorescent imaging of mouse organs",
+      "xml_element_id": "p0345"
+    },
+    {
+      "source_id": "S-176bddffa673",
+      "chunk_id": "GP-002-B-796432c5805e43f8dc48",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Discussion",
+      "xml_element_id": "p0215"
+    },
+    {
+      "source_id": "S-26e10f307860",
+      "chunk_id": "GP-002-B-fee7ddfbe7697e3e9743",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to spontaneous HCCs in situ",
+      "xml_element_id": "p0100"
+    },
+    {
+      "source_id": "S-2f987a6cad9c",
+      "chunk_id": "GP-002-B-bbd3c3c0e8c364b157f1",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Efficient delivery of mRNA-LNPs to the healthy mouse liver",
+      "xml_element_id": "p0050"
+    },
+    {
+      "source_id": "S-585870dd645c",
+      "chunk_id": "GP-002-B-6e94e637a0d4b354d4ab",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Discussion",
+      "xml_element_id": "p0190"
+    },
+    {
+      "source_id": "S-97c7f56ae012",
+      "chunk_id": "GP-002-B-c901b1424d4bdb7f4fcc",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "abstract",
+      "section": "Abstract"
+    },
+    {
+      "source_id": "S-a31dd1a6d6af",
+      "chunk_id": "GP-002-B-a3249c7541eb45ff6a84",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0130"
+    },
+    {
+      "source_id": "S-bd9f1e1d3ec1",
+      "chunk_id": "GP-002-B-6a950065b91fc88dca99",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Efficient delivery of mRNA-LNPs to the healthy mouse liver",
+      "xml_element_id": "p0065"
+    },
+    {
+      "source_id": "S-cc7b695bb98f",
+      "chunk_id": "GP-002-B-f3d1aa5b48d7d848368f",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs to a xenograft model of primary liver cancer",
+      "xml_element_id": "p0125"
+    },
+    {
+      "source_id": "S-d25fe038339a",
+      "chunk_id": "GP-002-B-375803caa3350f9b98f3",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Discussion",
+      "xml_element_id": "p0185"
+    },
+    {
+      "source_id": "S-da569d891df7",
+      "chunk_id": "GP-002-B-87bc66c620c50eff1f30",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00003_PMC13334401.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "Delivery of mRNA-LNPs in liver fibrosis and cirrhosis",
+      "xml_element_id": "p0070"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-002-E-01870361683fb062",
+      "text": "However, robust GFP expression was observed in small steatotic regions within liver and tumor sections from other animals in this cohort.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ],
+      "context_before_evidence_id": "GP-002-E-5ceef09db81ebd4f",
+      "context_after_evidence_id": "GP-002-E-2fbd517392f0ece2"
+    },
+    {
+      "evidence_id": "GP-002-E-046c83bc28babb6d",
+      "text": "We initially set out to establish a baseline for mRNA-LNP delivery to and expression in the mouse liver.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-0b285b1f5e4fd3b8",
+      "text": "The widespread immune response is consistent with previous reports describing inflammatory responses to mRNA-LNP delivery,37,38 underscoring the importance of carefully controlling for platform effects when evaluating candidate therapeutics.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-0db042087730f5ac",
+      "text": "Therefore, to investigate penetration of mRNA-LNPs into the tumor interior, we performed fluorescence imaging on cross-sections of several tumors and observed mostly uniform fluorescence intensity within the tumors (Figure S17).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ],
+      "context_before_evidence_id": "GP-002-E-49c422285072f6d4",
+      "context_after_evidence_id": "GP-002-E-8df9a9da8a2f769a"
+    },
+    {
+      "evidence_id": "GP-002-E-0e274b6631d1ac02",
+      "text": "Fluorescence scales were set to eliminate autofluorescent signal in the uninjected liver; autofluorescent signal is visualized in the colon and duodenum of both the injected and uninjected mouse.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_before_evidence_id": "GP-002-E-98179b955627a4af"
+    },
+    {
+      "evidence_id": "GP-002-E-0ec46079cefaff34",
+      "text": "Consistent with the known immunogenicity of mRNA-LNPs, particularly those formulated with SM-102,37 intense upregulation of genes involved in innate immunity was observed in the liver tissue of mRNA-injected mice relative to uninjected controls, including Irf7/Irf9, Stat1, and IfitmFITM3.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ],
+      "context_before_evidence_id": "GP-002-E-49b993f413abf2bf"
+    },
+    {
+      "evidence_id": "GP-002-E-143d03f6b9cd77b2",
+      "text": "(H) Analysis of IHC images with StainDetectAI shows that the surface area of tissue sections with detectable IHC staining is not significantly different between liver tissue and tumors (Mann-Whitney test, n = 8–25, U = 60, p = 0.1580).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-19595367b47eac20",
+      "text": "Cellular heterogeneity is a common feature of HCCs,62 and this may explain our observation that several HCCs contained tracts of cells that did not express GFP.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ],
+      "context_after_evidence_id": "GP-002-E-d9d4eda8e374fca2"
+    },
+    {
+      "evidence_id": "GP-002-E-1ac8d80dd40ecd2c",
+      "text": "(B) Strong eGFP fluorescence was visualized in all injected livers (bottom row).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-1b7a652145682c0a",
+      "text": "Fluorescent signal well above background level was observed in the livers (range 36.4–179.1, average 97.9 × 106 photons/s/cm2/sr) and liver tumors (range 54.6–408.7, average 135.4 × 106 photons/s/cm2/sr) of all mice (n = 8) (Figures 4B and 4C).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ],
+      "context_after_evidence_id": "GP-002-E-dbac646b3b59178a"
+    },
+    {
+      "evidence_id": "GP-002-E-1fafc956c2bf3706",
+      "text": "Additionally, we tested a single dosage of mRNA-LNPs in this study, using a reporter gene only; future studies should also evaluate the effect of mRNA-LNP dosage on the distribution and intensity of transgene expression across disease models, as the relative expression between liver and tumor cells may be dose dependent.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d25fe038339a"
+      ],
+      "context_before_evidence_id": "GP-002-E-e238eb236d5f878d"
+    },
+    {
+      "evidence_id": "GP-002-E-20baeb809bc2281e",
+      "text": "Previous studies have tracked the biodistribution and intracellular fate of mRNA-LNPs using fluorescent labeling of both LNPs and mRNA cargo48 and have characterized the pharmacokinetics and tissue distribution of mRNA-LNPs formulated with SM-102 and other clinically relevant ionizable lipids.46 In the present study, we measured protein expression as the functional endpoint most relevant to therapeutic applications, as it integrates all upstream delivery steps into a single readout of productive transfection.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-585870dd645c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-23eda42c2ccc6a96",
+      "text": "(B) Plot of fluorescence intensity of whole livers (n = 4) and individual tumors visible on the external surfaces of the same livers (n = 77).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_before_evidence_id": "GP-002-E-3541c75519dc9b47",
+      "context_after_evidence_id": "GP-002-E-caaa12fb2410ea56"
+    },
+    {
+      "evidence_id": "GP-002-E-2545f3f05e8483af",
+      "text": "Many nanoparticle-based carrier systems have been developed for the delivery of mRNA in vivo, with mRNA-LNPs being the most widely used.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d25fe038339a"
+      ],
+      "context_after_evidence_id": "GP-002-E-3ad549cbc0bc095a"
+    },
+    {
+      "evidence_id": "GP-002-E-26cf7c56894eae92",
+      "text": "(I) 624 genes were differentially expressed in the liver between mRNA-LNP-injected and saline-injected mice, with the significance threshold of 5 ∗ −log10 FDR.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_after_evidence_id": "GP-002-E-b68b1299d68e146d"
+    },
+    {
+      "evidence_id": "GP-002-E-2e2c1d90747074ff",
+      "text": "(2026) https://BioRender.com/hxslnmy.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-2fbd517392f0ece2",
+      "text": "This finding warrants further investigation to determine whether steatotic livers or steatotic HCCs are especially poor targets for mRNA-LNP delivery.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ],
+      "context_before_evidence_id": "GP-002-E-01870361683fb062"
+    },
+    {
+      "evidence_id": "GP-002-E-303116c9edbe34d7",
+      "text": "For mice injected with eGFP mRNA-LNPs, eGFP fluorescence for each organ was determined by subtracting the average background fluorescence from the same organ.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-012bbe0bf6f9"
+      ],
+      "context_before_evidence_id": "GP-002-E-4f8f82faf48be50f"
+    },
+    {
+      "evidence_id": "GP-002-E-33ecdcfb0b48ea86",
+      "text": "The eGFP expression measured in this study reflects the combined efficiency of LNP accumulation, cellular uptake, endosomal escape, and mRNA translation, and the relative contribution of each step may differ between healthy tissue, fibrotic liver, and tumors.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-585870dd645c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-3541c75519dc9b47",
+      "text": "There was no correlation between tumor size and fluorescence intensity (simple linear regression, R2 = 0.0661) (Figure 3C).Figure 3Delivery of mRNA-LNPs to spontaneous hepatocellular carcinomas in situ(A) Fluorescence image showing large HCCs on the livers of Mdr2−/− mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_after_evidence_id": "GP-002-E-23eda42c2ccc6a96"
+    },
+    {
+      "evidence_id": "GP-002-E-39062576eea8789d",
+      "text": "To assess the delivery of mRNA to the liver, we intravenously injected adult male mice (n = 5) with mRNA-LNPs encoding enhanced green fluorescent protein (eGFP) (Figure 1A).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_before_evidence_id": "GP-002-E-70f961590d4100fc"
+    },
+    {
+      "evidence_id": "GP-002-E-3ad549cbc0bc095a",
+      "text": "mRNA-LNPs are manufactured using four lipid components: an ionizable lipid, a phospholipid, cholesterol, and a PEG-lipid, each of which can be substituted to alter the properties of the nanoparticle.44,45 The ionizable lipid is the most consequential component, influencing mRNA encapsulation efficiency, endosomal escape, tissue tropism, and immunostimulatory profile.44,45 A small number of ionizable lipids are used in RNA-LNP products that have received regulatory approval for clinical use (including DLin-MC3-DMA, ALC-0315, and SM-102), with others currently in clinical development (notably including SM-86, used for a hepatocyte-targeted gene replacement therapy currently in clinical trials33).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d25fe038339a"
+      ],
+      "context_before_evidence_id": "GP-002-E-2545f3f05e8483af",
+      "context_after_evidence_id": "GP-002-E-c119621f23f5e2f0"
+    },
+    {
+      "evidence_id": "GP-002-E-3b62dd9a6e6a70a1",
+      "text": "(F) Immunohistochemistry for eGFP in liver tissue sections from injected mice shows strong eGFP staining in virtually all hepatocytes.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_before_evidence_id": "GP-002-E-9471eb2efe5b3304"
+    },
+    {
+      "evidence_id": "GP-002-E-3fcdf96291407274",
+      "text": "Strong and specific eGFP fluorescence was observed in the liver after 24 h via ex vivo fluorescence imaging, with measured fluorescence values around 10-fold higher than background (tissue autofluorescence) (Figures 1B and 1C).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-4097afd16c271dd7",
+      "text": "We injected eGFP mRNA-LNPs intravenously into 4 male Mdr2 knockout mice at 11 months of age, and 14 h post-injection, we observed fluorescent signal 3- to 4-fold above background in the liver tissue, albeit attenuated 2-fold relative to healthy controls (Figure 2B).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ],
+      "context_before_evidence_id": "GP-002-E-4220704b6ff8543d",
+      "context_after_evidence_id": "GP-002-E-9e73aa6c0b4a6696"
+    },
+    {
+      "evidence_id": "GP-002-E-4220704b6ff8543d",
+      "text": "Mdr2 knockout mice are unable to secrete phospholipids into the bile, resulting in the development of sclerosing cholangitis with severe liver fibrosis by early adulthood and spontaneous HCC by 1 year of age.39,40 We used the Mdr2 knockout model to evaluate mRNA-LNP delivery to the liver in the context of liver fibrosis and cirrhosis (Figure 2A).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ],
+      "context_after_evidence_id": "GP-002-E-4097afd16c271dd7"
+    },
+    {
+      "evidence_id": "GP-002-E-42628f3f3fd1d2e7",
+      "text": "(F) Representative immunohistochemistry results from Mdr2−/− mice show the range of possible outcomes for eGFP expression.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-49791dfde469692a",
+      "text": "In total, 295 genes were significantly upregulated and 323 genes significantly downregulated (Figure 1I; Table S1; Figure S6).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ],
+      "context_after_evidence_id": "GP-002-E-e3a0e979a0463d80"
+    },
+    {
+      "evidence_id": "GP-002-E-49a6a2f40b8d9978",
+      "text": "The total protein abundance in F4 mice trended higher, but this difference was not statistically significant (Welch’s t test, n = 6–11, t = 2.162(10.58), p = 0.0545).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-49b993f413abf2bf",
+      "text": "We detected abundant eGFP transcripts (averaging 1,661 counts) in the livers of mRNA-injected mice, with negligible background (average 1 count in uninjected mice), demonstrating that mRNA can persist in liver tissue for at least a day after injection (Figure 1H); the difference was significant (Mann-Whitney test, n = 5, p = 0.0079).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ],
+      "context_before_evidence_id": "GP-002-E-aeb0c96f2c90e54e",
+      "context_after_evidence_id": "GP-002-E-0ec46079cefaff34"
+    },
+    {
+      "evidence_id": "GP-002-E-49c422285072f6d4",
+      "text": "We considered the possibility that residual healthy liver tissue overlying the tumors might take up mRNA-LNPs and express eGFP, resulting in high tumor-surface fluorescence values that may not represent the uptake and expression of mRNA within the tumor interior.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ],
+      "context_before_evidence_id": "GP-002-E-dbac646b3b59178a",
+      "context_after_evidence_id": "GP-002-E-0db042087730f5ac"
+    },
+    {
+      "evidence_id": "GP-002-E-4ab141f914c09320",
+      "text": "There is moderate variation in staining intensity between hepatocytes.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-4eadabe449641104",
+      "text": "Surprisingly, there was also no correlation between the fluorescence intensity measured from the liver and tumor from the same animal (simple linear regression, R2 = 0.1620) (Figure S18B).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ],
+      "context_before_evidence_id": "GP-002-E-8df9a9da8a2f769a"
+    },
+    {
+      "evidence_id": "GP-002-E-4f8f82faf48be50f",
+      "text": "Background fluorescent signal (arising from tissue autofluorescence) was estimated for each organ by averaging the fluorescent signal obtained from that organ from 2 to 6 uninjected mice.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-012bbe0bf6f9"
+      ],
+      "context_after_evidence_id": "GP-002-E-303116c9edbe34d7"
+    },
+    {
+      "evidence_id": "GP-002-E-53aff5c835fa6911",
+      "text": "To investigate the efficacy of mRNA-LNP delivery in a physiologically relevant HCC model, we first compared eGFP expression between liver tissue and liver tumors of 11-month-old male Mdr2−/− mice using ex vivo fluorescence imaging.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_after_evidence_id": "GP-002-E-55d92e8c0bf8662e"
+    },
+    {
+      "evidence_id": "GP-002-E-53f0c5140e2d85fe",
+      "text": "(2026) https://BioRender.com/kbvlul3.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-5413eefe61729990",
+      "text": "The abundance of eGFP protein in tumors was not significantly different from liver tissue (Welch’s t test, n = 4–21, t = 1.519(21.99), p = 0.1430).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_before_evidence_id": "GP-002-E-7f7c1b727e7a1064"
+    },
+    {
+      "evidence_id": "GP-002-E-55d92e8c0bf8662e",
+      "text": "Notably, many liver tumors were evident on the external surfaces of the livers (Figure S10), including several large tumors with increased fluorescence relative to the surrounding liver tissue (Figures 2B and 3A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_before_evidence_id": "GP-002-E-53aff5c835fa6911",
+      "context_after_evidence_id": "GP-002-E-fec0dc9730302574"
+    },
+    {
+      "evidence_id": "GP-002-E-56cc202984973c03",
+      "text": "(C) There is no correlation between the external surface area of liver tumors and the fluorescence intensity (simple linear regression, F(1,75) = 5.308, p = 0.0240, R2 = 0.06609).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-571b7a43dc9fcd0d",
+      "text": "(G) Representative IHC images show a range of possible outcomes for eGFP expression in tumor tissue, including broadly good delivery, variability in staining intensity between adjacent cells and between different regions of the image, and borders between stained and unstained regions of the tumor, which are otherwise similar in appearance.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-593b2d423e636af6",
+      "text": "(D) Western blotting detects eGFP from livers and tumors of 4 Mdr2−/− mice 11 months of age.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-5ceef09db81ebd4f",
+      "text": "Interestingly, we found one steatotic HCC among the Mdr2−/− tumors, and GFP expression was virtually absent from this tumor.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ],
+      "context_after_evidence_id": "GP-002-E-01870361683fb062"
+    },
+    {
+      "evidence_id": "GP-002-E-65ca6902848a1e56",
+      "text": "Mdr2−/− mice develop HCCs with age, and we therefore examined reporter expression in spontaneous HCCs in situ.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-694f6202c96a5e56",
+      "text": "(2026) https://BioRender.com/y17kh8g.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-6abf944c050b0fdf",
+      "text": "Our study also systematically investigated mRNA-LNP delivery to liver cancer.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-70f961590d4100fc",
+      "text": "We selected a formulation for mRNA-LNPs based on the ionizable lipid SM-102, which is approved for clinical use.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_after_evidence_id": "GP-002-E-39062576eea8789d"
+    },
+    {
+      "evidence_id": "GP-002-E-75cce31573e9d35b",
+      "text": "Figure partially created in BioRender.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c",
+        "S-cc7b695bb98f",
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-787c2c065a0efa09",
+      "text": "(J) Gene networks induced in the liver by mRNA-LNP injection; upregulated genes cluster into antigen-processing and interferon-response networks.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-79f081f530cee320",
+      "text": "(D) Western blotting detects eGFP from the liver tissue of 17 Mdr2−/− mice, with substantial variation between individuals in the quantity of eGFP protein and reduced protein abundance relative to healthy BALB/c mice.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ],
+      "context_after_evidence_id": "GP-002-E-9875850ee3277850"
+    },
+    {
+      "evidence_id": "GP-002-E-7ca924ca9db44ac3",
+      "text": "Leighton, L.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860",
+        "S-2f987a6cad9c",
+        "S-cc7b695bb98f",
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-7d8ad7b78ea7790a",
+      "text": "(G) Analysis of IHC images with StainDetectAI found that mice with severe fibrosis (F3) had detectable eGFP staining across a higher surface area compared to mice with cirrhosis (F4) (Mann-Whitney test, n = 6–11, U = 12, p = 0.0365).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-7f7c1b727e7a1064",
+      "text": "(E) Quantitation of eGFP protein expression determined by western blotting, showing greater variability in protein expression in tumors (n = 21) than in liver tissue (n = 4).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_before_evidence_id": "GP-002-E-b3fca0bd4c71d72e",
+      "context_after_evidence_id": "GP-002-E-5413eefe61729990"
+    },
+    {
+      "evidence_id": "GP-002-E-838d02d3fd7fe045",
+      "text": "(C) Ex vivo fluorescence imaging of organs from a GFP-injected Mdr2−/− mouse shows that attenuation of mRNA-LNP delivery to the liver does not result in broadly altered biodistribution of eGFP protein expression.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-84650715668d0957",
+      "text": "(I) Quantification of IHC surface area positive for eGFP separated by animal; the red point in each column represents the stained surface area in liver tissue, and the black points represent the tumors from the same animal.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-8df9a9da8a2f769a",
+      "text": "We also expected that mRNA-LNP penetration might be better in small tumors than in large tumors, but we found that there was no correlation between tumor size (measured by area of the region of interest drawn around the tumor) and fluorescence intensity (simple linear regression, R2 = 0.0002) (Figure S18A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ],
+      "context_before_evidence_id": "GP-002-E-0db042087730f5ac",
+      "context_after_evidence_id": "GP-002-E-4eadabe449641104"
+    },
+    {
+      "evidence_id": "GP-002-E-919bac300948d680",
+      "text": "eGFP was not detected in serum from any of 6 injected mice tested (Figure S2), confirming that eGFP is not secreted into the bloodstream and that no spurious signal is expected to arise from blood.Figure 1Efficient delivery of mRNA-LNPs to the healthy mouse liver(A) We injected 5 healthy mice with 10 μg eGFP mRNA-LNPs via the tail vein and investigated reporter expression after 24 h.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-926497e69d791789",
+      "text": "We found that GFP was expressed in HCCs with a similar distribution and intensity to its expression in the liver tissue from the same animal.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-9361c2e6eaa29de5",
+      "text": "Error bars represent mean ± SEM.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860",
+        "S-2f987a6cad9c",
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-93abe08615853382",
+      "text": "(H) eGFP transcripts were readily detected in mouse liver tissue 24 h after injection, with mapped transcript counts between approximately 1,000 and 2,300; this was significantly different from control with an average of one count (Mann-Whitney test, n = 5, U = 0, p = 0.0079).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-94196bef2463a6ea",
+      "text": "Delivery of mRNA is also possible in xenograft models of both primary and secondary liver cancer, albeit with attenuated protein expression relative to the normal liver.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [
+        "GP-002-E05",
+        "GP-002-E06"
+      ],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_before_evidence_id": "GP-002-E-dc0118d76b03a7c4",
+      "context_after_evidence_id": "GP-002-E-f2934d96b8db91bb"
+    },
+    {
+      "evidence_id": "GP-002-E-9471eb2efe5b3304",
+      "text": "(E) Western blotting detects a strong band corresponding to eGFP in the livers of mice injected with eGFP mRNA-LNPs; no band is detected in liver tissue of uninjected mice.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_after_evidence_id": "GP-002-E-3b62dd9a6e6a70a1"
+    },
+    {
+      "evidence_id": "GP-002-E-98179b955627a4af",
+      "text": "(C) Ex vivo fluorescence imaging of organs from injected and uninjected mice shows specificity of eGFP expression in the liver.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_after_evidence_id": "GP-002-E-0e274b6631d1ac02"
+    },
+    {
+      "evidence_id": "GP-002-E-9875850ee3277850",
+      "text": "(E) Quantification of eGFP protein expression from western blotting showing greater variability in protein expression for Mdr2−/− mice with a fibrosis score of F4 (cirrhosis) relative to F3 (severe fibrosis).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ],
+      "context_before_evidence_id": "GP-002-E-79f081f530cee320"
+    },
+    {
+      "evidence_id": "GP-002-E-9b286fa93ff9e585",
+      "text": "Notably, green fluorescent signal in the digestive tract likely arises from gut contents36 and does not indicate the presence of eGFP (Figure S1).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_before_evidence_id": "GP-002-E-9fa1cf6ce41bf82a"
+    },
+    {
+      "evidence_id": "GP-002-E-9e73aa6c0b4a6696",
+      "text": "Biodistribution of eGFP fluorescence in Mdr2 knockout mice was comparable to that observed in healthy BALB/c mice (Figures 2C, S1, and S2), indicating that off-target expression of the mRNA in other organs and tissues is not increased in the presence of liver injury.Figure 2Delivery of mRNA-LNPs in liver fibrosis and cirrhosis(A) We injected Mdr2−/− mice with 10 μg eGFP mRNA-LNPs via the tail vein and investigated reporter expression.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ],
+      "context_before_evidence_id": "GP-002-E-4097afd16c271dd7",
+      "context_after_evidence_id": "GP-002-E-f0770b5be836544a"
+    },
+    {
+      "evidence_id": "GP-002-E-9fa1cf6ce41bf82a",
+      "text": "Western blotting detected eGFP protein strongly from the liver tissue of these mice (Figure 1E), and in one healthy mouse from which additional organs were blotted, eGFP was also detected in the spleen (Figure S1).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_after_evidence_id": "GP-002-E-9b286fa93ff9e585"
+    },
+    {
+      "evidence_id": "GP-002-E-a05b83891b9d2e70",
+      "text": "Autofluorescent signal was detected from the brain and gut tissues of all mice including healthy and uninjected controls.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-addd8ad59607ca86",
+      "text": "We next investigated delivery of mRNA-LNPs in a physiologically relevant mouse model of progressive liver injury.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-aeb0c96f2c90e54e",
+      "text": "To determine whether the mRNA-LNP platform impacts on liver gene expression, we sequenced RNA from liver tissue of healthy mice injected with eGFP mRNA-LNPs (n = 5) and saline-injected controls (n = 5) 24 h after injection.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ],
+      "context_before_evidence_id": "GP-002-E-c3cbd549145ec1d9",
+      "context_after_evidence_id": "GP-002-E-49b993f413abf2bf"
+    },
+    {
+      "evidence_id": "GP-002-E-b3fca0bd4c71d72e",
+      "text": "The quantity of eGFP protein detected from tumors is broadly comparable to that detected from livers and also shows variation.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_after_evidence_id": "GP-002-E-7f7c1b727e7a1064"
+    },
+    {
+      "evidence_id": "GP-002-E-b68b1299d68e146d",
+      "text": "These included interferon response factors (Irf7, Irf9, Ifitm3, and Isg15) and the cytokine-responsive transcription factor Stat1.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ],
+      "context_before_evidence_id": "GP-002-E-26cf7c56894eae92"
+    },
+    {
+      "evidence_id": "GP-002-E-bbea9dc0615523e4",
+      "text": "(D) Quantitation of background-subtracted eGFP fluorescence confirms the strong and specific detection of eGFP in the livers of eGFP-injected mice (Welch’s t test, n = 4–5, t = 20.25(4.117), p < 0.0001).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-bc4332deb8128658",
+      "text": "Data analysis was performed using LivingImage 4.7.4 (PerkinElmer).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-012bbe0bf6f9"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-c119621f23f5e2f0",
+      "text": "In this study, we used SM-102, which is among the most extensively characterized ionizable lipids in the preclinical mRNA literature, facilitating direct comparison with existing and future studies.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d25fe038339a"
+      ],
+      "context_before_evidence_id": "GP-002-E-3ad549cbc0bc095a"
+    },
+    {
+      "evidence_id": "GP-002-E-c3cbd549145ec1d9",
+      "text": "An important consideration for the safety and efficacy of mRNA-LNP therapeutics delivered via the intravenous route is the induction of an immune response, and potentially other off-target gene expression, in the liver.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ],
+      "context_after_evidence_id": "GP-002-E-aeb0c96f2c90e54e"
+    },
+    {
+      "evidence_id": "GP-002-E-c465d031490bf563",
+      "text": "Note poor delivery to a lung adenocarcinoma (blue; eGFP not detected above background level) and a steatotic HCC (green; eGFP detection marginal.) Figure partially created in BioRender.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-c57ed8ecc1e89683",
+      "text": "(F) Quantitation of eGFP protein separated by animal; the red point in each column represents the eGFP abundance in liver tissue, and the black points represent the tumors from the same animal.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-caaa12fb2410ea56",
+      "text": "There was no significant difference in fluorescence intensity between livers and tumors (Mann-Whitney test, n = 4–77, U = 146, p = 0.8738).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_before_evidence_id": "GP-002-E-23eda42c2ccc6a96"
+    },
+    {
+      "evidence_id": "GP-002-E-ce8ccacbfde90c28",
+      "text": "Background-subtracted fluorescence (radiant efficiency) of whole livers was significantly different between mRNA-injected and uninjected mice (Student’s t test, n = 4–5, p < 0.0001) (Figure 1D).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-d241134ddca62444",
+      "text": "Secondary liver cancer, arising from metastasis of other cancers to the liver, is a common complication of advanced solid cancers and a significant cause of cancer-related morbidity and mortality.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_before_evidence_id": "GP-002-E-fab23aeec9af8063",
+      "context_after_evidence_id": "GP-002-E-f6cd0666e6f8878f"
+    },
+    {
+      "evidence_id": "GP-002-E-d9d4eda8e374fca2",
+      "text": "It would be valuable for future work to explore sequential delivery of multiple reporter mRNA-LNPs in order to determine whether repeated dosing of mRNA-LNPs would target the same or different cell populations.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ],
+      "context_before_evidence_id": "GP-002-E-19595367b47eac20"
+    },
+    {
+      "evidence_id": "GP-002-E-dbac646b3b59178a",
+      "text": "There was no significant difference in fluorescent signal between liver tissue and tumors (paired t test, n = 8, p = 0.3496).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ],
+      "context_before_evidence_id": "GP-002-E-1b7a652145682c0a",
+      "context_after_evidence_id": "GP-002-E-49c422285072f6d4"
+    },
+    {
+      "evidence_id": "GP-002-E-dc0118d76b03a7c4",
+      "text": "Here, we show that intravenous delivery of mRNA lipid nanoparticles (LNPs) efficiently transfects virtually all hepatocytes in healthy, fibrotic, and cirrhotic liver and also many cells of spontaneous hepatocellular carcinomas in situ.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [
+        "GP-002-E01",
+        "GP-002-E02",
+        "GP-002-E03",
+        "GP-002-E04"
+      ],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_after_evidence_id": "GP-002-E-94196bef2463a6ea"
+    },
+    {
+      "evidence_id": "GP-002-E-df91a9a2b19871c4",
+      "text": "Messenger RNA (mRNA) therapeutics are readily delivered to the healthy liver after systemic administration, but their uptake and expression within liver tumors are unclear.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_before_evidence_id": "GP-002-E-f6cd0666e6f8878f"
+    },
+    {
+      "evidence_id": "GP-002-E-e0f44af3bfab76bb",
+      "text": "To investigate the delivery of mRNA-LNPs to the tumors, we first used ex vivo fluorescent imaging of the eGFP reporter.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a31dd1a6d6af"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-e19112e439b14875",
+      "text": "To obtain numerical data for fluorescence of organs and tissues, a region of interest (ROI) was drawn around each tissue or organ and the fluorescence (average radiant efficiency) was recorded.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-012bbe0bf6f9"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-e238eb236d5f878d",
+      "text": "Importantly, while DLin-MC3-DMA was developed for targeted delivery of small interfering RNAs (siRNAs) to hepatocytes, SM-102 outperformed it for expression of an mRNA reporter gene.46,47 It should be noted that delivery efficiency, biodistribution, and immunostimulatory profile can vary across ionizable lipid formulations,38 and the findings of this study may not generalize to other LNP formulations; evaluation of alternative formulations represents a valuable direction for future work.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d25fe038339a"
+      ],
+      "context_after_evidence_id": "GP-002-E-1fafc956c2bf3706"
+    },
+    {
+      "evidence_id": "GP-002-E-e3a0e979a0463d80",
+      "text": "Notably, PD-L1 (Cd274) was significantly upregulated in liver cells following mRNA-LNP treatment (Welch’s t test, n = 5, p < 0.0001), substantiating recent reports that mRNA-LNP administration can increase checkpoint ligand expression.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-bd9f1e1d3ec1"
+      ],
+      "context_before_evidence_id": "GP-002-E-49791dfde469692a"
+    },
+    {
+      "evidence_id": "GP-002-E-eef7eff7122da74c",
+      "text": "While a small number of reports previously described the use of mRNA-LNP-based therapies to treat liver cancer in animal models,58,59,60,61 the encoded therapeutic proteins act through non-cell-autonomous mechanisms of action, and delivery of mRNA-LNPs to tumor cells was unclear.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-176bddffa673"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-f0770b5be836544a",
+      "text": "(B) Moderately strong eGFP fluorescence was evident in all injected livers; the fluorescence intensity was reduced compared to a healthy control injected with the same mRNA-LNPs at the same time.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-da569d891df7"
+      ],
+      "context_before_evidence_id": "GP-002-E-9e73aa6c0b4a6696"
+    },
+    {
+      "evidence_id": "GP-002-E-f2934d96b8db91bb",
+      "text": "These findings demonstrate the potential for systemically delivered mRNA-LNP therapies for liver disease and cancer.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_before_evidence_id": "GP-002-E-94196bef2463a6ea"
+    },
+    {
+      "evidence_id": "GP-002-E-f6cd0666e6f8878f",
+      "text": "Existing treatment options for advanced primary and secondary liver tumors have limited efficacy, and new treatment modalities have the potential to improve patient outcomes.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_before_evidence_id": "GP-002-E-d241134ddca62444",
+      "context_after_evidence_id": "GP-002-E-df91a9a2b19871c4"
+    },
+    {
+      "evidence_id": "GP-002-E-fa82ad908aaf2ac9",
+      "text": "(G) Quantification of GFP-positive surface area for IHC sections in GFP-injected mice shows extremely high coverage of liver tissue, with very low background in uninjected mice (Welch’s t test, n = 5, t = 84.81(4.204), p < 0.0001).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-2f987a6cad9c"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-fab23aeec9af8063",
+      "text": "Primary liver cancer is the sixth most prevalent cancer globally and is often diagnosed late, when treatment options are limited.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-97c7f56ae012"
+      ],
+      "context_after_evidence_id": "GP-002-E-d241134ddca62444"
+    },
+    {
+      "evidence_id": "GP-002-E-fec0dc9730302574",
+      "text": "The average fluorescence of the tumors (262.6 × 106 photons/s/cm2/sr) was not significantly different from that of the liver tissue (97.1 × 106 photons/s/cm2/sr) (Mann-Whitney test, n = 4–77, p = 0.8738) (Figures 3B and S11).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-26e10f307860"
+      ],
+      "context_before_evidence_id": "GP-002-E-55d92e8c0bf8662e"
+    },
+    {
+      "evidence_id": "GP-002-FC-00f2de1a5a1a8cbc",
+      "text": "This restricted delivery pattern suggests that mRNA-LNP therapeutics for HCC could be administered systemically with limited extrahepatic off-target activity.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3350495d4306fad3"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-03c9aaf748256859",
+      "text": "We again used fluorescence imaging of tumor cross-sections to confirm mRNA expression within tumor interiors (Figure S23).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-37fb45be12307b80"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-04638f74e453450c",
+      "text": "Qualitatively, the blood vessel density in both xenografts appeared lower than in healthy liver tissue (Figure S21B).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c8a4f22994414fd2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-052d29c17a3f7c6d",
+      "text": "The modest reduction in blood vessel density observed in tumors relative to healthy liver could, in principle, reduce the opportunity for LNP extravasation into tumor tissue.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8b3a9b3d3139d3d1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-0b9683203f433df8",
+      "text": "(B) Ex vivo fluorescent imaging of entire livers with xenograft-derived tumors shows strong eGFP fluorescence in the liver tissue and also the tumors, marked by expression of mCherry.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d54d29012bc6c5a4"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-10548c050a9bdbed",
+      "text": "We considered the possibility that residual healthy liver tissue overlying the tumors might take up mRNA-LNPs and express eGFP, resulting in high tumor-surface fluorescence values that may not represent the uptake and expression of mRNA within the tumor interior.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-96a4d5f3155b37f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-10ce5060f71052ae",
+      "text": "Expression of eGFP was substantially weaker in the HuH-7 tumors relative to the adjacent liver tissue.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7aad2642cb3bbdf0"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-12bc31535bd7c992",
+      "text": "There was no significant difference in eGFP protein abundance between liver tissue and tumors in the A549 group (range 4.2–89.3 and average 37.6 in liver, range 5.9–67.5 and average 33.6 in tumors) (paired t test, n = 8, p = 0.4920) (Figure 5G).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b7a7904239daa72"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-14b3f38a567e0b00",
+      "text": "Background-subtracted fluorescence (radiant efficiency) of whole livers was significantly different between mRNA-injected and uninjected mice (Student’s t test, n = 4–5, p < 0.0001) (Figure 1D).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-321e0ac5ebc743c8"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-179d507bd33c279b",
+      "text": "Protein expression was significantly lower in the tumor samples than in the liver tissue (range 16.3–104.9 and average 45.3 in the liver and range 4.7–30.0 and average 14.9 in the tumors) (paired t test, n = 8, p = 0.0158) (Figure 4E).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7aad2642cb3bbdf0"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-1af05685e4f0c875",
+      "text": "The model has a specificity of 98% and sensitivity of 92%, with an overall prediction accuracy of 95%.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-99fc8e00c41dcdf7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-1bbaef8febe1c62d",
+      "text": "In mice, Ldlr transcripts were significantly downregulated in fibrosis/cirrhosis compared to healthy liver (Kruskal-Wallis test with Dunn’s post hoc, n = 29–112, p = 0.0041.) However, in human data, LDLR copy number was increased in fibrotic liver (Kruskal-Wallis test with Dunn’s post hoc, n = 20–362, p < 0.0001) but unchanged in cirrhosis (Kruskal-Wallis test with Dunn’s post hoc, n = 73–262, p > 0.9999) (Figures S9C and S9D).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2595afdacc091ca5"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-1d4140e4bd2bfb97",
+      "text": "(D) Western blotting detects eGFP from the liver tissue of 17 Mdr2−/− mice, with substantial variation between individuals in the quantity of eGFP protein and reduced protein abundance relative to healthy BALB/c mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-1e0fe00e0b1b75f4",
+      "text": "To determine whether differential expression of LDLR could explain differential uptake of mRNA-LNPs between healthy and diseased liver tissue, we performed IHC for LDLR in healthy mice and Mdr2−/− mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2595afdacc091ca5"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-24d130dcc0e24aad",
+      "text": "We manually counted nuclei from one 500 × 500 pixel field of view and compared the nuclei count (a proxy for cell density) between healthy liver, cirrhotic liver, tumors of Mdr2−/− mice, and xenografted tumors (Figure S21A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2a0d4fce58560cbc"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-2586a3e3c458d706",
+      "text": "Figure partially created in BioRender.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d54d29012bc6c5a4"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-29edf2b1149ec7e6",
+      "text": "To determine whether mRNA-LNPs are delivered to liver tumor xenografts as in spontaneously occurring HCCs, we established an orthotopic xenograft model using HuH-7 human HCC cells modified to constitutively express mCherry and firefly luciferase (Figure S16).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d54d29012bc6c5a4"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-2aa35356c5487ee5",
+      "text": "We also considered the potential impact on tissue architecture, and specifically tumor cell density, on the extravasation of LNPs and subsequent reporter delivery after observing that the xenografts consisted of small, tightly packed cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2a0d4fce58560cbc"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-2ba0807d3e8d2130",
+      "text": "Transfection of hepatocytes was widespread in most livers (Figures 2F and S7).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d1b5e19d50beeab7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-2d648b6b0461dc81",
+      "text": "Figure partially created in BioRender.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cfdb14172468d77f"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-2e37264d5195db6e",
+      "text": "We next investigated delivery of mRNA-LNPs in a physiologically relevant mouse model of progressive liver injury.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3386529a4b41301b",
+      "text": "Using StainDetectAI, we found that the total surface area of liver tissue positive for GFP staining (quantified using StainDetectAI) ranged from 26% to 84% across all 17 mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d1b5e19d50beeab7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-36e44e585e8d5378",
+      "text": "Figure partially created in BioRender.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-370c71d6f8a5afa2",
+      "text": "Cells were engrafted into the livers of BALB/c nude mice by single direct injection (n = 8–9), and after approximately 2 weeks, mice were injected with 10 μg of eGFP mRNA-LNPs via the tail vein and then culled 24 h later for tissue collection and imaging (Figure 5A).Figure 5Delivery of mRNA-LNPs to secondary liver tumors(A) We surgically engrafted A549 (human lung adenocarcinoma) and HCT116 (human colorectal carcinoma) cells, which constitutively express mCherry, into the livers of BALB/c nude mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cfdb14172468d77f"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3970bf30a3364417",
+      "text": "Qualitatively, the blood vessel density of HuH-7 xenograft tumors was comparable to that of healthy liver tissue (Figure S21B).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2a0d4fce58560cbc"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3b3427524f0f0541",
+      "text": "(G) Quantitation of eGFP protein expression determined by western blotting showed broadly comparable protein abundance in A549-derived tumors relative to liver tissue (paired t test, n = 8, t = 0.7250(7), p = 0.4920).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cfdb14172468d77f"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3ba60eca71a22bf3",
+      "text": "Unlike either cirrhotic liver or spontaneous HCCs of the Mdr2−/− mice, tumors derived from HuH-7 xenografts contained significantly more nuclei per unit area than healthy liver tissue (Dunnett’s T3 multiple comparisons test, n = 3, adjusted p = 0.0021), indicating dense packing of cells within the xenograft that is expected to have negatively impacted LNP extravasation and reporter expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2a0d4fce58560cbc"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3d01e47feeb628c1",
+      "text": "Given that angiogenesis is a feature of HCC and that changes to tissue vascularity are a feature of the Mdr2 knockout mouse model,42 we investigated tissue vascularity by counting the number of blood vessels observed in 5 mm2 of tissue (Figure S15).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8b3a9b3d3139d3d1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3d91924f7cc49dea",
+      "text": "(G) Representative IHC images show a range of possible outcomes for eGFP expression in tumor tissue, including broadly good delivery, variability in staining intensity between adjacent cells and between different regions of the image, and borders between stained and unstained regions of the tumor, which are otherwise similar in appearance.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fac22dd8c6408c03"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3da42d5af8b60330",
+      "text": "Fluorescence scales were set to eliminate autofluorescent signal in the uninjected liver; autofluorescent signal is visualized in the colon and duodenum of both the injected and uninjected mouse.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-321e0ac5ebc743c8"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3edafaf170554db3",
+      "text": "To investigate the delivery of mRNA-LNPs to the tumors, we first used ex vivo fluorescent imaging of the eGFP reporter.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-96a4d5f3155b37f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-3ef35e57e68a6937",
+      "text": "We used the METAVIR scoring system to assess the extent of liver fibrosis based on H&E-stained liver tissue sections (Figure S7); out of 17 mice, 6 received a score of F3 (severe fibrosis) and 11 were scored F4 (cirrhosis).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-11408fdb12095cbf"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-444c8c239fc9eae9",
+      "text": "(F) Representative immunohistochemistry results from Mdr2−/− mice show the range of possible outcomes for eGFP expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-455252677cb64829",
+      "text": "In total, 295 genes were significantly upregulated and 323 genes significantly downregulated (Figure 1I; Table S1; Figure S6).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-192cee877b5f7ba2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-480a2c26b2d48087",
+      "text": "One possible explanation for this result is that mice with more severe disease have more of the liver section surface area occupied by fibrotic bands, resulting in reduced hepatocyte surface area.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-11408fdb12095cbf"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-4ebd59db853d7de3",
+      "text": "There was no significant difference between the average amount of eGFP protein detected in tumors and liver tissue (Welch’s t test, n = 4–21, p = 0.1430) (Figure 3E).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-aec5e74dcf65b3fd"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-522e171671ceb0a3",
+      "text": "Notably, PD-L1 (Cd274) was significantly upregulated in liver cells following mRNA-LNP treatment (Welch’s t test, n = 5, p < 0.0001), substantiating recent reports that mRNA-LNP administration can increase checkpoint ligand expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-192cee877b5f7ba2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-550c30311f263411",
+      "text": "In HCT116-derived tumors, fluorescence is significantly reduced relative to liver tissue (paired t test, n = 8, t = 7.293(7), p = 0.0002).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cfdb14172468d77f"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-57caab4816bde47d",
+      "text": "Notably, many liver tumors were evident on the external surfaces of the livers (Figure S10), including several large tumors with increased fluorescence relative to the surrounding liver tissue (Figures 2B and 3A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fac22dd8c6408c03"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-598d15702f026b9c",
+      "text": "(B and C) Ex vivo fluorescent imaging of entire livers with xenograft-derived tumors shows strong eGFP fluorescence in both liver tissue and tumors (marked by expression of mCherry).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cfdb14172468d77f"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-5f20a9dff1367fa1",
+      "text": "Biodistribution of eGFP fluorescence in Mdr2 knockout mice was comparable to that observed in healthy BALB/c mice (Figures 2C, S1, and S2), indicating that off-target expression of the mRNA in other organs and tissues is not increased in the presence of liver injury.Figure 2Delivery of mRNA-LNPs in liver fibrosis and cirrhosis(A) We injected Mdr2−/− mice with 10 μg eGFP mRNA-LNPs via the tail vein and investigated reporter expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-5f30d3a1f0562387",
+      "text": "Expression of LDLR in A549 and HCT116 tumors was examined by IHC from 3 representative mice per cell line.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c8a4f22994414fd2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-5fc4aab84b7323e0",
+      "text": "Given the variability in disease severity between individual mice, we next evaluated eGFP mRNA expression relative to the severity of liver disease.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-11408fdb12095cbf"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-5fc52f0b7ee2d74c",
+      "text": "These results demonstrate that it is possible to deliver mRNA-LNPs to orthotopic xenograft models of primary liver cancer; however, the tumors showed less cell-to-cell variation in protein expression level and less overall protein expression relative to the spontaneously occurring HCCs of Mdr2−/− mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7aad2642cb3bbdf0"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-610f984af1323160",
+      "text": "mRNA-LNP uptake within secondary liver tumors substantially increases the potential scope of mRNA therapeutics for cancer.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fc11a0cd962d3198"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-62d1c25e36029836",
+      "text": "Mice received either 2 or 3 injections in total; as eGFP protein has a half-life of approximately 24 h,43 the detected signal predominantly reflects expression from the final dose.Figure 4Delivery of mRNA-LNPs to a xenograft model of primary liver cancer(A) We surgically engrafted HuH-7 human HCC cells, which constitutively express mCherry, into the livers of BALB/c nude mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d54d29012bc6c5a4"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-688180e464312335",
+      "text": "This demonstrated the efficient uptake and expression of mRNA by the healthy liver and provided a basis for comparison of the results in diseased liver.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e93c5c12900c5ebf"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-69d7931f38bb6a36",
+      "text": "Both factors may have impeded LNP extravasation and may partially explain weaker expression of eGFP in these tumors.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c8a4f22994414fd2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-6c49814a2297802a",
+      "text": "The widespread immune response is consistent with previous reports describing inflammatory responses to mRNA-LNP delivery,37,38 underscoring the importance of carefully controlling for platform effects when evaluating candidate therapeutics.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-192cee877b5f7ba2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-6e82079ab6a2cd40",
+      "text": "Note poor delivery to a lung adenocarcinoma (blue; eGFP not detected above background level) and a steatotic HCC (green; eGFP detection marginal.) Figure partially created in BioRender.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fac22dd8c6408c03"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-70fe18ac2dc9b4fc",
+      "text": "Mdr2−/− tumors had slightly fewer blood vessels than healthy liver (Dunn’s test, n = 9–23, p = 0.0131).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8b3a9b3d3139d3d1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-71d7eb10c40973a9",
+      "text": "(G) Analysis of IHC images with StainDetectAI found that mice with severe fibrosis (F3) had detectable eGFP staining across a higher surface area compared to mice with cirrhosis (F4) (Mann-Whitney test, n = 6–11, U = 12, p = 0.0365).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-726b97f55a2eb62b",
+      "text": "To determine whether the mRNA-LNP platform impacts on liver gene expression, we sequenced RNA from liver tissue of healthy mice injected with eGFP mRNA-LNPs (n = 5) and saline-injected controls (n = 5) 24 h after injection.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-192cee877b5f7ba2"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-73bff18b14386f53",
+      "text": "eGFP was not detected in serum from any of 6 injected mice tested (Figure S2), confirming that eGFP is not secreted into the bloodstream and that no spurious signal is expected to arise from blood.Figure 1Efficient delivery of mRNA-LNPs to the healthy mouse liver(A) We injected 5 healthy mice with 10 μg eGFP mRNA-LNPs via the tail vein and investigated reporter expression after 24 h.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-321e0ac5ebc743c8"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-74836921bc3f40c0",
+      "text": "These findings demonstrate that intravenous delivery of mRNA-LNPs results in specific expression within most hepatocytes and many cells within spontaneously occurring HCCs in situ, with minimal delivery to other organs and tissues, likely including other cancers.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3350495d4306fad3"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-760e2377e54d62b0",
+      "text": "However, the staining intensity and the proportion of transfected cells were both reduced relative to healthy livers (shown in Figure 1F), and staining was marginal to absent within fibrotic bands, demonstrating that extensive fibrosis reduces but does not ablate mRNA-LNP delivery efficiency.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d1b5e19d50beeab7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-7834c5339cd9e2b1",
+      "text": "We again used our custom model StainDetectAI to determine the percentage of tumor section surface area that exhibited positive GFP staining and found that surface area staining of spontaneous HCCs ranged from 43.7% to 88.7% (Figures 3H and 3I).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9c8997adc723ca8d"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-7935ac5ad1256fe4",
+      "text": "We also expected that mRNA-LNP penetration might be better in small tumors than in large tumors, but we found that there was no correlation between tumor size (measured by area of the region of interest drawn around the tumor) and fluorescence intensity (simple linear regression, R2 = 0.0002) (Figure S18A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-96a4d5f3155b37f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-7952fd7163a6618f",
+      "text": "Surprisingly, there was also no correlation between the fluorescence intensity measured from the liver and tumor from the same animal (simple linear regression, R2 = 0.1620) (Figure S18B).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-96a4d5f3155b37f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-7ac63b16235afe92",
+      "text": "(C) Ex vivo fluorescence imaging of organs from a GFP-injected Mdr2−/− mouse shows that attenuation of mRNA-LNP delivery to the liver does not result in broadly altered biodistribution of eGFP protein expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f53b6d8ce7cc33f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-7c5dd449ba3afcc4",
+      "text": "eGFP fluorescence was not detected in these small lung metastases above the background fluorescence level of normal lung tissue (Figure S22), suggesting that the location of the tumor in the liver is necessary for mRNA-LNP uptake and expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6abf3d905b4c5770"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-84f1fd57dfdbb6a6",
+      "text": "This shows that the difference in distribution of mRNA expression between F3 and F4 animals is not merely a function of the increased surface area of fibrotic bands.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-11408fdb12095cbf"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-873d71975bf645e8",
+      "text": "There was no correlation between tumor size and fluorescence intensity (simple linear regression, R2 = 0.0661) (Figure 3C).Figure 3Delivery of mRNA-LNPs to spontaneous hepatocellular carcinomas in situ(A) Fluorescence image showing large HCCs on the livers of Mdr2−/− mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fac22dd8c6408c03"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-FC-8fe9b2db94c602ae",
+      "text": "Similarly, in the HCT116 group, there was no significant difference in eGFP abundance between liver and tumors, although the abundance in tumors trended lower (range 6.8–86.9 and average 32.3 in liver, range 2.9–35.1 and average 14.9 in tumors) (paired t test, n = 8, p = 0.0601) (Figure 5G).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2b7a7904239daa72"
+      ]
+    }
+  ],
+  "packet_checksum": "8fe8234c2597ea7a71a5e4ff1c9e352774eec318d3bd98e698d1066f9e5ce747"
+}

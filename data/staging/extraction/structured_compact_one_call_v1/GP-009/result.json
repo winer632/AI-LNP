@@ -1,0 +1,27 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-009",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "NO_TARGET_CELL_EVIDENCE"
+    ],
+    "evidence_ids": [
+      "GP-009-FC-455fcd703653c47f",
+      "GP-009-FC-7d9f713a9ff8dd16",
+      "GP-009-FC-89837e0ee08a925b"
+    ],
+    "explanation": "Original LNP-mRNA experiments and linked outcomes are reported, but the packet does not provide experimental evidence relevant to hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. Liver-level evidence was not treated as hepatocyte evidence."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_items": [
+    "No experimentally reported target-cell evidence for hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells; liver-level measurements cannot establish hepatocyte targeting."
+  ]
+}

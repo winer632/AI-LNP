@@ -1,0 +1,6054 @@
+{
+  "packet_version": "compact-api-packet-1.0.0",
+  "paper_id": "GP-008",
+  "blocked_fields": [],
+  "sources": [
+    {
+      "source_id": "FC-S-00e13a7a99c9dd95",
+      "chunk_id": "GP-008-B-a65130ab59deeba4e154",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-01df3b0aef7369fb",
+      "chunk_id": "GP-008-B-1ac3166d86c1a2e328f6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-023790527608e61a",
+      "chunk_id": "GP-008-B-33f63695624b145b96ec",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-02fa54553afa83cb",
+      "chunk_id": "GP-008-B-05200289162c03128c3e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-06187eaa558da880",
+      "chunk_id": "GP-008-B-ff7a097e5a3589691e3d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 11,
+      "figure_number": "Figure 1"
+    },
+    {
+      "source_id": "FC-S-0723e03701f3c4b2",
+      "chunk_id": "GP-008-B-cd7a665309be893d956e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-07f24ed603d44499",
+      "chunk_id": "GP-008-B-7ef8d47e46306435c2e5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22,
+      "figure_number": "Figure 8"
+    },
+    {
+      "source_id": "FC-S-0815d08af7bda9e7",
+      "chunk_id": "GP-008-B-2f6643f7cc67431a57ce",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-09446e6ed1fb0a2a",
+      "chunk_id": "GP-008-B-1ea46733f2d8e028a40c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-0bc8804f4038ca8e",
+      "chunk_id": "GP-008-B-5f8360430e4f864cf58a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-0d303d967c5396cc",
+      "chunk_id": "GP-008-B-2ecf4066c8ef638f51f5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-0e8ad05858e7518e",
+      "chunk_id": "GP-008-B-dcd677ea3a53fb3ce14d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-0eb5c50f23b832d6",
+      "chunk_id": "GP-008-B-81a0ad4c0c17ee6f7600",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27
+    },
+    {
+      "source_id": "FC-S-0fa6f1e15ea66b97",
+      "chunk_id": "GP-008-B-bb60dedaf7f9333c1f2b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-10254b43141a8b88",
+      "chunk_id": "GP-008-B-a6b17e75c3ccedb1bdae",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-12ceac45bb2bf9e1",
+      "chunk_id": "GP-008-B-1df6db3bcbeaed27f887",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-12d85c19e4ddb915",
+      "chunk_id": "GP-008-B-33a74e4a4e0b48a2e8fe",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-130271c21dc2bd5a",
+      "chunk_id": "GP-008-B-244e34ad133e826cdcbe",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-13087eba9b82e8fc",
+      "chunk_id": "GP-008-B-420eebd86bac481a3d39",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-139c2b6a744e2b9a",
+      "chunk_id": "GP-008-B-e2f6ba247acd4448a580",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-177d8d9478a99e29",
+      "chunk_id": "GP-008-B-a9b7cd3ee2b109697136",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-1f2d293303ef649e",
+      "chunk_id": "GP-008-B-80333157d600604e756c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-1f620880556aed2a",
+      "chunk_id": "GP-008-B-34aac12ba15301f56ddb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-213be70db77a7b2f",
+      "chunk_id": "GP-008-B-2b533c84419933c14309",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-215ae21c63db9796",
+      "chunk_id": "GP-008-B-ae3d916c172888180caf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-2167d14a6e97ecf1",
+      "chunk_id": "GP-008-B-289237538d239a4918c4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-217b3efea17fdc02",
+      "chunk_id": "GP-008-B-f849ced90c999c016183",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-21c96385f9a54ae9",
+      "chunk_id": "GP-008-B-17eb8c0d9ed6a5b08743",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-232eb44c98df9517",
+      "chunk_id": "GP-008-B-4f37f182eb1280033bca",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-24014be77a8a7b13",
+      "chunk_id": "GP-008-B-7f94bf4c4e3ac8d649ee",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-2603d4f1a01f7c03",
+      "chunk_id": "GP-008-B-2ab435fa33674de65d75",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-2615347e447527bd",
+      "chunk_id": "GP-008-B-2c784bb578129111ae0f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-26a9a040ad650fc2",
+      "chunk_id": "GP-008-B-5312dc2eb2a6aee23736",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-26af8b76bd78e784",
+      "chunk_id": "GP-008-B-6118d41c580b96242b10",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Design, Manufacturing, and Characterization of αCD163/LNP-FAPCAR.",
+      "figure_number": "Fig. 1."
+    },
+    {
+      "source_id": "FC-S-285affe6a25dc332",
+      "chunk_id": "GP-008-B-9a6edad306e16c103952",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-29e0c9500c9c5891",
+      "chunk_id": "GP-008-B-5f06106f60b3cfe4be4d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-2be88ba20fa06c4f",
+      "chunk_id": "GP-008-B-3dd4caee146d747e3634",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 23,
+      "figure_number": "Figure 9"
+    },
+    {
+      "source_id": "FC-S-2bf79eb2772e2cf6",
+      "chunk_id": "GP-008-B-06a04866f45b5c9443d0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27
+    },
+    {
+      "source_id": "FC-S-2d297025310ffa25",
+      "chunk_id": "GP-008-B-28f98b76bf0ec4cf56fb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-2f47ae653e051f21",
+      "chunk_id": "GP-008-B-ccb2c2352e4d8ef2cf15",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-2fb62d464308358b",
+      "chunk_id": "GP-008-B-1f94e80654823bb08d2d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-331b90fdc7502c3a",
+      "chunk_id": "GP-008-B-54056331c0419b6f55ef",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-3397c6ca96d5f5c7",
+      "chunk_id": "GP-008-B-1920b514d051a7e01752",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-33e01d9b64b5e824",
+      "chunk_id": "GP-008-B-e51e87e3d653e158422b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-3488042add89cd04",
+      "chunk_id": "GP-008-B-992b75c6d55644c0ff57",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-34efd9291dd53b31",
+      "chunk_id": "GP-008-B-add7c7032c8b366f0f99",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-35f40797142f2e85",
+      "chunk_id": "GP-008-B-96bb89359bcdd151e09b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-38d1e0b25435bf12",
+      "chunk_id": "GP-008-B-274e7ad89bebe9f2e8f7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-3a4c14dea59a25fd",
+      "chunk_id": "GP-008-B-02390782cafaccfda33e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-3d4a6257e2bac019",
+      "chunk_id": "GP-008-B-91c25f6613e8d2001ffa",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-3eb2a0b6a43b6cf5",
+      "chunk_id": "GP-008-B-95dd345d6d17a6eecc0c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-3efb345788e9c85d",
+      "chunk_id": "GP-008-B-0c6c6b3192bfd004d234",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-43110218b46761b3",
+      "chunk_id": "GP-008-B-51359f2af4f635a0c67f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-43ad030497dcbd01",
+      "chunk_id": "GP-008-B-ccac17dea183c16f439e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-4559dda7ef1dfac2",
+      "chunk_id": "GP-008-B-7446ca2411dd795f59bf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-468d441d30874ce4",
+      "chunk_id": "GP-008-B-38c13bc93fc04643fa65",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-47c3e06693eae3e8",
+      "chunk_id": "GP-008-B-a0c05083d6c609aaf95a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-48d95c6edecd11e6",
+      "chunk_id": "GP-008-B-2f1dff38e20f90efeb20",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-4a3bf0a84524a8a9",
+      "chunk_id": "GP-008-B-19e599d6927ffc36b202",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-4a48b47cce0b4dce",
+      "chunk_id": "GP-008-B-1cd7310fb581a074789e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27
+    },
+    {
+      "source_id": "FC-S-4a4cd203940a5cde",
+      "chunk_id": "GP-008-B-c1618ee63c533a089eaf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-4b082ba37849f259",
+      "chunk_id": "GP-008-B-717843b03a914838513b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-4b7373cbefbfac32",
+      "chunk_id": "GP-008-B-65740fc17843f00ef733",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16,
+      "figure_number": "Figure 4"
+    },
+    {
+      "source_id": "FC-S-4c487cfbcb21d6a0",
+      "chunk_id": "GP-008-B-e10e7c5195415b9fd35d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24,
+      "figure_number": "Figure 10"
+    },
+    {
+      "source_id": "FC-S-4f1f2a8d324d99f2",
+      "chunk_id": "GP-008-B-7a30b7b820d34f04fb95",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-50d63f85cc13801b",
+      "chunk_id": "GP-008-B-2caef6fb0174711e6e56",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-5134b2cc24336c61",
+      "chunk_id": "GP-008-B-28705f8741af86ba9532",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-548e18836feb7687",
+      "chunk_id": "GP-008-B-0df5bbc28fd522543dc0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-54cd4afcf81e1ae8",
+      "chunk_id": "GP-008-B-ab9f36050cc022c8c7d1",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-56e0bd0f5c9a763b",
+      "chunk_id": "GP-008-B-03bb330ff03540923285",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "αCD163/LNP-FAPCAR Suppressed Liver Fibrosis via Facilitating Liver Tissue Repair and Inhibiting HSC Activation.",
+      "figure_number": "Fig. 4."
+    },
+    {
+      "source_id": "FC-S-575652a329bcc998",
+      "chunk_id": "GP-008-B-0df26ee4bfe9aabccd4d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-5b81fdbb7ca2333b",
+      "chunk_id": "GP-008-B-59b4e55841f9c709dbfd",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-5bb048ae57a9af6a",
+      "chunk_id": "GP-008-B-af00a349f729fae9a89b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-5e72cfd380dbfdeb",
+      "chunk_id": "GP-008-B-5cc9c322ec914f975351",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "The Administration of αCD163/LNP-FAPCAR Effectively Mitigated Liver Damage in a Mouse Model of Hepatic Fibrosis.",
+      "figure_number": "Fig. 3."
+    },
+    {
+      "source_id": "FC-S-622ad429e20fd2cf",
+      "chunk_id": "GP-008-B-0cda0cbc145a726bcd2e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-62b924dd4ecc037a",
+      "chunk_id": "GP-008-B-56b438c0227c04f3ac46",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-6392dada098e6f9b",
+      "chunk_id": "GP-008-B-b37abb5020a35deddc88",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21,
+      "figure_number": "Figure 7"
+    },
+    {
+      "source_id": "FC-S-63bf3dcb2b4de6cc",
+      "chunk_id": "GP-008-B-5e923150eb89b7234bb3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-660abf74e25d5b4f",
+      "chunk_id": "GP-008-B-3a26ebf299e25982b7ab",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-67cc1dc10c61e2c3",
+      "chunk_id": "GP-008-B-8c2cb184d95e9355ac5f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In Vitro Functional Evaluation of αCD163/LNP-FAPCAR.",
+      "figure_number": "Fig. 2."
+    },
+    {
+      "source_id": "FC-S-67d4b797f34a48d1",
+      "chunk_id": "GP-008-B-769eeab4bded00367ead",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-68f75a502acd958e",
+      "chunk_id": "GP-008-B-bfe50aeed2389b43602b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27
+    },
+    {
+      "source_id": "FC-S-69f763d6739b4acc",
+      "chunk_id": "GP-008-B-cac1523ffbc8ae2e81ab",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-6a54eab85a78c008",
+      "chunk_id": "GP-008-B-2dda3920436ab3b429a7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-6a89e2ba2ccd0dc8",
+      "chunk_id": "GP-008-B-33d04029af3067b310d7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-6b4d096d49adce80",
+      "chunk_id": "GP-008-B-c8e047d05388eb7d6e82",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-6b678669ccfa2280",
+      "chunk_id": "GP-008-B-a94005322d71e83f6614",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-6d88a453fc02c6ee",
+      "chunk_id": "GP-008-B-8e260afbf7111c9a194e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-6e1edb445200f461",
+      "chunk_id": "GP-008-B-99801c7f6748202aed07",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-6efba5acfc915d99",
+      "chunk_id": "GP-008-B-5fe83147a3fbaa163692",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-710d3b87a0f0ff02",
+      "chunk_id": "GP-008-B-9319011951b2e6fad44f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 20,
+      "figure_number": "Figure 6"
+    },
+    {
+      "source_id": "FC-S-712fc7ba6b2ceafc",
+      "chunk_id": "GP-008-B-b140a3efcdf5b2a02b07",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-74d12381e8cd269c",
+      "chunk_id": "GP-008-B-01f1a5ff3047d38fb0f5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-75da386b1f335ead",
+      "chunk_id": "GP-008-B-78a5fa8a07c607f5841d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-761c827a1c613d36",
+      "chunk_id": "GP-008-B-2cf69f46977bd8c6f2e6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-76733040ade18bcf",
+      "chunk_id": "GP-008-B-adcd5ac26f7d90200e28",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-781061219139baec",
+      "chunk_id": "GP-008-B-c55386a8603fb2448f66",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-7a24c043900e96fc",
+      "chunk_id": "GP-008-B-12c42174596e8c965551",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-7c4192ad38d58e41",
+      "chunk_id": "GP-008-B-83ceb33a16187d7963d9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-82e4bed3fe90f0f8",
+      "chunk_id": "GP-008-B-2e89f3c9fb6de26b91c9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-847c046d74f712ad",
+      "chunk_id": "GP-008-B-315a1972f0d48103b4a7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-86063a8523fff67d",
+      "chunk_id": "GP-008-B-79ab34fcec37540f79c6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-89e7098bb6ac3fd7",
+      "chunk_id": "GP-008-B-56ce157713b30e351056",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-8f074dc2724a1586",
+      "chunk_id": "GP-008-B-331e4b859d379ca92354",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-9003c1ae2714c87b",
+      "chunk_id": "GP-008-B-c58f7314b10a868e3f0c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-90ffc1174dea6e73",
+      "chunk_id": "GP-008-B-5d5002b461429dfc5d45",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-916f07f1e2b49382",
+      "chunk_id": "GP-008-B-502e91c1dd55970099a9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-9355cb76f2804782",
+      "chunk_id": "GP-008-B-06e004005ea93c3c6405",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-966f967055c7fb6a",
+      "chunk_id": "GP-008-B-dc016cb3f764d10c5047",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-96c2d95edaab1f23",
+      "chunk_id": "GP-008-B-1034c954bc09ffd1e9bc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-96f1b430948cd10a",
+      "chunk_id": "GP-008-B-b9b183fc9b5c35162489",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-97b5faf4ad8f94e8",
+      "chunk_id": "GP-008-B-273847c89da9840698e3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-99c0c216723d5ac2",
+      "chunk_id": "GP-008-B-05bd9688f69727138901",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-99f6dde4513f3c0d",
+      "chunk_id": "GP-008-B-54af56dbf5bf207ab7f4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-9a469044bd586320",
+      "chunk_id": "GP-008-B-985a1e17c72f2916e0d9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-9c57f356fa4e6406",
+      "chunk_id": "GP-008-B-0ecd913a4720c6d89b0a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-9decb2740cc6cb5a",
+      "chunk_id": "GP-008-B-37c56cb7dcdb4ba846c4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-9e81407512eda226",
+      "chunk_id": "GP-008-B-cc546de8072cb89adc2e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-a31aa73febd97145",
+      "chunk_id": "GP-008-B-63b7b40a247a70e7e2b2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-a3d224873eaf6a24",
+      "chunk_id": "GP-008-B-2b4ab51113100d978f13",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25,
+      "figure_number": "Figure 11"
+    },
+    {
+      "source_id": "FC-S-a4052996d6c66cb5",
+      "chunk_id": "GP-008-B-a026dd583b55703629a3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-a5a5ff1e6bc6b1cf",
+      "chunk_id": "GP-008-B-e1fbc242206453412655",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-a73e8dc85f8d9ab8",
+      "chunk_id": "GP-008-B-46b66ac8dc75b2cbbab4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-a8d21706ada7447c",
+      "chunk_id": "GP-008-B-0b150ef2e16c6a188498",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-ab13f052efd83575",
+      "chunk_id": "GP-008-B-019d9fcb2c1c6a1c3655",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-ac1ef064b39174f1",
+      "chunk_id": "GP-008-B-0aeb670bfc9f9ed7d19a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-ac28a160c2da82f5",
+      "chunk_id": "GP-008-B-ca4735ae920b31446e51",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-afc8aeab38efd104",
+      "chunk_id": "GP-008-B-f977d9d14234735e8b32",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-b0050a14845723a8",
+      "chunk_id": "GP-008-B-d1d202ec9e86fe644616",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-b04a261852809bea",
+      "chunk_id": "GP-008-B-53911160665ed8776a92",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-b104ff34a4617cb0",
+      "chunk_id": "GP-008-B-783d6f5661a3aec623f7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-b19f52e0763ab824",
+      "chunk_id": "GP-008-B-0d74ec6b8e4b051a697e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-b29076a8cafc5b50",
+      "chunk_id": "GP-008-B-f98c9adf7091b8bbc06a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-b56d6a53d93a4089",
+      "chunk_id": "GP-008-B-c7d0047a69599eb15b78",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-b58de153bbb690f6",
+      "chunk_id": "GP-008-B-94931386384a7d765531",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-b6810dd21c3a36db",
+      "chunk_id": "GP-008-B-79bb973101e37118c70c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-b69a638b0bcce775",
+      "chunk_id": "GP-008-B-4b6276df09c6d026f8ab",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-b7c3021176b8f44b",
+      "chunk_id": "GP-008-B-e22d8213633c7afca89b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Discussion",
+      "figure_number": "Fig. 6."
+    },
+    {
+      "source_id": "FC-S-b966fd762b2b6cee",
+      "chunk_id": "GP-008-B-9e09f4c6890052ee1d4a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-bab186d8305eee08",
+      "chunk_id": "GP-008-B-0b075d1690884aec4cc1",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-bc514cbaeb2a9299",
+      "chunk_id": "GP-008-B-f4acabec93825cd87ec4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-bcd2e745eefe9b68",
+      "chunk_id": "GP-008-B-618a96414556b77a4913",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-bddea302c539def5",
+      "chunk_id": "GP-008-B-7c10a3385253f0808e39",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-be67d08460844088",
+      "chunk_id": "GP-008-B-fad68be72c190296d64b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-be6c56b350e4f944",
+      "chunk_id": "GP-008-B-533aa3d4e418c28e80d2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-bf4a16855801e72e",
+      "chunk_id": "GP-008-B-37aad56fa5f4c44a9752",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-bf9b4f79143ceec5",
+      "chunk_id": "GP-008-B-213a0d332570519deaa0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-bfffa9552070ebdd",
+      "chunk_id": "GP-008-B-b5ce82e2a61778471ffd",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-c667a4d89cb808cf",
+      "chunk_id": "GP-008-B-fe316950d97c88469a10",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-caf8801aa86e19bb",
+      "chunk_id": "GP-008-B-0792d4e2d92ebef892dc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-cb6f842dab948cad",
+      "chunk_id": "GP-008-B-addd6e397e384290d9b7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "αCD163/LNP-FAPCAR Enhanced MMP12+ Scar Clearance Phenotype by Reprogramming Macrophage Subpopulations to Alleviate Liver Fibrosis.",
+      "figure_number": "Fig. 5."
+    },
+    {
+      "source_id": "FC-S-cbb61fa106eb37e1",
+      "chunk_id": "GP-008-B-8f5c3e1b3e2e5ae287a2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-cf2f7fb75ef0b348",
+      "chunk_id": "GP-008-B-2cfee3d98c0af0629afa",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-cf80e472cb541b7c",
+      "chunk_id": "GP-008-B-527a507e02c1bb67ad3c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-d624f90ebeec3a29",
+      "chunk_id": "GP-008-B-84d6003cf2fc706bfd7c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-d62a3a882303a4e4",
+      "chunk_id": "GP-008-B-91baa15bffe03e8cc6fa",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-d647ee1578e3945c",
+      "chunk_id": "GP-008-B-b5b913aff057fb81bcfd",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-d6c5b08a09f7fc4f",
+      "chunk_id": "GP-008-B-c75e59c89d4e637be6a6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-d9f371665573d80c",
+      "chunk_id": "GP-008-B-482a307cba91b4aa1ce3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-db3228c010ade82d",
+      "chunk_id": "GP-008-B-ecb170327197c30b624c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-db35ae4b148cc8c7",
+      "chunk_id": "GP-008-B-6055784e325f472f2d85",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27
+    },
+    {
+      "source_id": "FC-S-dc042236d039c9e0",
+      "chunk_id": "GP-008-B-4dd78edfc42d4f84f81c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "FC-S-dc24a14fa70e21e6",
+      "chunk_id": "GP-008-B-4f09781769b75195c277",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 15,
+      "figure_number": "Figure 3"
+    },
+    {
+      "source_id": "FC-S-dd3093f4ae743166",
+      "chunk_id": "GP-008-B-f0a210b34a24721323a6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-de2fad1e176db916",
+      "chunk_id": "GP-008-B-0be232cbd54f1503e803",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-de5f23f21a222bc5",
+      "chunk_id": "GP-008-B-6bdfcbfa73f2db544c6e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-de8493e2e69fa4cf",
+      "chunk_id": "GP-008-B-bcc0e9273cbd04fd4ff0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-dfc63fc2bc4def20",
+      "chunk_id": "GP-008-B-49d5251367b515bb6c30",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-e032770fbcff3171",
+      "chunk_id": "GP-008-B-0e95fb01536fd6add739",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 28
+    },
+    {
+      "source_id": "FC-S-e23ca5083fd69908",
+      "chunk_id": "GP-008-B-1c64c2345c5678de9862",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-e26e74a1d30ea3cd",
+      "chunk_id": "GP-008-B-748cdd206f4a6223e07d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 18,
+      "figure_number": "Figure 5"
+    },
+    {
+      "source_id": "FC-S-e486daf76b56fc3f",
+      "chunk_id": "GP-008-B-4196c101bd0aff49bfd6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-e59885db8c2fbb99",
+      "chunk_id": "GP-008-B-993793914785f015347f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-e5c5c2fe6357ef20",
+      "chunk_id": "GP-008-B-a947f3eb8ee2d01d77d9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 25
+    },
+    {
+      "source_id": "FC-S-e81e8851dc4ff42e",
+      "chunk_id": "GP-008-B-2aac7b3cbc16486a79aa",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 10
+    },
+    {
+      "source_id": "FC-S-eb242be4b3871093",
+      "chunk_id": "GP-008-B-65d708ff87a578868662",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-ebe41a23a598d8a1",
+      "chunk_id": "GP-008-B-e4cb6350a3e79216d17c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13,
+      "figure_number": "Figure 2"
+    },
+    {
+      "source_id": "FC-S-ebf1a6017fb67dd6",
+      "chunk_id": "GP-008-B-eb8f8f955391d6ce6b75",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 9
+    },
+    {
+      "source_id": "FC-S-ec5016f367a1f59f",
+      "chunk_id": "GP-008-B-fead4ee2b916ebb35e08",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 1"
+    },
+    {
+      "source_id": "FC-S-edeb72a9dbb7182e",
+      "chunk_id": "GP-008-B-d94fec305249c2751457",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-f0ffd48807bf3313",
+      "chunk_id": "GP-008-B-b0822c42439afaa4535c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-f19a6198e1bdd236",
+      "chunk_id": "GP-008-B-b711334f98827160c47b",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-f6ff5f020c17f8bf",
+      "chunk_id": "GP-008-B-db52facfce04e4b70d4f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 8
+    },
+    {
+      "source_id": "FC-S-f8a1fcaad8e2b53e",
+      "chunk_id": "GP-008-B-d59244e8617e1d81c013",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-fc0786dc76e58741",
+      "chunk_id": "GP-008-B-df9e04905c93ec6ea235",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-fcae53cc5e8b5f46",
+      "chunk_id": "GP-008-B-266f8597288fca6f918a",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 13
+    },
+    {
+      "source_id": "FC-S-fd05a071d9ac1b2d",
+      "chunk_id": "GP-008-B-b65ea4d79fbea20ecf44",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 21
+    },
+    {
+      "source_id": "FC-S-fe3bf5bd2d09c098",
+      "chunk_id": "GP-008-B-c40a1be4f9d771a92637",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "Reagents and Tools Table",
+      "page_number": 27,
+      "table_number": "Table 3"
+    },
+    {
+      "source_id": "S-6c16ffc4255c",
+      "chunk_id": "GP-008-B-6bff0f7b7ff94acdc625",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.202534673.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "Design, Manufacturing, and Characterization of αCD163/LNP-FAPCAR.",
+      "figure_number": "Fig. 1."
+    },
+    {
+      "source_id": "S-6f5333d68cd8",
+      "chunk_id": "GP-008-B-fcaea0d2ca972f3077a0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf",
+      "source_kind": "pdf",
+      "block_type": "pdf_page",
+      "section": "Supplement page 26",
+      "page_number": 26
+    },
+    {
+      "source_id": "S-9b36f545d675",
+      "chunk_id": "GP-008-B-e2eaf27c84a87c32a415",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.202534673.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "αCD163/LNP-FAPCAR Enhanced MMP12+ Scar Clearance Phenotype by Reprogramming Macrophage Subpopulations to Alleviate Liver Fibrosis.",
+      "figure_number": "Fig. 5."
+    },
+    {
+      "source_id": "S-f1548abcf322",
+      "chunk_id": "GP-008-B-e7588facf11267d4eba3",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.202534673.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "figure_caption",
+      "section": "Results",
+      "subsection": "In Vitro Functional Evaluation of αCD163/LNP-FAPCAR.",
+      "figure_number": "Fig. 2."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-0bfa8ecbf0032ba7",
+      "text": "(n = 3).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675",
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-10395a21906f3ed2",
+      "text": "(C and D) Flow cytometry was used to assess the phagocytic activity of BMDM cells in response to various formulations using pHrodo-labeled FAP+JS-1 cells and the statistical analysis.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-127e91ab93909e57",
+      "text": "An Inset provided a closer view of LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_before_evidence_id": "GP-008-E-21033c39c3ac5d17",
+      "context_after_evidence_id": "GP-008-E-6bdde0fb85081d87"
+    },
+    {
+      "evidence_id": "GP-008-E-17f3f355e8b1e062",
+      "text": "(H and I) Statistical analysis and representative confocal fluorescence images of BMDMs transfected with mRNA, LNP-mRNA, or αCD163/LNP-mRNA.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-1de638e9a94e767b",
+      "text": "(Scale bar, 10 μm.) (B) Quantitative analysis of the phagocytic index in BMDMs.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-202999ae6268273e",
+      "text": "(C) Vlnplot analysis of the marker gene expression in various macrophage clusters.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-21033c39c3ac5d17",
+      "text": "(B) A TEM image demonstrating the size distribution of LNP-FAPCAR, with over 80 particles counted.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_after_evidence_id": "GP-008-E-127e91ab93909e57"
+    },
+    {
+      "evidence_id": "GP-008-E-2824e744115b81a2",
+      "text": "(E) The qPCR analysis of Ccr2, Mmp12, Mmp13, Il-6, Mki67, and Cd9 expression of the extracted primary macrophages.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ],
+      "context_before_evidence_id": "GP-008-E-7056c6a33aeac4de"
+    },
+    {
+      "evidence_id": "GP-008-E-2d870e5ffb2dad40",
+      "text": "(H) The qPCR analysis of Acta2, Tgf-b1, N-cadherin, and Pcna expression of HSCs.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ],
+      "context_before_evidence_id": "GP-008-E-8fc0ac574924fd9f"
+    },
+    {
+      "evidence_id": "GP-008-E-37d498eda688a886",
+      "text": "(L) Quantification of FAPCAR-positive staining in BMDMs (%) and (M), with analysis across biological replicates.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-388db776bc9df27f",
+      "text": "(A) The schematic representation of the modification process for FAPCAR encapsulated in LNP.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-3ce572e67b639c5d",
+      "text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 cells labeled with pHrodo.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "context_before_evidence_id": "GP-008-E-98be7ac737c9906b"
+    },
+    {
+      "evidence_id": "GP-008-E-3fd110feaf55e8a2",
+      "text": "BMDMs with unincubated flow cytometry antibodies serving as a negative control gate method.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-46b79c3c8ffb16c5",
+      "text": "(D) A TEM image demonstrating the size distribution of αCD163/LNP-FAPCAR, with over 80 particles counted.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_before_evidence_id": "GP-008-E-6bdde0fb85081d87",
+      "context_after_evidence_id": "GP-008-E-f3b7ad784230a648"
+    },
+    {
+      "evidence_id": "GP-008-E-48d67928df1b0940",
+      "text": "(B) Intergroup comparison of the proportion of cells in each cluster.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-4a5b7410c103e9c4",
+      "text": "(G) Results of mRNA analysis using the RiboGreen assay quantified the amount of mRNA encapsulated in LNPs under different pH conditions.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_before_evidence_id": "GP-008-E-a44e3fdfa764abcc"
+    },
+    {
+      "evidence_id": "GP-008-E-4d8bd4b95adb8533",
+      "text": "Design, fabrication, and characterization of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-5659bbb625b3ad53",
+      "text": "(Scale bar, 200 nm, mean ± SD.) (E) An average zeta potential of LNP-FAPCAR and αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_before_evidence_id": "GP-008-E-f3b7ad784230a648"
+    },
+    {
+      "evidence_id": "GP-008-E-592b2bba8a8fbebc",
+      "text": "(I–Q) The mRNA relative expression of Cd80, Il-1β, IL-6, Cd206, Arg1, Il-10, Mmp9, Mmp12, and Mmp13 in screened BMDMs.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "context_after_evidence_id": "GP-008-E-7380f16cd661f7f8"
+    },
+    {
+      "evidence_id": "GP-008-E-6406df785ac16694",
+      "text": "(V–X) The relative protein expression level of p-P50NF-κB/P50NF-κB and p-Syk/Syk of screened BMDMs.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "context_before_evidence_id": "GP-008-E-7380f16cd661f7f8"
+    },
+    {
+      "evidence_id": "GP-008-E-6bdde0fb85081d87",
+      "text": "(Scale bar, 200 nm, mean ± SD.) (C) A structural depiction of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_before_evidence_id": "GP-008-E-127e91ab93909e57",
+      "context_after_evidence_id": "GP-008-E-46b79c3c8ffb16c5"
+    },
+    {
+      "evidence_id": "GP-008-E-7037fe30160e189a",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c",
+        "S-9b36f545d675",
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-7056c6a33aeac4de",
+      "text": "(D) Flow cytometry analysis of CCR2, MMP12, MMP13, IL-6, MKI67, and CD9 expression in primary macrophages from mouse liver and across biological replicates.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ],
+      "context_after_evidence_id": "GP-008-E-2824e744115b81a2"
+    },
+    {
+      "evidence_id": "GP-008-E-73697870f57e0112",
+      "text": "Gate strategy: exclude debris/dead cells (Left side) through FSC (cell size) and SSC (particle size).",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-7380f16cd661f7f8",
+      "text": "(R–U) The protein levels of IL-1β, IL-6, IL-10, and TGF-β1 of the supernatant of the screened BMDMs.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "context_before_evidence_id": "GP-008-E-592b2bba8a8fbebc",
+      "context_after_evidence_id": "GP-008-E-6406df785ac16694"
+    },
+    {
+      "evidence_id": "GP-008-E-8fc0ac574924fd9f",
+      "text": "(F and G) The relative protein expression levels of α-SMA, TGF-β1, N-cadherin, and PCNA in HSCs were analyzed by western blot.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ],
+      "context_after_evidence_id": "GP-008-E-2d870e5ffb2dad40"
+    },
+    {
+      "evidence_id": "GP-008-E-91f729349e9c10a8",
+      "text": "In vitro functional assessment of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-95b5c13f7b7a8f02",
+      "text": "The data were representative of three independent experiments.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c",
+        "S-6f5333d68cd8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-98be7ac737c9906b",
+      "text": "The JS-1 cells were labeled with pHrodo, and BMDMs were labeled with GFP (green fluorescence).",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "context_before_evidence_id": "GP-008-E-9f1c889c86f7fdfa",
+      "context_after_evidence_id": "GP-008-E-3ce572e67b639c5d"
+    },
+    {
+      "evidence_id": "GP-008-E-9f1c889c86f7fdfa",
+      "text": "(A) Confocal microscopy images showed phagocytosis of FAP+JS-1 cells by BMDMs treated with various formulations.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ],
+      "context_after_evidence_id": "GP-008-E-98be7ac737c9906b"
+    },
+    {
+      "evidence_id": "GP-008-E-a44e3fdfa764abcc",
+      "text": "(F) Results from the mRNA analysis by RiboGreen assay quantifying the encapsulated mRNA of LNP over a time course of 28 d.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_after_evidence_id": "GP-008-E-4a5b7410c103e9c4"
+    },
+    {
+      "evidence_id": "GP-008-E-aaf1d40e7660d480",
+      "text": "(A) UMAP illustrates macrophages clustering in both the fibrosis and LNP groups.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-ba71b1c4bd111b87",
+      "text": "(G and H) Flow cytometry analysis of CD80 and CD206 expression in the screened BMDMs and the analysis.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-d5415c046e5f1ab6",
+      "text": "(E) A schematic diagram was provided to illustrate the cell-killing experiment.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-d5bc8f32d1c567c4",
+      "text": "Significance was indicated as *P < 0.01 and non-significance as ns P > 0.05.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c",
+        "S-9b36f545d675",
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-d970ee5e39f28092",
+      "text": "The mRNA was labeled with Cy5 (red), and BMDM expression was indicated by GFP (green fluorescence).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-e9466266dec9786d",
+      "text": "(Scale bar, 10 μm.) (J) Representative GFP expression in BMDMs through flow cytometry and (K) the analysis of GFP expression.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-ee6e7d6cf11c8cbc",
+      "text": "Treatment with αCD163/LNP-FAPCAR effectively skewed their polarization toward a proreparative phenotype.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9b36f545d675"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-f330904765163d94",
+      "text": "(F) The cytotoxicity of BMDMs against target FAP+JS-1 cells.",
+      "retrieval_field_tags": [
+        "experiment_boundary"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f1548abcf322"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-f3b7ad784230a648",
+      "text": "An Inset provided a closer view of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-6c16ffc4255c"
+      ],
+      "context_before_evidence_id": "GP-008-E-46b79c3c8ffb16c5",
+      "context_after_evidence_id": "GP-008-E-5659bbb625b3ad53"
+    },
+    {
+      "evidence_id": "GP-008-FC-00b103215ce82c9b",
+      "text": "LX-2/LUC cells (H.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9decb2740cc6cb5a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-02ad26c5f481b6c5",
+      "text": "(D) A TEM image demonstrating the size distribution of αCD163/LNP-FAPCAR, with over 80 particles counted.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-03ab42ff0d3b4716",
+      "text": "(I–R) The IHC staining of Collagen III, TGF-β1, MMP12, IL-6, and IL-10.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-041f38b42d84698c",
+      "text": "K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2603d4f1a01f7c03"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-04aa5e95a3e9afc7",
+      "text": "Gate strategy: exclude debris/dead cells (Left side) through FSC (cell size) and SSC (particle size).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-064c886e53477f80",
+      "text": "anti-caspase3 | CST: ThermoFisher; 44170: 700182",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-43ad030497dcbd01"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-086404a47d1e326b",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f19a6198e1bdd236"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-08d172d75e3da93c",
+      "text": "Appendix Table 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fe3bf5bd2d09c098"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-08dfa1becd055150",
+      "text": "IL-10 ELISA kit | MCE: Elabscience; HY-P7117, HY-P7118: E-EL-M0046/H6154",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-86063a8523fff67d"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-08f5ac0a330ef00b",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-24014be77a8a7b13"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-09face9a89994498",
+      "text": "mus-P50 | TTTGCACGTATATGCCGAGAC: TAGAATTGCCCCTACCCAGC; GGTGAACAGGCTCATTCATCTCT: AGGAGCAGGACATGGGATTT",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-82e4bed3fe90f0f8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0b50514d8539d1e9",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0bd97cc768b727d5",
+      "text": "(F)",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e26e74a1d30ea3cd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0c1cca292bf4cd56",
+      "text": "Table 3 | mus-Col1a1 | Forward primer (5’–3’): TAGGCCATTGTGTATGCAGC; Reverse primer (5’–3’): ACATGTTCAGCTTTGTGGACC",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-232eb44c98df9517"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0db91f4fe85300a9",
+      "text": "mus-Pcna | TTTGCACGTATATGCCGAGAC | GGTGAACAGGCTCATTCATCTCT ; mus-P50 | TAGAATTGCCCCTACCCAGC | AGGAGCAGGACATGGGATTT ; mus-Gadd45b | CCTGGCCATAGACGAAGAAG | AGCCTCTGCATGCCTGATAC ; mus-Caspase3 | GTACAGAGCTGGACTGCGGTATTG | AGTCGGCCTCCACTGGTATCTTC ; mus-Gapdh | TACAGCAACAGGGTGGTGGAC | TGGGATAGGGCCTCTCTTGCT ; homo-IL-1B | GGACAGGATATGGAGCAACAAG | TCAACACGCAGGACAGGTA ; homo-IL-6 | AACCTGAACCTTCCAAAGATGG | TCTGGCTTGTCCTCACTACT ; homo-CD206 | CTCTGTTCAGCTATTGGACGC | TGGCACTCCCAAACATAATTTGA ; homo-IL-10 | TAAGCCAGACCTGCCAACCTG | GGTCCTCTGCTAAACGCAAC ; homo-GAPDH | GCACCGTCAAGGCTGAGAAC | ATGGTGGTGAAGACGCCAGT",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-177d8d9478a99e29"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0e7cb640570ed5cb",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-54cd4afcf81e1ae8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0eb30d80c6813e2f",
+      "text": "TGF-β1 ELISA kit | MCE: Elabscience; HY-P7117, HY-P7118: E-EL-UNEL-M0099/UNEL-H0169",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-285affe6a25dc332"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0f1731cf3099a054",
+      "text": "(Scale bar, 100 μm.) (E) The IF confocal microscopy of ALB+ (green), Desmin+ (red), PCNA+ (yellow), and DAPI in the liver tissues.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-0f3f50a00b927d66",
+      "text": "(B) Hydroxyproline quantification of the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1019e39592015130",
+      "text": "Appendix Fig 6.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-109ff7921f26e01d",
+      "text": "(A) Confocal microscopy images showed phagocytosis of FAP+JS-1 cells by BMDMs treated with various formulations.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-111069a56e79647c",
+      "text": "(F) Results from the mRNA analysis by RiboGreen assay quantifying the encapsulated mRNA of LNP over a time course of 28 d.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-11ba41cef8a7b91d",
+      "text": "Image J | MCE: https://imagej.nih.gov/ij/index.html",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b104ff34a4617cb0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-123161735284bbe3",
+      "text": "(C) Vlnplot analysis of the marker gene expression in various macrophage clusters.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-12bf944bf42caea7",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bc514cbaeb2a9299"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-12d1c5a0bb332308",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-13bd4f94e7dc60d7",
+      "text": "anti-MMP12 | CST: ThermoFisher; 44170: MA5-32011",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a4052996d6c66cb5"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-13cecb539eb7c053",
+      "text": "N",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-74d12381e8cd269c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-141caeead7002c6f",
+      "text": "(H) The GSEA analysis of GO terms of Heps.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-14af0ae6a33c98f0",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fc0786dc76e58741"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-15172b9cc0804668",
+      "text": "Appendix Table 2.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-468d441d30874ce4"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-161ed1c71f6a859a",
+      "text": "(G) The GO enrichment analysis on the DEGs of Heps.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-17b32158f0ab360d",
+      "text": "(I) The GSEA analysis of the KEGG of the DEGs of Heps.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-17f84a0278c71325",
+      "text": "(H) The fluorescence confocal microscopy of \\(FAP^{+}\\) (red), \\(F4/80^{+}\\) (green), and DAPI of the macrophages in the liver tissues (scale bar=20 \\(\\mu\\)m).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3d224873eaf6a24"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1938d73bbf84c02e",
+      "text": "0",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-215ae21c63db9796"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-195bffb6e0b300c1",
+      "text": "0",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c667a4d89cb808cf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1a2985357026663e",
+      "text": "sapiens) | Reference or Source: Chinese Academy of Sciences' Cell Bank; Identifier or Catalog Number: SCSP-567",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-de2fad1e176db916"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1a4e06260bbc970b",
+      "text": "(D–H) H&E, Sirius red, and Masson’s trichrome staining.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1bd67c39886466f7",
+      "text": "(E) The qPCR analysis of Ccr2, Mmp12, Mmp13, Il-6, Mki67, and Cd9 expression of the extracted primary macrophages.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1c13df20d7472a4a",
+      "text": "H",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-afc8aeab38efd104"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1ca5c5d254694058",
+      "text": "(I-M) The relative protein expression level of p-Syk/Syk, p-Myd88/Myd88,",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebe41a23a598d8a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1dbee950de903d8e",
+      "text": "(Scale bar, 20 μm.) (F) The IF confocal microscopy of ALB+ (green), caspase3+ (red), and DAPI in the liver tissues.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1f0b2545938891da",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dd3093f4ae743166"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-1f4686d9bfa69137",
+      "text": "(H-O) The IHC staining of Collagen III, TGF-\\(\\beta1\\), MMP12, and IL-6 of the liver of the mice with corresponding quantitative images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-20ccdac0c2935996",
+      "text": "(Scale bar, 10 μm.) (B) Quantitative analysis of the phagocytic index in BMDMs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-214a60ab45668cf4",
+      "text": "(M) The fluorescence confocal microscopy of Desmin+ (red), FAP+ (yellow), and DAPI in the liver tissues.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-22378c776463ce05",
+      "text": "homo-IL-1B | TTTGCACGTATATGCCGAGAC: GGACAGGATATGGAGCAACAAG; GGTGAACAGGCTCATTCATCTCT: TCAACACGCAGGACAGGTA",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9355cb76f2804782"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-224c0114b12148f9",
+      "text": "(C-D) IF images depicting ZsGreen expression in CCL4-induced fibrotic mice post-intravenous injection of 40 \\(\\mu\\)g of ZsGreen mRNA encapsulated in LNP-ZsGreen and αCD163/LNP-ZsGreen groups at different times, and the statistical analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e26e74a1d30ea3cd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2275d3acfb040ba8",
+      "text": "(A) UMAP illustrates macrophages clustering in both the fibrosis and LNP groups.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-23d7096529e10e05",
+      "text": "N",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0fa6f1e15ea66b97"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-24b406269ab74bb5",
+      "text": "(B) The weight of the mice in different groups.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-25005e460dfbaf34",
+      "text": "(J) The co-culture system of the extracted primary T cells and",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3d224873eaf6a24"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-26bad7a0bae57692",
+      "text": "(scale bar=50 \\(\\mu\\)m).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-26d484a18d592e49",
+      "text": "(C) Routine blood test and biochemical evaluation of the mice after different treatments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-296f75448ad8fcd0",
+      "text": "Design, fabrication, and characterization of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-29fb2f3ea87dfbcd",
+      "text": "sapiens) | Reference or Source: Chinese Academy of Sciences' Cell Bank; Identifier or Catalog Number: SCSP-527",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2615347e447527bd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2a4eb53c746937fb",
+      "text": "H J",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-1f2d293303ef649e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2a7ba0d025d3738f",
+      "text": "anti-Collagen III | CST: CST; 44170: 94368",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-847c046d74f712ad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2bf22c2341809022",
+      "text": "Appendix Table 1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2167d14a6e97ecf1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2c898b4e7b9e5fc1",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-be6c56b350e4f944"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2cee8334e8178c47",
+      "text": "H",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-96c2d95edaab1f23"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2d1e6c02a32be033",
+      "text": "live cell dye | CST: Yeasen; 44170: 40721ES72",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-10254b43141a8b88"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-2d4f33d8bd196a6e",
+      "text": "The mRNA was labeled with Cy5 (red), and BMDM expression was indicated by GFP (green fluorescence).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3074b916844422db",
+      "text": "Significance was indicated as *P < 0.01 and non-significance as ns P > 0.05.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-30fb64748bd12026",
+      "text": "Data were representative of six independent experiments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3274ed6d171119c4",
+      "text": "Appendix Fig 10.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-329828b3247cf8fd",
+      "text": "Table 1 | 3 | Total Lipid Concentration in LNPs (mg/ml): 4.358; Volume of LNPs (ml): 2; Amount of CD163 Antibody for LNP Conjugation (mg): 0.278; Free Antibody Amount (mg): 0.154; Amount of Antibody Conjugated to LNPs (mg): 0.114; Conjugation Rate (%): 91.94",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ec5016f367a1f59f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-32c382ba7228923e",
+      "text": "(n = 3).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-33ac0b7c8a588184",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ab13f052efd83575"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-34978378e47a6147",
+      "text": "(I) The fluorescence confocal microscopy of \\(CD3^{+}\\) (red), anti-\\(FAP^{+}\\) (green), and DAPI of the T cells in the spleen tissues (scale bar=20 \\(\\mu\\)m).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3d224873eaf6a24"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-34b5723105d0e1fd",
+      "text": "Table 3 | mus-Col2a1 | Forward primer (5’–3’): AGCAGGTCCTTGGAACCTT; Reverse primer (5’–3’): AAGGAGTTTCATCTGGCCCT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-90ffc1174dea6e73"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-351ec38ec502f4e6",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9e81407512eda226"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-35be8542f4235a23",
+      "text": "Q R",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a73e8dc85f8d9ab8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-35f429b212e71e47",
+      "text": "(A-B) Quantification of FAPCAR positive staining in macrophages (THP-1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4b7373cbefbfac32"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-36dadffbee3ab9a1",
+      "text": "PE anti-mouse FAP | Reference or Source: Bio-Techne; Identifier or Catalog Number: 983802",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-139c2b6a744e2b9a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-37a9f2ae11f831c1",
+      "text": "Table 3 | mus-FAP | Forward primer (5’–3’): GGAAGACAAGGTGTATCTGTGG; Reverse primer (5’–3’): GTGTTTTCTGCTACTTGAGAATAAT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b0050a14845723a8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-37be47b5ae8bf328",
+      "text": "TGF-β1 protein | MCE | HY-P7117, HY-P7118 ; Hydroxyproline ELISA kit | Elabscience | E-BC-K062-M ; ALT kit | Elabscience | E-BC-K235-M ; RIPA lysis buffer | Beyotime | P0013B ; IL-1β ELISA kit | Elabscience | E-EL-M0037/H0149 ; IL-6 ELISA kit | Elabscience | E-EL-M0044/H6156 ; IL-10 ELISA kit | Elabscience | E-EL-M0046/H6154 ; TGF-β1 ELISA kit | Elabscience | E-EL-UNEL-M0099/UNEL-H0169 ; Cytochalasin D | MCE | HY-N6682 ; BAY 61-3606 | MCE | HY-76474 ; Recombinant Mouse CD163 Protein Standard (His tag) | Abcam | ab322099 ; Software | | ; GraphPad Prism 7.0 | https://www.graphpad.com | ; CellRanger | https://www.r-project.org/ | ; Image J | https://imagej.nih.gov/ij/index.html | ; FlowJo 10.4.2 | https://www.flowjo.com | ; Other | | ; Real-Time PCR System | ThermoFisher | ; fluorescence microscope | Olympus Corporation | ; IVIS Lumina III | PerkinElmer | ; incucyte SX5 | Sartorius | ; Flow cytometer | Becton Dickinson |",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5134b2cc24336c61"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-38d36324c150bbdd",
+      "text": "(P-Q) The IHC staining of FAP (scale bar=50 \\(\\mu\\)m) with corresponding quantitative images at different time.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6392dada098e6f9b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-39469d0fb1610275",
+      "text": "Sample | Diameter (nm) | PDI ; LNP | 117.01±2.78 | 0.15±0.026 ; αCD163/LNP | 132.05±3.10 | 0.176±0.017",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2bf79eb2772e2cf6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3970aca2de336204",
+      "text": "Reagent/Resource | Reference or Source | Identifier or Catalog Number ; Experimental Models | | ; JS-1 cells (m.musculus) | YaJi Biological | YS2162C ; LX-2 cells (H.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f6ff5f020c17f8bf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3a13dfed6cfff3cf",
+      "text": "(Scale bar, 10 μm.) (J) Representative GFP expression in BMDMs through flow cytometry and (K) the analysis of GFP expression.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3adcb4e9c5f99679",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d9f371665573d80c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3b42e78d87d73ad8",
+      "text": "K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-47c3e06693eae3e8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3bde52254b1df92a",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3c131d913ae2b614",
+      "text": "(H-O) The IHC staining of Collagen III, TGF-\\(\\beta1\\), MMP12, and IL-6 of the liver of the mice with corresponding quantitative images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3cb661df0df9c5f1",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-3e8a40476aa74b4f",
+      "text": "(G) The cytotoxicity of BMDMs against target \\(FAP^{+}\\)JS-1 cells was assessed by co-culturing them overnight and calculating the killing",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06187eaa558da880"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-40934616975f7679",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9003c1ae2714c87b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-40f53e753de1b991",
+      "text": "homo-IL-10 | TTTGCACGTATATGCCGAGAC: TAAGCCAGACCTGCCAACCTG; GGTGAACAGGCTCATTCATCTCT: GGTCCTCTGCTAAACGCAAC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3a4c14dea59a25fd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4283dd15ace5ec2b",
+      "text": "Appendix Fig 1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06187eaa558da880"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-437f019800e04cf8",
+      "text": "(I–Q) The mRNA relative expression of Cd80, Il-1β, IL-6, Cd206, Arg1, Il-10, Mmp9, Mmp12, and Mmp13 in screened BMDMs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4387b8e1e96127fd",
+      "text": "Significance was indicated as *P < 0.01 and non-significance as ns P > 0.05.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-438c62c301189f50",
+      "text": "(Scale bar, 200 nm, mean ± SD.) (C) A structural depiction of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4407f2eb8ea1ca1a",
+      "text": "H 1 J K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6a89e2ba2ccd0dc8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-447c50faaa694b92",
+      "text": "anti-β-actin | CST: Abcam; 44170: ab8226",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-43110218b46761b3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-44a092a6762ed5a1",
+      "text": "Appendix Fig 5.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e26e74a1d30ea3cd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-47667f6d9a06c5d7",
+      "text": "(C and D) Flow cytometry was used to assess the phagocytic activity of BMDM cells in response to various formulations using pHrodo-labeled FAP+JS-1 cells and the statistical analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4a1cb95e330a2549",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4b19a2e1d85a59ff",
+      "text": "fluorescence microscope | MCE: Olympus Corporation",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2fb62d464308358b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4c27490b6e2daa21",
+      "text": "(A) The mRNA relative expression of Mmp12 in screened BMDMs with Cytochalasin D (0.1 \\(\\mu\\)g/mL for 24 h).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebe41a23a598d8a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4d18086f6ed1aa6a",
+      "text": "Significance was indicated as *P<0.01 and non-significance as ns P>0.05.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4d924baa08c8744a",
+      "text": "PE anti-human CD68 | Reference or Source: Biolegend; Identifier or Catalog Number: 333808",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d62a3a882303a4e4"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4d9e560080dad2f9",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4dc51b6dbe741f0e",
+      "text": "(H-K) The qPCR analysis of",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc24a14fa70e21e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4e3b02130ca7d29c",
+      "text": "0",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3488042add89cd04"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4e5524c03f33a79b",
+      "text": "P Appendix Fig 7.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6392dada098e6f9b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4e97adccf5ffffc5",
+      "text": "(B and C) The proportion of cells within Heps, HSCs, macrophages, and non-parenchymal cell clusters.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4edc8922bec247b4",
+      "text": "(D) Flow cytometry analysis of CCR2, MMP12, MMP13, IL-6, MKI67, and CD9 expression in primary macrophages from mouse liver and across biological replicates.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4eea360675eb423f",
+      "text": "Data were representative of three independent experiments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4f10f82bb0eabbac",
+      "text": "IVIS Lumina III | MCE: PerkinElmer",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-12ceac45bb2bf9e1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4f2e6ec80150419a",
+      "text": "Table 3 | mus-II-10 | Forward primer (5’–3’): CCTCAGTTCCCATTCTATTTATTCACT; Reverse primer (5’–3’): TTGAAAGGACACCATAGCAAAGG",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0815d08af7bda9e7"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4f439d9dd3d37e37",
+      "text": "anti-ALB | CST: ThermoFisher; 44170: PA5-89332",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d647ee1578e3945c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-4f6ebc4005012b30",
+      "text": "Table 1 | 1 | Total Lipid Concentration in LNPs (mg/ml): 4.836; Volume of LNPs (ml): 2; Amount of CD163 Antibody for LNP Conjugation (mg): 0.312; Free Antibody Amount (mg): 0.182; Amount of Antibody Conjugated to LNPs (mg): 0.119; Conjugation Rate (%): 91.54",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-130271c21dc2bd5a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-504bd9ac69bd2d15",
+      "text": "Appendix Fig 9.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5065d122acd14f8f",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e5c5c2fe6357ef20"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-50fcd3c6f3a036e4",
+      "text": "anti-FAP | CST: ThermoFisher; 44170: PA5-99458",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9a469044bd586320"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-51082ef9cf164cb5",
+      "text": "Q",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-edeb72a9dbb7182e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5211d4ae6b0eb015",
+      "text": "homo-CD206 | TTTGCACGTATATGCCGAGAC: CTCTGTTCAGCTATTGGACGC; GGTGAACAGGCTCATTCATCTCT: TGGCACTCCCAAACATAATTTGA",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-48d95c6edecd11e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-540857ec57bdad07",
+      "text": "(D) The Ki67 fluorescent staining in the liver tissues.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5458bce8b02fc84f",
+      "text": "BAY 61-3606 | MCE: MCE; HY-P7117, HY-P7118: HY-76474",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b966fd762b2b6cee"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-54b58f86fc569d3a",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bcd2e745eefe9b68"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-551726fa50d2d592",
+      "text": "Table 3 | mus-Acta2 | Forward primer (5’–3’): GTTCAGTGGTGCCTCTGTCA; Reverse primer (5’–3’): ACTGGGACGACATGGAAAAG",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b58de153bbb690f6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5550f59ff49bd93f",
+      "text": "1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b29076a8cafc5b50"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-55faf7f39953b32e",
+      "text": "(F) The transcriptomic differences of Heps between Fibrosis and LNP groups.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-565f2de0240b83cd",
+      "text": "ALT kit | MCE: Elabscience; HY-P7117, HY-P7118: E-BC-K235-M",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13087eba9b82e8fc"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-588ea4a6bc10e8a9",
+      "text": "Table 3 | mus-Mmp13 | Forward primer (5’–3’): TTTATTGTTGCTGCCCATGA; Reverse primer (5’–3’): CTCTGGTGTTTTGGGATGCT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01df3b0aef7369fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5916c010383de364",
+      "text": "(B-G) Feature plot of the Fap, Acta2, and Collal gene expression in the macrophage subgroups and the statistical analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3d224873eaf6a24"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-597bc56dfcccc567",
+      "text": "L Appendix Fig 4.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4b7373cbefbfac32"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5dd4cd90281306ff",
+      "text": "GraphPad Prism 7.0 | MCE: https://www.graphpad.com",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-62b924dd4ecc037a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5e974f1a68167b7a",
+      "text": "Real-Time PCR System | MCE: ThermoFisher",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a5a5ff1e6bc6b1cf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5f1b7b98984aa5ba",
+      "text": "An Inset provided a closer view of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5fb394608909bd25",
+      "text": "(Scale bar, 200 nm, mean ± SD.) (E) An average zeta potential of LNP-FAPCAR and αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-5fe99834b703e00b",
+      "text": "M",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fd05a071d9ac1b2d"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-601ebd02211f8fa2",
+      "text": "(A-B) Screened JS-1 cells with \\(FAP^{+}\\) using a flow cytometer and the statistical analysis.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06187eaa558da880"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-603ae085c28679cf",
+      "text": "In vitro functional assessment of αCD163/LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-604ef11e0f84e460",
+      "text": "(A) The schematic representation of the modification process for FAPCAR encapsulated in LNP.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-60db59a86e8aaa8c",
+      "text": "PE-conjugated anti-mouse CD80 | Reference or Source: Biolegend; Identifier or Catalog Number: 60055",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0d303d967c5396cc"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-62b42171d0823567",
+      "text": "LNP | Diameter (nm): 117.01±2.78; PDI: 0.15±0.026",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0eb5c50f23b832d6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-62db4a3e4f3c8a88",
+      "text": "RPMI-1640 | CST: ThermoFisher",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6efba5acfc915d99"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-632941e5447b0cfc",
+      "text": "APC anti-mouse CD45 | Reference or Source: Biolegend; Identifier or Catalog Number: 147707",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-29e0c9500c9c5891"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6339e17040ebad4c",
+      "text": "APC anti-mouse F4/80 | Reference or Source: Biolegend; Identifier or Catalog Number: 123116",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-12d85c19e4ddb915"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-639e8ac664cb4d82",
+      "text": "(E) The mRNA levels in serum over time.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e26e74a1d30ea3cd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-640f40452d2ec009",
+      "text": "(D-G) Masson's trichrome and Sirius red staining with corresponding quantitative images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-669b782e8e4d4663",
+      "text": "G H",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fcae53cc5e8b5f46"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-67de46772cd35f09",
+      "text": "An Inset provided a closer view of LNP-FAPCAR.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6835fcc1db5b6f09",
+      "text": "sapiens) | Chinese Academy of Sciences' Cell Bank | SCSP-527 ; JS-1/LUC cells (m.musculus) | YaJi Biological | YS2595LUC ; LX-2/LUC cells (H.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f6ff5f020c17f8bf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-68c05b3ea18678d4",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-761c827a1c613d36"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-697b49e505c13074",
+      "text": "(B) A TEM image demonstrating the size distribution of LNP-FAPCAR, with over 80 particles counted.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-69b10f984b73cd5e",
+      "text": "The JS-1 cells were labeled with pHrodo, and BMDMs were labeled with GFP (green fluorescence).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6a2d0e2b48e7f220",
+      "text": "(n = 6).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6b5c8d127e085f6d",
+      "text": "(R–U) The protein levels of IL-1β, IL-6, IL-10, and TGF-β1 of the supernatant of the screened BMDMs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6d115f5eedb18c7d",
+      "text": "(B) The mRNA relative expression of Mmp12 in BMDMs alone with Cytochalasin D or not.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebe41a23a598d8a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6e1ce9f97c6fe800",
+      "text": "Table 3 | mus-Col3 | Forward primer (5’–3’): CCTGGAGCCCCTGGACTAATAG; Reverse primer (5’–3’): GCCCATTGCACCAGGTTCT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-331b90fdc7502c3a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-6e3025a95d04d01a",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5bb048ae57a9af6a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-708612733ee3c9bf",
+      "text": "(F-G) The qPCR analysis of Acta2 and Col3 expression in the survived JS-1 cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc24a14fa70e21e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-71b3ef58aa7062f2",
+      "text": "(G and H) Flow cytometry analysis of CD80 and CD206 expression in the screened BMDMs and the analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-7417652c0b16f06c",
+      "text": "(A) H&E staining of the liver of the BDL model.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-762a48419a712374",
+      "text": "(G) Results of mRNA analysis using the RiboGreen assay quantified the amount of mRNA encapsulated in LNPs under different pH conditions.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-76e8d009163a41f4",
+      "text": "The data were representative of three independent experiments.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-7724b1c4eb1c049b",
+      "text": "L M",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0e8ad05858e7518e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-77514a0b3590e24f",
+      "text": "IL-6 ELISA kit | MCE: Elabscience; HY-P7117, HY-P7118: E-EL-M0044/H6156",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6a54eab85a78c008"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-77c4cc751760cf0d",
+      "text": "αCD163/LNP-FAPCAR enhanced the liver tissue repair and suppressed HSC activation.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-780e54ec69861303",
+      "text": "anti-N-cadherin | CST: CST; 44170: 4061",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d624f90ebeec3a29"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-78409ab2d4c0ff61",
+      "text": "(E) A schematic diagram was provided to illustrate the cell-killing experiment.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-791e4c730f76d8f7",
+      "text": "type IV collagenase | CST: Sigma; 44170: C5138",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e59885db8c2fbb99"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-7f55a91d0a2f5733",
+      "text": "(B) The serum ALT level determination.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6392dada098e6f9b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-7f58f7df64e7584a",
+      "text": "THP-1 (H.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-de2fad1e176db916"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-7fcde97a274ae4d7",
+      "text": "(B) The luciferase activity of major organs at 8 and 72 hours.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e26e74a1d30ea3cd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-80fea56e58820f84",
+      "text": "J",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6e1edb445200f461"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8176cd209413616a",
+      "text": "(S) The qPCR analysis of Col3, Tgf-b1, Mmp12, Il-6, and Il-10 in the liver of the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8281b6b85f3468b8",
+      "text": "(n = 3).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8421bd1c7b001736",
+      "text": "(n = 3).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8494adf41f46dfb3",
+      "text": "(B) The serum ALT level determination.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-85d1b07de90135a4",
+      "text": "N Appendix Fig 2.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebe41a23a598d8a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8624deb14e2074b8",
+      "text": "PE anti-mouse CD163 | Reference or Source: Biolegend; Identifier or Catalog Number: 156704",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-be67d08460844088"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-86e0b27c9a442853",
+      "text": "Quant-iT™ RiboGreen RNA Assay kit | CST: ThermoFisher; 44170: R32705",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-575652a329bcc998"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-87b63b3ba0586a93",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-213be70db77a7b2f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8a486f09119667ea",
+      "text": "(C) The serum ALT level determination.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8b0f3c5c59b3be31",
+      "text": "Table 3 | mus-Mmp9 | Forward primer (5’–3’): AAGGGTACAGCCTGTTCCTGGT; Reverse primer (5’–3’): CTGGATGCCGTCTATGTCGTCT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc042236d039c9e0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8b3dbce5180c927e",
+      "text": "CCL4 | CST: MCE; 44170: HY-Y0298",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7a24c043900e96fc"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8b4112a10f521980",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4a4cd203940a5cde"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8b65787bc27626aa",
+      "text": "anti-IL-10 | CST: ThermoFisher; 44170: ARC9102",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6b678669ccfa2280"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8cb1872e7c46e9bd",
+      "text": "Table 1 | 2 | Total Lipid Concentration in LNPs (mg/ml): 4.077; Volume of LNPs (ml): 2; Amount of CD163 Antibody for LNP Conjugation (mg): 0.264; Free Antibody Amount (mg): 0.153; Amount of Antibody Conjugated to LNPs (mg): 0.103; Conjugation Rate (%): 92.79",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4a3bf0a84524a8a9"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8cc0cc8c53e82c25",
+      "text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 cells labeled with pHrodo.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8cdd26afaad499d2",
+      "text": "(A) Comparative analysis of cell proportions across groups.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3d224873eaf6a24"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8e392ce4ede28cd1",
+      "text": "anti-IL-6 | CST: ThermoFisher; 44170: AMC0864",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9c57f356fa4e6406"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-8fea399bbf9a5e30",
+      "text": "(C) The qPCR analysis of col1a1, col2a1, and acta2 in liver tissues from the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-924570ebbbc2aefb",
+      "text": "anti-TGF-β1 | CST: CST; 44170: 3711",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac1ef064b39174f1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-92a9f0e945603701",
+      "text": "Table 1 | Batch | Total Lipid Concentration in LNPs (mg/ml) | Volume of LNPs (ml) | Amount of CD163 Antibody for LNP Conjugation (mg) | Free Antibody Amount (mg) | Amount of Antibody Conjugated to LNPs (mg) | Conjugation Rate (%) ; 1 | 4.836 | 2 | 0.312 | 0.182 | 0.119 | 91.54 ; 2 | 4.077 | 2 | 0.264 | 0.153 | 0.103 | 92.79 ; 3 | 4.358 | 2 | 0.278 | 0.154 | 0.114 | 91.94",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4559dda7ef1dfac2"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9374ecb1446a7afe",
+      "text": "Significance was indicated as *P < 0.01 and",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-93818f62e34a4a9f",
+      "text": "(A) The co-culture mode diagram of JS-1 cells and BMDM cells under the simulated fibrosis state induced with TGF-\\(\\beta\\)1 in vitro.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc24a14fa70e21e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-93c97076420a7e32",
+      "text": "anti-PCNA | CST: CST; 44170: 13110",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e23ca5083fd69908"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-940fac442a1ebe27",
+      "text": "incucyte SX5 | MCE: Sartorius",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cf80e472cb541b7c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-96529b41e8566d58",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b19f52e0763ab824"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-96a102f59c3e5ff2",
+      "text": "MCD diet | CST: Guanfeng Bio; 44170: A02082002BR",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b56d6a53d93a4089"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-96f45d07a7b9075c",
+      "text": "Treatment with αCD163/LNP-FAPCAR effectively skewed their polarization toward a proreparative phenotype.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-974c7c23fa493ef9",
+      "text": "(A) UMAP illustrated cell clustering in both the fibrosis (CCL4-induced fibrosis mice model) and the LNP (αCD163/LNP-FAPCAR) treatment groups.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-97bef3d710edffec",
+      "text": "Table 3 | mus-Cd206 | Forward primer (5’–3’): TTCGGTGGACTGTGGACGAGCA; Reverse primer (5’–3’): ATAAGCCACCTGCCACTCCGGT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-09446e6ed1fb0a2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-98f86b9b61b5d08b",
+      "text": "anti-p-P50NF-κB | Reference or Source: Affinity; Identifier or Catalog Number: AF3219",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-50d63f85cc13801b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9911b2b228b0c5ad",
+      "text": "PCR primers | CST: This study; 44170: Table3",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b04a261852809bea"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9a9ddce2d3345995",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ac28a160c2da82f5"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9d4222de8252e869",
+      "text": "PMA | CST: MCE; 44170: HY-18739",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-99c0c216723d5ac2"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9d9eaeaa2bcbf0bd",
+      "text": "Efficiency table of antibody conjugation in different batches",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-468d441d30874ce4"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9de5f60179899cff",
+      "text": "JS-1 cells without antibody staining were used as negative controls.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06187eaa558da880"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-9f2ca6a8216a3cc7",
+      "text": "Table 3 | mus-Mmp12 | Forward primer (5’–3’): CCAAGCATCCCATCTGCTAT; Reverse primer (5’–3’): GGTCAAAGACAGCTGCATCA",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-781061219139baec"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a0ce71ed2ed1054a",
+      "text": "L",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b6810dd21c3a36db"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a1345e84f1f8444f",
+      "text": "P",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4b082ba37849f259"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a183582f81d54bda",
+      "text": "αCD163/LNP-FAPCAR delivery mitigated liver damage in mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a3baef499dba42ae",
+      "text": "K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e486daf76b56fc3f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a3f7224b716b68b8",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0bc8804f4038ca8e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a499aaf9544fd8b2",
+      "text": "Table 3 | Target gene | Forward primer (5’–3’) | Reverse primer (5’–3’) ; mus-Cd80 | TGCTGCTGATTCGTCTTTCAC | GAGGAGAGTTGTAACGGCAAG ; mus-II-1β | AGAGCTTCAGGCAGGCAGTA | AGGTGCTCATGTCCTCATCC ; mus-II-6 | CCAGTTGCCTTCTTGGGACT | GGTCTGTTGGGAGTGGTATCC ; mus-Cd206 | TTCGGTGGACTGTGGACGAGCA | ATAAGCCACCTGCCACTCCGGT ; mus-Arg-1 | AACGGGAGGGTAACCATAAGC | TGATGCCCCAGATGGTTTTC ; mus-II-10 | CCTCAGTTCCCATTCTATTTATTCACT | TTGAAAGGACACCATAGCAAAGG ; mus-Mmp9 | AAGGGTACAGCCTGTTCCTGGT | CTGGATGCCGTCTATGTCGTCT ; mus-Mmp12 | CCAAGCATCCCATCTGCTAT | GGTCAAAGACAGCTGCATCA ; mus-Mmp13 | TTTATTGTTGCTGCCCATGA | CTCTGGTGTTTTGGGATGCT ; mus-Acta2 | GTTCAGTGGTGCCTCTGTCA | ACTGGGACGACATGGAAAAG ; mus-Col1a1 | TAGGCCATTGTGTATGCAGC | ACATGTTCAGCTTTGTGGACC ; mus-Col2a1 | AGCAGGTCCTTGGAACCTT | AAGGAGTTTCATCTGGCCCT ; mus-Col3 | CCTGGAGCCCCTGGACTAATAG | GCCCATTGCACCAGGTTCT ; mus-Tgf-b1 | CCACCTGCAAGACCATCGAC | CTGGCGAGCCTTAGTTTGGAC ; mus-FAP | GGAAGACAAGGTGTATCTGTGG | GTGTTTTCTGCTACTTGAGAATAAT",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4f1f2a8d324d99f2"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a5ee8debaf1a339f",
+      "text": "LX-2 cells (H.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2615347e447527bd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a6707c2927665e7a",
+      "text": "1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cf2f7fb75ef0b348"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a9431afe24bb29e6",
+      "text": "IL-1β ELISA kit | MCE: Elabscience; HY-P7117, HY-P7118: E-EL-M0037/H0149",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0723e03701f3c4b2"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a966641eaa44c110",
+      "text": "(H) The qPCR analysis of Acta2, Tgf-b1, N-cadherin, and Pcna expression of HSCs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-a990d632a75394cc",
+      "text": "(H and I) Statistical analysis and representative confocal fluorescence images of BMDMs transfected with mRNA, LNP-mRNA, or αCD163/LNP-mRNA.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-aa42d08ba1b6127c",
+      "text": "(scale bar=50 \\(\\mu\\)m).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-aa683da857152501",
+      "text": "1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67d4b797f34a48d1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ab1a12942b855864",
+      "text": "Cytochalasin D | MCE: MCE; HY-P7117, HY-P7118: HY-N6682",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e81e8851dc4ff42e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-abe6d044cce5c32c",
+      "text": "J",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-33e01d9b64b5e824"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-abfb2c0517912171",
+      "text": "Parameter of the diameter (z-average) and PDI of each LNP",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2167d14a6e97ecf1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ac979f4cb1c3c31d",
+      "text": "L",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-217b3efea17fdc02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-acc1a8ffda61b183",
+      "text": "Significance was indicated as *P < 0.01 and non-significance as ns P > 0.05.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ad5930de2e219c7a",
+      "text": "JS-1/LUC cells (m.musculus) | Reference or Source: YaJi Biological; Identifier or Catalog Number: YS2595LUC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26a9a040ad650fc2"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ad77ef545462b828",
+      "text": "Differences among groups were statistically evaluated using one-way ANOVA.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ae7b26341b18d039",
+      "text": "N Appendix Fig 8.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-af8d7be4a2707b60",
+      "text": "PE anti-mouse CD206 | Reference or Source: Biolegend; Identifier or Catalog Number: 141706",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f0ffd48807bf3313"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-afac3eafde026662",
+      "text": "Tables S1 to S3",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-68f75a502acd958e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-afdddc19bb5dcff1",
+      "text": "anti-p-Syk | CST | 44170 ; anti-Syk | CST | 13198 ; anti-TGF-β1 | CST | 3711 ; anti-α-sma | CST | 19245 ; anti-N-cadherin | CST | 4061 ; anti-PCNA | CST | 13110 ; anti-β-actin | Abcam | ab8226 ; anti-Collagen III | CST | 94368 ; anti-MMP12 | ThermoFisher | MA5-32011 ; anti-IL-6 | ThermoFisher | AMC0864 ; anti-CD163 | ThermoFisher | 14-1631-82 ; anti-ALB | ThermoFisher | PA5-89332 ; anti-Desmin | ThermoFisher | MA5-32068 ; anti-CD45 | ThermoFisher | MCD4530 ; anti-F4/80 | ThermoFisher | 14-4801-82 ; anti-SOX9 | ThermoFisher | 702016 ; anti-IL-10 | ThermoFisher | ARC9102 ; anti-caspase3 | ThermoFisher | 700182 ; anti-FAP | ThermoFisher | PA5-99458 ; Oligonucleotides and other sequence-based reagents | | ; PCR primers | This study | Table3 ; Chemicals, Enzymes, and other reagents | | ; CCL4 | MCE | HY-Y0298 ; MCD diet | Guanfeng Bio | A02082002BR ; FBS | ThermoFisher | 10270106 ; PMA | MCE | HY-18739 ; mM-CSF | MCE | HYP7085 ; type IV collagenase | Sigma | C5138 ; DMEM | ThermoFisher | 41965062 ; RPMI-1640 | ThermoFisher | ; Quant-iT™ RiboGreen RNA Assay kit | ThermoFisher | R32705 ; live cell dye | Yeasen | 40721ES72",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b69a638b0bcce775"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b0e21659c424585b",
+      "text": "(F) The cytotoxicity of BMDMs against target FAP+JS-1 cells.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b11fe921f2e71a9a",
+      "text": "(A) H&E staining was performed to evaluate pathological changes in the heart, liver, spleen, lungs, and kidneys of the mice treated with oil and αCD163/LNP-FAPCAR (scale bar=20 \\(\\mu\\)m).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-710d3b87a0f0ff02"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b1ffbd8a568c31e7",
+      "text": "(L) Quantification of FAPCAR-positive staining in BMDMs (%) and (M), with analysis across biological replicates.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b21bc152daa05121",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-660abf74e25d5b4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b3b15d2cf22472bd",
+      "text": "H",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cbb61fa106eb37e1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b3d66d9ef391ccf2",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-916f07f1e2b49382"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b4976d3944e3981a",
+      "text": "anti-Desmin | CST: ThermoFisher; 44170: MA5-32068",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2d297025310ffa25"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b4b61119e164414c",
+      "text": "B Hydroxyproline assay",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-34efd9291dd53b31"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b4c868c49c778104",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6d88a453fc02c6ee"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b51219a32d47ba61",
+      "text": "(F and G) The relative protein expression levels of α-SMA, TGF-β1, N-cadherin, and PCNA in HSCs were analyzed by western blot.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b645ce0419dd3ea8",
+      "text": "0",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3d4a6257e2bac019"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-b711ab63e173c0d1",
+      "text": "DMEM | CST: ThermoFisher; 44170: 41965062",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3efb345788e9c85d"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-bea8abf07ef7f074",
+      "text": "mM-CSF | CST: MCE; 44170: HYP7085",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-548e18836feb7687"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-bf7047e413736612",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-de5f23f21a222bc5"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-bf9cfa8d04c72102",
+      "text": "(C) The mRNA relative expression of Mmp12 in BMDMs with cell debris.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebe41a23a598d8a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c25907480e8e74bd",
+      "text": "mus-Gapdh | TTTGCACGTATATGCCGAGAC: TACAGCAACAGGGTGGTGGAC; GGTGAACAGGCTCATTCATCTCT: TGGGATAGGGCCTCTCTTGCT",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-00e13a7a99c9dd95"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c2de672af63a9dca",
+      "text": "anti-Syk | CST: CST; 44170: 13198",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-75da386b1f335ead"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c385bd16775a6ae1",
+      "text": "(B) Intergroup comparison of the proportion of cells in each cluster.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cb6f842dab948cad"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c577ac5d27f7fe7f",
+      "text": "anti-α-sma | CST: CST; 44170: 19245",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5b81fdbb7ca2333b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c64778f5eb76604a",
+      "text": "E 1 J",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-966f967055c7fb6a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c6f23912a035c13d",
+      "text": "Flow cytometer | MCE: Becton Dickinson",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a31aa73febd97145"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c84b61ed3d52a342",
+      "text": "JS-1 cells (m.musculus) | Reference or Source: YaJi Biological; Identifier or Catalog Number: YS2162C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-02fa54553afa83cb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c975b4959b160d9a",
+      "text": "K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-69f763d6739b4acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-c9a1c2750436ff6d",
+      "text": "A D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-99f6dde4513f3c0d"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cb1c6f2570106751",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-712fc7ba6b2ceafc"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cb32c2c476e696d3",
+      "text": "homo-IL-6 | TTTGCACGTATATGCCGAGAC: AACCTGAACCTTCCAAAGATGG; GGTGAACAGGCTCATTCATCTCT: TCTGGCTTGTCCTCACTACT",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-1f620880556aed2a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cbd8f4e48927c6ec",
+      "text": "(A) Hydroxyproline quantification of the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6392dada098e6f9b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cbf5c26bb108628b",
+      "text": "Table 3 | mus-II-1β | Forward primer (5’–3’): AGAGCTTCAGGCAGGCAGTA; Reverse primer (5’–3’): AGGTGCTCATGTCCTCATCC",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-63bf3dcb2b4de6cc"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cbfe0dd895dd5c29",
+      "text": "Appendix Fig 11.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a3d224873eaf6a24"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cc8fea9c35b82b89",
+      "text": "mus-Caspase3 | TTTGCACGTATATGCCGAGAC: GTACAGAGCTGGACTGCGGTATTG; GGTGAACAGGCTCATTCATCTCT: AGTCGGCCTCCACTGGTATCTTC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf9b4f79143ceec5"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cd013c757b544c1a",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7c4192ad38d58e41"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-cf3ec0812f05bc1b",
+      "text": "αCD163/LNP | Diameter (nm): 132.05±3.10; PDI: 0.176±0.017",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-db35ae4b148cc8c7"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d158cce932e7b819",
+      "text": "M",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bf4a16855801e72e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d2f5659f364fe2d7",
+      "text": "(J) The p50 and gadd45b involved in the NF-\\(\\kappa\\)B pathways.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d4b147f315cae595",
+      "text": "(Scale bar, 50 μm.) with corresponding quantitative analysis.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d5f2570dbcde808f",
+      "text": "Balb/c mice | Reference or Source: Changsheng Bio; Identifier or Catalog Number: N/A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-96f1b430948cd10a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d5f6c68f9d8f7ca1",
+      "text": "In situ engineering of CAR-macrophages for targeted depletion of FAP-expressing hepatic stellate cells in liver fibrosis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b7c3021176b8f44b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d6005e6a378bd74f",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bddea302c539def5"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d674854d8fdefc8e",
+      "text": "Significance was indicated as *P < 0.01 and non-significance as ns P > 0.05.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d7410325d1ef0e80",
+      "text": "(A) H&E staining of the liver of the MCD model.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d7aa8de975d9cafd",
+      "text": "FBS | CST: ThermoFisher; 44170: 10270106",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d6c5b08a09f7fc4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d8aed96d0b00251c",
+      "text": "1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-eb242be4b3871093"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-d9664d6a169efcdc",
+      "text": "c",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6b4d096d49adce80"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-db1c6dc3681eb706",
+      "text": "anti-F4/80 | CST: ThermoFisher; 44170: 14-4801-82",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebf1a6017fb67dd6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-db8304ab42e616e5",
+      "text": "FlowJo 10.4.2 | MCE: https://www.flowjo.com",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-21c96385f9a54ae9"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-dca24110503242ba",
+      "text": "J",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-db3228c010ade82d"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-dd3ad5b30f680954",
+      "text": "Table 3 | mus-Tgf-b1 | Forward primer (5’–3’): CCACCTGCAAGACCATCGAC; Reverse primer (5’–3’): CTGGCGAGCCTTAGTTTGGAC",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-622ad429e20fd2cf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-dfc44809f42aa1d7",
+      "text": "E G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dfc63fc2bc4def20"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e0665be40f8f33cf",
+      "text": "anti-SOX9 | CST: ThermoFisher; 44170: 702016",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3eb2a0b6a43b6cf5"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e1c56639e7f49131",
+      "text": "Significance was indicated as *P < 0.01 and non-significance as ns P > 0.05.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26af8b76bd78e784"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e249400ccc6cb37a",
+      "text": "homo-GAPDH | TTTGCACGTATATGCCGAGAC: GCACCGTCAAGGCTGAGAAC; GGTGAACAGGCTCATTCATCTCT: ATGGTGGTGAAGACGCCAGT",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bfffa9552070ebdd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e32c00bb968dd77c",
+      "text": "(B-E) The method identified 11 unique cell clusters (cluster 0-10).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e32ecea343195440",
+      "text": "Recombinant Mouse CD163 Protein Standard (His tag) | MCE: Abcam; HY-P7117, HY-P7118: ab322099",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-023790527608e61a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e3446b256d796e21",
+      "text": "sapiens) | Reference or Source: YaJi Biological; Identifier or Catalog Number: YS110367C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9decb2740cc6cb5a"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e476737810702db1",
+      "text": "anti-CD45 | CST: ThermoFisher; 44170: MCD4530",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-38d1e0b25435bf12"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e478ac36097fc670",
+      "text": "(Scale bar, 20 μm.) (O–T) The qPCR analysis of Fap, Pcna, Col1a1, Col2a1, Tgf-b1, and Acta2 of the extracted HSCs from the mouse liver.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e4a054e8b7d8836e",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-de8493e2e69fa4cf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e516cf6969bf0ec3",
+      "text": "Hydroxyproline ELISA kit | MCE: Elabscience; HY-P7117, HY-P7118: E-BC-K062-M",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2f47ae653e051f21"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e6c46f5b393365fe",
+      "text": "mus-Gadd45b | TTTGCACGTATATGCCGAGAC: CCTGGCCATAGACGAAGAAG; GGTGAACAGGCTCATTCATCTCT: AGCCTCTGCATGCCTGATAC",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e032770fbcff3171"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e6efa02e1e70eab6",
+      "text": "(Scale bar, 50 μm.) with corresponding quantitative analysis.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e7072f556465d5e4",
+      "text": "Table 3 | mus-Cd80 | Forward primer (5’–3’): TGCTGCTGATTCGTCTTTCAC; Reverse primer (5’–3’): GAGGAGAGTTGTAACGGCAAG",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-89e7098bb6ac3fd7"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e70df6fa863c2a48",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-76733040ade18bcf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e72b858a9bb253db",
+      "text": "(D-G) Masson's trichrome and Sirius red staining with corresponding quantitative images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e7ed5cfe62bb14f3",
+      "text": "(B) The cytotoxicity of BMDMs against target JS-1 cells was assessed by co-culturing them overnight and calculating the killing efficiency in biological replicates.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc24a14fa70e21e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e862b68eb110904b",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f8a1fcaad8e2b53e"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e8982ad1de543917",
+      "text": "(C-E) The relative protein expression level of α-sma and Collagen-III of survived JS-1 cells was analyzed using western blot.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc24a14fa70e21e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e8b877490e2c7632",
+      "text": "Appendix Fig 3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-dc24a14fa70e21e6"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e9a7f35e65676920",
+      "text": "sapiens) | YaJi Biological | YS110367C ; THP-1 (H.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f6ff5f020c17f8bf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e9d1c4c36d9a59f0",
+      "text": "(A) Hydroxyproline quantification of the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e72cfd380dbfdeb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-e9efae4b73f34be1",
+      "text": "Table 3 | mus-Arg-1 | Forward primer (5’–3’): AACGGGAGGGTAACCATAAGC; Reverse primer (5’–3’): TGATGCCCCAGATGGTTTTC",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8f074dc2724a1586"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ec6337ca47d45d58",
+      "text": "CellRanger | MCE: https://www.r-project.org/",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a8d21706ada7447c"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ec783fa91d3d3cf5",
+      "text": "(A) Bioluminescence analysis of fibrotic mice induced by CCL4 at 0, 0.5, 2, 8, 24, and 72 hours post-intravenous injection of 40 \\(\\mu\\)g of luciferase mRNA encapsulated in LNP (LNP-Luc and αCD163/LNP-Luc).",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e26e74a1d30ea3cd"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ec84311daf353a4d",
+      "text": "Table 3 | mus-II-6 | Forward primer (5’–3’): CCAGTTGCCTTCTTGGGACT; Reverse primer (5’–3’): GGTCTGTTGGGAGTGGTATCC",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-bab186d8305eee08"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ee1170eae44303cf",
+      "text": "BMDMs with unincubated flow cytometry antibodies serving as a negative control gate method.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ee3e3a5cb1870c95",
+      "text": "(Scale bar, 20 μm.) (N) The fluorescence confocal microscopy of Desmin+ (red), α-sma+ (yellow), and DAPI in the liver tissues.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-eed8e327f0e04a4c",
+      "text": "anti-CD163 | CST: ThermoFisher; 44170: 14-1631-82",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-97b5faf4ad8f94e8"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-efe2f7ee5fb9af7f",
+      "text": "(B) Hydroxyproline quantification of the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f0e4871b6d81f1fa",
+      "text": "Data were representative of six independent",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-07f24ed603d44499"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f19ad4a3bd729eea",
+      "text": "(V–X) The relative protein expression level of p-P50NF-κB/P50NF-κB and p-Syk/Syk of screened BMDMs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-67cc1dc10c61e2c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f2f8ea1c325a2f30",
+      "text": "(H-O) The qPCR analysis of Col1a1, Col2a1, Col3, Acta2, Tgf-b1, Mmp12, Il-6 and Il-10 in liver tissues derived from the mice.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6392dada098e6f9b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f470504a1f1a73e4",
+      "text": "(D-H) The relative protein expression level of p-Syk/Syk, p-Myd88/Myd88, p-P50NF-\\(\\kappa\\)B/P50NF-\\(\\kappa\\)B and CD80 of BMDMs alone was analyzed using western blot.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ebe41a23a598d8a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f5630bdcfb54b5f8",
+      "text": "RIPA lysis buffer | MCE: Beyotime; HY-P7117, HY-P7118: P0013B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-caf8801aa86e19bb"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f606baba61989103",
+      "text": "Primer sequences used in real-time PCR analysis",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fe3bf5bd2d09c098"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f6bc0cfa812fa3c5",
+      "text": "formulation (\\(\\pm\\) standard deviation)",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4a48b47cce0b4dce"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f81dfdb122a1543c",
+      "text": "M",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-35f40797142f2e85"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f83af2e95a256de3",
+      "text": "sapiens) | Chinese Academy of Sciences' Cell Bank | SCSP-567 ; Balb/c mice | Changsheng Bio | N/A ; Antibodies | | ; PE-conjugated anti-mouse CD80 | Biolegend | 60055 ; PE anti-mouse CD206 | Biolegend | 141706 ; APC anti-mouse F4/80 | Biolegend | 123116 ; APC anti-mouse CD45 | Biolegend | 147707 ; PE anti-mouse CD163 | Biolegend | 156704 ; PE anti-human CD68 | Biolegend | 333808 ; PE anti-mouse FAP | Bio-Techne | 983802 ; anti-p-P50NF-κB | Affinity | AF3219 ; anti-P50NF-κB | Affinity | AF6217",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f6ff5f020c17f8bf"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f908f147c656e2e3",
+      "text": "(C-D) The relative protein expression level of p-P85/P85 of BMDMs was analyzed using western blot.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06187eaa558da880"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-f923dbbc4c14eda7",
+      "text": "(C) The serum ALT level determination.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2be88ba20fa06c4f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-fa1a3452c06ba07b",
+      "text": "(E-F) Confocal microscopy images displayed the phagocytosis of \\(FAP^{+}\\) JS-1 cells by BMDMs subjected to various formulations.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06187eaa558da880"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-fab0e08cdde6b9f3",
+      "text": "(Scale bar, 20 μm.) (G–L) The qPCR analysis of Caspase3, Bax, Bcl-2, Pcna, and P50, Gadd45b of the extracted primary Heps from the mouse liver.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-56e0bd0f5c9a763b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-fd04115d8ee6dfdc",
+      "text": "(C-G) H&E, Masson's trichrome, and Sirius red staining (scale bar=50 \\(\\mu\\)m) with corresponding quantitative images.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6392dada098e6f9b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-fdf88bcfc5591fd7",
+      "text": "anti-P50NF-κB | Reference or Source: Affinity; Identifier or Catalog Number: AF6217",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3397c6ca96d5f5c7"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-FC-ff45b6e6e92c1c4c",
+      "text": "(A) The liver tissue cells were isolated with a selected dimensional reduction coefficient of 0.1.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4c487cfbcb21d6a0"
+      ]
+    }
+  ],
+  "packet_checksum": "99a7ee5a50584cd27c5719bf169cd37720b1c8afe1a119cfc9ca4a8565b2f783"
+}

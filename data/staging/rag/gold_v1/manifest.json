@@ -3,10 +3,21 @@
     {
       "paper_id": "GP-001",
       "pmcid": "PMC13244520",
-      "xml_path": "data/raw/fulltext/gold_v1/xml/candidate_00001_PMC13244520.xml",
-      "supplement_pdfs": [],
-      "blocks": 46,
-      "characters": 57288
+      "xml_path": "data/raw/fulltext/oa_packages/PMC13244520/PMC13244520.nxml",
+      "supplement_pdfs": [
+        "data/raw/fulltext/oa_packages/PMC13244520/IDRD_A_2682976_SM0028.pdf"
+      ],
+      "blocks": 77,
+      "characters": 75895,
+      "block_types": {
+        "abstract": 1,
+        "figure_caption": 6,
+        "heading": 2,
+        "paragraph": 39,
+        "table": 3,
+        "table_row": 25,
+        "title": 1
+      }
     },
     {
       "paper_id": "GP-002",
@@ -27,14 +38,25 @@
     {
       "paper_id": "GP-004",
       "pmcid": "PMC7840919",
-      "xml_path": "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_Article_20903.nxml",
+      "xml_path": "data/raw/fulltext/oa_packages/PMC7840919/PMC7840919.nxml",
       "supplement_pdfs": [
         "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf",
         "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM2_ESM.pdf",
         "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf"
       ],
-      "blocks": 57,
-      "characters": 94195
+      "blocks": 348,
+      "characters": 136528,
+      "block_types": {
+        "abstract": 2,
+        "caption": 4,
+        "figure": 18,
+        "figure_caption": 6,
+        "heading": 44,
+        "paragraph": 198,
+        "table": 17,
+        "table_row": 58,
+        "title": 1
+      }
     },
     {
       "paper_id": "GP-005",
@@ -47,31 +69,64 @@
     {
       "paper_id": "GP-006",
       "pmcid": "PMC11617921",
-      "xml_path": "data/raw/fulltext/oa_packages/PMC11617921/main.nxml",
+      "xml_path": "data/raw/fulltext/oa_packages/PMC11617921/PMC11617921.nxml",
       "supplement_pdfs": [
         "data/raw/fulltext/oa_packages/PMC11617921/mmc1.pdf",
         "data/raw/fulltext/oa_packages/PMC11617921/mmc2.pdf"
       ],
-      "blocks": 54,
-      "characters": 104849
+      "blocks": 259,
+      "characters": 106865,
+      "block_types": {
+        "abstract": 1,
+        "caption": 5,
+        "figure": 24,
+        "heading": 35,
+        "paragraph": 175,
+        "table": 5,
+        "table_row": 13,
+        "title": 1
+      }
     },
     {
       "paper_id": "GP-007",
       "pmcid": "PMC13137855",
-      "xml_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
-      "supplement_pdfs": [],
-      "blocks": 37,
-      "characters": 54438
+      "xml_path": "data/raw/fulltext/oa_packages/PMC13137855/PMC13137855.nxml",
+      "supplement_pdfs": [
+        "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf"
+      ],
+      "blocks": 187,
+      "characters": 78506,
+      "block_types": {
+        "abstract": 1,
+        "caption": 1,
+        "figure": 57,
+        "heading": 24,
+        "paragraph": 85,
+        "table": 2,
+        "table_row": 16,
+        "title": 1
+      }
     },
     {
       "paper_id": "GP-008",
       "pmcid": "PMC13229182",
-      "xml_path": "data/raw/fulltext/oa_packages/PMC13229182/pnas.202534673.nxml",
+      "xml_path": "data/raw/fulltext/oa_packages/PMC13229182/PMC13229182.nxml",
       "supplement_pdfs": [
         "data/raw/fulltext/oa_packages/PMC13229182/pnas.2534673123.sapp.pdf"
       ],
-      "blocks": 63,
-      "characters": 88211
+      "blocks": 315,
+      "characters": 94267,
+      "block_types": {
+        "abstract": 1,
+        "caption": 5,
+        "figure": 78,
+        "figure_caption": 6,
+        "heading": 33,
+        "paragraph": 92,
+        "table": 7,
+        "table_row": 92,
+        "title": 1
+      }
     },
     {
       "paper_id": "GP-009",
@@ -82,5 +137,13 @@
       "characters": 44643
     }
   ],
-  "grobid_available": false
+  "uniparse_available": true,
+  "uniparse_base_url": "http://100.67.181.118:8020",
+  "warnings": [],
+  "partial_rebuild": [
+    "GP-001",
+    "GP-004",
+    "GP-007",
+    "GP-008"
+  ]
 }

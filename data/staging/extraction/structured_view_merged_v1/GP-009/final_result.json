@@ -1,0 +1,29 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-009",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "NO_TARGET_CELL_EVIDENCE"
+    ],
+    "evidence_ids": [
+      "GP-009-E-52aa2dcb19fee404",
+      "GP-009-E-9f8f06cd49f73aa6",
+      "GP-009-E-6e3f276531062d8c",
+      "GP-009-E-eebd6e63463b8d5b"
+    ],
+    "explanation": "The packet reports original in vivo and in vitro mRNA-LNP experiments with linked formulations and outcomes, but it does not report delivery to hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. Reported liver-level uptake/expression cannot be treated as evidence for a qualifying hepatic target cell."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "unresolved_items": [
+    "Liver-level biodistribution and luciferase-expression results do not identify the liver cell type receiving LNP-mRNA.",
+    "RAW 264.7 macrophages are reported, but the packet does not identify them as Kupffer cells."
+  ],
+  "outcomes": []
+}
