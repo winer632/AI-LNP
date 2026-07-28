@@ -1,82 +1,92 @@
 {
-  "report_version": "codex-harness-ablation-1.0.0",
+  "report_version": "codex-harness-ablation-2.0.0",
   "harness": "codex-exec",
   "model": "gpt-5.6-terra",
-  "reasoning_effort": "low",
-  "note": "All three conditions run through the same codex-exec harness, so the harness effect cancels and the delta is attributable to the evidence input. These numbers are NOT comparable to the native-API baseline.",
-  "native_api_reference": {
-    "first_call_only": "7/15",
-    "after_repair_and_merge": "10/15"
-  },
+  "note": "Within-harness only. Not comparable to the native-API path.",
   "conditions": [
     {
-      "id": "X_compact_pymupdf",
-      "description": "紧凑包 16k / pymupdf 语料",
+      "id": "compact_16k_noP3",
+      "label": "原紧凑包 16k · 无 P3",
+      "budget": "16k",
+      "candidates": "39",
+      "gp006_recovered": [
+        "GO-005"
+      ],
       "recovered": 6,
       "total": 15,
-      "rate": 0.4,
       "precision": 0.42857142857142855,
-      "false_additions": 8,
-      "missing_gold_outcome_ids": [
-        "GO-002",
-        "GO-003",
-        "GO-004",
-        "GO-006",
-        "GO-007",
-        "GO-010",
-        "GO-015",
-        "GO-017",
-        "GO-018"
-      ]
+      "recovers_go006": false
     },
     {
-      "id": "Y_full_pymupdf",
-      "description": "完整证据视图 / pymupdf 语料",
+      "id": "full_128k_noP3",
+      "label": "完整视图 128k · 无 P3",
+      "budget": "128k",
+      "candidates": "168",
+      "gp006_recovered": [
+        "GO-005",
+        "GO-007"
+      ],
       "recovered": 7,
       "total": 15,
-      "rate": 0.4666666666666667,
       "precision": 0.5,
-      "false_additions": 7,
-      "missing_gold_outcome_ids": [
-        "GO-001",
-        "GO-002",
-        "GO-003",
-        "GO-004",
-        "GO-006",
-        "GO-010",
-        "GO-017",
-        "GO-018"
-      ]
+      "recovers_go006": false
     },
     {
-      "id": "Z_full_uniparse_gp006",
-      "description": "完整证据视图 / uniparse 语料(仅 GP-006 替换)",
+      "id": "compact_16k_P3",
+      "label": "紧凑包 16k · P3",
+      "budget": "16k",
+      "candidates": "39",
+      "gp006_recovered": [
+        "GO-004",
+        "GO-005",
+        "GO-007"
+      ],
       "recovered": 8,
       "total": 15,
-      "rate": 0.5333333333333333,
-      "precision": 0.5333333333333333,
-      "false_additions": 7,
-      "missing_gold_outcome_ids": [
-        "GO-001",
-        "GO-002",
+      "precision": 0.42105263157894735,
+      "recovers_go006": false
+    },
+    {
+      "id": "structured_16k_P3",
+      "label": "结构感知包 16k · P3",
+      "budget": "16k",
+      "candidates": "53",
+      "gp006_recovered": [
+        "GO-005",
+        "GO-006"
+      ],
+      "recovered": 7,
+      "total": 15,
+      "precision": 0.35,
+      "recovers_go006": true
+    },
+    {
+      "id": "structured_48k_P3",
+      "label": "结构感知包 48k · P3",
+      "budget": "48k",
+      "candidates": "150",
+      "gp006_recovered": [
+        "GO-005",
+        "GO-007"
+      ],
+      "recovered": 7,
+      "total": 15,
+      "precision": 0.4375,
+      "recovers_go006": false
+    },
+    {
+      "id": "structured_16k_P3_consolidated",
+      "label": "结构感知包 16k · P3 · 候选合并",
+      "budget": "16k",
+      "candidates": "34",
+      "gp006_recovered": [
         "GO-004",
-        "GO-006",
-        "GO-010",
-        "GO-017",
-        "GO-018"
-      ]
+        "GO-005"
+      ],
+      "recovered": 7,
+      "total": 15,
+      "precision": 0.4666666666666667,
+      "recovers_go006": false
     }
-  ],
-  "evidence_availability_gp006": {
-    "note": "Deterministic string check, no model involved.",
-    "pymupdf_corpus": {
-      "1.01": 0,
-      "0.38": 0
-    },
-    "uniparse_corpus": {
-      "1.01": 4,
-      "0.38": 4
-    },
-    "gold_value": "GO-006 = 1.01 percent, uncertainty 0.38 (SD)"
-  }
+  ]
 }

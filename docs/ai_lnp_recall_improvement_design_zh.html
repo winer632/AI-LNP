@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI-LNP Recall 提升改造设计 · v5 · 2026-07-29</title>
+  <title>AI-LNP Recall 提升改造设计 · v6 · 2026-07-29</title>
   <meta name="description" content="基于实测证据的 AI-LNP 证据恢复率改造设计。v2 加入 GP-006 前置验证结果：GO-006 已确认可解。">
   <style>
     :root{
@@ -117,7 +117,7 @@
 <body>
 
 <header class="shell">
-  <div class="brand">AI-LNP · 改造设计<span class="ver">v5 · 六模块全部交付</span></div>
+  <div class="brand">AI-LNP · 改造设计<span class="ver">v6 · GO-006 已恢复</span></div>
   <div class="eyebrow">证据恢复率 · 2026 年 7 月 29 日</div>
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
@@ -140,7 +140,7 @@
     <div class="stat good"><strong>6/6</strong><span>模块已交付</span></div>
     <div class="stat good"><strong>341</strong><span>测试通过（原 160）</span></div>
     <div class="stat good"><strong>6→8</strong><span>消融 recall（同 harness）</span></div>
-    <div class="stat bad"><strong>GO-006</strong><span>仍未恢复</span></div>
+    <div class="stat good"><strong>GO-006</strong><span>已恢复 ✓</span></div>
   </div>
 
   <nav class="toc">
@@ -620,7 +620,47 @@ HybridIndex 查询 "total insertion frequency in LSECs" → 上述 table_row 为
     这正是 <code>run_compact_one_call.py</code> 算出 <code>outcome_candidates</code> 却不发送的那一环。
   </p>
 
-  <h3>6. 尚未验证的部分</h3>
+  <h3>6. 预算与候选数消融（v6 新增）</h3>
+  <p>全部在 codex harness 内、同模型同 effort，逐条改变一个变量：</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>条件</th><th class="num">预算</th><th class="num">候选</th><th class="num">GP-006</th><th class="num">全局</th><th class="num">精度</th></tr></thead>
+    <tbody>
+      <tr><td>原紧凑包 · 无 P3</td><td class="num">16k</td><td class="num">39</td><td class="num">1/5</td><td class="num">6/15</td><td class="num">0.429</td></tr>
+      <tr><td>完整视图 · 无 P3</td><td class="num">128k</td><td class="num">168</td><td class="num">2/5</td><td class="num">7/15</td><td class="num">0.500</td></tr>
+      <tr class="hl"><td><b>紧凑包 · P3</b></td><td class="num">16k</td><td class="num">39</td><td class="num yes">3/5</td><td class="num yes">8/15</td><td class="num">0.421</td></tr>
+      <tr class="hl"><td><b>结构感知包 · P3</b></td><td class="num">16k</td><td class="num">53</td><td class="num">2/5<br><small>含 <b>GO-006</b></small></td><td class="num">7/15</td><td class="num">0.350</td></tr>
+      <tr><td>结构感知包 · P3</td><td class="num">48k</td><td class="num">150</td><td class="num">2/5</td><td class="num">7/15</td><td class="num">0.438</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <b>GO-006 首次被恢复</b>
+    结构感知紧凑包（uniparse 语料 + 无条件保留表格/图注 + 16k 预算）配合 P3，
+    产出 <code>O3 value=1.01 LSEC total insertion frequency</code>。
+    这个值从调查第一天起在所有条件下命中数都是 0。
+  </div>
+
+  <div class="warn">
+    <b>把预算调大反而更差</b>
+    16k → 48k：outcome 从 8 条掉到 4 条，<code>1.01</code> 丢失，耗时 103s → 301s。
+    原因是耦合：<b>预算 ↑ → 候选数 ↑ → P3 退化</b>。
+    单独验证过的规模效应完全一致 —— 39 个候选全部处置且 valid；
+    168 个候选要么虚报 <code>extracted</code>（83 报 76 假），要么漏答（6 个槽位无处置）。
+    <b>约束不是预算大小，是候选数量。</b>
+  </div>
+
+  <div class="note">
+    <b>并集观察</b>
+    四个配置恢复的条目并集是 GO-003 / 004 / 005 / 006 / 007，
+    即 <b>GP-006 的全部 5 条金标准都被某个配置恢复过</b>，但没有一个配置能同时拿到。
+    这是配置组合问题的形状，不是能力天花板的形状。
+    据此接入了候选合并（<code>consolidate()</code>，168→79、53→34），
+    使 P3 契约回到已验证可工作的区间。
+  </div>
+
+  <h3>7. 尚未验证的部分</h3>
   <ul>
     <li><b>只有 GP-006 换成了 uniparse 语料。</b>其余 8 篇仍是 pymupdf 语料，全量重建约 2–3 分钟/篇。</li>
     <li><b>13–14/15 的目标未达成。</b>当前 codex harness 内为 8/15；原生 API 路径在合并修补后为 10/15。

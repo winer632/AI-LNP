@@ -51,6 +51,7 @@ from src.config_flags import is_enabled
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.build_outcome_candidates import build_candidates
 from src.extraction.check_outcome_coverage import check
+from src.extraction.consolidate_outcome_candidates import consolidate
 from src.extraction.compact_prompt_v1 import (
     active_prompt,
     candidate_slot_payload,
@@ -205,6 +206,7 @@ def run_one(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
     timeout: int = DEFAULT_TIMEOUT_SECONDS,
+    consolidate_candidates: bool = False,
 ) -> dict[str, Any]:
     if evidence_view not in PACKET_ROOT_BY_VIEW:
         raise ValueError(f"unknown evidence_view: {evidence_view}")
@@ -224,6 +226,20 @@ def run_one(
     outcome_candidates = (
         build_candidates(packet) if complexity.route == "complex" else None
     )
+    if outcome_candidates and consolidate_candidates:
+        # Opt-in, and measured as a regression on GP-006. Slot enforcement does
+        # degrade with candidate count (39 slots come back fully dispositioned,
+        # 168 do not) and consolidation roughly halves it (168 -> 79, 53 -> 34).
+        # But the merge is lossy in exactly the wrong direction: it collapsed
+        # the LSEC insertion-frequency candidate into the hepatocyte one, and
+        # the run that had recovered 1.01 stopped doing so (8 outcomes -> 3).
+        # Kept available, off by default.
+        outcome_candidates = consolidate(
+            paper_id=paper_id,
+            source_packet_checksum=packet.packet_checksum,
+            candidates=outcome_candidates,
+            packet=packet,
+        ).retained_candidates
     candidate_slots = (
         candidate_slot_payload(outcome_candidates)
         if outcome_candidates and is_enabled(CANDIDATE_SLOT_FLAG)
@@ -388,6 +404,14 @@ def main() -> None:
     parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_SECONDS)
     parser.add_argument(
+        "--consolidate-candidates",
+        action="store_true",
+        help=(
+            "Merge near-duplicate outcome candidates before sending slots. "
+            "Halves the slot count but measured as a regression on GP-006."
+        ),
+    )
+    parser.add_argument(
         "--confirm-codex-quota",
         action="store_true",
         help=(
@@ -414,6 +438,7 @@ def main() -> None:
                 model=args.model,
                 reasoning_effort=args.reasoning_effort,
                 timeout=args.timeout,
+                consolidate_candidates=args.consolidate_candidates,
             )
         except Exception as error:  # noqa: BLE001 - one bad paper must not abort the sweep
             manifest = {
