@@ -65,7 +65,7 @@ def test_prompt_version_is_frozen_when_the_flag_is_off():
     # A changed prompt version would silently invalidate every cached response
     # keyed on the old one, so pin it rather than merely asserting inequality.
     assert active_prompt(False).version == "compact-prompt-1.1.0"
-    assert active_prompt(True).version == "compact-prompt-1.2.0"
+    assert active_prompt(True).version == "compact-prompt-1.2.1"
 
 
 def test_enabling_the_flag_does_not_mutate_the_disabled_prompt():

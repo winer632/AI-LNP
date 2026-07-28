@@ -7,7 +7,7 @@ Two prompt versions live here.
     fingerprint and are pinned in ``config/extraction/compact_route_v1.yaml``,
     so it must not change.
 
-``compact-prompt-1.2.0`` (:data:`CANDIDATE_SLOT_EXTRACTION_PROMPT`)
+``compact-prompt-1.2.1`` (:data:`CANDIDATE_SLOT_EXTRACTION_PROMPT`)
     The baseline verbatim, plus the candidate-slot rules. Used only when the
     ``candidate_slot_enforcement`` (P3) flag is on. Versioning the new prompt
     separately -- rather than editing the baseline in place -- is what keeps the
@@ -47,14 +47,15 @@ COMPACT_EXTRACTION_PROMPT = (
     "Return only the structured response required by the supplied schema."
 )
 
-CANDIDATE_SLOT_PROMPT_VERSION = "compact-prompt-1.2.0"
+CANDIDATE_SLOT_PROMPT_VERSION = "compact-prompt-1.2.1"
 
 CANDIDATE_SLOT_RULES = (
     " The second user message lists candidate_slots: outcome candidates enumerated "
     "locally from this same packet, each with a candidate_id and a short summary of "
     "the evidence that produced it. Return exactly one candidate_dispositions entry "
     "for every candidate_id supplied, and no entry for any other id. "
-    "Use extracted when an outcome record you return covers that candidate, "
+    "Use extracted only when at least one evidence_id listed for that candidate also appears in the evidence_ids of an outcome record you "
+    "return; this is checked mechanically, and a candidate marked extracted whose evidence you never cite is rejected. "
     "not_an_outcome when the cited evidence is a method, hypothesis, or "
     "interpretation rather than a measured or reported result, and unresolved when "
     "the paper does report such an outcome but the packet does not give you a usable "

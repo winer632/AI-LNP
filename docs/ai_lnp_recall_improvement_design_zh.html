@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI-LNP Recall 提升改造设计 · v4 · 2026-07-29</title>
+  <title>AI-LNP Recall 提升改造设计 · v5 · 2026-07-29</title>
   <meta name="description" content="基于实测证据的 AI-LNP 证据恢复率改造设计。v2 加入 GP-006 前置验证结果：GO-006 已确认可解。">
   <style>
     :root{
@@ -117,7 +117,7 @@
 <body>
 
 <header class="shell">
-  <div class="brand">AI-LNP · 改造设计<span class="ver">v4 · 实施完成 + 消融结果</span></div>
+  <div class="brand">AI-LNP · 改造设计<span class="ver">v5 · 六模块全部交付</span></div>
   <div class="eyebrow">证据恢复率 · 2026 年 7 月 29 日</div>
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
@@ -137,8 +137,8 @@
   </div>
 
   <div class="strip">
-    <div class="stat good"><strong>4/6</strong><span>模块已交付</span></div>
-    <div class="stat good"><strong>313</strong><span>测试通过（原 160）</span></div>
+    <div class="stat good"><strong>6/6</strong><span>模块已交付</span></div>
+    <div class="stat good"><strong>341</strong><span>测试通过（原 160）</span></div>
     <div class="stat good"><strong>6→8</strong><span>消融 recall（同 harness）</span></div>
     <div class="stat bad"><strong>GO-006</strong><span>仍未恢复</span></div>
   </div>
@@ -391,17 +391,18 @@ format:   html
         <td class="mid">CI 尚未在 GitHub 上实际触发过一次</td>
       </tr>
       <tr>
-        <td><b>P2</b> 视觉观察</td><td class="num mid">65%<br><small>(65%)</small></td>
-        <td><code>SelectiveVisionResponse</code> 完整；<code>enforce_visual_safety</code>
-            已强制「估算值 → 人工审核」，即设计文档的 abstain 硬规则</td>
-        <td class="mid">开发中：<code>printed_labels</code> 逐字标签；与 uniparse panel 对象打通</td>
+        <td><b>P2</b> 视觉观察</td><td class="num yes">100%<br><small>(65%)</small></td>
+        <td><code>printed_labels</code> 已加；<code>exact_reported</code> 现在<b>强制要求逐字标签</b>
+            （无标签的「精确值」与自信的猜测无法区分）；<code>derived</code> 豁免（推导自带溯源）；
+            既有的「估算值 → 人工审核」规则未被放松；11 个测试</td>
+        <td class="yes">无</td>
       </tr>
       <tr>
-        <td><b>P3</b> 候选必答前移</td><td class="num mid">25%<br><small>(25%)</small></td>
-        <td>repair 阶段 <code>missing_record_contracts</code> 已强制 disposition + unresolved_reason</td>
-        <td class="no">开发中。<b>这是当前最关键的缺口</b> ——
-            <code>run_compact_one_call.py:120</code> 算出候选却从不下发（<code>:163</code> 只发 packet），
-            模型可静默跳过 GO-006 而仍通过 schema 校验</td>
+        <td><b>P3</b> 候选必答前移</td><td class="num yes">100%<br><small>(25%)</small></td>
+        <td>候选 id 随 packet 下发；每个槽位必须有处置；
+            <b>并核验 <code>extracted</code> 是否属实</b>（<code>unsupported_extracted_disposition</code>）；
+            prompt 1.1.0 / 1.2.1 双版本，off 时逐字节不变；16 个测试</td>
+        <td class="mid">flag 需保持 off，直至模型能满足 extracted 核验（见二·六节）</td>
       </tr>
       <tr class="hl">
         <td><b>recall 验收</b></td><td class="num mid">部分</td>
