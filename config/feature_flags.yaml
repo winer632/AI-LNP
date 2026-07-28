@@ -28,8 +28,14 @@ flags:
   # --------------------------------------------------------------------- P0-a
   uniparse_ingestion:
     priority: P1
-    default: false
-    status: in_development
+    default: true
+    status: enabled
+    rationale: >-
+      Enabled on measurement. GP-006 corpus goes 54 -> 260 blocks and
+      the value 1.01 appears 4 times where page.get_text() found it 0
+      times; that value is GO-006. Safe to default on because an
+      unreachable service degrades to the pymupdf path with a recorded
+      warning rather than failing ingestion.
     description: >-
       Route document ingestion through the external UniParse structural parsing
       service (see UNIPARSE_BASE_URL in .env.example) instead of the in-repo
@@ -45,7 +51,13 @@ flags:
   full_evidence_view:
     priority: P0-a
     default: false
-    status: in_development
+    status: available
+    rationale: >-
+      Available, not default. It contributes GO-015 and GO-007 to the
+      union, but as a sole route it scores 7/15 against the compact
+      route's 8/15, so it is an ensemble member rather than a
+      replacement. Pin a full-view run by turning this on with
+      compact_route off.
     description: >-
       Send the full local evidence inventory to the extraction call instead of
       the token-budgeted compact packet. Trades input cost for recall on papers
@@ -60,8 +72,13 @@ flags:
   # ----------------------------------------------------------------------- P1
   precision_metrics:
     priority: P0-b
-    default: false
-    status: in_development
+    default: true
+    status: enabled
+    rationale: >-
+      Enabled on measurement. Recall alone cannot separate a run that
+      found more from one that emitted more: the 11/15 union carries
+      precision 0.373 and 32 false additions. Reporting-only, so it
+      cannot change an extraction.
     description: >-
       Compute dynamic precision/recall metrics during final gold evaluation
       rather than reporting only one-to-one recovery counts.
@@ -73,7 +90,14 @@ flags:
   local_vlm_vision:
     priority: P2
     default: false
-    status: planned
+    status: available
+    rationale: >-
+      Available, not default. The panel reads are correct -- GO-002's 20
+      printed labels transcribed including 41.5%, GO-003 read as
+      colocalized -- but they do not score, because gold writes LYVE1
+      where the read writes LYVE-1 and the tokenizer splits only the
+      latter. Enabling it today adds records that lower precision
+      without raising recall.
     description: >-
       Use a local vision-language model (Ollama + Gemma) for targeted figure and
       table observation instead of a paid multimodal call. Output must stay
@@ -88,6 +112,9 @@ flags:
     priority: roadmap
     default: false
     status: planned
+    rationale: >-
+      Not implemented. Listed so the roadmap item has an id; there is no
+      code path behind it and nothing reads this flag.
     description: >-
       Expand literature discovery beyond PubMed and Europe PMC (OpenAlex,
       semantic similarity, backward/forward citation chaining) while keeping
@@ -100,8 +127,14 @@ flags:
   # ---------------------------------------------------------------------- P3
   candidate_slot_enforcement:
     priority: P3
-    default: false
-    status: in_development
+    default: true
+    status: enabled
+    rationale: >-
+      Enabled on measurement. Recovers GO-004, and the
+      unsupported_extracted_disposition check rejects 76 of 83
+      unsupported claims including 4 of 4 covering 1.01. It degrades
+      with slot count -- 39 slots come back fully dispositioned, 168 do
+      not -- so large papers should chunk via max_slots_per_call.
     description: >-
       Send the locally enumerated outcome-candidate slots with the first
       extraction call and require the model to account for every candidate id.
@@ -115,12 +148,17 @@ flags:
 
   compact_route:
     priority: baseline
-    status: gated
+    status: enabled
+    rationale: >-
+      Enabled on measurement, reversing the earlier plan to retire it.
+      Compact plus slots scores 8/15 against the full view's 7/15, and
+      37 of the 51 records in the 11/15 union come from compact-spec
+      runs.
     # The compact route's activation gate used to be a dead config value that no
     # runtime code read. It is now a real switch: this flag mirrors the YAML key
     # below, and `is_enabled("compact_route")` is the only supported way to ask
     # whether the compact route may replace the baseline route.
-    default: false
+    default: true
     yaml_source:
       path: config/extraction/compact_route_v1.yaml
       key: activation_gate.active

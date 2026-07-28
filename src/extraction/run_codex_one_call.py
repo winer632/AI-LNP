@@ -68,12 +68,32 @@ HARNESS = "codex-exec"
 # imports the OpenAI SDK at module level, and this harness must stay loadable
 # without it.
 CANDIDATE_SLOT_FLAG = "candidate_slot_enforcement"
+FULL_EVIDENCE_VIEW_FLAG = "full_evidence_view"
+COMPACT_ROUTE_FLAG = "compact_route"
 
 PACKET_ROOT_BY_VIEW = {
     "compact": ROOT / "data" / "staging" / "rag" / "compact_api_packets_v1",
     "full": ROOT / "data" / "staging" / "rag" / "full_api_packets_v1",
 }
 DEFAULT_OUTPUT_ROOT = ROOT / "data" / "staging" / "extraction" / "codex_one_call_v1"
+
+
+def default_evidence_view() -> str:
+    """Resolve which evidence view a run uses from the flags.
+
+    Measured on the gold set, neither view dominates: the full view recovers
+    GO-015 and GO-007, the compact view plus slots recovers GO-004 and GO-006,
+    and 37 of the 51 records in the 11/15 union come from compact-spec runs.
+    So the compact route stays the default and the full view is the opt-in,
+    which is the opposite of what the earlier plan assumed.
+
+    With compact_route off and full_evidence_view off there is no route left,
+    so the compact packet is used and the caller is not silently given a run
+    that skipped evidence selection entirely.
+    """
+    if is_enabled(FULL_EVIDENCE_VIEW_FLAG) and not is_enabled(COMPACT_ROUTE_FLAG):
+        return "full"
+    return "compact"
 
 
 def _sha256(payload: bytes) -> str:
@@ -200,7 +220,7 @@ def run_codex(
 def run_one(
     paper_id: str,
     *,
-    evidence_view: str = "compact",
+    evidence_view: str | None = None,
     packet_root: Path | None = None,
     output_root: Path = DEFAULT_OUTPUT_ROOT,
     model: str = DEFAULT_MODEL,
@@ -208,6 +228,9 @@ def run_one(
     timeout: int = DEFAULT_TIMEOUT_SECONDS,
     consolidate_candidates: bool = False,
 ) -> dict[str, Any]:
+    # None means "whatever the flags say"; an explicit value always wins, so a
+    # measurement run can pin the view regardless of deployment configuration.
+    evidence_view = evidence_view or default_evidence_view()
     if evidence_view not in PACKET_ROOT_BY_VIEW:
         raise ValueError(f"unknown evidence_view: {evidence_view}")
     resolved_root = packet_root or PACKET_ROOT_BY_VIEW[evidence_view]

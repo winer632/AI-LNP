@@ -66,10 +66,23 @@ def test_named_capability_flags_are_registered():
         assert name in known_flags()
 
 
-def test_new_capabilities_default_to_off_for_gradual_rollout():
+def test_a_flag_may_only_ship_enabled_with_a_recorded_rationale():
+    """Rollout policy, restated now that some flags are on.
+
+    The original rule was that every design-priority flag ships disabled. That
+    held while nothing had been measured. It cannot hold now without also
+    meaning "never turn anything on", so the rule it becomes is: a flag that
+    defaults on must say why, and a flag that is still planned must be off.
+    """
     for flag in registry().values():
-        if flag.priority in DESIGN_PRIORITIES:
-            assert flag.default is False, f"{flag.name} should ship disabled"
+        if flag.default is True:
+            assert getattr(flag, "rationale", None), (
+                f"{flag.name} ships enabled but records no rationale"
+            )
+        if flag.status == "planned":
+            assert flag.default is False, (
+                f"{flag.name} is still planned and must not default on"
+            )
 
 
 def test_flags_are_documented_and_declare_integration_points():
@@ -90,15 +103,16 @@ def test_every_flag_has_a_distinct_environment_variable():
 
 
 def test_defaults_apply_when_no_environment_override_is_present():
-    assert is_enabled("uniparse_ingestion", env={}) is False
-    assert is_enabled("full_evidence_view", env={}) is False
-    assert is_enabled("precision_metrics", env={}) is False
+    # Compare against what each flag registers rather than a literal, so a
+    # rollout decision changes one file instead of breaking this test.
+    for name in known_flags():
+        assert is_enabled(name, env={}) is describe_flag(name).default
 
 
 def test_all_flags_reports_every_registered_flag():
     values = all_flags(env={})
     assert set(values) == set(known_flags())
-    assert all(value is False for value in values.values())
+    assert values == {name: describe_flag(name).default for name in known_flags()}
 
 
 def test_compact_route_default_mirrors_its_yaml_gate():
@@ -149,15 +163,19 @@ def test_falsy_environment_values_disable_a_flag(raw):
 
 
 def test_environment_override_beats_the_configured_default():
-    variable = env_var_for("precision_metrics")
-    assert is_enabled("precision_metrics", env={}) is False
-    assert is_enabled("precision_metrics", env={variable: "true"}) is True
+    for name in known_flags():
+        variable = env_var_for(name)
+        configured = describe_flag(name).default
+        opposite = "false" if configured else "true"
+        assert is_enabled(name, env={}) is configured
+        assert is_enabled(name, env={variable: opposite}) is (not configured)
 
 
 def test_empty_environment_value_falls_back_to_the_default():
     # `AI_LNP_FLAG_X= command` must not silently mean "off".
-    assert is_enabled("compact_route", env={"AI_LNP_FLAG_COMPACT_ROUTE": ""}) is False
-    assert is_enabled("uniparse_ingestion", env={"AI_LNP_FLAG_UNIPARSE_INGESTION": "  "}) is False
+    for name, blank in (("compact_route", ""), ("uniparse_ingestion", "  ")):
+        env = {env_var_for(name): blank}
+        assert is_enabled(name, env=env) is describe_flag(name).default
 
 
 def test_unparseable_environment_value_is_rejected():
@@ -249,7 +267,9 @@ def test_unknown_flag_uses_an_explicit_default_when_given(fallback):
 
 def test_explicit_default_never_overrides_a_registered_flag():
     # A registered flag always wins, so a stale default= cannot silently mask it.
-    assert is_enabled("uniparse_ingestion", default=True, env={}) is False
+    for name in known_flags():
+        configured = describe_flag(name).default
+        assert is_enabled(name, default=not configured, env={}) is configured
 
 
 def test_describe_flag_rejects_unknown_names():
@@ -281,7 +301,9 @@ def test_override_accepts_priority_ids(monkeypatch):
     monkeypatch.delenv("AI_LNP_FLAG_UNIPARSE_INGESTION", raising=False)
     with override(p1=True):
         assert is_enabled("uniparse_ingestion") is True
-    assert is_enabled("uniparse_ingestion") is False
+    with override(p1=False):
+        assert is_enabled("uniparse_ingestion") is False
+    assert is_enabled("uniparse_ingestion") is describe_flag("uniparse_ingestion").default
 
 
 def test_override_restores_after_an_exception(monkeypatch):
@@ -289,7 +311,7 @@ def test_override_restores_after_an_exception(monkeypatch):
     with pytest.raises(RuntimeError):
         with override(precision_metrics=True):
             raise RuntimeError("boom")
-    assert is_enabled("precision_metrics") is False
+    assert is_enabled("precision_metrics") is describe_flag("precision_metrics").default
 
 
 # --------------------------------------------------------------------------- #

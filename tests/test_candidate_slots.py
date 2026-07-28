@@ -57,8 +57,11 @@ def _response_payload(paper_id: str = "GP-001", dispositions=None) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def test_flag_is_off_by_default():
-    assert is_enabled(FLAG) is False
+def test_flag_ships_enabled_on_measured_evidence():
+    # Was "off by default". Turned on after it recovered GO-004 and its
+    # unsupported_extracted_disposition check rejected 76 of 83 unsupported
+    # claims. The override tests below still pin both sides of the switch.
+    assert is_enabled(FLAG) is True
 
 
 def test_prompt_version_is_frozen_when_the_flag_is_off():

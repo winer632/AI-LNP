@@ -8,8 +8,11 @@ import re
 from functools import lru_cache
 from pathlib import Path
 
+from src.config_flags import is_enabled
+
 
 ROOT = Path(__file__).resolve().parents[2]
+PRECISION_METRICS_FLAG = "precision_metrics"
 GOLD_ROOT = ROOT / "data/annotations/gold_v1"
 OUTPUT_ROOT = ROOT / "reports/extraction/final_gold_dynamic_v1"
 RESULT_ROOTS = [
@@ -517,27 +520,36 @@ def evaluate(
         "missing_gold_outcome_ids": [
             row["gold_outcome_id"] for row in results if not row["recovered"]
         ],
-        "precision": matched_records / result_outcome_count
-        if result_outcome_count
-        else 0.0,
-        "false_additions": {
-            "count": len(false_additions),
-            "items": false_additions,
-        },
-        "evidence_accuracy": {
-            "checked": evidence_checked,
-            "supported": evidence_supported,
-            "rate": evidence_supported / evidence_checked
-            if evidence_checked
-            else 0.0,
-        },
-        "unresolved_declared": {
-            "result_items": unresolved_result_items,
-            "merge_candidates": unresolved_merge_candidates,
-        },
         "results": results,
         "paid_api_requests": 0,
     }
+    # P0-b. Recall alone cannot distinguish a run that found more from a run
+    # that emitted more, so these travel with it -- but they are additive to a
+    # report other tooling already reads, so the flag governs whether they
+    # appear rather than whether they are computed.
+    if is_enabled(PRECISION_METRICS_FLAG):
+        summary.update(
+            {
+                "precision": matched_records / result_outcome_count
+                if result_outcome_count
+                else 0.0,
+                "false_additions": {
+                    "count": len(false_additions),
+                    "items": false_additions,
+                },
+                "evidence_accuracy": {
+                    "checked": evidence_checked,
+                    "supported": evidence_supported,
+                    "rate": evidence_supported / evidence_checked
+                    if evidence_checked
+                    else 0.0,
+                },
+                "unresolved_declared": {
+                    "result_items": unresolved_result_items,
+                    "merge_candidates": unresolved_merge_candidates,
+                },
+            }
+        )
     output_root.mkdir(parents=True, exist_ok=True)
     (output_root / "evaluation.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n",

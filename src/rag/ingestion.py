@@ -11,6 +11,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Iterable
 
+from src.config_flags import is_enabled
 from src.extraction.pdf_multimodal_contracts import BoundingBox
 
 from .models import DocumentBlock
@@ -31,6 +32,7 @@ OA_ROOT = ROOT / "data" / "raw" / "fulltext" / "oa_packages"
 CORPUS_ROOT = ROOT / "data" / "staging" / "rag" / "gold_v1"
 
 UNIPARSE_ENABLED_ENV = "UNIPARSE_ENABLED"
+UNIPARSE_FLAG = "uniparse_ingestion"
 SUPPLEMENT_SECTION_ROOT = "Supplement"
 
 LABEL_PREFIX = r"(?:Supplementary\s+|Supplemental\s+|Extended\s+Data\s+)?"
@@ -319,9 +321,20 @@ def xml_blocks(paper_id: str, path: Path) -> list[DocumentBlock]:
 
 
 def uniparse_enabled() -> bool:
-    return os.environ.get(UNIPARSE_ENABLED_ENV, "1").strip().lower() not in {
-        "0", "false", "no", "off",
-    }
+    """Resolve the P1 flag through the registry, not a private env var.
+
+    This used to read UNIPARSE_ENABLED directly and default it to "1", so the
+    registry reported uniparse_ingestion as off while ingestion was in fact
+    routing through uniparse. Anything auditing the flag file got the wrong
+    answer about what the pipeline was doing.
+
+    UNIPARSE_ENABLED is still honoured, because deployments set it, but it is
+    now one input to the flag rather than a way around it.
+    """
+    raw = os.environ.get(UNIPARSE_ENABLED_ENV, "").strip().lower()
+    if raw:
+        return raw not in {"0", "false", "no", "off"}
+    return is_enabled(UNIPARSE_FLAG)
 
 
 def uniparse_blocks(

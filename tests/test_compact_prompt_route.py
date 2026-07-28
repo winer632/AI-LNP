@@ -70,7 +70,11 @@ def test_route_versions_prompt_contract_packet_and_baseline():
     )
     assert api_packet["evidence_budget_estimated_tokens"] == 16000
     assert api_packet["budget_status"] == "human_approved"
-    assert route["activation_gate"]["active"] is False
+    # Opened once the gate's own requirement was met: the route is implemented
+    # and gold-evaluated. The evidence that satisfied it is recorded in the
+    # gate so this assertion cannot drift away from its justification.
+    assert route["activation_gate"]["active"] is True
+    assert route["activation_gate"]["requirement_met"]["union_recall"] == "11/15"
     assert route["baseline"]["manifest"] == str(
         BASELINE.relative_to(ROOT)
     )

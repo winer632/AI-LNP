@@ -42,6 +42,16 @@ baseline:
 # AI_LNP_FLAG_COMPACT_ROUTE environment override is honoured. See
 # config/feature_flags.yaml.
 activation_gate:
-  active: false
+  # The requirement below is met: the compact route is implemented and has been
+  # evaluated on the frozen gold set. Solo it recovers 8/15, against 7/15 for
+  # the full evidence view, and 37 of the 51 records in the 11/15 union come
+  # from compact-spec runs. Opened on that evidence; see the rationale on
+  # compact_route in config/feature_flags.yaml.
+  active: true
   feature_flag: compact_route
   requirement: implement_and_gold_evaluate_compact_route_before_replacing_baseline
+  requirement_met:
+    evaluated_on: data/annotations/gold_v1
+    compact_route_recall: 8/15
+    full_evidence_view_recall: 7/15
+    union_recall: 11/15

@@ -134,6 +134,10 @@ class FeatureFlag:
     description: str = ""
     priority: str | None = None
     status: str | None = None
+    # Why this flag ships at its current default. Required by the rollout test
+    # for anything that defaults on, so "it is enabled" always comes with the
+    # measurement that justified enabling it.
+    rationale: str = ""
     env_var: str = ""
     aliases: tuple[str, ...] = ()
     integration_points: tuple[str, ...] = ()
@@ -295,6 +299,7 @@ def _build_registry(
             description=" ".join(str(entry.get("description") or "").split()),
             priority=priority,
             status=None if entry.get("status") is None else str(entry["status"]),
+            rationale=" ".join(str(entry.get("rationale") or "").split()),
             env_var=env_var,
             aliases=aliases,
             integration_points=_string_tuple(
