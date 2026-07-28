@@ -441,31 +441,6 @@ format:   html
     需要跨配置集成才能到 <b>11/15</b>。历史最高 12/15 是另一套架构且带人工裁决，不同口径。
   </div>
 
-  <div class="warn">
-    <b>v11 更新 · 默认单配置口径已从 10/15 变为 11/15（第 23 轮）</b><br>
-    上一轮查出的根因是接线漏了一段：<code>src/rag/structured_compact_packet.py</code>
-    早就写好也量过，但 <b>没有任何代码调用它</b> ——
-    <code>run_codex_one_call.PACKET_ROOT_BY_VIEW</code> 只认得 <code>compact</code> 和
-    <code>full</code>，默认跑法根本到不了这个包。同时 <code>uniparse_ingestion</code>
-    虽然默认已开，<b>提交在库里的语料却还是 pymupdf 时代的产物</b>，没人重跑过 ingestion。
-    两处一起补上之后：
-    <ul>
-      <li>语料按默认开关重建（5 篇带附件的文章，GP-006 由 54 → 259 blocks，<code>1.01</code> 出现 4 次）</li>
-      <li>新开关 <code>structured_evidence_view</code>（默认开）把结构化包接进默认路线</li>
-      <li>九篇全部再跑一遍结构化视图，按流水线既有的<b>增量合并</b>方式并入结果栈</li>
-    </ul>
-    <b>GO-006 由此被找回</b>：模型从 Table S2 行里读出 <code>1.01 ± 0.38%</code>，
-    exact_numeric 命中，三道门全过，且该记录的<b>自证据校验为 True</b>。
-    <br><br>
-    <b>代价必须一起报：</b>precision <b>0.3125 → 0.2586</b>，虚增记录 22 → 43，
-    记录总数 32 → 58。这是一对一匹配的结构性结果 ——
-    多加一个抽取阶段只能抬 recall、只能压 precision。
-    <br><br>
-    <b>口径说明：</b>这仍是<b>单一配置</b>（开关全在出厂默认位），
-    只是流水线本来就是「基线抽取 → 若干合并阶段」的栈，这里加的是同一配置下的又一个阶段，
-    与 <code>codex_union_v1</code> 那种跨配置并集不是一回事。
-  </div>
-
   <h3 id="s2b-flags">1·五 开关上线状态（v9 · 第 19–20 轮）</h3>
   <p>每个默认打开的开关都必须在注册表里带 <code>rationale</code> 字段写明实测依据，
      这条由 <code>test_a_flag_may_only_ship_enabled_with_a_recorded_rationale</code> 强制。</p>
@@ -476,11 +451,6 @@ format:   html
       <tr><td><code>uniparse_ingestion</code></td><td class="num yes">开</td>
           <td>GP-006 语料 54 → 260 blocks；<code>1.01</code> 出现 4 次（原为 0 次），该值即 GO-006。
               服务不可达时降级到 pymupdf 并留告警，<b>已实测</b>，故默认开是安全的</td></tr>
-      <tr><td><code>structured_evidence_view</code></td><td class="num yes">开</td>
-          <td>同一 16k 预算，换一种花法：表格、表行、题注一条都不丢，剩下的额度再按检索排序填。
-              GP-006 紧凑包里 <code>1.01</code> 出现 0 次，结构化包出现 4 次（206 条证据 / 98 条结构化）。
-              默认单跑 <b>10/15 → 11/15</b>，代价是 precision <b>0.3125 → 0.2586</b>。
-              目前只接在 codex-exec 路线上，付费路线未接</td></tr>
       <tr><td><code>candidate_slot_enforcement</code></td><td class="num yes">开</td>
           <td>恢复 GO-004；<code>unsupported_extracted_disposition</code> 拦下 83 条无据声明中的 76 条。
               槽位数大时退化（39 个全部回填，168 个不行），大文章需按 <code>max_slots_per_call</code> 分块</td></tr>
@@ -499,6 +469,83 @@ format:   html
           <td>无实现，仅为 roadmap 占位</td></tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="ok">
+    <b>v12 · 最终结果：确定性 12/15，旁路 13/15</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>口径</th><th class="num">recall</th><th class="num">precision</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>默认单次跑</td><td class="num yes">11/15</td><td class="num">0.1897</td>
+            <td>结构化证据视图接线 + 语料重新生成后，GO-006 进入默认链路</td></tr>
+        <tr><td>union + 视觉（GP-004/006）</td><td class="num yes">12/15</td><td class="num">0.2264</td>
+            <td><b>主数字</b>。枚举结构化传递后 GO-003 计分；匹配器一行未改</td></tr>
+        <tr><td>+ 盲审旁路</td><td class="num">13/15</td><td class="num">—</td>
+            <td>旁路，<b>按设计不替换主数字</b>。19 对里拒 18 接受 1（GO-018）</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>12/15 不是靠松门换来的。</b><code>minimum_score</code> 仍是 0.42，三道门一行未改。
+    起作用的是接线：视觉响应本就携带一个由<b>未见过 gold 的模型</b>产出的 7 值封闭枚举
+    <code>relationship</code>，把它<b>结构化地</b>挂到记录上即可。
+    <b>绝不能写进文本</b>——<code>not_colocalized</code> 分词后是 <code>{not, colocalized}</code>，
+    写成文本等于把否定读成肯定；这条由 <code>test_a_denied_relation_cannot_satisfy_the_gold_it_denies</code> 钉住。
+  </div>
+
+  <div class="warn">
+    <b>v12 · 被数据否决的方案（含我自己提的那个）</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>方案</th><th>检验结果</th><th class="num">结论</th></tr></thead>
+      <tbody>
+        <tr><td>极性等价类<br><small>（我提出的）</small></td>
+            <td>500 个机械生成对照错误接受 <b>150 个</b>；默认 root 上 recall <b>10 → 8</b>、precision 同降。
+                手写的 18 个对照是 0/18——<b>这个落差本身就是调参的 signature</b></td>
+            <td class="num no">否决</td></tr>
+        <tr><td>-ize/-ization 词形归并</td>
+            <td>对照 80/500 → <b>110/500</b>；无任何 outcome 获益；还把词表改写成 <code>colocaliz</code> 而
+                <b>静默禁用了结构化路径</b></td><td class="num no">否决</td></tr>
+        <tr><td>标记名归一<br><small>LYVE1 / LYVE-1</small></td>
+            <td>正确且对称，但 GO-003 的 endpoint 门<b>修复前就已经过了</b>，实测 <b>+0</b></td>
+            <td class="num">保留，记为 0</td></tr>
+        <tr><td>轴刻度过滤</td>
+            <td>裸刻度 <code>20</code> 确实会满足数值门，修改正确，但本配置下实测 <b>+0</b></td>
+            <td class="num">保留，记为 0</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>为什么前两个以完全相同的方式失败</b>——这条推理值得单独记：
+    <blockquote style="margin:.6em 0;padding:.5em .9em;border-left:3px solid #c88;">
+    这道门拒绝的是<b>陌生词汇</b>，不是否定。它在否定对照上的「正确」表现本身就是词汇不匹配的副产品，
+    所以<b>任何改善匹配的改动都必然放进更多否定</b>。
+    </blockquote>
+    实测佐证：当前这道门<b>会接受</b> "GFP was <i>not</i> colocalized"、"<i>No</i> colocalization was observed"、
+    "Damage was <i>not</i> reduced" 去匹配对应的肯定 gold，却<b>拒绝</b>真同义的 "signals were overlapping"。
+    另有两个死条目：<code>eradicated</code> 在 gold 中出现 0 次；<code>obvious</code> 出现 1 次却因去复数
+    被切成 <code>obviou</code> 而永不可达。
+    <br><br>
+    <b>但现有数字未被此缺陷抬高</b>：触发该门的 6 条 gold 中已匹配的 2 条逐条查过原文——
+    GO-013 靠 <code>defenestration</code> 过门而候选确实说了 "ameliorated"，
+    GO-011 命中 <code>solely</code> 是因既有的 <code>exclusively → solely</code> 归一——语义都站得住。
+  </div>
+
+  <div class="warn">
+    <b>v12 · precision 全线更正（我此前报的数偏高）</b>
+    评测器按 <b>id 集合</b>统计匹配，而 union 里各来源 run 都从 <code>O1</code> 开始编号——
+    51 条记录里有 19 个重复 id（GP-006 一篇占 12 个）。一条匹配会把<b>所有同 id 记录</b>都算成已匹配。
+    <div class="scroll">
+    <table>
+      <thead><tr><th>指标</th><th class="num">我此前报的</th><th class="num">正确值</th></tr></thead>
+      <tbody>
+        <tr><td><code>codex_union_v1</code> precision</td><td class="num no">0.3725</td><td class="num yes">0.2157</td></tr>
+        <tr><td><code>codex_union_v1</code> evidence accuracy</td><td class="num no">6/9</td><td class="num yes">4/8</td></tr>
+        <tr><td>默认 root precision 0.3125</td><td class="num" colspan="2">正确（该 root 无重复 id）</td></tr>
+      </tbody>
+    </table>
+    </div>
+    已在评测器（按身份而非 id 统计）和 <code>union_paper</code>（冲突时重编号并保留
+    <code>source_outcome_id</code>）两处修掉，并加了「precision 恒等于 recovered/records」的不变式断言。
   </div>
 
   <div class="warn">
