@@ -493,6 +493,58 @@ format:   html
     写成文本等于把否定读成肯定；这条由 <code>test_a_denied_relation_cannot_satisfy_the_gold_it_denies</code> 钉住。
   </div>
 
+  <div class="warn">
+    <b>v15 · 第三次否决（这次被拒的是能直接给到 13/15 的那个改动）</b><br>
+    GO-018 的视觉记录已经声明了 <code>relationship: colocalized</code>，
+    而 gold 的判别词是 <code>localized</code>——封闭枚举词表里根本没有这个值。
+    加一条 <code>colocalized → localized</code> 的映射即可得 <b>13/15</b>。<b>没有加。</b>
+    <blockquote style="margin:.6em 0;padding:.5em .9em;border-left:3px solid #c88;">
+    枚举词表是<b>一元</b>的：它命名<b>关系</b>，从不命名关系的<b>参数</b>。
+    </blockquote>
+    GP-008 自己那条读图就是活证据：同一句话里既断言了与 F4/80 的<b>共定位</b>，
+    又断言了对 Desmin 的<b>非定位</b>——两个枚举值由<b>完全相同的证据</b>支持，模型只能声明一个。
+    声明 <code>colocalized</code> 则 GO-018 通过，声明 <code>not_colocalized</code> 则被否决。
+    <b>同一条记录、同一张图，判定翻转取决于一个任意选择。</b>
+    反向情形更糟：一条因「信号不在 Desmin 上」而声明 <code>not_colocalized</code> 的读图，
+    会去<b>否决</b>一条断言「定位于巨噬细胞」的 gold——那是它根本没考察过的区室，而且该发现其实是<b>佐证</b>它的。
+    <br><br>
+    语义上也不成立：<code>colocalized</code> 断言「共存(A,B)」，<code>localized to X</code> 断言「局限于 X」。
+    共存<b>不蕴含</b>局限。唯一的通路是把 <code>colocalized → localized</code> <b>点名</b>写进去，
+    那正是取消资格的动作。
+  </div>
+
+  <div class="ok">
+    <b>v15 · 一个真实的记分缺陷：抗原名被当成了数值</b><br>
+    追查「视觉记录靠话多取胜」这个假设时，查出了真正的原因——<b>而且不是话多</b>。
+    两处数值检查扫的是<b>原始文本</b>，于是 <code>F4/80</code>（一个抗原名）被读成了数值 <b>80</b>。
+    GO-015 的 gold 值正好是 80，而 <code>F4/80</code> 在那条 GP-008 读图里出现 <b>6 次</b>：
+    <div class="scroll">
+    <table>
+      <thead><tr><th>GO-015 × 该视觉记录 得分分解</th><th class="num">修复前</th><th class="num">修复后</th></tr></thead>
+      <tbody>
+        <tr><td>lexical</td><td class="num">0.2105</td><td class="num">0.2105</td></tr>
+        <tr><td><b>numeric（虚假）</b></td><td class="num no">0.4000</td><td class="num yes">0</td></tr>
+        <tr><td>qualitative + endpoint</td><td class="num">0.28</td><td class="num">0.28</td></tr>
+        <tr><td><b>合计</b></td><td class="num no">0.8905（抢走配对）</td><td class="num yes">0.4905</td></tr>
+      </tbody>
+    </table>
+    </div>
+    同一个 bug 也在 <code>_number_in_text</code> 里——<b>证据核验同样中招</b>：
+    <code>"F4/80-positive cells"</code> 会解析出 <code>[4.0, 80.0]</code>。
+    <br><br>
+    <b>验收标准是事先定好的、且独立已知的正确答案：</b>修完后 GO-015 是否回到那条报告
+    「% of BMDMs expressing FAPCAR」的文本记录上。<b>回去了，1.0 分</b>；GO-016 也回到了它应在的记录上。
+    两条此前都在错的记录上。含 GP-008 的 root 证据覆盖 <b>6/9 → 6/10</b>，recall 无一处下降。
+    <br><br>
+    <b>顺带否决了「按体积收费」的分母改动：</b>在数值修复<b>之上</b>再测，
+    <code>min</code> 反而是唯一能把 GP-008 判对的分母——jaccard 会让 <code>codex_union_v1</code>
+    的 recall <b>掉到 10/15</b>，dice 让 GO-015/016 互换到对方的错记录上。
+    第一轮测量看似支持 dice，<b>那是被这个数字 bug 混淆了</b>。
+    <br><br>
+    我早先加的 <code>_fuse_marker_names</code> 当时记为 <b>+0</b>——现在看方向是对的，
+    只是<b>没应用到数值检查上</b>。
+  </div>
+
   <div class="ok">
     <b>v14 · §十 的校验层建起来了，并立刻查出真实的 uniparse 幻觉</b><br>
     §十 把这一层称为<b>必需</b>，理由是「否则只是把幻觉从抽取阶段挪到解析阶段」——
