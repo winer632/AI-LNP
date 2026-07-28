@@ -88,6 +88,15 @@ def test_a_flag_may_only_ship_enabled_with_a_recorded_rationale():
 def test_flags_are_documented_and_declare_integration_points():
     for flag in registry().values():
         assert flag.description, f"{flag.name} has no description"
+        if flag.status == "planned":
+            # Nothing reads a planned flag yet, and claiming otherwise is what
+            # made this list untrustworthy in the first place. An empty list is
+            # the honest answer; the companion test pins it to the real call
+            # sites, so it cannot stay empty once code starts reading it.
+            assert not flag.integration_points, (
+                f"{flag.name} is planned but claims integration points"
+            )
+            continue
         assert flag.integration_points, f"{flag.name} has no integration points"
 
 
@@ -392,3 +401,51 @@ DESIGN_PRIORITY_OWNER = {
 def test_priority_ids_match_the_design_document(priority, canonical):
     assert describe_flag(priority).name == canonical
     assert describe_flag(canonical).priority == priority
+
+
+def test_declared_integration_points_really_read_the_flag():
+    """A flag's integration_points must be files that call is_enabled for it.
+
+    The list used to be aspirational: it named the files a capability was
+    expected to touch, and 10 of 16 entries named a file that never read the
+    flag, while every real consumer of full_evidence_view, local_vlm_vision
+    and compact_route went undeclared. Anyone auditing which code a flag
+    governs got the wrong answer from the registry.
+
+    Constants count. Several call sites pass CANDIDATE_SLOT_FLAG or P2_FLAG
+    rather than a string literal, so a literal-only search under-reports.
+    """
+    import re
+    from pathlib import Path
+
+    source_root = Path(__file__).resolve().parents[1] / "src"
+    constants: dict[str, str] = {}
+    for path in source_root.rglob("*.py"):
+        for match in re.finditer(
+            r'^([A-Z][A-Z0-9_]*)\s*=\s*"([a-z_]+)"',
+            path.read_text(encoding="utf-8"),
+            re.MULTILINE,
+        ):
+            constants[match.group(1)] = match.group(2)
+
+    readers: dict[str, set[str]] = {}
+    for path in source_root.rglob("*.py"):
+        if path.name == "config_flags.py":
+            continue
+        for match in re.finditer(
+            r"is_enabled\(\s*(?:\"([^\"]+)\"|'([^']+)'|([A-Z][A-Z0-9_]*))",
+            path.read_text(encoding="utf-8"),
+        ):
+            name = match.group(1) or match.group(2) or constants.get(match.group(3))
+            if name:
+                readers.setdefault(name, set()).add(
+                    str(path.relative_to(source_root.parent))
+                )
+
+    for flag in registry().values():
+        declared = set(flag.integration_points)
+        actual = readers.get(flag.name, set())
+        assert declared == actual, (
+            f"{flag.name}: declared {sorted(declared)} but "
+            f"is_enabled is called from {sorted(actual)}"
+        )

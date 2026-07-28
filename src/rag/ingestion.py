@@ -608,7 +608,24 @@ def build_corpus(
                 for block_type in sorted({row.block_type for row in blocks})
             },
         })
-    (CORPUS_ROOT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+    # A filtered run describes only the papers it rebuilt, so writing its
+    # manifest wholesale would delete the entries for every paper it skipped
+    # and leave a manifest that disagrees with the .blocks.jsonl files still on
+    # disk. Merge into the existing manifest instead, replacing the rebuilt
+    # papers and keeping the rest.
+    manifest_path = CORPUS_ROOT / "manifest.json"
+    if paper_ids and manifest_path.exists():
+        previous = json.loads(manifest_path.read_text(encoding="utf-8"))
+        rebuilt = {row["paper_id"] for row in manifest["papers"]}
+        kept = [
+            row for row in previous.get("papers", [])
+            if row.get("paper_id") not in rebuilt
+        ]
+        manifest["papers"] = sorted(
+            kept + manifest["papers"], key=lambda row: row.get("paper_id", "")
+        )
+        manifest["partial_rebuild"] = sorted(rebuilt)
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
     return manifest
 
 

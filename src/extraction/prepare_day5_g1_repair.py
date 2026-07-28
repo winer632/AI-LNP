@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -95,5 +96,18 @@ def run() -> dict:
     }
 
 
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--confirm-write",
+        action="store_true",
+        help="Required: this rewrites tracked report files in place.",
+    )
+    args = parser.parse_args()
+    if not args.confirm_write:
+        parser.error("--confirm-write is required; this rewrites tracked files")
+    print(json.dumps(run(), indent=2, default=str))
+
+
 if __name__ == "__main__":
-    print(json.dumps(run(), indent=2))
+    main()

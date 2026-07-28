@@ -42,10 +42,11 @@ flags:
       PDF/XML parser. Preserves sections, captions, tables, cells, and reading
       order so figure/table objects survive into the evidence graph.
     aliases: [P1, p1, uniparse]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
       - src/rag/ingestion.py
-      - src/rag/index.py
-      - src/screening/retrieve_gold_oa_packages.py
 
   # --------------------------------------------------------------------- P0-b
   full_evidence_view:
@@ -63,11 +64,11 @@ flags:
       the token-budgeted compact packet. Trades input cost for recall on papers
       whose evidence does not fit the compact budget.
     aliases: [P0-a, p0a, full_view]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
-      - src/rag/compact_packet.py
-      - src/rag/models.py
-      - src/extraction/build_full_outcome_inventory.py
-      - src/extraction/run_compact_one_call.py
+      - src/extraction/run_codex_one_call.py
 
   # ----------------------------------------------------------------------- P1
   precision_metrics:
@@ -83,6 +84,9 @@ flags:
       Compute dynamic precision/recall metrics during final gold evaluation
       rather than reporting only one-to-one recovery counts.
     aliases: [P0-b, p0b]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
       - src/extraction/evaluate_final_gold_dynamic.py
 
@@ -103,9 +107,13 @@ flags:
       table observation instead of a paid multimodal call. Output must stay
       structured observations with explicit abstention, never conclusions.
     aliases: [P2, p2]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
-      - src/extraction/assess_outcome_complexity.py
-      - src/extraction/run_selective_vision.py
+      - src/extraction/build_selective_vision_tasks.py
+      - src/extraction/identify_selective_vision_referrals.py
+      - src/extraction/selective_vision_contracts.py
 
   # ----------------------------------------------------------------------- P3
   expanded_discovery:
@@ -120,8 +128,11 @@ flags:
       semantic similarity, backward/forward citation chaining) while keeping
       deduplication and the complete search manifest.
     aliases: [discovery_expansion]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
-      - src/search/
+      []
 
   # ------------------------------------------------------------------ baseline
   # ---------------------------------------------------------------------- P3
@@ -141,10 +152,12 @@ flags:
       Today the candidates are computed before the call but never sent, so a
       response that silently omits an experiment still passes schema validation.
     aliases: [P3, p3, candidate_must_answer]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
+      - src/extraction/run_codex_one_call.py
       - src/extraction/run_compact_one_call.py
-      - src/extraction/compact_prompt_v1.py
-      - src/extraction/compact_validation.py
 
   compact_route:
     priority: baseline
@@ -163,10 +176,18 @@ flags:
       path: config/extraction/compact_route_v1.yaml
       key: activation_gate.active
     description: >-
-      Allow the compact extraction route to replace the
-      fulltext-rag-evidence-graph-v4 baseline. Stays off until the compact route
-      has been implemented and gold-evaluated end to end.
+      Select the compact evidence route. Read by
+      run_codex_one_call.default_evidence_view, where it takes precedence over
+      full_evidence_view: with this on, a run uses the compact packet even if
+      the full view is also enabled. Because compact is also what an
+      unconfigured run falls back to, toggling this alone at the shipped
+      defaults produces no observable change -- it only becomes visible
+      alongside full_evidence_view. Described this way deliberately: it
+      previously claimed to gate replacing the v4 baseline, which is not what
+      any code does with it.
     aliases: [compact_activation_gate, activation_gate]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
     integration_points:
-      - src/extraction/run_compact_one_call.py
-      - config/extraction/compact_route_v1.yaml
+      - src/extraction/run_codex_one_call.py

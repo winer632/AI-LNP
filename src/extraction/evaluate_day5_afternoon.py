@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import json
 from pathlib import Path
 from statistics import mean
@@ -382,8 +383,19 @@ def write(report: dict[str, Any]) -> None:
     (OUTPUT_ROOT / "comparison.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--confirm-write",
+        action="store_true",
+        help="Required: this rewrites tracked report files in place.",
+    )
+    args = parser.parse_args()
+    if not args.confirm_write:
+        parser.error("--confirm-write is required; this rewrites tracked files")
+    print(json.dumps(build(), ensure_ascii=False, indent=2, default=str))
+
+
 if __name__ == "__main__":
-    result = build()
-    write(result)
-    print(json.dumps(result["aggregate"], indent=2))
-    print(json.dumps(result["g1"], indent=2))
+    main()

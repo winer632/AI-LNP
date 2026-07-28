@@ -2,6 +2,7 @@ import csv
 import json
 
 from src.extraction.evaluate_final_gold_dynamic import (
+    ROOT,
     _best_one_to_one_matches,
     _evidence_ids,
     _evidence_supports,
@@ -14,6 +15,10 @@ from src.extraction.evaluate_final_gold_dynamic import (
 
 SUMMARY_KEYS = {
     "evaluation_version",
+    # Which result roots were scored. The default single-configuration run and
+    # the cross-configuration union both write this report and differ by a
+    # whole outcome, so the file has to say which one it is.
+    "result_roots",
     "matching",
     "recovered",
     "total",
@@ -313,7 +318,7 @@ def test_evidence_texts_merge_packet_and_gold_gap_task(tmp_path):
 def test_evaluate_emits_the_full_summary_schema(tmp_path):
     summary = evaluate(output_root=tmp_path / "out")
     assert set(summary) == SUMMARY_KEYS
-    assert summary["evaluation_version"] == "final-gold-dynamic-1.1.0"
+    assert summary["evaluation_version"] == "final-gold-dynamic-1.2.0"
     assert summary["paid_api_requests"] == 0
     assert set(summary["false_additions"]) == {"count", "items"}
     assert set(summary["evidence_accuracy"]) == {"checked", "supported", "rate"}
@@ -336,3 +341,26 @@ def test_recall_regression_is_unchanged_by_the_precision_metrics(tmp_path):
     assert summary["total"] == 15
     assert round(summary["rate"], 4) == 0.6667
     assert summary["missing_gold_outcome_ids"] == MISSING_GOLD_OUTCOME_IDS
+
+
+def test_summary_records_which_result_roots_it_scored(tmp_path):
+    """The report must be reproducible from itself.
+
+    A default run scores the four baseline roots and a union run scores one
+    ensemble root, and the two differ by a whole outcome. Both write the same
+    file, so a reader holding it needs it to say which it is; without that,
+    re-running the default command silently replaced the union number and the
+    result looked like an unreproducible claim rather than a different
+    measurement.
+    """
+    default = evaluate(output_root=tmp_path / "a")
+    assert default["result_roots"], "a report that names no source is not reproducible"
+    assert all(isinstance(root, str) for root in default["result_roots"])
+
+    union_root = ROOT / "data/staging/extraction/codex_union_v1"
+    if not union_root.exists():
+        return
+    union = evaluate(output_root=tmp_path / "b", result_roots=[union_root])
+    assert union["result_roots"] == ["data/staging/extraction/codex_union_v1"]
+    assert union["result_roots"] != default["result_roots"]
+

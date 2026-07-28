@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import json
 import re
 from functools import lru_cache
@@ -49,9 +50,35 @@ def _value(value):
     return value.get("value") if isinstance(value, dict) else value
 
 
+# Biological marker names are written with the separator between the stem and
+# its numeric suffix chosen freely: LYVE1 / LYVE-1 / LYVE_1, F4/80 / F4_80.
+# The gold set uses both spellings of one marker inside a single row -- GO-003
+# writes LYVE1_positive_LSECs in endpoint_name and LYVE-1 in
+# qualitative_outcome, GO-002 writes F4_80 and F4/80 -- so by the gold set's
+# own usage the spellings denote the same entity.
+#
+# Without this the underscore becomes a space and the marker splits into
+# lyve + 1 while the unhyphenated spelling stays one token, so the name the
+# claim is about can never match. Applied to both sides of every comparison,
+# so it removes a spelling difference rather than favouring a prediction.
+#
+# The separator must be punctuation. An earlier version also fused across a
+# space and silently ate real tokens: "more than 80% of BMDMs" became
+# "than80", which dropped the 80 an evidence check was looking for. A space
+# between a word and a number is ordinary prose, not a marker name.
+# Lookarounds rather than \b: underscore is a word character to the regex
+# engine, so \b never fires inside F4_80_positive and that spelling would not
+# fuse while F4/80 did.
+_MARKER_SEPARATOR = re.compile(r"(?<![a-z0-9])([a-z][a-z0-9]*)[-_/](\d+)(?![0-9])")
+
+
+def _fuse_marker_names(text: str) -> str:
+    return _MARKER_SEPARATOR.sub(lambda m: f"{m.group(1)}{m.group(2)}", text)
+
+
 def _tokens(text: str) -> set[str]:
     normalized = (
-        text.lower()
+        _fuse_marker_names(text.lower())
         .replace("_", " ")
         .replace("exclusively", "solely")
         .replace("colocalization", "colocalized")
@@ -512,7 +539,17 @@ def evaluate(
     evidence_checked = sum(row["evidence_checked"] for row in results)
     evidence_supported = sum(row["evidence_supported"] for row in results)
     summary = {
-        "evaluation_version": "final-gold-dynamic-1.1.0",
+        "evaluation_version": "final-gold-dynamic-1.2.0",
+        # Which results were scored. Without this the file cannot be
+        # reproduced from itself: the default single-configuration run and the
+        # cross-configuration union both write here and differ by a whole
+        # outcome, so a reader had no way to tell which number they were
+        # holding, and re-running the default command silently replaced one
+        # with the other.
+        "result_roots": [
+            str(root.relative_to(ROOT)) if root.is_relative_to(ROOT) else str(root)
+            for root in (result_roots if result_roots is not None else RESULT_ROOTS)
+        ],
         "matching": "semantic, numeric, one-to-one; no hard-coded recovered IDs",
         "recovered": recovered,
         "total": len(results),
@@ -558,5 +595,19 @@ def evaluate(
     return summary
 
 
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--confirm-write",
+        action="store_true",
+        help="Required: this rewrites tracked report files in place.",
+    )
+    args = parser.parse_args()
+    if not args.confirm_write:
+        parser.error("--confirm-write is required; this rewrites tracked files")
+    print(json.dumps(evaluate(), ensure_ascii=False, indent=2, default=str))
+
+
 if __name__ == "__main__":
-    print(json.dumps(evaluate(), indent=2))
+    main()
