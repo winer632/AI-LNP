@@ -43,6 +43,14 @@ def _sha(value: bytes | str) -> str:
 def load_task(path: Path) -> MissingRecordTask:
     task = MissingRecordTask.model_validate_json(path.read_text(encoding="utf-8"))
     unsigned = task.model_dump(mode="json", exclude={"task_checksum"})
+    # existing_experiments arrived in 1.1.0. A 1.0.0 task on disk has no such
+    # key, but the model supplies its default on load, so re-serialising adds a
+    # field the checksum was never computed over. Drop it for those tasks
+    # rather than either rejecting the historical record or recomputing its
+    # checksum -- recomputing would make the signature agree with whatever the
+    # code currently produces, which is the one thing a checksum must not do.
+    if task.task_version == "missing-record-task-1.0.0":
+        unsigned.pop("existing_experiments", None)
     if _sha(_canonical(unsigned)) != task.task_checksum:
         raise ValueError("Missing-record task checksum mismatch")
     return task

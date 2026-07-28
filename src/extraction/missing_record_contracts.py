@@ -15,13 +15,32 @@ class StrictModel(BaseModel):
 
 
 class MissingRecordTask(StrictModel):
-    task_version: Literal["missing-record-task-1.0.0"]
+    """A repair task, bounded by the evidence it carries.
+
+    Version 1.1.0 adds ``existing_experiments``. Until then the task named
+    the experiments only by id, and an outcome record must cite an experiment,
+    so a model that had genuinely recovered an outcome could not attach it to
+    anything without inventing that experiment's required fields. It correctly
+    refused instead: "does not identify the associated experiment ID ...
+    without inventing required experiment fields." Three repair calls returned
+    unresolved for exactly this reason and produced no records.
+
+    The ids stay for readers that only need identity.
+    """
+
+    # Both versions parse. 1.0.0 tasks are committed as the historical record
+    # of runs that produced measurements; rejecting them would invalidate that
+    # evidence to gain nothing. New tasks are built at 1.1.0.
+    task_version: Literal["missing-record-task-1.0.0", "missing-record-task-1.1.0"]
     paper_id: str
     route_ids: list[str] = Field(min_length=1)
     candidate_ids: list[str] = Field(min_length=1)
     evidence: list[RepairEvidence] = Field(min_length=1, max_length=12)
     existing_formulation_ids: list[str]
     existing_experiment_ids: list[str]
+    # The records themselves, so a recovered outcome has something legal to
+    # attach to. Empty when the source result declares no experiments.
+    existing_experiments: list[ExperimentRecord] = Field(default_factory=list)
     existing_outcome_ids: list[str]
     permitted_new_experiments: int = Field(ge=0, le=2)
     permitted_new_outcomes: int = Field(ge=1, le=8)

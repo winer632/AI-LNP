@@ -93,7 +93,7 @@ def _validation_task(task: ConsolidatedRecoveryTask) -> MissingRecordTask:
         for asset in task.visual_assets
     )
     return MissingRecordTask(
-        task_version="missing-record-task-1.0.0",
+        task_version="missing-record-task-1.1.0",
         paper_id=task.paper_id,
         route_ids=[f"consolidated:{candidate_id}" for candidate_id in task.candidate_ids],
         candidate_ids=task.candidate_ids,

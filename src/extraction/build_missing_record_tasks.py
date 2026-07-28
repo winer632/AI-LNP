@@ -104,7 +104,7 @@ def build_text_tasks(
             )
         )[:12]
         unsigned = {
-            "task_version": "missing-record-task-1.0.0",
+            "task_version": "missing-record-task-1.1.0",
             "paper_id": routing.paper_id,
             "route_ids": [
                 route_by_candidate[candidate_id].route_id
@@ -122,6 +122,10 @@ def build_text_tasks(
             "existing_formulation_ids": [
                 row["formulation_id"] for row in result.get("formulations", [])
             ],
+            # Carry the records, not just the ids: an outcome must cite an
+            # experiment, and a task that names them only by id leaves a model
+            # no legal way to attach what it recovered.
+            "existing_experiments": list(result.get("experiments", [])),
             "existing_experiment_ids": [
                 row["experiment_id"] for row in result.get("experiments", [])
             ],

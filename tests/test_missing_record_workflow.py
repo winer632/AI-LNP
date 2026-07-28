@@ -66,7 +66,7 @@ def _outcome():
 
 def _task():
     return MissingRecordTask(
-        task_version="missing-record-task-1.0.0",
+        task_version="missing-record-task-1.1.0",
         paper_id="GP-X",
         route_ids=["RT-1", "RT-2"],
         candidate_ids=["OC-1", "OC-2"],

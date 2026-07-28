@@ -54,7 +54,7 @@ def load_task(path: Path) -> MissingRecordVisionTask:
 
 def _as_text_task(task: MissingRecordVisionTask) -> MissingRecordTask:
     return MissingRecordTask(
-        task_version="missing-record-task-1.0.0",
+        task_version="missing-record-task-1.1.0",
         paper_id=task.paper_id,
         route_ids=task.route_ids,
         candidate_ids=task.candidate_ids,

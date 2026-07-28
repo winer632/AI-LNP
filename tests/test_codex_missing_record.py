@@ -66,7 +66,7 @@ def _missing():
 
 def _task(**overrides) -> MissingRecordTask:
     payload = {
-        "task_version": "missing-record-task-1.0.0",
+        "task_version": "missing-record-task-1.1.0",
         "paper_id": "GP-T",
         "route_ids": ["RT-1"],
         "candidate_ids": ["OC-1", "OC-2"],
@@ -79,6 +79,10 @@ def _task(**overrides) -> MissingRecordTask:
         ],
         "existing_formulation_ids": ["F1"],
         "existing_experiment_ids": ["E1"],
+        # Present in the payload so the checksum covers it: the model
+        # supplies its default on load, and a checksum computed without
+        # it would never verify.
+        "existing_experiments": [],
         "existing_outcome_ids": ["O1"],
         "permitted_new_experiments": 1,
         "permitted_new_outcomes": 2,
