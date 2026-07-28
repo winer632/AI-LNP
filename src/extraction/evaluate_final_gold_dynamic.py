@@ -31,6 +31,7 @@ RESULT_ROOTS = [
 ]
 PACKET_ROOT = ROOT / "data/staging/rag/compact_api_packets_v1_1"
 FULL_PACKET_ROOT = ROOT / "data" / "staging" / "rag" / "full_api_packets_v1"
+EXTRA_PACKET_ROOTS = (ROOT / "data/staging/rag/structured_compact_packets_sc_v1",)
 STRUCTURED_PACKET_ROOT = ROOT / "data/staging/rag/structured_compact_packets_v1"
 GOLD_GAP_TASK_ROOT = ROOT / "data/staging/extraction/consolidated_gold_gap_tasks_v1"
 STOP = {
@@ -204,6 +205,7 @@ def _evidence_texts(
     task_root: Path = GOLD_GAP_TASK_ROOT,
     structured_packet_root: Path = STRUCTURED_PACKET_ROOT,
     full_packet_root: Path = FULL_PACKET_ROOT,
+    extra_packet_roots: tuple[Path, ...] = EXTRA_PACKET_ROOTS,
 ) -> dict[str, str]:
     """Load offline evidence text for one paper.
 
@@ -251,6 +253,17 @@ def _evidence_texts(
         if evidence_id and isinstance(text, str):
             texts.setdefault(evidence_id, text)
             _record_locator_alias(row, text, aliases)
+    # Bespoke packet roots a one-off run was sent. GP-006's O8 cites an id that
+    # lives only in structured_compact_packets_sc_v1, so without this the record
+    # was uncheckable -- and it is a real id, not a hallucination, which is the
+    # distinction the report should be able to make.
+    for root in extra_packet_roots:
+        for row in _packet_evidence(root / f"{paper_id}.json"):
+            evidence_id = row.get("evidence_id")
+            text = row.get("text")
+            if evidence_id and isinstance(text, str):
+                texts.setdefault(evidence_id, text)
+                _record_locator_alias(row, text, aliases)
     # A packet built with `structured_evidence_ids` on carries both ids for the
     # same passage, so a record citing the legible one resolves to exactly the
     # text the hash id resolves to. `setdefault` because an alias may never

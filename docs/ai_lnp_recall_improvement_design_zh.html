@@ -500,7 +500,7 @@ format:   html
       <thead><tr><th>口径</th><th class="num">recall</th><th class="num">precision</th><th class="num">证据</th></tr></thead>
       <tbody>
         <tr><td>默认单次跑</td><td class="num">11/15</td><td class="num">0.1897</td><td class="num">6/11</td></tr>
-        <tr><td>union（可从仓库重建）</td><td class="num">11/15</td><td class="num">0.2157</td><td class="num">6/10</td></tr>
+        <tr><td>union（可从仓库重建）</td><td class="num">11/15</td><td class="num">0.2157</td><td class="num">6/11</td></tr>
         <tr><td>union + 视觉</td><td class="num">12/15</td><td class="num">0.2264</td><td class="num">6/11</td></tr>
         <tr><td><b>union + 视觉 + 抢救</b></td><td class="num yes"><b>13/15</b></td><td class="num">0.2203</td><td class="num yes">7/12</td></tr>
       </tbody>
@@ -523,6 +523,25 @@ format:   html
     <b>一个关键细节——并入 vs 前置：</b>把抢救结果作为第六个 root <b>前置</b>，
     GP-004 会被整篇替换，GO-002 换来了但 GO-001 丢了，仍是 12/15。
     <b>并入</b> GP-004 才是 13/15。两条都是 1.0 分且证据核验通过。
+    <br><br>
+    <b>v16 更正三处（由独立验收查出）：</b>
+    <ul>
+      <li><b><code>record_level_salvage</code> 在评分时是惰性的。</b>它是<b>构建</b>产物需要的，
+          不是<b>评分</b>需要的——评测器里只调用了 <code>precision_metrics</code> 和
+          <code>vision_relationship_polarity</code> 两个开关。我说「两个开关打开」暗示了两者都承重，实际只有后者承重</li>
+      <li><b>union 的证据数是 6/11，不是 6/10</b>（上表已改）</li>
+      <li><b>GO-002 那条记录混合了两个 outcome。</b><code>O1-3</code> 带着
+          <code>outcome_value: 41.5</code>、单位「% CD11b+ cells expressing eGFP」——那是 <b>GO-001 的测量</b>。
+          而 gold GO-002 的 <code>outcome_value</code> 为空、<code>value_status: qualitative_reported</code>。
+          由于 <code>_outcome_claim</code> 优先取 <code>outcome_value</code>，
+          <b>给 GO-002 判「supported」的那次证据核验，验的是数字 41.5，不是那句为它赢得匹配的 Kupffer 句子</b>。
+          它能通过更严格的反事实检验（0 个无支撑词），所以 7/12 没有虚高——
+          但<b>被检验的东西和被匹配的东西不是同一个</b>，这一点必须写明</li>
+    </ul>
+    <b>一项决定性检验：</b>把匹配器四处非视觉改动<b>全部还原</b>到 43ae2f3 的语义后重新打分——
+    <b>每一格数字完全相同</b>（11/15、12/15、13/15 全部不变）。
+    所以没有任何未声明的放宽在承重；视觉枚举那一处正好值 +1（GO-003），与声称一致。
+    <b>四个数字在全新 clone 中全部逐字节复现。</b>
     <br><br>
     <b>剩余两条的性质不同：</b>
     <ul>
