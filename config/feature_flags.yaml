@@ -297,6 +297,56 @@ flags:
     integration_points:
       - src/extraction/check_outcome_coverage.py
 
+  record_level_salvage:
+    # No design-document priority id: this narrows the blast radius of an
+    # existing gate rather than opening a new numbered item.
+    default: false
+    status: available
+    rationale: >-
+      Available, not default, on measurement: it recovers no gold
+      outcome and it costs precision. Of the 38 committed run
+      directories carrying a raw response, 4 fail the document contract
+      today; the salvage keeps 33 records from 3 of them -- GP-002 15,
+      GP-006 10, GP-007 8 -- and rejects 1, GP-007's experiment record,
+      which cites GP-007-FC-b360a234fb68377d, an id the full packet does
+      not contain. The count of salvaged records citing an id outside
+      their own packet is 0, and that is the number the whole design
+      exists to hold at 0. Wired into the union as a sixth run root it
+      adds 5 records on GP-002 and takes 11/15 at precision 0.2157 to
+      11/15 at 0.1964: recall unchanged, 40 false additions to 45, and
+      every gold row keeps the record it had already matched. On the
+      shipped roots nothing moves at all, off or on -- default roots
+      11/15 at 0.1897 with evidence 6/11, codex_union_v1 11/15 at
+      0.2157 with 6/11, codex_union_vision_v2 with
+      vision_relationship_polarity on 12/15 at 0.2264 with 6/11 --
+      because those roots carry results that never needed salvaging.
+      And the one response this repository actually discarded to the
+      all-or-nothing rule, structured_compact_one_call_v1/GP-001, which
+      hallucinated GP-001-FC-62738f4303a2f in eligibility, returned zero
+      records, so there was nothing in it to keep. Turn it on for a run
+      whose responses are being rejected; leave it off until a
+      measurement shows it buying recall.
+    description: >-
+      When a response fails the document-level contract, keep the records that
+      individually validate and whose own evidence citations are all in the
+      packet, instead of discarding the whole response. A record citing an id
+      the packet does not contain is still rejected, and rejected whole: no
+      field is repaired by dropping the bad id and keeping the value it was the
+      only support for. What was refused is written to salvage_report.json and
+      embedded in the salvaged document, which carries its own
+      compact-salvage-1.0.0 contract_version and may hold a null eligibility so
+      that it cannot be mistaken for a response that validated. The salvaged
+      document is written as salvaged_result.json beside the run, never as
+      result.json, so no existing reader picks it up; src.extraction
+      .salvage_invalid_response materialises an explicit root for the ones that
+      should be.
+    aliases: [salvage, partial_result_salvage]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/salvage_invalid_response.py
+
   # ----------------------------------------------------------------------- roadmap
   expanded_discovery:
     priority: roadmap

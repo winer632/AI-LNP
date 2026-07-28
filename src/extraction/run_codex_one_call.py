@@ -57,6 +57,7 @@ from src.extraction.compact_prompt_v1 import (
     candidate_slot_payload,
 )
 from src.extraction.compact_validation import validate_candidate
+from src.extraction.salvage_invalid_response import salvage_response
 from src.idempotent_write import (
     IDEMPOTENT_UPSERT_FLAG,
     UpsertConflict,
@@ -422,6 +423,29 @@ def run_one(
     (run_dir / "validation_report.json").write_text(
         validation.model_dump_json(indent=2) + "\n", encoding="utf-8"
     )
+    # A rejected response is not a blank one. `salvage_response` owns the flag,
+    # so with `record_level_salvage` off it returns `(None, disabled)` here and
+    # nothing below runs -- the response is discarded whole, exactly as before.
+    salvaged = salvage_report = None
+    if parsed is None:
+        salvaged, salvage_report = salvage_response(
+            response["text"],
+            paper_id=paper_id,
+            allowed_evidence_ids={row.evidence_id for row in packet.evidence},
+            validation=validation,
+        )
+        if salvage_report.status != "disabled":
+            (run_dir / "salvage_report.json").write_text(
+                salvage_report.model_dump_json(indent=2) + "\n", encoding="utf-8"
+            )
+        if salvaged is not None:
+            # Deliberately not `result.json`: that name means the response
+            # validated whole, and a reader who cannot tell the two apart is
+            # exactly what the contract exists to prevent.
+            (run_dir / "salvaged_result.json").write_text(
+                json.dumps(salvaged, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
     result_payload = (
         None
         if parsed is None
@@ -485,6 +509,16 @@ def run_one(
         "openai_api_requests": 0,
         "codex_exec_turns": 1,
     }
+    # validation_status above is untouched: the response IS contract-invalid,
+    # and salvage does not make it valid. This says what was kept from it.
+    if salvage_report is not None and salvage_report.status != "disabled":
+        manifest["salvage"] = {
+            "status": salvage_report.status,
+            "kept": salvage_report.kept,
+            "rejected": salvage_report.rejected,
+            "eligibility_kept": salvage_report.eligibility_kept,
+            "dropped": len(salvage_report.dropped),
+        }
     if candidate_slots is not None:
         manifest["candidate_slot_enforcement"] = True
         manifest["candidate_slots"] = len(candidate_slots)
