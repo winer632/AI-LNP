@@ -1,0 +1,23 @@
+{
+  "report_version": "vision-panel-selection-1.0.0",
+  "finding": "Panel selection decides whether a colocalisation claim is recoverable.",
+  "comparison": {
+    "single_channel_LYVE1": {
+      "disposition": "missing",
+      "value_status": "not_resolved",
+      "visible_support": "red fluorescent structures and a white boxed region, but no readable channel labels, green GFP signal, white arrowheads, or printed fold-change"
+    },
+    "merge_plus_GFP_plus_LYVE1": {
+      "disposition": "resolved",
+      "value_status": "exact_reported",
+      "printed_labels": [
+        "100 µm"
+      ],
+      "relationship": "colocalized",
+      "qualitative_outcome": "GFP signal is present in LYVE-1-positive cells."
+    }
+  },
+  "gold_target": "GO-003 GFP_expression_in_LYVE1_positive_LSECs",
+  "go004_note": "The same call reports no fold-change printed anywhere in Figure 2B, so GO-004 17-fold ratio is in neither the cited text nor the figure.",
+  "implication": "A vision stage that sends one crop per candidate will systematically miss colocalisation. Channel panels of the same field must travel together."
+}

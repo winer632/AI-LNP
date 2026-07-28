@@ -1,0 +1,27 @@
+{
+  "finding_id": "GO-003-final",
+  "disposition": "resolved",
+  "field_name": "qualitative_outcome",
+  "corrected_fragment": {
+    "qualitative_outcome": "GFP signal is present in LYVE-1-positive cells.",
+    "outcome_value": null,
+    "outcome_unit": null,
+    "relationship": "colocalized"
+  },
+  "value_status": "exact_reported",
+  "supporting_evidence_ids": [],
+  "figure_or_table": "Figure 2B",
+  "panel_or_table_cell": "Merge, GFP channel, and LYVE-1 channel",
+  "visible_support": "The merge image contains overlapping green GFP and red LYVE-1 signal in cells; the corresponding single-channel images show both signals in the same field. No fold-change or hepatocyte-to-LSEC ratio is printed.",
+  "derivation": null,
+  "confidence": "high",
+  "requires_human_review": false,
+  "printed_labels": [
+    "100 µm"
+  ],
+  "object_id": null,
+  "page_id": null,
+  "image_sha256": null,
+  "panel_label": null,
+  "relationship": "colocalized"
+}

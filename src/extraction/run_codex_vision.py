@@ -59,12 +59,64 @@ PROMPT = (
 )
 
 
+def _seal(node: Any) -> Any:
+    """Force additionalProperties: false on every object in the schema.
+
+    SelectiveVisionResponse carries corrected_fragment as a free-form mapping.
+    to_strict_json_schema leaves that object open, and the provider rejects the
+    whole request with invalid_json_schema. Sealing it means the vision path can
+    only return an empty fragment, which is the right restriction here: a panel
+    read is a qualitative observation, and a value it wants to assert has to
+    come through printed_labels and value_status instead.
+    """
+    if isinstance(node, dict):
+        node = {key: _seal(value) for key, value in node.items()}
+        if node.get("type") == "object":
+            # Force rather than setdefault: to_strict_json_schema emits
+            # additionalProperties: true for a free-form mapping, so a default
+            # would leave it open and the provider would still reject it.
+            node["additionalProperties"] = False
+            node.setdefault("required", sorted(node.get("properties", {})))
+        return node
+    if isinstance(node, list):
+        return [_seal(item) for item in node]
+    return node
+
+
+# corrected_fragment is dict[str, Any] on the contract, which cannot be
+# expressed in a strict schema: sealing it makes the object empty-only, and an
+# empty fragment cannot satisfy "resolved requires corrected_fragment". Giving
+# it a typed shape here keeps the contract intact while leaving the reply
+# satisfiable. These are the fields a panel read can legitimately fill.
+_FRAGMENT_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        "qualitative_outcome": {"type": ["string", "null"]},
+        "outcome_value": {"type": ["number", "null"]},
+        "outcome_unit": {"type": ["string", "null"]},
+        "relationship": {"type": ["string", "null"]},
+    },
+    "required": [
+        "qualitative_outcome",
+        "outcome_value",
+        "outcome_unit",
+        "relationship",
+    ],
+}
+
+
 def _strict_vision_schema() -> dict[str, Any]:
     from openai.lib._pydantic import to_strict_json_schema
 
     from src.extraction.selective_vision_contracts import SelectiveVisionResponse
 
-    return to_strict_json_schema(SelectiveVisionResponse)
+    schema = _seal(to_strict_json_schema(SelectiveVisionResponse))
+    schema["properties"]["corrected_fragment"] = {
+        "anyOf": [_FRAGMENT_SCHEMA, {"type": "null"}],
+        "title": "Corrected Fragment",
+    }
+    return schema
 
 
 def run_panel(
@@ -72,6 +124,7 @@ def run_panel(
     paper_id: str,
     finding_id: str,
     image_path: Path,
+    extra_images: list[Path] | None = None,
     claim: str,
     caption: str,
     field_name: str = "qualitative_outcome",
@@ -110,15 +163,23 @@ def run_panel(
             json.dumps(_strict_vision_schema(), ensure_ascii=False), encoding="utf-8"
         )
         output_path = workdir / "last_message.txt"
-        local_image = workdir / image_path.name
-        shutil.copy(image_path, local_image)
+        # Colocalisation is only legible across channels: a single-channel
+        # panel shows one marker and the model correctly refuses to call a
+        # merge from it. Accept the companion panels so the call sees what a
+        # reader would.
+        images = [image_path, *(extra_images or [])]
+        local_images = []
+        for source in images:
+            target = workdir / source.name
+            shutil.copy(source, target)
+            local_images.append(target)
 
         command = [
             "codex", "exec",
             "-m", model,
             "-c", f"model_reasoning_effort={reasoning_effort}",
             "--output-schema", str(schema_path),
-            "--image", str(local_image),
+            "--image", *[str(path) for path in local_images],
             "--sandbox", "read-only",
             "--skip-git-repo-check",
             "--ephemeral",
@@ -162,7 +223,10 @@ def run_panel(
         "stage": "vision",
         "paper_id": paper_id,
         "finding_id": finding_id,
-        "image": str(image_path.relative_to(ROOT)) if image_path.is_relative_to(ROOT) else str(image_path),
+        "images": [
+            str(p.relative_to(ROOT)) if p.is_relative_to(ROOT) else str(p)
+            for p in [image_path, *(extra_images or [])]
+        ],
         "model": model,
         "reasoning_effort": reasoning_effort,
         "completed_at": datetime.now(timezone.utc).isoformat(),
@@ -187,6 +251,7 @@ def main() -> None:
     parser.add_argument("--paper-id", required=True)
     parser.add_argument("--finding-id", required=True)
     parser.add_argument("--image", type=Path, required=True)
+    parser.add_argument("--also-image", action="append", dest="extra_images", type=Path)
     parser.add_argument("--claim", required=True)
     parser.add_argument("--caption", default="")
     parser.add_argument("--field-name", default="qualitative_outcome")
@@ -205,6 +270,7 @@ def main() -> None:
 
     print(json.dumps(run_panel(
         paper_id=args.paper_id, finding_id=args.finding_id, image_path=args.image,
+        extra_images=args.extra_images,
         claim=args.claim, caption=args.caption, field_name=args.field_name,
         figure_or_table=args.figure_or_table, output_root=args.output_root,
         model=args.model, reasoning_effort=args.reasoning_effort, timeout=args.timeout,

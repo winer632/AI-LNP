@@ -1,0 +1,20 @@
+{
+  "finding_id": "GO-003-probe",
+  "disposition": "missing",
+  "field_name": "qualitative_outcome",
+  "corrected_fragment": null,
+  "value_status": "not_resolved",
+  "supporting_evidence_ids": [],
+  "figure_or_table": "Figure 2B",
+  "panel_or_table_cell": null,
+  "visible_support": "The panel visibly contains red fluorescent structures and a white boxed region, but no readable channel labels, green GFP signal, white arrowheads, or printed fold-change/ratio.",
+  "derivation": null,
+  "confidence": "high",
+  "requires_human_review": false,
+  "printed_labels": [],
+  "object_id": null,
+  "page_id": null,
+  "image_sha256": null,
+  "panel_label": null,
+  "relationship": null
+}
