@@ -1,0 +1,19 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-003",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "NOT_ORIGINAL_RESEARCH"
+    ],
+    "evidence_ids": [
+      "GP-003-E-240d9595395015cf"
+    ],
+    "explanation": "The packet identifies the article as a review, not an original experimental report."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_items": []
+}

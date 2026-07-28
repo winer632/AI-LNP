@@ -9,6 +9,7 @@ import shutil
 import ssl
 import tarfile
 import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 import zipfile
@@ -20,7 +21,7 @@ import certifi
 from src.rag.ingestion import GOLD_PAPERS, OA_ROOT, ROOT
 
 
-OA_API = "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id={pmcid}"
+OA_API = "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id={pmcid}"
 USER_AGENT = "AI-LNP evidence project (lawful PMC OA package retrieval)"
 PMC_BIN = "https://pmc.ncbi.nlm.nih.gov/articles/{pmcid}/bin/{name}"
 EUROPE_PMC_PDF = "https://europepmc.org/articles/{pmcid}?pdf=render"
@@ -119,8 +120,17 @@ def safe_extract_zip(archive: Path, destination: Path) -> None:
 
 
 def retrieve_europe_pmc_package(
-    paper: dict[str, str], destination: Path
+    paper: dict[str, str],
+    destination: Path,
+    *,
+    warnings: list[str] | None = None,
 ) -> tuple[str, list[Path]]:
+    """Primary retrieval path: Europe PMC rendered PDF plus supplementary files.
+
+    This is the only route that reliably yields the supplement PDFs the
+    extraction pipeline depends on; the NCBI OA service refuses tgz packages
+    for most of the gold set.
+    """
     pmcid, candidate_id = paper["pmcid"], paper["candidate_id"]
     xml_path = local_xml(candidate_id, pmcid)
     destination.mkdir(parents=True, exist_ok=True)
@@ -132,20 +142,59 @@ def retrieve_europe_pmc_package(
     main_pdf = destination / main_name
     if not main_pdf.exists():
         main_pdf.write_bytes(request_bytes(EUROPE_PMC_PDF.format(pmcid=pmcid)))
+
+    def note(message: str) -> None:
+        if warnings is not None:
+            warnings.append(message)
+        print(f"WARNING: {message}")
+
+    # A missing supplement archive must not fail the whole paper, but it must
+    # never be silent either: a supplement that quietly vanishes is exactly how
+    # a table like Table S2 disappears from the evidence pool.
     supplement_zip = destination / f"{pmcid}_supplementary.zip"
-    try:
-        if not supplement_zip.exists():
+    if not supplement_zip.exists():
+        try:
             supplement_zip.write_bytes(request_bytes(
-                EUROPE_PMC_SUPPLEMENTS.format(pmcid=pmcid)
+                EUROPE_PMC_SUPPLEMENTS.format(pmcid=pmcid), attempts=2
             ))
-        if supplement_zip.stat().st_size and zipfile.is_zipfile(supplement_zip):
+        except urllib.error.HTTPError as error:
+            supplement_zip.unlink(missing_ok=True)
+            if error.code != 404:
+                raise
+            note(f"{pmcid}: Europe PMC reports no supplementary files (HTTP 404)")
+        except Exception as error:
+            supplement_zip.unlink(missing_ok=True)
+            note(
+                f"{pmcid}: supplementary file download failed: "
+                f"{type(error).__name__}: {error}"
+            )
+    if supplement_zip.exists():
+        if not supplement_zip.stat().st_size:
+            supplement_zip.unlink()
+            note(f"{pmcid}: Europe PMC returned an empty supplementary archive")
+        elif not zipfile.is_zipfile(supplement_zip):
+            note(f"{pmcid}: supplementary download is not a ZIP archive; kept as-is")
+        else:
+            # Deliberately unguarded: a corrupt or unsafe archive is a real
+            # failure and must abort this strategy rather than be swallowed.
             safe_extract_zip(supplement_zip, destination)
-    except Exception:
-        # The main article remains usable when no separate supplement archive exists.
-        pass
     return "europe_pmc_pdf_and_supplements", [
         path for path in destination.rglob("*") if path.is_file()
     ]
+
+
+def retrieve_ncbi_oa_package(
+    paper: dict[str, str], destination: Path, archive_root: Path
+) -> tuple[str, str, str | None, str | None]:
+    """Fallback retrieval path: the NCBI OA tgz package."""
+    pmcid = paper["pmcid"]
+    url = package_url(pmcid)
+    archive = archive_root / f"{pmcid}.tar.gz"
+    if not archive.exists():
+        archive.write_bytes(request_bytes(url))
+    safe_extract(archive, destination)
+    flatten_single_directory(destination)
+    return "ncbi_oa_tgz", url, str(archive.relative_to(ROOT)), sha256(archive)
 
 
 def safe_extract(archive: Path, destination: Path) -> None:
@@ -188,26 +237,47 @@ def run() -> dict:
             "retrieved_at": datetime.now(timezone.utc).isoformat(),
             "status": "failed",
         }
+        warnings: list[str] = []
+        attempts: list[dict[str, str]] = []
+
+        def europe_pmc() -> tuple[str, str, str | None, str | None]:
+            method, _ = retrieve_europe_pmc_package(
+                paper, destination, warnings=warnings
+            )
+            return method, EUROPE_PMC_PDF.format(pmcid=pmcid), None, None
+
+        def linked_assets_strategy() -> tuple[str, str, str | None, str | None]:
+            method, _ = retrieve_linked_package(paper, destination)
+            return method, PMC_BIN.format(pmcid=pmcid, name="{linked_asset}"), None, None
+
+        def ncbi_oa() -> tuple[str, str, str | None, str | None]:
+            return retrieve_ncbi_oa_package(paper, destination, archive_root)
+
+        # Europe PMC is the primary route because it is the one that actually
+        # delivers supplementary files; the NCBI OA tgz endpoint denies most of
+        # the gold set and is kept only as a last resort.
+        strategies = (
+            ("europe_pmc_pdf_and_supplements", europe_pmc),
+            ("europe_pmc_linked_assets", linked_assets_strategy),
+            ("ncbi_oa_tgz", ncbi_oa),
+        )
         try:
-            try:
-                url = package_url(pmcid)
-                archive = archive_root / f"{pmcid}.tar.gz"
-                if not archive.exists():
-                    archive.write_bytes(request_bytes(url))
-                safe_extract(archive, destination)
-                flatten_single_directory(destination)
-                retrieval_method = "ncbi_oa_tgz"
-                archive_path = str(archive.relative_to(ROOT))
-                archive_digest = sha256(archive)
-            except Exception:
+            retrieval_method = url = None
+            archive_path = archive_digest = None
+            last_error: Exception | None = None
+            for name, strategy in strategies:
                 try:
-                    retrieval_method, _ = retrieve_linked_package(paper, destination)
-                    url = PMC_BIN.format(pmcid=pmcid, name="{linked_asset}")
-                except Exception:
-                    retrieval_method, _ = retrieve_europe_pmc_package(paper, destination)
-                    url = EUROPE_PMC_PDF.format(pmcid=pmcid)
-                archive_path = None
-                archive_digest = None
+                    retrieval_method, url, archive_path, archive_digest = strategy()
+                    break
+                except Exception as error:
+                    last_error = error
+                    attempts.append({
+                        "strategy": name,
+                        "error": f"{type(error).__name__}: {error}",
+                    })
+            if retrieval_method is None:
+                assert last_error is not None
+                raise last_error
             files = sorted(
                 path for path in destination.rglob("*")
                 if path.is_file() and path.name != ".package.json"
@@ -224,6 +294,8 @@ def run() -> dict:
                     "sha256": sha256(path),
                 } for path in files],
                 "pdf_count": sum(path.suffix.lower() == ".pdf" for path in files),
+                "failed_strategies": attempts,
+                "warnings": warnings,
             })
             destination.mkdir(parents=True, exist_ok=True)
             manifest_path.write_text(
@@ -231,6 +303,8 @@ def run() -> dict:
             )
         except Exception as error:
             result["error"] = f"{type(error).__name__}: {error}"
+            result["failed_strategies"] = attempts
+            result["warnings"] = warnings
         results.append(result)
     output = ROOT / "data/staging/extraction/day8_final_gate/retrieval_manifest.json"
     output.parent.mkdir(parents=True, exist_ok=True)

@@ -293,7 +293,11 @@ class HybridIndex:
                     neighbor = self.ordered_blocks[neighbor_position]
                     if neighbor.paper_id != block.paper_id or neighbor.source_path != block.source_path:
                         continue
-                    if block.source_kind == "pdf":
+                    # PDF-derived blocks (legacy page dumps and uniparse
+                    # elements alike) are bounded by page adjacency rather than
+                    # by section, because a table and the sentence that cites it
+                    # routinely sit under different headings.
+                    if block.source_kind in {"pdf", "uniparse"}:
                         if (
                             block.page_number is None
                             or neighbor.page_number is None

@@ -1,0 +1,541 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-004",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-004-E-9331dfb69db5483e",
+      "GP-004-E-50647e1940bafbbd",
+      "GP-004-E-a72862f18ec2ffcd",
+      "GP-004-E-44b663f029e6e370",
+      "GP-004-E-12343d379452fe6d"
+    ],
+    "explanation": "Original mouse experiments used mRNA-LNPs with a reported lipid-class composition. eGFP mRNA-LNP evidence identifies hepatocytes as transfected cells, and HGF mRNA-LNP evidence reports hepatocyte proliferation; both are linked to the reported LNP formulation. Exact lipid identities and component ratios are not reported."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "ionizable cationic lipid / phosphatidylcholine / cholesterol / PEG-lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "Lipid classes reported; ionizable lipid proprietary to Acuitas Therapeutics",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No N/P ratio reported in the packet."
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "Ionizable cationic lipid (pKa 6.0–6.5; proprietary to Acuitas Therapeutics)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "Phosphatidylcholine",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "Cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "PEG-lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9331dfb69db5483e"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Component amount not reported."
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "nucleoside-modified mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd",
+          "GP-004-E-50647e1940bafbbd"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "eGFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "enhanced green fluorescent protein (eGFP)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No molecular target reported for the eGFP reporter experiment."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-44b663f029e6e370"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-49e7cf84d4e37097"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "homeostasis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-e29c5e3c31a38827"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "µg eGFP mRNA-LNP per 20 g body weight",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 5.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "nucleoside-modified mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-50647e1940bafbbd"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "HGF mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-ed8fea0eb24b05c5"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "hepatocyte growth factor (HGF)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No molecular target reported."
+      },
+      "delivery_recipient_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "This experiment reports hepatocyte proliferation but does not directly identify HGF mRNA-LNP recipient cells."
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1021bbc69d3e566e"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "homeostasis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-ed8fea0eb24b05c5"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "µg mRNA-LNP per 20 g body weight",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-ed8fea0eb24b05c5"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 48.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "Co-immunostaining for eGFP and hepatocyte marker HNF4α",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-bb88af4966174b2f",
+          "GP-004-E-44b663f029e6e370"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP expression in HNF4α-identified hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-44b663f029e6e370"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP eGFP-negative control",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-8bd21c8aa7f50cfb"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric hepatocyte eGFP value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric hepatocyte eGFP value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Virtually all HNF4α-identified hepatocytes expressed eGFP.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-44b663f029e6e370"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "EdU/HNF4α co-staining",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-18b291d00b1a0508"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Percentage of EdU+ cells that were HNF4α+ hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 61.25,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% HNF4α+ among EdU+ cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "At 48 h, HGF mRNA-LNP-treated mice had 61.25 ± 10.66% HNF4α+ EdU+ cells versus 0.97 ± 1.66% in Poly(C) RNA-LNP controls, reported as a 121-fold increase.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "Exact ionizable-lipid identity is proprietary and not reported.",
+    "Lipid component ratios and N/P ratio are not reported.",
+    "The HGF mRNA-LNP proliferation experiment does not directly report the HGF mRNA-LNP recipient-cell identity."
+  ]
+}

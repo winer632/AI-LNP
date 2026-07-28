@@ -1,0 +1,39 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-007",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T17:07:21.296661+00:00",
+  "completed_at": "2026-07-28T17:08:22.458662+00:00",
+  "elapsed_seconds": 61.16,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-007-E-450ee76f1f41150a",
+      "GP-007-E-47d77dd97cd9a252",
+      "GP-007-E-1db684478f7dee70",
+      "GP-007-E-4249c47d2d7ef839"
+    ],
+    "explanation": "Original in vivo experiments evaluated siMicu1-LNPs in HIRI mice, reporting LSEC-relevant outcomes; full LNP composition is not reported in the packet."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 3,
+    "experiments": 1,
+    "outcomes": 4,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}

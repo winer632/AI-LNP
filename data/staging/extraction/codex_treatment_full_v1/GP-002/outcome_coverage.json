@@ -1,0 +1,1116 @@
+{
+  "coverage_version": "outcome-coverage-1.1.0",
+  "paper_id": "GP-002",
+  "complexity_route": "complex",
+  "candidate_groups": 110,
+  "extracted_outcomes": 2,
+  "matched_candidates": [
+    {
+      "candidate_id": "OC-1cc441afd5c7df7e",
+      "outcome_id": "O1",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-1242d5e32b089413",
+      "outcome_id": "O2",
+      "score": 1.0
+    }
+  ],
+  "unmatched_candidates": [
+    {
+      "candidate_id": "OC-e6d525f64ff4f864",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-71d7eb10c40973a9",
+        "GP-002-FC-7ac63b16235afe92",
+        "GP-002-FC-cce8516ba4c03776"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-e194c9b63fe178c7",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-7d8ad7b78ea7790a",
+        "GP-002-E-838d02d3fd7fe045",
+        "GP-002-E-f0770b5be836544a"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-d0497bb64e05ec7e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-af2c5f84ba2a0f2e"
+      ],
+      "figure_or_table": "figure 2b",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-7e9a8ced3133e50e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-4097afd16c271dd7"
+      ],
+      "figure_or_table": "figure 2b",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-b35011d5bbb83a51",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-62d1c25e36029836"
+      ],
+      "figure_or_table": "figure 4delivery",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-1718400554085c04",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-2a759ad0a87a3b7b"
+      ],
+      "figure_or_table": "figure 4delivery",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-d10a17e36a8d32a0",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-7c5dd449ba3afcc4"
+      ],
+      "figure_or_table": "figure s22",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-638db68febd191fa",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-5f20a9dff1367fa1"
+      ],
+      "figure_or_table": "figures",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-faa78845363ecaf0",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-9e73aa6c0b4a6696"
+      ],
+      "figure_or_table": "figures",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-51ed93e8a25a6f2a",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-44bafe8e291e32a1"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-c420cea94b720305",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-b0e3ef6932a268f2"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-37cbe8e8083c87a8",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-8c4876470f2a8f61"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-a50489141b99ce89",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-90f2a170186d38cd"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-22c6a3379426a8a8",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-94196bef2463a6ea"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-e5bc4a6ea74c1e2d",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-0e0f6d51b25e2f44"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-1eeb58b3052cd7fb",
+      "endpoint_family": "knockdown",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-052d29c17a3f7c6d"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-13fa607811d50470",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-760e2377e54d62b0"
+      ],
+      "figure_or_table": "figure 1f",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-01ccdc93de318e97",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-5f20a9dff1367fa1"
+      ],
+      "figure_or_table": "figures",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-1eb0177ddb77db8e",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-9e73aa6c0b4a6696"
+      ],
+      "figure_or_table": "figures",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-26854cb0684f0bb8",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-7bd2c5306babf628"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-9394a5f0cec55250",
+      "endpoint_family": "uptake",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-7c5dd449ba3afcc4"
+      ],
+      "figure_or_table": "figure s22",
+      "confidence": "high"
+    }
+  ],
+  "review_candidates": [
+    {
+      "candidate_id": "OC-c07a6b58d3f32a1e",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-3da42d5af8b60330"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-3d52c3821fd6eafb",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-0e274b6631d1ac02"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-e40193481016f6ec",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-2a8172828cacc89a"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-db8eead32fb8fcfc",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-309bd3ceb8e95359"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-8bd63f07cb5c450a",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-dda173e7409c0476"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-79fcfd6592318e0e",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-3b3427524f0f0541",
+        "GP-002-FC-bc93c91c93a67764"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-4b7988bead8ecef1",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-3386529a4b41301b"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-0a3cf6650c9c014a",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-b850cc660b28f290"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ef4207be1e24b850",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-4396034a4408da86"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ead54395fc4bda44",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-e5b9849605e2f933"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-acb0a7f1f2fc2b6e",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-fad27e560267343e"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-fc5c061d9c1fe10a",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-01870361683fb062",
+        "GP-002-E-5ceef09db81ebd4f"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-f4b5ab858a576dd8",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-53aff5c835fa6911",
+        "GP-002-E-5413eefe61729990"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-eed7e1f75d3b9456",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-3b62dd9a6e6a70a1",
+        "GP-002-E-93abe08615853382"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-4a93b99682dec868",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-33ecdcfb0b48ea86"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-90a967746b7e75c8",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-5b9dd1684b2a3ad5"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-10f94cefc36674ce",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-53d9ffb107aa82ae"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-a24ea8745e9f9b5e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-a431e2273e1a07f7"
+      ],
+      "figure_or_table": "figure 1a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-e8da04bb044e4869",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-39062576eea8789d"
+      ],
+      "figure_or_table": "figure 1a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-1452a581799c1397",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-a5dd1b4c7e796a3b"
+      ],
+      "figure_or_table": "figure 1e",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-f0015c41f8adba68",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-9fa1cf6ce41bf82a"
+      ],
+      "figure_or_table": "figure 1e",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-15fb7f52ef1af536",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-ccefd059ea845769"
+      ],
+      "figure_or_table": "figure 1g",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-060b5cffa31e22f4",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-49b993f413abf2bf"
+      ],
+      "figure_or_table": "figure 1h",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-8f0c2a178c780bf3",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-9412db832116ca58"
+      ],
+      "figure_or_table": "figure 2e",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-fdd971ebca4815de",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-4ebd59db853d7de3"
+      ],
+      "figure_or_table": "figure 3e",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ef26ce88f2b65b1c",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-c8c40de2ef8aa0ca"
+      ],
+      "figure_or_table": "figure 4a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-9743adcae645e923",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-f3f0c8aeebb96cfe"
+      ],
+      "figure_or_table": "figure 4d",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-5076126bfcd36521",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-370c71d6f8a5afa2"
+      ],
+      "figure_or_table": "figure 5a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2152faf4b7b6614d",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-12bc31535bd7c992",
+        "GP-002-FC-8fe9b2db94c602ae"
+      ],
+      "figure_or_table": "figure 5g",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-8a6b10a6846fa309",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-6e82079ab6a2cd40"
+      ],
+      "figure_or_table": "figure partially",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-8db00015f31358d1",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-c465d031490bf563"
+      ],
+      "figure_or_table": "figure partially",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2777d59ff45dfa26",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-cd97dfc5ea2612d3"
+      ],
+      "figure_or_table": "figure s1",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-b5214a6283fd2e8d",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-9b286fa93ff9e585"
+      ],
+      "figure_or_table": "figure s1",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-3698f18bef004f7b",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-73bff18b14386f53"
+      ],
+      "figure_or_table": "figure s2",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-d5b8b2bc47e261ff",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-919bac300948d680"
+      ],
+      "figure_or_table": "figure s2",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ae0f83a43c359c8e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-ce8042a531ce83db"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-92ba436b2d104f01",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-dc9026123d1fa7df"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-6a2afb79532684a5",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-b9a4731b943734ec"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-e9b802bb0d8c800c",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-7834c5339cd9e2b1",
+        "GP-002-FC-9549d4ef7d559625",
+        "GP-002-FC-fd8e0cbdb8ab9d31"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2312390bb883a065",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-afa1137e1838b514"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-427ec555f9f6c54d",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-c9b2482b6114a861"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2623599d94a7d60e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-3fcdf96291407274"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-af998d475785c2e3",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-84f1fd57dfdbb6a6"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-9afe4cec178dfc59",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-522e171671ceb0a3"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-9cd00f8db7b25012",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-3ba60eca71a22bf3"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ce2de3c06dac0313",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-5fc52f0b7ee2d74c"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-be130a2c955ead0b",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-550c30311f263411"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-4fda5466f4a1b88c",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-caaa12fb2410ea56"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-fda65cbaa1dc0d40",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-20baeb809bc2281e"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-9ebfc67de0eb3924",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-ee1b3a96de225439"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-c2173308d4b9dc9b",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-dbac646b3b59178a"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-79c01123bfb9fd67",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-e3a0e979a0463d80"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-5585c3665131c9c6",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-14b3f38a567e0b00"
+      ],
+      "figure_or_table": "figure 1d",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-1f86aa230eea2dfa",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-ce8ccacbfde90c28"
+      ],
+      "figure_or_table": "figure 1d",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-db7ad83f410ef5aa",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-873d71975bf645e8"
+      ],
+      "figure_or_table": "figure 3c",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2b41da7089faf21a",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-3541c75519dc9b47"
+      ],
+      "figure_or_table": "figure 3c",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-ec210798fe5601a0",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-179d507bd33c279b"
+      ],
+      "figure_or_table": "figure 4e",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-c962ac4a172bfea5",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-57caab4816bde47d"
+      ],
+      "figure_or_table": "figure s10",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-3b9d090c78a1fafa",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-55d92e8c0bf8662e"
+      ],
+      "figure_or_table": "figure s10",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2eef306098b8b345",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-d3dac83106a06513"
+      ],
+      "figure_or_table": "figure s17",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-62b35887d2baafde",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-0db042087730f5ac"
+      ],
+      "figure_or_table": "figure s17",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-fff703ebbe2af44e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-7935ac5ad1256fe4"
+      ],
+      "figure_or_table": "figure s18a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-2086c33e826594d7",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-8df9a9da8a2f769a"
+      ],
+      "figure_or_table": "figure s18a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-e343c1205e8998d7",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-7952fd7163a6618f"
+      ],
+      "figure_or_table": "figure s18b",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-9333deedb233158a",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-4eadabe449641104"
+      ],
+      "figure_or_table": "figure s18b",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-9902ae2b23153a34",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-db023a774c94d020"
+      ],
+      "figure_or_table": "figure s20",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-5973999c1ad40414",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-03c9aaf748256859"
+      ],
+      "figure_or_table": "figure s23",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-8ca17f0adde56c50",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-fec0dc9730302574"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-da52b5204614836f",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-1b7a652145682c0a"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-bf7b61afb5002f9b",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-29edf2b1149ec7e6"
+      ],
+      "figure_or_table": "figure s16",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-e22293ae0e958cf1",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-cfc0bcd9ac90d9f0"
+      ],
+      "figure_or_table": "figure s16",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-a5a09b0f38c731f6",
+      "endpoint_family": "gene_editing",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-3d01e47feeb628c1"
+      ],
+      "figure_or_table": "figure s15",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-0acd35384f0497ba",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-71d7eb10c40973a9"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-8c7ca01754323a85",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-a706a3ff9393b83b"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-5068c4e9cf3a34bb",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-7d8ad7b78ea7790a"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-7c0b8124aaeed9f1",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-a6815c658a366be3"
+      ],
+      "figure_or_table": "figure 2a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-12b403408c46e1cf",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-4220704b6ff8543d"
+      ],
+      "figure_or_table": "figure 2a",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-e501e282d4efe3f9",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-ff2ac8fe407478a4"
+      ],
+      "figure_or_table": "figure 2g",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-7fa110cf43998272",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-3ef35e57e68a6937"
+      ],
+      "figure_or_table": "figure s7",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-a7a685b740db1fb4",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-cd04f283be75f5c1"
+      ],
+      "figure_or_table": "figure s8",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-b3cb876e43d0a613",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-1bbaef8febe1c62d"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-78af0ec441549249",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-f96e80bea48b8f62"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-1a55d0c33d784cd8",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-b051cf8c9ec79be0"
+      ],
+      "figure_or_table": "figures",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-35bd01ba9d5a4e36",
+      "endpoint_family": "uptake",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-FC-dda173e7409c0476"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-3193df37ffc2d5ef",
+      "endpoint_family": "uptake",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-002-E-33ecdcfb0b48ea86"
+      ],
+      "figure_or_table": null,
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-68d1d2bfe17d0592",
+      "endpoint_family": "uptake",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-FC-a41df0178b9b4070"
+      ],
+      "figure_or_table": "figure s20",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    },
+    {
+      "candidate_id": "OC-642ce45daa21829b",
+      "endpoint_family": "uptake",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-002-E-38fcd91de6ff6032"
+      ],
+      "figure_or_table": "figure s20",
+      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+    }
+  ],
+  "status": "review_unmatched_groups",
+  "paid_api_requests": 0
+}

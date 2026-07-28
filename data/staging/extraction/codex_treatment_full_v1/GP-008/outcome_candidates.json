@@ -1,0 +1,1815 @@
+[
+  {
+    "candidate_id": "OC-2bd698fe0b3baa0a",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-b15b0185efa28c27"
+    ],
+    "source_ids": [
+      "FC-S-162daf1c976f09d3"
+    ],
+    "evidence_text": "Furthermore, this intervention could attenuate the profibrotic phenotype of residual JS-1 cells that evaded cytotoxic elimination (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "attenuat",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-4a9723e8a1966b94",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-f5230da7e7a29216"
+    ],
+    "source_ids": [
+      "FC-S-168fad95eadea12f"
+    ],
+    "evidence_text": "A reduction in luciferase activity 214 suggests that functional BMDMs successfully eliminated FAP+ JS-1 cells.",
+    "direct_signal_terms": [
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-4a2f62b0b3c0ba58",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-2a04955bebcacea0",
+      "GP-008-FC-c132290694c0fcd9"
+    ],
+    "source_ids": [
+      "FC-S-2172a43ee74a379c"
+    ],
+    "evidence_text": "Then we examined the impact of various treatments on macrophages’ phagocytosis of LX-2 cells in a fibrosis-mimicking environment. The h-αCD163/LNP-FAPCAR treatments significantly enhanced macrophage phagocytic rates (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "phagocyt",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-697583326663b5d6",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-197c0d55a09731fa",
+      "GP-008-FC-31d1c91359b57ac9"
+    ],
+    "source_ids": [
+      "FC-S-24da017be1cd98f5"
+    ],
+    "evidence_text": "Conversely, unmodified LNP operates independently of CD163-mediated uptake, resulting in substantial ZsGreen/CD163 colocalization, thereby indirectly corroborating the targeting function of conjugated antibodies (SI Appendix, Fig. In colocalization studies, LNP exhibited specific expression of ZsGreen protein in macrophages of fibrotic mice, with no detectable expression in other hepatic cell types, whereas unmodified LNP predominantly transduced hepatocytes (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "colocaliz",
+      "Fig. In",
+      "table expression"
+    ],
+    "figure_or_table": "Fig. In",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-659a9ce4c1a3a830",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-5669b556e93ab95a"
+    ],
+    "source_ids": [
+      "FC-S-34f78e16cf84adc3"
+    ],
+    "evidence_text": "Studies have demonstrated that inhibiting FAP or genetically eliminating it can lessen liver fibrosis in animal models (7).",
+    "direct_signal_terms": [
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2d60ee99c1ab3b3a",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-42a26c0e85575e3f"
+    ],
+    "source_ids": [
+      "FC-S-383a41176b3fae36"
+    ],
+    "evidence_text": "S1 C and D), concomitant with significantly enhanced phagocytic capacity toward target cells (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "significant",
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-1be77d08a2e3f540",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-959e84f38fbca492"
+    ],
+    "source_ids": [
+      "FC-S-3b845bbf4a67300e"
+    ],
+    "evidence_text": "Furthermore, these LNPs therapy can increase the expression of MMP12 in macrophages, and the inducible effect of MMP12 depends on macrophage-mediated phagocytosis, although the exact mechanism remains unclear.",
+    "direct_signal_terms": [
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2cced220df8f66fb",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-81515d0dfbffe2f8",
+      "GP-008-FC-9901abfa63208200"
+    ],
+    "source_ids": [
+      "FC-S-518f77e4b0138b22"
+    ],
+    "evidence_text": "(C-D) Confocal microscopy images display the phagocytosis of FAP+ LX-2 cells 369 by macrophages subjected to various formulations and the quantitative analysis of the 370 phagocytic index (scale bar=10 μm). (E-F) Flow cytometry was employed to detect the 371 phagocytic activity of macrophages in response to various formulations, using 372 pHrodo-labeled FAP+ LX-2 cells and statistical analysis.",
+    "direct_signal_terms": [
+      "phagocyt",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c34385155bfa70fb",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-67cba83633b522b0",
+      "GP-008-FC-7e669f1c44e484d3",
+      "GP-008-FC-a5c6681cff08ce5b",
+      "GP-008-FC-b129a51f1d9babdd",
+      "GP-008-FC-e1f6275e38649435"
+    ],
+    "source_ids": [
+      "FC-S-5f7e3c49e57be4bb"
+    ],
+    "evidence_text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig. Contrarily, the αCD163/LNP-Luc group did not exhibit increased phagocytic efficiency, indicating that FAPCAR expression was crucial for enhancing macrophage-mediated phagocytosis of FAP+JS-1 cells (Fig. Both αCD163/LNP-FAPCAR and LNP-FAPCAR treatments significantly enhanced the phagocytic rates of BMDMs. Pretreatment with the macrophage-specific phagocytosis inhibitor Cytochalasin D abrogated the MMP12 expression in CAR-M, establishing phagocytosis as an obligate upstream event governing MMP12 transcriptional induction (SI Appendix, Fig. Notably, the αCD163/LNP-FAPCAR treatment induced a phagocytic rate more than ten times that of the WT group and approximately three times that of the LNP-FAPCAR group.",
+    "direct_signal_terms": [
+      "significant",
+      "eliminat",
+      "Fig. Contrarily",
+      "increased",
+      "phagocyt",
+      "Fig. Both",
+      "Fig. Notably"
+    ],
+    "figure_or_table": "Fig. Contrarily",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-3ae21283a08df3ff",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-5a5572783e1defc5"
+    ],
+    "source_ids": [
+      "FC-S-894c39d1fd75b0d0"
+    ],
+    "evidence_text": "αCD163/LNP-FAPCAR mitigated excessive ECM deposition by phagocytosing activated HSCs, fostering the regeneration of damaged liver parenchymal cells by adopting a tissue repair phenotype post target cell elimination.",
+    "direct_signal_terms": [
+      "phagocyt",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-77dc6d0948e63351",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-4121be0fbfdcc5cc",
+      "GP-008-FC-5835605256f27258",
+      "GP-008-FC-5b876fb8d310f3b9",
+      "GP-008-FC-6718192350bb8079"
+    ],
+    "source_ids": [
+      "FC-S-a6f2290dacffb34f"
+    ],
+    "evidence_text": "S12C), substantiating the generation of functionally competent FAPCAR-M capable of target cell phagocytosis and enhanced memory immune responses. IF colocalization studies corroborated these findings, fibrotic liver tissue exhibited FAP/F4/80 double-positive macrophages, whereas such populations were virtually eradicated following αCD163/LNP-FAPCAR administration (SI Appendix, Fig. Among them, the expression of Trem2, Mmp12, and Mmp13 associated with the elimination of scar tissue was higher specific to cluster 2, the expression of inflammatory factor IL-6 was higher in cluster (1, 4, 5), the Mki67 associated with proliferation specific to cluster 6 was expressed higher (SI Appendix, Fig. The results indicated that LNP treatment altered the proportions of different macrophage cluster subtypes, especially increasing MMP12 expression in macrophage subtypes involved in scar elimination.",
+    "direct_signal_terms": [
+      "phagocyt",
+      "colocaliz",
+      "eradicated",
+      "Fig. Among",
+      "eliminat",
+      "higher",
+      "Fig. The"
+    ],
+    "figure_or_table": "Fig. Among",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-e2e938ef42d4499b",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-015cba9d1bfac43b"
+    ],
+    "source_ids": [
+      "FC-S-b842c4f3d32bf804"
+    ],
+    "evidence_text": "IHC analyses of hepatic tissue further validated that αCD163/LNP-FAPCAR treatment enabled targeted elimination of FAP+ cells (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-71a2ad9a508849d1",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-868868de4338c297"
+    ],
+    "source_ids": [
+      "FC-S-b9b303d82189acf0"
+    ],
+    "evidence_text": "(E-F) Confocal microscopy images displayed the phagocytosis of FAP+ JS-1 cells by 330 BMDMs subjected to various formulations.",
+    "direct_signal_terms": [
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-761c9ba1b339e15d",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-1fa445a31506beb7",
+      "GP-008-FC-9792c53c458d373d"
+    ],
+    "source_ids": [
+      "FC-S-c156d43e795af19f"
+    ],
+    "evidence_text": "The supernatant was replaced with 225 pre-warmed medium at 37°C, and the dishes were incubated at 37°C in a 5% CO2 226 atmosphere to promote phagocytosis. Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 228 cells labeled with pHrodo.",
+    "direct_signal_terms": [
+      "5%",
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result"
+    ]
+  },
+  {
+    "candidate_id": "OC-890a69cc0d855321",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-050f9d7ae557e938",
+      "GP-008-FC-da61cc2ef7e4844a"
+    ],
+    "source_ids": [
+      "FC-S-e0316547ae95e4ae"
+    ],
+    "evidence_text": "And the MMP12 induction is contingent upon macrophage-mediated phagocytosis (SI Appendix, Fig. The resulting CAR-M can recognize and eliminate FAP+ HSCs, crucial contributors to liver fibrosis.",
+    "direct_signal_terms": [
+      "phagocyt",
+      "Fig. The",
+      "eliminat"
+    ],
+    "figure_or_table": "Fig. The",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c7aaccbbfc8741c8",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-f6d00516e7b38fda"
+    ],
+    "source_ids": [
+      "S-0cbbf2a1b75b"
+    ],
+    "evidence_text": "S1 C and D), concomitant with significantly enhanced phagocytic capacity toward target cells (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "significant",
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-baf2d08bb4cc9e88",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-1bf7bda856a91d0c",
+      "GP-008-E-6dea751ac521de5e",
+      "GP-008-E-8f770781eb5bdfb7"
+    ],
+    "source_ids": [
+      "S-479d9bc0ce1e"
+    ],
+    "evidence_text": "IF colocalization studies corroborated these findings, fibrotic liver tissue exhibited FAP/F4/80 double-positive macrophages, whereas such populations were virtually eradicated following αCD163/LNP-FAPCAR administration (SI Appendix, Fig. The results indicated that LNP treatment altered the proportions of different macrophage cluster subtypes, especially increasing MMP12 expression in macrophage subtypes involved in scar elimination. S12C), substantiating the generation of functionally competent FAPCAR-M capable of target cell phagocytosis and enhanced memory immune responses.",
+    "direct_signal_terms": [
+      "colocaliz",
+      "eradicated",
+      "Fig. The",
+      "eliminat",
+      "phagocyt"
+    ],
+    "figure_or_table": "Fig. The",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-0610281a3a820015",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-367a892054c68fbd",
+      "GP-008-E-526e49f7545a151a",
+      "GP-008-E-55839a1df762b042",
+      "GP-008-E-fb922339e2bceab0"
+    ],
+    "source_ids": [
+      "S-6a24ed13fb43"
+    ],
+    "evidence_text": "Contrarily, the αCD163/LNP-Luc group did not exhibit increased phagocytic efficiency, indicating that FAPCAR expression was crucial for enhancing macrophage-mediated phagocytosis of FAP+JS-1 cells (Fig. Pretreatment with the macrophage-specific phagocytosis inhibitor Cytochalasin D abrogated the MMP12 expression in CAR-M, establishing phagocytosis as an obligate upstream event governing MMP12 transcriptional induction (SI Appendix, Fig. Both αCD163/LNP-FAPCAR and LNP-FAPCAR treatments significantly enhanced the phagocytic rates of BMDMs. By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
+    "direct_signal_terms": [
+      "increased",
+      "phagocyt",
+      "Fig. Pretreatment",
+      "Fig. Both",
+      "significant",
+      "eliminat"
+    ],
+    "figure_or_table": "Fig. Pretreatment",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-ce19d510efb9a91c",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-1c77f25c0e57c6f8",
+      "GP-008-E-426716f6974a5a20"
+    ],
+    "source_ids": [
+      "S-6ea2461ede73"
+    ],
+    "evidence_text": "207 In Vitro Killing Assay 208 Before experiments, JS-1/LUC and LX-2/LUC cells were stimulated with 209 5 ng/ml TGF‐β1 (Peprotech, USA) for 48 h, and the cells were screened for FAP+ 210 using a flow cytometer; then, the cells were co-cultured overnight with BMDMs at 211 specified ratios. A reduction in luciferase activity 214 suggests that functional BMDMs successfully eliminated FAP+ JS-1 cells.",
+    "direct_signal_terms": [
+      "5 ng",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-58807a11fad15b65",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-54366734b908d658"
+    ],
+    "source_ids": [
+      "S-789c810554d5"
+    ],
+    "evidence_text": "IHC analyses of hepatic tissue further validated that αCD163/LNP-FAPCAR treatment enabled targeted elimination of FAP+ cells (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-da143b8ffcf82310",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-d5e76e1bf5d48af8"
+    ],
+    "source_ids": [
+      "S-9edb4ea9bfdb"
+    ],
+    "evidence_text": "In colocalization studies, LNP exhibited specific expression of ZsGreen protein in macrophages of fibrotic mice, with no detectable expression in other hepatic cell types, whereas unmodified LNP predominantly transduced hepatocytes (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "colocaliz",
+      "table expression"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-772028d5375b96b5",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-a9c7d8e5604236b3"
+    ],
+    "source_ids": [
+      "S-a86b1e0bd14d"
+    ],
+    "evidence_text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 228 cells labeled with pHrodo.",
+    "direct_signal_terms": [
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-81751072419c1a0c",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-656314f8e60024c3"
+    ],
+    "source_ids": [
+      "S-b89129642edf"
+    ],
+    "evidence_text": "Furthermore, this intervention could attenuate the profibrotic phenotype of residual JS-1 cells that evaded cytotoxic elimination (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "attenuat",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-8d2b5381931531a4",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-bc0ebbca3fa4955f",
+      "GP-008-E-c0d7ee15259a1fc7"
+    ],
+    "source_ids": [
+      "S-bd13c7ee602b"
+    ],
+    "evidence_text": "(E-F) Flow cytometry was employed to detect the 371 phagocytic activity of macrophages in response to various formulations, using 372 pHrodo-labeled FAP+ LX-2 cells and statistical analysis. (C-D) Confocal microscopy images display the phagocytosis of FAP+ LX-2 cells 369 by macrophages subjected to various formulations and the quantitative analysis of the 370 phagocytic index (scale bar=10 μm).",
+    "direct_signal_terms": [
+      "phagocyt",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-15366239f60c1cdf",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-8a4e60d69bbb3d2f"
+    ],
+    "source_ids": [
+      "S-eed3b565924d"
+    ],
+    "evidence_text": "Furthermore, these LNPs therapy can increase the expression of MMP12 in macrophages, and the inducible effect of MMP12 depends on macrophage-mediated phagocytosis, although the exact mechanism remains unclear.",
+    "direct_signal_terms": [
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6febc2cbd6da0a60",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-10b6506597fe7389",
+      "GP-008-FC-3d4466cbf473a3f0",
+      "GP-008-FC-b764acae286645d9"
+    ],
+    "source_ids": [
+      "FC-S-b1303c7efd61ae31"
+    ],
+    "evidence_text": "(Scale bar, 10 μm.) (B) Quantitative analysis of the phagocytic index in BMDMs. (A) Confocal microscopy images showed phagocytosis of FAP+JS-1 cells by BMDMs treated with various formulations. Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 cells labeled with pHrodo.",
+    "direct_signal_terms": [
+      "analysis",
+      "phagocyt",
+      "showed"
+    ],
+    "figure_or_table": "fig. 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f437510fa0871b58",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-1de638e9a94e767b",
+      "GP-008-E-3ce572e67b639c5d",
+      "GP-008-E-9f1c889c86f7fdfa"
+    ],
+    "source_ids": [
+      "S-f1548abcf322"
+    ],
+    "evidence_text": "(Scale bar, 10 μm.) (B) Quantitative analysis of the phagocytic index in BMDMs. Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 cells labeled with pHrodo. (A) Confocal microscopy images showed phagocytosis of FAP+JS-1 cells by BMDMs treated with various formulations.",
+    "direct_signal_terms": [
+      "analysis",
+      "phagocyt",
+      "showed"
+    ],
+    "figure_or_table": "fig. 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-acf6d2762cb95d99",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-FC-148813e2be43d9af"
+    ],
+    "source_ids": [
+      "FC-S-bcfa97d386405952"
+    ],
+    "evidence_text": "(K-L) IF images depicting the co-staining with markers for liver 391 cells (ALB+), HSCs (Desmin+), macrophages (F4/80+), bile duct cells (SOX9+), and the statistical 392 analysis.",
+    "direct_signal_terms": [
+      "co-stain",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9b5f0ad9a347d47b",
+    "paper_id": "GP-008",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-008-E-7ea0f3f9a2002394"
+    ],
+    "source_ids": [
+      "S-606d887e5207"
+    ],
+    "evidence_text": "(K-L) IF images depicting the co-staining with markers for liver 391 cells (ALB+), HSCs (Desmin+), macrophages (F4/80+), bile duct cells (SOX9+), and the statistical 392 analysis.",
+    "direct_signal_terms": [
+      "co-stain",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6fc2c8e2623a154d",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-1cea560b4cc4ad0e"
+    ],
+    "source_ids": [
+      "FC-S-be45df6ef11313b3"
+    ],
+    "evidence_text": "Notably, over 80% of the BMDMs expressed GFP or FAPCAR upon exposure to αCD163/LNP-GFP or αCD163/LNP-FAPCAR, respectively.",
+    "direct_signal_terms": [
+      "80%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result",
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-073c6262f43a6240",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-85ffa081af3058cd"
+    ],
+    "source_ids": [
+      "S-199d2629b091"
+    ],
+    "evidence_text": "Notably, over 80% of the BMDMs expressed GFP or FAPCAR upon exposure to αCD163/LNP-GFP or αCD163/LNP-FAPCAR, respectively.",
+    "direct_signal_terms": [
+      "80%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result",
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-0b4876f08c8c2b6d",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-96045cb4ab6274c3"
+    ],
+    "source_ids": [
+      "FC-S-75e69a2f0aa58a3a"
+    ],
+    "evidence_text": "(Scale bar, 10 μm.) (J) Representative GFP expression in BMDMs through flow cytometry and (K) the analysis of GFP expression.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 1.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-98d4db1f890a608a",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-e9466266dec9786d"
+    ],
+    "source_ids": [
+      "S-6c16ffc4255c"
+    ],
+    "evidence_text": "(Scale bar, 10 μm.) (J) Representative GFP expression in BMDMs through flow cytometry and (K) the analysis of GFP expression.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 1.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c8f83c763c0b6508",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-80ec88884725b23a"
+    ],
+    "source_ids": [
+      "FC-S-168fad95eadea12f"
+    ],
+    "evidence_text": "EE (%)=(fluorescence of total mRNA-fluorescence of free 180 mRNA)/fluorescence of total mRNA × 100%.",
+    "direct_signal_terms": [
+      "100%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-a7349d4cd95ad9f6",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-972ba4454d72d33b",
+      "GP-008-FC-b373a9c7c326eea0"
+    ],
+    "source_ids": [
+      "FC-S-2172a43ee74a379c"
+    ],
+    "evidence_text": "In contrast, unmodified LNPs could only deliver mRNA to less than 20% of the target macrophages in vitro (SI Appendix, Fig. First, the Flow cytometry showed that over 70% of the macrophages (THP-1 cells induced with PMA) expressed FAPCAR upon exposure to h-αCD163/LNP-FAPCAR.",
+    "direct_signal_terms": [
+      "20%",
+      "Fig. First",
+      "showed",
+      "70%"
+    ],
+    "figure_or_table": "Fig. First",
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ed7f3f7f44ca4aae",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-5cca4460ab5b27b9"
+    ],
+    "source_ids": [
+      "FC-S-34f78e16cf84adc3"
+    ],
+    "evidence_text": "FAP is minimally present in healthy adult livers, but its expression increases significantly in the fibrotic liver’s active matrix (3).",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-948d2488bd0817be",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-2b99af07dce82154"
+    ],
+    "source_ids": [
+      "FC-S-518f77e4b0138b22"
+    ],
+    "evidence_text": "(H-K) The qPCR analysis of CD80, IL-6, 375 CD206, and IL-10 expression of the screened macrophages.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2905068688bc039c",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-5f0b21e49356c495"
+    ],
+    "source_ids": [
+      "FC-S-5e8256c52817b57f"
+    ],
+    "evidence_text": "The present findings established that CD163 antibody-conjugated LNPs exhibited markedly superior target protein accumulation kinetics and prolonged expression persistence in fibrotic hepatic tissues compared to unmodified LNP formulations (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "compared"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-fb463147a9000968",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-3100ed6c7942dfbf",
+      "GP-008-FC-c875326964896b03"
+    ],
+    "source_ids": [
+      "FC-S-5f7e3c49e57be4bb"
+    ],
+    "evidence_text": "The results showed that BMDMs, especially those treated with αCD163/LNP-FAPCAR, significantly promoted the expression of the M1 marker CD80 (Fig. Notably, the αCD163/LNP-FAPCAR group could induce higher Mmp12 gene expression, and no significant effect on the gene expression of Mmp9 and Mmp13 (Fig.",
+    "direct_signal_terms": [
+      "showed",
+      "significant",
+      "Fig. Notably",
+      "higher"
+    ],
+    "figure_or_table": "Fig. Notably",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-87182f01aad1d15c",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-7c76eb313987d4fe"
+    ],
+    "source_ids": [
+      "FC-S-6a0b8c9ff9ef8906"
+    ],
+    "evidence_text": "(A) The mRNA relative expression of Mmp12 in screened BMDMs with 341 Cytochalasin D (0.1 μg/mL for 24 h).",
+    "direct_signal_terms": [
+      "0.1 μg"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-63b4c746d636ae26",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-c847db90604356bd"
+    ],
+    "source_ids": [
+      "FC-S-96efd0fcc0b797ad"
+    ],
+    "evidence_text": "(B-G) Feature 442 plot of the Fap, Acta2, and Col1a1 gene expression in the macrophage subgroups and the 443 statistical analysis.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-0bcadc06c8660bf4",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-9fc950b1af9eb5c6"
+    ],
+    "source_ids": [
+      "FC-S-97f5c753ce5f28b4"
+    ],
+    "evidence_text": "(F-G) The qPCR 359 analysis of Acta2 and Col3 expression in the survived JS-1 cells.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-cdf1f2fd63fea2e2",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-028bd91acc9c0900",
+      "GP-008-FC-86e6148a50e80b1d"
+    ],
+    "source_ids": [
+      "FC-S-9a8b8f55dd34f16d"
+    ],
+    "evidence_text": "We found that more Heps (ALB+) in the LNP group expressed PCNA, whereas HSCs (Desmin+) showed almost no PCNA expression. Also, we verified that the LNP treatment could inhibit the genes of caspase3 and bax and promote bcl-2 and pcna expression in the extracted primary Heps from the mouse liver through qPCR analysis (Fig.",
+    "direct_signal_terms": [
+      "showed",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-700e570a97380cd4",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-eb88ed6b1142d870"
+    ],
+    "source_ids": [
+      "FC-S-a6f2290dacffb34f"
+    ],
+    "evidence_text": "Critically, within the SAM lineage (cluster 2), MMP12 and MMP13 expression were significantly potentiated in the LNP group compared to fibrotic counterparts.",
+    "direct_signal_terms": [
+      "significant",
+      "compared"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-b78def4c03ecbebd",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-090c411fb2439771",
+      "GP-008-FC-8cf80fda152bffdd"
+    ],
+    "source_ids": [
+      "FC-S-b842c4f3d32bf804"
+    ],
+    "evidence_text": "Furthermore, we found that MMP12 and IL-6 expression were much higher in the treatment group (Fig. The results showed that there was a high level of expression of the targets above in the CCL4 group.",
+    "direct_signal_terms": [
+      "higher",
+      "Fig. The",
+      "showed"
+    ],
+    "figure_or_table": "Fig. The",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9b05bda97af13efb",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-4888a1b6b6d9ea0b"
+    ],
+    "source_ids": [
+      "FC-S-bcfa97d386405952"
+    ],
+    "evidence_text": "(H-J) Flow cytometry analysis of ZsGreen and CD163 expression in the screened 390 macrophages and the analysis.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-19be79a955ae9fad",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-80c6ec1cbc3e9a46"
+    ],
+    "source_ids": [
+      "FC-S-be45df6ef11313b3"
+    ],
+    "evidence_text": "In contrast, unmodified LNPs delivered mRNA to fewer than 20% of target BMDMs in vitro (Fig.",
+    "direct_signal_terms": [
+      "20%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result"
+    ]
+  },
+  {
+    "candidate_id": "OC-34c3670d6d93a1e3",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-fe89dd4fb0ca6cc4"
+    ],
+    "source_ids": [
+      "FC-S-d8bba5994df57f9a"
+    ],
+    "evidence_text": "311 Perform gene set enrichment analysis (GSEA) on differentially expressed genes 312 (DEGs) between two groups using the R package \"clusterProfiler \".",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3d1a64279de05549",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-7213bb297b8c9edb"
+    ],
+    "source_ids": [
+      "FC-S-e5057fe2bdbada23"
+    ],
+    "evidence_text": "Subsequently, the transduced cells were 113 screened with puromycin, and cells with an expression rate exceeding 90% were 114 selected for subsequent experiments.",
+    "direct_signal_terms": [
+      "90%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-21884730d0c36cd3",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-46fcbcd444f81ea2"
+    ],
+    "source_ids": [
+      "FC-S-ec41dd5f8c7f523a"
+    ],
+    "evidence_text": "384 (C-D) IF images depicting ZsGreen expression in CCL4-induced fibrotic mice post-intravenous 385 injection of 40 μg of ZsGreen mRNA encapsulated in LNP-ZsGreen and αCD163/LNP-ZsGreen 386 groups at different times, and the statistical analysis.",
+    "direct_signal_terms": [
+      "40 μg",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-49ac19315a9fb4cd",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-7d00a9f09c5299f7"
+    ],
+    "source_ids": [
+      "S-199d2629b091"
+    ],
+    "evidence_text": "In contrast, unmodified LNPs delivered mRNA to fewer than 20% of target BMDMs in vitro (Fig.",
+    "direct_signal_terms": [
+      "20%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result"
+    ]
+  },
+  {
+    "candidate_id": "OC-be8430abe2d01253",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-68164fa9e4c5d6e0"
+    ],
+    "source_ids": [
+      "S-3600c7ce3d2b"
+    ],
+    "evidence_text": "Also, we verified that the LNP treatment could inhibit the genes of caspase3 and bax and promote bcl-2 and pcna expression in the extracted primary Heps from the mouse liver through qPCR analysis (Fig.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-10e46c995546bedf",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-493c040b06dba178"
+    ],
+    "source_ids": [
+      "S-606d887e5207"
+    ],
+    "evidence_text": "(H-J) Flow cytometry analysis of ZsGreen and CD163 expression in the screened 390 macrophages and the analysis.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-0e760eba2f435321",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-43f17505d9a3c544"
+    ],
+    "source_ids": [
+      "S-6a24ed13fb43"
+    ],
+    "evidence_text": "The results showed that BMDMs, especially those treated with αCD163/LNP-FAPCAR, significantly promoted the expression of the M1 marker CD80 (Fig.",
+    "direct_signal_terms": [
+      "showed",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-e8124051820d575e",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-aef540d138f7bd11"
+    ],
+    "source_ids": [
+      "S-6ea2461ede73"
+    ],
+    "evidence_text": "EE (%)=(fluorescence of total mRNA-fluorescence of free 180 mRNA)/fluorescence of total mRNA × 100%.",
+    "direct_signal_terms": [
+      "100%"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-331193ac418cb39a",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-8e770c223ca7f922"
+    ],
+    "source_ids": [
+      "S-9333c64b8b32"
+    ],
+    "evidence_text": "The present findings established that CD163 antibody-conjugated LNPs exhibited markedly superior target protein accumulation kinetics and prolonged expression persistence in fibrotic hepatic tissues compared to unmodified LNP formulations (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "compared"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-75f5e516703d38c8",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-9aafff74f2f915dc"
+    ],
+    "source_ids": [
+      "S-bd13c7ee602b"
+    ],
+    "evidence_text": "(H-K) The qPCR analysis of CD80, IL-6, 375 CD206, and IL-10 expression of the screened macrophages.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3fef3389e98b992b",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-a618a705c778ec1e"
+    ],
+    "source_ids": [
+      "FC-S-75e69a2f0aa58a3a"
+    ],
+    "evidence_text": "(H and I) Statistical analysis and representative confocal fluorescence images of BMDMs transfected with mRNA, LNP-mRNA, or αCD163/LNP-mRNA.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 1.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d49efe6a06da914e",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-17f3f355e8b1e062"
+    ],
+    "source_ids": [
+      "S-6c16ffc4255c"
+    ],
+    "evidence_text": "(H and I) Statistical analysis and representative confocal fluorescence images of BMDMs transfected with mRNA, LNP-mRNA, or αCD163/LNP-mRNA.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 1.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9ceb5958cbbc4564",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-d17010e8cbba6cec"
+    ],
+    "source_ids": [
+      "FC-S-b1303c7efd61ae31"
+    ],
+    "evidence_text": "(G and H) Flow cytometry analysis of CD80 and CD206 expression in the screened BMDMs and the analysis.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-446035e072c83c6b",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-ba71b1c4bd111b87"
+    ],
+    "source_ids": [
+      "S-f1548abcf322"
+    ],
+    "evidence_text": "(G and H) Flow cytometry analysis of CD80 and CD206 expression in the screened BMDMs and the analysis.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-05744cef7e55cbd8",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-5d98ce1454f94bbe",
+      "GP-008-FC-707a5bca8b4f31c7",
+      "GP-008-FC-e864ecacce2d327c",
+      "GP-008-FC-fca20871093ad159"
+    ],
+    "source_ids": [
+      "FC-S-0c44029356d41335"
+    ],
+    "evidence_text": "(H) The qPCR analysis of Acta2, Tgf-b1, N-cadherin, and Pcna expression of HSCs. (E) The qPCR analysis of Ccr2, Mmp12, Mmp13, Il-6, Mki67, and Cd9 expression of the extracted primary macrophages. (D) Flow cytometry analysis of CCR2, MMP12, MMP13, IL-6, MKI67, and CD9 expression in primary macrophages from mouse liver and across biological replicates. (C) Vlnplot analysis of the marker gene expression in various macrophage clusters.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 5.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-fc5377fba2c3a51c",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-202999ae6268273e",
+      "GP-008-E-7056c6a33aeac4de"
+    ],
+    "source_ids": [
+      "S-9b36f545d675"
+    ],
+    "evidence_text": "(C) Vlnplot analysis of the marker gene expression in various macrophage clusters. (D) Flow cytometry analysis of CCR2, MMP12, MMP13, IL-6, MKI67, and CD9 expression in primary macrophages from mouse liver and across biological replicates.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": "fig. 5.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-06f353a3808aecfe",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-dca713becdeb4310",
+      "GP-008-FC-f5230da7e7a29216"
+    ],
+    "source_ids": [
+      "FC-S-168fad95eadea12f"
+    ],
+    "evidence_text": "After a PBS rinse, cells were lysed and luciferase activity was 212 measured on a PerkinElmer Victor X3 plate reader using the Promega E151A kit 213 according to the manufacturer’s instructions. A reduction in luciferase activity 214 suggests that functional BMDMs successfully eliminated FAP+ JS-1 cells.",
+    "direct_signal_terms": [
+      "measured",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-7de2514e3d45834a",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-67cba83633b522b0"
+    ],
+    "source_ids": [
+      "FC-S-5f7e3c49e57be4bb"
+    ],
+    "evidence_text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
+    "direct_signal_terms": [
+      "significant",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-8a716cfed2d5fec5",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-99cef5fe5e0e2ba6"
+    ],
+    "source_ids": [
+      "FC-S-b842c4f3d32bf804"
+    ],
+    "evidence_text": "To elucidate the mechanistic basis of antibody-conjugated LNP-mediated therapeutic efficacy in hepatic fibrosis, we conducted a comparative analysis of three intervention cohorts: αCD163/LNP-Luc (luciferase mRNA control), unmodified LNP-FAPCAR (FAPCAR mRNA without targeting moiety), and αCD163/LNP-FAPCAR (FAPCAR mRNA with CD163-directed antibody conjugation) (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-a7c87032b82a21e1",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-008d987874c60e3a"
+    ],
+    "source_ids": [
+      "FC-S-c156d43e795af19f"
+    ],
+    "evidence_text": "240 Bioluminescence 241 In the liver fibrosis model, mice were intravenously administered with α 242 CD163/LNP-Luc loaded with Luciferase or with α CD163/LNP-ZsGreen loaded with 243 ZsGreen mRNA (via an intravenous injection of the tail vein at a dose of 0.4 mg of 244 mRNA per kg body weight).",
+    "direct_signal_terms": [
+      "0.4 mg"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-00deb0d76e4ffda7",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-FC-88c114c612deddb6"
+    ],
+    "source_ids": [
+      "FC-S-ec41dd5f8c7f523a"
+    ],
+    "evidence_text": "(B) The luciferase activity of major organs at 8 and 72 hours.",
+    "direct_signal_terms": [
+      "72 hours"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-253842cb0fa076e8",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-fb922339e2bceab0"
+    ],
+    "source_ids": [
+      "S-6a24ed13fb43"
+    ],
+    "evidence_text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
+    "direct_signal_terms": [
+      "significant",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-341696036dd9f69a",
+    "paper_id": "GP-008",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-008-E-182a138968e7550b",
+      "GP-008-E-426716f6974a5a20"
+    ],
+    "source_ids": [
+      "S-6ea2461ede73"
+    ],
+    "evidence_text": "After a PBS rinse, cells were lysed and luciferase activity was 212 measured on a PerkinElmer Victor X3 plate reader using the Promega E151A kit 213 according to the manufacturer’s instructions. A reduction in luciferase activity 214 suggests that functional BMDMs successfully eliminated FAP+ JS-1 cells.",
+    "direct_signal_terms": [
+      "measured",
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-40e6962eabcaf94d",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-2a04955bebcacea0"
+    ],
+    "source_ids": [
+      "FC-S-2172a43ee74a379c"
+    ],
+    "evidence_text": "Then we examined the impact of various treatments on macrophages’ phagocytosis of LX-2 cells in a fibrosis-mimicking environment.",
+    "direct_signal_terms": [
+      "phagocyt"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-4b5a0dc3a01503fa",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-a63cebaf92b3d8dd",
+      "GP-008-FC-ed4d38153ab3cc74"
+    ],
+    "source_ids": [
+      "FC-S-34ed2df025fcf739"
+    ],
+    "evidence_text": "To induce liver fibrosis through methionine deficiency and 74 choline deficiency (MCD) diet, mice were fed either a normal diet or an MCD diet for 75 a duration of up to 8 weeks. 63 Liver Fibrosis Models 64 Six to eight-week-old female Balb/c mice (Changsheng Bio, Liaoning) were 65 maintained in SPF barrier rooms (22 ± 2 °C, 45-65 % humidity, 12 h light/12 h dark) 66 with ad libitum access to standard chow and autoclaved water.",
+    "direct_signal_terms": [
+      "8 weeks",
+      "maintained",
+      "±",
+      "65 %"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-a3b3c30d4f383c9a",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-5669b556e93ab95a"
+    ],
+    "source_ids": [
+      "FC-S-34f78e16cf84adc3"
+    ],
+    "evidence_text": "Studies have demonstrated that inhibiting FAP or genetically eliminating it can lessen liver fibrosis in animal models (7).",
+    "direct_signal_terms": [
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f90a8676ccff3d97",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-11cf9169369a721c",
+      "GP-008-FC-1dc71dae4927710a",
+      "GP-008-FC-730aaa4eea997e6f",
+      "GP-008-FC-b320180e99a53adb"
+    ],
+    "source_ids": [
+      "FC-S-9a8b8f55dd34f16d"
+    ],
+    "evidence_text": "Compared with the Fibrosis group, the LNP group promoted proliferation-related biological processes in Heps, as indicated by GSEA of GO terms (SI Appendix, Fig. In the Fibrosis group, PCNA expression was significantly increased in HSCs and was almost absent in Heps (Fig. We found that the LNP group had a lower proportion of HSCs than the Fibrosis group. Therefore, we compared the transcriptomic differences in Heps between the Fibrosis and LNP groups (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "Compared",
+      "Fig. In",
+      "significant",
+      "increased",
+      "absent",
+      "Fig. We",
+      "lower",
+      "compared"
+    ],
+    "figure_or_table": "Fig. In",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-68111553ed3cc257",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-9071623817697b47",
+      "GP-008-FC-e75218514098ec17",
+      "GP-008-FC-ed951356f6a99567"
+    ],
+    "source_ids": [
+      "FC-S-a6f2290dacffb34f"
+    ],
+    "evidence_text": "The results showed that, compared with nonfibrotic liver tissues, liver fibrosis caused by various etiologies was associated with increased FAP expression (SI Appendix, Fig. The results demonstrated that, compared with HSCs induced solely by TGF-β1, HSCs exposed to MMP12+macrophage-conditioned medium (CM) expressed fewer fibrosis-related proteins and mRNAs (Fig. We found that, compared to the Fibrosis group, the LNP group had a higher proportion of clusters (2–4), while the other clusters (0, 1) were relatively lower (Fig.",
+    "direct_signal_terms": [
+      "showed",
+      "compared",
+      "increased",
+      "Fig. The",
+      "solely",
+      "Fig. We",
+      "higher",
+      "lower"
+    ],
+    "figure_or_table": "Fig. The",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-230b961709438b84",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-7072f00e9ff0e2d2"
+    ],
+    "source_ids": [
+      "FC-S-aab48e15d63d1477"
+    ],
+    "evidence_text": "(F) Vlnplot analysis of the 458 markers gene expression in various macrophage clusters between the Fibrosis (blue) and LNP 459 (pink) groups.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-367710b261d183bd",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-82c2ce4c1a9ffe63",
+      "GP-008-FC-99cef5fe5e0e2ba6",
+      "GP-008-FC-bc49f687bf36a65d",
+      "GP-008-FC-fc77dcbf24f00e1a"
+    ],
+    "source_ids": [
+      "FC-S-b842c4f3d32bf804"
+    ],
+    "evidence_text": "3B) content and the level of fibrosis-related genes through qRT-PCR analysis (Fig. To elucidate the mechanistic basis of antibody-conjugated LNP-mediated therapeutic efficacy in hepatic fibrosis, we conducted a comparative analysis of three intervention cohorts: αCD163/LNP-Luc (luciferase mRNA control), unmodified LNP-FAPCAR (FAPCAR mRNA without targeting moiety), and αCD163/LNP-FAPCAR (FAPCAR mRNA with CD163-directed antibody conjugation) (SI Appendix, Fig. Meanwhile, we observed that mice treated with αCD163/LNP-FAPCAR could significantly alleviate liver fibrosis as assessed by histology, Sirius red staining, and Masson’s trichrome staining (Fig. The results showed that treatment with αCD163/LNP-FAPCAR effectively alleviates BDL- and MCD-diet-induced liver fibrosis in mice (SI Appendix, Figs.",
+    "direct_signal_terms": [
+      "analysis",
+      "Fig. To",
+      "Fig. Meanwhile",
+      "observed",
+      "significant",
+      "assessed",
+      "Fig. The",
+      "showed"
+    ],
+    "figure_or_table": "Fig. To",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language",
+      "visual_result_location"
+    ]
+  },
+  {
+    "candidate_id": "OC-a2489b16178b437c",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-008d987874c60e3a"
+    ],
+    "source_ids": [
+      "FC-S-c156d43e795af19f"
+    ],
+    "evidence_text": "240 Bioluminescence 241 In the liver fibrosis model, mice were intravenously administered with α 242 CD163/LNP-Luc loaded with Luciferase or with α CD163/LNP-ZsGreen loaded with 243 ZsGreen mRNA (via an intravenous injection of the tail vein at a dose of 0.4 mg of 244 mRNA per kg body weight).",
+    "direct_signal_terms": [
+      "0.4 mg"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-dfcb5c19dc386d35",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-FC-da61cc2ef7e4844a"
+    ],
+    "source_ids": [
+      "FC-S-e0316547ae95e4ae"
+    ],
+    "evidence_text": "The resulting CAR-M can recognize and eliminate FAP+ HSCs, crucial contributors to liver fibrosis.",
+    "direct_signal_terms": [
+      "eliminat"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6da6f8a7627669aa",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-E-f1fe9bc8ede6dcc9"
+    ],
+    "source_ids": [
+      "S-3600c7ce3d2b"
+    ],
+    "evidence_text": "In the Fibrosis group, PCNA expression was significantly increased in HSCs and was almost absent in Heps (Fig.",
+    "direct_signal_terms": [
+      "significant",
+      "increased",
+      "absent"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9343dfa7f5af16e4",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-E-d1b7811cf88b74aa",
+      "GP-008-E-f92f9c6b8d5e5931"
+    ],
+    "source_ids": [
+      "S-479d9bc0ce1e"
+    ],
+    "evidence_text": "The results demonstrated that, compared with HSCs induced solely by TGF-β1, HSCs exposed to MMP12+macrophage-conditioned medium (CM) expressed fewer fibrosis-related proteins and mRNAs (Fig. The results showed that, compared with nonfibrotic liver tissues, liver fibrosis caused by various etiologies was associated with increased FAP expression (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "compared",
+      "solely",
+      "Fig. The",
+      "showed",
+      "increased"
+    ],
+    "figure_or_table": "Fig. The",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-150f3861bcac0be7",
+    "paper_id": "GP-008",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-008-E-d3d28c55624f3463"
+    ],
+    "source_ids": [
+      "S-cdd3cd145a49"
+    ],
+    "evidence_text": "(F) Vlnplot analysis of the 458 markers gene expression in various macrophage clusters between the Fibrosis (blue) and LNP 459 (pink) groups.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-8b5bb67a59ba978c",
+    "paper_id": "GP-008",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-008-FC-7fd7fba313b4e63f"
+    ],
+    "source_ids": [
+      "FC-S-35249b6c14ba035e"
+    ],
+    "evidence_text": "TGF‐β1 protein MCE HY-P7117, HY-P7118 Hydroxyproline ELISA kit Elabscience E-BC-K062-M ALT kit Elabscience E-BC-K235-M RIPA lysis buffer Beyotime P0013B IL-1β ELISA kit Elabscience E-EL-M0037/H0149 IL-6 ELISA kit Elabscience E-EL-M0044/H6156 IL-10 ELISA kit Elabscience E-EL-M0046/H6154 TGF-β1 ELISA kit Elabscience E-EL-UNEL-M0099/ UNEL-H0169 Cytochalasin D MCE HY-N6682 BAY 61-3606 MCE HY-76474 Recombinant Mouse CD163 Abcam ab322099 Protein Standard (His tag) Software GraphPad Prism 7.0 https://www.graphpad.com CellRanger https://www.r-project.org/ Image J https://imagej.nih.gov/ij/ind ex.html FlowJo 10.4.2 https://www.flowjo.com Other Real-Time PCR System ThermoFisher fluorescence microscope Olympus Corporation IVIS Lumina III PerkinElmer incucyte SX5 Sartorius Flow cytometer Becton Dickinson 322 323 Figures S1 to S12 324 Appendix Figure Legends",
+    "direct_signal_terms": [
+      "Figures",
+      "Figure Legends"
+    ],
+    "figure_or_table": "figures",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d6251ae8573f0ea5",
+    "paper_id": "GP-008",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-008-FC-186f39cf2732043d"
+    ],
+    "source_ids": [
+      "FC-S-24da017be1cd98f5"
+    ],
+    "evidence_text": "In the CCL4+αCD163/LNP-FAPCAR group, an accumulation of FAPCAR+ macrophages was observed in areas populated by HSCs (Desmin+), and a phenomenon absent in the fibrotic mice (CCL4 + PBS group).",
+    "direct_signal_terms": [
+      "observed",
+      "absent"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-1644ad5031f5bd52",
+    "paper_id": "GP-008",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-008-FC-197c0d55a09731fa"
+    ],
+    "source_ids": [
+      "FC-S-24da017be1cd98f5"
+    ],
+    "evidence_text": "Conversely, unmodified LNP operates independently of CD163-mediated uptake, resulting in substantial ZsGreen/CD163 colocalization, thereby indirectly corroborating the targeting function of conjugated antibodies (SI Appendix, Fig.",
+    "direct_signal_terms": [
+      "colocaliz"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-0c5b2c6c441a6f74",
+    "paper_id": "GP-008",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-008-FC-033bf4e3ca750484",
+      "GP-008-FC-a5e0d7aa0ccd9a7b"
+    ],
+    "source_ids": [
+      "FC-S-be45df6ef11313b3"
+    ],
+    "evidence_text": "Conjugation to αCD163 further increased LNP uptake in cells, likely through receptor-induced endocytosis. Notably, mRNA encapsulated in LNPs showed superior internalization efficiency.",
+    "direct_signal_terms": [
+      "increased",
+      "showed"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  }
+]

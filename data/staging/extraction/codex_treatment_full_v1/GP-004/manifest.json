@@ -1,0 +1,40 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-004",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T17:04:29.977453+00:00",
+  "completed_at": "2026-07-28T17:05:39.454701+00:00",
+  "elapsed_seconds": 69.476,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-004-E-9331dfb69db5483e",
+      "GP-004-E-50647e1940bafbbd",
+      "GP-004-E-a72862f18ec2ffcd",
+      "GP-004-E-44b663f029e6e370",
+      "GP-004-E-12343d379452fe6d"
+    ],
+    "explanation": "Original mouse experiments used mRNA-LNPs with a reported lipid-class composition. eGFP mRNA-LNP evidence identifies hepatocytes as transfected cells, and HGF mRNA-LNP evidence reports hepatocyte proliferation; both are linked to the reported LNP formulation. Exact lipid identities and component ratios are not reported."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 4,
+    "experiments": 2,
+    "outcomes": 2,
+    "unresolved_items": 3
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}
