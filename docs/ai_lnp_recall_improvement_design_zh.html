@@ -416,11 +416,57 @@ format:   html
   </div>
 
   <div class="warn">
-    <b>最关键的单点发现：上线开关是假的</b>
-    <code>config/extraction/compact_route_v1.yaml</code> 结尾的 <code>activation_gate.active: false</code>
-    <b>没有任何 <code>src/</code> 代码读取</b>——唯一的读取方是 <code>tests/test_compact_prompt_route.py:15</code>，
-    只用来断言它是 false。把它改成 <code>true</code> 对程序行为<b>零影响</b>。
-    也就是说验收标准里「打开开关正式上线」这一条，<b>当前根本没有对应机制</b>，必须先建。
+    <b>v9 更新 · 上线开关已从「假的」改为真的</b>
+    原文记录的问题属实：<code>activation_gate.active</code> 当时没有任何 <code>src/</code> 代码读取。
+    第 20 轮已接线并翻转，此段保留以记录起点。<b>接线时还查出一个方向相反的错</b>：
+    <code>uniparse_ingestion</code> 根本不走注册表，它读自己的 <code>UNIPARSE_ENABLED</code> 且默认
+    <code>"1"</code>——注册表显示「关」，实际一直是<b>开着的</b>。
+    也就是说此前「7 个开关全关」这个说法本身就不成立。已改为经由 <code>is_enabled()</code> 解析，
+    <code>UNIPARSE_ENABLED</code> 降级为覆盖项而非绕行通道。
+  </div>
+
+  <h3 id="s2b-flags">1·五 开关上线状态（v9 · 第 19–20 轮）</h3>
+  <p>每个默认打开的开关都必须在注册表里带 <code>rationale</code> 字段写明实测依据，
+     这条由 <code>test_a_flag_may_only_ship_enabled_with_a_recorded_rationale</code> 强制。</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>开关</th><th class="num">默认</th><th>实测依据</th></tr></thead>
+    <tbody>
+      <tr><td><code>uniparse_ingestion</code></td><td class="num yes">开</td>
+          <td>GP-006 语料 54 → 260 blocks；<code>1.01</code> 出现 4 次（原为 0 次），该值即 GO-006。
+              服务不可达时降级到 pymupdf 并留告警，<b>已实测</b>，故默认开是安全的</td></tr>
+      <tr><td><code>candidate_slot_enforcement</code></td><td class="num yes">开</td>
+          <td>恢复 GO-004；<code>unsupported_extracted_disposition</code> 拦下 83 条无据声明中的 76 条。
+              槽位数大时退化（39 个全部回填，168 个不行），大文章需按 <code>max_slots_per_call</code> 分块</td></tr>
+      <tr><td><code>compact_route</code></td><td class="num yes">开</td>
+          <td>单独 8/15，高于完整视图 7/15；11/15 union 的 51 条记录里 37 条来自紧凑路线。
+              <b>这一条推翻了此前「去掉紧凑路线」的判断</b>，是我的判断失误</td></tr>
+      <tr><td><code>precision_metrics</code></td><td class="num yes">开</td>
+          <td>纯报告项，不改变抽取行为；使 precision 0.373 与 32 条虚增记录可见</td></tr>
+      <tr><td><code>full_evidence_view</code></td><td class="num">关</td>
+          <td>是集成成员而非路线：为 union 贡献 GO-015 / GO-007，但单独只有 7/15。
+              与 <code>compact_route</code> 一同关闭即可固定为完整视图运行</td></tr>
+      <tr><td><code>local_vlm_vision</code></td><td class="num">关</td>
+          <td>读图正确但<b>无法计分</b>：gold 写 <code>LYVE1</code>、读出的是 <code>LYVE-1</code>，分词只切后者。
+              现在打开只会拉低 precision 而不涨 recall</td></tr>
+      <tr><td><code>expanded_discovery</code></td><td class="num">关</td>
+          <td>无实现，仅为 roadmap 占位</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <b>第 19 轮：产物不可复现已修</b>
+    <code>_components</code> 用 <code>set.pop()</code> 选每组的种子，而 set 按哈希序取值——
+    随机化哈希下，哪些候选被分进哪个修复任务<b>每个进程都不一样</b>。
+    重跑本地链会在代码没变的情况下改写任务文件，使 CI 的「干净工作树」检查无法区分
+    偶然重排和真实回归。改为有序取种子后，三次不同 <code>PYTHONHASHSEED</code> 产出逐字节一致。
+    回归测试先在旧实现上验证过<b>确实会失败</b>，才算钉住。
+    <br><br>
+    同轮修掉三个入口的 <code>--help</code> 隐患（任何参数都会直接跑作业并写盘，
+    这正是此前 41 个报告文件被意外提交的原因），并给 ingestion 加了
+    <code>--paper-id</code> / <code>--skip-missing-xml</code>——此前<b>一个缺失的 XML 会在写完 GP-001 之后整体崩掉</b>，
+    留下一个既不是旧的也不是新的语料。
   </div>
 
   <h3>2. 开发架构设计</h3>
