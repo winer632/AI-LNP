@@ -25,6 +25,8 @@ from src.rag.ingestion import (
     xml_blocks,
 )
 from src.rag.models import DocumentBlock
+
+MMC1_FIXTURE = ROOT / "tests/fixtures/pdf_pages/GP-006_mmc1_p02.pdf"
 from src.rag.uniparse_client import UniparseDocument
 
 
@@ -350,11 +352,16 @@ def uniparse_on(monkeypatch):
     monkeypatch.setenv("UNIPARSE_ENABLED", "1")
 
 
-@pytest.mark.skipif(not MMC1.exists(), reason="GP-006 supplement not present")
+# The committed page fixture stands in when the untracked supplement is absent,
+# so these run in a clone. See tests/fixtures/pdf_pages.
+@pytest.mark.skipif(
+    not (MMC1.exists() or MMC1_FIXTURE.exists()),
+    reason="neither the GP-006 supplement nor its page fixture is present",
+)
 def test_pdf_blocks_falls_back_to_pymupdf_with_a_warning(tmp_path, uniparse_on):
     warnings: list[str] = []
     blocks = pdf_blocks(
-        "GP-006", MMC1, client=_FailingClient(),
+        "GP-006", MMC1 if MMC1.exists() else MMC1_FIXTURE, client=_FailingClient(),
         image_root=tmp_path, warnings=warnings,
     )
     assert blocks
@@ -364,7 +371,12 @@ def test_pdf_blocks_falls_back_to_pymupdf_with_a_warning(tmp_path, uniparse_on):
     assert "uniparse is down" in warnings[0]
 
 
-@pytest.mark.skipif(not MMC1.exists(), reason="GP-006 supplement not present")
+# The committed page fixture stands in when the untracked supplement is absent,
+# so these run in a clone. See tests/fixtures/pdf_pages.
+@pytest.mark.skipif(
+    not (MMC1.exists() or MMC1_FIXTURE.exists()),
+    reason="neither the GP-006 supplement nor its page fixture is present",
+)
 def test_pdf_blocks_can_be_disabled_by_environment(monkeypatch, tmp_path):
     monkeypatch.setenv("UNIPARSE_ENABLED", "0")
 
@@ -372,15 +384,20 @@ def test_pdf_blocks_can_be_disabled_by_environment(monkeypatch, tmp_path):
         def parse_pdf(self, path, **kwargs):
             raise AssertionError("uniparse must not be called when disabled")
 
-    blocks = pdf_blocks("GP-006", MMC1, client=_Exploding(), image_root=tmp_path)
+    blocks = pdf_blocks("GP-006", MMC1 if MMC1.exists() else MMC1_FIXTURE, client=_Exploding(), image_root=tmp_path)
     assert {block.block_type for block in blocks} == {"pdf_page"}
 
 
-@pytest.mark.skipif(not MMC1.exists(), reason="GP-006 supplement not present")
+# The committed page fixture stands in when the untracked supplement is absent,
+# so these run in a clone. See tests/fixtures/pdf_pages.
+@pytest.mark.skipif(
+    not (MMC1.exists() or MMC1_FIXTURE.exists()),
+    reason="neither the GP-006 supplement nor its page fixture is present",
+)
 def test_fallback_can_be_switched_off_so_failures_surface(tmp_path, uniparse_on):
     with pytest.raises(RuntimeError, match="uniparse is down"):
         pdf_blocks(
-            "GP-006", MMC1, client=_FailingClient(),
+            "GP-006", MMC1 if MMC1.exists() else MMC1_FIXTURE, client=_FailingClient(),
             image_root=tmp_path, allow_fallback=False,
         )
 

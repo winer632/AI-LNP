@@ -729,7 +729,7 @@ def test_a_contradicted_block_is_stamped_and_never_dropped():
     """
     from src.rag.uniparse_verification import load_corpus, verify_and_stamp
 
-    blocks = load_corpus("GP-004")
+    blocks = [on_readable_pdf(block) for block in load_corpus("GP-004")]
     stamped = verify_and_stamp(blocks)
 
     assert len(stamped) == len(blocks), "verification changed the block count"
