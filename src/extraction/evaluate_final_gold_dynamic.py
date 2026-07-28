@@ -277,11 +277,15 @@ def _number_in_text(value: float, text: str) -> bool:
 
     Formatting is tolerated so that a reported ``16.5`` still matches the
     source string ``16.50%``; the numeric identity must hold exactly.
+
+    Marker names are fused first, so the digits inside one are not read as a
+    measurement: without it ``F4/80-positive cells`` yields ``[4.0, 80.0]``
+    and counts as evidence for a claimed value of 80.
     """
     tolerance = max(1e-9, abs(value) * 1e-6)
     return any(
         abs(candidate - value) <= tolerance
-        for candidate in _numbers_in_text(text)
+        for candidate in _numbers_in_text(_fuse_marker_names(text.lower()))
     )
 
 
@@ -455,11 +459,19 @@ def _score(
         and isinstance(actual_value, (int, float))
         and abs(float(actual_value) - gold_value) <= 1e-9
     )
+    # Searched over the marker-fused text, so a number that is part of a
+    # marker name is not read as a reported value. "F4/80" is the name of an
+    # antigen; against a gold row whose value is 80 the raw text matched it six
+    # times and handed the record a 0.4 numeric bonus it had not earned. That
+    # is what let a panel read about ZsGreen co-localisation outscore the text
+    # record that actually reports GO-015. _fuse_marker_names already encodes
+    # exactly this distinction for tokenising; the numeric check has to use it
+    # too, or the two disagree about what "80" is.
     text_numeric = bool(
         gold_value is not None
         and re.search(
             rf"(?<!\d){re.escape(format(gold_value, 'g'))}(?!\d)",
-            actual_text,
+            _fuse_marker_names(actual_text.lower()),
         )
     )
     numeric_bonus = 0.55 if exact_numeric else 0.4 if text_numeric else 0.0

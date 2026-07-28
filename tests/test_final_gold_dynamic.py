@@ -166,6 +166,38 @@ def test_evidence_ids_are_collected_recursively():
     assert _evidence_ids(outcome) == {"E-1", "E-2", "E-3"}
 
 
+def test_a_number_inside_a_marker_name_is_not_a_measurement():
+    """Regression: "F4/80" was read as the reported value 80.
+
+    Both numeric checks scanned raw text. The antigen name F4/80 therefore
+    counted as evidence for a gold row whose value is 80, and it appears six
+    times in one GP-008 panel read. That bought the read a 0.4 numeric bonus
+    it had not earned and let it outscore, and take, the text record that
+    actually reports GO-015.
+
+    _fuse_marker_names already draws this distinction for tokenising; the
+    numeric checks have to use it too or the two disagree about what "80" is.
+    """
+    assert not _number_in_text(80, "F4/80-positive Kupffer cells")
+    assert not _number_in_text(80, "DAPI+F4/80+FAPCAR merge")
+    # a real printed value with the same digits still counts
+    assert _number_in_text(80, "over 80% of BMDMs expressed GFP")
+
+    gold = {
+        "endpoint_name": "FAPCAR_or_GFP_positive_BMDMs",
+        "normalization_basis": "",
+        "qualitative_outcome": "Over 80% of BMDMs expressed GFP or FAPCAR.",
+        "outcome_value": "80",
+        "value_status": "reported_threshold",
+    }
+    outcome = _outcome("V1", qualitative="ZsGreen co-localization with markers")
+    outcome["endpoint"] = _field("K-L, N, O DAPI ZsGreen ALB Desmin F4/80 SOX9",
+                                 ["E-1"])
+    outcome["assay"] = _field("SI Appendix Fig 5", ["E-1"])
+    _, detail = _score(gold, {"evidence_text": ""}, outcome, None, {})
+    assert detail["numeric_in_text"] is False
+
+
 def test_number_in_text_tolerates_source_formatting():
     assert _number_in_text(16.5, "gene editing rates of 16.50% +- 2.96%")
     assert _number_in_text(1661.0, "an average of 1,661 counts")

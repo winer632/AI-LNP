@@ -81,6 +81,33 @@ def test_a_resolved_observation_carries_its_value_unit_and_printed_labels():
     assert record["vision_panel"] == observation["panel_or_table_cell"]
 
 
+def test_the_endpoint_carries_what_was_observed_not_the_claim():
+    """The claim and the provenance are not scored as endpoint text.
+
+    ``_result_text`` scores endpoint alongside qualitative_outcome, so putting
+    the claim sentence in both counted it twice, and visible_support -- a
+    description of the picture rather than a measurement -- was matched as
+    though it were one. Vision records ran 55-62 tokens against 8-19 for text
+    records, and ``lexical`` divides by ``min(len(expected), len(actual))``,
+    so bulk past the gold length costs nothing while every incidental overlap
+    is gain.
+    """
+    observation = _resolved()
+    record = observation_to_outcome(observation, outcome_id="V1", experiment_id="E1")
+    endpoint = record["endpoint"]["value"]
+
+    assert observation["visible_support"] not in endpoint
+    assert observation["corrected_fragment"]["qualitative_outcome"] not in endpoint
+    # what it does carry: the panel observed, and the markers read off it
+    assert observation["panel_or_table_cell"] in endpoint
+    assert "F4-80" in endpoint
+    # and the claim is still present, once, in its own field
+    assert (
+        record["qualitative_outcome"]["value"]
+        == observation["corrected_fragment"]["qualitative_outcome"]
+    )
+
+
 def test_a_field_the_panel_did_not_print_is_marked_missing_not_guessed():
     """GP-006's real observation resolved qualitatively with no printed number."""
     observation = json.loads(

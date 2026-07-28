@@ -89,13 +89,25 @@ def observation_to_outcome(
         return None
     fragment = observation.get("corrected_fragment") or {}
     evidence_ids = list(observation.get("supporting_evidence_ids") or [])
-    # The observation was made about a specific panel, and what the model
-    # actually read off it is in printed_labels. Dropping those loses the
-    # marker names the claim is about, so carry them alongside the sentence.
+    # What this field carries is what the observation was made ON: the panel,
+    # and the marker names read off it. Not the claim, and not the description
+    # of the picture.
+    #
+    # It used to carry the claim sentence and visible_support as well. Both are
+    # scored -- _result_text reads endpoint alongside qualitative_outcome -- so
+    # the claim was counted twice and the provenance sentence was matched as
+    # though it were a measurement. That put vision records at 55-62 tokens
+    # against 8-19 for text records, and because `lexical` divides by
+    # min(len(expected), len(actual)), bulk past the gold length is free while
+    # every incidental overlap is gain. A record won by being verbose: on the
+    # GP-008-merged root a panel read took GO-015 at 0.9958 on 6 overlap terms
+    # from the text record reporting it at 1.0 on 13.
+    #
+    # figure_or_table is already the assay, and _result_text unions token sets,
+    # so naming it here again would add nothing.
     parts = [
-        fragment.get("qualitative_outcome") or "",
+        observation.get("panel_or_table_cell") or "",
         " ".join(_descriptive_labels(observation.get("printed_labels") or [])),
-        observation.get("visible_support") or "",
     ]
     endpoint = " ".join(part for part in parts if part).strip() or observation.get(
         "figure_or_table"
