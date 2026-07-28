@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import argparse
 import json
 import os
 import re
@@ -543,7 +544,18 @@ def supplement_pdfs(pmcid: str) -> Iterable[Path]:
     ]
 
 
-def build_corpus() -> dict:
+def build_corpus(
+    *,
+    paper_ids: list[str] | None = None,
+    skip_missing_xml: bool = False,
+) -> dict:
+    """Rebuild the block corpus.
+
+    ``paper_ids`` restricts the run; ``skip_missing_xml`` records a paper whose
+    source XML is absent as a warning instead of aborting. Without it one
+    missing file ends the run after earlier papers are already on disk, leaving
+    a corpus that is neither the old one nor the new one.
+    """
     CORPUS_ROOT.mkdir(parents=True, exist_ok=True)
     client = UniparseClient()
     warnings: list[str] = []
@@ -555,7 +567,15 @@ def build_corpus() -> dict:
     }
     for paper in gold_manifest():
         paper_id, candidate_id, pmcid = paper["gold_paper_id"], paper["candidate_id"], paper["pmcid"]
-        xml_path = find_xml(candidate_id, pmcid)
+        if paper_ids and paper_id not in paper_ids:
+            continue
+        try:
+            xml_path = find_xml(candidate_id, pmcid)
+        except FileNotFoundError as error:
+            if not skip_missing_xml:
+                raise
+            warnings.append(f"{paper_id}: {error}")
+            continue
         blocks = xml_blocks(paper_id, xml_path)
         pdf_paths = list(supplement_pdfs(pmcid))
         for pdf_path in pdf_paths:
@@ -579,5 +599,29 @@ def build_corpus() -> dict:
     return manifest
 
 
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Rebuild the block corpus.")
+    parser.add_argument("--paper-id", action="append", dest="paper_ids")
+    parser.add_argument(
+        "--skip-missing-xml",
+        action="store_true",
+        help="Record a missing source XML as a warning instead of aborting.",
+    )
+    parser.add_argument(
+        "--confirm-write",
+        action="store_true",
+        help="Required: this rewrites the corpus on disk.",
+    )
+    args = parser.parse_args()
+    if not args.confirm_write:
+        parser.error("--confirm-write is required; this rewrites the corpus")
+    print(json.dumps(
+        build_corpus(
+            paper_ids=args.paper_ids, skip_missing_xml=args.skip_missing_xml
+        ),
+        indent=2,
+    ))
+
+
 if __name__ == "__main__":
-    print(json.dumps(build_corpus(), indent=2))
+    main()

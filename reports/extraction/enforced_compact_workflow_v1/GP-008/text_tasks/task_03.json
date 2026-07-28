@@ -2,31 +2,24 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-008",
   "route_ids": [
-    "RT-5482093b18f3ebed"
+    "RT-4c580b99b6c74c4a"
   ],
   "candidate_ids": [
-    "OC-cdf1f2fd63fea2e2"
+    "OC-7de2514e3d45834a"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-008-FC-028bd91acc9c0900",
-      "text": "We found that more Heps (ALB+) in the LNP group expressed PCNA, whereas HSCs (Desmin+) showed almost no PCNA expression.",
+      "evidence_id": "GP-008-FC-67cba83633b522b0",
+      "text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
       "source_ids": [
-        "FC-S-9a8b8f55dd34f16d"
+        "FC-S-5f7e3c49e57be4bb"
       ]
     },
     {
-      "evidence_id": "GP-008-FC-86e6148a50e80b1d",
-      "text": "Also, we verified that the LNP treatment could inhibit the genes of caspase3 and bax and promote bcl-2 and pcna expression in the extracted primary Heps from the mouse liver through qPCR analysis (Fig.",
+      "evidence_id": "GP-008-E-fb922339e2bceab0",
+      "text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
       "source_ids": [
-        "FC-S-9a8b8f55dd34f16d"
-      ]
-    },
-    {
-      "evidence_id": "GP-008-E-68164fa9e4c5d6e0",
-      "text": "Also, we verified that the LNP treatment could inhibit the genes of caspase3 and bax and promote bcl-2 and pcna expression in the extracted primary Heps from the mouse liver through qPCR analysis (Fig.",
-      "source_ids": [
-        "S-3600c7ce3d2b"
+        "S-6a24ed13fb43"
       ]
     }
   ],
@@ -48,5 +41,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "9c7bf46ea8eba858450d93f7e5c9c8de35ac8a8097f273d06ab510137b784e93",
   "source_inventory_sha256": "8d996891c23d542f579d62055797920980c9bb2e8428d3f2dfd5421de0fe9fa2",
-  "task_checksum": "4c3491d6e20466acb6981210983e99cae5a9adfbe47641703bed97e07cb51b6f"
+  "task_checksum": "0681c2ea67f5a0dbedb96644b8cb15b06c7163f9a89e96d9539bb0de0ef9df32"
 }

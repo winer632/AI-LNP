@@ -1,172 +1,252 @@
 {
   "evaluation_version": "final-gold-dynamic-1.1.0",
   "matching": "semantic, numeric, one-to-one; no hard-coded recovered IDs",
-  "recovered": 10,
+  "recovered": 11,
   "total": 15,
-  "rate": 0.6666666666666666,
+  "rate": 0.7333333333333333,
   "missing_gold_outcome_ids": [
     "GO-002",
     "GO-003",
-    "GO-006",
     "GO-017",
     "GO-018"
   ],
-  "precision": 0.3125,
+  "precision": 0.37254901960784315,
   "false_additions": {
-    "count": 22,
+    "count": 32,
     "items": [
       {
         "paper_id": "GP-004",
-        "outcome_id": "O1",
-        "experiment_id": "E1",
-        "endpoint": "Percentage of eGFP-positive CD31-positive endothelial cells",
-        "outcome_value": 70.7,
-        "outcome_unit": "%",
-        "summary": "Percentage of eGFP-positive CD31-positive endothelial cells Flow cytometry of liver non-parenchymal cell fractions None reported for this numerical value % Significant percentages of endothelial and immune-cell populations expressed eGFP. eGFP mRNA enhanced green fluorescent protein (eGFP) Hepatocytes; subpopulations of endothelial cells and Kupffer cells Liver Homeostasis"
-      },
-      {
-        "paper_id": "GP-004",
         "outcome_id": "O2",
-        "experiment_id": "E2",
-        "endpoint": "Hepatocyte lipid accumulation (steatosis)",
-        "outcome_value": null,
-        "outcome_unit": null,
-        "summary": "Hepatocyte lipid accumulation (steatosis) Oil Red O staining of liver sections Poly(C) RNA-LNP treatment Single injections of either HGF or EGF mRNA-LNP decreased steatosis; combined HGF/EGF mRNA-LNP produced more efficient steatosis reversal. A sharp decrease was observed 2 days after the first combined injection, while steatosis was maintained in Poly(C) RNA-LNP-treated mice. Combined HGF and EGF mRNA Hepatocyte growth factor (HGF) and epidermal growth factor (EGF) Hepatocytes Hepatocytes Liver CDE diet-induced chronic liver injury"
+        "experiment_id": "E1",
+        "endpoint": "eGFP-positive CD31+ endothelial cells",
+        "outcome_value": 70.7,
+        "outcome_unit": "% (mean ± 9%)",
+        "summary": "eGFP-positive CD31+ endothelial cells flow cytometry of liver non-parenchymal-cell fractions % (mean ± 9%) eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes; a subpopulation of endothelial cells and Kupffer cells liver homeostasis"
       },
       {
         "paper_id": "GP-004",
         "outcome_id": "O3",
         "experiment_id": "E2",
-        "endpoint": "Serum ALT level",
+        "endpoint": "hepatocyte steatosis",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "Serum ALT level Serum ALT measurement Poly(C) RNA-LNP and Luc mRNA-LNP controls ALT was restored to normal levels at T2 after HGF/EGF mRNA-LNP; control ALT levels remained significantly greater. Combined HGF and EGF mRNA Hepatocyte growth factor (HGF) and epidermal growth factor (EGF) Hepatocytes Hepatocytes Liver CDE diet-induced chronic liver injury"
+        "summary": "hepatocyte steatosis Oil Red O staining of liver sections Poly(C) RNA-LNP Sharp decrease of steatosis 2 days after first HGF/EGF mRNA-LNP injection; steatosis was maintained in Poly(C) RNA-LNP controls. combined HGF and EGF mRNA hepatocyte growth factor (HGF) and epidermal growth factor (EGF) hepatocytes hepatocytes liver CDE-induced chronic liver injury"
       },
       {
         "paper_id": "GP-004",
         "outcome_id": "O4",
         "experiment_id": "E3",
-        "endpoint": "Central-vein necrotic areas",
+        "endpoint": "central vein necrotic areas",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "Central-vein necrotic areas H&E staining Poly(C) RNA-LNP-treated control group At 24 h after HGF/EGF mRNA-LNP administration, necrotic areas had accelerated disappearance versus Poly(C) RNA-LNP controls; at 8 h there was no significant improvement. Combined HGF and EGF mRNA Hepatocyte growth factor (HGF) and epidermal growth factor (EGF) Hepatocytes Liver Acetaminophen (APAP)-induced acute liver injury"
+        "summary": "central vein necrotic areas H&E staining Poly(C) RNA-LNP At 8 h after mRNA-LNP injection, no significant improvement of central vein necrotic areas. combined HGF and EGF mRNA hepatocyte growth factor (HGF) and epidermal growth factor (EGF) hepatocytes hepatocytes liver APAP-induced acute liver injury"
       },
       {
         "paper_id": "GP-004",
-        "outcome_id": "O6",
-        "experiment_id": "E1",
-        "endpoint": "Percentage of eGFP-positive CD45-positive cells",
-        "outcome_value": 34.1,
-        "outcome_unit": "%",
-        "summary": "Percentage of eGFP-positive CD45-positive cells Flow cytometry of liver non-parenchymal cell fractions None reported for this numerical value % A significant percentage of CD45-positive cells expressed eGFP (34.1 ± 2.2%). eGFP mRNA enhanced green fluorescent protein (eGFP) Hepatocytes; subpopulations of endothelial cells and Kupffer cells Liver Homeostasis"
+        "outcome_id": "O2",
+        "experiment_id": "E2",
+        "endpoint": "Percentage of EdU+ cells that were HNF4α+ hepatocytes",
+        "outcome_value": 61.25,
+        "outcome_unit": "% HNF4α+ among EdU+ cells",
+        "summary": "Percentage of EdU+ cells that were HNF4α+ hepatocytes EdU/HNF4α co-staining Poly(C) RNA-LNP % HNF4α+ among EdU+ cells At 48 h, HGF mRNA-LNP-treated mice had 61.25 ± 10.66% HNF4α+ EdU+ cells versus 0.97 ± 1.66% in Poly(C) RNA-LNP controls, reported as a 121-fold increase. combined HGF and EGF mRNA hepatocyte growth factor (HGF) and epidermal growth factor (EGF) hepatocytes hepatocytes liver CDE-induced chronic liver injury"
       },
       {
         "paper_id": "GP-006",
-        "outcome_id": "O1",
+        "outcome_id": "O2",
         "experiment_id": "E1",
-        "endpoint": "F8 gene editing rate in isolated hepatocytes",
+        "endpoint": "F8 gene editing rate in isolated LSECs",
+        "outcome_value": 16.5,
+        "outcome_unit": "% (mean ± 2.96%)",
+        "summary": "F8 gene editing rate in isolated LSECs deep sequencing of genomic DNA % (mean ± 2.96%) F8 gene editing was detected in isolated LSECs. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-842707c55fd53a55",
+        "experiment_id": "E1",
+        "endpoint": "one base-pair deletions",
+        "outcome_value": 46.5,
+        "outcome_unit": "%",
+        "summary": "one base-pair deletions gene editing pattern analysis total deletions % One base-pair deletions constituted the highest editing pattern in LSECs. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-1c3f88c83b5cb897",
+        "experiment_id": "E1",
+        "endpoint": "Indel variants at five top predicted potential off-target sites",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "Indel variants at five top predicted potential off-target sites un-editing experiments No indel variants were found in the WT F8 gene. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-e2d4bb67d2cf343a",
+        "experiment_id": "E1",
+        "endpoint": "insertion frequency",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "insertion frequency Less than 1% insertion frequency was observed. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-c0903300f94dcdae",
+        "experiment_id": "E1",
+        "endpoint": "gene editing rate in total liver cells",
+        "outcome_value": 52.7,
+        "outcome_unit": "%",
+        "summary": "gene editing rate in total liver cells gene editing rate % Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-fa3d41fbbfb8dbc9",
+        "experiment_id": "E1",
+        "endpoint": "indel mutation rate in mouse F8 exon 1",
+        "outcome_value": 23.0,
+        "outcome_unit": "%",
+        "summary": "indel mutation rate in mouse F8 exon 1 genomic DNA indel analysis % mF8sgRNA induced an indel variant in mouse F8 exon 1. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-7e02be28ef250a82",
+        "experiment_id": "E1",
+        "endpoint": "endogenous FVIII activity",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "endogenous FVIII activity activated partial thromboplastin time (aPTT) assay untreated mice Shorter clotting time compared with untreated mice. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-85f7147389be1c5a",
+        "experiment_id": "E1",
+        "endpoint": "FVIII activity",
+        "outcome_value": 2.6,
+        "outcome_unit": "%",
+        "summary": "FVIII activity % Approximately 2.6% FVIII activity after two injections in treated NSG HemA mice. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-577d7d7fe2448951",
+        "experiment_id": "E1",
+        "endpoint": "in vivo gene editing efficiency",
+        "outcome_value": 5.0,
+        "outcome_unit": "%",
+        "summary": "in vivo gene editing efficiency gene editing efficiency in genomic DNA extracted from whole liver mF8sgRNA % Comparable to mF8sgRNA; both sgRNAs resulted in around 5% gene editing efficiency. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O2",
+        "experiment_id": "EX1",
+        "endpoint": "hepatocyte total deletion frequency",
         "outcome_value": 60.54,
-        "outcome_unit": "% (± 11.65%)",
-        "summary": "F8 gene editing rate in isolated hepatocytes deep sequencing % (± 11.65%) Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+        "outcome_unit": "%",
+        "summary": "hepatocyte total deletion frequency deep sequencing % Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse"
       },
       {
         "paper_id": "GP-006",
         "outcome_id": "O4",
-        "experiment_id": "E1",
-        "endpoint": "frequency of the +2 F8 insertion pattern",
-        "outcome_value": 0.78,
+        "experiment_id": "EX1",
+        "endpoint": "hepatocyte total insertion frequency",
+        "outcome_value": 4.23,
         "outcome_unit": "%",
-        "summary": "frequency of the +2 F8 insertion pattern indel-variant analysis by deep sequencing deletion variants % The +2 insertion pattern was less frequent than deletion variants. Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+        "summary": "hepatocyte total insertion frequency deep sequencing % Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse"
       },
       {
         "paper_id": "GP-006",
         "outcome_id": "O5",
-        "experiment_id": "E1",
-        "endpoint": "frequency of the +5 F8 insertion pattern",
-        "outcome_value": 0.0,
+        "experiment_id": "EX1",
+        "endpoint": "total liver-cell gene editing rate",
+        "outcome_value": 52.7,
         "outcome_unit": "%",
-        "summary": "frequency of the +5 F8 insertion pattern indel-variant analysis by deep sequencing deletion variants % The +5 insertion pattern was not detected and was less frequent than deletion variants. Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+        "summary": "total liver-cell gene editing rate deep sequencing % Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse"
       },
       {
         "paper_id": "GP-006",
         "outcome_id": "O6",
-        "experiment_id": "E1",
-        "endpoint": "endogenous FVIII activity after two Cas9/sgRNA LNP injections",
+        "experiment_id": "EX1",
+        "endpoint": "endogenous FVIII activity",
         "outcome_value": 2.6,
-        "outcome_unit": "% FVIII activity",
-        "summary": "endogenous FVIII activity after two Cas9/sgRNA LNP injections activated partial thromboplastin time (aPTT) assay % FVIII activity LNP treatment significantly improved FVIII activity. Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+        "outcome_unit": "%",
+        "summary": "endogenous FVIII activity aPTT assay % Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse"
       },
       {
         "paper_id": "GP-006",
         "outcome_id": "O8",
+        "experiment_id": "EX1",
+        "endpoint": "indel frequency at five predicted off-target sites",
+        "outcome_value": null,
+        "outcome_unit": "% indel",
+        "summary": "indel frequency at five predicted off-target sites next generation sequencing untreated mice % indel Off-target indel frequencies were 0.00%, 0.30%, 0.00%, 0.00%, and 0.17% in treated mice versus 0.00%, 0.31%, 0.00%, 0.00%, and 0.22% in controls. Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O2",
         "experiment_id": "E1",
-        "endpoint": "frequency of the +1 insertion pattern in LSECs",
+        "endpoint": "F8 gene editing rate in LSECs",
+        "outcome_value": 16.5,
+        "outcome_unit": "percent",
+        "summary": "F8 gene editing rate in LSECs deep sequencing percent ± 2.96% Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O4",
+        "experiment_id": "E1",
+        "endpoint": "one base-pair deletions among LSEC deletions",
+        "outcome_value": 46.5,
+        "outcome_unit": "percent of total deletions",
+        "summary": "one base-pair deletions among LSEC deletions deep sequencing percent of total deletions highest editing pattern Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O5",
+        "experiment_id": "E1",
+        "endpoint": "+2 insertion frequency",
         "outcome_value": 0.78,
-        "outcome_unit": "% (± 0.27%)",
-        "summary": "frequency of the +1 insertion pattern in LSECs insertion frequency patterns % (± 0.27%) Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+        "outcome_unit": "percent",
+        "summary": "+2 insertion frequency indel variant analysis deletion variants percent significantly lower than deletion variants Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O6",
+        "experiment_id": "E1",
+        "endpoint": "FVIII activity",
+        "outcome_value": 3.3,
+        "outcome_unit": "percent FVIII activity",
+        "summary": "FVIII activity aPTT assay percent FVIII activity ± 0.68% over 26 weeks; significant improvement reported Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O2",
+        "experiment_id": "E1",
+        "endpoint": "FVIII activity over 26 weeks",
+        "outcome_value": 3.3,
+        "outcome_unit": "% FVIII activity",
+        "summary": "FVIII activity over 26 weeks activated partial thromboplastin time (aPTT) assay % FVIII activity Average FVIII activity was sustained over 26 weeks. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
       },
       {
         "paper_id": "GP-002",
         "outcome_id": "O2",
         "experiment_id": "E1",
-        "endpoint": "eGFP transcript counts in liver",
+        "endpoint": "eGFP transcript counts in liver tissue",
         "outcome_value": 1661.0,
-        "outcome_unit": "average counts",
-        "summary": "eGFP transcript counts in liver RNA sequencing uninjected mice average counts eGFP transcripts were abundant in mRNA-injected livers versus negligible background (average 1 count) in uninjected mice; Mann-Whitney p=0.0079. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes healthy mouse liver healthy"
-      },
-      {
-        "paper_id": "GP-002",
-        "outcome_id": "O3",
-        "experiment_id": "E2",
-        "endpoint": "liver eGFP fluorescent signal above background",
-        "outcome_value": 3.0,
-        "outcome_unit": "fold above background (lower bound of reported range)",
-        "summary": "liver eGFP fluorescent signal above background fluorescence imaging healthy controls fold above background (lower bound of reported range) Liver fluorescence was 3- to 4-fold above background and attenuated 2-fold relative to healthy controls. eGFP mRNA eGFP liver Mdr2 knockout mouse model of liver fibrosis and cirrhosis"
-      },
-      {
-        "paper_id": "GP-002",
-        "outcome_id": "O4",
-        "experiment_id": "E3",
-        "endpoint": "mean eGFP fluorescence intensity",
-        "outcome_value": 262600000.0,
-        "outcome_unit": "photons/s/cm2/sr",
-        "summary": "mean eGFP fluorescence intensity ex vivo fluorescence imaging liver tissue photons/s/cm2/sr Mean tumor fluorescence was not significantly different from liver fluorescence (97.1 × 10^6 photons/s/cm2/sr; Mann-Whitney p=0.8738). eGFP mRNA eGFP spontaneous hepatocellular carcinomas and liver tissue 11-month-old male Mdr2−/− mice with spontaneous HCC"
-      },
-      {
-        "paper_id": "GP-002",
-        "outcome_id": "O5",
-        "experiment_id": "E4",
-        "endpoint": "eGFP fluorescence in tumor versus non-tumor liver",
-        "outcome_value": null,
-        "outcome_unit": null,
-        "summary": "eGFP fluorescence in tumor versus non-tumor liver eGFP fluorescence quantitation non-tumor liver tissue from the same animals Fluorescence was broadly comparable between tumors and non-tumor liver, with no significant difference (Wilcoxon matched-pairs signed-rank p=0.5469; n=8). eGFP mRNA eGFP HuH-7-derived tumor cells HuH-7 orthotopic liver xenograft tumors and adjacent liver orthotopic HuH-7 human hepatocellular carcinoma xenograft"
-      },
-      {
-        "paper_id": "GP-002",
-        "outcome_id": "O6",
-        "experiment_id": "E4",
-        "endpoint": "GFP staining in HuH-7-derived tumors versus adjacent liver",
-        "outcome_value": null,
-        "outcome_unit": null,
-        "summary": "GFP staining in HuH-7-derived tumors versus adjacent liver immunohistochemistry adjacent liver tissue Clear GFP staining was present in HuH-7-derived tumors, with higher-intensity staining in adjacent liver tissue. eGFP mRNA eGFP HuH-7-derived tumor cells HuH-7 orthotopic liver xenograft tumors and adjacent liver orthotopic HuH-7 human hepatocellular carcinoma xenograft"
+        "outcome_unit": "average mapped transcript counts",
+        "summary": "eGFP transcript counts in liver tissue RNA sequencing uninjected mice average mapped transcript counts Abundant eGFP transcripts were detected versus negligible background (average 1 count) in uninjected mice; p=0.0079. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes liver healthy"
       },
       {
         "paper_id": "GP-005",
-        "outcome_id": "O1",
+        "outcome_id": "OC-3bd6c98e48bb9894",
         "experiment_id": "E1",
-        "endpoint": "Egfp mRNA uptake relative to total RNA",
+        "endpoint": "acute phase response",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "Egfp mRNA uptake relative to total RNA quantitative realtime-PCR other tested cell types Kupffer cells, followed by hepatocytes, internalized the largest amounts of LNP1. Egfp mRNA EGFP primary murine hepatocytes and Kupffer cells"
+        "summary": "acute phase response gene expression data In hepatocytes, upregulation of Hp, Saa2, and Hpx with downregulation of albumin suggests initiation of an acute phase response. EGFP mRNA EGFP hepatocytes and Kupffer cells liver"
       },
       {
         "paper_id": "GP-007",
         "outcome_id": "O1",
         "experiment_id": "E1",
-        "endpoint": "Plasma AST and ALT, hepatic MDA, and SOD activities",
+        "endpoint": "AST, ALT, MDA, and SOD",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "Plasma AST and ALT, hepatic MDA, and SOD activities Plasma biochemical measurements HIRI + LNPs-blank group HIRI-induced elevated AST, ALT, and MDA and reduced SOD were largely improved in the HIRI + LNPs-siMicu1 group; improvement was more significant with LNPs-siMicu1 plus ACT. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
+        "summary": "AST, ALT, MDA, and SOD Plasma biochemical analysis HIRI + LNPs-blank HIRI-induced AST, ALT, and MDA elevations and reduced SOD activity were largely improved with siMicu1-LNPs; improvements were greater with siMicu1-LNPs plus ACT. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
       },
       {
         "paper_id": "GP-007",
@@ -175,54 +255,63 @@
         "endpoint": "Liver sinus congestion, inflammatory-cell infiltration, and liver-lobule structure",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "Liver sinus congestion, inflammatory-cell infiltration, and liver-lobule structure Liver histopathology HIRI + LNPs-blank group Liver sinus congestion and inflammatory-cell infiltration were increased in the HIRI + LNPs-blank group, whereas liver-lobule structure was significantly restored in the HIRI + LNPs-siMicu1 group and the LNPs-siMicu1 plus ACT group. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
+        "summary": "Liver sinus congestion, inflammatory-cell infiltration, and liver-lobule structure Liver histology HIRI + LNPs-blank Liver-lobule structure was significantly restored in HIRI mice given siMicu1-LNPs, with or without ACT. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
       },
       {
-        "paper_id": "GP-008",
-        "outcome_id": "O1",
+        "paper_id": "GP-007",
+        "outcome_id": "O4",
         "experiment_id": "E1",
-        "endpoint": "liver fibrosis",
+        "endpoint": "Organ biodistribution of FITC-labeled siMicu1-LNPs",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "liver fibrosis histology, Sirius red staining, and Masson's trichrome staining CCL4 group Treatment with αCD163/LNP-FAPCAR significantly alleviated liver fibrosis. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver liver fibrosis"
+        "summary": "Organ biodistribution of FITC-labeled siMicu1-LNPs In vivo and ex vivo fluorescence imaging At 6 h post-injection, ex vivo imaging showed the liver was the primary target organ. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
+      },
+      {
+        "paper_id": "GP-007",
+        "outcome_id": "O1",
+        "experiment_id": "E1",
+        "endpoint": "plasma AST, plasma ALT, MDA, and SOD activity",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "plasma AST, plasma ALT, MDA, and SOD activity plasma biochemical measurements and oxidative-stress activity measurements HIRI+LNPs-blank group HIRI-induced AST, ALT, and MDA elevations and reduced SOD activity were largely improved by siMicu1-LNPs; improvement was greater with siMicu1-LNPs plus ACT. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
       },
       {
         "paper_id": "GP-008",
         "outcome_id": "O2",
-        "experiment_id": "E1",
+        "experiment_id": "E2",
+        "endpoint": "liver fibrosis",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "liver fibrosis histology, Sirius red staining, and Masson's trichrome staining CCL4 fibrosis group Treatment significantly alleviated liver fibrosis. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver CCL4-, BDL-, or MCD-diet-induced liver fibrosis"
+      },
+      {
+        "paper_id": "GP-008",
+        "outcome_id": "O3",
+        "experiment_id": "E2",
         "endpoint": "amount of FAP+ macrophages in fibrotic livers",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "amount of FAP+ macrophages in fibrotic livers single-cell RNA sequencing and immunofluorescence colocalization untreated cohort αCD163/LNP-FAPCAR treatment markedly attenuated FAP+ macrophages; FAP/F4/80 double-positive macrophages were virtually eradicated after administration. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver liver fibrosis"
+        "summary": "amount of FAP+ macrophages in fibrotic livers scRNA-seq untreated cohort Treatment markedly attenuated FAP+ macrophages. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver CCL4-, BDL-, or MCD-diet-induced liver fibrosis"
       },
       {
         "paper_id": "GP-008",
-        "outcome_id": "O5",
-        "experiment_id": "E1",
-        "endpoint": "FAP+ cells in hepatic tissue",
+        "outcome_id": "O2",
+        "experiment_id": "E2",
+        "endpoint": "FAPCAR-positive macrophages in fibrotic liver",
         "outcome_value": null,
         "outcome_unit": null,
-        "summary": "FAP+ cells in hepatic tissue immunohistochemistry of hepatic tissue αCD163/LNP-FAPCAR treatment enabled targeted elimination of FAP+ cells. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver liver fibrosis"
-      },
-      {
-        "paper_id": "GP-008",
-        "outcome_id": "O6",
-        "experiment_id": "E1",
-        "endpoint": "FAPCAR localization in F4/80+ macrophages in liver tissue",
-        "outcome_value": null,
-        "outcome_unit": null,
-        "summary": "FAPCAR localization in F4/80+ macrophages in liver tissue immunofluorescence staining FAPCAR immunofluorescence staining highlighted F4/80+ macrophages in liver tissues. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver liver fibrosis"
+        "summary": "FAPCAR-positive macrophages in fibrotic liver immunofluorescence staining CCL4+PBS controls FAPCAR-positive macrophages were detected in fibrotic mice receiving αCD163/LNP-FAPCAR; no FAPCAR signal was detected in CCL4+PBS controls. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver CCL4-, BDL-, or MCD-diet-induced liver fibrosis"
       }
     ]
   },
   "evidence_accuracy": {
-    "checked": 10,
-    "supported": 5,
-    "rate": 0.5
+    "checked": 9,
+    "supported": 6,
+    "rate": 0.6666666666666666
   },
   "unresolved_declared": {
-    "result_items": 19,
-    "merge_candidates": 1
+    "result_items": 14,
+    "merge_candidates": 0
   },
   "results": [
     {
@@ -230,23 +319,21 @@
       "paper_id": "GP-004",
       "recovered": true,
       "match": {
-        "outcome_id": "O5",
+        "outcome_id": "O1",
         "score": 1.0,
         "overlap_terms": [
           "14",
-          "41",
           "cd11b",
           "cytometry",
           "egfp",
-          "expressed",
           "flow",
           "kupffer",
           "liver",
           "positive"
         ],
         "exact_numeric": true,
-        "numeric_in_text": true,
-        "actual_text": "Percentage of eGFP-positive CD11b-positive cells Flow cytometry of liver non-parenchymal cell fractions None reported for this numerical value % A significant percentage of CD11b-positive cells expressed eGFP (41.5 ± 14.6%). eGFP mRNA enhanced green fluorescent protein (eGFP) Hepatocytes; subpopulations of endothelial cells and Kupffer cells Liver Homeostasis",
+        "numeric_in_text": false,
+        "actual_text": "eGFP-positive CD11b+ cells flow cytometry of liver non-parenchymal-cell fractions % (mean ± 14.6%) eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes; a subpopulation of endothelial cells and Kupffer cells liver homeostasis",
         "endpoint_overlap_terms": [
           "cd11b",
           "egfp",
@@ -266,19 +353,27 @@
         "numeric_gate": true
       },
       "evidence_checked": true,
-      "evidence_supported": true,
+      "evidence_supported": false,
       "evidence_check": {
-        "claim_type": "numeric",
-        "claim": 41.5,
+        "claim_type": "qualitative",
+        "claim": "Virtually all HNF4α-identified hepatocytes expressed eGFP.",
         "cited_evidence_ids": [
-          "GP-004-E-0e95fa28bea7a24c",
-          "GP-004-FC-4dd33ccc119f1671"
+          "GP-004-E-44b663f029e6e370",
+          "GP-004-E-8bd21c8aa7f50cfb",
+          "GP-004-E-bb88af4966174b2f"
         ],
         "resolved_evidence_ids": [
-          "GP-004-E-0e95fa28bea7a24c",
-          "GP-004-FC-4dd33ccc119f1671"
+          "GP-004-E-8bd21c8aa7f50cfb",
+          "GP-004-E-bb88af4966174b2f"
         ],
-        "unsupported_terms": []
+        "unsupported_terms": [
+          "all",
+          "expressed",
+          "hepatocyte",
+          "hnf4",
+          "identified",
+          "virtually"
+        ]
       }
     },
     {
@@ -304,7 +399,7 @@
       "paper_id": "GP-006",
       "recovered": true,
       "match": {
-        "outcome_id": "O3",
+        "outcome_id": "O7",
         "score": 1.0,
         "overlap_terms": [
           "hepatocyte",
@@ -312,14 +407,11 @@
           "liver",
           "lsec",
           "luciferase",
-          "mrna",
-          "normalized",
-          "protein",
-          "total"
+          "mrna"
         ],
         "exact_numeric": true,
         "numeric_in_text": false,
-        "actual_text": "luciferase expression in hepatocytes relative to LSECs luciferase assay normalized by total protein LSECs fold higher expression in hepatocytes than LSECs Luciferase expression was obtained from both hepatocytes and LSECs. luciferase mRNA luciferase hepatocytes and LSECs liver",
+        "actual_text": "luciferase expression in hepatocytes relative to LSECs luciferase assay LSECs fold higher expression expression obtained from both hepatocytes and LSECs luciferase mRNA luciferase hepatocytes and LSECs liver",
         "endpoint_overlap_terms": [
           "hepatocyte",
           "lsec",
@@ -350,12 +442,10 @@
         "claim": 17.0,
         "cited_evidence_ids": [
           "GP-006-E-331470ab8527c636",
-          "GP-006-E-42aad5557a4b8d6e",
           "GP-006-E-d9c30e3abca70fcb"
         ],
         "resolved_evidence_ids": [
           "GP-006-E-331470ab8527c636",
-          "GP-006-E-42aad5557a4b8d6e",
           "GP-006-E-d9c30e3abca70fcb"
         ],
         "unsupported_terms": []
@@ -366,24 +456,35 @@
       "paper_id": "GP-006",
       "recovered": true,
       "match": {
-        "outcome_id": "O2",
-        "score": 0.8353,
+        "outcome_id": "O1",
+        "score": 1.0,
         "overlap_terms": [
-          "96",
           "cas9",
-          "isolated",
-          "lsec"
+          "deletion",
+          "frequency",
+          "lsec",
+          "total"
         ],
         "exact_numeric": true,
         "numeric_in_text": false,
-        "actual_text": "F8 gene editing rate in isolated LSECs deep sequencing % (± 2.96%) Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice",
+        "actual_text": "LSEC total deletion frequency deep sequencing % Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse",
         "endpoint_overlap_terms": [
-          "lsec"
+          "deletion",
+          "frequency",
+          "lsec",
+          "total"
         ],
         "endpoint_field_overlap_terms": [
-          "lsec"
+          "deletion",
+          "frequency",
+          "lsec",
+          "total"
         ],
-        "rare_endpoint_overlap_terms": [],
+        "rare_endpoint_overlap_terms": [
+          "deletion",
+          "frequency",
+          "total"
+        ],
         "qualitative_overlap_terms": [],
         "endpoint_gate": true,
         "polarity_gate": true,
@@ -396,12 +497,10 @@
         "claim": 16.5,
         "cited_evidence_ids": [
           "GP-006-E-22a954aae3f000e4",
-          "GP-006-E-5307426a332d226c",
           "GP-006-E-d010646bb645e446"
         ],
         "resolved_evidence_ids": [
           "GP-006-E-22a954aae3f000e4",
-          "GP-006-E-5307426a332d226c",
           "GP-006-E-d010646bb645e446"
         ],
         "unsupported_terms": []
@@ -410,32 +509,75 @@
     {
       "gold_outcome_id": "GO-006",
       "paper_id": "GP-006",
-      "recovered": false,
-      "match": null,
+      "recovered": true,
+      "match": {
+        "outcome_id": "O3",
+        "score": 1.0,
+        "overlap_terms": [
+          "cas9",
+          "frequency",
+          "insertion",
+          "lsec",
+          "total"
+        ],
+        "exact_numeric": true,
+        "numeric_in_text": false,
+        "actual_text": "LSEC total insertion frequency deep sequencing % Cas9 mRNA and NSGHAsgRNA Cas9 LSEC LSEC liver NSG HemA mouse",
+        "endpoint_overlap_terms": [
+          "frequency",
+          "insertion",
+          "lsec",
+          "total"
+        ],
+        "endpoint_field_overlap_terms": [
+          "frequency",
+          "insertion",
+          "lsec",
+          "total"
+        ],
+        "rare_endpoint_overlap_terms": [
+          "frequency",
+          "insertion",
+          "total"
+        ],
+        "qualitative_overlap_terms": [],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
       "evidence_checked": false,
       "evidence_supported": false,
-      "evidence_check": null
+      "evidence_check": {
+        "claim_type": "qualitative",
+        "claim": "No indel variants were found at the five predicted off-target sites.",
+        "cited_evidence_ids": [
+          "GP-006-E-04a36692cd969e4a"
+        ],
+        "resolved_evidence_ids": [],
+        "unsupported_terms": []
+      }
     },
     {
       "gold_outcome_id": "GO-007",
       "paper_id": "GP-006",
       "recovered": true,
       "match": {
-        "outcome_id": "O7",
+        "outcome_id": "OC-46a32d7d3a3de39d",
         "score": 1.0,
         "overlap_terms": [
           "26",
+          "30",
           "68",
+          "average",
           "cas9",
           "fviii",
           "mice",
           "over",
-          "sustained",
           "week"
         ],
         "exact_numeric": true,
         "numeric_in_text": false,
-        "actual_text": "sustained endogenous FVIII activity after targeted correction of the mutant F8 gene activated partial thromboplastin time (aPTT) assay % FVIII activity (± 0.68%) FVIII activity was sustained over 26 weeks, and targeted F8 correction produced improved coagulation. Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice",
+        "actual_text": "FVIII activity aPTT % Average FVIII activity was 3.30% ± 0.68% over 26 weeks. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice",
         "endpoint_overlap_terms": [
           "fviii"
         ],
@@ -448,7 +590,6 @@
         "qualitative_overlap_terms": [
           "26",
           "over",
-          "sustained",
           "week"
         ],
         "endpoint_gate": true,
@@ -462,12 +603,10 @@
         "claim": 3.3,
         "cited_evidence_ids": [
           "GP-006-E-8e9084aadcfe157d",
-          "GP-006-E-8f4df2feafb0205d",
           "GP-006-E-d9a16a0c73e6b6b2"
         ],
         "resolved_evidence_ids": [
           "GP-006-E-8e9084aadcfe157d",
-          "GP-006-E-8f4df2feafb0205d",
           "GP-006-E-d9a16a0c73e6b6b2"
         ],
         "unsupported_terms": []
@@ -491,7 +630,7 @@
         ],
         "exact_numeric": false,
         "numeric_in_text": false,
-        "actual_text": "eGFP staining in hepatocytes immunohistochemistry uninjected mice Strong eGFP staining was observed in virtually all hepatocytes; injected liver tissue had extremely high GFP-positive coverage and uninjected mice had very low background. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes healthy mouse liver healthy",
+        "actual_text": "eGFP staining in hepatocytes eGFP immunohistochemistry uninjected mice Strong eGFP staining was observed in virtually all hepatocytes. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes liver healthy",
         "endpoint_overlap_terms": [
           "egfp",
           "hepatocyte"
@@ -515,22 +654,17 @@
         "polarity_gate": true,
         "numeric_gate": true
       },
-      "evidence_checked": true,
+      "evidence_checked": false,
       "evidence_supported": false,
       "evidence_check": {
         "claim_type": "qualitative",
-        "claim": "Strong eGFP staining was observed in virtually all hepatocytes; injected liver tissue had extremely high GFP-positive coverage and uninjected mice had very low background.",
+        "claim": "Strong eGFP staining was observed in virtually all hepatocytes.",
         "cited_evidence_ids": [
-          "GP-002-E-3b62dd9a6e6a70a1",
-          "GP-002-E-fa82ad908aaf2ac9"
+          "GP-002-FC-7a4c828bba577cd2",
+          "GP-002-FC-8d93ef4368a8c488"
         ],
-        "resolved_evidence_ids": [
-          "GP-002-E-3b62dd9a6e6a70a1",
-          "GP-002-E-fa82ad908aaf2ac9"
-        ],
-        "unsupported_terms": [
-          "observed"
-        ]
+        "resolved_evidence_ids": [],
+        "unsupported_terms": []
       }
     },
     {
@@ -538,33 +672,39 @@
       "paper_id": "GP-005",
       "recovered": true,
       "match": {
-        "outcome_id": "O3",
-        "score": 0.5441,
+        "outcome_id": "O1",
+        "score": 0.6706,
         "overlap_terms": [
+          "comparable",
           "egfp",
           "hepatocyte",
+          "high",
           "kupffer",
           "lnp",
+          "rapid",
           "uptake"
         ],
         "exact_numeric": false,
         "numeric_in_text": false,
-        "actual_text": "LNP16 uptake qPCR-based detection of Egfp mRNA hepatic stellate cells versus hepatocytes and Kupffer cells LNP16 was taken up in significant amounts by hepatocytes and Kupffer cells, whereas hepatic stellate cells did not absorb LNP at a significant level. Egfp mRNA and negative-control siRNA EGFP hepatocytes, Kupffer cells, and hepatic stellate cells liver",
+        "actual_text": "EGFP mRNA translation intravital imaging Kupffer cells EGFP mRNA translation occurred exclusively in hepatocytes during intravital imaging, despite comparable high and rapid mRNA-LNP uptake by hepatocytes and Kupffer cells. EGFP mRNA EGFP hepatocytes and Kupffer cells liver",
         "endpoint_overlap_terms": [
           "kupffer",
           "lnp",
+          "rapid",
           "uptake"
         ],
-        "endpoint_field_overlap_terms": [
-          "uptake"
-        ],
+        "endpoint_field_overlap_terms": [],
         "rare_endpoint_overlap_terms": [
           "kupffer",
           "lnp",
+          "rapid",
           "uptake"
         ],
         "qualitative_overlap_terms": [
+          "comparable",
           "hepatocyte",
+          "high",
+          "rapid",
           "uptake"
         ],
         "endpoint_gate": true,
@@ -575,17 +715,23 @@
       "evidence_supported": false,
       "evidence_check": {
         "claim_type": "qualitative",
-        "claim": "LNP16 was taken up in significant amounts by hepatocytes and Kupffer cells, whereas hepatic stellate cells did not absorb LNP at a significant level.",
+        "claim": "EGFP signals were detected only in hepatocytes; no EGFP-positive Kupffer cells were detected.",
         "cited_evidence_ids": [
-          "GP-005-E-b045ff5d6a1cd42b"
+          "GP-005-E-1c89ae4ab2ddf8e7",
+          "GP-005-E-ac7e05a4c142ccbb",
+          "GP-005-E-f3b6eafdb0a35892"
         ],
         "resolved_evidence_ids": [
-          "GP-005-E-b045ff5d6a1cd42b"
+          "GP-005-E-ac7e05a4c142ccbb"
         ],
         "unsupported_terms": [
-          "hepatic",
+          "detected",
+          "hepatocyte",
           "kupffer",
-          "stellate"
+          "no",
+          "only",
+          "positive",
+          "signal"
         ]
       }
     },
@@ -594,20 +740,19 @@
       "paper_id": "GP-005",
       "recovered": true,
       "match": {
-        "outcome_id": "O2",
-        "score": 0.65,
+        "outcome_id": "O1",
+        "score": 0.675,
         "overlap_terms": [
           "egfp",
           "hepatocyte",
-          "imaging",
           "intravital",
           "kupffer",
-          "solely",
-          "translation"
+          "no",
+          "positive"
         ],
         "exact_numeric": false,
         "numeric_in_text": false,
-        "actual_text": "EGFP translation from Egfp mRNA intravital microscopy Kupffer cells versus hepatocytes Both Kupffer cells and hepatocytes had comparable high and rapid uptake, but EGFP mRNA translation occurred exclusively in hepatocytes during intravital imaging. Egfp mRNA EGFP hepatocytes and Kupffer cells liver",
+        "actual_text": "EGFP signal intravital microscopy other hepatic cell types, including Kupffer cells EGFP signals were detected only in hepatocytes; no EGFP-positive Kupffer cells were detected. EGFP mRNA EGFP hepatocytes and Kupffer cells liver",
         "endpoint_overlap_terms": [
           "egfp",
           "kupffer"
@@ -622,7 +767,8 @@
           "egfp",
           "hepatocyte",
           "kupffer",
-          "solely"
+          "no",
+          "positive"
         ],
         "endpoint_gate": true,
         "polarity_gate": true,
@@ -632,20 +778,23 @@
       "evidence_supported": false,
       "evidence_check": {
         "claim_type": "qualitative",
-        "claim": "Both Kupffer cells and hepatocytes had comparable high and rapid uptake, but EGFP mRNA translation occurred exclusively in hepatocytes during intravital imaging.",
+        "claim": "EGFP signals were detected only in hepatocytes; no EGFP-positive Kupffer cells were detected.",
         "cited_evidence_ids": [
-          "GP-005-E-60a7b4a513e710e6",
-          "GP-005-E-d5934f7a75e37a6b",
-          "GP-005-E-dad8173744c1bc04"
+          "GP-005-E-1c89ae4ab2ddf8e7",
+          "GP-005-E-ac7e05a4c142ccbb",
+          "GP-005-E-f3b6eafdb0a35892"
         ],
         "resolved_evidence_ids": [
-          "GP-005-E-60a7b4a513e710e6",
-          "GP-005-E-d5934f7a75e37a6b",
-          "GP-005-E-dad8173744c1bc04"
+          "GP-005-E-ac7e05a4c142ccbb"
         ],
         "unsupported_terms": [
+          "detected",
+          "hepatocyte",
           "kupffer",
-          "occurred"
+          "no",
+          "only",
+          "positive",
+          "signal"
         ]
       }
     },
@@ -655,7 +804,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O3",
-        "score": 0.7667,
+        "score": 0.7111,
         "overlap_terms": [
           "accumulation",
           "ameliorated",
@@ -663,13 +812,12 @@
           "hiri",
           "lsec",
           "mitochondrial",
-          "phenotype",
           "plus",
           "simicu1"
         ],
         "exact_numeric": false,
         "numeric_in_text": false,
-        "actual_text": "LSEC defenestration phenotype, mitochondrial cristae fragmentation, and mitochondrial Ca2+ accumulation Transmission electron microscopy HIRI-induced alterations ACT plus siMicu1-LNPs ameliorated HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and the LSEC defenestration phenotype. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)",
+        "actual_text": "Mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and LSEC defenestration Transmission electron microscopy HIRI-induced pathology ACT plus siMicu1-LNPs ameliorated HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and LSEC defenestration. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)",
         "endpoint_overlap_terms": [
           "lsec"
         ],
@@ -688,20 +836,17 @@
         "numeric_gate": true
       },
       "evidence_checked": true,
-      "evidence_supported": false,
+      "evidence_supported": true,
       "evidence_check": {
         "claim_type": "qualitative",
-        "claim": "ACT plus siMicu1-LNPs ameliorated HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and the LSEC defenestration phenotype.",
+        "claim": "ACT synergized with siMicu1-LNPs to ameliorate HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and the LSEC defenestration phenotype.",
         "cited_evidence_ids": [
           "GP-007-E-4249c47d2d7ef839"
         ],
         "resolved_evidence_ids": [
           "GP-007-E-4249c47d2d7ef839"
         ],
-        "unsupported_terms": [
-          "ameliorated",
-          "plus"
-        ]
+        "unsupported_terms": []
       }
     },
     {
@@ -709,48 +854,44 @@
       "paper_id": "GP-008",
       "recovered": true,
       "match": {
-        "outcome_id": "O3",
+        "outcome_id": "O1",
         "score": 1.0,
         "overlap_terms": [
+          "20",
           "80",
           "bmdm",
           "cd163",
           "exposure",
           "expressed",
           "fapcar",
+          "fewer",
           "gfp",
           "lnp",
-          "or",
+          "over",
+          "than",
           "unmodified"
         ],
-        "exact_numeric": false,
+        "exact_numeric": true,
         "numeric_in_text": true,
-        "actual_text": "BMDMs expressing GFP or FAPCAR after exposure to αCD163/LNP-GFP or αCD163/LNP-FAPCAR GFP or FAPCAR expression unmodified LNP % >80% of BMDMs expressed GFP or FAPCAR. GFP or FAPCAR GFP or FAPCAR BMDMs BMDMs",
+        "actual_text": "BMDMs expressing FAPCAR after αCD163/LNP-FAPCAR exposure flow cytometry unmodified LNP-FAPCAR % of BMDMs expressing FAPCAR (over 80%) Over 80% of BMDMs expressed FAPCAR; unmodified LNPs delivered mRNA to fewer than 20% of target BMDMs. GFP mRNA GFP BMDMs",
         "endpoint_overlap_terms": [
           "bmdm",
-          "fapcar",
-          "gfp",
-          "or"
+          "fapcar"
         ],
         "endpoint_field_overlap_terms": [
           "bmdm",
-          "fapcar",
-          "gfp",
-          "or"
+          "fapcar"
         ],
         "rare_endpoint_overlap_terms": [
           "bmdm",
-          "fapcar",
-          "gfp",
-          "or"
+          "fapcar"
         ],
         "qualitative_overlap_terms": [
           "80",
           "bmdm",
           "expressed",
           "fapcar",
-          "gfp",
-          "or"
+          "over"
         ],
         "endpoint_gate": true,
         "polarity_gate": true,
@@ -759,11 +900,12 @@
       "evidence_checked": true,
       "evidence_supported": true,
       "evidence_check": {
-        "claim_type": "qualitative",
-        "claim": ">80% of BMDMs expressed GFP or FAPCAR.",
+        "claim_type": "numeric",
+        "claim": 80.0,
         "cited_evidence_ids": [
           "GP-008-E-7d00a9f09c5299f7",
-          "GP-008-E-85ffa081af3058cd"
+          "GP-008-E-85ffa081af3058cd",
+          "GP-008-E-f5d81377181acad0"
         ],
         "resolved_evidence_ids": [
           "GP-008-E-7d00a9f09c5299f7",
@@ -777,60 +919,48 @@
       "paper_id": "GP-008",
       "recovered": true,
       "match": {
-        "outcome_id": "O4",
-        "score": 1.0,
+        "outcome_id": "O1",
+        "score": 0.7,
         "overlap_terms": [
-          "20",
           "bmdm",
-          "cd163",
-          "fapcar",
           "gfp",
           "lnp",
-          "mrna",
-          "or",
-          "unmodified"
+          "mrna"
         ],
         "exact_numeric": false,
-        "numeric_in_text": true,
-        "actual_text": "Target BMDMs receiving mRNA from unmodified LNPs mRNA delivery targeted αCD163 LNP % <20% of target BMDMs received mRNA. GFP or FAPCAR GFP or FAPCAR BMDMs BMDMs",
+        "numeric_in_text": false,
+        "actual_text": "GFP expression in BMDMs flow cytometry mRNA and LNP-mRNA GFP expression was assessed and analyzed in BMDMs. GFP mRNA GFP BMDMs",
         "endpoint_overlap_terms": [
-          "lnp",
-          "unmodified"
+          "lnp"
         ],
-        "endpoint_field_overlap_terms": [
-          "unmodified"
-        ],
+        "endpoint_field_overlap_terms": [],
         "rare_endpoint_overlap_terms": [
-          "lnp",
-          "unmodified"
+          "lnp"
         ],
         "qualitative_overlap_terms": [
-          "20",
           "bmdm",
           "lnp",
-          "mrna",
-          "unmodified"
+          "mrna"
         ],
         "endpoint_gate": true,
         "polarity_gate": true,
         "numeric_gate": true
       },
       "evidence_checked": true,
-      "evidence_supported": false,
+      "evidence_supported": true,
       "evidence_check": {
-        "claim_type": "qualitative",
-        "claim": "<20% of target BMDMs received mRNA.",
+        "claim_type": "numeric",
+        "claim": 80.0,
         "cited_evidence_ids": [
           "GP-008-E-7d00a9f09c5299f7",
-          "GP-008-E-85ffa081af3058cd"
+          "GP-008-E-85ffa081af3058cd",
+          "GP-008-E-f5d81377181acad0"
         ],
         "resolved_evidence_ids": [
           "GP-008-E-7d00a9f09c5299f7",
           "GP-008-E-85ffa081af3058cd"
         ],
-        "unsupported_terms": [
-          "received"
-        ]
+        "unsupported_terms": []
       }
     },
     {

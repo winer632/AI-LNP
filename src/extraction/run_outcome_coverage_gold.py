@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -117,15 +118,22 @@ def run(
     return summary
 
 
-if __name__ == "__main__":
-    print(
-        json.dumps(
-            run(
-                output_root=ROOT
-                / "reports/extraction/day5_outcome_coverage_enforced_v1_1",
-                packet_root=ROOT
-                / "data/staging/rag/compact_api_packets_v1_1",
-            ),
-            indent=2,
-        )
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--confirm-write",
+        action="store_true",
+        help=(
+            "Required: this regenerates committed artifacts in place. Without "
+            "it the command explains itself and writes nothing."
+        ),
     )
+    args = parser.parse_args()
+    if not args.confirm_write:
+        parser.error("--confirm-write is required; this rewrites tracked files")
+    print(json.dumps(run(), indent=2))
+
+
+if __name__ == "__main__":
+    main()

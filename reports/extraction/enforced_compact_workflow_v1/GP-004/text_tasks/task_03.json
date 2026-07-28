@@ -2,38 +2,31 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-004",
   "route_ids": [
-    "RT-a0fd5d2230d3b897"
+    "RT-6a8e99370678f9ae"
   ],
   "candidate_ids": [
-    "OC-518896544650d441"
+    "OC-50a8a10d7440e225"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-004-E-9727e33fb834be68",
-      "text": "The same pattern was observed for intestine where eGFP expression was confined to the lamina propria, which contains small blood and lymph vessels as well as blood cells (Supplementary Fig.",
+      "evidence_id": "GP-004-FC-4dd33ccc119f1671",
+      "text": "Significant percentages of these cell populations express eGFP, including 41.5 ± 14.6% CD11b+ cells, 34.1 ± 2.2% CD45+ cells, and 70.7 ± 9% CD31+ cells (Fig.",
       "source_ids": [
-        "S-263a2be8ee47"
+        "FC-S-783827e9e8236666"
       ]
     },
     {
-      "evidence_id": "GP-004-E-a72862f18ec2ffcd",
-      "text": "To further evaluate the histologic specificity of IV-injected mRNA-LNP, we performed immunostaining on sections from liver, lung, intestine, and spleen 5 h following a single injection of mRNA-LNP encoding enhanced green fluorescent protein (eGFP) (10 μg eGFP mRNA-LNP/20 g body weight) to identify eGFP+ transfected cells.",
+      "evidence_id": "GP-004-FC-af61355776c8ccca",
+      "text": "Virtually all hepatocytes identified with HNF4α expressed eGFP (Fig.",
       "source_ids": [
-        "S-263a2be8ee47"
+        "FC-S-783827e9e8236666"
       ]
     },
     {
-      "evidence_id": "GP-004-E-ac5ffef51d25a107",
-      "text": "1), eGFP expression was absent in parenchymal cells of the other organs analyzed (Supplementary Figs.",
+      "evidence_id": "GP-004-FC-cde0316a82a5bd30",
+      "text": "eGFP expression was absent in CK19+ cholangiocytes and α-SMA+ vascular smooth muscle cells, while few F4/80+ Kupffer cells expressed eGFP.",
       "source_ids": [
-        "S-263a2be8ee47"
-      ]
-    },
-    {
-      "evidence_id": "GP-004-E-fd825b27dcaebf09",
-      "text": "Notable eGFP expression was observed in the red pulp area of spleen that mainly overlapped with CD45 and CD31 expression, suggesting that the eGFP+ cells in spleen were blood and endothelial cells (Supplementary Fig.",
-      "source_ids": [
-        "S-263a2be8ee47"
+        "FC-S-783827e9e8236666"
       ]
     }
   ],
@@ -55,5 +48,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "f40218e9fc74e50f4d5de656b9c8e8ae37d5ff145431599a41219fd612d2122b",
   "source_inventory_sha256": "625de626997466f8eeaf15273f2fc66df80aa2e46bf4f9f6c11f27874f5c1dc7",
-  "task_checksum": "efe5d9b2a51fbed2b3f8f5ac03b7c5928f9cd60dfdd6e0b641b32a38c00a402f"
+  "task_checksum": "c3e73a0a60090789d0f1950b9ccbd00b86cc4da971d7392416571147f64c98a4"
 }

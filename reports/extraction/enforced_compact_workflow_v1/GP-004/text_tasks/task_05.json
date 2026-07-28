@@ -2,38 +2,24 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-004",
   "route_ids": [
-    "RT-2ae40ba910f7bdbe"
+    "RT-cc9cf9eaec3e1bc8"
   ],
   "candidate_ids": [
-    "OC-1aff8184d7c4d5bf"
+    "OC-59ab31b3ad4ec174"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-004-FC-23e3a27064893327",
-      "text": "1), eGFP expression was absent in parenchymal cells of the other organs analyzed (Supplementary Figs.",
+      "evidence_id": "GP-004-FC-cca77e9cf6a86542",
+      "text": "HGF/EGF mRNA-LNP significantly released cholesterol into the serum, diminished steatosis, and decreased serum ALT levels at T8, suggesting that a repeated regimen of HGF/EGF mRNA-LNP injections could alleviate chronic liver damage.",
       "source_ids": [
-        "FC-S-1f7e29eaf1c74013"
+        "FC-S-88a8bc6d5a8262ce"
       ]
     },
     {
-      "evidence_id": "GP-004-FC-2d0b76491192ab4a",
-      "text": "The same pattern was observed for intestine where eGFP expression was confined to the lamina propria, which contains small blood and lymph vessels as well as blood cells (Supplementary Fig.",
+      "evidence_id": "GP-004-FC-aaef2b0838c071e4",
+      "text": "However, a second injection of HGF/EGF mRNA-LNP significantly released cholesterol into the serum, diminished steatosis, and decreased serum ALT levels at T8, suggesting that a repeated regimen of HGF/EGF mRNA-LNP injections could alleviate chronic liver damage.",
       "source_ids": [
-        "FC-S-1f7e29eaf1c74013"
-      ]
-    },
-    {
-      "evidence_id": "GP-004-FC-bdbc539faa37bfad",
-      "text": "Notable eGFP expression was observed in the red pulp area of spleen that mainly overlapped with CD45 and CD31 expression, suggesting that the eGFP+ cells in spleen were blood and endothelial cells (Supplementary Fig.",
-      "source_ids": [
-        "FC-S-1f7e29eaf1c74013"
-      ]
-    },
-    {
-      "evidence_id": "GP-004-FC-be523d5d2cc45eeb",
-      "text": "To further evaluate the histologic specificity of IV-injected mRNA-LNP, we performed immunostaining on sections from liver, lung, intestine, and spleen 5 h following a single injection of mRNA-LNP encoding enhanced green fluorescent protein (eGFP) (10 μg eGFP mRNA-LNP/20 g body weight) to identify eGFP+ transfected cells.",
-      "source_ids": [
-        "FC-S-1f7e29eaf1c74013"
+        "FC-S-910df540c2d91e5a"
       ]
     }
   ],
@@ -55,5 +41,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "f40218e9fc74e50f4d5de656b9c8e8ae37d5ff145431599a41219fd612d2122b",
   "source_inventory_sha256": "625de626997466f8eeaf15273f2fc66df80aa2e46bf4f9f6c11f27874f5c1dc7",
-  "task_checksum": "b0e2237cb1e4f60fa5d8a23ce5ccd960e535afbc9811efc8efd35faa50841f18"
+  "task_checksum": "3128a249f138406d803ab8b14e98389fb17a6ffa4eaad64e012b8dd662e7a699"
 }

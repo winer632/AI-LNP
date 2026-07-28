@@ -30,10 +30,15 @@ def _components(candidate_ids: list[str], inventory: OutcomeInventory) -> list[l
     candidate_by_id = {
         row.candidate_id: row for row in inventory.retained_candidates
     }
-    remaining = set(candidate_ids)
+    # Ordered, not a set. set.pop() picks by hash order, so the seed of each
+    # component -- and therefore which candidates end up grouped together --
+    # changed between runs under Python's randomised hashing. Task files are
+    # committed artifacts, so a rerun rewrote them with no code change and the
+    # CI clean-tree gate could not distinguish that from a real diff.
+    remaining = list(dict.fromkeys(candidate_ids))
     groups = []
     while remaining:
-        seed = remaining.pop()
+        seed = remaining.pop(0)
         group = {seed}
         sources = set(candidate_by_id[seed].source_ids)
         changed = True
@@ -47,7 +52,7 @@ def _components(candidate_ids: list[str], inventory: OutcomeInventory) -> list[l
                     sources |= set(candidate.source_ids)
                     changed = True
         groups.append(sorted(group))
-    return groups
+    return sorted(groups)
 
 
 def build_text_tasks(

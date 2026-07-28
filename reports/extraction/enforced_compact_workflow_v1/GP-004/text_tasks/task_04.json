@@ -2,24 +2,38 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-004",
   "route_ids": [
-    "RT-cc9cf9eaec3e1bc8"
+    "RT-a0fd5d2230d3b897"
   ],
   "candidate_ids": [
-    "OC-59ab31b3ad4ec174"
+    "OC-518896544650d441"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-004-FC-cca77e9cf6a86542",
-      "text": "HGF/EGF mRNA-LNP significantly released cholesterol into the serum, diminished steatosis, and decreased serum ALT levels at T8, suggesting that a repeated regimen of HGF/EGF mRNA-LNP injections could alleviate chronic liver damage.",
+      "evidence_id": "GP-004-E-9727e33fb834be68",
+      "text": "The same pattern was observed for intestine where eGFP expression was confined to the lamina propria, which contains small blood and lymph vessels as well as blood cells (Supplementary Fig.",
       "source_ids": [
-        "FC-S-88a8bc6d5a8262ce"
+        "S-263a2be8ee47"
       ]
     },
     {
-      "evidence_id": "GP-004-FC-aaef2b0838c071e4",
-      "text": "However, a second injection of HGF/EGF mRNA-LNP significantly released cholesterol into the serum, diminished steatosis, and decreased serum ALT levels at T8, suggesting that a repeated regimen of HGF/EGF mRNA-LNP injections could alleviate chronic liver damage.",
+      "evidence_id": "GP-004-E-a72862f18ec2ffcd",
+      "text": "To further evaluate the histologic specificity of IV-injected mRNA-LNP, we performed immunostaining on sections from liver, lung, intestine, and spleen 5 h following a single injection of mRNA-LNP encoding enhanced green fluorescent protein (eGFP) (10 μg eGFP mRNA-LNP/20 g body weight) to identify eGFP+ transfected cells.",
       "source_ids": [
-        "FC-S-910df540c2d91e5a"
+        "S-263a2be8ee47"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-E-ac5ffef51d25a107",
+      "text": "1), eGFP expression was absent in parenchymal cells of the other organs analyzed (Supplementary Figs.",
+      "source_ids": [
+        "S-263a2be8ee47"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-E-fd825b27dcaebf09",
+      "text": "Notable eGFP expression was observed in the red pulp area of spleen that mainly overlapped with CD45 and CD31 expression, suggesting that the eGFP+ cells in spleen were blood and endothelial cells (Supplementary Fig.",
+      "source_ids": [
+        "S-263a2be8ee47"
       ]
     }
   ],
@@ -41,5 +55,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "f40218e9fc74e50f4d5de656b9c8e8ae37d5ff145431599a41219fd612d2122b",
   "source_inventory_sha256": "625de626997466f8eeaf15273f2fc66df80aa2e46bf4f9f6c11f27874f5c1dc7",
-  "task_checksum": "3128a249f138406d803ab8b14e98389fb17a6ffa4eaad64e012b8dd662e7a699"
+  "task_checksum": "efe5d9b2a51fbed2b3f8f5ac03b7c5928f9cd60dfdd6e0b641b32a38c00a402f"
 }

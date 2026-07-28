@@ -2,102 +2,40 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-006",
   "route_ids": [
-    "RT-b23e8a35e498ceff",
-    "RT-edbb6ba637bba8ee",
-    "RT-a1cde7a6c9c72246",
-    "RT-9707a3838a076330",
-    "RT-466f49c6daa423ff"
+    "RT-660111bfbda28ab5",
+    "RT-d957228a2fd08732"
   ],
   "candidate_ids": [
-    "OC-72988ce315296559",
-    "OC-79a7e7829b582825",
-    "OC-79df55aac4c06752",
-    "OC-ad4ffaf19aec4162",
-    "OC-b4d57098ad58e503"
+    "OC-206ce02d8de31a37",
+    "OC-a477ebb8ae4c6731"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-006-FC-63f5cf7bff32d296",
-      "text": "The result indicated that mF8sgRNA could induce an indel variant into mouse F8 exon 1 with a 23% of indel mutation rate (Figure 3B).",
+      "evidence_id": "GP-006-FC-aa98a842fec45d77",
+      "text": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed.",
       "source_ids": [
-        "FC-S-10f71fe35d1af996"
+        "FC-S-f47e49622c2d8294"
       ]
     },
     {
-      "evidence_id": "GP-006-FC-95c3955b90c9e87b",
-      "text": "The result indicated that mF8sgRNA, with both sgRNAs resulting in a gene editing effi- mF8sgRNA could induce an indel variant into mouse F8 exon 1 ciency of around 5% in genomic DNA extracted from whole liver with a 23% of indel mutation rate (Figure 3B).",
+      "evidence_id": "GP-006-E-ef798f3259752156",
+      "text": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed.",
       "source_ids": [
-        "FC-S-3a360f1bd345643a"
+        "S-23e0134068c1"
       ]
     },
     {
-      "evidence_id": "GP-006-E-1893c0cd1beb2ee9",
-      "text": "The result indicated that mF8sgRNA, with both sgRNAs resulting in a gene editing efﬁ- mF8sgRNA could induce an indel variant into mouse F8 exon 1 ciency of around 5% in genomic DNA extracted from whole liver with a 23% of indel mutation rate (Figure 3B).",
+      "evidence_id": "GP-006-FC-a47650962823cf12",
+      "text": "The corrected mutants (around 46.5% of total deletions), together with four base-pair dele- exhibited endogenous FVIII expression and effectively restored the tions, which can help rescue the five base-pair deletion in NSG coagulation activity in NSG HemA mice.",
       "source_ids": [
-        "S-54a70efbd7fb"
+        "FC-S-f47e49622c2d8294"
       ]
     },
     {
-      "evidence_id": "GP-006-FC-d8422e89d0db8833",
-      "text": "HemA mice displayed approximately 2.6% FVIII activity (Fig- ure 4A).",
+      "evidence_id": "GP-006-E-3c6e73bc825c5293",
+      "text": "The corrected mutants (around 46.5% of total deletions), together with four base-pair dele- exhibited endogenous FVIII expression and effectively restored the tions, which can help rescue the ﬁve base-pair deletion in NSG coagulation activity in NSG HemA mice.",
       "source_ids": [
-        "FC-S-3a360f1bd345643a"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-E-0e932dc79aa7ba74",
-      "text": "HemA mice displayed approximately 2.6% FVIII activity (Fig- ure 4A).",
-      "source_ids": [
-        "S-54a70efbd7fb"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-FC-93ddf5afe2ae4f05",
-      "text": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells.",
-      "source_ids": [
-        "FC-S-df43cccf8956b818"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-E-31c0ada2828d03ec",
-      "text": "As expected, NSGHAsgRNA showed no Following these results, we selected NSGHAsgRNA for subsequent editing activity in WT F8 gene.",
-      "source_ids": [
-        "S-54a70efbd7fb"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-E-b0e824a66a4f04c1",
-      "text": "The NSGHAsgRNA was encapsulated with Cas9 Evaluation of in vivo gene editing of mutant F8 in HemA NSG mRNA into MC3 LNP and intravenously injected into NSG HemA mouse model mice at a dosage of 4 mg/kg of Cas9/sgRNA LNP.",
-      "source_ids": [
-        "S-54a70efbd7fb"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-E-c880de483e81461c",
-      "text": "Following injection, Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about we euthanized the treated mice and extracted genomic DNA 52.7% in total liver cells.",
-      "source_ids": [
-        "S-54a70efbd7fb"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-E-e2cb259904655a7d",
-      "text": "Our data showed that the in vivo gene editing 3 days after transfection to estimate overall gene editing efﬁciency efﬁciency of NSGHAsgRNA was comparable to that of using T7 endonuclease (T7E1) assay.",
-      "source_ids": [
-        "S-54a70efbd7fb"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-E-5b17d5bf9a42504e",
-      "text": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells.",
-      "source_ids": [
-        "S-5e3078bd8fb5"
-      ]
-    },
-    {
-      "evidence_id": "GP-006-FC-3d990eb3b5256ae4",
-      "text": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively.",
-      "source_ids": [
-        "FC-S-10f71fe35d1af996"
+        "S-23e0134068c1"
       ]
     }
   ],
@@ -119,8 +57,8 @@
     "O7"
   ],
   "permitted_new_experiments": 1,
-  "permitted_new_outcomes": 8,
+  "permitted_new_outcomes": 4,
   "source_result_sha256": "cd985c9da0963a4c5b8a7490ab2b100a2c91ca46100ca361b4f11fbd3de69701",
   "source_inventory_sha256": "cd87e9e3d0610aebb331200a4c9acc9e56091040170a823144a2e3594c1832d9",
-  "task_checksum": "a143ec44ee3a89b14dd5856141c5042eeef1dbc8c02fd6061e4020031eff7c5f"
+  "task_checksum": "c827d7dd6a0f92e79cd1b2d4950df5e5ee1bbd24659e143903fe8b0fc32078ff"
 }
