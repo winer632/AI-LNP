@@ -1,0 +1,82 @@
+{
+  "report_version": "packet-gold-coverage-1.0.0",
+  "metric": "Highest token-overlap fraction between a gold outcome's cited evidence text and any single evidence item in the packet. Token overlap rather than substring because the gold set normalises source wording -- it writes F4/80-positive where the paper writes F4/80+ -- so exact matching reports everything as missing.",
+  "finding": "The structured view, which ships as the default, has the WORST gold evidence coverage of the three: 12 outcomes below 0.5 against compact's 11 and full's 8. It keeps every structured item unconditionally inside the same 16k budget, so prose is crowded out. It buys GO-006 (0.54 -> 0.62) and GO-005 (0.43 -> 0.64) and loses GO-007 (0.77 -> 0.46), GO-013 (0.58 -> 0.42) and GO-015/016 (0.31 -> 0.25). Net recall is still better -- 11/15 against compact's 10/15, because GO-006 is reachable no other way -- but the default was chosen on that one gain without measuring the losses.",
+  "per_outcome": {
+    "GO-001": {
+      "compact": 0.417,
+      "structured": 0.333,
+      "full": 0.417
+    },
+    "GO-002": {
+      "compact": 0.417,
+      "structured": 0.333,
+      "full": 0.417
+    },
+    "GO-003": {
+      "compact": 0.333,
+      "structured": 0.333,
+      "full": 0.389
+    },
+    "GO-004": {
+      "compact": 0.333,
+      "structured": 0.333,
+      "full": 0.389
+    },
+    "GO-005": {
+      "compact": 0.429,
+      "structured": 0.643,
+      "full": 0.643
+    },
+    "GO-006": {
+      "compact": 0.538,
+      "structured": 0.615,
+      "full": 0.615
+    },
+    "GO-007": {
+      "compact": 0.769,
+      "structured": 0.462,
+      "full": 0.769
+    },
+    "GO-008": {
+      "compact": 0.875,
+      "structured": 0.875,
+      "full": 0.875
+    },
+    "GO-010": {
+      "compact": 0.429,
+      "structured": 0.429,
+      "full": 0.429
+    },
+    "GO-011": {
+      "compact": 0.333,
+      "structured": 0.267,
+      "full": 0.4
+    },
+    "GO-013": {
+      "compact": 0.583,
+      "structured": 0.417,
+      "full": 0.583
+    },
+    "GO-015": {
+      "compact": 0.312,
+      "structured": 0.25,
+      "full": 0.562
+    },
+    "GO-016": {
+      "compact": 0.312,
+      "structured": 0.25,
+      "full": 0.562
+    },
+    "GO-017": {
+      "compact": 0.333,
+      "structured": 0.2,
+      "full": 0.4
+    },
+    "GO-018": {
+      "compact": 0.308,
+      "structured": 0.385,
+      "full": 0.462
+    }
+  }
+}
