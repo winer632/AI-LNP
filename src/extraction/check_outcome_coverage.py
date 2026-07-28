@@ -58,10 +58,51 @@ def _evidence_ids(value: Any) -> set[str]:
     return set()
 
 
+_NUMBER = re.compile(r"-?\d+(?:\.\d+)?")
+
+
+def _numbers(text: str) -> set[float]:
+    out: set[float] = set()
+    for token in _NUMBER.findall(text or ""):
+        try:
+            out.add(float(token))
+        except ValueError:
+            continue
+    return out
+
+
+def _contradicts_numerically(candidate, outcome: dict[str, Any]) -> bool:
+    """Report whether the candidate's evidence rules out this outcome's value.
+
+    Shared provenance is not shared identity. One passage routinely supports
+    several distinct measurements -- Table S2 carries both the LSEC deletion
+    frequency (16.50%) and the LSEC insertion frequency (1.01%) -- so an
+    outcome extracted from a passage does not account for every candidate that
+    cites it. Treating overlap as a match is what let GO-006 be declared
+    covered while never being extracted, and it is why GP-005 reported zero
+    unmatched candidates while missing a gold outcome.
+    """
+    value = _value(outcome.get("outcome_value"))
+    if not isinstance(value, (int, float)):
+        return False
+    candidate_numbers = _numbers(candidate.evidence_text)
+    if not candidate_numbers:
+        return False
+    return not any(abs(number - float(value)) <= 1e-9 for number in candidate_numbers)
+
+
 def _score(candidate, outcome: dict[str, Any]) -> float:
-    if set(candidate.evidence_ids) & _evidence_ids(outcome):
-        return 1.0
     outcome_text = _outcome_text(outcome)
+    if set(candidate.evidence_ids) & _evidence_ids(outcome):
+        # Shared evidence is strong, but it must still agree on what is being
+        # measured. These are the same gates evaluate_final_gold_dynamic
+        # applies; a pair it would refuse to count as recovered must not be
+        # counted as covered here either.
+        if candidate.endpoint_family not in _families(outcome_text):
+            return 0.0
+        if _contradicts_numerically(candidate, outcome):
+            return 0.0
+        return 1.0
     if candidate.endpoint_family not in _families(outcome_text):
         return 0.0
     candidate_tokens = _tokens(candidate.evidence_text)
@@ -80,6 +121,7 @@ def check(
     *,
     assessment=None,
     candidates: list[OutcomeCandidate] | None = None,
+    repair_confidence_levels: tuple[str, ...] | None = None,
 ) -> CoverageReport:
     assessment = assessment or assess(packet)
     if result.get("eligibility", {}).get("decision") != "eligible":
@@ -129,7 +171,14 @@ def check(
     unmatched_rows = [
         row for row in candidates if row.candidate_id not in used_candidates
     ]
-    high_rows = [row for row in unmatched_rows if row.confidence == "high"]
+    # Only high-confidence unmatched candidates may trigger repair. Measured on
+    # the nine gold papers, that gate sends 118 of 137 candidates to
+    # human_review instead, and GP-005 and GP-008 receive zero repair tasks
+    # while holding four of the nine missing gold outcomes. Widening it reaches
+    # those, at the cost of spending repair calls on weaker candidates, so the
+    # threshold is a parameter rather than a constant.
+    allowed = set(repair_confidence_levels or ("high",))
+    high_rows = [row for row in unmatched_rows if row.confidence in allowed]
     actionable_rows = []
     duplicate_rows = []
     for row in high_rows:
@@ -164,10 +213,10 @@ def check(
             route_hint=row.route_hint,
             evidence_ids=row.evidence_ids,
             figure_or_table=row.figure_or_table,
-            reason="medium_confidence_candidate_not_allowed_to_trigger_repair",
+            reason="confidence_below_repair_threshold",
         )
         for row in unmatched_rows
-        if row.confidence != "high"
+        if row.confidence not in allowed
     ]
     review.extend(
         ReviewCandidate(

@@ -56,7 +56,18 @@ def build_text_tasks(
     inventory: OutcomeInventory,
     evidence_packet: CompactApiPacket,
     result_path: Path,
+    max_candidates_per_task: int | None = None,
 ) -> list[MissingRecordTask]:
+    """Build the missing-record repair tasks for one paper.
+
+    ``max_candidates_per_task`` caps how many candidates share a task. Measured
+    on GP-006: a 7-candidate task failed twice -- invalid, then all-unresolved --
+    while the same seven candidates over the same twelve evidence rows, one per
+    task, returned five recovered fragments including GO-007's 3.3% FVIII
+    activity. The evidence was never the problem; how much the model had to
+    account for in one turn was. Splitting multiplies the call count by the
+    component size, so it is opt-in.
+    """
     candidate_by_id = {
         row.candidate_id: row for row in inventory.retained_candidates
     }
@@ -68,8 +79,18 @@ def build_text_tasks(
         for row in routing.routes
         if row.route == "missing_record_text"
     }
+    components = _components(list(route_by_candidate), inventory)
+    if max_candidates_per_task is not None:
+        if max_candidates_per_task < 1:
+            raise ValueError("max_candidates_per_task must be >= 1")
+        components = [
+            component[index : index + max_candidates_per_task]
+            for component in components
+            for index in range(0, len(component), max_candidates_per_task)
+        ]
+
     tasks = []
-    for candidate_ids in _components(list(route_by_candidate), inventory):
+    for candidate_ids in components:
         evidence_ids = list(
             dict.fromkeys(
                 evidence_id

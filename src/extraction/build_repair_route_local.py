@@ -36,11 +36,18 @@ from src.extraction.run_codex_one_call import load_packet  # noqa: E402
 RESULT_ROOT = Path(sys.argv[1])
 PACKET_ROOT = Path(sys.argv[2])
 OUT = Path(sys.argv[3])
+# Optional: comma-separated confidence levels allowed to trigger repair, and a
+# cap on candidates per task. Both default to the shipped behaviour.
+LEVELS = tuple(sys.argv[4].split(",")) if len(sys.argv) > 4 else None
+MAX_PER_TASK = int(sys.argv[5]) if len(sys.argv) > 5 else None
+ONLY = set(sys.argv[6].split(",")) if len(sys.argv) > 6 else None
 OUT.mkdir(parents=True, exist_ok=True)
 
 totals = {"text_tasks": 0, "visual_referrals": 0, "papers": 0}
 for number in range(1, 10):
     paper_id = f"GP-{number:03d}"
+    if ONLY and paper_id not in ONLY:
+        continue
     result_path = RESULT_ROOT / paper_id / "result.json"
     if not result_path.exists():
         continue
@@ -73,6 +80,7 @@ for number in range(1, 10):
             parsed.model_dump(mode="json"),
             assessment=complexity,
             candidates=inventory.retained_candidates,
+            repair_confidence_levels=LEVELS,
         )
         if complexity.route == "complex"
         else None
@@ -89,6 +97,7 @@ for number in range(1, 10):
         inventory=inventory,
         evidence_packet=packet,
         result_path=result_path,
+        max_candidates_per_task=MAX_PER_TASK,
     )
     referrals = build_visual_referrals(routing=routing, inventory=inventory, evidence_packet=packet)
 
