@@ -1,0 +1,21 @@
+{
+  "report_version": "compact-validation-1.0.0",
+  "paper_id": "GP-001",
+  "status": "invalid",
+  "findings": [
+    {
+      "finding_id": "VF-fbfe234d755ffc86",
+      "code": "unknown_evidence_id",
+      "message": "Unknown evidence IDs: ['GP-001-FC-62738f4303a2f']",
+      "location": [
+        "eligibility",
+        "evidence_ids"
+      ],
+      "record_collection": null,
+      "record_index": null,
+      "field_name": null,
+      "cited_evidence_ids": [],
+      "repairable": false
+    }
+  ]
+}

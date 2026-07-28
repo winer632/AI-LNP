@@ -16,13 +16,19 @@ ROOT = Path(__file__).resolve().parents[2]
 PRECISION_METRICS_FLAG = "precision_metrics"
 GOLD_ROOT = ROOT / "data/annotations/gold_v1"
 OUTPUT_ROOT = ROOT / "reports/extraction/final_gold_dynamic_v1"
+# The default pipeline's result stages, deepest first; the first stage that
+# produced a paper is the one scored. Adding a stage here changes which
+# artifacts are read, never how they are matched: every gate, threshold and
+# score in this file is unchanged by the entries below.
 RESULT_ROOTS = [
+    ROOT / "data/staging/extraction/structured_view_merged_v1",
     ROOT / "data/staging/extraction/consolidated_gold_gap_merged_v1",
     ROOT / "data/staging/extraction/compact_merged_v1_1",
     ROOT / "data/staging/extraction/compact_merged_v1",
     ROOT / "data/staging/extraction/compact_one_call_v1",
 ]
 PACKET_ROOT = ROOT / "data/staging/rag/compact_api_packets_v1_1"
+STRUCTURED_PACKET_ROOT = ROOT / "data/staging/rag/structured_compact_packets_v1"
 GOLD_GAP_TASK_ROOT = ROOT / "data/staging/extraction/consolidated_gold_gap_tasks_v1"
 STOP = {
     "the", "and", "of", "in", "to", "a", "an", "was", "were", "with",
@@ -116,32 +122,52 @@ def _evidence_ids(value) -> set[str]:
     return set()
 
 
+def _packet_evidence(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload.get("evidence") or []
+
+
 def _evidence_texts(
     paper_id: str,
     *,
     packet_root: Path = PACKET_ROOT,
     task_root: Path = GOLD_GAP_TASK_ROOT,
+    structured_packet_root: Path = STRUCTURED_PACKET_ROOT,
 ) -> dict[str, str]:
     """Load offline evidence text for one paper.
 
-    Two local sources are merged, no network access is performed: the compact
-    API packet and, when the paper went through consolidated gold-gap
-    recovery, that task's extra evidence block. Visual assets (``V-*`` crop
-    ids) carry no text and are therefore absent from the mapping.
+    Local sources only, no network access is performed: the compact API
+    packet; when the paper went through consolidated gold-gap recovery, that
+    task's extra evidence block; and the structured packet a later extraction
+    stage was sent. Visual assets (``V-*`` crop ids) carry no text and are
+    therefore absent from the mapping.
+
+    This affects reporting only. It decides which records can be *checked*
+    against their own cited text; it is not consulted by any gate, score or
+    threshold, so no record's match depends on it.
     """
     texts: dict[str, str] = {}
     for path in (
         packet_root / f"{paper_id}.json",
         task_root / paper_id / "task.json",
     ):
-        if not path.exists():
-            continue
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        for row in payload.get("evidence", []):
+        for row in _packet_evidence(path):
             evidence_id = row.get("evidence_id")
             text = row.get("text")
             if evidence_id and isinstance(text, str):
                 texts[evidence_id] = text
+    # The structured view cites corpus evidence (`-FC-` ids) that no compact
+    # packet contains, so without this the report quietly stopped covering the
+    # records that view produced: 11 recovered outcomes, 7 of them checkable.
+    # Added rather than substituted -- an id both sources know keeps the
+    # compact packet's text -- so no check that already ran can change answer.
+    for row in _packet_evidence(structured_packet_root / f"{paper_id}.json"):
+        evidence_id = row.get("evidence_id")
+        text = row.get("text")
+        if evidence_id and isinstance(text, str):
+            texts.setdefault(evidence_id, text)
     return texts
 
 

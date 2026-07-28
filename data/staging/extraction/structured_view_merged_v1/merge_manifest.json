@@ -1,0 +1,120 @@
+{
+  "merge_version": "structured-view-pass-merge-1.0.0",
+  "note": "One configuration, two stages: each paper's current result plus a second pass over the same paper through the structured evidence view. Records keep the stage that produced them in source_run.",
+  "baseline_roots": [
+    "data/staging/extraction/consolidated_gold_gap_merged_v1",
+    "data/staging/extraction/compact_merged_v1_1",
+    "data/staging/extraction/compact_merged_v1",
+    "data/staging/extraction/compact_one_call_v1"
+  ],
+  "second_pass_root": "data/staging/extraction/structured_compact_one_call_v1",
+  "papers": [
+    {
+      "paper_id": "GP-001",
+      "baseline_root": "compact_merged_v1",
+      "second_pass_present": false,
+      "outcomes": 0,
+      "experiments": 0,
+      "outcomes_by_stage": {},
+      "outcomes_added_by_second_pass": 0,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-002",
+      "baseline_root": "compact_one_call_v1",
+      "second_pass_present": true,
+      "outcomes": 10,
+      "experiments": 4,
+      "outcomes_by_stage": {
+        "compact_one_call_v1": 6,
+        "structured_compact_one_call_v1": 4
+      },
+      "outcomes_added_by_second_pass": 4,
+      "carried_merge_report": false
+    },
+    {
+      "paper_id": "GP-003",
+      "baseline_root": "compact_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 0,
+      "experiments": 0,
+      "outcomes_by_stage": {},
+      "outcomes_added_by_second_pass": 0,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-004",
+      "baseline_root": "consolidated_gold_gap_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 10,
+      "experiments": 3,
+      "outcomes_by_stage": {
+        "consolidated_gold_gap_merged_v1": 6,
+        "structured_compact_one_call_v1": 4
+      },
+      "outcomes_added_by_second_pass": 4,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-005",
+      "baseline_root": "compact_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 7,
+      "experiments": 3,
+      "outcomes_by_stage": {
+        "compact_merged_v1": 3,
+        "structured_compact_one_call_v1": 4
+      },
+      "outcomes_added_by_second_pass": 4,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-006",
+      "baseline_root": "consolidated_gold_gap_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 20,
+      "experiments": 2,
+      "outcomes_by_stage": {
+        "consolidated_gold_gap_merged_v1": 8,
+        "structured_compact_one_call_v1": 12
+      },
+      "outcomes_added_by_second_pass": 12,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-007",
+      "baseline_root": "compact_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 3,
+      "experiments": 1,
+      "outcomes_by_stage": {
+        "compact_merged_v1": 3
+      },
+      "outcomes_added_by_second_pass": 0,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-008",
+      "baseline_root": "consolidated_gold_gap_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 8,
+      "experiments": 2,
+      "outcomes_by_stage": {
+        "consolidated_gold_gap_merged_v1": 6,
+        "structured_compact_one_call_v1": 2
+      },
+      "outcomes_added_by_second_pass": 2,
+      "carried_merge_report": true
+    },
+    {
+      "paper_id": "GP-009",
+      "baseline_root": "compact_merged_v1",
+      "second_pass_present": true,
+      "outcomes": 0,
+      "experiments": 0,
+      "outcomes_by_stage": {},
+      "outcomes_added_by_second_pass": 0,
+      "carried_merge_report": true
+    }
+  ]
+}

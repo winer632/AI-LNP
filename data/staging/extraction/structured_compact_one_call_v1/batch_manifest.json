@@ -1,0 +1,338 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Assembled from the nine per-paper manifests; the sweep ran as two batches so neither batch alone described the run.",
+  "evidence_view": "structured",
+  "evidence_view_pinned": false,
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "papers": [
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-001",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:09:05.359667+00:00",
+      "completed_at": "2026-07-28T20:09:17.793234+00:00",
+      "elapsed_seconds": 12.432,
+      "validation_status": "invalid",
+      "eligibility": null,
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 0
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-002",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:09:17.875610+00:00",
+      "completed_at": "2026-07-28T20:11:08.391203+00:00",
+      "elapsed_seconds": 110.514,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE",
+          "FORMULATION_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "GP-002-E-39062576eea8789d",
+          "GP-002-E-70f961590d4100fc",
+          "GP-002-E-3b62dd9a6e6a70a1",
+          "GP-002-E-919bac300948d680"
+        ],
+        "explanation": "Original mouse experiments intravenously delivered SM-102 mRNA-LNPs encoding eGFP, with reported eGFP staining in virtually all hepatocytes and linked reporter-expression outcomes. Full lipid composition is not reported in the packet."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 1,
+        "experiments": 2,
+        "outcomes": 5,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 66
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-003",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:11:08.422875+00:00",
+      "completed_at": "2026-07-28T20:11:16.685899+00:00",
+      "elapsed_seconds": 8.261,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "NOT_ORIGINAL_RESEARCH"
+        ],
+        "evidence_ids": [
+          "GP-003-E-240d9595395015cf"
+        ],
+        "explanation": "The packet explicitly identifies the paper as a review; it does not provide an original experimental LNP formulation–experiment–outcome report."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 0
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:11:58.727312+00:00",
+      "completed_at": "2026-07-28T20:13:35.548580+00:00",
+      "elapsed_seconds": 96.819,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE",
+          "FORMULATION_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "GP-004-FC-78a71536fc74bef2",
+          "GP-004-FC-60ea9f48c47b6c6e"
+        ],
+        "explanation": "The packet reports an in vivo HGF mRNA-LNP experiment with a hepatocyte proliferation outcome; LNP composition is not reported."
+      },
+      "record_counts": {
+        "formulations": 3,
+        "components": 0,
+        "experiments": 3,
+        "outcomes": 4,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 11
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:11:16.720691+00:00",
+      "completed_at": "2026-07-28T20:12:55.010342+00:00",
+      "elapsed_seconds": 98.288,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE",
+          "FORMULATION_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "GP-005-E-23cde312d42649c2",
+          "GP-005-E-ac7e05a4c142ccbb",
+          "GP-005-E-f3b6eafdb0a35892"
+        ],
+        "explanation": "Original in vivo and in vitro experiments report EGFP-mRNA LNP delivery and measured translation outcomes in hepatocytes and Kupffer cells; the complete lipid composition is not reported in the packet."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 1,
+        "experiments": 3,
+        "outcomes": 4,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 27
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:12:55.047649+00:00",
+      "completed_at": "2026-07-28T20:14:51.970087+00:00",
+      "elapsed_seconds": 116.921,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE",
+          "FORMULATION_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7",
+          "GP-006-FC-e38553aa49fd6d57",
+          "GP-006-FC-afee66191e056d5c"
+        ],
+        "explanation": "The packet reports intravenous MC3 LNP delivery of Cas9 mRNA/NSGHAsgRNA in NSG HemA mice, followed by isolated LSEC and hepatocyte gene-editing outcomes. Full LNP composition is not reported."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 0,
+        "experiments": 1,
+        "outcomes": 12,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 53
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-007",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:13:35.586609+00:00",
+      "completed_at": "2026-07-28T20:14:21.253647+00:00",
+      "elapsed_seconds": 45.666,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "uncertain",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "NO_TARGET_CELL_EVIDENCE",
+          "FORMULATION_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "GP-007-E-42751544820dab75",
+          "GP-007-FC-0164ecc0c5a3a106"
+        ],
+        "explanation": "The packet reports LNPs-siMicu1 and a linked liver-histology result, but does not directly report LNP delivery or outcome evidence in hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. LNP composition is also not reported."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 32
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:14:21.274684+00:00",
+      "completed_at": "2026-07-28T20:15:12.691739+00:00",
+      "elapsed_seconds": 51.415,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-008-FC-d5f6c68f9d8f7ca1",
+          "GP-008-FC-296f75448ad8fcd0",
+          "GP-008-FC-a183582f81d54bda",
+          "GP-008-FC-77c4cc751760cf0d"
+        ],
+        "explanation": "The packet reports experimental αCD163/LNP-FAPCAR delivery, mRNA encapsulation, and liver-fibrosis/HSC-relevant outcomes."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 1,
+        "experiments": 1,
+        "outcomes": 2,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-009",
+      "evidence_view": "structured",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-28T20:14:52.032656+00:00",
+      "completed_at": "2026-07-28T20:15:57.449537+00:00",
+      "elapsed_seconds": 65.415,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE",
+          "NO_TARGET_CELL_EVIDENCE"
+        ],
+        "evidence_ids": [
+          "GP-009-FC-455fcd703653c47f",
+          "GP-009-FC-7d9f713a9ff8dd16",
+          "GP-009-FC-89837e0ee08a925b"
+        ],
+        "explanation": "Original LNP-mRNA experiments and linked outcomes are reported, but the packet does not provide experimental evidence relevant to hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. Liver-level evidence was not treated as hepatocyte evidence."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 1
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 57
+    }
+  ]
+}

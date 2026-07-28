@@ -1,0 +1,12 @@
+{
+  "assessment_version": "outcome-complexity-1.1.0",
+  "paper_id": "GP-001",
+  "complexity_score": 0,
+  "route": "simple",
+  "reasons": [
+    "full_corpus_view_thresholds"
+  ],
+  "candidate_groups": 0,
+  "endpoint_families": 0,
+  "visual_candidate_groups": 0
+}

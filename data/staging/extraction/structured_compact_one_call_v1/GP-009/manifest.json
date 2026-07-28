@@ -1,0 +1,39 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-009",
+  "evidence_view": "structured",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T20:14:52.032656+00:00",
+  "completed_at": "2026-07-28T20:15:57.449537+00:00",
+  "elapsed_seconds": 65.415,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "NO_TARGET_CELL_EVIDENCE"
+    ],
+    "evidence_ids": [
+      "GP-009-FC-455fcd703653c47f",
+      "GP-009-FC-7d9f713a9ff8dd16",
+      "GP-009-FC-89837e0ee08a925b"
+    ],
+    "explanation": "Original LNP-mRNA experiments and linked outcomes are reported, but the packet does not provide experimental evidence relevant to hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. Liver-level evidence was not treated as hepatocyte evidence."
+  },
+  "record_counts": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0,
+    "unresolved_items": 1
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 57
+}

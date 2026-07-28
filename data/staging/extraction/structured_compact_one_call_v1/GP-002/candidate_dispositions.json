@@ -1,0 +1,332 @@
+[
+  {
+    "candidate_id": "OC-c07a6b58d3f32a1e",
+    "disposition": "not_an_outcome",
+    "reason": "Autofluorescence scale-setting is a method description."
+  },
+  {
+    "candidate_id": "OC-3d52c3821fd6eafb",
+    "disposition": "not_an_outcome",
+    "reason": "Autofluorescence description is not a measured delivery outcome."
+  },
+  {
+    "candidate_id": "OC-79fcfd6592318e0e",
+    "disposition": "unresolved",
+    "reason": "Reported xenograft result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-4b7988bead8ecef1",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-e6d525f64ff4f864",
+    "disposition": "unresolved",
+    "reason": "Only one cited result is represented; the second cited biodistribution statement is not separately quantified."
+  },
+  {
+    "candidate_id": "OC-fc5c061d9c1fe10a",
+    "disposition": "unresolved",
+    "reason": "Steatotic tumor result lacks a usable separately linked experiment record."
+  },
+  {
+    "candidate_id": "OC-f4b5ab858a576dd8",
+    "disposition": "unresolved",
+    "reason": "Tumor comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-eed7e1f75d3b9456",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-4a93b99682dec868",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic interpretation of the expression readout."
+  },
+  {
+    "candidate_id": "OC-e194c9b63fe178c7",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-e8da04bb044e4869",
+    "disposition": "not_an_outcome",
+    "reason": "Injection setup, not a result."
+  },
+  {
+    "candidate_id": "OC-f0015c41f8adba68",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a candidate-specific extracted outcome record."
+  },
+  {
+    "candidate_id": "OC-060b5cffa31e22f4",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-7e9a8ced3133e50e",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-fdd971ebca4815de",
+    "disposition": "unresolved",
+    "reason": "Tumor comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-b35011d5bbb83a51",
+    "disposition": "not_an_outcome",
+    "reason": "Model and dosing context, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-5076126bfcd36521",
+    "disposition": "not_an_outcome",
+    "reason": "Experimental setup, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-2152faf4b7b6614d",
+    "disposition": "unresolved",
+    "reason": "Secondary-tumor comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-8a6b10a6846fa309",
+    "disposition": "unresolved",
+    "reason": "Reported qualitative tumor result lacks a usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-8db00015f31358d1",
+    "disposition": "unresolved",
+    "reason": "Reported qualitative tumor result lacks a usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-b5214a6283fd2e8d",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation that digestive-tract signal is gut contents."
+  },
+  {
+    "candidate_id": "OC-3698f18bef004f7b",
+    "disposition": "unresolved",
+    "reason": "Serum result is outside the extracted hepatocyte experiments."
+  },
+  {
+    "candidate_id": "OC-d5b8b2bc47e261ff",
+    "disposition": "unresolved",
+    "reason": "Serum result is outside the extracted hepatocyte experiments."
+  },
+  {
+    "candidate_id": "OC-d10a17e36a8d32a0",
+    "disposition": "unresolved",
+    "reason": "Lung-metastasis result lacks a usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-e9b802bb0d8c800c",
+    "disposition": "unresolved",
+    "reason": "Spontaneous-HCC result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-638db68febd191fa",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution result has no usable numeric value."
+  },
+  {
+    "candidate_id": "OC-2623599d94a7d60e",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-faa78845363ecaf0",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution result has no usable numeric value."
+  },
+  {
+    "candidate_id": "OC-af998d475785c2e3",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of the F3/F4 distribution finding."
+  },
+  {
+    "candidate_id": "OC-9afe4cec178dfc59",
+    "disposition": "unresolved",
+    "reason": "Liver-cell PD-L1 result is not linked to a specified target cell type."
+  },
+  {
+    "candidate_id": "OC-9cd00f8db7b25012",
+    "disposition": "not_an_outcome",
+    "reason": "Cell-density result and interpretation, not delivery expression outcome."
+  },
+  {
+    "candidate_id": "OC-ce2de3c06dac0313",
+    "disposition": "unresolved",
+    "reason": "Summary interpretation lacks usable values."
+  },
+  {
+    "candidate_id": "OC-be130a2c955ead0b",
+    "disposition": "unresolved",
+    "reason": "Secondary-tumor result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-4fda5466f4a1b88c",
+    "disposition": "unresolved",
+    "reason": "Tumor comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-fda65cbaa1dc0d40",
+    "disposition": "not_an_outcome",
+    "reason": "Rationale for selecting a functional endpoint."
+  },
+  {
+    "candidate_id": "OC-22c6a3379426a8a8",
+    "disposition": "not_an_outcome",
+    "reason": "Abstract-level interpretation without usable result value."
+  },
+  {
+    "candidate_id": "OC-c2173308d4b9dc9b",
+    "disposition": "unresolved",
+    "reason": "Xenograft comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-79c01123bfb9fd67",
+    "disposition": "unresolved",
+    "reason": "Liver-cell PD-L1 result is not linked to a specified target cell type."
+  },
+  {
+    "candidate_id": "OC-5585c3665131c9c6",
+    "disposition": "unresolved",
+    "reason": "Whole-liver signal does not identify a target cell."
+  },
+  {
+    "candidate_id": "OC-1f86aa230eea2dfa",
+    "disposition": "unresolved",
+    "reason": "Whole-liver signal does not identify a target cell."
+  },
+  {
+    "candidate_id": "OC-db7ad83f410ef5aa",
+    "disposition": "unresolved",
+    "reason": "Tumor correlation result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-2b41da7089faf21a",
+    "disposition": "unresolved",
+    "reason": "Tumor correlation result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-ec210798fe5601a0",
+    "disposition": "unresolved",
+    "reason": "Xenograft comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-c962ac4a172bfea5",
+    "disposition": "unresolved",
+    "reason": "Observation lacks a usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-3b9d090c78a1fafa",
+    "disposition": "unresolved",
+    "reason": "Observation lacks a usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-62b35887d2baafde",
+    "disposition": "unresolved",
+    "reason": "Tumor-interior result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-fff703ebbe2af44e",
+    "disposition": "unresolved",
+    "reason": "Tumor correlation result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-2086c33e826594d7",
+    "disposition": "unresolved",
+    "reason": "Tumor correlation result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-e343c1205e8998d7",
+    "disposition": "unresolved",
+    "reason": "Tumor correlation result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-9333deedb233158a",
+    "disposition": "unresolved",
+    "reason": "Tumor correlation result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-5973999c1ad40414",
+    "disposition": "unresolved",
+    "reason": "Confirmation statement provides no usable value."
+  },
+  {
+    "candidate_id": "OC-8ca17f0adde56c50",
+    "disposition": "unresolved",
+    "reason": "Tumor comparison lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-da52b5204614836f",
+    "disposition": "unresolved",
+    "reason": "Xenograft result lacks a separately usable linked experiment record."
+  },
+  {
+    "candidate_id": "OC-bf7b61afb5002f9b",
+    "disposition": "not_an_outcome",
+    "reason": "Model establishment description."
+  },
+  {
+    "candidate_id": "OC-a5a09b0f38c731f6",
+    "disposition": "not_an_outcome",
+    "reason": "Assay rationale, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-1eeb58b3052cd7fb",
+    "disposition": "not_an_outcome",
+    "reason": "Hypothesis about LNP extravasation."
+  },
+  {
+    "candidate_id": "OC-0acd35384f0497ba",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-5068c4e9cf3a34bb",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-13fa607811d50470",
+    "disposition": "unresolved",
+    "reason": "Qualitative fibrosis interpretation lacks a separately usable numeric value."
+  },
+  {
+    "candidate_id": "OC-12b403408c46e1cf",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model description."
+  },
+  {
+    "candidate_id": "OC-7fa110cf43998272",
+    "disposition": "not_an_outcome",
+    "reason": "Fibrosis scoring method/model characterization."
+  },
+  {
+    "candidate_id": "OC-b3cb876e43d0a613",
+    "disposition": "unresolved",
+    "reason": "LDLR result is not a direct LNP delivery outcome."
+  },
+  {
+    "candidate_id": "OC-01ccdc93de318e97",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution result has no usable numeric value."
+  },
+  {
+    "candidate_id": "OC-1eb0177ddb77db8e",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution result has no usable numeric value."
+  },
+  {
+    "candidate_id": "OC-3193df37ffc2d5ef",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic interpretation of expression."
+  },
+  {
+    "candidate_id": "OC-9394a5f0cec55250",
+    "disposition": "unresolved",
+    "reason": "Lung-metastasis result lacks a usable linked experiment record."
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-002",
+  "evidence_view": "structured",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T20:09:17.875610+00:00",
+  "completed_at": "2026-07-28T20:11:08.391203+00:00",
+  "elapsed_seconds": 110.514,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-002-E-39062576eea8789d",
+      "GP-002-E-70f961590d4100fc",
+      "GP-002-E-3b62dd9a6e6a70a1",
+      "GP-002-E-919bac300948d680"
+    ],
+    "explanation": "Original mouse experiments intravenously delivered SM-102 mRNA-LNPs encoding eGFP, with reported eGFP staining in virtually all hepatocytes and linked reporter-expression outcomes. Full lipid composition is not reported in the packet."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 1,
+    "experiments": 2,
+    "outcomes": 5,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 66
+}

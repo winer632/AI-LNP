@@ -56,6 +56,7 @@ paper retrieval
 |---|---|---|
 | Ingestion | `src/rag/ingestion.py`, `src/rag/run_pipeline.py` | Parse papers and retain source coordinates and provenance. |
 | Compact packet | `src/rag/compact_api_packet.py` | Select high-value evidence while recording what the token budget excludes. |
+| Structured packet | `src/rag/structured_compact_packet.py` | Spend the same budget differently: never drop a table, table row or caption, then fill the remainder by retrieval rank. Selected by the `structured_evidence_view` flag, which is on by default. |
 | Complexity | `src/extraction/assess_outcome_complexity.py` | Classify a packet locally before extraction so complex papers receive coverage checking. |
 | First extraction | `src/extraction/run_compact_one_call.py` | Make the first structured extraction call and save its candidate, validation, complexity, and coverage artifacts. |
 | Ordinary validation | `src/extraction/compact_validation.py` | Check schema, identifiers, links, field states, and evidence references. |
@@ -64,7 +65,7 @@ paper retrieval
 | Routing | `src/extraction/route_compact_findings.py` | Separate field errors, missing text outcomes, missing visual outcomes, and ambiguous cases. |
 | Text repair | `run_narrow_repair.py`, `run_missing_record_repair.py` | Repair one bounded field or recover one missing text-supported record. |
 | Vision repair | `build_missing_record_vision_tasks.py`, `run_missing_record_vision.py` | Send only a targeted figure/table image and small context packet for visual recovery. |
-| Merge | `merge_compact_results.py`, `merge_missing_records.py`, `merge_consolidated_gap_results.py` | Merge validated additions without overwriting the original extraction. |
+| Merge | `merge_compact_results.py`, `merge_missing_records.py`, `merge_consolidated_gap_results.py`, `merge_structured_view_pass.py` | Merge validated additions without overwriting the original extraction. |
 | Final evaluation | `src/extraction/evaluate_final_gold_dynamic.py` | Measure one-to-one recovery from the actual merged records. |
 
 No validation or candidate-counting step automatically triggers a paid call.

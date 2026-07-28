@@ -31,7 +31,11 @@ SUMMARY_KEYS = {
     "results",
     "paid_api_requests",
 }
-MISSING_GOLD_OUTCOME_IDS = ["GO-002", "GO-003", "GO-006", "GO-017", "GO-018"]
+# GO-006 left this list when the structured evidence view was wired in: its
+# value (1.01) is a Table S2 cell that the compact packet's ranker dropped, so
+# no packet the pipeline sent had ever contained it. See
+# tests/test_structured_evidence_view.py for the wiring itself.
+MISSING_GOLD_OUTCOME_IDS = ["GO-002", "GO-003", "GO-017", "GO-018"]
 
 
 def _field(value, evidence_ids):
@@ -337,10 +341,23 @@ def test_evaluate_emits_the_full_summary_schema(tmp_path):
 
 def test_recall_regression_is_unchanged_by_the_precision_metrics(tmp_path):
     summary = evaluate(output_root=tmp_path / "out")
-    assert summary["recovered"] == 10
+    assert summary["recovered"] == 11
     assert summary["total"] == 15
-    assert round(summary["rate"], 4) == 0.6667
+    assert round(summary["rate"], 4) == 0.7333
     assert summary["missing_gold_outcome_ids"] == MISSING_GOLD_OUTCOME_IDS
+
+
+def test_recall_is_bought_with_precision_and_the_report_says_so(tmp_path):
+    """Recall alone would hide what an extra extraction stage costs.
+
+    Matching is one-to-one, so a stage that emits more records can raise
+    recall and can only lower precision. Pinning both together stops the
+    headline number from moving without its price being visible: 10/15 at
+    precision 0.3125 became 11/15 at precision 0.2586.
+    """
+    summary = evaluate(output_root=tmp_path / "out")
+    assert round(summary["precision"], 4) == 0.2586
+    assert summary["false_additions"]["count"] == 43
 
 
 def test_summary_records_which_result_roots_it_scored(tmp_path):

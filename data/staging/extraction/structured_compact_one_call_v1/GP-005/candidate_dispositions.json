@@ -1,0 +1,137 @@
+[
+  {
+    "candidate_id": "OC-0f4be59f35687e4f",
+    "disposition": "not_an_outcome",
+    "reason": "This is an incubation-method description, not a reported result."
+  },
+  {
+    "candidate_id": "OC-2415ff8ef701f5db",
+    "disposition": "not_an_outcome",
+    "reason": "This is an in vivo experimental setup, not a reported result."
+  },
+  {
+    "candidate_id": "OC-d462097b2039baa9",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-ecb610021381dd26",
+    "disposition": "not_an_outcome",
+    "reason": "Figure-caption text describes assay setup without a reported result."
+  },
+  {
+    "candidate_id": "OC-5d4b8066ffcb5f67",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-d0cb7a9d4e02e1cb",
+    "disposition": "unresolved",
+    "reason": "A result is reported for HeLa cells, but it lacks evidence relevant to the specified hepatic target cells."
+  },
+  {
+    "candidate_id": "OC-642f98119c1744c1",
+    "disposition": "not_an_outcome",
+    "reason": "Figure-caption text describes flow-cytometry analysis without a reported result."
+  },
+  {
+    "candidate_id": "OC-16670e847db0838c",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-f5f0c57168120096",
+    "disposition": "not_an_outcome",
+    "reason": "This describes the qPCR measurement method, not an uptake result."
+  },
+  {
+    "candidate_id": "OC-d4cf88c36060ca4d",
+    "disposition": "unresolved",
+    "reason": "Low Kupffer-cell translation is reported, but the packet does not provide a usable experiment/formulation link for a separate record."
+  },
+  {
+    "candidate_id": "OC-419fbc601e0d1d52",
+    "disposition": "not_an_outcome",
+    "reason": "This describes assay selection due to autofluorescence, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-610cb2a2a1f11cff",
+    "disposition": "not_an_outcome",
+    "reason": "This is a physicochemical-characterization table heading, not an expression outcome."
+  },
+  {
+    "candidate_id": "OC-23847b1f40f8d0f8",
+    "disposition": "not_an_outcome",
+    "reason": "This reports formulation generation and characterization, not an expression outcome."
+  },
+  {
+    "candidate_id": "OC-c876c3491aa7a76a",
+    "disposition": "not_an_outcome",
+    "reason": "This is a primer-sequence methods table."
+  },
+  {
+    "candidate_id": "OC-3bd6c98e48bb9894",
+    "disposition": "unresolved",
+    "reason": "Gene directions are reported, but a usable named-formulation experiment linkage is absent from the packet."
+  },
+  {
+    "candidate_id": "OC-88bd456605ba8727",
+    "disposition": "not_an_outcome",
+    "reason": "This states the planned categories of gene analysis, not results."
+  },
+  {
+    "candidate_id": "OC-0dda214a0d920829",
+    "disposition": "not_an_outcome",
+    "reason": "This is a figure-caption assay description without reported results."
+  },
+  {
+    "candidate_id": "OC-8ec7e01e4ea07dc2",
+    "disposition": "not_an_outcome",
+    "reason": "This is an siRNA sequence/label table, not a knockdown result."
+  },
+  {
+    "candidate_id": "OC-cfa0eefe0fc5439b",
+    "disposition": "not_an_outcome",
+    "reason": "This reports effects of nocodazole or colchicine, not an LNP delivery outcome."
+  },
+  {
+    "candidate_id": "OC-99f79f569341fa57",
+    "disposition": "unresolved",
+    "reason": "Cell-cycle changes are reported, but the packet lacks a usable direct formulation-experiment linkage for this result."
+  },
+  {
+    "candidate_id": "OC-f61442a2ea35a186",
+    "disposition": "not_an_outcome",
+    "reason": "These are siRNA/table descriptions, not a knockdown result."
+  },
+  {
+    "candidate_id": "OC-1814282fd93847a1",
+    "disposition": "not_an_outcome",
+    "reason": "This is a physicochemical-characterization table heading, not a knockdown result."
+  },
+  {
+    "candidate_id": "OC-68cb6932fdd69017",
+    "disposition": "not_an_outcome",
+    "reason": "This is an incubation-method description, not an uptake result."
+  },
+  {
+    "candidate_id": "OC-076bcabcae72f9dc",
+    "disposition": "not_an_outcome",
+    "reason": "Figure-caption text describes uptake assays without reported values or results."
+  },
+  {
+    "candidate_id": "OC-5600df0e097f196e",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-237e18739cedb8fd",
+    "disposition": "not_an_outcome",
+    "reason": "This is a flow-cytometry assay caption without a reported uptake result."
+  },
+  {
+    "candidate_id": "OC-79d1365295bbc192",
+    "disposition": "not_an_outcome",
+    "reason": "This describes the qPCR measurement method, not an uptake result."
+  }
+]

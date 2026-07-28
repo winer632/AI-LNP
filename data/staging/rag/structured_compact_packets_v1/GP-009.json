@@ -1,0 +1,2415 @@
+{
+  "packet_version": "compact-api-packet-1.0.0",
+  "paper_id": "GP-009",
+  "blocked_fields": [],
+  "sources": [
+    {
+      "source_id": "FC-S-01c469a8a70054b5",
+      "chunk_id": "GP-009-B-96b56347a9b443b3898b",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enhances the efficiency of tLNP-mRNA",
+      "xml_element_id": "p0050"
+    },
+    {
+      "source_id": "FC-S-13c2453a67f0ab25",
+      "chunk_id": "GP-009-B-22e29f4f20949ad3f767",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enhances the efficiency of tLNP-mRNA",
+      "xml_element_id": "p0045"
+    },
+    {
+      "source_id": "FC-S-22d529bcad7df69e",
+      "chunk_id": "GP-009-B-b3c6a348bdb9a18f67a2",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification of LNP-mRNA promotes macrophage evasion in vitro and reduces liver uptake in vivo",
+      "xml_element_id": "p0040"
+    },
+    {
+      "source_id": "FC-S-366f5d781bc239b7",
+      "chunk_id": "GP-009-B-eb1f980c992e40c62461",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47-modified LNP shows mitigated inflammatory effects and altered protein corona",
+      "xml_element_id": "p0065"
+    },
+    {
+      "source_id": "FC-S-42ddd3dadf58369a",
+      "chunk_id": "GP-009-B-49ee87833158afb1a13c",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification of LNP-mRNA promotes macrophage evasion in vitro and reduces liver uptake in vivo",
+      "xml_element_id": "p0030"
+    },
+    {
+      "source_id": "FC-S-5f73792dafe1840b",
+      "chunk_id": "GP-009-B-d7779cf98659033ce724",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47-modified LNP shows mitigated inflammatory effects and altered protein corona",
+      "xml_element_id": "p0075"
+    },
+    {
+      "source_id": "FC-S-80846d6f2f399406",
+      "chunk_id": "GP-009-B-fadbe8eedc98fc1b8b56",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47-modified LNP shows mitigated inflammatory effects and altered protein corona",
+      "xml_element_id": "p0070"
+    },
+    {
+      "source_id": "FC-S-8bf261ce0c6f4bf9",
+      "chunk_id": "GP-009-B-10b694f33e93ecdd8e3a",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enables in vivo depletion of HSCs with HSC-targeted LNP encapsulating apoptotic mRNA by reducing off-target effects",
+      "xml_element_id": "p0055"
+    },
+    {
+      "source_id": "FC-S-8e65bd123c54f293",
+      "chunk_id": "GP-009-B-f4a46f2c1d7faff82f2d",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enables in vivo depletion of HSCs with HSC-targeted LNP encapsulating apoptotic mRNA by reducing off-target effects",
+      "xml_element_id": "p0060"
+    },
+    {
+      "source_id": "FC-S-c3617a4c768bf610",
+      "chunk_id": "GP-009-B-ef720262f939d15704a9",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification of LNP-mRNA promotes macrophage evasion in vitro and reduces liver uptake in vivo",
+      "xml_element_id": "p0035"
+    },
+    {
+      "source_id": "S-053cebd981ad",
+      "chunk_id": "GP-009-B-f4a46f2c1d7faff82f2d",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enables in vivo depletion of HSCs with HSC-targeted LNP encapsulating apoptotic mRNA by reducing off-target effects",
+      "xml_element_id": "p0060"
+    },
+    {
+      "source_id": "S-5959c2241702",
+      "chunk_id": "GP-009-B-0ab517382c58ac59cade",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Materials and methods",
+      "subsection": "Biodistribution studies upon i.v. administration of radiolabeled LNP-mRNA in mice",
+      "xml_element_id": "p0140"
+    },
+    {
+      "source_id": "S-5ebe115b0ae0",
+      "chunk_id": "GP-009-B-ab8882a1b981ca1e4261",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Materials and methods",
+      "subsection": "Determination of in vivo genome editing efficiency of CD47/tLNP-cre mRNA with a Cre/loxP reporter system",
+      "xml_element_id": "p0165"
+    },
+    {
+      "source_id": "S-7570459ac5e8",
+      "chunk_id": "GP-009-B-2bfa3008d66d034eabeb",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "abstract",
+      "section": "Abstract"
+    },
+    {
+      "source_id": "S-7aae26551a0c",
+      "chunk_id": "GP-009-B-96b56347a9b443b3898b",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enhances the efficiency of tLNP-mRNA",
+      "xml_element_id": "p0050"
+    },
+    {
+      "source_id": "S-88f63cfcb565",
+      "chunk_id": "GP-009-B-156f842818690d0fa118",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Materials and methods",
+      "subsection": "LC-MS and proteomic analysis of protein corona",
+      "xml_element_id": "p0190"
+    },
+    {
+      "source_id": "S-8a014e481cef",
+      "chunk_id": "GP-009-B-604d0ca2df84ef026cd6",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Discussion",
+      "xml_element_id": "p0095"
+    },
+    {
+      "source_id": "S-9e76e368bbc7",
+      "chunk_id": "GP-009-B-49ee87833158afb1a13c",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification of LNP-mRNA promotes macrophage evasion in vitro and reduces liver uptake in vivo",
+      "xml_element_id": "p0030"
+    },
+    {
+      "source_id": "S-a03c06945806",
+      "chunk_id": "GP-009-B-b3c6a348bdb9a18f67a2",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification of LNP-mRNA promotes macrophage evasion in vitro and reduces liver uptake in vivo",
+      "xml_element_id": "p0040"
+    },
+    {
+      "source_id": "S-a24541e32acc",
+      "chunk_id": "GP-009-B-22e29f4f20949ad3f767",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enhances the efficiency of tLNP-mRNA",
+      "xml_element_id": "p0045"
+    },
+    {
+      "source_id": "S-b3343bea3b40",
+      "chunk_id": "GP-009-B-c58f5edde39a14dc223b",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Materials and methods",
+      "subsection": "Biodistribution of radiolabeled CD47/LNP-mRNA in C57BL/6J mice and luciferase mRNA translation activity in mouse tissues",
+      "xml_element_id": "p0150"
+    },
+    {
+      "source_id": "S-b75d3cf9da27",
+      "chunk_id": "GP-009-B-84eb14e581c14ad1f1c0",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Introduction",
+      "xml_element_id": "p0020"
+    },
+    {
+      "source_id": "S-c70de42ee360",
+      "chunk_id": "GP-009-B-86a95568fde13d11f3f6",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Materials and methods",
+      "subsection": "Determination of in vivo genome editing efficiency of CD47/tLNP-cre mRNA with a Cre/loxP reporter system",
+      "xml_element_id": "p0170"
+    },
+    {
+      "source_id": "S-d337c34d26d8",
+      "chunk_id": "GP-009-B-4fa2c357441218cb1448",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Discussion",
+      "xml_element_id": "p0080"
+    },
+    {
+      "source_id": "S-d3e28c9b4ba4",
+      "chunk_id": "GP-009-B-10b694f33e93ecdd8e3a",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47 modification enables in vivo depletion of HSCs with HSC-targeted LNP encapsulating apoptotic mRNA by reducing off-target effects",
+      "xml_element_id": "p0055"
+    },
+    {
+      "source_id": "S-d92aaf994660",
+      "chunk_id": "GP-009-B-48e8ab0430a6fb05190a",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Introduction",
+      "xml_element_id": "p0010"
+    },
+    {
+      "source_id": "S-ee7ba9da8cdb",
+      "chunk_id": "GP-009-B-eb1f980c992e40c62461",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47-modified LNP shows mitigated inflammatory effects and altered protein corona",
+      "xml_element_id": "p0065"
+    },
+    {
+      "source_id": "S-f21f9a348ced",
+      "chunk_id": "GP-009-B-d7779cf98659033ce724",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00186_PMC12265960.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "Results",
+      "subsection": "CD47-modified LNP shows mitigated inflammatory effects and altered protein corona",
+      "xml_element_id": "p0075"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-009-E-0001b0d0cd967cda",
+      "text": "LNP-mRNA platform technology may still face clinical barriers when it comes to systemic delivery of mRNA therapeutics.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d337c34d26d8"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-0165074d308c3b22",
+      "text": "The homogenates were then subjected to cycles of freeze/thaw in dry ice/37°C and centrifuged for 10 min at 16,000 × g at 4°C.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-01aa009037cd4bdb",
+      "text": "Nevertheless, the GFP+ cells constitute only a minor fraction (∼0.5%), which could be attributed to the incomplete depletion of the recipient’s HSC and the equal competence (if not higher) of the remaining recipient HSCs and the transferred HSCs.",
+      "retrieval_field_tags": [
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-053cebd981ad"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-01dbe2227ef33502",
+      "text": "Unreacted radiolabeled materials were subsequently removed via G-25 Sephadex Quick Spin Protein Columns (Roche).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-02b711ce9bc976a8",
+      "text": "Data are represented as mean (SD).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9e76e368bbc7"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-02e9c6f3fbca50b0",
+      "text": "As a result, our platform significantly enhances the bioavailability of mRNA cargoes to the intended targeted cells, thereby improving the efficacy of mRNA delivery and reducing unwanted off-target effects.",
+      "retrieval_field_tags": [
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-8a014e481cef"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-03629c6dd83f9ed0",
+      "text": "Peripheral blood mononuclear cell (PBMC) recruitment is an indicator of inflammatory stimuli.24 To test whether CD47-modified LNP-mRNA are less inflammatory than unmodified LNPs, we compared PBMC counts in mice treated with either unmodified LNP-mRNA or CD47/LNP-mRNA after i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-036d65844e64a7ab",
+      "text": "At T = 4 h, mice were treated with 0.3 mg/kg unmodified LNP-mRNA or CD47/LNP-mRNA i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-03ef0f86d9857a8f",
+      "text": "At 24 h after treatment, we imaged the cells and found that cells transfected with CD47/LNP-GFP showed a substantial decrease in GFP expression, suggesting that CD47 modification reduced macrophage uptake of LNP-mRNA (Figure 1C, two center panels).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-9e76e368bbc7"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-043448a041295c3a",
+      "text": "Lipid nanoparticle encapsulating messenger RNA (LNP-mRNA) has emerged as a promising tool for therapeutic gene delivery in applications such as in vivo chimeric antigen receptor T (CAR-T) cell production and in vivo hematopoietic stem cell (HSC) gene editing.1,2,3 However, despite the tremendous success of LNP-mRNA technology for vaccine applications, this system still faces challenges in achieving sufficient dosages for extrahepatic applications in vivo, largely due to the innate immune response and phagocytic uptake of LNP-mRNA by cells of the mononuclear phagocytic system (MPS).4 Furthermore, while LNP-mRNA are still in the bloodstream, they naturally bind to serum proteins such as apolipoprotein E (ApoE) to form a protein corona, which promotes their uptake by the liver hepatocytes through the low-density lipoprotein receptor (LDLR) classical pathway.5,6 Although beneficial for hepatic delivery of therapeutics,7,8 this liver tropism poses a challenge for efficient delivery of LNP-mRNA therapies to non-liver cells in vivo.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d92aaf994660"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-045e25b5aed24b3e",
+      "text": "Additionally, CD47-modified LNPs showed diminished inflammatory effects on hepatic tissue and an altered protein corona.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7570459ac5e8"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-078cfd59833ea494",
+      "text": "In parallel, to test whether CD47 modification can enhance delivery of aCD4/tLNP that targets CD4+ T cells,2,11,20,21,22 we first injected 10 μg aCD4/tLNP-Luc or CD47+aCD4/tLNP-Luc into the mice i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-080e1ddae2f0afb8",
+      "text": "LNP-mRNA was radiolabeled with Na125I using iodination beads (Pierce) as previously described.11 The reaction was performed for 15 min at room temperature.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-0a141230afc73d92",
+      "text": "These data indicate that CD47-modified LNP-mRNA are less inflammatory compared to unmodified LNP-mRNA.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_before_evidence_id": "GP-009-E-986908f4181b8614",
+      "context_after_evidence_id": "GP-009-E-de310f77672b8fc2"
+    },
+    {
+      "evidence_id": "GP-009-E-0ad195735271c822",
+      "text": "Semi-specific cleavage with trypsin was selected, with a maximum of two missed cleavages.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-0c3fa6fbdfb8bd66",
+      "text": "In the corona of CD47-modified LNP, apolipoproteins Apoa2 and Apoe were significantly less abundant, with an Apoe Z score of −0.04 in the CD47-modified LNP compared to 1.02 in the unmodified LNP.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f21f9a348ced"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-0d83dce1702c41a1",
+      "text": "To evaluate tissue specificity and in vivo targeting efficiency of CD47/tLNP-mRNA, we sought to target lung endothelium using anti-CD31 antibody, as previously reported.11 First, anti-mouse CD31 antibody was conjugated to CD47/LNP-Luc (Figure 2A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_before_evidence_id": "GP-009-E-aa0e1062c5278862"
+    },
+    {
+      "evidence_id": "GP-009-E-0dd99ecc75498c2b",
+      "text": "(C) Ai6 mice bearing a Cre/loxP reporter system that induces ZsGreen expression upon Cre recombination to produce ZsGreen+ HSCs.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_after_evidence_id": "GP-009-E-fd3c5b18917729ef"
+    },
+    {
+      "evidence_id": "GP-009-E-0de852b454c12544",
+      "text": "The Apoe is known to promote hepatic uptake of LNP through binding to LDLRs on liver cells and facilitate clearance of LNP from the bloodstream into the liver.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-f21f9a348ced"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-10b2e56663ac700c",
+      "text": "A beneficial aspect of the LNP-mRNA platform is the modular nature of LNP composition and surface modification.",
+      "retrieval_field_tags": [
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b75d3cf9da27"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-12733ee4503bca31",
+      "text": "Mice treated with aCD4/tLNP-ZsGreen showed an average of 46.6% ZsGreen+ in CD4+ T cells, which increased to 51.1% with the addition of the CD47 peptide (Figures 2H and 2I), indicating that CD47 modification enhances CD4+ T cell targeting.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ],
+      "context_after_evidence_id": "GP-009-E-38bfa352c52e31f8"
+    },
+    {
+      "evidence_id": "GP-009-E-12b9611cce51af59",
+      "text": "under isoflurane anesthesia).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ],
+      "context_before_evidence_id": "GP-009-E-bff4de6fffb5b4fe"
+    },
+    {
+      "evidence_id": "GP-009-E-165f8fff28d5d9d2",
+      "text": "Log rank test; ∗∗p < 0.01.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-19f7baab14ded306",
+      "text": "Cell pellets underwent 1–2 RBC lysis cycles with ammonium-chloride-potassium (ACK) buffer, followed by ice-cold 2% FACS washes.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-c70de42ee360"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-1a7b94033095ebf6",
+      "text": "Samples were injected into the Thermo Orbitrap Exploris 240 (Thermo Fisher) by nanoflow LC using an Ultimate 3000 chromatography system (Thermo Fisher).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ],
+      "context_after_evidence_id": "GP-009-E-5c6e30b757db6280"
+    },
+    {
+      "evidence_id": "GP-009-E-1b34e93429910f4b",
+      "text": "(H) ZsGreen expression in splenic CD4+ T cells (CD3+CD8−) isolated from mice 24 h post-treatment with either 1 μg CD47+aCD4/tLNP-ZsGreen or aCD4/tLNP-ZsGreen i.v.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_after_evidence_id": "GP-009-E-f29ac23713ac7e2a"
+    },
+    {
+      "evidence_id": "GP-009-E-1cc8d9e7a291bd2b",
+      "text": "(B) LPS was administered i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-1e48dc52cc5f8d84",
+      "text": "and then measured luciferase expression in the liver and spleen.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ],
+      "context_after_evidence_id": "GP-009-E-99d46b26172e4daf"
+    },
+    {
+      "evidence_id": "GP-009-E-21a03b605457dc3f",
+      "text": "Radioactivity values and weight of the samples were then used to calculate targeting parameters of the LNPs, including tissue uptake as a percentage of %ID/g tissue and LR as an organ-to-blood ratio.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ],
+      "context_after_evidence_id": "GP-009-E-99c4ae6d7d270783"
+    },
+    {
+      "evidence_id": "GP-009-E-325002ed130c098e",
+      "text": "When aCD117 was added to the surface of LNPs, CD47 modification not only reduced luciferase expression in liver but also enhanced expression in the BM (Figure 3B).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-35c4b3ae9df85b52"
+    },
+    {
+      "evidence_id": "GP-009-E-342829d7c2de1b8b",
+      "text": "Animals were sacrificed at T = 4 h post-injection, and their blood was collected from the inferior vena cava.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-34c399d9d1b379ca",
+      "text": "To assess whether elevated lung uptake reflects an enhanced delivery to the lung CD31+ endothelial cells, we injected 1 μg aCD31/tLNP-ZsGreen or CD47+aCD31/tLNP-ZsGreen into the mice i.v.; then, we harvested and dissociated lungs 24 h post-treatment to measure ZsGreen expression in CD45−CD31+ endothelial cells.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_after_evidence_id": "GP-009-E-37e4ee60508b53b9"
+    },
+    {
+      "evidence_id": "GP-009-E-35c4b3ae9df85b52",
+      "text": "IgG/tLNP), but without luciferase expression in the BM.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-c08c59def2816517",
+      "context_after_evidence_id": "GP-009-E-325002ed130c098e"
+    },
+    {
+      "evidence_id": "GP-009-E-37a6050fc600e5c2",
+      "text": "Two-sided Student’s t test; ∗p < 0.05; ∗∗p < 0.01.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-37e4ee60508b53b9",
+      "text": "Mice treated with aCD31/tLNP-ZsGreen showed an average of 8.3% ZsGreen+ in the CD45−CD31+ population, which significantly increased to 17.0% with the addition of the CD47 peptide (Figures 2D and 2E), indicating that CD47 modification enhances endothelial cell targeting.Figure 2CD47 modification enhances endothelial and T cell-targeting efficiency(A) Schematic of conjugating anti-CD31 or anti-CD4 antibodies to CD47/LNP-mRNA for enhanced targeting to endothelial cells or CD4+ T cells.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_before_evidence_id": "GP-009-E-34c399d9d1b379ca",
+      "context_after_evidence_id": "GP-009-E-5f6a9dab7814bbed"
+    },
+    {
+      "evidence_id": "GP-009-E-38bfa352c52e31f8",
+      "text": "In summary, these data suggest that co-decorating antibody-modified targeted LNP with CD47 peptide have the potential to enhance the efficiency of targeted delivery.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ],
+      "context_before_evidence_id": "GP-009-E-12733ee4503bca31"
+    },
+    {
+      "evidence_id": "GP-009-E-3bbaee631de171d1",
+      "text": "We found that the PBMC counts from CD47/LNP-mRNA-treated mice are comparable to those of untreated mice (∼5E+6 vs.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-3ddda81e6c05fca0",
+      "text": "Four hours later, the organs were harvested and prepared for imaging (Figure 1I).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a03c06945806"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-3e0a7667a93f4a0b",
+      "text": "Tissue radioactivity in organs and 100-μL blood samples was measured in a Wallac 1470 gamma counter (Wizard).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702",
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-40bada8f0136da9c",
+      "text": "at 2 mg/kg to induce systemic inflammation.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-4a7af178cb988700",
+      "text": "ELISA assays showed a significantly lower IL-6 level in the serum of CD47/LNP-mRNA-treated mice compared to those treated with unmodified LNP-mRNA (Figure 4B), further suggesting that CD47-modified LNP-mRNA is less inflammatory.Figure 4Effect of CD47 modification on total liver transcriptome and protein corona composition(A) PBMC count/mL from PB at T = 24 h post-injection of unmodified LNP-mRNA or CD47/LNP-mRNA.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_before_evidence_id": "GP-009-E-de310f77672b8fc2"
+    },
+    {
+      "evidence_id": "GP-009-E-54e492e537741a26",
+      "text": "To quantitatively assess the difference of tissue uptake of tLNP with vs.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-5aa97a14bdcdd27e",
+      "text": "Then, we performed IVIS bioluminescence imaging of harvested tissues from mice treated with 10 μg aCD31/tLNP-Luc or CD47+aCD31/tLNP-Luc.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-5c29dade95736079",
+      "text": "Compared with aCD117/tLNP-Cre, CD47-modified tLNPs yielded significantly higher ZsGreen+ proportion in the Lin−Sca1+CD117+ HSCs, boosting ∼3-fold from 6.9% to 22.2% (Figures 3D and 3E).Figure 3CD47 modification combined with aCD117/tLNP containing Puma mRNA reduces off-target Puma-induced toxicity and enables bone marrow transplantation (BMT)(A) CD47-modified aCD117/tLNP-Puma for in vivo HSC depletion with reduced off-target Puma-induced toxicity.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-5c6e30b757db6280",
+      "text": "MS data were acquired on a Thermo Orbitrap Exploris 240.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ],
+      "context_before_evidence_id": "GP-009-E-1a7b94033095ebf6"
+    },
+    {
+      "evidence_id": "GP-009-E-5efc0390aa8cf4f8",
+      "text": "(H) Percentage of GFP+ engrafted cells in granulocytes and RBC populations of the PB 2 weeks after BMT.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-dc8c1b31783f5058"
+    },
+    {
+      "evidence_id": "GP-009-E-5f4f034f02e67ab1",
+      "text": "(E) Quantification of ZsGreen+ percentage in HSCs (n = 3).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-fd3c5b18917729ef"
+    },
+    {
+      "evidence_id": "GP-009-E-5f6a9dab7814bbed",
+      "text": "(B) IVIS bioluminescence imaging of mice treated with either CD47+aCD31/tLNP-Luc or aCD31/tLNP-Luc, measured at T = 4 h.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_before_evidence_id": "GP-009-E-37e4ee60508b53b9"
+    },
+    {
+      "evidence_id": "GP-009-E-62166e16e6093fa7",
+      "text": "At T = 24 h, animals were euthanized, femurs were removed, and BM was processed to a single cell suspension for flow cytometric analysis.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-699781acf7bf9ebd",
+      "text": "injected with 10 μg unmodified LNP-Luc or CD47/LNP-Luc.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a03c06945806"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-6c5070a0a7ef71ad",
+      "text": "(F) Kaplan-Meier survival analysis of mice treated with 1 μg CD47+aCD117/LNP-Puma (n = 7).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-6e3f276531062d8c",
+      "text": "In the CD47-modified group, the liver showed a ∼3-fold decrease in luciferase activity, and the spleen showed a ∼2-fold decrease, as measured by total flux photons per second (p/s) (Figure 1J).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a03c06945806"
+      ],
+      "context_after_evidence_id": "GP-009-E-85539a8b80b03f0d"
+    },
+    {
+      "evidence_id": "GP-009-E-747188a181a8c7c7",
+      "text": "For radiolabeled biodistribution, organs were blotted dry and weighed individually.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-7751cdab01fb3099",
+      "text": "Luciferase activity was then measured in the supernatant using a Victor 3 1420 Multilabel Plate Counter (PerkinElmer).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-7b0190a2139ad350",
+      "text": "Lyophilized samples were resuspended in 0.2% trifluoroacetic acid and desalted.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ],
+      "context_before_evidence_id": "GP-009-E-97798de9327f392e"
+    },
+    {
+      "evidence_id": "GP-009-E-7b85771784e0df39",
+      "text": "(F) IVIS bioluminescence imaging of mice treated with either CD47+aCD4/tLNP-Luc or aCD4/tLNP, measured at T = 4 h.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-7e03dfea66ff772b",
+      "text": "(C) Total flux (p/s) quantification of respective organ ROI.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-85539a8b80b03f0d",
+      "text": "These data suggest that CD47 modification reduces mRNA delivery and expression to the liver and spleen.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a03c06945806"
+      ],
+      "context_before_evidence_id": "GP-009-E-6e3f276531062d8c"
+    },
+    {
+      "evidence_id": "GP-009-E-87fd8cfdbb16d712",
+      "text": "Data are represented as mean (SEM).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc",
+        "S-d3e28c9b4ba4",
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-8ca59ad96af2a4ae",
+      "text": "A fixed modification of carbamidomethylation (+57.02 Da) on cysteine residues was specified.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-8dce5c6f595a71a6",
+      "text": "Absolute abundance in LC-MS is normalized by Z score, and the heatmap was generated by the ComplexHeatmap, with rows clustered by Pearson correlation.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-9161ca3b1c9610bd",
+      "text": "To further evaluate the delivery efficiency of CD47+aCD117/tLNP to HSCs at the cellular level in vivo, we administered 1 μg CD47+aCD117/tLNP-Cre or aCD117/tLNP-Cre to Ai6 mice, which contain a loxP reporter system to express ZsGreen upon Cre-mediated recombination (Figure 3C).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-92b049371341a29a",
+      "text": "At T = 8 h, serum was processed, and IL-6 concentration was measured by ELISA analysis.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-97798de9327f392e",
+      "text": "Digested samples were lyophilized.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ],
+      "context_after_evidence_id": "GP-009-E-7b0190a2139ad350"
+    },
+    {
+      "evidence_id": "GP-009-E-97dabe900635ab84",
+      "text": "C57BL/6J mice were administered radiolabeled Na125I LNP-Luc.2,11,12 At T = 4 h post-injection, animals were euthanized, and selected organs (liver, spleen, lung, kidneys, and heart) were harvested, rinsed with PBS, or stored at −80°C until analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-986908f4181b8614",
+      "text": "In contrast, PBMC counts from unmodified LNP-mRNA-treated mice showed a 10-fold increase (∼3E+7 cells/mL) (Figure 4A) when compared to untreated mice.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_before_evidence_id": "GP-009-E-d0b02ea14f6e52d2",
+      "context_after_evidence_id": "GP-009-E-0a141230afc73d92"
+    },
+    {
+      "evidence_id": "GP-009-E-98c6359d55227a25",
+      "text": "When thawed, tissue samples were homogenized in appropriate volumes of cell lysis buffer (1×) (Promega) containing protease inhibitor cocktail (1×) and mixed gently at 4°C for 1 h.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-99c4ae6d7d270783",
+      "text": "These parameters were employed to examine the pharmacokinetics of biodistribution and effectiveness of antibody-targeted formulation uptake in desired tissue.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ],
+      "context_before_evidence_id": "GP-009-E-21a03b605457dc3f"
+    },
+    {
+      "evidence_id": "GP-009-E-99d46b26172e4daf",
+      "text": "We found enhanced mRNA expression in the spleen and reduced mRNA expression in the liver in mice injected with CD47+aCD4/tLNP-Luc (Figures 2F and 2G).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ],
+      "context_before_evidence_id": "GP-009-E-1e48dc52cc5f8d84",
+      "context_after_evidence_id": "GP-009-E-c0fe4e1ea3549d30"
+    },
+    {
+      "evidence_id": "GP-009-E-a1611fa237a13491",
+      "text": "The CD47-modified LNP-Luc group demonstrated a boosted luciferase expression in the lung and a reduced expression in liver and spleen (Figures 2B and 2C).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-a1fe97d08a9ef307",
+      "text": "injected into Ai6 mice, which contain a loxP reporter system to express ZsGreen upon Cre-mediated recombination.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5ebe115b0ae0"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-a38079370516ab35",
+      "text": "In our prior study, we showcased using aCD117/tLNP-Puma mRNA for in vivo HSC depletion,3 which could overcome the adverse side effects associated with conventional approaches (i.e., chemotherapy, radiation).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_after_evidence_id": "GP-009-E-d9ac04e0922fd353"
+    },
+    {
+      "evidence_id": "GP-009-E-a45033f02b5983cb",
+      "text": "After centrifugation and removal of supernatant, BM cells were resuspended in FACS buffer and were stained with Live/Dead Aqua cell stain (Thermo Fisher) and anti-mouse antibodies for flow cytometry analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-c70de42ee360"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-a6c16344106fdc42",
+      "text": "Each end of the bone was cut with dissection scissors, and BM was flushed with fluorescence-activated cell sorting (FACS) buffer and passed through a 70-μm filter.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-c70de42ee360"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-aa0e1062c5278862",
+      "text": "Conjugating cell-targeting antibodies to LNP-mRNA to yield tLNP-mRNA has been demonstrated as an effective approach for tissue- or cell-specific delivery of mRNAs.2,3,11,12,18,19 As CD47 modification reduces liver uptake, we hypothesize that incorporating CD47 modification into tLNPs (CD47/tLNP-mRNA) could augment targeted delivery of mRNA.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_after_evidence_id": "GP-009-E-0d83dce1702c41a1"
+    },
+    {
+      "evidence_id": "GP-009-E-af36d37e50bf10a2",
+      "text": "Mice were i.v.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a03c06945806"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-b30ec97297726a5b",
+      "text": "without CD47, we measured the luciferase activity per milligram protein in the desired organs and found lung-specific luciferase expression increased from 1.5E+6 LU/mg protein in the unmodified group to 2E+6 LU/mg protein in the CD47-modified group, demonstrating a ∼33% enhancement; in contrast, liver and spleen uptake was significantly reduced in the CD47-modified group (Figure S2).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-b617efc5d5301385",
+      "text": "(C) RNA-seq analysis of liver tissues from mice treated with unmodified LNP-mRNA (NP0), CD47/LNP-mRNA (NP1), and scrambled peptide/LNP-mRNA (NP2), compared with untreated (n = 3).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_after_evidence_id": "GP-009-E-e64fdae1ef568383"
+    },
+    {
+      "evidence_id": "GP-009-E-b959877b38e954fa",
+      "text": "(B) IVIS imaging of liver, spleen, and BM 4 h after treating mice with 1 μg of either control IgG/LNP-Luc, CD47+IgG/LNP-Luc, aCD117/tLNP-Luc, or CD47+aCD117/tLNP-Luc.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-b97a5efafb4b7d5f",
+      "text": "To further assess how CD47 modification affects LNP-mRNA biodistribution and protein expression, we generated CD47-modified LNP-luciferase mRNA (CD47/LNP-Luc) for in vivo imaging system (IVIS) bioluminescence analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a03c06945806"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-bbd50fb138cd8132",
+      "text": "Radiolabeled LNP-mRNAs were administered by i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-bcbc2cab619cb52c",
+      "text": "To explore this hypothesis, we first asked whether CD47 modification could reduce the liver uptake of aCD117/tLNP-mRNA while preserving its ability to target the BM.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-d9ac04e0922fd353"
+    },
+    {
+      "evidence_id": "GP-009-E-bce8941e51be1df0",
+      "text": "(D) Flow cytometry analysis of ZsGreen expression in CD31+ endothelial cells isolated from the lungs of mice 24 h post-treatment with either 1 μg CD47+aCD31/tLNP-ZsGreen or aCD31/tLNP-ZsGreen intravenously (i.v.).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_after_evidence_id": "GP-009-E-d2e289046fcd2cb2"
+    },
+    {
+      "evidence_id": "GP-009-E-bff4de6fffb5b4fe",
+      "text": "retro-orbital injection in C57BL/6 mice under isoflurane anesthesia (all injection treatments were performed i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ],
+      "context_after_evidence_id": "GP-009-E-12b9611cce51af59"
+    },
+    {
+      "evidence_id": "GP-009-E-c08c59def2816517",
+      "text": "In the absence of HSCs-targeting element aCD117, CD47 modification potently reduced liver expression of luciferase (CD47+immunoglobulin G (IgG)/tLNP vs.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_after_evidence_id": "GP-009-E-35c4b3ae9df85b52"
+    },
+    {
+      "evidence_id": "GP-009-E-c0fe4e1ea3549d30",
+      "text": "To directly evaluate the T cell-targeting efficiency of CD47-modified tLNP, we injected 1 μg CD47+aCD4/tLNP-ZsGreen or unmodified aCD4/tLNP-ZsGreen into the mice i.v.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ],
+      "context_before_evidence_id": "GP-009-E-99d46b26172e4daf"
+    },
+    {
+      "evidence_id": "GP-009-E-c2f341da98d30f08",
+      "text": "The false discovery rate (FDR) threshold was set to 1% for the database search.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-c4445ee4a597488d",
+      "text": "The data were searched against the mouse Uniprot-reviewed database.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-c95a7e75befc47be",
+      "text": "MS RAW files were processed using PEAKS Studio (version 10, Bioinformatics Solutions).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-cae780f26b582fe1",
+      "text": "Depleting existing HSCs is a prerequisite for standard bone marrow transplant (BMT) therapy.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-ccf489c573155816",
+      "text": "Organs (liver, spleen, lung, kidney, and heart) were harvested, rinsed with phosphate-buffered saline (PBS), blotted dry, and weighed individually.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5959c2241702"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-cea73d64da5727e2",
+      "text": "Protein coronas were reduced with 10 mM DTT (Sigma-Aldrich) alkylated with 20 mM iodoacetamide (Sigma-Aldrich) chloroform/methanol precipitated and digested with trypsin (Promega).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-d0b02ea14f6e52d2",
+      "text": "∼3E+6 PBMC/mL).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_after_evidence_id": "GP-009-E-986908f4181b8614"
+    },
+    {
+      "evidence_id": "GP-009-E-d2e289046fcd2cb2",
+      "text": "(E) Quantification of ZsGreen+ percentage within CD31+ lung endothelial cells (n = 2 for untreated, n = 5 for other groups).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_before_evidence_id": "GP-009-E-bce8941e51be1df0"
+    },
+    {
+      "evidence_id": "GP-009-E-d466bffcc4cd6893",
+      "text": "and harvested the spleen 24 h after the flow cytometry analysis of ZsGreen expression in T cells.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-7aae26551a0c"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-d4f226eb979fc258",
+      "text": "(G) Total flux (p/s) quantification of respective organ ROI.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-d9ac04e0922fd353",
+      "text": "Despite the potent depletion of HSCs with aCD117/tLNP-Puma, this agent also caused toxicity due to off-target uptake by the liver.23 We hypothesize that incorporating CD47 modification on the aCD117/tLNP-Puma would diminish Puma-induced liver toxicity while retaining its HSC depletion function (Figure 3A).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-a38079370516ab35",
+      "context_after_evidence_id": "GP-009-E-bcbc2cab619cb52c"
+    },
+    {
+      "evidence_id": "GP-009-E-dc8c1b31783f5058",
+      "text": "(G) Percentage of GFP+ engrafted cells in CD45+, CD19+, CD3+, and Gr1+ populations of the PB after 4 months of BMT.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_after_evidence_id": "GP-009-E-5efc0390aa8cf4f8"
+    },
+    {
+      "evidence_id": "GP-009-E-de310f77672b8fc2",
+      "text": "Our previous work showed that LNP-mRNA administration exaggerates pre-existing inflammation.16 To further test whether CD47-modified LNP-mRNA are less inflammatory than unmodified LNP-mRNA, we treated mice with lipopolysaccharide (LPS) to induce an inflammatory state, followed by the administration of CD47/LNP-mRNA or unmodified LNP-mRNA; then, we assessed the level of pro-inflammatory cytokine interleukin-6 (IL-6) in the serum.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_before_evidence_id": "GP-009-E-0a141230afc73d92",
+      "context_after_evidence_id": "GP-009-E-4a7af178cb988700"
+    },
+    {
+      "evidence_id": "GP-009-E-e0564dff0ee41c89",
+      "text": "Two-sided Student’s t test; ∗p < 0.05.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-e2b7b4b4bd4a579d",
+      "text": "To trace mRNA expression in bone marrow (BM), 24 h post-tLNP-Cre treatment, mice were euthanized, femurs were dislodged, and connective tissues were removed with 70% ethanol.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-c70de42ee360"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-e3adfaeab369e5da",
+      "text": "administration of LNP-mRNA was traced through single-cell flow cytometry analysis, as reported previously.1,2,3 LNP-Cre was i.v.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5ebe115b0ae0"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-e64fdae1ef568383",
+      "text": "(D) LC-MS-based proteomic heatmap analysis of protein coronas formed with scrambled peptide/LNP-mRNA, unmodified LNP-mRNA, or CD47/LNP-mRNA.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ],
+      "context_before_evidence_id": "GP-009-E-b617efc5d5301385"
+    },
+    {
+      "evidence_id": "GP-009-E-e8be3ab1ca5f393b",
+      "text": "For luciferase activity, tissues were frozen at −80°C.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-b3343bea3b40"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-f286beb760865183",
+      "text": "injection.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-ee7ba9da8cdb"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-f29ac23713ac7e2a",
+      "text": "(I) Quantification of ZsGreen+ percentage within splenic CD4+ T cells (n = 2 for untreated, n = 4 for other groups).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "experiment_boundary",
+        "outcomes",
+        "payload",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a24541e32acc"
+      ],
+      "context_before_evidence_id": "GP-009-E-1b34e93429910f4b"
+    },
+    {
+      "evidence_id": "GP-009-E-f5ceb75fa7506c3e",
+      "text": "Two-sided Student’s t test; ∗∗∗p < 0.001.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-f9490f2d4ef8e0c5",
+      "text": "To assess delivery efficiency to targeted cell populations, mRNA expression upon i.v.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5ebe115b0ae0"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-f99dc7940a94fc13",
+      "text": "Variable modifications of deamidation (+0.98 Da) on asparagine and glutamine and oxidation (15.99 Da) on methionine were specified.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-88f63cfcb565"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-fd388f96c72c290a",
+      "text": "We injected 1 μg of aCD117/tLNP-Luc or CD47+aCD117/tLNP-Luc in the mice and then imaged luciferase biodistribution in the liver and whole-femur BM using IVIS.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-E-fd3c5b18917729ef",
+      "text": "(D) ZsGreen expression in HSCs from Ai6 mice 24 h post-treatment with 1 μg CD47+aCD117/tLNP-Cre or aCD117/tLNP-Cre.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-d3e28c9b4ba4"
+      ],
+      "context_before_evidence_id": "GP-009-E-0dd99ecc75498c2b",
+      "context_after_evidence_id": "GP-009-E-5f4f034f02e67ab1"
+    },
+    {
+      "evidence_id": "GP-009-FC-055b0ae4cd858d07",
+      "text": "The differential gene expression analysis indicates a significant downregulation of 30 genes, ranging from −18.40 to −2.11-fold in CD47/LNP-mRNA-treated and untreated mice compared to unmodified LNP-mRNA-treated mice (Figure 4C).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-80846d6f2f399406"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-0db26254b0433529",
+      "text": "Eight genes belong to the acute phase response (APR) pro-inflammatory protein family, including Saa3,25 Timp1,26 Plscr1,27 Cxcl9,28 Cd14,29 Hamp,30 Hpx,31 and Serpina10.32 Notably, the most differentially expressed gene, Saa3, which is downregulated by a fold change of −18.40 (p = 1E−7) in the CD47-modified group, is a murine APR apolipoprotein gene produced in hepatic or extrahepatic tissues and responds to systemic pro-inflammatory stimulation.33,34 Other genes, including Gbp2,35 Gbp6,36 Bmper,37 and Id1,38 involved in phagocytosis, autophagy, and endocytosis, were also significantly downregulated in the CD47-modified group.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-80846d6f2f399406"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-0f8015794d447b74",
+      "text": "We found that incorporation of the CD47 peptide did not significantly increase the size of the LNP (Figure 1B, 76.8 ± 0.4 vs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-10aceafc231416ea",
+      "text": "35%, ∗∗p < 0.01).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-1620b109da21c7ec",
+      "text": "Principal-component analysis39 showed that the CD47-modified group clustered close to the untreated mice compared to the unmodified LNP-mRNA group (Figure S3).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-80846d6f2f399406"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-236478d3388ca0cb",
+      "text": "In parallel, to test whether CD47 modification can enhance delivery of aCD4/tLNP that targets CD4+ T cells,2,11,20,21,22 we first injected 10 μg aCD4/tLNP-Luc or CD47+aCD4/tLNP-Luc into the mice i.v.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01c469a8a70054b5"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-24b201934b313fd8",
+      "text": "and then measured luciferase expression in the liver and spleen.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01c469a8a70054b5"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-258060b4572ac970",
+      "text": "To quantitatively assess the difference of tissue uptake of tLNP with vs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-2cc8eb8485fe4b9f",
+      "text": "At 24 h after treatment, we imaged the cells and found that cells transfected with CD47/LNP-GFP showed a substantial decrease in GFP expression, suggesting that CD47 modification reduced macrophage uptake of LNP-mRNA (Figure 1C, two center panels).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-2f77a4dac6e48aab",
+      "text": "Four hours later, the organs were harvested and prepared for imaging (Figure 1I).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-22d529bcad7df69e"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-317a72a68067ed1d",
+      "text": "In summary, these data suggest that co-decorating antibody-modified targeted LNP with CD47 peptide have the potential to enhance the efficiency of targeted delivery.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01c469a8a70054b5"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-332fd0ccec69487d",
+      "text": "Mice treated with aCD31/tLNP-ZsGreen showed an average of 8.3% ZsGreen+ in the CD45−CD31+ population, which significantly increased to 17.0% with the addition of the CD47 peptide (Figures 2D and 2E), indicating that CD47 modification enhances endothelial cell targeting.Figure 2CD47 modification enhances endothelial and T cell-targeting efficiency(A) Schematic of conjugating anti-CD31 or anti-CD4 antibodies to CD47/LNP-mRNA for enhanced targeting to endothelial cells or CD4+ T cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-33594e289892f555",
+      "text": "The CD47-modified LNP-Luc group demonstrated a boosted luciferase expression in the lung and a reduced expression in liver and spleen (Figures 2B and 2C).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-429d536046aec420",
+      "text": "These data suggest that CD47 modification reduces mRNA delivery and expression to the liver and spleen.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-22d529bcad7df69e"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-455fcd703653c47f",
+      "text": "To evaluate how CD47 modification affects the biodistribution of LNP-mRNA in vivo, we radiolabeled unmodified LNP-mRNA and CD47/LNP-mRNA with Na125I for particle biodistribution analysis (Figure 1F).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c3617a4c768bf610"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-4570c48270aaa7a2",
+      "text": "Tissue uptake is indicated as mean (SEM) (n = 3).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-484f4b75cfc6c0a8",
+      "text": "To explore this hypothesis, we first asked whether CD47 modification could reduce the liver uptake of aCD117/tLNP-mRNA while preserving its ability to target the BM.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-4b272770d9468b09",
+      "text": "We identified a total of 41 proteins that were differentially adsorbed among the LNP-mRNA groups (Figure 4D).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5f73792dafe1840b"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-58cf763891313678",
+      "text": "Compared to mice treated with unmodified aCD117/tLNP-Puma (1 μg), those treated with CD47+aCD117/tLNP-Puma exhibited a substantially higher survival rate 7 days after treatment (Figure 3F; 100% vs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-595b95628f92c606",
+      "text": "In the absence of HSCs-targeting element aCD117, CD47 modification potently reduced liver expression of luciferase (CD47+immunoglobulin G (IgG)/tLNP vs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-5e3670c877f7ca3d",
+      "text": "When aCD117 was added to the surface of LNPs, CD47 modification not only reduced luciferase expression in liver but also enhanced expression in the BM (Figure 3B).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-5eefbd8a1f07af11",
+      "text": "To further assess how CD47 modification affects LNP-mRNA biodistribution and protein expression, we generated CD47-modified LNP-luciferase mRNA (CD47/LNP-Luc) for in vivo imaging system (IVIS) bioluminescence analysis.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-22d529bcad7df69e"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-5f1b9a2208e777e7",
+      "text": "(H) Localization ratio as %ID/g in selected organs in mice treated with unmodified LNP-mRNA or CD47/LNP-mRNA normalized to blood levels.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-6dda0c6aaadf336e",
+      "text": "Four months post-BMT, mice preconditioned with CD47+aCD117/tLNP-Puma resulted in prominently higher GFP expression in the CD45+, CD19+, CD3+, and GR1+ blood-derived monocyte populations, compared to those preconditioned with aCD117/tLNP-Puma (Figure 3G), suggesting a higher HSC depletion efficacy with CD47+aCD117/tLNP-Puma.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-77af7ac2944acc87",
+      "text": "Despite the potent depletion of HSCs with aCD117/tLNP-Puma, this agent also caused toxicity due to off-target uptake by the liver.23 We hypothesize that incorporating CD47 modification on the aCD117/tLNP-Puma would diminish Puma-induced liver toxicity while retaining its HSC depletion function (Figure 3A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-7b5a2eeffa07745b",
+      "text": "LR measures the organ-to-blood ratio of LNP uptake, allowing for a comparison of biodistribution while accounting for differences in blood clearance.11,12 The LR of unmodified LNP-mRNA compared to CD47/LNP-mRNA was significantly higher in the liver by ∼23-fold and in the spleen by ∼11-fold (Mann-Whitney U test, ∗∗p < 0.01).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c3617a4c768bf610"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-7cfab98c133a9e2d",
+      "text": "The Apoe is known to promote hepatic uptake of LNP through binding to LDLRs on liver cells and facilitate clearance of LNP from the bloodstream into the liver.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5f73792dafe1840b"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-7d9f713a9ff8dd16",
+      "text": "Additionally, CD47/LNP-mRNA-treated mice exhibited a ∼6-fold decrease in liver uptake and a ∼3-fold decrease in spleen uptake compared to those treated with unmodified LNP-mRNA (Figure 1G).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c3617a4c768bf610"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-8081253e0621098f",
+      "text": "Mice treated with aCD4/tLNP-ZsGreen showed an average of 46.6% ZsGreen+ in CD4+ T cells, which increased to 51.1% with the addition of the CD47 peptide (Figures 2H and 2I), indicating that CD47 modification enhances CD4+ T cell targeting.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01c469a8a70054b5"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-85388b2dfd5a8ac6",
+      "text": "Nevertheless, the GFP+ cells constitute only a minor fraction (∼0.5%), which could be attributed to the incomplete depletion of the recipient’s HSC and the equal competence (if not higher) of the remaining recipient HSCs and the transferred HSCs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-86e9cdce825f4801",
+      "text": "Nonetheless, we demonstrated that CD47 modification is a promising strategy to reduce the Puma-induced liver toxicity by using aCD117/tLNP-Puma for preconditioning of BMT.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-8719bb1d89ec748b",
+      "text": "(H) ZsGreen expression in splenic CD4+ T cells (CD3+CD8−) isolated from mice 24 h post-treatment with either 1 μg CD47+aCD4/tLNP-ZsGreen or aCD4/tLNP-ZsGreen i.v.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-87df5e2edea07a45",
+      "text": "Compared with aCD117/tLNP-Cre, CD47-modified tLNPs yielded significantly higher ZsGreen+ proportion in the Lin−Sca1+CD117+ HSCs, boosting ∼3-fold from 6.9% to 22.2% (Figures 3D and 3E).Figure 3CD47 modification combined with aCD117/tLNP containing Puma mRNA reduces off-target Puma-induced toxicity and enables bone marrow transplantation (BMT)(A) CD47-modified aCD117/tLNP-Puma for in vivo HSC depletion with reduced off-target Puma-induced toxicity.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-89837e0ee08a925b",
+      "text": "ELISA assays showed a significantly lower IL-6 level in the serum of CD47/LNP-mRNA-treated mice compared to those treated with unmodified LNP-mRNA (Figure 4B), further suggesting that CD47-modified LNP-mRNA is less inflammatory.Figure 4Effect of CD47 modification on total liver transcriptome and protein corona composition(A) PBMC count/mL from PB at T = 24 h post-injection of unmodified LNP-mRNA or CD47/LNP-mRNA.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-366f5d781bc239b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-89ea6943d800748c",
+      "text": "We first modified the surface of LNP-mRNA with CD47 peptide to generate CD47/LNP-mRNA (Figure 1A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-8f0d3e1fb7bc4ef8",
+      "text": "We found enhanced mRNA expression in the spleen and reduced mRNA expression in the liver in mice injected with CD47+aCD4/tLNP-Luc (Figures 2F and 2G).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01c469a8a70054b5"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-9248e7533b7fbffa",
+      "text": "Next, we assessed the localization ratio (LR) in the liver, spleen, lung, kidney, and heart (Figure 1H).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c3617a4c768bf610"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-973e023eacdbe2bd",
+      "text": "These data indicate that the impact of CD47 peptide on LNP uptake is largely through the CD47-SIRP-α interaction.Figure 1CD47/LNP-mRNA evades macrophage recognition in vitro and liver uptake in vivo(A) Schematic of decorations of LNP-mRNA with CD47 peptide.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-a1bf6a818e57e2cb",
+      "text": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was performed by incubating the cells with 20 μg/mL SIRP-α blockade antibody in full medium for 2 h at 37°C before the LNP treatment.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-aa032774df05ec0c",
+      "text": "To assess whether elevated lung uptake reflects an enhanced delivery to the lung CD31+ endothelial cells, we injected 1 μg aCD31/tLNP-ZsGreen or CD47+aCD31/tLNP-ZsGreen into the mice i.v.; then, we harvested and dissociated lungs 24 h post-treatment to measure ZsGreen expression in CD45−CD31+ endothelial cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-adf0cd7525ab8059",
+      "text": "The reduction of GFP expression was partially reversed by SIRP-α blockade (Figure 1C, right panel).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-af06072ff95e570a",
+      "text": "without CD47, we measured the luciferase activity per milligram protein in the desired organs and found lung-specific luciferase expression increased from 1.5E+6 LU/mg protein in the unmodified group to 2E+6 LU/mg protein in the CD47-modified group, demonstrating a ∼33% enhancement; in contrast, liver and spleen uptake was significantly reduced in the CD47-modified group (Figure S2).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-b185ecc022dc58e4",
+      "text": "Indeed, when we analyzed the percentage of GFP+ blood cells at a much earlier time point (2 weeks post-BMT) compared to the 4-month time point, we observed a higher percentage of GFP+ granulocytes (∼1.5%) and a comparable percentage of GFP+ red blood cells (RBCs) in mice preconditioned with CD47+aCD117/tLNP-Puma (Figure 3H).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-b1ba40b3f831c3d3",
+      "text": "(D) Flow cytometry analysis of ZsGreen expression in CD31+ endothelial cells isolated from the lungs of mice 24 h post-treatment with either 1 μg CD47+aCD31/tLNP-ZsGreen or aCD31/tLNP-ZsGreen intravenously (i.v.).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-b3905634223db0ca",
+      "text": "Further quantitative analysis with flow cytometry showed that while CD47 peptide incorporation significantly reduced GFP mean fluorescence intensity (MFI) by 75% (6,419 vs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-b650fbd75eb441a1",
+      "text": "The number of CD47 peptides per LNP was calculated as 8.9 (±0.5), and the grafting efficiency was calculated as 89.4% (Figure S1).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-b6c21460605d9ba1",
+      "text": "(D) ZsGreen expression in HSCs from Ai6 mice 24 h post-treatment with 1 μg CD47+aCD117/tLNP-Cre or aCD117/tLNP-Cre.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-bfcafc4aa04300f1",
+      "text": "IgG/tLNP), but without luciferase expression in the BM.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-c01510a4baf69d89",
+      "text": "To further evaluate the delivery efficiency of CD47+aCD117/tLNP to HSCs at the cellular level in vivo, we administered 1 μg CD47+aCD117/tLNP-Cre or aCD117/tLNP-Cre to Ai6 mice, which contain a loxP reporter system to express ZsGreen upon Cre-mediated recombination (Figure 3C).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-c19a78ff3660f781",
+      "text": "In the CD47-modified group, the liver showed a ∼3-fold decrease in luciferase activity, and the spleen showed a ∼2-fold decrease, as measured by total flux photons per second (p/s) (Figure 1J).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-22d529bcad7df69e"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-c34d745143f8cd91",
+      "text": "In contrast, PBMC counts from unmodified LNP-mRNA-treated mice showed a 10-fold increase (∼3E+7 cells/mL) (Figure 4A) when compared to untreated mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-366f5d781bc239b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-c6ddbc3cac00a252",
+      "text": "To evaluate tissue specificity and in vivo targeting efficiency of CD47/tLNP-mRNA, we sought to target lung endothelium using anti-CD31 antibody, as previously reported.11 First, anti-mouse CD31 antibody was conjugated to CD47/LNP-Luc (Figure 2A).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-c9fc6f3b3423c2b5",
+      "text": "In accordance, Apoc3 and Apoc4, which act as antagonists to Apoe and inhibit liver uptake of triglyceride-rich lipoproteins via LDLRs, were found to be elevated in the protein corona of CD47-modified LNP.44,45,46,47,48,49 Notably, CD47/LNP-mRNA also shows an increased affinity for serum albumin (Albu), the most abundant plasma protein that has been shown to increase the retention of LNPs in the bloodstream, with a Z score of 1.11 compared to −0.28 in unmodified LNP.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5f73792dafe1840b"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-cdcf45e311a26eeb",
+      "text": "(D) The GFP expression level in each indicated group.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-42ddd3dadf58369a"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-d5dc22c9544a8e69",
+      "text": "Conjugating cell-targeting antibodies to LNP-mRNA to yield tLNP-mRNA has been demonstrated as an effective approach for tissue- or cell-specific delivery of mRNAs.2,3,11,12,18,19 As CD47 modification reduces liver uptake, we hypothesize that incorporating CD47 modification into tLNPs (CD47/tLNP-mRNA) could augment targeted delivery of mRNA.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-13c2453a67f0ab25"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-d64a3aae8ade8745",
+      "text": "The decreased interaction with Apoe and increased binding to Albu may underlie the reduced liver uptake of CD47-modified LNP-mRNA, as shown in Figures 1F–1J.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5f73792dafe1840b"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-d993b19ccf87c9ab",
+      "text": "We further asked whether the reduction in liver uptake by CD47 modification is sufficient to mitigate the Puma-induced toxicity of aCD117/tLNP-Puma.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8e65bd123c54f293"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-dac0ebb0043cfa4b",
+      "text": "These in vivo results indicate that CD47 modification reduces hepatic and splenic uptake of LNPs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c3617a4c768bf610"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-dbf6e81c18a677c4",
+      "text": "(F) Kaplan-Meier survival analysis of mice treated with 1 μg CD47+aCD117/LNP-Puma (n = 7).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-e1779fc0832cb0b4",
+      "text": "Together, these RNA-seq data indicate that CD47-modified LNP-mRNA reduces acute inflammatory responses in the liver.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-80846d6f2f399406"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-e29cf9a50bccbe47",
+      "text": "(C) Ai6 mice bearing a Cre/loxP reporter system that induces ZsGreen expression upon Cre recombination to produce ZsGreen+ HSCs.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bf261ce0c6f4bf9"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-eaaa62e3ef386b75",
+      "text": "In per gram of blood, CD47/LNP-mRNA-treated mice showed a retention rate of ∼20% of the injected dosage (ID/g), compared to only about 4% ID/g in unmodified LNP-mRNA-treated mice.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c3617a4c768bf610"
+      ]
+    },
+    {
+      "evidence_id": "GP-009-FC-f746a7e6ca16adea",
+      "text": "and harvested the spleen 24 h after the flow cytometry analysis of ZsGreen expression in T cells.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-01c469a8a70054b5"
+      ]
+    }
+  ],
+  "packet_checksum": "6bcf642f30b4cb5085afc44da8b55e43d3e1aab23b2f358f0ba0bc1f8824e3d3"
+}

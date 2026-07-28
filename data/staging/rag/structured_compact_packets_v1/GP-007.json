@@ -1,0 +1,3299 @@
+{
+  "packet_version": "compact-api-packet-1.0.0",
+  "paper_id": "GP-007",
+  "blocked_fields": [],
+  "sources": [
+    {
+      "source_id": "FC-S-0035254609a7a376",
+      "chunk_id": "GP-007-B-ac4375f245d679a66356",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-04c98d00b3557fd0",
+      "chunk_id": "GP-007-B-63086436c76d795dba73",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-05591a305f972bc5",
+      "chunk_id": "GP-007-B-eeb67200fec02cc7fe15",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-06ce707ed64fb6bf",
+      "chunk_id": "GP-007-B-13babcc1a53ce9f6d979",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18
+    },
+    {
+      "source_id": "FC-S-0861d88fa4e462b2",
+      "chunk_id": "GP-007-B-e6ed3ea279dce552388d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-0c2d0c9400aa7397",
+      "chunk_id": "GP-007-B-df20c829f7c9cadbd018",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 20
+    },
+    {
+      "source_id": "FC-S-0cf7bb4333a2bca4",
+      "chunk_id": "GP-007-B-3192120baa12ba73599f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-0e27feaf78756cf4",
+      "chunk_id": "GP-007-B-134742e51fbd2ba22b18",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-12713aac838af2c7",
+      "chunk_id": "GP-007-B-7ad4f9d7eac5025243e2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-149ac8ecc5a608a5",
+      "chunk_id": "GP-007-B-74879972a76181346bf7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-1a737d12b4f963f6",
+      "chunk_id": "GP-007-B-716982d1e6a62839804f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-1b88bc9449bb625c",
+      "chunk_id": "GP-007-B-3b7bbfada645789aa567",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-245fbe2f85545a45",
+      "chunk_id": "GP-007-B-ea84f3d745321e36ab90",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 11,
+      "figure_number": "Figure S2"
+    },
+    {
+      "source_id": "FC-S-26ab1380971a1b27",
+      "chunk_id": "GP-007-B-dbb94978823b234d8941",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-294d82b7f72e88b8",
+      "chunk_id": "GP-007-B-d35c5cdb929b2d13f3b1",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-2a27368c9f0c5924",
+      "chunk_id": "GP-007-B-50e7c7026e7a51a1f025",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-2c4b44c766d9a4d8",
+      "chunk_id": "GP-007-B-f3e940e4b8b6b3e5de69",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 20
+    },
+    {
+      "source_id": "FC-S-2c54d58b6aac612b",
+      "chunk_id": "GP-007-B-86f65fd3309bf2c446bb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-2c8a281c5f87f8c3",
+      "chunk_id": "GP-007-B-7cf362ce21636569d143",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-33c28b602df46392",
+      "chunk_id": "GP-007-B-e0dba2b1f3f2982a7578",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-393422425bca08ae",
+      "chunk_id": "GP-007-B-d5699755b556bc857cd2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18
+    },
+    {
+      "source_id": "FC-S-3b442ffc401ea0b9",
+      "chunk_id": "GP-007-B-f774493d9af0cf6b1840",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-3cb0adc6186cc8d9",
+      "chunk_id": "GP-007-B-070f4979d3b954f939e7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12,
+      "figure_number": "Figure S3"
+    },
+    {
+      "source_id": "FC-S-3d7a29a8eac8e1bd",
+      "chunk_id": "GP-007-B-69b5c21500d01f400bb9",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18
+    },
+    {
+      "source_id": "FC-S-40295372dfc681b7",
+      "chunk_id": "GP-007-B-46bdef8ad24e885678a8",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-4707e808758e3c70",
+      "chunk_id": "GP-007-B-aa6b2f93a094747bbb51",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-4eaaa7e39c65fedb",
+      "chunk_id": "GP-007-B-8278a9f28755cee82f59",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16,
+      "figure_number": "Figure S5"
+    },
+    {
+      "source_id": "FC-S-5278358f14c89a6f",
+      "chunk_id": "GP-007-B-2b5d42af89621e6b781f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 24,
+      "figure_number": "Figure S9"
+    },
+    {
+      "source_id": "FC-S-55a6a5bfcb5d6328",
+      "chunk_id": "GP-007-B-5d3fe30bd7334ba673e0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-582b543c4a1f52cf",
+      "chunk_id": "GP-007-B-b1ee75d606e80e8a2bdf",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-58eeb599fca37dc9",
+      "chunk_id": "GP-007-B-ec16638ffd8184dc43be",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-5e0940288f687041",
+      "chunk_id": "GP-007-B-45651d7432a311dbed77",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 20,
+      "figure_number": "Figure S7"
+    },
+    {
+      "source_id": "FC-S-5e642eb38b42f3b7",
+      "chunk_id": "GP-007-B-e6eb5aa07c2688958c3d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-60ae538e7e4bf40d",
+      "chunk_id": "GP-007-B-497d3c16b38368d49176",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 24
+    },
+    {
+      "source_id": "FC-S-613c5f2b1ad4e388",
+      "chunk_id": "GP-007-B-0ed40632ad24bca2c7be",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/PMC13137855.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.7 The anti-HIRI properties of acteoside can be partially improved with the specific inhibition of Micu1 in livers"
+    },
+    {
+      "source_id": "FC-S-636b49f41741cbd2",
+      "chunk_id": "GP-007-B-f3f7a13b8e620be92a67",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-63e54b92eb50ca2d",
+      "chunk_id": "GP-007-B-668a08dd6dc94e964a54",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-6542b73aaeb6967d",
+      "chunk_id": "GP-007-B-c4979e7a2abc03047063",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-65ce38a1a5dfc6ad",
+      "chunk_id": "GP-007-B-f147e8b7d224e8709382",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-6940ea312e5eaed8",
+      "chunk_id": "GP-007-B-de8b6a108f65eb46e705",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-6a3707e857bd51a3",
+      "chunk_id": "GP-007-B-2067087a19cf88b3c964",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "paragraph",
+      "section": "Supplement",
+      "subsection": "1.2 Bioinformatic analysis of HIRI-related genes",
+      "page_number": 3
+    },
+    {
+      "source_id": "FC-S-6a70b3e7ea5fe7a0",
+      "chunk_id": "GP-007-B-33bb68a370f5a9dbfdfb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 20
+    },
+    {
+      "source_id": "FC-S-6e66841a34ea73ca",
+      "chunk_id": "GP-007-B-6e7700d50d94adbd2799",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-770a55938fe2460a",
+      "chunk_id": "GP-007-B-717eefc16add7f366603",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-77905fbf29b1ea9d",
+      "chunk_id": "GP-007-B-eb10962f4594fc4b4195",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-7cb5dc0d798701a1",
+      "chunk_id": "GP-007-B-0da5f045aad9db78e200",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-7d7d64265e8d0ab9",
+      "chunk_id": "GP-007-B-2d5dd6aae8bff4d25eb5",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18
+    },
+    {
+      "source_id": "FC-S-805ae4b7d67c0c06",
+      "chunk_id": "GP-007-B-f88cd3dfc39463efc095",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-8315eb2158b6f28d",
+      "chunk_id": "GP-007-B-efdb0896b31d7d9bb5c8",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18,
+      "figure_number": "Figure S6"
+    },
+    {
+      "source_id": "FC-S-85f0dff1f2337411",
+      "chunk_id": "GP-007-B-57251cdc1f66622550b0",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-8bba9b1a38a8457a",
+      "chunk_id": "GP-007-B-1e1331e112d4e09d7587",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-8c21e72e0b6e47f4",
+      "chunk_id": "GP-007-B-416cd5d3c631b1e0fd12",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-937e00ad2e9dda30",
+      "chunk_id": "GP-007-B-23f299ad32fdaeb28cc2",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-952c99106477be82",
+      "chunk_id": "GP-007-B-b3c53392b196e7ec5ceb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 20
+    },
+    {
+      "source_id": "FC-S-9d065c4c285fa59a",
+      "chunk_id": "GP-007-B-0a649e4c314da1168c0c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "caption",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-9f3c0d671f1a58c8",
+      "chunk_id": "GP-007-B-e6aaceb4f2ddc3a6706c",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-a02788a536e0efcf",
+      "chunk_id": "GP-007-B-7d51907fd96934223087",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-a4a966ac705741d5",
+      "chunk_id": "GP-007-B-0c925a100a3e1063f628",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 20
+    },
+    {
+      "source_id": "FC-S-a8d4324d640c8f2e",
+      "chunk_id": "GP-007-B-8805469d9c737f6b3846",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18
+    },
+    {
+      "source_id": "FC-S-aceae0396357e657",
+      "chunk_id": "GP-007-B-1ed84694532460cf0532",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14
+    },
+    {
+      "source_id": "FC-S-b006fa8fb998a5d9",
+      "chunk_id": "GP-007-B-021ba9369fd2bdbd7799",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 10,
+      "figure_number": "Figure S1"
+    },
+    {
+      "source_id": "FC-S-b01e02e8610f7bb5",
+      "chunk_id": "GP-007-B-c224b8c0e4b1aa7479a7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-b4dcebbeb0b9ce6c",
+      "chunk_id": "GP-007-B-97ba8c95f32f7f2e25b4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-b536aac36395578d",
+      "chunk_id": "GP-007-B-0440281343df9c82d69e",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-beef6cdb66af8711",
+      "chunk_id": "GP-007-B-641cffdc78ad678843a6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 18
+    },
+    {
+      "source_id": "FC-S-c017dda5ee49a2b7",
+      "chunk_id": "GP-007-B-e88f30415f8e0ff7caca",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-c70f179bf78e88b8",
+      "chunk_id": "GP-007-B-61f5f633b47a5939b315",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 14,
+      "figure_number": "Figure S4"
+    },
+    {
+      "source_id": "FC-S-c89b41659edb57c4",
+      "chunk_id": "GP-007-B-ec1a675bdef782065263",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22
+    },
+    {
+      "source_id": "FC-S-cc6c5e1a5c52b33f",
+      "chunk_id": "GP-007-B-cb318e61377356aa4a57",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-d04e9c5354cdeff4",
+      "chunk_id": "GP-007-B-50118b143b170d1203e4",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-d48141e255fbbdc9",
+      "chunk_id": "GP-007-B-8be9aeb899228af7cedc",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "FC-S-d88f150157f852a5",
+      "chunk_id": "GP-007-B-f8f65eb99b682e46dfce",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/PMC13137855.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.5 Acteoside inhibits Micu1 transcription by suppressing H3K18 lactylation in LSECs"
+    },
+    {
+      "source_id": "FC-S-d9468045728f8a66",
+      "chunk_id": "GP-007-B-aeaf2af8b58dd3fe176d",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 22,
+      "figure_number": "Figure S8"
+    },
+    {
+      "source_id": "FC-S-e7b9b7d4936a9eea",
+      "chunk_id": "GP-007-B-cf992b9a6892b19da1eb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/PMC13137855.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.8 MICU1 overexpression in LSECs or the hydroxyl structures at C26/C27/C40/C41 sites determines the protective effects of acteoside on Ca2+ homeostasis and glycolytic flux"
+    },
+    {
+      "source_id": "FC-S-eb4e087fb5e5586d",
+      "chunk_id": "GP-007-B-f0a996e79056a8a6dea7",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-eed6320d3341d5e5",
+      "chunk_id": "GP-007-B-5ebd5c7079788d9a1292",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/PMC13137855.nxml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.1 ER homeostasis and respiratory-related metabolic processes at the crux of acteoside in improving HIRI"
+    },
+    {
+      "source_id": "FC-S-ef9b05bd4715dfaf",
+      "chunk_id": "GP-007-B-ad9f315cb6edc50ec2ee",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 11
+    },
+    {
+      "source_id": "FC-S-f9b9ac9887f411cc",
+      "chunk_id": "GP-007-B-d7cfd55561a1c6702d3f",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 26
+    },
+    {
+      "source_id": "FC-S-f9e8040d4e8dbdef",
+      "chunk_id": "GP-007-B-50f0c6512b840a8feedb",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 16
+    },
+    {
+      "source_id": "FC-S-fbab1deca32574c3",
+      "chunk_id": "GP-007-B-bc3f788ef7363506eda6",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "figure",
+      "section": "Supplement",
+      "subsection": "2. Supplementary figures and legends",
+      "page_number": 12
+    },
+    {
+      "source_id": "FC-S-ffcb1aae802541ff",
+      "chunk_id": "GP-007-B-b0e2fcdd97121863ab62",
+      "source_path": "data/raw/fulltext/oa_packages/PMC13137855/ijbsv22p4074s1.pdf",
+      "source_kind": "uniparse",
+      "block_type": "table_row",
+      "section": "Supplement",
+      "subsection": "3. Supplementary table",
+      "page_number": 25,
+      "table_number": "Table S1"
+    },
+    {
+      "source_id": "S-058b0130bbe0",
+      "chunk_id": "GP-007-B-283e6f030a38d3022469",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "4. Discussion"
+    },
+    {
+      "source_id": "S-16590d293dec",
+      "chunk_id": "GP-007-B-afe3c2418e4a7b10bbd3",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "2. Materials and Methods",
+      "subsection": "2.1 Preparation and characterization of lipid nanoparticles (LNPs)-siMicu1"
+    },
+    {
+      "source_id": "S-1c9cad17b225",
+      "chunk_id": "GP-007-B-5ec35e24e75ea3a7a5fe",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.5 Acteoside inhibits Micu1 transcription by suppressing H3K18 lactylation in LSECs"
+    },
+    {
+      "source_id": "S-5c830a9bf9f6",
+      "chunk_id": "GP-007-B-65a1a1f25898312d9e3d",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.8 MICU1 overexpression in LSECs or the hydroxyl structures at C26/C27/C40/C41 sites determines the protective effects of acteoside on Ca2+ homeostasis and glycolytic flux"
+    },
+    {
+      "source_id": "S-61913a7ecabf",
+      "chunk_id": "GP-007-B-8599e83c4522d99b0e4c",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.4 Acteoside inhibits Ca2+-stimulated glycolysis by directly interacting with and blocking MICU1"
+    },
+    {
+      "source_id": "S-a14bc582d102",
+      "chunk_id": "GP-007-B-b8d813db658609311712",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "2. Materials and Methods",
+      "subsection": "2.2 Construction of Micu1-overexpressing (oeMicu1) AAV8 virus targeting LSECs"
+    },
+    {
+      "source_id": "S-a30755f5ac7a",
+      "chunk_id": "GP-007-B-6034885f5bf556e4b97d",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.8 MICU1 overexpression in LSECs or the hydroxyl structures at C26/C27/C40/C41 sites determines the protective effects of acteoside on Ca2+ homeostasis and glycolytic flux"
+    },
+    {
+      "source_id": "S-a9ed7e20aed2",
+      "chunk_id": "GP-007-B-0ef97e4964610fb21e53",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.1 ER homeostasis and respiratory-related metabolic processes at the crux of acteoside in improving HIRI"
+    },
+    {
+      "source_id": "S-df884e684b2b",
+      "chunk_id": "GP-007-B-631d8164f58b691ffe60",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.3 Acteoside inhibits the overflow of Ca2+ from the ER to mitochondria and LSECs damage by influencing MICU1-regulated IP3R-VDAC1-MCU axis"
+    },
+    {
+      "source_id": "S-e259b5f9d750",
+      "chunk_id": "GP-007-B-7ef36aee0f638302754d",
+      "source_path": "data/raw/fulltext/gold_v1/xml/candidate_00167_PMC13137855.xml",
+      "source_kind": "pmc_xml",
+      "block_type": "paragraph",
+      "section": "3. Results",
+      "subsection": "3.2 Acteoside enhances ER function before restoring mitochondrial homeostasis in LSECs damaged by hypoxia"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-007-E-00359f01083ff77b",
+      "text": "The IVIS in vivo imaging system (PerkinElmer, Hopkinton) was employed to capture fluorescence signal images of living mice and various organs (heart, liver, spleen, lung and kidney) at 0, 2, 4 and 6 h post-injection.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-027f7dd947f25b84",
+      "text": "Following the overexpression of Micu1 in LSECs (Figure S8C), we observed an increased ratio of spleen to body weight (Figure S8D) and a high intensity of green fluorescence in the hepatic sinusoids of mice treated with HIRI + AAV8-Stab2-oeMicu1 (Figure 8C).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_before_evidence_id": "GP-007-E-0448683433f82222",
+      "context_after_evidence_id": "GP-007-E-cbb728756a80c83f"
+    },
+    {
+      "evidence_id": "GP-007-E-0448683433f82222",
+      "text": "Utilizing this optimized promoter, we designed an AAV8 vector (AAV8-Stab2-oeMicu1) to specifically deliver Micu1 to LSECs and injected it into mice 2 weeks prior to HIRI surgery with or without ACT administration (Figure 8B and Figure S8B).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_before_evidence_id": "GP-007-E-c14c55fc63e06d91",
+      "context_after_evidence_id": "GP-007-E-027f7dd947f25b84"
+    },
+    {
+      "evidence_id": "GP-007-E-04f9a07464a47a60",
+      "text": "Considering the results in Figure 2, we focused on the changes in genes related to the transfer process of substances between ER and mitochondria in primary LSECs and preliminarily confirmed the involvement of Ca2+ but no other signals in ACT-induced protective effects.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-05c7cce3b9de4638",
+      "text": "We then validated the anti-HIRI effects of ACT in animal experiments and whether they were consistent with clinically relevant phenomena.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-0720c2e2ecd6f9df",
+      "text": "Furthermore, in contrast to the typical liver pathological manifestations observed in the HIRI group, the ischemic area (indicated by a dotted line) in all ACT groups exhibited notable improvement (Figure 1C).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-075a5d52c30b7e29",
+      "text": "The signals of enriched H3K18la in the promoter regions of Vdac1, Mcu and Micu1 were observed in Figure 5L and Figure S5G.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_before_evidence_id": "GP-007-E-337e17330e94d2ec",
+      "context_after_evidence_id": "GP-007-E-1e306063f58c4428"
+    },
+    {
+      "evidence_id": "GP-007-E-099b46dd770a49c6",
+      "text": "The Lys/Arg loop of MICU1 could form a “cap” structure that stabilized its binding to the D261 loop of MCU through hydrogen bonds, hydrophobic/π-stacking interactions, and helix dipole interactions 34.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-0fee58b9e45f1eb4",
+      "text": "Therefore, it is necessary to find safer and more effective inhibitors to regulate excessive Ca2+ influx.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ],
+      "context_before_evidence_id": "GP-007-E-2c317bd7c6145680"
+    },
+    {
+      "evidence_id": "GP-007-E-0ffb308f4724320a",
+      "text": "Concurrently, ACT alleviated the accumulation of lactic acid and the insufficient supply of ATP caused by HIRI (Figure 4A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_before_evidence_id": "GP-007-E-6be2abee251630f5"
+    },
+    {
+      "evidence_id": "GP-007-E-13b1891b19e75479",
+      "text": "(2) ACT-d2 was removed all active hydroxyls groups (Figure 8H, left panel).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ],
+      "context_after_evidence_id": "GP-007-E-b28314b6caaa75f7"
+    },
+    {
+      "evidence_id": "GP-007-E-1e29ca7755ded607",
+      "text": "Concurrently, the accumulation of lactate, a by-product of glycolysis, was associated with an increase in intracellular Ca2+ (Figure 5C, Figure S5B) and induced Ca2+ channel protein expression on the ER-mitochondrial axis (Figure S5C).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_before_evidence_id": "GP-007-E-5a5c8908d5d1a041",
+      "context_after_evidence_id": "GP-007-E-8e627575f92dd385"
+    },
+    {
+      "evidence_id": "GP-007-E-1e306063f58c4428",
+      "text": "The enrichment of H3K18la at the promoter regions of Vdac1 and Micu1 was less prominent after ACT intervention.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_before_evidence_id": "GP-007-E-075a5d52c30b7e29",
+      "context_after_evidence_id": "GP-007-E-c213d4c2bdca23d2"
+    },
+    {
+      "evidence_id": "GP-007-E-22cfbaa31b595562",
+      "text": "These results validated that the modified ACT derivative (ACT-d1), which retained hydroxyls at C26, C27, C40 and C41 positions, enhanced the regulatory effects of ACT on MICU1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ],
+      "context_before_evidence_id": "GP-007-E-a71d6e121d0b456d",
+      "context_after_evidence_id": "GP-007-E-943b02ca44db408c"
+    },
+    {
+      "evidence_id": "GP-007-E-25a2eec2632e4292",
+      "text": "Most recently, another natural ingratiate berberine was reported to directly bind to the juxtamembrane loop domain of MCU and disrupt MCU-EMRE assembly against mitochondrial Ca2+ overload 35.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-2656636b76824f7a",
+      "text": "As shown in Figure 3F upper panel and Figure S3D and S3E, ACT-reversible increases in both ER-mitochondria co-localization and Rhod-2M labeled mitochondrial Ca2+ were observed after HR stimulation.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ],
+      "context_after_evidence_id": "GP-007-E-3092adb8699af0e5"
+    },
+    {
+      "evidence_id": "GP-007-E-28435cadaf1bd24d",
+      "text": "However, the interaction patterns and target cells of the signaling network associated with Ca2+-centered ER dysfunction and glycolysis-dominated respiratory-related metabolic processes in sinusoidal space of HIRI and ACT-treated groups remain unclear and requires further investigation.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ],
+      "context_before_evidence_id": "GP-007-E-d29682fc00b10032"
+    },
+    {
+      "evidence_id": "GP-007-E-2c317bd7c6145680",
+      "text": "However, it may negatively impact mitochondrial membrane potential and inhibit muscle cell growth 33.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ],
+      "context_before_evidence_id": "GP-007-E-db33e382436485dc",
+      "context_after_evidence_id": "GP-007-E-0fee58b9e45f1eb4"
+    },
+    {
+      "evidence_id": "GP-007-E-2caaa6ad6c7ed227",
+      "text": "Although the key interaction site of MICU1 with MCU (Y114) differs from the sites where ACT interacts with MICU1 (S155, I156, T209, H315), further studies are necessary to determine whether hypoxic stress stimulates the conformational rearrangement of MICU1, preventing its binding to MCU, and whether ACT regulates Ca2+ by stabilizing the inhibitory dimer of MICU1 or further disrupting MICU1-MCU-EMRE assembly.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-2e47c211348d2674",
+      "text": "Notably, the term “Generation of metabolites and energy” emerged as a key enriched term following ACT administration, suggesting that the positive response of ACT to LSECs energy metabolism might stem from the perturbation of ER dysfunction, further influencing the mitochondrial-dominated energy metabolism process (Figure 2B).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-3092adb8699af0e5",
+      "text": "ACT significantly reduced the signal coincidence of the IP3R (located in the ER)-VDAC1 [(located in the outer mitochondrial membrane (OMM)]-MCU [(located in the inner mitochondrial membrane (IMM)] complex at the ER-mitochondria contact sites (Figure 3F lower part, Figure S3F and S3G).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ],
+      "context_before_evidence_id": "GP-007-E-2656636b76824f7a"
+    },
+    {
+      "evidence_id": "GP-007-E-337e17330e94d2ec",
+      "text": "We subsequently integrated CUT&Tag data with LSECs transcriptome sequencing and whole liver transcriptome sequencing results, and Vdac1, Mcu and Micu1 were selected as candidate genes (Figure 5J and 5K).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_after_evidence_id": "GP-007-E-075a5d52c30b7e29"
+    },
+    {
+      "evidence_id": "GP-007-E-33f5a1bc18c698a1",
+      "text": "To further elucidate the connection between Ca2+ signaling and glycolysis process, we administered 2-APB (a Ca2+ influx inhibitor) to LSECs.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-340b56b1780e79cc",
+      "text": "After correlating the different cell markers in 389 cell types with covarying gene modules expressed in the above groups, we indicated that the transcription of liver genes post-ACT treatment was selectively associated with LSECs programs (Figure 2A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-3faccf9db4ff373c",
+      "text": "The results indicated that, in comparison to 2-APB alone, the combination of 2-APB and ACT did not result in a further reduction of glycolytic reserve.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_after_evidence_id": "GP-007-E-53162609861dc6de"
+    },
+    {
+      "evidence_id": "GP-007-E-42751544820dab75",
+      "text": "To evaluate the in vivo targeting efficacy of LNPs, we prepared FITC-labeled LNPs-siMicu1 and administered them to mice via tail vein injection.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-438a51bbff67e8d2",
+      "text": "To reveal the transcriptional landscape of ACT improving HIRI, we further performed liver RNA sequencing analysis, and genes from cluster 2 (931 genes) and cluster 3 (1,045 genes) were significantly enriched in ER function (protein folding, Ca2+ transport) and energy metabolism (cell respiration) process-related terms (Figure 1D).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ],
+      "context_after_evidence_id": "GP-007-E-b75cd9bedce4e21e"
+    },
+    {
+      "evidence_id": "GP-007-E-46d45dee2c1ccade",
+      "text": "The HPLC analysis was performed on an UltiMate 3000 liquid chromatograph (Thermo Scientific, Sunnyvale), utilizing a Welch UltimateTM C18 column (250 mm × 4.6 mm; 5 μm).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-490fe007dc6ff7c8",
+      "text": "Cell pellets were collected 72 h after transfection.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-4c843db2a2e6a880",
+      "text": "The mean Ct value of each group of AAV standards was plotted on the ordinate (Y-axis), while the logarithm of the corresponding copy number was plotted on the abscissa (X-axis), yielding a standard curve (y = -2.851x + 32.296, R2 = 0.9957).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-4e67cd2ac21136cb",
+      "text": "For AAV8 packaging and preparation, after high-purity endotoxin-free extraction, we used LipofiterTM transfection reagent (Hanheng, China) to co-transfect AAV-293 cells with Stab2 (500-144 bp)-Micu1-Flag-GFP plasmid, RC plasmid and pHelper plasmid.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-511b7f0a7aa05a8c",
+      "text": "Notably, these effects were effectively reversed through chemical intervention with ACT.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-53162609861dc6de",
+      "text": "This suggested that ACT may inhibit overactivated glycolysis via the Ca2+ amplification pathway, rather than through an independent mechanism (Figure 4F).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_before_evidence_id": "GP-007-E-3faccf9db4ff373c",
+      "context_after_evidence_id": "GP-007-E-815065436b86a1fd"
+    },
+    {
+      "evidence_id": "GP-007-E-5323db38d3279276",
+      "text": "Concurrently, cytoskeleton associated protein 4 (CKAP4) and neurite outgrowth inhibition protein (NOGO) were utilized to visualize the ER morphology, revealing an increase in CKAP4/NOGO double-positive clusters and ER extension (more tubular ER) following HR, which was significantly ameliorated by ACT (Figure S2B).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5437ca4480d6315f",
+      "text": "Interestingly, a biphasic volcano plot revealed significant differences in glycolysis-related genes (Gapdh, G6pdx, Ldha, Hk2, Pkm) between the HR and HR + ACT groups (Figure S4A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5542e347ca40e34f",
+      "text": "Subsequently, the significantly altered genes in the HIRI and HR groups from the liver/LSECs sequencing were visualized using a Venn diagram, followed by a heatmap visualization that included the ACT group (Figure 3A, upper panel and Figure S3A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ],
+      "context_after_evidence_id": "GP-007-E-cb365924fb01a96d"
+    },
+    {
+      "evidence_id": "GP-007-E-56c4b1efc158c702",
+      "text": "Additionally, we investigated the morphology of LNPs-siMicu1 through negative stain imaging using transmission electron microscopy (JEM 1200EX, JEOL).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5a4c4102444d1b18",
+      "text": "The copy number was calculated from the standard curve and the final titer was derived by multiplying by the corresponding dilution factors.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5a5c8908d5d1a041",
+      "text": "As illustrated in Figure 5A, 5B and Figure S5A, ACT significantly reduced the levels of global lactylation and H3K18la induced by HR or excessive lactate in a dose-dependent manner.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_after_evidence_id": "GP-007-E-1e29ca7755ded607"
+    },
+    {
+      "evidence_id": "GP-007-E-5a61cb9f13551fa5",
+      "text": "The results of oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) further confirmed that glycolytic reserves were significantly reduced in the HR+ACT group.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_after_evidence_id": "GP-007-E-d0f0306c2f561905"
+    },
+    {
+      "evidence_id": "GP-007-E-5c2b4261d571e76e",
+      "text": "Notably, ACT significantly reversed the HIRI-induced increase in ER function-related genes [Atf4, Ddit3, ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2 (Atp2a2), voltage dependent anion channel 1 (Vdac1, VDAC1), mitochondrial calcium uniporter regulator 1 (Mcur1), eukaryotic translation initiation factor 2 alpha kinase 3 (Eif2ak3, PERK), Itpr1, mitochondrial calcium uptake 1 (Micu1, MICU1), Mcu] and glycolysis-related genes [Ldha, Pkm, hexokinase 2 (Hk2), glucose-6-phosphate dehydrogenase (G6pdx)] (Figure 1E).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5c8b7ada194395d5",
+      "text": "Notably, these HR-induced pathological alterations and their reversal by ACT were also validated in human LSECs, showing consistent attenuation of ER stress, Ca2+ dysregulation, glycolytic lactate production and H3K18la modification (Figure S9).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5ca5dcab63f40799",
+      "text": "Research reports indicate that unfolded protein responses in the ER can release Ca2+, thereby influencing the glycolysis process 19, 20, which was also supported by our results shown in Figure 2B.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-5cd3059e1f51a664",
+      "text": "The final titers for the target virus and the control virus were determined to be 1.6 × 1012 vg/ml and 1.3 × 1012 vg/ml, respectively.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-657964ba812184ae",
+      "text": "Through a de novo motif search among the 2 categories of H3K18la-modified genes, we found that upregulated and downregulated genes with H3K18la exhibited distinct enriched DNA sequences (Figure 5H).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_before_evidence_id": "GP-007-E-f8e9b1d97ec38688"
+    },
+    {
+      "evidence_id": "GP-007-E-6772ec9be7ae545f",
+      "text": "All reported zeta potentials were derived from triplicate measurements.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-6be2abee251630f5",
+      "text": "Consistently, the activities of key enzyme [hexokinase (HK), phosphofructokinase (PFK) and lactate dehydrogenase (LDH)] activities, as well as mRNA and protein levels of glycolytic metabolites and their corresponding canonical glycolytic enzymes, were significantly reduced after ACT administration (Figure 4A, Figure S4D and S4E).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_after_evidence_id": "GP-007-E-0ffb308f4724320a"
+    },
+    {
+      "evidence_id": "GP-007-E-711d21c5ebb85242",
+      "text": "Significant alterations in ER function (protein folding, Ca2+ transport)-related genes [activating transcription factor 4 (Atf4), DNA damage inducible transcript 3 (Ddit3, CHOP), inositol 1,4,5-trisphosphate receptor type 1 (Itpr1, IP3R), mitochondrial calcium uniporter (Mcu, MCU)] and glycolysis-related genes [pyruvate kinase m (Pkm), glyceraldehyde-3-phosphate dehydrogenase (Gapdh), dynamin 1 like (Dnm1l), lactate dehydrogenase a (Ldha)] were observed across all three datasets following HIRI (Figure 1B).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-7331414214d40217",
+      "text": "The heatmap illustrated representative transcripts associated with ER functional annotation (Figure 2C) like Atf4, Ddit3 and Eif2ak3 involved in Figure 2D, upper panel.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ],
+      "context_after_evidence_id": "GP-007-E-f8c288f426cf9248"
+    },
+    {
+      "evidence_id": "GP-007-E-74f0f77e9c4bdc9e",
+      "text": "After analyzing the top 10,000 genes expression profiles of patients before and after liver transplantation in the GSE12720, GSE112713 and GSE14951, we identified 4,346 intersecting genes (Figure 1A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-75d1d11a2a7c3a02",
+      "text": "GO term analysis revealed that genes with increased H3K18la modification during HR were actively involved in the regulation of Ca2+ transport, indicating the pivotal role of H3K18la in Ca2+ transport regulation (Figure 5I).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-765544a18fd24dd6",
+      "text": "The SYBR Green method was then employed to quantify the AAV genome content.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-7fbcc3a0f2b784c8",
+      "text": "The encapsulation efficiency (EE%) = (Amount of encapsulated siMicu1 / Total initial amount of siMicu1) × 100%.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-815065436b86a1fd",
+      "text": "This suggested that HR-activated glycolysis may be regulated by intracellular aberrant Ca2+ signals and also reversed by ACT.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_before_evidence_id": "GP-007-E-53162609861dc6de"
+    },
+    {
+      "evidence_id": "GP-007-E-842f91f5f74ce35c",
+      "text": "Additionally, ACT didn't obviously influence the Micu1 overexpressing-induced glycolytic flux, as evidenced by unchanged expressions and activities of HK, PK, and LDH, along with L-lactate production (Figure 8G and Figure S8H).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_before_evidence_id": "GP-007-E-b8826b6ba5fe4e21",
+      "context_after_evidence_id": "GP-007-E-f6d834867e055786"
+    },
+    {
+      "evidence_id": "GP-007-E-843eedbfe976900f",
+      "text": "Given the expansion of the ER structure in HR (Figure S2B), we hypothesized that the active edge sites exposed on the ER may enhance contact with mitochondria, thereby facilitating percolation pathways for the delivery of excess Ca2+ between these organelles.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-894e17740dbb2bce",
+      "text": "To screen candidate target genes regulated by histone lactylation in HR, CUT&Tag was performed with ChIP-grade H3K18la antibody and IgG in LSECs (Figure 5E).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-8c12948da3b6a70f",
+      "text": "The HIRI+AAV8-Stab2-oeMicu1 group exhibited more pronounced hepatic sinusoidal necrosis, mitochondrial cristae fragmentation and Ca2+ accumulation, as well as LSECs damage (Figure 8E), of which pathological phenomenon was minimally alleviated by ACT.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_after_evidence_id": "GP-007-E-b8826b6ba5fe4e21"
+    },
+    {
+      "evidence_id": "GP-007-E-8e627575f92dd385",
+      "text": "This Ca2+ increase further enhanced intracellular glycolysis (Figure S5D) and induced phagocytic dysfunction in LSECs (Figure 5D and Figure S5E).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_before_evidence_id": "GP-007-E-1e29ca7755ded607"
+    },
+    {
+      "evidence_id": "GP-007-E-943b02ca44db408c",
+      "text": "This structural optimization strategy provided a promising avenue for the further development of MICU1-targeted therapies to mitigate HIRI.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ],
+      "context_before_evidence_id": "GP-007-E-22cfbaa31b595562"
+    },
+    {
+      "evidence_id": "GP-007-E-973d8de1e6f2b75e",
+      "text": "Furthermore, the expression changes of glycolysis-genes in LSECs and liver tissues demonstrated a strict correlation (Figure S4B and S4C).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-981f90d7b660fd72",
+      "text": "The removal of these groups (ACT-d2) resulted in the loss of its ability to regulate Ca2+ and glycolysis, while the derivative retaining the key hydroxyl group (ACT-d1) exhibited stronger MICU1 affinity and alleviated mitochondrial Ca2+ accumulation.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ],
+      "context_after_evidence_id": "GP-007-E-d65bfdbb288e05a0"
+    },
+    {
+      "evidence_id": "GP-007-E-9a2d4e0c0df44e79",
+      "text": "As expected, ACT exhibited a role similar to that of 2-DG, significantly reducing Ca2+ levels (Figure 4C, 4D, Figure S4G and S4H) and restoring normal function of LSECs after HR (Figure 4E).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_before_evidence_id": "GP-007-E-fbedc424d70883a3"
+    },
+    {
+      "evidence_id": "GP-007-E-9aa5e75c0f1fd4a6",
+      "text": "Considering the established association between glycolysis and histone lactylation 6, together with our existing results (Figure 4), we inquired whether ACT could influence these processes to ameliorate HR injury, and established models for HR and lactate accumulation.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-a2ba7fb3e9e8e0c7",
+      "text": "Structurally, ACT-d1 exhibited stronger interactions with MICU1 due to its more open molecular structure, while ACT-d2 virtually unbound compared to the unmodified ACT compound (Figure 8I).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-a71d6e121d0b456d",
+      "text": "In contrast, ACT-d2 demonstrated negligible effects in these areas.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ],
+      "context_before_evidence_id": "GP-007-E-d6660d0ae8439fc3",
+      "context_after_evidence_id": "GP-007-E-22cfbaa31b595562"
+    },
+    {
+      "evidence_id": "GP-007-E-aa934a73187f557a",
+      "text": "Specifically, we employed ultrasonic disruption or high-speed centrifugation of LNPs-siMicu1 to isolate total LNPs or free siMicu1.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-abc55fece6bc4ba2",
+      "text": "All prepared AAV8 were subpackaged and stored at -80 °C until needed.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-b28314b6caaa75f7",
+      "text": "Mass spectrometry (MS) analysis confirmed the successful structural modifications of these ACT derivatives (Figure 8H, middle and right panel).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ],
+      "context_before_evidence_id": "GP-007-E-13b1891b19e75479"
+    },
+    {
+      "evidence_id": "GP-007-E-b489db42c19e7223",
+      "text": "The C26/C27/C40/C41 hydroxyl groups of ACT were identified as key binding sites for MICU1 (S155, I156, T209, H315) (Figure 8).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-b5e833f63e83ff41",
+      "text": "Recently, the structure of the complete MCU-EMRE-MICU1-MICU2 complex has been resolved.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-b64e983411d69ffa",
+      "text": "Subsequently, we isolated primary LSECs, exposed to HR model for mimicking HIRI pathological state in vitro, followed by single cell-type RNA sequencing (Figure S2A).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-b6da491d853da941",
+      "text": "To identify the impact of MICU1 overexpression on LSECs, we screened truncated variants of the Stab2 promoter (a specific scavenger receptor expressed in LSECs) as potential candidate sequences 22.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-b75cd9bedce4e21e",
+      "text": "The bubble chart verified the top 15 target genes that were significantly enriched in cluster 2 and cluster 3.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ],
+      "context_before_evidence_id": "GP-007-E-438a51bbff67e8d2"
+    },
+    {
+      "evidence_id": "GP-007-E-b7cd5d5b8eb63277",
+      "text": "Consistently, ACT significantly reversed the HR-induced transcription of selected genes responsible for ER stress including Ddit3, Eif2ak3, endoplasmic reticulum to nucleus signaling 1 (Ern1), Atf4, Hspa5, interferon regulatory factor 3 (Irf3) and Atf6 (Figure 2E), and translational levels of proteins including PERK, GRP78, IRF3 and CHOP that related to the above ER protein folding functions (Figure 2F).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-b8826b6ba5fe4e21",
+      "text": "Moreover, ACT appeared to have minimal effect on reversing the alterations of Ca2+-related targets within the ER-mitochondrial axis (Figure 8F and Figure S8E-8G) in HIRI + AAV8-Stab2-oeMicu1 mice.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_before_evidence_id": "GP-007-E-8c12948da3b6a70f",
+      "context_after_evidence_id": "GP-007-E-842f91f5f74ce35c"
+    },
+    {
+      "evidence_id": "GP-007-E-baee2a15b43af832",
+      "text": "ER-mitochondrial contact offers a dynamic platform for physiological and biochemical communication, facilitating the exchange of Ca2+, ROS and lipids within cells 18.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-c14c55fc63e06d91",
+      "text": "Dual-luciferase reporter assays demonstrated that a 644 bp truncated fragment (designated Stab2-2), spanning from -500 to +144 relative to the transcription start site, exhibited significantly higher activity compared to the full-length promoter and other truncations, while showing no detectable activity in hepatocytes (Figure 8A and Figure S8A).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_after_evidence_id": "GP-007-E-0448683433f82222"
+    },
+    {
+      "evidence_id": "GP-007-E-c213d4c2bdca23d2",
+      "text": "Subsequently, ChIP-qPCR analysis indicated that ACT effectively reduced the enrichment of H3K18la in the promoter region of Micu1, but not in Vdac1 or Mcu (Figure 5M).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_before_evidence_id": "GP-007-E-1e306063f58c4428"
+    },
+    {
+      "evidence_id": "GP-007-E-c6b3aa88431b51aa",
+      "text": "Notably, ACT intervention significantly restored Ca2+ homeostasis in LSECs following HR.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-c778b4557dfbe4a0",
+      "text": "Initially, we sought to identify critical targets underlying the abnormal changes observed in clinical data from pre- and post-liver transplant patients to determine the possible cause of HIRI.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-cb365924fb01a96d",
+      "text": "As expected, the expression of Ca2+ transport-related genes (Mcu, Vdac1, Itpr1 and Atp2a2) was partially downregulated after ACT administration (Figure 3A, lower panel), which was confirmed by molecular biology experiments both in livers and LSECs (Figure 3B, 3C and Figure S3B).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ],
+      "context_before_evidence_id": "GP-007-E-5542e347ca40e34f",
+      "context_after_evidence_id": "GP-007-E-f497c46e6b7960c2"
+    },
+    {
+      "evidence_id": "GP-007-E-cbb728756a80c83f",
+      "text": "Compared to the HIRI + AAV8-CMV group, the overexpression of Micu1 resulted in more severe HIRI damage, as evidenced by significantly increased levels of serum ALT, AST and hepatic MDA levels, along with decreased SOD levels (Figure 8D).",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_before_evidence_id": "GP-007-E-027f7dd947f25b84"
+    },
+    {
+      "evidence_id": "GP-007-E-d0d753becb52699e",
+      "text": "After collecting the supernatant containing AAV and performing column purification, we obtained a high-titer adeno-associated virus preservation solution.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-d0f0306c2f561905",
+      "text": "However, no additional inhibition was observed upon the addition of the glycolytic inhibitor 2-deoxyglucose (2-DG).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_before_evidence_id": "GP-007-E-5a61cb9f13551fa5",
+      "context_after_evidence_id": "GP-007-E-fbedc424d70883a3"
+    },
+    {
+      "evidence_id": "GP-007-E-d172de1f092da15d",
+      "text": "Collectively, our results suggest that ACT may play a critical role in mitigating HIRI damage by modulating ER function first and restoring mitochondrial homeostasis through an as-yet-undefined signaling link in LSECs.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-d29682fc00b10032",
+      "text": "During the analysis of liver ultrastructure, we notably observed that ACT exerted significant potential to enhance the hepatic sinusoidal microenvironment, particularly concerning the LSECs “fenestrae” (Figure 1F).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ],
+      "context_after_evidence_id": "GP-007-E-28435cadaf1bd24d"
+    },
+    {
+      "evidence_id": "GP-007-E-d65bfdbb288e05a0",
+      "text": "This discovery provides a precise target for chemical modification in the development of MICU1-specific inhibitors to combat HIRI injury.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ],
+      "context_before_evidence_id": "GP-007-E-981f90d7b660fd72"
+    },
+    {
+      "evidence_id": "GP-007-E-d6660d0ae8439fc3",
+      "text": "Functionally, ACT-d1 effectively reduced intracellular L-lactate levels and inhibited mitochondrial Ca2+ accumulation (Figure 8J and Figure S8I), thereby restoring the structural integrity of LSECs in vitro (Figure 8K).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ],
+      "context_after_evidence_id": "GP-007-E-a71d6e121d0b456d"
+    },
+    {
+      "evidence_id": "GP-007-E-db33e382436485dc",
+      "text": "MCU-i4, as an inhibitor of MICU1, directly regulates the activity of the MCU complex and reduces Ca2+ influx into mitochondria.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-058b0130bbe0"
+      ],
+      "context_after_evidence_id": "GP-007-E-2c317bd7c6145680"
+    },
+    {
+      "evidence_id": "GP-007-E-de462d62a5419f27",
+      "text": "GO analysis revealed significant enrichment of genes affected by HIRI or ACT, particularly in modules related to ER function.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-e62094dfc418e8c4",
+      "text": "Focusing on the characteristics of HIRI-induced oxidative stress and provocative inflammation, ACT significantly mitigated the elevation of aminotransferases (Figure S1A and S1B).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a9ed7e20aed2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-e674de9ec46a7c61",
+      "text": "The AAV genome titer (vector genomes per milliliter, vg/ml) was determined by quantitative PCR against the GFP sequence.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a14bc582d102"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-ebe1bd8015dbfde8",
+      "text": "For physicochemical characterization of LNPs-siMicu1, we conducted dynamic light scattering measurements to assess the polydispersity index (PDI) and zeta potential values of LNPs-siMicu1, utilizing an immersion cell electrode (ZEN1002, Malvern) in conjunction with a Zetasizer (Nano ZS, Malvern Co.).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-f497c46e6b7960c2",
+      "text": "Then, we measured the amplitude of the Ca2+ transient response (Figure 3D and Figure S3C) and intracellular content (Figure 3E) to monitor the spontaneous Ca2+ transient behavior of LSECs and assess the intracellular Ca2+ status under HR or HR + ACT intervention.",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-df884e684b2b"
+      ],
+      "context_before_evidence_id": "GP-007-E-cb365924fb01a96d"
+    },
+    {
+      "evidence_id": "GP-007-E-f6d834867e055786",
+      "text": "These findings indicated that the Stab2-driven LSECs-specific Micu1 overexpression exacerbated HIRI by promoting Ca2+ dyshomeostasis and metabolic reprogramming, which was no longer mitigated by ACT.",
+      "retrieval_field_tags": [
+        "lnp_composition_raw",
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-5c830a9bf9f6"
+      ],
+      "context_before_evidence_id": "GP-007-E-842f91f5f74ce35c"
+    },
+    {
+      "evidence_id": "GP-007-E-f7075557699c0576",
+      "text": "The mobile phase consisted of ultrapure water, acetonitrile, and methanol in a ratio of 39%: 37%: 24%.",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-f8c288f426cf9248",
+      "text": "Correlation analysis demonstrated a high degree of uniformity among samples in both whole liver and single LSECs type groups, with high coupling correlations observed in the expression of core genes related to ER function [Eif2ak3, Ddit3, heat shock protein family a member 5 (Hspa5, GRP78), Atf4] (Figure 2D, lower panel).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-e259b5f9d750"
+      ],
+      "context_before_evidence_id": "GP-007-E-7331414214d40217"
+    },
+    {
+      "evidence_id": "GP-007-E-f8db1c915b4743be",
+      "text": "To clarify the key substituents of ACT that affect MICU1, we designed two distinct modified ACT derivatives: (1) ACT-d1 was removed the structures (highlighted in red) at the C8 sites while retaining other key hydroxyl groups responsible for binding to MICU1 and Ca2+.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-a30755f5ac7a"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-f8e9b1d97ec38688",
+      "text": "To identify H3K18la-target genes in LSECs, we classified genes into 4 categories according to their expression and H3K18la modification: upregulated genes with or without differential H3K18la, and downregulated genes with or without differential H3K18la (Figure 5G and Figure S5F).",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ],
+      "context_after_evidence_id": "GP-007-E-657964ba812184ae"
+    },
+    {
+      "evidence_id": "GP-007-E-f9b853894efb8638",
+      "text": "The encapsulation efficiency of siMicu1 was determined using high-performance liquid chromatography (HPLC).",
+      "retrieval_field_tags": [
+        "experiment_boundary",
+        "lnp_composition_raw",
+        "outcomes",
+        "payload"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-16590d293dec"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-E-fbedc424d70883a3",
+      "text": "This suggested that the mechanism by which ACT inhibits HR-induced glycolysis is distinct from that of 2-DG, potentially mediated through the Ca2+ signaling pathway (Figure 4B and Figure S4F).",
+      "retrieval_field_tags": [
+        "delivery_recipient_cell_reported",
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-61913a7ecabf"
+      ],
+      "context_before_evidence_id": "GP-007-E-d0f0306c2f561905",
+      "context_after_evidence_id": "GP-007-E-9a2d4e0c0df44e79"
+    },
+    {
+      "evidence_id": "GP-007-E-fd5c7b18823f7aa9",
+      "text": "Figure 5F showed that H3K18la was enriched in promoter regions of genes (especially the regions < 1 kb) in all groups.",
+      "retrieval_field_tags": [
+        "outcomes",
+        "therapeutic_target_cell_reported"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "S-1c9cad17b225"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-00c365332fcba0ae",
+      "text": "Table S1 | Beta Actin | Abbreviation: β-ACTIN; Dilution: 1:5000; Supplier: Proteintech; Cat no.: 66009-1-lg",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-1b88bc9449bb625c"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-015a6000fd43672b",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-fbab1deca32574c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-0164ecc0c5a3a106",
+      "text": "The areas of liver sinus congestion and inflammatory cell infiltration in the HIRI + LNPs-blank group were significantly increased, but the fundamental structure of liver lobules was significantly restored in HIRI + LNPs-siMicu1 and HIRI + LNPs-siMicu1 + ACT groups (Figure 7G).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-613c5f2b1ad4e388"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-0220fc95924cf023",
+      "text": "Figure S8.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d9468045728f8a66"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-026d06c4170d2401",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-60ae538e7e4bf40d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-048a2dc443594110",
+      "text": "B E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6940ea312e5eaed8"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-0675323503985fe7",
+      "text": "Concurrently, the accumulation of lactate, a by-product of glycolysis, was associated with an increase in intracellular Ca2+ (Figure 5C, Figure S5B) and induced Ca2+ channel protein expression on the ER-mitochondrial axis (Figure S5C).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d88f150157f852a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-069cb422bbf916dd",
+      "text": "Focusing on the characteristics of HIRI-induced oxidative stress and provocative inflammation, ACT significantly mitigated the elevation of aminotransferases (Figure S1A and S1B).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-eed6320d3341d5e5"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-0808bc3dbc1be80a",
+      "text": "ACT restores ER-mitochondrial homeostasis in HR-stimulated LSECs",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-245fbe2f85545a45"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-0fb2c8b2d06039a2",
+      "text": "Additionally, ACT didn't obviously influence the Micu1 overexpressing-induced glycolytic flux, as evidenced by unchanged expressions and activities of HK, PK, and LDH, along with L-lactate production (Figure 8G and Figure S8H).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-e7b9b7d4936a9eea"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1055f946ad112cca",
+      "text": "Figure S8. LSECs-specific Micu1 overexpression exacerbates HIRI even with the",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d9468045728f8a66"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1119fd4f5944ce51",
+      "text": "Anti-L-Lactyl-Histone | HK: H3K9Ia; 1:4000: 1:1000; Proteintech: PTM BIO; 2029-1-AP: PTM-1419RM",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3b442ffc401ea0b9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-12db8130b5e46531",
+      "text": "1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a02788a536e0efcf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-13e81f2ec1475cd6",
+      "text": "HIRI+AAV8- HIRI+AAV8- C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-77905fbf29b1ea9d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-14c57212c306cfb3",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6a70b3e7ea5fe7a0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1706959aa09ed5bf",
+      "text": "K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-cc6c5e1a5c52b33f"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-176cae354aad54d1",
+      "text": "Figure S6.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8315eb2158b6f28d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-18b012f78eb5b93f",
+      "text": "PKM2-specific | HK: PK; 1:4000: 1:4000; Proteintech: Proteintech; 2029-1-AP: 15822-1-AP",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f9b9ac9887f411cc"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-199e5b36294a7697",
+      "text": "were considered differentially expressed genes (DEGs).",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6a3707e857bd51a3"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1c07d88e1f2fc93f",
+      "text": "Table S1 | IRF3 | Abbreviation: IRF3; Dilution: 1:1000; Supplier: Proteintech; Cat no.: 66670-1-lg",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ffcb1aae802541ff"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1ed0e120712b5e9f",
+      "text": "; SERCA2, ATP2A2 | SERCA2 | 1:4000 | Proteintech | 27311-1-AP ; Polyclonal antibody ; GRP78/BIP | GRP78 | 1:4000 | Proteintech | 66574-1-lg ; Monoclonal antibody ; IRF3 | IRF3 | 1:1000 | Proteintech | 66670-1-lg ; Monoclonal antibody ; ITPR1-specific | IP3R | 1:1000 | Proteintech | 19962-1-AP ; Polyclonal antibody ; MCU/CCDC109A | MCU | 1:2000 | Proteintech | 26312-1-AP ; Polyclonal antibody ; CBARA1 | MICU1 | 1:2000 | Proteintech | 25905-1-AP ; Polyclonal antibody ; Beta Actin | β-ACTIN | 1:5000 | Proteintech | 66009-1-lg ; Monoclonal antibody ; Histone H3 | H3 | 1:1000 | Proteintech | 17168-1-AP ; Polyclonal antibody ; CKAP4 | CKAP4 | 1:1000 | Proteintech | 16686-1-AP ; Polyclonal antibody",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c017dda5ee49a2b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1ef0c6db375d0f74",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-294d82b7f72e88b8"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-1f3ae0cc7343277a",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-937e00ad2e9dda30"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-221d478d42a3ca2e",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0c2d0c9400aa7397"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-226658d4ecd78075",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0035254609a7a376"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-2513fd0d80f72404",
+      "text": "VDAC1/Porin (B-6) | HK: VDAC1; 1:4000: 1:500; Proteintech: SantaCruz; 2029-1-AP: sc-390996",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c54d58b6aac612b"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-2900c2ea8a5ece52",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6e66841a34ea73ca"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-2a9f060b366f9a2d",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c4b44c766d9a4d8"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-31dd63a1ca662a66",
+      "text": "Figure S4.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c70f179bf78e88b8"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-324429dc8d9d9745",
+      "text": "K",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8c21e72e0b6e47f4"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-348f2dd333b5e0a7",
+      "text": "Figure S5.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4eaaa7e39c65fedb"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-36c9c4d735772bcb",
+      "text": "Table S1 | Histone H3 | Abbreviation: H3; Dilution: 1:1000; Supplier: Proteintech; Cat no.: 17168-1-AP",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4707e808758e3c70"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-40b2738518b66f2d",
+      "text": "B D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-beef6cdb66af8711"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-43c99150e411fadb",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3d7a29a8eac8e1bd"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-47b2845996ab3081",
+      "text": "B Figure S2.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-245fbe2f85545a45"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-4c09b0f64b5484fa",
+      "text": "(B) The mRNA levels of ltpr1, Vdac1,",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3cb0adc6186cc8d9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-4c4213cf403b0c8f",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e642eb38b42f3b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-4e3e7b61816543f1",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-aceae0396357e657"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-52088a2b49458425",
+      "text": "Table S1 | MCU/CCDC109A | Abbreviation: MCU; Dilution: 1:2000; Supplier: Proteintech; Cat no.: 26312-1-AP",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-805ae4b7d67c0c06"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-52d347d9e20ce688",
+      "text": "Hexokinase 2 Polyclonal antibody | HK | 1:4000 | Proteintech | 2029-1-AP ; PKM2-specific | PK | 1:4000 | Proteintech | 15822-1-AP ; Polyclonal antibody ; LDHB Polyclonal antibody | LDH | 1:4000 | Proteintech | 14824-1-AP ; Anti-L-Lactyl Lysine | Pan Kla | 1:2000 | PTM BIO | PTM-1401RM ; Rabbit mAb ; Anti-L-Lactyl-Histone | H3K9Ia | 1:1000 | PTM BIO | PTM-1419RM ; H3 (Lys9) Rabbit mAb ; NOGO (C-4) | NOGO | 1:500 | SantaCruz | sc-271878 ; PERK (B-5) | PERK | 1:500 | SantaCruz | sc-377400 ; VDAC1/Porin (B-6) | VDAC1 | 1:500 | SantaCruz | sc-390996",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b536aac36395578d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-52dceb114f7fa707",
+      "text": "H J",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-636b49f41741cbd2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-599006fbbcec3518",
+      "text": "C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7d7d64265e8d0ab9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-65e8dce3b12a0749",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2a27368c9f0c5924"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-663975e0e099d235",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-f9e8040d4e8dbdef"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-68c4ef34b976da7b",
+      "text": "Table S1 | GRP78/BIP | Abbreviation: GRP78; Dilution: 1:4000; Supplier: Proteintech; Cat no.: 66574-1-lg",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d04e9c5354cdeff4"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-6979fbae85ed8f1f",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-eb4e087fb5e5586d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-7c8575e841e21453",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-ef9b05bd4715dfaf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-7d83626cbaf721ec",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-06ce707ed64fb6bf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-818248532be539d1",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-12713aac838af2c7"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-85b76aed8e74badd",
+      "text": "PERK (B-5) | HK: PERK; 1:4000: 1:500; Proteintech: SantaCruz; 2029-1-AP: sc-377400",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-55a6a5bfcb5d6328"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-860adf92f50d4847",
+      "text": "B",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-2c8a281c5f87f8c3"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-89c7369fa9675b95",
+      "text": "ACT ameliorates HR-induced ER stress-\\(Ca^{2+}\\) dysregulation-H3K18la",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5278358f14c89a6f"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-91f95f749bd95b3a",
+      "text": "D",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c89b41659edb57c4"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-92ced30006807a96",
+      "text": "ACT inhibits the \\(Ca^{2+}\\) transfer to mitochondrial via MICU1 (A) The heatmap of \\(Ca^{2+}\\) signaling pathways in LSECs.",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3cb0adc6186cc8d9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-92f3c0b3f81e8d5b",
+      "text": "H",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-85f0dff1f2337411"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-94cdd9f32d23604d",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a4a966ac705741d5"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-957a042e4129a2fd",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-952c99106477be82"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-98d43446470050fb",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-149ac8ecc5a608a5"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-9cc7d6dac1a3f090",
+      "text": "B c",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-05591a305f972bc5"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-a9093b7e8967b5c6",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-33c28b602df46392"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-a9119354c6dddf92",
+      "text": "Table S1 | CBARA1 | Abbreviation: MICU1; Dilution: 1:2000; Supplier: Proteintech; Cat no.: 25905-1-AP",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-65ce38a1a5dfc6ad"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-aa7039414a13b63c",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-a8d4324d640c8f2e"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-ac1976cb57d1ac49",
+      "text": "Table S1 | ITPR1-specific | Abbreviation: IP3R; Dilution: 1:1000; Supplier: Proteintech; Cat no.: 19962-1-AP",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-40295372dfc681b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-ad2df0ea42ddec5d",
+      "text": "Figure S7. The target localization of LNPs, changes in liver morphology and",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e0940288f687041"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-ae66a4110956b205",
+      "text": "Table S1 | SERCA2, ATP2A2 | Abbreviation: SERCA2; Dilution: 1:4000; Supplier: Proteintech; Cat no.: 27311-1-AP",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-58eeb599fca37dc9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-b2e55e225b6c169b",
+      "text": "A C",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9f3c0d671f1a58c8"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-b58cfdbf810b0b9e",
+      "text": "L Figure S3.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-3cb0adc6186cc8d9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-b5ae648a4300f2ce",
+      "text": "Table S1 | CKAP4 | Abbreviation: CKAP4; Dilution: 1:1000; Supplier: Proteintech; Cat no.: 16686-1-AP",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-d48141e255fbbdc9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-b5cea28764335389",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-770a55938fe2460a"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-b81ffce638e088b3",
+      "text": "H",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-04c98d00b3557fd0"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-b878209a0788a8ee",
+      "text": "Figure S1. ACT alleviates the hepatic function injured by HIRI process (A) Body",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b006fa8fb998a5d9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-bbd4c281f954afa3",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-393422425bca08ae"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-bcfe3fb2ea888193",
+      "text": "Anti-L-Lactyl Lysine | HK: Pan Kla; 1:4000: 1:2000; Proteintech: PTM BIO; 2029-1-AP: PTM-1401RM",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0e27feaf78756cf4"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-c09ef576040edb2e",
+      "text": "NOGO (C-4) | HK: NOGO; 1:4000: 1:500; Proteintech: SantaCruz; 2029-1-AP: sc-271878",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0861d88fa4e462b2"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-c145420af1ed5986",
+      "text": "Table S1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9d065c4c285fa59a"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-c925cc99679ceede",
+      "text": "Figure S5. ACT ameliorates HR-induced metabolic dysfunction in LSECs",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-4eaaa7e39c65fedb"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-ce046e621baf4084",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-582b543c4a1f52cf"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-d09c7fd79b7b15b6",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b01e02e8610f7bb5"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-d45d553448ca45da",
+      "text": "Figure S6. ACT and lactate inhibitors synergistically suppress \\(Ca^{2+}\\) transfer and glycolytic processes in LSECs (A) Dynamic detection of cell viability and lactate",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8315eb2158b6f28d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-d57786142e78054b",
+      "text": "Figure S7.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5e0940288f687041"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-db3254c6db78d874",
+      "text": "Figure S1.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b006fa8fb998a5d9"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-dbfbd11b5869b481",
+      "text": "A",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-1a737d12b4f963f6"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-e6e5c1283c86e48e",
+      "text": "F",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-63e54b92eb50ca2d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-e7aafc0b3c62ebe9",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-7cb5dc0d798701a1"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-ee7f63ca952a8cb0",
+      "text": "1",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-6542b73aaeb6967d"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-f266dddee9a695c8",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-8bba9b1a38a8457a"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-f31508cf3c671b33",
+      "text": "D Figure S9.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-5278358f14c89a6f"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-f674d0e1b0d66ca6",
+      "text": "Figure S4. ACT directly binding to MICU1 to inhibit \\(Ca^{2+}\\)-stimulated glycolysis (A)",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c70f179bf78e88b8"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-f6ce097f85f108b8",
+      "text": "G",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-0cf7bb4333a2bca4"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-f96be4c6dc7e9eb6",
+      "text": "Table S1. The information of used antibodies.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-9d065c4c285fa59a"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-fc04592c87b18d6f",
+      "text": "Table S1 | Name | Abbreviation | Dilution | Supplier | Cat no.",
+      "retrieval_field_tags": [
+        "outcomes"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-c017dda5ee49a2b7"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-fc3c48f6ce903737",
+      "text": "E",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-b4dcebbeb0b9ce6c"
+      ]
+    },
+    {
+      "evidence_id": "GP-007-FC-fdbe5d7029647cf8",
+      "text": "LDHB Polyclonal antibody | HK: LDH; 1:4000: 1:4000; Proteintech: Proteintech; 2029-1-AP: 14824-1-AP",
+      "retrieval_field_tags": [
+        "full_corpus"
+      ],
+      "experiment_candidate_ids": [],
+      "source_ids": [
+        "FC-S-26ab1380971a1b27"
+      ]
+    }
+  ],
+  "packet_checksum": "5aa97b32eaf78ba2b86b7caa832d162a49dcdd40460a12c2c4b643b6bcaa6c29"
+}

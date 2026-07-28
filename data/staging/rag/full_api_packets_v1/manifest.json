@@ -10,18 +10,18 @@
       "paper_id": "GP-001",
       "packet_path": "data/staging/rag/full_api_packets_v1/GP-001.json",
       "manifest_path": "data/staging/rag/full_api_packets_v1/GP-001.manifest.json",
-      "packet_checksum": "77db16931f4990dfdd3534069397361adf7f47c11745ac855828d75de66bf4c1",
-      "evidence": 741,
-      "sources": 70,
+      "packet_checksum": "a07ec3089f2d73ebd15d385de2286573e3442a33dbeb028f4b0df3271292e369",
+      "evidence": 991,
+      "sources": 101,
       "retrieval_evidence": 302,
-      "corpus_expanded_evidence": 439,
-      "outcome_tagged_evidence": 231,
-      "full_corpus_only_evidence": 381,
+      "corpus_expanded_evidence": 689,
+      "outcome_tagged_evidence": 247,
+      "full_corpus_only_evidence": 615,
       "estimated_input_tokens": {
         "prompt": 273,
         "response_schema": 1883,
-        "evidence_packet": 63378,
-        "total": 65534
+        "evidence_packet": 80408,
+        "total": 82564
       },
       "compact_packet_comparison": {
         "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-001.json",
@@ -29,11 +29,11 @@
         "compact_evidence": 160,
         "compact_sources": 24,
         "compact_evidence_packet_tokens": 15993,
-        "added_evidence": 581,
-        "added_sources": 46,
-        "added_evidence_packet_tokens": 47385,
-        "evidence_multiple": 4.63,
-        "evidence_packet_token_multiple": 3.96
+        "added_evidence": 831,
+        "added_sources": 77,
+        "added_evidence_packet_tokens": 64415,
+        "evidence_multiple": 6.19,
+        "evidence_packet_token_multiple": 5.03
       }
     },
     {
@@ -100,18 +100,18 @@
       "paper_id": "GP-004",
       "packet_path": "data/staging/rag/full_api_packets_v1/GP-004.json",
       "manifest_path": "data/staging/rag/full_api_packets_v1/GP-004.manifest.json",
-      "packet_checksum": "57fe7990672077c0133be1d64a6b1f3a4a17c1b68cd4c4b4d81796690d4f2369",
-      "evidence": 992,
-      "sources": 82,
+      "packet_checksum": "6ffa789cf1e7f365b4e4544d03ed8bc9323c3d8d38c81f96862202e249110ed5",
+      "evidence": 1316,
+      "sources": 373,
       "retrieval_evidence": 334,
-      "corpus_expanded_evidence": 658,
-      "outcome_tagged_evidence": 304,
-      "full_corpus_only_evidence": 502,
+      "corpus_expanded_evidence": 982,
+      "outcome_tagged_evidence": 345,
+      "full_corpus_only_evidence": 785,
       "estimated_input_tokens": {
         "prompt": 273,
         "response_schema": 1883,
-        "evidence_packet": 85373,
-        "total": 87529
+        "evidence_packet": 130503,
+        "total": 132659
       },
       "compact_packet_comparison": {
         "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-004.json",
@@ -119,11 +119,11 @@
         "compact_evidence": 139,
         "compact_sources": 23,
         "compact_evidence_packet_tokens": 16000,
-        "added_evidence": 853,
-        "added_sources": 59,
-        "added_evidence_packet_tokens": 69373,
-        "evidence_multiple": 7.14,
-        "evidence_packet_token_multiple": 5.34
+        "added_evidence": 1177,
+        "added_sources": 350,
+        "added_evidence_packet_tokens": 114503,
+        "evidence_multiple": 9.47,
+        "evidence_packet_token_multiple": 8.16
       }
     },
     {
@@ -160,18 +160,18 @@
       "paper_id": "GP-006",
       "packet_path": "data/staging/rag/full_api_packets_v1/GP-006.json",
       "manifest_path": "data/staging/rag/full_api_packets_v1/GP-006.manifest.json",
-      "packet_checksum": "f9638ea8dd5eb4ca954bc76cc0e8763a96400eb701dd69326f4300d24430227a",
-      "evidence": 1707,
-      "sources": 82,
+      "packet_checksum": "60a27877c016d26769327c98328c19c5cdecacc6362cb0e31d83a34ec267098a",
+      "evidence": 1776,
+      "sources": 287,
       "retrieval_evidence": 631,
-      "corpus_expanded_evidence": 1076,
-      "outcome_tagged_evidence": 460,
-      "full_corpus_only_evidence": 834,
+      "corpus_expanded_evidence": 1145,
+      "outcome_tagged_evidence": 486,
+      "full_corpus_only_evidence": 877,
       "estimated_input_tokens": {
         "prompt": 273,
         "response_schema": 1883,
-        "evidence_packet": 128234,
-        "total": 130390
+        "evidence_packet": 145634,
+        "total": 147790
       },
       "compact_packet_comparison": {
         "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-006.json",
@@ -179,29 +179,29 @@
         "compact_evidence": 142,
         "compact_sources": 19,
         "compact_evidence_packet_tokens": 15993,
-        "added_evidence": 1565,
-        "added_sources": 63,
-        "added_evidence_packet_tokens": 112241,
-        "evidence_multiple": 12.02,
-        "evidence_packet_token_multiple": 8.02
+        "added_evidence": 1634,
+        "added_sources": 268,
+        "added_evidence_packet_tokens": 129641,
+        "evidence_multiple": 12.51,
+        "evidence_packet_token_multiple": 9.11
       }
     },
     {
       "paper_id": "GP-007",
       "packet_path": "data/staging/rag/full_api_packets_v1/GP-007.json",
       "manifest_path": "data/staging/rag/full_api_packets_v1/GP-007.manifest.json",
-      "packet_checksum": "bd1006ad640e508266d391f9ae0bb68bb3eba498f6a131ba71fb9d19d290e530",
-      "evidence": 527,
-      "sources": 63,
+      "packet_checksum": "fb08857708c4b06452d1d9dad27d0ab434d9a4768ecf428a89990292c4609e9f",
+      "evidence": 835,
+      "sources": 213,
       "retrieval_evidence": 233,
-      "corpus_expanded_evidence": 294,
-      "outcome_tagged_evidence": 190,
-      "full_corpus_only_evidence": 207,
+      "corpus_expanded_evidence": 602,
+      "outcome_tagged_evidence": 242,
+      "full_corpus_only_evidence": 463,
       "estimated_input_tokens": {
         "prompt": 273,
         "response_schema": 1883,
-        "evidence_packet": 54434,
-        "total": 56590
+        "evidence_packet": 83930,
+        "total": 86086
       },
       "compact_packet_comparison": {
         "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-007.json",
@@ -209,29 +209,29 @@
         "compact_evidence": 127,
         "compact_sources": 22,
         "compact_evidence_packet_tokens": 15967,
-        "added_evidence": 400,
-        "added_sources": 41,
-        "added_evidence_packet_tokens": 38467,
-        "evidence_multiple": 4.15,
-        "evidence_packet_token_multiple": 3.41
+        "added_evidence": 708,
+        "added_sources": 191,
+        "added_evidence_packet_tokens": 67963,
+        "evidence_multiple": 6.57,
+        "evidence_packet_token_multiple": 5.26
       }
     },
     {
       "paper_id": "GP-008",
       "packet_path": "data/staging/rag/full_api_packets_v1/GP-008.json",
       "manifest_path": "data/staging/rag/full_api_packets_v1/GP-008.manifest.json",
-      "packet_checksum": "bae4c6d2997883d9e4bce6dc9d983e64d2c718274640445edcdd0d0a76cb0ee4",
-      "evidence": 1266,
-      "sources": 96,
+      "packet_checksum": "592d0f942f3ea6dfc79b545ae1d653a4e397204673f14c2d81e8c798e4b69441",
+      "evidence": 1483,
+      "sources": 348,
       "retrieval_evidence": 531,
-      "corpus_expanded_evidence": 735,
-      "outcome_tagged_evidence": 306,
-      "full_corpus_only_evidence": 547,
+      "corpus_expanded_evidence": 952,
+      "outcome_tagged_evidence": 329,
+      "full_corpus_only_evidence": 741,
       "estimated_input_tokens": {
         "prompt": 273,
         "response_schema": 1883,
-        "evidence_packet": 101509,
-        "total": 103665
+        "evidence_packet": 130554,
+        "total": 132710
       },
       "compact_packet_comparison": {
         "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-008.json",
@@ -239,11 +239,11 @@
         "compact_evidence": 154,
         "compact_sources": 20,
         "compact_evidence_packet_tokens": 16000,
-        "added_evidence": 1112,
-        "added_sources": 76,
-        "added_evidence_packet_tokens": 85509,
-        "evidence_multiple": 8.22,
-        "evidence_packet_token_multiple": 6.34
+        "added_evidence": 1329,
+        "added_sources": 328,
+        "added_evidence_packet_tokens": 114554,
+        "evidence_multiple": 9.63,
+        "evidence_packet_token_multiple": 8.16
       }
     },
     {

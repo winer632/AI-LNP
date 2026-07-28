@@ -1,0 +1,20 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-003",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "NOT_ORIGINAL_RESEARCH"
+    ],
+    "evidence_ids": [
+      "GP-003-E-93c2af1bcf62a929",
+      "GP-003-E-240d9595395015cf"
+    ],
+    "explanation": "The paper explicitly describes itself as a review and summarizes evidence from other studies rather than reporting an original experimental LNP delivery study."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "unresolved_items": [],
+  "outcomes": []
+}

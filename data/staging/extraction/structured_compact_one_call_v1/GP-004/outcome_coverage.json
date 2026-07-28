@@ -1,0 +1,111 @@
+{
+  "coverage_version": "outcome-coverage-1.1.0",
+  "paper_id": "GP-004",
+  "complexity_route": "complex",
+  "candidate_groups": 11,
+  "extracted_outcomes": 4,
+  "matched_candidates": [
+    {
+      "candidate_id": "OC-31142d755597b87a",
+      "outcome_id": "O3",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-3aa23151f38aab3d",
+      "outcome_id": "O2",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-6d7c8567a5ab3d71",
+      "outcome_id": "O4",
+      "score": 1.0
+    }
+  ],
+  "unmatched_candidates": [],
+  "review_candidates": [
+    {
+      "candidate_id": "OC-b924d98c5ee0c618",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-22e032321011f16e",
+        "GP-004-FC-80ed9ef13fd5ae2d"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-f12ccc22e6498844",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-17ea1941b359be56",
+        "GP-004-FC-e1fbe7fc2781550b"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-fdc2e205d8bbc85d",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-cf9e37f897ca00db"
+      ],
+      "figure_or_table": "figure 4",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-266f7215cca1dfa7",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-59b1322fd090722e"
+      ],
+      "figure_or_table": "fig. 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-a0003dea2317b7f7",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-98235da2214e15c0"
+      ],
+      "figure_or_table": "table 1",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-4f4f95c7a5f70408",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-5220a7516469049f"
+      ],
+      "figure_or_table": "table 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-1119599841842f36",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-8b19bcc24507c269"
+      ],
+      "figure_or_table": "table 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-83b81cbc99e7d961",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-5220a7516469049f"
+      ],
+      "figure_or_table": "table 2",
+      "reason": "confidence_below_repair_threshold"
+    }
+  ],
+  "status": "review_unmatched_groups",
+  "paid_api_requests": 0
+}

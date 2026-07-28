@@ -1,0 +1,31 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-003",
+  "evidence_view": "structured",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T20:11:08.422875+00:00",
+  "completed_at": "2026-07-28T20:11:16.685899+00:00",
+  "elapsed_seconds": 8.261,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "NOT_ORIGINAL_RESEARCH"
+    ],
+    "evidence_ids": [
+      "GP-003-E-240d9595395015cf"
+    ],
+    "explanation": "The packet explicitly identifies the paper as a review; it does not provide an original experimental LNP formulation–experiment–outcome report."
+  },
+  "record_counts": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0,
+    "unresolved_items": 0
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}

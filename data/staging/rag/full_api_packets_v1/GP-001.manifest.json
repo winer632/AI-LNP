@@ -3,7 +3,7 @@
   "full_view_version": "full-api-packet-1.0.0",
   "packet_version": "compact-api-packet-1.0.0",
   "evidence_view": "full",
-  "full_packet_checksum": "77db16931f4990dfdd3534069397361adf7f47c11745ac855828d75de66bf4c1",
+  "full_packet_checksum": "a07ec3089f2d73ebd15d385de2286573e3442a33dbeb028f4b0df3271292e369",
   "source_review_packet_checksum": "91f98a65301b683fd49dde25fa57f47c64199edd49a490b09de69173c3cc90ef",
   "corpus_path": "data/staging/rag/gold_v1/GP-001.blocks.jsonl",
   "corpus_available": true,
@@ -11,16 +11,16 @@
   "estimated_input_tokens": {
     "prompt": 273,
     "response_schema": 1883,
-    "evidence_packet": 63378,
-    "total": 65534
+    "evidence_packet": 80408,
+    "total": 82564
   },
   "counts": {
-    "evidence": 741,
-    "sources": 70,
+    "evidence": 991,
+    "sources": 101,
     "retrieval_evidence": 302,
-    "corpus_expanded_evidence": 439,
-    "outcome_tagged_evidence": 231,
-    "full_corpus_only_evidence": 381
+    "corpus_expanded_evidence": 689,
+    "outcome_tagged_evidence": 247,
+    "full_corpus_only_evidence": 615
   },
   "blocked_fields": [
     "lnp_composition_raw",
@@ -32,10 +32,10 @@
     "compact_evidence": 160,
     "compact_sources": 24,
     "compact_evidence_packet_tokens": 15993,
-    "added_evidence": 581,
-    "added_sources": 46,
-    "added_evidence_packet_tokens": 47385,
-    "evidence_multiple": 4.63,
-    "evidence_packet_token_multiple": 3.96
+    "added_evidence": 831,
+    "added_sources": 77,
+    "added_evidence_packet_tokens": 64415,
+    "evidence_multiple": 6.19,
+    "evidence_packet_token_multiple": 5.03
   }
 }

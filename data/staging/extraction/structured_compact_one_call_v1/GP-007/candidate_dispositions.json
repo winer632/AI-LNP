@@ -1,0 +1,162 @@
+[
+  {
+    "candidate_id": "OC-278da20594396dd1",
+    "disposition": "unresolved",
+    "reason": "Reported association is for ACT-treated liver transcription and LSEC programs, not a usable LNP-linked outcome."
+  },
+  {
+    "candidate_id": "OC-6eb1b19d7f503310",
+    "disposition": "unresolved",
+    "reason": "Reported LSEC effect lacks a linked LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-efbfcb00e32037e5",
+    "disposition": "unresolved",
+    "reason": "Reported patient-expression analysis lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-f5783d1c0f001de2",
+    "disposition": "unresolved",
+    "reason": "Reported correlation analysis lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-5575768101f5e972",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-associated gene downregulation lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-92a14df3d7f778fc",
+    "disposition": "unresolved",
+    "reason": "Reported lactate/Ca2+ association lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-f01b38f12590a155",
+    "disposition": "unresolved",
+    "reason": "Reported lactate/Ca2+ association lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-c3c42636ac3f462b",
+    "disposition": "not_an_outcome",
+    "reason": "This is a gene-classification method, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-db2e6fd1cbbcfbe1",
+    "disposition": "unresolved",
+    "reason": "Reported negative ACT result is in Micu1-overexpressing conditions, not a usable LNP experiment."
+  },
+  {
+    "candidate_id": "OC-62cae5619708a8f2",
+    "disposition": "unresolved",
+    "reason": "Reported negative ACT result is in Micu1-overexpressing conditions, not a usable LNP experiment."
+  },
+  {
+    "candidate_id": "OC-81e1b1ca824013ac",
+    "disposition": "unresolved",
+    "reason": "Reported expression correlation lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-54ff7b1912c04f1a",
+    "disposition": "unresolved",
+    "reason": "Reported AAV8 overexpression result is not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-481e687333cb42f3",
+    "disposition": "unresolved",
+    "reason": "Reported promoter-assay result is not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-786bfcaaff95208a",
+    "disposition": "unresolved",
+    "reason": "Reported HR plus ACT metabolic result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-d2d20c35ca73a486",
+    "disposition": "unresolved",
+    "reason": "Reported ACT effect on ER-mitochondrial signaling lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-966ac40fe9112902",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-associated glycolysis reduction lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-05f1adca393122b7",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-associated lactylation reduction lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-9d29576348506328",
+    "disposition": "unresolved",
+    "reason": "Reported ChIP-qPCR result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-b79e7e6719df6e67",
+    "disposition": "unresolved",
+    "reason": "Reported toxicity result is from AAV8-mediated overexpression, not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-8548d39d97fb6d1c",
+    "disposition": "unresolved",
+    "reason": "Reported HIRI gene alterations lack an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-c936c391ed18e1dd",
+    "disposition": "unresolved",
+    "reason": "Reported sequencing visualization lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-b78c003b900b882b",
+    "disposition": "unresolved",
+    "reason": "The LNP-linked histology outcome is liver-level and does not provide a usable specified target-cell outcome."
+  },
+  {
+    "candidate_id": "OC-891617e7174d13db",
+    "disposition": "unresolved",
+    "reason": "Reported AAV8-Micu1 result is not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-79cb23ea8ed9c8c3",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-associated aminotransferase result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-75d447e1a3dd4c9e",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-associated aminotransferase result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-e366232881d9619a",
+    "disposition": "unresolved",
+    "reason": "Reported human-LSEC ACT result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-7771f197de1f4843",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-derivative result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-c91c42e24e01bb3e",
+    "disposition": "not_an_outcome",
+    "reason": "This describes establishing experimental models and a research question, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-2ffe64f09b17139e",
+    "disposition": "unresolved",
+    "reason": "Reported ACT effect in HIRI lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-144ad293ea115694",
+    "disposition": "unresolved",
+    "reason": "Reported AAV8-Micu1 pathology result is not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-29cfa6e19e931c2e",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-d1 result lacks an LNP formulation experiment."
+  },
+  {
+    "candidate_id": "OC-99ea7ccc692da470",
+    "disposition": "unresolved",
+    "reason": "Reported ACT-associated gene-expression result lacks an LNP formulation experiment."
+  }
+]

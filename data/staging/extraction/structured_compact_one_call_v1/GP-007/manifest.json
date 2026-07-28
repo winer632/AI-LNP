@@ -1,0 +1,38 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-007",
+  "evidence_view": "structured",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T20:13:35.586609+00:00",
+  "completed_at": "2026-07-28T20:14:21.253647+00:00",
+  "elapsed_seconds": 45.666,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "uncertain",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "NO_TARGET_CELL_EVIDENCE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-007-E-42751544820dab75",
+      "GP-007-FC-0164ecc0c5a3a106"
+    ],
+    "explanation": "The packet reports LNPs-siMicu1 and a linked liver-histology result, but does not directly report LNP delivery or outcome evidence in hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells. LNP composition is also not reported."
+  },
+  "record_counts": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0,
+    "unresolved_items": 3
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 32
+}

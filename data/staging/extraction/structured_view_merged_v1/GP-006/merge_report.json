@@ -1,0 +1,19 @@
+{
+  "merge_version": "consolidated-gap-merge-1.0.0",
+  "paper_id": "GP-006",
+  "source_result_sha256": "cd985c9da0963a4c5b8a7490ab2b100a2c91ca46100ca361b4f11fbd3de69701",
+  "task_checksum": "8daddd5f38ffd27eb01e8ce8a54e7c831a4ebdc4b46e2bf203762b4f2e036177",
+  "recovered_candidate_ids": [
+    "OC-e7802a64c3c71f07"
+  ],
+  "unresolved_candidate_ids": [
+    "OC-be694177da34d91d"
+  ],
+  "new_experiment_ids": [],
+  "new_outcome_ids": [
+    "O8"
+  ],
+  "final_validation_status": "valid",
+  "benchmark_merge_complete": false,
+  "final_result_path": "/Users/renemilywei/Desktop/AI-LNP/data/staging/extraction/consolidated_gold_gap_merged_v1/GP-006/final_result.json"
+}

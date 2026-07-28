@@ -1,0 +1,5 @@
+{
+  "text": "{\"contract_version\":\"compact-1.1.0\",\"paper_id\":\"GP-003\",\"eligibility\":{\"decision\":\"ineligible\",\"reason_codes\":[\"NOT_ORIGINAL_RESEARCH\"],\"evidence_ids\":[\"GP-003-E-240d9595395015cf\"],\"explanation\":\"The packet explicitly identifies the paper as a review; it does not provide an original experimental LNP formulation–experiment–outcome report.\"},\"formulations\":[],\"components\":[],\"experiments\":[],\"outcomes\":[],\"unresolved_items\":[]}",
+  "elapsed_seconds": 8.261,
+  "stdout_tail": "{\"contract_version\":\"compact-1.1.0\",\"paper_id\":\"GP-003\",\"eligibility\":{\"decision\":\"ineligible\",\"reason_codes\":[\"NOT_ORIGINAL_RESEARCH\"],\"evidence_ids\":[\"GP-003-E-240d9595395015cf\"],\"explanation\":\"The packet explicitly identifies the paper as a review; it does not provide an original experimental LNP formulation–experiment–outcome report.\"},\"formulations\":[],\"components\":[],\"experiments\":[],\"outcomes\":[],\"unresolved_items\":[]}\n"
+}

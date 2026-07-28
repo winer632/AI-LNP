@@ -1,0 +1,57 @@
+[
+  {
+    "candidate_id": "OC-b924d98c5ee0c618",
+    "disposition": "not_an_outcome",
+    "reason": "The cited text describes viability gating and debris exclusion methods, not a measured result."
+  },
+  {
+    "candidate_id": "OC-f12ccc22e6498844",
+    "disposition": "not_an_outcome",
+    "reason": "The cited text describes flow-cytometry instrumentation and gating methods, not a measured result."
+  },
+  {
+    "candidate_id": "OC-fdc2e205d8bbc85d",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-266f7215cca1dfa7",
+    "disposition": "not_an_outcome",
+    "reason": "Arrowhead annotation alone does not report a measured outcome."
+  },
+  {
+    "candidate_id": "OC-31142d755597b87a",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-a0003dea2317b7f7",
+    "disposition": "not_an_outcome",
+    "reason": "This is an antibody table entry, not an expression result."
+  },
+  {
+    "candidate_id": "OC-4f4f95c7a5f70408",
+    "disposition": "not_an_outcome",
+    "reason": "This is a sequence table entry, not a measured luciferase-expression result."
+  },
+  {
+    "candidate_id": "OC-1119599841842f36",
+    "disposition": "not_an_outcome",
+    "reason": "This is a sequence table entry, not a measured eGFP-expression result."
+  },
+  {
+    "candidate_id": "OC-83b81cbc99e7d961",
+    "disposition": "not_an_outcome",
+    "reason": "This is a sequence table entry, not a measured luciferase-expression result."
+  },
+  {
+    "candidate_id": "OC-3aa23151f38aab3d",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-6d7c8567a5ab3d71",
+    "disposition": "extracted",
+    "reason": null
+  }
+]
