@@ -1,0 +1,21 @@
+{
+  "report_version": "scoped-extraction-ablation-1.0.0",
+  "hypothesis": "Whole-paper extraction makes competing endpoint families crowd each other out; one call per family should recover more.",
+  "basis": "Three prior measurements pointed this way: 39 vs 168 candidate slots, 1 vs 7 candidates per repair task, v4 per-experiment 12/15 vs whole-paper compact 10/15.",
+  "design": "GP-006, structure-aware packet, candidate slots on. Five endpoint families, one codex turn each.",
+  "result": {
+    "gp006_whole_paper": "2/5 (GO-005, GO-006)",
+    "gp006_family_scoped": "2/5 (GO-005, GO-006)",
+    "delta": 0
+  },
+  "per_scope": {
+    "cell_target_effect": 0,
+    "expression": 0,
+    "gene_editing": 7,
+    "therapeutic_function": 4,
+    "toxicity": 0
+  },
+  "verdict": "Does not pay. Splitting by endpoint family costs 5 turns instead of 1 and recovers nothing extra.",
+  "why_it_probably_failed": "GO-004 belongs to cell_target_effect, and that scope returned zero outcomes even with the family to itself and its six slots in hand. Turn size was not what was blocking it, so the smaller-unit principle does not extend from candidate slots and repair tasks to extraction scope.",
+  "note": "A real defect was found and fixed on the way: omitting required_candidate_ids parsed slot-bearing replies against the contract that forbids candidate_dispositions, rejecting all five scopes before this measurement was possible."
+}
