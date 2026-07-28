@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI-LNP Recall 提升改造设计 · v7 · 2026-07-29</title>
+  <title>AI-LNP Recall 提升改造设计 · v8 · 2026-07-29</title>
   <meta name="description" content="基于实测证据的 AI-LNP 证据恢复率改造设计。v2 加入 GP-006 前置验证结果：GO-006 已确认可解。">
   <style>
     :root{
@@ -117,7 +117,7 @@
 <body>
 
 <header class="shell">
-  <div class="brand">AI-LNP · 改造设计<span class="ver">v7 · 天花板根因已定位</span></div>
+  <div class="brand">AI-LNP · 改造设计<span class="ver">v8 · 最终结果与四条缺失定性</span></div>
   <div class="eyebrow">证据恢复率 · 2026 年 7 月 29 日</div>
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
@@ -138,9 +138,9 @@
 
   <div class="strip">
     <div class="stat good"><strong>6/6</strong><span>模块已交付</span></div>
-    <div class="stat good"><strong>341</strong><span>测试通过（原 160）</span></div>
-    <div class="stat good"><strong>6→8</strong><span>消融 recall（同 harness）</span></div>
-    <div class="stat good"><strong>GO-006</strong><span>已恢复 ✓</span></div>
+    <div class="stat good"><strong>367</strong><span>测试通过（原 160）</span></div>
+    <div class="stat good"><strong>6→11</strong><span>消融 recall（同 harness）</span></div>
+    <div class="stat mid"><strong>4 条</strong><span>缺失（2 条标注存疑）</span></div>
   </div>
 
   <nav class="toc">
@@ -700,7 +700,64 @@ HybridIndex 查询 "total insertion frequency in LSECs" → 上述 table_row 为
     检测到的组和金标准关心的组，不是同一批。
   </div>
 
-  <h3>8. 尚未验证的部分</h3>
+  <h3>8. 最终结果与四条缺失的定性（v8）</h3>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>阶段</th><th class="num">recall</th><th class="num">精度</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>codex 对照组（紧凑包首调）</td><td class="num">6/15</td><td class="num">0.429</td><td>起点</td></tr>
+      <tr><td>+ 完整证据视图</td><td class="num">7/15</td><td class="num">0.500</td><td>+GO-007, GO-015</td></tr>
+      <tr><td>+ P3 候选必答</td><td class="num">8/15</td><td class="num">0.421</td><td>+GO-004</td></tr>
+      <tr class="hl"><td><b>配置并集（recall-first）</b></td><td class="num yes">11/15</td><td class="num">0.373</td><td><b>数值型 3/3 全部恢复</b></td></tr>
+      <tr><td>+ VLM 观察合并</td><td class="num">11/15</td><td class="num">0.358</td><td>读对了但评估器分词不认</td></tr>
+      <tr><td><small>历史最高（v4.1，不同架构）</small></td><td class="num"><small>12/15</small></td><td class="num"><small>—</small></td><td><small>证据图 + 原生 API + 人工裁定</small></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <b>为什么 11/15 低于历史 12/15</b>
+    三个因素叠加：<b>架构不同</b>（v4.1 是证据图 + 按实验分单元，紧凑路线是整篇一次调用）；
+    <b>harness 不同</b>（实测同输入同口径下 codex 比原生 API 低 1 条，6 vs 7）；
+    <b>v4.1 经过人工裁定</b>（其 <code>validated_proofs</code> 明确记录 GO-002/GO-011 为人工核验确认）。
+    而且恢复的条目<b>不重合</b>：v4.1 拿到 GO-002/003/010（全定性），本次拿到 <b>GO-006</b>（v4.1 当年标记为
+    "requires the PDF/table workflow" 而拿不到）。两者并集是 13/15，但 v4.1 的证据图 schema 与当前扁平契约不兼容。
+  </div>
+
+  <h4>四条缺失的最终定性</h4>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>ID</th><th>类型</th><th>状态</th><th>依据</th></tr></thead>
+    <tbody>
+      <tr><td><b>GO-002</b></td><td>定性</td><td class="mid">VLM 已正确读出</td>
+        <td>从 Figure 2 逐字读出 <code>41.5% ± 14.6</code>，与金标准原文一致；判定 F4/80 与 eGFP 不共定位。卡在评估器分词</td></tr>
+      <tr><td><b>GO-003</b></td><td>定性</td><td class="mid">VLM 已正确读出</td>
+        <td>Merge+GFP+LYVE-1 三图判定 colocalized。卡在 <code>LYVE1</code> vs <code>LYVE-1</code> 分词</td></tr>
+      <tr><td><b>GO-004</b></td><td>数值</td><td class="no">标注存疑</td>
+        <td>「17 倍」在引用证据 EVID-007 中<b>不存在</b>（无 17、无 fold、无 luciferase），VLM 确认 Figure 2B 上<b>也没印</b></td></tr>
+      <tr><td><b>GO-017</b></td><td>定性</td><td class="no">人工已否决</td>
+        <td>Day7 v4.1 与 Day8 两次<b>独立</b>裁定均判为「推断而非实测」（D8M-0108）</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="warn">
+    <b>为什么不把 GO-002/GO-003 硬凑上</b>
+    金标准 <code>endpoint_name</code> 写 <code>GFP_expression_in_LYVE1_positive_LSECs</code>，
+    分词为 <code>[gfp, lsec, lyve1, positive]</code>；VLM 记录分词为
+    <code>[gfp, is, lyve, positive, present, signal]</code>，交集只有 <code>[gfp, positive]</code>。
+    <code>LYVE1</code> 与 <code>LYVE-1</code> 在 <code>[a-z0-9]+</code> 下永不相等 ——
+    而<b>金标准自身也不一致</b>：<code>endpoint_name</code> 写 <code>LYVE1</code>，
+    它自己的 <code>qualitative_outcome</code> 写 <code>LYVE-1</code>。<br><br>
+    要跨过这一步只有两条路：改 VLM 措辞去贴合金标准，或放松评估器闸门。
+    <b>两条都是照着答案调</b>，而这个项目所有契约存在的意义正是防这个，所以一条都没做。
+    把印刷标签与可见依据忠实纳入后重测，仍为 +0，这就是真实结果。<br><br>
+    正当的替代是<b>盲审旁路</b>（<code>adjudicate_rejected_matches.py</code>）：
+    只复审确定性匹配器已拒绝的配对，judge 不知道哪个是金标准（按内容哈希定序），
+    不确定必须答 false，且<b>绝不覆盖主指标</b> —— 11/15 仍是那个可字节复现的数字。
+  </div>
+
+  <h3>9. 尚未验证的部分</h3>
   <ul>
     <li><b>只有 GP-006 换成了 uniparse 语料。</b>其余 8 篇仍是 pymupdf 语料，全量重建约 2–3 分钟/篇。</li>
     <li><b>13–14/15 的目标未达成。</b>当前 codex harness 内为 8/15；原生 API 路径在合并修补后为 10/15。

@@ -2,24 +2,31 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-008",
   "route_ids": [
-    "RT-4c580b99b6c74c4a"
+    "RT-abc2cdfeb828b060"
   ],
   "candidate_ids": [
-    "OC-7de2514e3d45834a"
+    "OC-761c9ba1b339e15d"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-008-FC-67cba83633b522b0",
-      "text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
+      "evidence_id": "GP-008-FC-1fa445a31506beb7",
+      "text": "The supernatant was replaced with 225 pre-warmed medium at 37°C, and the dishes were incubated at 37°C in a 5% CO2 226 atmosphere to promote phagocytosis.",
       "source_ids": [
-        "FC-S-5f7e3c49e57be4bb"
+        "FC-S-c156d43e795af19f"
       ]
     },
     {
-      "evidence_id": "GP-008-E-fb922339e2bceab0",
-      "text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
+      "evidence_id": "GP-008-FC-9792c53c458d373d",
+      "text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 228 cells labeled with pHrodo.",
       "source_ids": [
-        "S-6a24ed13fb43"
+        "FC-S-c156d43e795af19f"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-a9c7d8e5604236b3",
+      "text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 228 cells labeled with pHrodo.",
+      "source_ids": [
+        "S-a86b1e0bd14d"
       ]
     }
   ],
@@ -41,5 +48,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "9c7bf46ea8eba858450d93f7e5c9c8de35ac8a8097f273d06ab510137b784e93",
   "source_inventory_sha256": "8d996891c23d542f579d62055797920980c9bb2e8428d3f2dfd5421de0fe9fa2",
-  "task_checksum": "0681c2ea67f5a0dbedb96644b8cb15b06c7163f9a89e96d9539bb0de0ef9df32"
+  "task_checksum": "806b5176889d323aef7a3025214485f2c118487b11d9a67f66107fcd888421b2"
 }

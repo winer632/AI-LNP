@@ -2,40 +2,40 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-006",
   "route_ids": [
-    "RT-660111bfbda28ab5",
-    "RT-d957228a2fd08732"
+    "RT-a9db887c77887ee8",
+    "RT-547bff3cdb26f508"
   ],
   "candidate_ids": [
-    "OC-206ce02d8de31a37",
-    "OC-a477ebb8ae4c6731"
+    "OC-8ee75538ddcb5e65",
+    "OC-aab9506ac759ad65"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-006-FC-aa98a842fec45d77",
-      "text": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed.",
+      "evidence_id": "GP-006-FC-0966e15ecdeb6a26",
+      "text": "47.5%), we selected N/P 8 for the production, makes LSECs an attractive target for gene editing strate- following experiments.",
       "source_ids": [
-        "FC-S-f47e49622c2d8294"
+        "FC-S-a90ca95416886c7f"
       ]
     },
     {
-      "evidence_id": "GP-006-E-ef798f3259752156",
-      "text": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed.",
+      "evidence_id": "GP-006-FC-eeea09a1b0ea88ba",
+      "text": "Alternatively, a nonviral in vivo gene editing approach phosphate group of nucleic acid significantly affects encapsulation can provide permanent correction of the F8 gene that is regulated efficiency and size,23,24 we optimized the Luc LNPs according to in its native site.",
       "source_ids": [
-        "S-23e0134068c1"
+        "FC-S-a90ca95416886c7f"
       ]
     },
     {
-      "evidence_id": "GP-006-FC-a47650962823cf12",
-      "text": "The corrected mutants (around 46.5% of total deletions), together with four base-pair dele- exhibited endogenous FVIII expression and effectively restored the tions, which can help rescue the five base-pair deletion in NSG coagulation activity in NSG HemA mice.",
+      "evidence_id": "GP-006-FC-b76a2eba823807c3",
+      "text": "This restored To investigate the liver distribution of MC3 LNP, we intrave- FVIII activity was sustained for over 26 weeks, resulting in improved nouslyinjected 1,10-Dioctadecyl-3,3,30,30-tetramethylindocarbocyanine function of clot formation in HemA mice.",
       "source_ids": [
-        "FC-S-f47e49622c2d8294"
+        "FC-S-a90ca95416886c7f"
       ]
     },
     {
-      "evidence_id": "GP-006-E-3c6e73bc825c5293",
-      "text": "The corrected mutants (around 46.5% of total deletions), together with four base-pair dele- exhibited endogenous FVIII expression and effectively restored the tions, which can help rescue the ﬁve base-pair deletion in NSG coagulation activity in NSG HemA mice.",
+      "evidence_id": "GP-006-E-f4c4a050824725a3",
+      "text": "This restored To investigate the liver distribution of MC3 LNP, we intrave- FVIII activity was sustained for over 26 weeks, resulting in improved nouslyinjected 1,10-Dioctadecyl-3,3,30,30-tetramethylindocarbocyanine function of clot formation in HemA mice.",
       "source_ids": [
-        "S-23e0134068c1"
+        "S-dedef8ad4399"
       ]
     }
   ],
@@ -60,5 +60,5 @@
   "permitted_new_outcomes": 4,
   "source_result_sha256": "cd985c9da0963a4c5b8a7490ab2b100a2c91ca46100ca361b4f11fbd3de69701",
   "source_inventory_sha256": "cd87e9e3d0610aebb331200a4c9acc9e56091040170a823144a2e3594c1832d9",
-  "task_checksum": "c827d7dd6a0f92e79cd1b2d4950df5e5ee1bbd24659e143903fe8b0fc32078ff"
+  "task_checksum": "390d7f99577bda0357d1859a5d042052dc2042ea0aea035167136bb2220cad76"
 }

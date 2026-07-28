@@ -149,11 +149,11 @@
       "retained_candidates": 58,
       "inventory_review": 44,
       "coverage_status": "review_unmatched_groups",
-      "matched": 4,
-      "unmatched_text": 3,
+      "matched": 3,
+      "unmatched_text": 4,
       "unmatched_vision": 7,
       "review": 44,
-      "text_tasks": 3,
+      "text_tasks": 4,
       "vision_referrals": 0,
       "finalization_allowed": false,
       "blockers": [
@@ -183,7 +183,7 @@
   "counts": {
     "finalization_allowed": 3,
     "finalization_blocked": 6,
-    "text_tasks": 14,
+    "text_tasks": 15,
     "vision_referrals": 1
   }
 }

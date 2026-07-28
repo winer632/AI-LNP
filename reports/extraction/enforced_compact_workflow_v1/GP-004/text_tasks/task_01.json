@@ -2,26 +2,31 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-004",
   "route_ids": [
-    "RT-e438eb1b5dc331b4",
-    "RT-e170da6586265275"
+    "RT-6a8e99370678f9ae"
   ],
   "candidate_ids": [
-    "OC-25df9ae060b93417",
-    "OC-59fa5b90ee5989df"
+    "OC-50a8a10d7440e225"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-004-FC-c08b3689316d14ed",
-      "text": "Single injections of either HGF or EGF mRNA-LNP decreased steatosis, although combination of both mRNA-LNP consistently resulted in significantly more efficient steatosis reversion assessed with serum cholesterol levels and Oil Red O staining (Fig.",
+      "evidence_id": "GP-004-FC-4dd33ccc119f1671",
+      "text": "Significant percentages of these cell populations express eGFP, including 41.5 ± 14.6% CD11b+ cells, 34.1 ± 2.2% CD45+ cells, and 70.7 ± 9% CD31+ cells (Fig.",
       "source_ids": [
-        "FC-S-fbed1caf43ce7c87"
+        "FC-S-783827e9e8236666"
       ]
     },
     {
-      "evidence_id": "GP-004-FC-3c25e1ae6b8c58ec",
-      "text": "Analyses of lipid accumulation in hepatocytes as assessed by Oil Red O staining on liver sections revealed a sharp decrease of steatosis 2 days after the first injection of HGF/EGF mRNA-LNP compared to that with Poly(C) RNA-LNP treatment, in which steatosis was evenly maintained with persistent macrosteatosis (Fig.",
+      "evidence_id": "GP-004-FC-af61355776c8ccca",
+      "text": "Virtually all hepatocytes identified with HNF4α expressed eGFP (Fig.",
       "source_ids": [
-        "FC-S-fbed1caf43ce7c87"
+        "FC-S-783827e9e8236666"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-FC-cde0316a82a5bd30",
+      "text": "eGFP expression was absent in CK19+ cholangiocytes and α-SMA+ vascular smooth muscle cells, while few F4/80+ Kupffer cells expressed eGFP.",
+      "source_ids": [
+        "FC-S-783827e9e8236666"
       ]
     }
   ],
@@ -40,8 +45,8 @@
     "O4"
   ],
   "permitted_new_experiments": 1,
-  "permitted_new_outcomes": 4,
+  "permitted_new_outcomes": 2,
   "source_result_sha256": "f40218e9fc74e50f4d5de656b9c8e8ae37d5ff145431599a41219fd612d2122b",
   "source_inventory_sha256": "625de626997466f8eeaf15273f2fc66df80aa2e46bf4f9f6c11f27874f5c1dc7",
-  "task_checksum": "3014870a246b018dc8a815c23c1c6f1a033f38f836b67bcd9a1874fca88f81ab"
+  "task_checksum": "c3e73a0a60090789d0f1950b9ccbd00b86cc4da971d7392416571147f64c98a4"
 }

@@ -2,31 +2,31 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-008",
   "route_ids": [
-    "RT-abc2cdfeb828b060"
+    "RT-5482093b18f3ebed"
   ],
   "candidate_ids": [
-    "OC-761c9ba1b339e15d"
+    "OC-cdf1f2fd63fea2e2"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-008-FC-1fa445a31506beb7",
-      "text": "The supernatant was replaced with 225 pre-warmed medium at 37°C, and the dishes were incubated at 37°C in a 5% CO2 226 atmosphere to promote phagocytosis.",
+      "evidence_id": "GP-008-FC-028bd91acc9c0900",
+      "text": "We found that more Heps (ALB+) in the LNP group expressed PCNA, whereas HSCs (Desmin+) showed almost no PCNA expression.",
       "source_ids": [
-        "FC-S-c156d43e795af19f"
+        "FC-S-9a8b8f55dd34f16d"
       ]
     },
     {
-      "evidence_id": "GP-008-FC-9792c53c458d373d",
-      "text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 228 cells labeled with pHrodo.",
+      "evidence_id": "GP-008-FC-86e6148a50e80b1d",
+      "text": "Also, we verified that the LNP treatment could inhibit the genes of caspase3 and bax and promote bcl-2 and pcna expression in the extracted primary Heps from the mouse liver through qPCR analysis (Fig.",
       "source_ids": [
-        "FC-S-c156d43e795af19f"
+        "FC-S-9a8b8f55dd34f16d"
       ]
     },
     {
-      "evidence_id": "GP-008-E-a9c7d8e5604236b3",
-      "text": "Red fluorescence denoted specific phagocytosis of BMDMs on JS-1 228 cells labeled with pHrodo.",
+      "evidence_id": "GP-008-E-68164fa9e4c5d6e0",
+      "text": "Also, we verified that the LNP treatment could inhibit the genes of caspase3 and bax and promote bcl-2 and pcna expression in the extracted primary Heps from the mouse liver through qPCR analysis (Fig.",
       "source_ids": [
-        "S-a86b1e0bd14d"
+        "S-3600c7ce3d2b"
       ]
     }
   ],
@@ -48,5 +48,5 @@
   "permitted_new_outcomes": 2,
   "source_result_sha256": "9c7bf46ea8eba858450d93f7e5c9c8de35ac8a8097f273d06ab510137b784e93",
   "source_inventory_sha256": "8d996891c23d542f579d62055797920980c9bb2e8428d3f2dfd5421de0fe9fa2",
-  "task_checksum": "806b5176889d323aef7a3025214485f2c118487b11d9a67f66107fcd888421b2"
+  "task_checksum": "4c3491d6e20466acb6981210983e99cae5a9adfbe47641703bed97e07cb51b6f"
 }

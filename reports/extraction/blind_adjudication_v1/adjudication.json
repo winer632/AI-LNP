@@ -1,0 +1,307 @@
+{
+  "report_version": "blind-adjudication-1.0.0",
+  "harness": "codex-exec",
+  "model": "gpt-5.6-terra",
+  "note": "Second opinion on pairs the deterministic matcher rejected. Never replaces the primary recall number; reported alongside it.",
+  "verdicts": [
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP expression specifically in F4/80-positive Kupffer cells, whereas B measures the percentage of eGFP-positive CD11b+ cells in liver non-parenchymal fractions by flow cytometry. These are different cell populations."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP-positive CD31+ endothelial cells, whereas B concerns eGFP expression in F4/80+ Kupffer cells; these are different cell populations."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures hepatocyte steatosis by Oil Red O staining; B measures eGFP expression in F4/80-positive Kupffer cells."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O4",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP expression in F4/80-positive Kupffer cells, whereas B assesses central-vein necrotic area by H&E staining."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "Both concern eGFP expression, but A measures HNF4α-identified hepatocytes while B measures F4/80-positive Kupffer cells, which are different cell populations."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures the fraction of proliferating EdU+ cells that are HNF4α+ hepatocytes; B reports eGFP expression in F4/80+ Kupffer cells. The endpoint and cell population differ."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "V1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A reports eGFP expression specifically in F4/80-positive Kupffer cells, whereas B reports lack of eGFP/F4-80 colocalization and a separate eGFP mRNA value for CD11b+ cells."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures F8 genomic editing in isolated hepatocytes; B measures GFP expression in LYVE1-positive liver sinusoidal endothelial cells, a different endpoint and cell population."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive LSECs, whereas B measures F8 genomic editing rate by deep sequencing in isolated LSECs; these are different endpoints."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-842707c55fd53a55",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures the distribution of one-base-pair deletion editing patterns in LSECs."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-1c3f88c83b5cb897",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells; B measures absence of indel variants at predicted genomic off-target sites in the WT F8 gene."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-e2d4bb67d2cf343a",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures insertion frequency."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-c0903300f94dcdae",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/localization specifically in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures overall gene-editing rate across total liver cells."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-fa3d41fbbfb8dbc9",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells; B measures CRISPR-induced indel mutation rate at mouse F8 exon 1 genomic DNA."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-7e02be28ef250a82",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures endogenous factor VIII functional activity via aPTT clotting time in mice."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-85f7147389be1c5a",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells; B measures circulating factor VIII activity in treated NSG hemophilia A mice."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-577d7d7fe2448951",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/localization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures bulk whole-liver genomic gene-editing efficiency."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "OC-46a32d7d3a3de39d",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, while B measures plasma FVIII clotting activity by aPTT."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization specifically in LYVE1-positive liver sinusoidal endothelial cells, while B measures overall LSEC deletion frequency by deep sequencing."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures total deletion frequency in hepatocytes by deep sequencing."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, while B measures total insertion frequency by deep sequencing."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O4",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells; B measures total insertion frequency by deep sequencing in hepatocytes."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O5",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization specifically in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures the overall gene-editing rate across total liver cells by deep sequencing."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O6",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures endogenous factor VIII activity by an aPTT assay; B measures GFP expression/localization in LYVE1-positive liver sinusoidal endothelial cells."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O7",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells; B measures ROTEM clotting and clot-formation times in mice."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O8",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures off-target genome-editing indel frequencies at predicted sites in mice; B measures GFP expression/localization in LYVE1-positive liver sinusoidal endothelial cells."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures F8 gene-editing rate in hepatocytes."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive LSECs, whereas B measures the F8 gene-editing rate in LSECs by deep sequencing. These are different endpoints."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/localization specifically in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures gene-editing rate by deep sequencing across total liver cells."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O4",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures the frequency of one-base-pair deletion editing outcomes in LSECs."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O5",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells; B concerns indel insertion/deletion variant frequencies."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O6",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures factor VIII functional activity by an aPTT assay over time."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O7",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP signal in LYVE1-positive liver sinusoidal endothelial cells; B measures luciferase expression relative to hepatocytes and LSECs, using a different reporter and comparison endpoint."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive LSECs, whereas B measures F8 gene-editing rate by deep sequencing in isolated LSECs; these are different endpoints."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures FVIII activity over time using an aPTT assay."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression/colocalization in LYVE1-positive liver sinusoidal endothelial cells, whereas B measures absence of indel variants at predicted off-target genomic sites in untreated mice."
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "outcome_id": "V1",
+      "same_measurement": true,
+      "confidence": "high",
+      "reason": "Both describe GFP expression/signal colocalized with the LYVE-1 marker in LYVE-1-positive liver sinusoidal endothelial cells (LSECs)."
+    }
+  ],
+  "adjudicated_matches": [
+    "GO-003"
+  ]
+}

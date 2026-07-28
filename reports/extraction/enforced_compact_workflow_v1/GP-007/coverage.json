@@ -32,7 +32,7 @@
         "GP-007-E-340b56b1780e79cc"
       ],
       "figure_or_table": "figure 2a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-99d302e8a143216a",
@@ -43,7 +43,7 @@
         "GP-007-E-8e627575f92dd385"
       ],
       "figure_or_table": "figure s5d",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-1e3ce4d942de2d29",
@@ -53,7 +53,7 @@
         "GP-007-FC-ea8c56432fb357c0"
       ],
       "figure_or_table": null,
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-f6fc2db572ff9a4f",
@@ -64,7 +64,7 @@
         "GP-007-E-74f0f77e9c4bdc9e"
       ],
       "figure_or_table": "figure 1a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-8cf81e3a1b715759",
@@ -75,7 +75,7 @@
         "GP-007-E-f8c288f426cf9248"
       ],
       "figure_or_table": "figure 2d",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-fcdef6bfcbcc681d",
@@ -86,7 +86,7 @@
         "GP-007-E-cb365924fb01a96d"
       ],
       "figure_or_table": "figure 3a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-bd6221e4d03a8c6e",
@@ -97,7 +97,7 @@
         "GP-007-E-1e29ca7755ded607"
       ],
       "figure_or_table": "figure 5c",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-6d7eb0b9b649d235",
@@ -108,7 +108,7 @@
         "GP-007-E-f8e9b1d97ec38688"
       ],
       "figure_or_table": "figure 5g",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-ead16d092283b76d",
@@ -118,7 +118,7 @@
         "GP-007-FC-b5aac0937450a356"
       ],
       "figure_or_table": "figure 6g",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-4803d94c6461252e",
@@ -128,7 +128,7 @@
         "GP-007-FC-153491da60dee964"
       ],
       "figure_or_table": "figure 6h",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-1f9b9390da445c3c",
@@ -138,7 +138,7 @@
         "GP-007-FC-af56a369ee9f01e3"
       ],
       "figure_or_table": "figure 7i",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-ea05c53cee62f3e9",
@@ -149,7 +149,7 @@
         "GP-007-E-842f91f5f74ce35c"
       ],
       "figure_or_table": "figure 8g",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-c7cbef13d669831a",
@@ -160,7 +160,7 @@
         "GP-007-E-973d8de1e6f2b75e"
       ],
       "figure_or_table": "figure s4b",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-ea9bdbe0c226bd11",
@@ -171,7 +171,7 @@
         "GP-007-E-027f7dd947f25b84"
       ],
       "figure_or_table": "figure s8c",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-7fa21b435c415a1c",
@@ -182,7 +182,7 @@
         "GP-007-E-c14c55fc63e06d91"
       ],
       "figure_or_table": "figure 8a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-c28c2faa47b8a005",
@@ -193,7 +193,7 @@
         "GP-007-E-5a61cb9f13551fa5"
       ],
       "figure_or_table": null,
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-9eb5942d805a678c",
@@ -204,7 +204,7 @@
         "GP-007-E-3092adb8699af0e5"
       ],
       "figure_or_table": "figure 3f",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-39657d733bab86f7",
@@ -215,7 +215,7 @@
         "GP-007-E-6be2abee251630f5"
       ],
       "figure_or_table": "figure 4a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-948439060b8233b1",
@@ -226,7 +226,7 @@
         "GP-007-E-5a5c8908d5d1a041"
       ],
       "figure_or_table": "figure 5a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-2db8527bbbd5cea6",
@@ -237,7 +237,7 @@
         "GP-007-E-c213d4c2bdca23d2"
       ],
       "figure_or_table": "figure 5m",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-c149a4d2c1e9540d",
@@ -247,7 +247,7 @@
         "GP-007-FC-6aa7b3d28dc54fe3"
       ],
       "figure_or_table": "figure s4j",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-09df539da5c6dc15",
@@ -258,7 +258,7 @@
         "GP-007-E-cbb728756a80c83f"
       ],
       "figure_or_table": "figure 8d",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-38e4d21c116531ae",
@@ -269,7 +269,7 @@
         "GP-007-E-711d21c5ebb85242"
       ],
       "figure_or_table": "figure 1b",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-20461515c9688e57",
@@ -280,7 +280,7 @@
         "GP-007-E-5542e347ca40e34f"
       ],
       "figure_or_table": "figure 3a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-7b0559dd7e56aae0",
@@ -290,7 +290,7 @@
         "GP-007-FC-d5e1169f470aa501"
       ],
       "figure_or_table": "figure 4g",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-fad4d52b627f5536",
@@ -301,7 +301,7 @@
         "GP-007-E-b8826b6ba5fe4e21"
       ],
       "figure_or_table": "figure 8f",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-5f55e353039815ed",
@@ -312,7 +312,7 @@
         "GP-007-E-e62094dfc418e8c4"
       ],
       "figure_or_table": "figure s1a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-5a187f4051086693",
@@ -323,7 +323,7 @@
         "GP-007-E-5c8b7ada194395d5"
       ],
       "figure_or_table": "figure s9",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-6c65e47705640705",
@@ -334,7 +334,7 @@
         "GP-007-E-2cc57dc914d7bfa3"
       ],
       "figure_or_table": null,
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-7771f197de1f4843",
@@ -344,7 +344,7 @@
         "GP-007-E-981f90d7b660fd72"
       ],
       "figure_or_table": null,
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-378a4054df222f5b",
@@ -354,7 +354,7 @@
         "GP-007-FC-db8f009c8915f057"
       ],
       "figure_or_table": "figure 3k",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-676146802dc43576",
@@ -365,7 +365,7 @@
         "GP-007-E-9aa5e75c0f1fd4a6"
       ],
       "figure_or_table": "figure 4",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-8de9940e969127a7",
@@ -376,7 +376,7 @@
         "GP-007-E-0ffb308f4724320a"
       ],
       "figure_or_table": "figure 4a",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-ea440578d430df76",
@@ -386,7 +386,7 @@
         "GP-007-FC-cf7cbba3d02c50cf"
       ],
       "figure_or_table": "figure 4h",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-2d61d2d19c43fb13",
@@ -396,7 +396,7 @@
         "GP-007-FC-f0b32e7e58725e16"
       ],
       "figure_or_table": "figure 5",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-44b2da4d7e7d30af",
@@ -406,7 +406,7 @@
         "GP-007-FC-b070b982e3647c29"
       ],
       "figure_or_table": "figure 6e",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-9360383220c828cd",
@@ -417,7 +417,7 @@
         "GP-007-E-8c12948da3b6a70f"
       ],
       "figure_or_table": "figure 8e",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-ad127192566c981d",
@@ -428,7 +428,7 @@
         "GP-007-E-d6660d0ae8439fc3"
       ],
       "figure_or_table": "figure 8j",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     },
     {
       "candidate_id": "OC-f6b485835b158d67",
@@ -439,7 +439,7 @@
         "GP-007-E-5c2b4261d571e76e"
       ],
       "figure_or_table": "figure 1e",
-      "reason": "medium_confidence_candidate_not_allowed_to_trigger_repair"
+      "reason": "confidence_below_repair_threshold"
     }
   ],
   "status": "review_unmatched_groups",

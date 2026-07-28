@@ -2,38 +2,54 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-006",
   "route_ids": [
-    "RT-898aa5a24901e9b0"
+    "RT-32a03cdf5c44b8cd",
+    "RT-04f6a04cf1c55488"
   ],
   "candidate_ids": [
-    "OC-3fdb926b75551d03"
+    "OC-94fbfdc4125da67a",
+    "OC-aa5fd8f5578fa6d4"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-006-FC-287c9a11cc2b1656",
-      "text": "This model mimics the genetic variant seen in approximately 16% of severe HemA patients with small deletion and insertion variants.29 To edit the mutant F8 gene in NSG HemA mice, we selected two sgRNAs, mF8sgRNA and NSGHAsgRNA, targeting the mutant F8 sequence.",
+      "evidence_id": "GP-006-FC-0b8f309fb5fb9921",
+      "text": "Sequencing data indicated an average gene editing rate of 15.3% in LSECs.",
       "source_ids": [
-        "FC-S-7d03e5047d6a21ab"
+        "FC-S-d1334c5e40e93baa"
       ]
     },
     {
-      "evidence_id": "GP-006-FC-636650f0cf21d3f3",
-      "text": "Of the deletions, −1 (7.68%) and −4 (1.38%) deletion were able to restore the reading frame, potentially aiding in the recovery of FVIII expression.",
+      "evidence_id": "GP-006-FC-63eb62699fc893cc",
+      "text": "Sustained endogenous FVIII activity up to 6% was achieved over 26 weeks in treated HemA mice.",
       "source_ids": [
-        "FC-S-7d03e5047d6a21ab"
+        "FC-S-08356b2e773ac598"
       ]
     },
     {
-      "evidence_id": "GP-006-E-d587464229669da0",
-      "text": "Of the deletions, −1 (7.68%) and −4 (1.38%) deletion were able to restore the reading frame, potentially aiding in the recovery of FVIII expression.",
+      "evidence_id": "GP-006-FC-03e5bf93ed4d5679",
+      "text": "Sustained endogenous FVIII activity mediated repair.6 This powerful gene editing tool is effective in both up to 6% was achieved over 26 weeks in treated HemA mice.",
       "source_ids": [
-        "S-fd8d49c9e26f"
+        "FC-S-d1334c5e40e93baa"
       ]
     },
     {
-      "evidence_id": "GP-006-E-eabead190d4bc8ce",
-      "text": "This model mimics the genetic variant seen in approximately 16% of severe HemA patients with small deletion and insertion variants.29 To edit the mutant F8 gene in NSG HemA mice, we selected two sgRNAs, mF8sgRNA and NSGHAsgRNA, targeting the mutant F8 sequence.",
+      "evidence_id": "GP-006-FC-87c03f7a35590b13",
+      "text": "Pa- to deliver therapeutic siRNA or mRNA for treating various diseases.9 tients with severe HemA exhibit less than 1% of FVIII activity and are In fact, the first Food and Drug Administration (FDA)-approved LNP prone to prolonged bleeding after trauma, as well as spontaneous drug, Onpattro, which contains small interfering RAN (siRNA), was bleeding in soft tissues such as joints and muscles.1,2 Current treat- authorized for the treatment of hereditary ATTR amyloidosis in ment options, such as frequent infusions of therapeutic recombinant 2018.10,11 More recently, mRNA LNPs encoding the viral spike FVIII protein to maintain FVIII activity above the normal trough protein have been authorized as vaccines to prevent SARS-CoV-2 level of >1% are expensive, inconvenient, short-term, and frequently (COVID-19) infection.12,13 Upon systemic injection, LNPs are known insufficient.",
       "source_ids": [
-        "S-fd8d49c9e26f"
+        "FC-S-d1334c5e40e93baa"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-347afe08a5543c1f",
+      "text": "Sustained endogenous FVIII activity mediated repair.6 This powerful gene editing tool is effective in both up to 6% was achieved over 26 weeks in treated HemA mice.",
+      "source_ids": [
+        "S-6cd2793f4e8b"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-44f76eb37d91da27",
+      "text": "Pa- to deliver therapeutic siRNA or mRNA for treating various diseases.9 tients with severe HemA exhibit less than 1% of FVIII activity and are In fact, the ﬁrst Food and Drug Administration (FDA)-approved LNP prone to prolonged bleeding after trauma, as well as spontaneous drug, Onpattro, which contains small interfering RAN (siRNA), was bleeding in soft tissues such as joints and muscles.1,2 Current treat- authorized for the treatment of hereditary ATTR amyloidosis in ment options, such as frequent infusions of therapeutic recombinant 2018.10,11 More recently, mRNA LNPs encoding the viral spike FVIII protein to maintain FVIII activity above the normal trough protein have been authorized as vaccines to prevent SARS-CoV-2 level of >1% are expensive, inconvenient, short-term, and frequently (COVID-19) infection.12,13 Upon systemic injection, LNPs are known insufﬁcient.",
+      "source_ids": [
+        "S-6cd2793f4e8b"
       ]
     }
   ],
@@ -55,8 +71,8 @@
     "O7"
   ],
   "permitted_new_experiments": 1,
-  "permitted_new_outcomes": 2,
+  "permitted_new_outcomes": 4,
   "source_result_sha256": "cd985c9da0963a4c5b8a7490ab2b100a2c91ca46100ca361b4f11fbd3de69701",
   "source_inventory_sha256": "cd87e9e3d0610aebb331200a4c9acc9e56091040170a823144a2e3594c1832d9",
-  "task_checksum": "20884a2e2e3ac75a1256d9189fec49c6d4fb7c69d6d50479bb7d9fa68b8f7e1d"
+  "task_checksum": "6ba36b884dc68bcd15fd5a4eda18b50e4ba9f16e277448593ebdea31c4e052d3"
 }

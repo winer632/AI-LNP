@@ -2,40 +2,40 @@
   "task_version": "missing-record-task-1.0.0",
   "paper_id": "GP-006",
   "route_ids": [
-    "RT-a9db887c77887ee8",
-    "RT-547bff3cdb26f508"
+    "RT-f6317f2fcd952185",
+    "RT-935860d07bd56ebe"
   ],
   "candidate_ids": [
-    "OC-8ee75538ddcb5e65",
-    "OC-aab9506ac759ad65"
+    "OC-0491c6584d61c624",
+    "OC-a4f464ebb1fc1784"
   ],
   "evidence": [
     {
-      "evidence_id": "GP-006-FC-0966e15ecdeb6a26",
-      "text": "47.5%), we selected N/P 8 for the production, makes LSECs an attractive target for gene editing strate- following experiments.",
+      "evidence_id": "GP-006-FC-e9924d7a37744697",
+      "text": "Specifically, after two injections, treated NSG HemA mice displayed approximately 2.6% FVIII activity (Figure 4A).",
       "source_ids": [
-        "FC-S-a90ca95416886c7f"
+        "FC-S-051e1c2dbbc8ba2a"
       ]
     },
     {
-      "evidence_id": "GP-006-FC-eeea09a1b0ea88ba",
-      "text": "Alternatively, a nonviral in vivo gene editing approach phosphate group of nucleic acid significantly affects encapsulation can provide permanent correction of the F8 gene that is regulated efficiency and size,23,24 we optimized the Luc LNPs according to in its native site.",
+      "evidence_id": "GP-006-E-5f1df7ac5c7ec3f9",
+      "text": "Specifically, after two injections, treated NSG HemA mice displayed approximately 2.6% FVIII activity (Figure 4A).",
       "source_ids": [
-        "FC-S-a90ca95416886c7f"
+        "S-620e08261866"
       ]
     },
     {
-      "evidence_id": "GP-006-FC-b76a2eba823807c3",
-      "text": "This restored To investigate the liver distribution of MC3 LNP, we intrave- FVIII activity was sustained for over 26 weeks, resulting in improved nouslyinjected 1,10-Dioctadecyl-3,3,30,30-tetramethylindocarbocyanine function of clot formation in HemA mice.",
+      "evidence_id": "GP-006-FC-626bb1932bd8fc95",
+      "text": "Our data showed that the in vivo gene editing efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B).Figure 4In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice(A) Plasmid expressing Cas9 and NSGHAsgRNA was delivered to NSG HemA mice through hydrodynamic injection.",
       "source_ids": [
-        "FC-S-a90ca95416886c7f"
+        "FC-S-051e1c2dbbc8ba2a"
       ]
     },
     {
-      "evidence_id": "GP-006-E-f4c4a050824725a3",
-      "text": "This restored To investigate the liver distribution of MC3 LNP, we intrave- FVIII activity was sustained for over 26 weeks, resulting in improved nouslyinjected 1,10-Dioctadecyl-3,3,30,30-tetramethylindocarbocyanine function of clot formation in HemA mice.",
+      "evidence_id": "GP-006-E-ab6a59c6da34953c",
+      "text": "Our data showed that the in vivo gene editing efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B).Figure 4In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice(A) Plasmid expressing Cas9 and NSGHAsgRNA was delivered to NSG HemA mice through hydrodynamic injection.",
       "source_ids": [
-        "S-dedef8ad4399"
+        "S-620e08261866"
       ]
     }
   ],
@@ -60,5 +60,5 @@
   "permitted_new_outcomes": 4,
   "source_result_sha256": "cd985c9da0963a4c5b8a7490ab2b100a2c91ca46100ca361b4f11fbd3de69701",
   "source_inventory_sha256": "cd87e9e3d0610aebb331200a4c9acc9e56091040170a823144a2e3594c1832d9",
-  "task_checksum": "390d7f99577bda0357d1859a5d042052dc2042ea0aea035167136bb2220cad76"
+  "task_checksum": "819e5f469ac13d4a2c99712d97d4449c0064712e149aa53931e68e6f82c192c9"
 }

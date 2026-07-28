@@ -14,6 +14,13 @@
       "source_ids": [
         "FC-S-5f7e3c49e57be4bb"
       ]
+    },
+    {
+      "evidence_id": "GP-008-E-fb922339e2bceab0",
+      "text": "By transfecting target cells with luciferase, we quantified the killing effect, and the results demonstrated that the CAR-M derived from αCD163/LNP-FAPCAR significantly eliminated the FAP+JS-1 target cells in vitro (Fig.",
+      "source_ids": [
+        "S-6a24ed13fb43"
+      ]
     }
   ],
   "existing_formulation_ids": [
@@ -33,6 +40,6 @@
   "permitted_new_experiments": 1,
   "permitted_new_outcomes": 2,
   "source_result_sha256": "9c7bf46ea8eba858450d93f7e5c9c8de35ac8a8097f273d06ab510137b784e93",
-  "source_inventory_sha256": "003e35f058278f119dfce63e306c284909b801af3349105cc73eb7324c44c5f2",
-  "task_checksum": "28240f4be0972de8fd735833ee55b1c9aaddc172bb20a215c6d8b5aa48ca4e65"
+  "source_inventory_sha256": "8d996891c23d542f579d62055797920980c9bb2e8428d3f2dfd5421de0fe9fa2",
+  "task_checksum": "0681c2ea67f5a0dbedb96644b8cb15b06c7163f9a89e96d9539bb0de0ef9df32"
 }
