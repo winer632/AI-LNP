@@ -250,15 +250,16 @@ flags:
       path: config/extraction/compact_route_v1.yaml
       key: activation_gate.active
     description: >-
-      Select the compact evidence route. Read by
-      run_codex_one_call.default_evidence_view, where it takes precedence over
-      full_evidence_view: with this on, a run uses the compact packet even if
-      the full view is also enabled. Because compact is also what an
-      unconfigured run falls back to, toggling this alone at the shipped
-      defaults produces no observable change -- it only becomes visible
-      alongside full_evidence_view. Described this way deliberately: it
-      previously claimed to gate replacing the v4 baseline, which is not what
-      any code does with it.
+      Precedence rule for which evidence view a run selects, read by
+      run_codex_one_call.default_evidence_view. Resolution is:
+      structured_evidence_view wins if on; otherwise full_evidence_view
+      wins only when this flag is off; otherwise compact. So this flag
+      is a veto over the full view, not an activation gate. At the
+      shipped defaults (structured on, full off) toggling it alone
+      changes nothing observable, because the view it vetoes is already
+      disabled -- that is inherent to a precedence rule and is stated
+      here rather than papered over. It previously claimed to gate
+      replacing the v4 baseline, which no code does with it.
     aliases: [compact_activation_gate, activation_gate]
     # Files that actually call is_enabled() for this flag. Verified by
     # test_declared_integration_points_really_read_the_flag, because this

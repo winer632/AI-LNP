@@ -1,0 +1,163 @@
+{
+  "report_version": "blind-adjudication-1.0.0",
+  "harness": "codex-exec",
+  "model": "gpt-5.6-terra",
+  "note": "Second opinion on pairs the deterministic matcher rejected. Never replaces the primary recall number; reported alongside it.",
+  "verdicts": [
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP expression specifically in F4/80-positive Kupffer cells, whereas B measures the percentage of eGFP-positive CD11b+ cells in liver non-parenchymal fractions."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP-positive CD31+ endothelial cells, while B concerns eGFP expression in F4/80-positive Kupffer cells; these are different cell populations."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures hepatocyte steatosis by Oil Red O staining; B measures eGFP expression in F4/80-positive Kupffer cells."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O4",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP expression in F4/80-positive Kupffer cells, whereas B measures central-vein necrotic area by H&E staining."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures eGFP in HNF4α-positive hepatocytes, whereas B measures eGFP in F4/80-positive Kupffer cells; these are different cell populations."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures the proportion of EdU-positive cells that are HNF4α-positive hepatocytes after RNA-LNP treatment; B reports eGFP expression in F4/80-positive Kupffer cells. The endpoints and cell populations differ."
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "outcome_id": "V1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A reports eGFP expression in F4/80-positive Kupffer cells, whereas B states eGFP is not colocalized with F4/80-positive cells; its percentage is for CD11b+ cells."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression in BMDMs after LNP-mRNA delivery; B measures elimination of FAP-positive activated HSCs by FAPCAR macrophages. The endpoints and cell populations differ."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures elimination of FAP-positive activated hepatic stellate cells by FAPCAR macrophages; B measures overall liver fibrosis by histological staining in a CCl4 fibrosis model."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures elimination of FAP-positive activated hepatic stellate cells by FAPCAR macrophages. B measures the abundance of FAP-positive macrophages in fibrotic livers. The endpoint and cell population differ."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures elimination of FAP-positive activated hepatic stellate cells by FAPCAR macrophages; B measures the proportion of bone-marrow-derived macrophages expressing FAPCAR after delivery."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures elimination of FAP-positive activated hepatic stellate cells by FAPCAR macrophages; B measures detection/presence of FAPCAR-positive macrophages in fibrotic liver tissue."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "V1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A reports specific phagocytic-index and killing-efficiency measurements in BMDMs against FAP+ JS-1 targets, whereas B is a broader claim of activated-HSC elimination and includes recognition/phagocytosis without specifying the same measured endpoint or assay."
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "outcome_id": "V2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures elimination of FAP-positive activated hepatic stellate cells; B measures FAPCAR/ZsGreen localization and co-localization, chiefly in F4/80-positive macrophages."
+    },
+    {
+      "gold_outcome_id": "GO-018",
+      "paper_id": "GP-008",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures GFP expression in BMDMs after LNP-mRNA delivery by flow cytometry. B reports localization of reporter/FAPCAR expression to macrophages versus Desmin-positive HSCs in liver marker colocalization; it is a different endpoint/context and population comparison."
+    },
+    {
+      "gold_outcome_id": "GO-018",
+      "paper_id": "GP-008",
+      "outcome_id": "O2",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures reporter/FAPCAR localization to macrophages versus desmin-positive hepatic stellate cells; B measures liver fibrosis severity by histological staining."
+    },
+    {
+      "gold_outcome_id": "GO-018",
+      "paper_id": "GP-008",
+      "outcome_id": "O3",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures marker/reporter localization across liver cell types, whereas B measures the abundance of FAP+ macrophages in a treatment comparison."
+    },
+    {
+      "gold_outcome_id": "GO-018",
+      "paper_id": "GP-008",
+      "outcome_id": "O1",
+      "same_measurement": false,
+      "confidence": "high",
+      "reason": "A measures localization/colocalization of reporter and FAPCAR expression in macrophages versus Desmin-positive hepatic stellate cells, whereas B measures the percentage of bone-marrow-derived macrophages expressing FAPCAR after LNP exposure by flow cytometry."
+    },
+    {
+      "gold_outcome_id": "GO-018",
+      "paper_id": "GP-008",
+      "outcome_id": "O2",
+      "same_measurement": true,
+      "confidence": "high",
+      "reason": "Both describe detection/localization of FAPCAR reporter expression in liver macrophages (with absence in PBS controls noted in B)."
+    }
+  ],
+  "adjudicated_matches": [
+    "GO-018"
+  ]
+}
