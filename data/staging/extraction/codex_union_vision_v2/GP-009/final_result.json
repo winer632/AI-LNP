@@ -1,0 +1,27 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-009",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "NO_TARGET_CELL_EVIDENCE"
+    ],
+    "evidence_ids": [
+      "GP-009-FC-59fd0756d034441b",
+      "GP-009-FC-bdd60211c8253e72",
+      "GP-009-FC-3ad08abcfed8d889",
+      "GP-009-E-e33dffc47de2c216"
+    ],
+    "explanation": "The packet reports original mRNA-LNP experiments, but its liver-level uptake results do not provide direct delivery evidence for hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "unresolved_items": [
+    "Whether any liver-level signal arose in hepatocytes, Kupffer cells, LSECs, or hepatic stellate cells is not directly reported."
+  ],
+  "outcomes": []
+}

@@ -1,0 +1,42 @@
+{
+  "harness": "codex-exec",
+  "stage": "vision",
+  "paper_id": "GP-008",
+  "finding_id": "GO-017-fig2",
+  "images": [
+    "data/raw/fulltext/panels/GP-008/fig2_A_merge_gfp_phrodo.jpg",
+    "data/raw/fulltext/panels/GP-008/fig2_B_phagocytic_index.jpg",
+    "data/raw/fulltext/panels/GP-008/fig2_CD_flow_phrodo_f480.jpg",
+    "data/raw/fulltext/panels/GP-008/fig2_D_phagocytosis_index_flow.jpg",
+    "data/raw/fulltext/panels/GP-008/fig2_F_killing_efficiency.jpg"
+  ],
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "completed_at": "2026-07-28T20:05:59.407574+00:00",
+  "elapsed_seconds": 19.187,
+  "contract_accepted": true,
+  "contract_error": null,
+  "disposition": "resolved",
+  "value_status": "derived",
+  "printed_labels": [
+    "WT",
+    "αCD163/LNP-Luc",
+    "LNP-FAPCAR",
+    "αCD163/LNP-FAPCAR",
+    "Merge",
+    "GFP",
+    "pHrodo",
+    "Phagocytic index(%)",
+    "F4/80",
+    "Killing efficiency(%)",
+    "0",
+    "20",
+    "40",
+    "60",
+    "80",
+    "100"
+  ],
+  "requires_human_review": false,
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}

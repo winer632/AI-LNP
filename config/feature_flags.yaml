@@ -164,12 +164,18 @@ flags:
     default: false
     status: available
     rationale: >-
-      Available, not default. The panel reads are correct -- GO-002's 20
-      printed labels transcribed including 41.5%, GO-003 read as
-      colocalized -- but they do not score, because gold writes LYVE1
-      where the read writes LYVE-1 and the tokenizer splits only the
-      latter. Enabling it today adds records that lower precision
-      without raising recall.
+      Available, not default. Its reads are the only source for the four
+      outcomes the text path never produces, and with the relationship
+      enum carried structurally they now score: merging the GP-004 and
+      GP-006 reads takes the union from 11/15 to 12/15 and raises
+      precision 0.2157 -> 0.2264. Left off because the merge is not
+      uniformly positive -- adding the GP-008 reads gains no outcome and
+      costs evidence coverage, because one-to-one matching reassigns an
+      evidence-bearing record to another gold row. Corrects the earlier
+      rationale here, which said the reads do not score; what was
+      measured then was that they did not score, without separating
+      whether the fault lay in the reads or in a downstream gate. It lay
+      downstream.
     description: >-
       Use a local vision-language model (Ollama + Gemma) for targeted figure and
       table observation instead of a paid multimodal call. Output must stay

@@ -54,6 +54,34 @@ def _field(value: Any, evidence_ids: list[str]) -> dict[str, Any]:
     }
 
 
+def _descriptive_labels(labels: list[str]) -> list[str]:
+    """Drop bare axis ticks from the text a match is computed over.
+
+    A panel read transcribes every readable label, which includes the axis
+    scale: a killing-efficiency chart prints 0, 20, 40, 60, 80, 100. Those are
+    scale markings, not measurements, and putting them in the record's text
+    made the evaluator's numeric check succeed for any gold value that happened
+    to equal a tick. GO-016's gold value is 20, so a vision record about
+    phagocytosis matched it and displaced the evidence-bearing text record that
+    actually reported it.
+
+    A tick is a bare number: no unit, no percent sign, no other character.
+    "41.5%" and "Phagocytic index(%)" are kept, because a printed value with a
+    unit is a real observation. The full list stays on the record under
+    printed_labels, so nothing is lost as provenance -- it just no longer feeds
+    matching.
+    """
+    kept = []
+    for label in labels:
+        text = str(label).strip()
+        if not text:
+            continue
+        if text.replace(".", "", 1).replace("-", "", 1).isdigit():
+            continue
+        kept.append(text)
+    return kept
+
+
 def observation_to_outcome(
     observation: dict[str, Any], *, outcome_id: str, experiment_id: str
 ) -> dict[str, Any] | None:
@@ -66,7 +94,7 @@ def observation_to_outcome(
     # marker names the claim is about, so carry them alongside the sentence.
     parts = [
         fragment.get("qualitative_outcome") or "",
-        " ".join(observation.get("printed_labels") or []),
+        " ".join(_descriptive_labels(observation.get("printed_labels") or [])),
         observation.get("visible_support") or "",
     ]
     endpoint = " ".join(part for part in parts if part).strip() or observation.get(
