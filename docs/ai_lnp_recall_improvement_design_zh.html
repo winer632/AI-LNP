@@ -493,6 +493,47 @@ format:   html
     写成文本等于把否定读成肯定；这条由 <code>test_a_denied_relation_cannot_satisfy_the_gold_it_denies</code> 钉住。
   </div>
 
+  <div class="ok">
+    <b>v16 · recall 达到 13/15（目标下限），匹配器一行未改</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>口径</th><th class="num">recall</th><th class="num">precision</th><th class="num">证据</th></tr></thead>
+      <tbody>
+        <tr><td>默认单次跑</td><td class="num">11/15</td><td class="num">0.1897</td><td class="num">6/11</td></tr>
+        <tr><td>union（可从仓库重建）</td><td class="num">11/15</td><td class="num">0.2157</td><td class="num">6/10</td></tr>
+        <tr><td>union + 视觉</td><td class="num">12/15</td><td class="num">0.2264</td><td class="num">6/11</td></tr>
+        <tr><td><b>union + 视觉 + 抢救</b></td><td class="num yes"><b>13/15</b></td><td class="num">0.2203</td><td class="num yes">7/12</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>根因是流水线在扔掉正确结果。</b><code>compact_validation</code> 只在 finding 列表为空时才返回解析结果，
+    所以<b>任何一处</b>虚构的 evidence id 都会丢弃整个文档。GP-004 那次 full-view 响应在
+    <code>eligibility</code>/<code>components</code>/<code>formulations</code> 里引用了一个虚构 id，
+    <b>六条 outcome 记录跟着一起被丢</b>——其中一条写着：
+    <blockquote style="margin:.6em 0;padding:.5em .9em;border-left:3px solid #8a8;">
+    "Virtually all HNF4α+ hepatocytes expressed eGFP; <b>few F4/80+ Kupffer cells expressed eGFP</b>."
+    </blockquote>
+    后半句就是 <b>GO-002</b>，此前任何配置都没捞回来过。
+    <br><br>
+    <b>抢救的安全属性是硬的：</b>只有当记录<b>自身</b>通过契约校验、
+    且它<b>自己引用</b>的每一个 evidence id 都在包里，才保留；坏记录整条丢弃，
+    <b>绝不通过剥离 id 来「修补」</b>。GP-004 上保留 6 条 outcome、丢弃 1 个 formulation 和 4 个 component。
+    <b>抢救记录引用包外证据 id 的数量：0</b>，有测试断言。
+    <br><br>
+    <b>一个关键细节——并入 vs 前置：</b>把抢救结果作为第六个 root <b>前置</b>，
+    GP-004 会被整篇替换，GO-002 换来了但 GO-001 丢了，仍是 12/15。
+    <b>并入</b> GP-004 才是 13/15。两条都是 1.0 分且证据核验通过。
+    <br><br>
+    <b>剩余两条的性质不同：</b>
+    <ul>
+      <li><b>GO-017</b>——抽出来了，但记录写细胞系名 <code>FAP+ JS-1</code>，
+          gold 写细胞类型 <code>activated HSC</code>，endpoint 重叠只有 1 个词。
+          它还是所有配置中<b>唯一</b>过了 polarity 门的 GP-008 记录</li>
+      <li><b>GO-018</b>——模型<b>看见了证据并主动拒绝</b>建记录：
+          「共染图像描述缺少可用的结果值」。这是 abstain 规则在正常工作，不是故障</li>
+    </ul>
+  </div>
+
   <div class="warn">
     <b>v15 · 第三次否决（这次被拒的是能直接给到 13/15 的那个改动）</b><br>
     GO-018 的视觉记录已经声明了 <code>relationship: colocalized</code>，
