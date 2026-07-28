@@ -255,3 +255,6 @@ data/curated/*.db-wal
 
 # Generated literature-search runs
 data/raw/searches/*/run_*/
+
+# Agent worktrees: transient, and each is a full checkout.
+.claude/
