@@ -1,0 +1,707 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-006",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-006-FC-12f3173dd9920aa5",
+      "GP-006-FC-52162391a9d0af78",
+      "GP-006-FC-4a7e0c4b676f779a",
+      "GP-006-FC-4c3748ac35567211"
+    ],
+    "explanation": "Original mouse experiments used MC3 LNPs carrying Cas9 mRNA/sgRNA; LSEC-specific editing and linked outcomes were reported."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "MC3 LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "The packet identifies the Cas9/NSGHAsgRNA formulation as MC3 LNP but does not directly provide its complete lipid composition."
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Complete composition basis for the Cas9/NSGHAsgRNA MC3 LNP is not directly reported."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio for the Cas9/NSGHAsgRNA MC3 LNP is not directly reported."
+      }
+    },
+    {
+      "formulation_id": "F2",
+      "formulation_name": {
+        "value": "Luc LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-2f7ec6eb64b18a7b"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "MC3:cholesterol:DOPE:DMG-PEG2000 = 50:10:39:1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "lipid ratios",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": 8.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-169903daff9d9a1f",
+          "GP-006-FC-1978db6930eafbf9"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "formulation_id": "F3",
+      "formulation_name": {
+        "value": "GFP LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Complete lipid composition for GFP LNP is not directly reported."
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Composition basis for GFP LNP is not directly reported."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio for GFP LNP is not directly reported."
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F2",
+      "identity": {
+        "value": "D-Lin-MC3-DMA (MC3)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 50.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F2",
+      "identity": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F2",
+      "identity": {
+        "value": "DOPE",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-1cd9a63a0e8a5285"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 39.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F2",
+      "identity": {
+        "value": "DMG-PEG2000",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 1.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-06c2991146312884"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F3",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "GFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "GFP protein",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-244d49c6e8a958f0"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter mRNA experiment has no molecular target reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-244d49c6e8a958f0"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-249ad795fe820dba"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-1d60df0f1736db44"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Disease model is not reported for the GFP LNP experiment."
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 1.2,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg/kg",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-74312a65023efa3d"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 6.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-1d60df0f1736db44"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-1d60df0f1736db44"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA and sgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Cas9 mRNA and NSGHAsgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "Cas9",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "mutant F8 gene",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-595a9518f70e23eb"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4a7e0c4b676f779a"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4a7e0c4b676f779a"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4a7e0c4b676f779a"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "NSG hemophilia A mouse model",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 4.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg/kg Cas9/sgRNA LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-52162391a9d0af78"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 26.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "weeks",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "immunostaining for GFP and LYVE-1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-244d49c6e8a958f0"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "GFP expression in LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-244d49c6e8a958f0"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator is reported for this endpoint."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric GFP-expression value is reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric GFP-expression unit is reported."
+      },
+      "qualitative_outcome": {
+        "value": "LYVE-1 and GFP signals colocalized, indicating LSEC uptake of LNPs and GFP protein expression.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-244d49c6e8a958f0"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4ceac57b349b591a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene editing rate in isolated LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4a7e0c4b676f779a"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported for the LSEC editing rate."
+      },
+      "outcome_value": {
+        "value": 16.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4a7e0c4b676f779a"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4a7e0c4b676f779a"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric result reported."
+      }
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "activated partial thromboplastin time (aPTT) assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No single comparator value is reported for the 26-week average."
+      },
+      "outcome_value": {
+        "value": 3.3,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Average FVIII activity was 3.30% ± 0.68% over 26 weeks.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "rotational thromboelastometry (ROTEM)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4d177dd346923877"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "clotting time and clot formation time",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4d177dd346923877"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated mice and controls containing 1% normal whole blood",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4d177dd346923877"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric CT or CFT values are reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric CT or CFT unit is reported."
+      },
+      "qualitative_outcome": {
+        "value": "Treated mice had shorter CT and CFT than untreated mice and clotting ability better than controls containing 1% normal whole blood.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4d177dd346923877"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "Complete lipid composition and N/P ratio for the Cas9/NSGHAsgRNA MC3 LNP are not directly reported.",
+    "The packet does not directly establish that the Luc LNP lipid ratios also apply to GFP LNP or Cas9/NSGHAsgRNA MC3 LNP."
+  ]
+}

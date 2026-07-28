@@ -1,0 +1,82 @@
+{
+  "report_version": "codex-harness-ablation-1.0.0",
+  "harness": "codex-exec",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "note": "All three conditions run through the same codex-exec harness, so the harness effect cancels and the delta is attributable to the evidence input. These numbers are NOT comparable to the native-API baseline.",
+  "native_api_reference": {
+    "first_call_only": "7/15",
+    "after_repair_and_merge": "10/15"
+  },
+  "conditions": [
+    {
+      "id": "X_compact_pymupdf",
+      "description": "紧凑包 16k / pymupdf 语料",
+      "recovered": 6,
+      "total": 15,
+      "rate": 0.4,
+      "precision": 0.42857142857142855,
+      "false_additions": 8,
+      "missing_gold_outcome_ids": [
+        "GO-002",
+        "GO-003",
+        "GO-004",
+        "GO-006",
+        "GO-007",
+        "GO-010",
+        "GO-015",
+        "GO-017",
+        "GO-018"
+      ]
+    },
+    {
+      "id": "Y_full_pymupdf",
+      "description": "完整证据视图 / pymupdf 语料",
+      "recovered": 7,
+      "total": 15,
+      "rate": 0.4666666666666667,
+      "precision": 0.5,
+      "false_additions": 7,
+      "missing_gold_outcome_ids": [
+        "GO-001",
+        "GO-002",
+        "GO-003",
+        "GO-004",
+        "GO-006",
+        "GO-010",
+        "GO-017",
+        "GO-018"
+      ]
+    },
+    {
+      "id": "Z_full_uniparse_gp006",
+      "description": "完整证据视图 / uniparse 语料(仅 GP-006 替换)",
+      "recovered": 8,
+      "total": 15,
+      "rate": 0.5333333333333333,
+      "precision": 0.5333333333333333,
+      "false_additions": 7,
+      "missing_gold_outcome_ids": [
+        "GO-001",
+        "GO-002",
+        "GO-004",
+        "GO-006",
+        "GO-010",
+        "GO-017",
+        "GO-018"
+      ]
+    }
+  ],
+  "evidence_availability_gp006": {
+    "note": "Deterministic string check, no model involved.",
+    "pymupdf_corpus": {
+      "1.01": 0,
+      "0.38": 0
+    },
+    "uniparse_corpus": {
+      "1.01": 4,
+      "0.38": 4
+    },
+    "gold_value": "GO-006 = 1.01 percent, uncertainty 0.38 (SD)"
+  }
+}

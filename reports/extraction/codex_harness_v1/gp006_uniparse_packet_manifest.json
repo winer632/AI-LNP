@@ -1,0 +1,38 @@
+{
+  "paper_id": "GP-006",
+  "full_view_version": "full-api-packet-1.0.0",
+  "packet_version": "compact-api-packet-1.0.0",
+  "evidence_view": "full",
+  "full_packet_checksum": "a3588ba0de3d28727d65c812d677bafdcab65096d36df05c923164fdc441111e",
+  "source_review_packet_checksum": "524c77bc47db2d626a00eb25ec3a8202bbb08434e2bb949baf66c9e00594812c",
+  "corpus_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/p1_exp/corpus/GP-006.blocks.jsonl",
+  "corpus_available": true,
+  "token_estimation_method": "ceil(compact UTF-8 JSON bytes / 4)",
+  "estimated_input_tokens": {
+    "prompt": 273,
+    "response_schema": 1883,
+    "evidence_packet": 145738,
+    "total": 147894
+  },
+  "counts": {
+    "evidence": 1777,
+    "sources": 288,
+    "retrieval_evidence": 631,
+    "corpus_expanded_evidence": 1146,
+    "outcome_tagged_evidence": 486,
+    "full_corpus_only_evidence": 878
+  },
+  "blocked_fields": [],
+  "compact_packet_comparison": {
+    "compact_packet_path": "data/staging/rag/compact_api_packets_v1/GP-006.json",
+    "compact_packet_checksum": "d556f6c414dfb9a90bc9fc06c209986f4e84eac979ced40fc9d45c4e22184dee",
+    "compact_evidence": 142,
+    "compact_sources": 19,
+    "compact_evidence_packet_tokens": 15993,
+    "added_evidence": 1635,
+    "added_sources": 269,
+    "added_evidence_packet_tokens": 129745,
+    "evidence_multiple": 12.51,
+    "evidence_packet_token_multiple": 9.11
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-006",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T17:18:56.269981+00:00",
+  "completed_at": "2026-07-28T17:20:16.280172+00:00",
+  "elapsed_seconds": 80.005,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-006-FC-12f3173dd9920aa5",
+      "GP-006-FC-52162391a9d0af78",
+      "GP-006-FC-4a7e0c4b676f779a",
+      "GP-006-FC-4c3748ac35567211"
+    ],
+    "explanation": "Original mouse experiments used MC3 LNPs carrying Cas9 mRNA/sgRNA; LSEC-specific editing and linked outcomes were reported."
+  },
+  "record_counts": {
+    "formulations": 3,
+    "components": 4,
+    "experiments": 2,
+    "outcomes": 4,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}
