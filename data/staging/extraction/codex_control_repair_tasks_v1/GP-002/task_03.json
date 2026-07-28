@@ -1,0 +1,51 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-002",
+  "route_ids": [
+    "RT-6f7fdb06b806f3db",
+    "RT-fc40fed103a4ee7b",
+    "RT-26046c7e6b4f1c43"
+  ],
+  "candidate_ids": [
+    "OC-1eb0177ddb77db8e",
+    "OC-e194c9b63fe178c7",
+    "OC-faa78845363ecaf0"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-002-E-9e73aa6c0b4a6696",
+      "text": "Biodistribution of eGFP fluorescence in Mdr2 knockout mice was comparable to that observed in healthy BALB/c mice (Figures 2C, S1, and S2), indicating that off-target expression of the mRNA in other organs and tissues is not increased in the presence of liver injury.Figure 2Delivery of mRNA-LNPs in liver fibrosis and cirrhosis(A) We injected Mdr2−/− mice with 10 μg eGFP mRNA-LNPs via the tail vein and investigated reporter expression.",
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-f0770b5be836544a",
+      "text": "(B) Moderately strong eGFP fluorescence was evident in all injected livers; the fluorescence intensity was reduced compared to a healthy control injected with the same mRNA-LNPs at the same time.",
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    },
+    {
+      "evidence_id": "GP-002-E-838d02d3fd7fe045",
+      "text": "(C) Ex vivo fluorescence imaging of organs from a GFP-injected Mdr2−/− mouse shows that attenuation of mRNA-LNP delivery to the liver does not result in broadly altered biodistribution of eGFP protein expression.",
+      "source_ids": [
+        "S-da569d891df7"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 6,
+  "source_result_sha256": "4a90407cffaa2962f32dd2fbfc0572f0c3b040282b598212632a2bd3087cad7b",
+  "source_inventory_sha256": "e61d078cd903659de013773319811a940018a79f12b1c44981188ee65131c51f",
+  "task_checksum": "18e45e0d9c9fe8200bbc060f59785fe43c57f05dc4c21972479ac56707aa9dc9"
+}

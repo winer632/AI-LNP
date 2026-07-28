@@ -1,0 +1,61 @@
+{
+  "report_version": "repair-targeting-diagnosis-1.0.0",
+  "harness": "codex-exec",
+  "question": "Why does repair not move recall, when candidate detection is 15/15?",
+  "measured": {
+    "recall_before_repair": "6/15",
+    "recall_after_repair": "6/15",
+    "precision_before": 0.429,
+    "precision_after": 0.316,
+    "false_additions_before": 8,
+    "false_additions_after": 13,
+    "repair_tasks_executed": 8
+  },
+  "root_cause": "The repair route targets unmatched *candidates*, and the coverage check that produces that set is miscalibrated in both directions. None of the nine missing gold outcomes appears in any repair task.",
+  "gold_evidence_in_repair_tasks": "0 of 9",
+  "per_paper": [
+    {
+      "paper": "GP-002",
+      "gold": 1,
+      "missing_gold": 0,
+      "coverage_unmatched": 8,
+      "issue": "over-reports: 4 repair tasks spent on non-gold candidates"
+    },
+    {
+      "paper": "GP-004",
+      "gold": 2,
+      "missing_gold": 1,
+      "coverage_unmatched": 1,
+      "issue": null
+    },
+    {
+      "paper": "GP-005",
+      "gold": 2,
+      "missing_gold": 1,
+      "coverage_unmatched": 0,
+      "issue": "under-reports: GO-010 can never reach repair"
+    },
+    {
+      "paper": "GP-006",
+      "gold": 5,
+      "missing_gold": 4,
+      "coverage_unmatched": 15,
+      "issue": null
+    },
+    {
+      "paper": "GP-007",
+      "gold": 1,
+      "missing_gold": 0,
+      "coverage_unmatched": 0,
+      "issue": null
+    },
+    {
+      "paper": "GP-008",
+      "gold": 4,
+      "missing_gold": 3,
+      "coverage_unmatched": 1,
+      "issue": "under-reports: GO-015/017/018 all missing, only 1 flagged"
+    }
+  ],
+  "implication": "The design document attributed the ceiling to evidence selection (P0-a), parsing (P1) and silent omission (P3). All three were real and all three are now fixed, and recall still does not move past 8/15. Repair targeting is a fourth cause the document never identified, and it is the one that caps the ceiling: a gold outcome the coverage check believes is matched never gets a second chance."
+}

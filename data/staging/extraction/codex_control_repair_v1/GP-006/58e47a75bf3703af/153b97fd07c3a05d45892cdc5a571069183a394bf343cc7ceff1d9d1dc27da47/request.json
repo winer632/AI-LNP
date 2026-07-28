@@ -1,0 +1,28 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-006",
+  "task_path": "data/staging/extraction/codex_control_repair_tasks_v1/GP-006/task_03.json",
+  "task_checksum": "d78f46b38cf39510d9ded492d09ac0982463c126d64a86223edd231fb57c83ab",
+  "candidate_ids": [
+    "OC-577d7d7fe2448951",
+    "OC-85f7147389be1c5a"
+  ],
+  "route_ids": [
+    "RT-cdcc62075b27ec38",
+    "RT-24889422be1441a7"
+  ],
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "prompt_version": "codex-missing-record-prompt-1.0.0",
+  "paid_prompt_version": "missing-record-repair-prompt-1.0.0",
+  "prompt_sha256": "c8d051edcd2d43c203f2d29d9841ed408fef47e0e69e8b91b2b27ad6597856b8",
+  "prompt_characters": 1776,
+  "schema_sha256": "6c1d23acea39e7523130fb07fa7861338fab07eb8814512043970805d99aca49",
+  "fingerprint": "153b97fd07c3a05d45892cdc5a571069183a394bf343cc7ceff1d9d1dc27da47",
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 4,
+  "evidence_ids": [
+    "GP-006-E-ab6a59c6da34953c",
+    "GP-006-E-5f1df7ac5c7ec3f9"
+  ]
+}

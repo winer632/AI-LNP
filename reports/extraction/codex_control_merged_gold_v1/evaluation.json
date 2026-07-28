@@ -1,0 +1,551 @@
+{
+  "evaluation_version": "final-gold-dynamic-1.1.0",
+  "matching": "semantic, numeric, one-to-one; no hard-coded recovered IDs",
+  "recovered": 6,
+  "total": 15,
+  "rate": 0.4,
+  "missing_gold_outcome_ids": [
+    "GO-002",
+    "GO-003",
+    "GO-004",
+    "GO-006",
+    "GO-007",
+    "GO-010",
+    "GO-015",
+    "GO-017",
+    "GO-018"
+  ],
+  "precision": 0.3157894736842105,
+  "false_additions": {
+    "count": 13,
+    "items": [
+      {
+        "paper_id": "GP-004",
+        "outcome_id": "O2",
+        "experiment_id": "E1",
+        "endpoint": "eGFP-positive CD31+ endothelial cells",
+        "outcome_value": 70.7,
+        "outcome_unit": "% (mean ± 9%)",
+        "summary": "eGFP-positive CD31+ endothelial cells flow cytometry of liver non-parenchymal-cell fractions % (mean ± 9%) eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes; a subpopulation of endothelial cells and Kupffer cells liver homeostasis"
+      },
+      {
+        "paper_id": "GP-004",
+        "outcome_id": "O3",
+        "experiment_id": "E2",
+        "endpoint": "hepatocyte steatosis",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "hepatocyte steatosis Oil Red O staining of liver sections Poly(C) RNA-LNP Sharp decrease of steatosis 2 days after first HGF/EGF mRNA-LNP injection; steatosis was maintained in Poly(C) RNA-LNP controls. combined HGF and EGF mRNA hepatocyte growth factor (HGF) and epidermal growth factor (EGF) hepatocytes hepatocytes liver CDE-induced chronic liver injury"
+      },
+      {
+        "paper_id": "GP-004",
+        "outcome_id": "O4",
+        "experiment_id": "E3",
+        "endpoint": "central vein necrotic areas",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "central vein necrotic areas H&E staining Poly(C) RNA-LNP At 8 h after mRNA-LNP injection, no significant improvement of central vein necrotic areas. combined HGF and EGF mRNA hepatocyte growth factor (HGF) and epidermal growth factor (EGF) hepatocytes hepatocytes liver APAP-induced acute liver injury"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O1",
+        "experiment_id": "E1",
+        "endpoint": "F8 gene editing rate in isolated hepatocytes",
+        "outcome_value": 60.54,
+        "outcome_unit": "% (mean ± 11.65%)",
+        "summary": "F8 gene editing rate in isolated hepatocytes deep sequencing of genomic DNA % (mean ± 11.65%) F8 gene editing was detected in isolated hepatocytes. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-577d7d7fe2448951",
+        "experiment_id": "E1",
+        "endpoint": "in vivo gene editing efficiency",
+        "outcome_value": 5.0,
+        "outcome_unit": "%",
+        "summary": "in vivo gene editing efficiency gene editing efficiency in genomic DNA extracted from whole liver mF8sgRNA % Comparable to mF8sgRNA Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "OC-85f7147389be1c5a",
+        "experiment_id": "E1",
+        "endpoint": "FVIII activity after two injections",
+        "outcome_value": 2.6,
+        "outcome_unit": "%",
+        "summary": "FVIII activity after two injections FVIII activity % Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-002",
+        "outcome_id": "OC-1eb0177ddb77db8e",
+        "experiment_id": "E1",
+        "endpoint": "Off-target eGFP expression in other organs and tissues",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "Off-target eGFP expression in other organs and tissues eGFP fluorescence biodistribution healthy BALB/c mice Biodistribution was comparable to healthy BALB/c mice; off-target expression was not increased in the presence of liver injury. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes liver healthy adult male mice"
+      },
+      {
+        "paper_id": "GP-002",
+        "outcome_id": "OC-e194c9b63fe178c7",
+        "experiment_id": "E1",
+        "endpoint": "Liver eGFP fluorescence intensity",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "Liver eGFP fluorescence intensity eGFP fluorescence healthy control injected with the same mRNA-LNPs at the same time Moderately strong eGFP fluorescence was evident in all injected livers and was reduced compared with the healthy control. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes liver healthy adult male mice"
+      },
+      {
+        "paper_id": "GP-002",
+        "outcome_id": "OC-faa78845363ecaf0",
+        "experiment_id": "E1",
+        "endpoint": "Biodistribution of eGFP protein expression",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "Biodistribution of eGFP protein expression Ex vivo fluorescence imaging of organs Attenuation of mRNA-LNP delivery to the liver did not result in broadly altered biodistribution of eGFP protein expression. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes liver healthy adult male mice"
+      },
+      {
+        "paper_id": "GP-007",
+        "outcome_id": "O1",
+        "experiment_id": "E1",
+        "endpoint": "plasma AST, plasma ALT, MDA, and SOD activity",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "plasma AST, plasma ALT, MDA, and SOD activity plasma biochemical measurements and oxidative-stress activity measurements HIRI+LNPs-blank group HIRI-induced AST, ALT, and MDA elevations and reduced SOD activity were largely improved by siMicu1-LNPs; improvement was greater with siMicu1-LNPs plus ACT. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
+      },
+      {
+        "paper_id": "GP-007",
+        "outcome_id": "O2",
+        "experiment_id": "E1",
+        "endpoint": "liver sinus congestion, inflammatory-cell infiltration, and liver-lobule structure",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "liver sinus congestion, inflammatory-cell infiltration, and liver-lobule structure liver histopathology HIRI+LNPs-blank group Liver-lobule structure was significantly restored in the siMicu1-LNP and siMicu1-LNP plus ACT groups. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)"
+      },
+      {
+        "paper_id": "GP-008",
+        "outcome_id": "O2",
+        "experiment_id": "E2",
+        "endpoint": "liver fibrosis",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "liver fibrosis histology, Sirius red staining, and Masson's trichrome staining CCL4 fibrosis group Treatment significantly alleviated liver fibrosis. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver CCL4-, BDL-, or MCD-diet-induced liver fibrosis"
+      },
+      {
+        "paper_id": "GP-008",
+        "outcome_id": "O3",
+        "experiment_id": "E2",
+        "endpoint": "amount of FAP+ macrophages in fibrotic livers",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "amount of FAP+ macrophages in fibrotic livers scRNA-seq untreated cohort Treatment markedly attenuated FAP+ macrophages. FAPCAR mRNA FAP-targeted CAR hepatic macrophages FAP+ macrophages liver CCL4-, BDL-, or MCD-diet-induced liver fibrosis"
+      }
+    ]
+  },
+  "evidence_accuracy": {
+    "checked": 6,
+    "supported": 4,
+    "rate": 0.6666666666666666
+  },
+  "unresolved_declared": {
+    "result_items": 16,
+    "merge_candidates": 0
+  },
+  "results": [
+    {
+      "gold_outcome_id": "GO-001",
+      "paper_id": "GP-004",
+      "recovered": true,
+      "match": {
+        "outcome_id": "O1",
+        "score": 1.0,
+        "overlap_terms": [
+          "14",
+          "cd11b",
+          "cytometry",
+          "egfp",
+          "flow",
+          "kupffer",
+          "liver",
+          "positive"
+        ],
+        "exact_numeric": true,
+        "numeric_in_text": false,
+        "actual_text": "eGFP-positive CD11b+ cells flow cytometry of liver non-parenchymal-cell fractions % (mean ± 14.6%) eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes; a subpopulation of endothelial cells and Kupffer cells liver homeostasis",
+        "endpoint_overlap_terms": [
+          "cd11b",
+          "egfp",
+          "positive"
+        ],
+        "endpoint_field_overlap_terms": [
+          "cd11b",
+          "egfp",
+          "positive"
+        ],
+        "rare_endpoint_overlap_terms": [
+          "cd11b"
+        ],
+        "qualitative_overlap_terms": [],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
+      "evidence_checked": true,
+      "evidence_supported": true,
+      "evidence_check": {
+        "claim_type": "numeric",
+        "claim": 41.5,
+        "cited_evidence_ids": [
+          "GP-004-E-0e95fa28bea7a24c"
+        ],
+        "resolved_evidence_ids": [
+          "GP-004-E-0e95fa28bea7a24c"
+        ],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "gold_outcome_id": "GO-002",
+      "paper_id": "GP-004",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-003",
+      "paper_id": "GP-006",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-004",
+      "paper_id": "GP-006",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-005",
+      "paper_id": "GP-006",
+      "recovered": true,
+      "match": {
+        "outcome_id": "O2",
+        "score": 0.9529,
+        "overlap_terms": [
+          "96",
+          "cas9",
+          "dna",
+          "genomic",
+          "isolated",
+          "lsec"
+        ],
+        "exact_numeric": true,
+        "numeric_in_text": false,
+        "actual_text": "F8 gene editing rate in isolated LSECs deep sequencing of genomic DNA % (mean ± 2.96%) F8 gene editing was detected in isolated LSECs. Cas9 mRNA/NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice",
+        "endpoint_overlap_terms": [
+          "lsec"
+        ],
+        "endpoint_field_overlap_terms": [
+          "lsec"
+        ],
+        "rare_endpoint_overlap_terms": [],
+        "qualitative_overlap_terms": [],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
+      "evidence_checked": true,
+      "evidence_supported": true,
+      "evidence_check": {
+        "claim_type": "numeric",
+        "claim": 16.5,
+        "cited_evidence_ids": [
+          "GP-006-E-22a954aae3f000e4",
+          "GP-006-E-5307426a332d226c",
+          "GP-006-E-d010646bb645e446"
+        ],
+        "resolved_evidence_ids": [
+          "GP-006-E-22a954aae3f000e4",
+          "GP-006-E-5307426a332d226c",
+          "GP-006-E-d010646bb645e446"
+        ],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "gold_outcome_id": "GO-006",
+      "paper_id": "GP-006",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-007",
+      "paper_id": "GP-006",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-008",
+      "paper_id": "GP-002",
+      "recovered": true,
+      "match": {
+        "outcome_id": "O1",
+        "score": 1.0,
+        "overlap_terms": [
+          "all",
+          "egfp",
+          "hepatocyte",
+          "immunohistochemistry",
+          "staining",
+          "strong",
+          "virtually"
+        ],
+        "exact_numeric": false,
+        "numeric_in_text": false,
+        "actual_text": "eGFP staining in hepatocytes immunohistochemistry for eGFP Strong eGFP staining in virtually all hepatocytes. eGFP mRNA enhanced green fluorescent protein (eGFP) hepatocytes liver healthy adult male mice",
+        "endpoint_overlap_terms": [
+          "egfp",
+          "hepatocyte"
+        ],
+        "endpoint_field_overlap_terms": [
+          "egfp",
+          "hepatocyte"
+        ],
+        "rare_endpoint_overlap_terms": [
+          "hepatocyte"
+        ],
+        "qualitative_overlap_terms": [
+          "all",
+          "egfp",
+          "hepatocyte",
+          "staining",
+          "strong",
+          "virtually"
+        ],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
+      "evidence_checked": true,
+      "evidence_supported": true,
+      "evidence_check": {
+        "claim_type": "qualitative",
+        "claim": "Strong eGFP staining in virtually all hepatocytes.",
+        "cited_evidence_ids": [
+          "GP-002-E-3b62dd9a6e6a70a1"
+        ],
+        "resolved_evidence_ids": [
+          "GP-002-E-3b62dd9a6e6a70a1"
+        ],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "gold_outcome_id": "GO-010",
+      "paper_id": "GP-005",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-011",
+      "paper_id": "GP-005",
+      "recovered": true,
+      "match": {
+        "outcome_id": "O1",
+        "score": 0.7444,
+        "overlap_terms": [
+          "by",
+          "egfp",
+          "hepatocyte",
+          "imaging",
+          "intravital",
+          "kupffer",
+          "solely",
+          "translation"
+        ],
+        "exact_numeric": false,
+        "numeric_in_text": false,
+        "actual_text": "EGFP mRNA translation intravital imaging Kupffer cells EGFP mRNA translation occurred exclusively in hepatocytes during intravital imaging, despite comparable high and rapid mRNA-LNP uptake by hepatocytes and Kupffer cells. EGFP mRNA EGFP hepatocytes and Kupffer cells liver",
+        "endpoint_overlap_terms": [
+          "egfp",
+          "kupffer"
+        ],
+        "endpoint_field_overlap_terms": [
+          "egfp"
+        ],
+        "rare_endpoint_overlap_terms": [
+          "kupffer"
+        ],
+        "qualitative_overlap_terms": [
+          "egfp",
+          "hepatocyte",
+          "kupffer",
+          "solely"
+        ],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
+      "evidence_checked": true,
+      "evidence_supported": false,
+      "evidence_check": {
+        "claim_type": "qualitative",
+        "claim": "EGFP mRNA translation occurred exclusively in hepatocytes during intravital imaging, despite comparable high and rapid mRNA-LNP uptake by hepatocytes and Kupffer cells.",
+        "cited_evidence_ids": [
+          "GP-005-E-5476ac363ed05d4c",
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "resolved_evidence_ids": [
+          "GP-005-E-5476ac363ed05d4c",
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "unsupported_terms": [
+          "despite",
+          "kupffer",
+          "occurred"
+        ]
+      }
+    },
+    {
+      "gold_outcome_id": "GO-013",
+      "paper_id": "GP-007",
+      "recovered": true,
+      "match": {
+        "outcome_id": "O3",
+        "score": 0.6556,
+        "overlap_terms": [
+          "accumulation",
+          "defenestration",
+          "hiri",
+          "lsec",
+          "mitochondrial",
+          "phenotype",
+          "simicu1"
+        ],
+        "exact_numeric": false,
+        "numeric_in_text": false,
+        "actual_text": "LSEC defenestration phenotype, mitochondrial cristae fragmentation, and mitochondrial Ca2+ accumulation transmission electron microscopy ACT synergized with siMicu1-LNPs to ameliorate HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and the LSEC defenestration phenotype. siMicu1 LSECs liver hepatic ischemia-reperfusion injury (HIRI)",
+        "endpoint_overlap_terms": [
+          "lsec"
+        ],
+        "endpoint_field_overlap_terms": [
+          "lsec"
+        ],
+        "rare_endpoint_overlap_terms": [],
+        "qualitative_overlap_terms": [
+          "accumulation",
+          "defenestration",
+          "lsec",
+          "mitochondrial"
+        ],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
+      "evidence_checked": true,
+      "evidence_supported": true,
+      "evidence_check": {
+        "claim_type": "qualitative",
+        "claim": "ACT synergized with siMicu1-LNPs to ameliorate HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and the LSEC defenestration phenotype.",
+        "cited_evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "resolved_evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "gold_outcome_id": "GO-015",
+      "paper_id": "GP-008",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-016",
+      "paper_id": "GP-008",
+      "recovered": true,
+      "match": {
+        "outcome_id": "O1",
+        "score": 0.7,
+        "overlap_terms": [
+          "bmdm",
+          "gfp",
+          "lnp",
+          "mrna"
+        ],
+        "exact_numeric": false,
+        "numeric_in_text": false,
+        "actual_text": "GFP expression in BMDMs flow cytometry mRNA and LNP-mRNA GFP expression was assessed and analyzed in BMDMs. GFP mRNA GFP BMDMs",
+        "endpoint_overlap_terms": [
+          "lnp"
+        ],
+        "endpoint_field_overlap_terms": [],
+        "rare_endpoint_overlap_terms": [
+          "lnp"
+        ],
+        "qualitative_overlap_terms": [
+          "bmdm",
+          "lnp",
+          "mrna"
+        ],
+        "endpoint_gate": true,
+        "polarity_gate": true,
+        "numeric_gate": true
+      },
+      "evidence_checked": true,
+      "evidence_supported": false,
+      "evidence_check": {
+        "claim_type": "qualitative",
+        "claim": "GFP expression was assessed and analyzed in BMDMs.",
+        "cited_evidence_ids": [
+          "GP-008-E-17f3f355e8b1e062",
+          "GP-008-E-e9466266dec9786d"
+        ],
+        "resolved_evidence_ids": [
+          "GP-008-E-17f3f355e8b1e062",
+          "GP-008-E-e9466266dec9786d"
+        ],
+        "unsupported_terms": [
+          "analyzed",
+          "assessed"
+        ]
+      }
+    },
+    {
+      "gold_outcome_id": "GO-017",
+      "paper_id": "GP-008",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    },
+    {
+      "gold_outcome_id": "GO-018",
+      "paper_id": "GP-008",
+      "recovered": false,
+      "match": null,
+      "evidence_checked": false,
+      "evidence_supported": false,
+      "evidence_check": null
+    }
+  ],
+  "paid_api_requests": 0
+}

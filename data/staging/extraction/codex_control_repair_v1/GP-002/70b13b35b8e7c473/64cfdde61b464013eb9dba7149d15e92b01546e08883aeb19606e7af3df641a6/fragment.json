@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-e5bc4a6ea74c1e2d"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The supplied evidence reports only a general finding that lowering mRNA-LNP dosage attenuated liver inflammatory response; it does not provide sufficient experiment-specific details, assay, comparator, outcome value, or units to recover a new record without inventing fields."
+}

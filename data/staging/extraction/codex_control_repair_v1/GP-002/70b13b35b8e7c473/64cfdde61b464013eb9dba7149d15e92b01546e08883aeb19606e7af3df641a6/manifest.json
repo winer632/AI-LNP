@@ -1,0 +1,32 @@
+{
+  "status": "completed_pending_merge",
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-002",
+  "task_path": "data/staging/extraction/codex_control_repair_tasks_v1/GP-002/task_04.json",
+  "task_checksum": "604002f751344eac92b681967c822675025b01ded38fbdc892bb7a5e05f487f9",
+  "candidate_ids": [
+    "OC-e5bc4a6ea74c1e2d"
+  ],
+  "fingerprint": "64cfdde61b464013eb9dba7149d15e92b01546e08883aeb19606e7af3df641a6",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T18:11:55.398913+00:00",
+  "completed_at": "2026-07-28T18:12:03.880018+00:00",
+  "elapsed_seconds": 8.48,
+  "response_validated": true,
+  "validation_error": null,
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-e5bc4a6ea74c1e2d"
+  ],
+  "record_counts": {
+    "experiments": 0,
+    "outcomes": 0
+  },
+  "fragment_path": "data/staging/extraction/codex_control_repair_v1/GP-002/70b13b35b8e7c473/64cfdde61b464013eb9dba7149d15e92b01546e08883aeb19606e7af3df641a6/fragment.json",
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "cache_hit": false
+}

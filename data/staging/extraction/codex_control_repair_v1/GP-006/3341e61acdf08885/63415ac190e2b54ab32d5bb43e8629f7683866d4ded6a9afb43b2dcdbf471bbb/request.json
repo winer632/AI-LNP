@@ -1,0 +1,48 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-006",
+  "task_path": "data/staging/extraction/codex_control_repair_tasks_v1/GP-006/task_01.json",
+  "task_checksum": "39fdd7361f049f16ea2e2f6cc957cbb780a095a06b439750205e631809d7f467",
+  "candidate_ids": [
+    "OC-179a7e222a4e1927",
+    "OC-46a32d7d3a3de39d",
+    "OC-842707c55fd53a55",
+    "OC-be6096c1e0cde0ec",
+    "OC-c0903300f94dcdae",
+    "OC-d6d8ec31fcbb44d8",
+    "OC-fa3d41fbbfb8dbc9"
+  ],
+  "route_ids": [
+    "RT-c0b306e3d6099318",
+    "RT-060cdf2dece81dab",
+    "RT-4d6a3cfad978ba35",
+    "RT-b967daf903d98613",
+    "RT-8ce1f5d32557e2ad",
+    "RT-cfff9d04e3cf9c72",
+    "RT-a05b26d20af622b4"
+  ],
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "prompt_version": "codex-missing-record-prompt-1.0.0",
+  "paid_prompt_version": "missing-record-repair-prompt-1.0.0",
+  "prompt_sha256": "8efd74ec5f2d932fcda5078cad5ef0b37212264a7ae880d5ee8647c2dc30ce52",
+  "prompt_characters": 4812,
+  "schema_sha256": "6c1d23acea39e7523130fb07fa7861338fab07eb8814512043970805d99aca49",
+  "fingerprint": "63415ac190e2b54ab32d5bb43e8629f7683866d4ded6a9afb43b2dcdbf471bbb",
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 8,
+  "evidence_ids": [
+    "GP-006-E-1e527773e8493acf",
+    "GP-006-E-8fbb0d1c6f7ead81",
+    "GP-006-E-8e9084aadcfe157d",
+    "GP-006-E-d9a16a0c73e6b6b2",
+    "GP-006-E-9c61cae7b3cbdfda",
+    "GP-006-E-b9606d3f1fb87b4c",
+    "GP-006-E-e2cb259904655a7d",
+    "GP-006-E-31c0ada2828d03ec",
+    "GP-006-E-b0e824a66a4f04c1",
+    "GP-006-E-c880de483e81461c",
+    "GP-006-E-5b17d5bf9a42504e",
+    "GP-006-E-0e932dc79aa7ba74"
+  ]
+}

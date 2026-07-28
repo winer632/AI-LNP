@@ -1,0 +1,123 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-c0b306e3d6099318",
+    "RT-060cdf2dece81dab",
+    "RT-4d6a3cfad978ba35",
+    "RT-b967daf903d98613",
+    "RT-8ce1f5d32557e2ad",
+    "RT-cfff9d04e3cf9c72",
+    "RT-a05b26d20af622b4"
+  ],
+  "candidate_ids": [
+    "OC-179a7e222a4e1927",
+    "OC-46a32d7d3a3de39d",
+    "OC-842707c55fd53a55",
+    "OC-be6096c1e0cde0ec",
+    "OC-c0903300f94dcdae",
+    "OC-d6d8ec31fcbb44d8",
+    "OC-fa3d41fbbfb8dbc9"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-1e527773e8493acf",
+      "text": "tiﬁed the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, Sustained expression of mouse FVIII following Cas9/sgRNA LNP showing insertion and deletion rates of 3.5% and 28.5%, respectively.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-8fbb0d1c6f7ead81",
+      "text": "injection Among all the deletion patterns, approximately 60% were one base- In the last section, we demonstrated two sgRNAs exhibited similar pair deletions that can restore the 50 base-pair deletion to normal in vivo gene editing efﬁcacy through hydrodynamic injection.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-8e9084aadcfe157d",
+      "text": "Post-treatment, FVIII activity was measured by aPTT, and our results indicated that the treated mice generated an average of 3.30% ± 0.68% of FVIII activity over a span of 26 weeks (Figure 5A).",
+      "source_ids": [
+        "S-1385dd7253d2"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-d9a16a0c73e6b6b2",
+      "text": "Post-treatment, It was previously demonstrated in our lab that following hydrody- FVIII activity was measured by aPTT, and our results indicated namic injection of plasmid DNA, transfection occurred predomi- that the treated mice generated an average of 3.30% ± 0.68% of nantly in hepatocytes; however, lower transgene expression was FVIII activity over a span of 26 weeks (Figure 5A).",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-9c61cae7b3cbdfda",
+      "text": "The investigation of gene editing patterns in LSECs revealed that one base-pair deletions constitute the highest editing pattern (around 46.5% of total deletions), together with four base-pair deletions, which can help rescue the five base-pair deletion in NSG HemA, accounting for 50%–60% of all the deletions (Figures 6C and 6D).",
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-b9606d3f1fb87b4c",
+      "text": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2).",
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-e2cb259904655a7d",
+      "text": "Our data showed that the in vivo gene editing 3 days after transfection to estimate overall gene editing efﬁciency efﬁciency of NSGHAsgRNA was comparable to that of using T7 endonuclease (T7E1) assay.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-31c0ada2828d03ec",
+      "text": "As expected, NSGHAsgRNA showed no Following these results, we selected NSGHAsgRNA for subsequent editing activity in WT F8 gene.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-b0e824a66a4f04c1",
+      "text": "The NSGHAsgRNA was encapsulated with Cas9 Evaluation of in vivo gene editing of mutant F8 in HemA NSG mRNA into MC3 LNP and intravenously injected into NSG HemA mouse model mice at a dosage of 4 mg/kg of Cas9/sgRNA LNP.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-c880de483e81461c",
+      "text": "Following injection, Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about we euthanized the treated mice and extracted genomic DNA 52.7% in total liver cells.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-5b17d5bf9a42504e",
+      "text": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells.",
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-0e932dc79aa7ba74",
+      "text": "HemA mice displayed approximately 2.6% FVIII activity (Fig- ure 4A).",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 8,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "39fdd7361f049f16ea2e2f6cc957cbb780a095a06b439750205e631809d7f467"
+}

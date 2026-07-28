@@ -1,0 +1,155 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-1eb0177ddb77db8e",
+    "OC-e194c9b63fe178c7",
+    "OC-faa78845363ecaf0"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-1eb0177ddb77db8e",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "eGFP fluorescence biodistribution",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Off-target eGFP expression in other organs and tissues",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "healthy BALB/c mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No quantitative value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No quantitative value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Biodistribution was comparable to healthy BALB/c mice; off-target expression was not increased in the presence of liver injury.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "OC-e194c9b63fe178c7",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "eGFP fluorescence",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-f0770b5be836544a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Liver eGFP fluorescence intensity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-f0770b5be836544a"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "healthy control injected with the same mRNA-LNPs at the same time",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-f0770b5be836544a"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No quantitative value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No quantitative value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Moderately strong eGFP fluorescence was evident in all injected livers and was reduced compared with the healthy control.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-f0770b5be836544a"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "OC-faa78845363ecaf0",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "Ex vivo fluorescence imaging of organs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-838d02d3fd7fe045"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Biodistribution of eGFP protein expression",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-838d02d3fd7fe045"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No quantitative value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No quantitative value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Attenuation of mRNA-LNP delivery to the liver did not result in broadly altered biodistribution of eGFP protein expression.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-838d02d3fd7fe045"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

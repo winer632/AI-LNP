@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-a50489141b99ce89\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports mRNA expression across several mouse liver and cancer tissues/models but does not identify a recoverable experiment linkage, assay endpoint, comparator, or outcome value for the candidate.\"}",
+  "elapsed_seconds": 7.907,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-a50489141b99ce89\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports mRNA expression across several mouse liver and cancer tissues/models but does not identify a recoverable experiment linkage, assay endpoint, comparator, or outcome value for the candidate.\"}\n"
+}

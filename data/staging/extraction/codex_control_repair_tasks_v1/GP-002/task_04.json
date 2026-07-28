@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-002",
+  "route_ids": [
+    "RT-5906da250511ec6c"
+  ],
+  "candidate_ids": [
+    "OC-e5bc4a6ea74c1e2d"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-002-E-0e0f6d51b25e2f44",
+      "text": "Importantly, one study reported that the inflammatory response in the liver was attenuated by reducing the dosage of mRNA-LNPs.34 This highlights the importance of ongoing improvements to the design of mRNA medicines to enable reduction in mRNA dosage while still achieving therapeutic levels of protein expression.",
+      "source_ids": [
+        "S-fcd620e81ec2"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "4a90407cffaa2962f32dd2fbfc0572f0c3b040282b598212632a2bd3087cad7b",
+  "source_inventory_sha256": "e61d078cd903659de013773319811a940018a79f12b1c44981188ee65131c51f",
+  "task_checksum": "604002f751344eac92b681967c822675025b01ded38fbdc892bb7a5e05f487f9"
+}

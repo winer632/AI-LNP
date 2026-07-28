@@ -1,0 +1,12 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-563eb562f6be8a11",
+    "OC-827d27435abdd312",
+    "OC-e2d4bb67d2cf343a"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The supplied evidence supports several distinct findings but does not identify which candidate outcome each finding represents; assigning an outcome ID, assay, endpoint, or comparator would require inference beyond the evidence."
+}

@@ -1,0 +1,84 @@
+{
+  "merge_version": "missing-record-merge-1.0.0",
+  "paper_id": "GP-006",
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "result_path": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/extraction/codex_control_merged_v1/GP-006/final_result.json",
+  "recovered_candidate_ids": [
+    "OC-577d7d7fe2448951",
+    "OC-85f7147389be1c5a"
+  ],
+  "unresolved_candidate_ids": [
+    "OC-179a7e222a4e1927",
+    "OC-46a32d7d3a3de39d",
+    "OC-563eb562f6be8a11",
+    "OC-827d27435abdd312",
+    "OC-842707c55fd53a55",
+    "OC-be6096c1e0cde0ec",
+    "OC-c0903300f94dcdae",
+    "OC-d6d8ec31fcbb44d8",
+    "OC-e2d4bb67d2cf343a",
+    "OC-fa3d41fbbfb8dbc9"
+  ],
+  "inputs": [
+    {
+      "task_path": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/extraction/codex_control_repair_tasks_v1/GP-006/task_01.json",
+      "fragment_path": "data/staging/extraction/codex_control_repair_v1/GP-006/3341e61acdf08885/63415ac190e2b54ab32d5bb43e8629f7683866d4ded6a9afb43b2dcdbf471bbb/fragment.json",
+      "candidate_ids": [
+        "OC-179a7e222a4e1927",
+        "OC-46a32d7d3a3de39d",
+        "OC-842707c55fd53a55",
+        "OC-be6096c1e0cde0ec",
+        "OC-c0903300f94dcdae",
+        "OC-d6d8ec31fcbb44d8",
+        "OC-fa3d41fbbfb8dbc9"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/extraction/codex_control_repair_tasks_v1/GP-006/task_02.json",
+      "fragment_path": "data/staging/extraction/codex_control_repair_v1/GP-006/3b59ce8db125ff11/3bd3a7e6b69bbb64f8a86d58bede6d0aa93a1ad3a55117aac26d8f99c4bdc82e/fragment.json",
+      "candidate_ids": [
+        "OC-563eb562f6be8a11",
+        "OC-827d27435abdd312",
+        "OC-e2d4bb67d2cf343a"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/extraction/codex_control_repair_tasks_v1/GP-006/task_03.json",
+      "fragment_path": "data/staging/extraction/codex_control_repair_v1/GP-006/58e47a75bf3703af/153b97fd07c3a05d45892cdc5a571069183a394bf343cc7ceff1d9d1dc27da47/fragment.json",
+      "candidate_ids": [
+        "OC-577d7d7fe2448951",
+        "OC-85f7147389be1c5a"
+      ],
+      "disposition": "recovered"
+    }
+  ],
+  "validation_status": "valid",
+  "coverage_status": "review_unmatched_groups",
+  "coverage_unresolved_candidate_ids": [
+    "OC-179a7e222a4e1927",
+    "OC-1aae7f686c18db97",
+    "OC-1c3f88c83b5cb897",
+    "OC-34271609df560893",
+    "OC-46a32d7d3a3de39d",
+    "OC-4ec099151fb53107",
+    "OC-563eb562f6be8a11",
+    "OC-6b23a27057538b1e",
+    "OC-703929685a082d76",
+    "OC-7e02be28ef250a82",
+    "OC-827d27435abdd312",
+    "OC-83293575f233009f",
+    "OC-842707c55fd53a55",
+    "OC-992ce3528e9ad840",
+    "OC-a5cbad64b11d3b45",
+    "OC-bb6af130607dd944",
+    "OC-be6096c1e0cde0ec",
+    "OC-c0903300f94dcdae",
+    "OC-d6d8ec31fcbb44d8",
+    "OC-da9a3d11dcdc94d9",
+    "OC-e2d4bb67d2cf343a",
+    "OC-fa3d41fbbfb8dbc9"
+  ],
+  "finalization_allowed": false
+}

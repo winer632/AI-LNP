@@ -1,0 +1,112 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-577d7d7fe2448951",
+    "OC-85f7147389be1c5a"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-577d7d7fe2448951",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "gene editing efficiency in genomic DNA extracted from whole liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "in vivo gene editing efficiency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "mF8sgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 5.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Comparable to mF8sgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "OC-85f7147389be1c5a",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "FVIII activity after two injections",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 2.6,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No qualitative outcome reported beyond the numeric value."
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-002",
+  "route_ids": [
+    "RT-602770fcd6fb2b8c"
+  ],
+  "candidate_ids": [
+    "OC-22c6a3379426a8a8"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-002-E-94196bef2463a6ea",
+      "text": "Delivery of mRNA is also possible in xenograft models of both primary and secondary liver cancer, albeit with attenuated protein expression relative to the normal liver.",
+      "source_ids": [
+        "S-97c7f56ae012"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "4a90407cffaa2962f32dd2fbfc0572f0c3b040282b598212632a2bd3087cad7b",
+  "source_inventory_sha256": "e61d078cd903659de013773319811a940018a79f12b1c44981188ee65131c51f",
+  "task_checksum": "1b2edbe95923519a36ee5b3fb493d2e6c2c9a458d59009304f1f57be3c91fd08"
+}

@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-002",
+  "route_ids": [
+    "RT-b53c74ae234c7f46"
+  ],
+  "candidate_ids": [
+    "OC-a50489141b99ce89"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-002-E-90f2a170186d38cd",
+      "text": "We observed mRNA expression in healthy, fibrotic, and cirrhotic mouse liver tissue; spontaneous HCC in situ; and xenograft models of HCC and secondary liver cancer.",
+      "source_ids": [
+        "S-247327109a98"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "4a90407cffaa2962f32dd2fbfc0572f0c3b040282b598212632a2bd3087cad7b",
+  "source_inventory_sha256": "e61d078cd903659de013773319811a940018a79f12b1c44981188ee65131c51f",
+  "task_checksum": "52509a3f482b86d799aab0e19d54ac440e5d17b50225974cdb958e90c26d7b26"
+}

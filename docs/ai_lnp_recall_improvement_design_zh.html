@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI-LNP Recall 提升改造设计 · v6 · 2026-07-29</title>
+  <title>AI-LNP Recall 提升改造设计 · v7 · 2026-07-29</title>
   <meta name="description" content="基于实测证据的 AI-LNP 证据恢复率改造设计。v2 加入 GP-006 前置验证结果：GO-006 已确认可解。">
   <style>
     :root{
@@ -117,7 +117,7 @@
 <body>
 
 <header class="shell">
-  <div class="brand">AI-LNP · 改造设计<span class="ver">v6 · GO-006 已恢复</span></div>
+  <div class="brand">AI-LNP · 改造设计<span class="ver">v7 · 天花板根因已定位</span></div>
   <div class="eyebrow">证据恢复率 · 2026 年 7 月 29 日</div>
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
@@ -660,7 +660,47 @@ HybridIndex 查询 "total insertion frequency in LSECs" → 上述 table_row 为
     使 P3 契约回到已验证可工作的区间。
   </div>
 
-  <h3>7. 尚未验证的部分</h3>
+  <h3>7. 天花板的真正成因（v7 · 修补路由定向失准）</h3>
+  <p>本轮跑通了此前完全没碰过的 repair → merge 链路 —— 这正是原生 API 路径当年从 7/15 补到 10/15 的机制。结果是负面的：</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th></th><th class="num">recall</th><th class="num">精度</th><th class="num">误增</th></tr></thead>
+    <tbody>
+      <tr><td>修补前（第一次调用）</td><td class="num">6/15</td><td class="num">0.429</td><td class="num">8</td></tr>
+      <tr><td>执行 8 个修补任务 + 合并后</td><td class="num">6/15</td><td class="num no">0.316</td><td class="num no">13</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><b>增益 +0，精度下降，误增 +5。</b>查根因时发现：</p>
+  <div class="warn">
+    <b>九条缺失金标准的证据，0 条出现在任何修补任务里</b>
+    修补路由针对的是「未匹配<b>候选</b>」，而产生这个集合的 coverage 检查<b>在两个方向上同时失准</b>：
+    <div class="scroll" style="margin-top:10px">
+    <table>
+      <thead><tr><th>论文</th><th class="num">金标准</th><th class="num">缺失</th><th class="num">coverage 报未匹配</th><th>问题</th></tr></thead>
+      <tbody>
+        <tr><td>GP-002</td><td class="num">1</td><td class="num">0</td><td class="num">8</td><td class="mid">过报 —— 4 个修补任务花在非金标准上</td></tr>
+        <tr><td>GP-004</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td>—</td></tr>
+        <tr><td>GP-005</td><td class="num">2</td><td class="num">1</td><td class="num no">0</td><td class="no">漏报 —— GO-010 永远进不了修补</td></tr>
+        <tr><td>GP-006</td><td class="num">5</td><td class="num">4</td><td class="num">15</td><td>—</td></tr>
+        <tr><td>GP-007</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td>—</td></tr>
+        <tr><td>GP-008</td><td class="num">4</td><td class="num">3</td><td class="num no">1</td><td class="no">漏报 —— GO-015/017/018 缺失，只报 1 个</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="note">
+    <b>这是设计文档从未识别的第四个成因</b>
+    文档把天花板归因于证据选择（P0-a）、解析（P1）、静默遗漏（P3）。
+    这三条都是真的，也都已修好 —— 而 recall 仍停在 8/15。
+    <b>修补定向是第四个成因，也是真正封顶的那个</b>：
+    coverage 认定为「已匹配」的金标准条目<b>永远不会获得第二次机会</b>，
+    而它过报的条目会消耗修补预算并制造误增。
+    这解释了「候选检测 15/15，最终恢复 10/15」这个从项目一开始就存在的悖论 ——
+    检测到的组和金标准关心的组，不是同一批。
+  </div>
+
+  <h3>8. 尚未验证的部分</h3>
   <ul>
     <li><b>只有 GP-006 换成了 uniparse 语料。</b>其余 8 篇仍是 pymupdf 语料，全量重建约 2–3 分钟/篇。</li>
     <li><b>13–14/15 的目标未达成。</b>当前 codex harness 内为 8/15；原生 API 路径在合并修补后为 10/15。
