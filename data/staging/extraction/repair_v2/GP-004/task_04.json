@@ -1,0 +1,45 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-004",
+  "route_ids": [
+    "RT-dd2a315dadfd8f69"
+  ],
+  "candidate_ids": [
+    "OC-e42d02cd0aa8f42f"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-004-E-e29c5e3c31a38827",
+      "text": "Mice were either 10–12 week-old Bl6/C57 female for the liver injury models or 7–8 week-old Balb/c female (purchased from the Jackson Laboratory, Bar Harbor, ME) to study the kinetics of expression and identity of cell types transfected in vivo using luciferase- and eGFP mRNA-LNP at homeostasis.",
+      "source_ids": [
+        "S-042decafcf9d"
+      ]
+    },
+    {
+      "evidence_id": "GP-004-E-b293f56409c89709",
+      "text": "Mice were administered 100 μl of diluted mRNA-LNP-encoding luciferase (5 μg), eGFP (10 μg), HGF (10 μg), Poly(C) (10 μg), or combination HGF (5 μg) + EGF (5 μg) intravenously by either retro-orbital or tail vein injections using 1/2cc lo-dose insulin syringes (EXELINT).",
+      "source_ids": [
+        "S-042decafcf9d"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "05a6a5f1b834d1fbccc91489dcc416423e8712a060414d2527b6282101f0467a",
+  "source_inventory_sha256": "04e58e5184b63b163e448c327fc7498492ce7825c27638a818fb2cb0df99243b",
+  "task_checksum": "4aadfe6f831978fc7862c99786465593e6a8c67d5f959b0a878690ce3748ec71"
+}

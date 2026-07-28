@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-4a2f1296751af41e"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The supplied evidence provides only a general statement that lower ASGPR expression in hepatocellular carcinoma and hepatitis may diminish effectiveness; it does not report a specific experiment or outcome with recoverable fields."
+}

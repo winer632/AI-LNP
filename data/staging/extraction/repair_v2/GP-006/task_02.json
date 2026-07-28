@@ -1,0 +1,41 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-060cdf2dece81dab"
+  ],
+  "candidate_ids": [
+    "OC-46a32d7d3a3de39d"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-8e9084aadcfe157d",
+      "text": "Post-treatment, FVIII activity was measured by aPTT, and our results indicated that the treated mice generated an average of 3.30% ± 0.68% of FVIII activity over a span of 26 weeks (Figure 5A).",
+      "source_ids": [
+        "S-1385dd7253d2"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-d9a16a0c73e6b6b2",
+      "text": "Post-treatment, It was previously demonstrated in our lab that following hydrody- FVIII activity was measured by aPTT, and our results indicated namic injection of plasmid DNA, transfection occurred predomi- that the treated mice generated an average of 3.30% ± 0.68% of nantly in hepatocytes; however, lower transgene expression was FVIII activity over a span of 26 weeks (Figure 5A).",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "78387dd3ad09be62cacb4c83285eaca400f2457e6bb344434e794bae7c1dd64d"
+}

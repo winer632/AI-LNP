@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-179a7e222a4e1927"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The evidence reports insertion and deletion rates (3.5% and 28.5%) but does not identify which existing experiment or formulation they belong to, nor provide a distinct outcome identifier for each rate; assigning them to E1 or creating additional identifiers would be unsupported."
+}

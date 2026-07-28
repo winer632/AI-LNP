@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-94a82c6737e77984"
+  ],
+  "candidate_ids": [
+    "OC-bb6af130607dd944"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-d9c30e3abca70fcb",
+      "text": "Since LSECs are the primary source of plasma FVIII pro- expression were obtained from both hepatocytes and LSECs with tein, our aim was to induce an indel mutation into the mutant mouse about 17-fold higher expression in hepatocytes than LSECs.",
+      "source_ids": [
+        "S-55f0be143c71"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "b6c6b3ce43e097b92a47b37c76197078239d9546550084fb50f7b4b55eee9cae"
+}

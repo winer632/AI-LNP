@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-bb6af130607dd944\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports a relative expression statement but does not identify a recoverable experiment, assay, endpoint, comparator, outcome value/unit, or link to an existing experiment.\"}",
+  "elapsed_seconds": 7.387,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-bb6af130607dd944\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports a relative expression statement but does not identify a recoverable experiment, assay, endpoint, comparator, outcome value/unit, or link to an existing experiment.\"}\n"
+}

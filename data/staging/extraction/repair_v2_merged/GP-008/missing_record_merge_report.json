@@ -1,0 +1,81 @@
+{
+  "merge_version": "missing-record-merge-1.0.0",
+  "paper_id": "GP-008",
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "result_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_merged/GP-008/final_result.json",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-10e46c995546bedf",
+    "OC-150f3861bcac0be7",
+    "OC-58807a11fad15b65",
+    "OC-75f5e516703d38c8",
+    "OC-8d2b5381931531a4",
+    "OC-9343dfa7f5af16e4"
+  ],
+  "inputs": [
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_05.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/1d85254f92483408/f54fba8f10f887110e43ecc48fc8f1718f38c3fcdebb7d3994fde4cb7147299d/fragment.json",
+      "candidate_ids": [
+        "OC-58807a11fad15b65"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_03.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/4c0b39c2bb9439ca/9b5e3d0b4c282967a2af6ae9bc73f228c9a25cfa4ab18ad7eecea9ece2c36372/fragment.json",
+      "candidate_ids": [
+        "OC-75f5e516703d38c8"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_02.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/7d001e0b041aa9f1/8f953f5f9d5f06a8f8d6e9295d546be6a22c1e26f52b9b7d9afd43f3958f07b6/fragment.json",
+      "candidate_ids": [
+        "OC-9343dfa7f5af16e4"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_06.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/86c2f297b778d1bf/ac9593f0a4be454231e8f952027435e12bac711e82a2fc49b5564e4c9e4099e3/fragment.json",
+      "candidate_ids": [
+        "OC-10e46c995546bedf"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_01.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/8d482bacc8b9bb67/bc7c868b695af4aa23df14d7813795e3ca6ed0c75215931faee98f3adea45c57/fragment.json",
+      "candidate_ids": [
+        "OC-150f3861bcac0be7"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-008/task_04.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-008/bc1cc1682b16aae6/e1b7eb0aef2695f8dc686cd292576057a0e9ee4f5cadbd2f2292c62417be5473/fragment.json",
+      "candidate_ids": [
+        "OC-8d2b5381931531a4"
+      ],
+      "disposition": "unresolved"
+    }
+  ],
+  "validation_status": "valid",
+  "coverage_status": "review_unmatched_groups",
+  "coverage_unresolved_candidate_ids": [
+    "OC-10e46c995546bedf",
+    "OC-150f3861bcac0be7",
+    "OC-446035e072c83c6b",
+    "OC-58807a11fad15b65",
+    "OC-75f5e516703d38c8",
+    "OC-8d2b5381931531a4",
+    "OC-9343dfa7f5af16e4",
+    "OC-baf2d08bb4cc9e88",
+    "OC-d49efe6a06da914e",
+    "OC-f437510fa0871b58",
+    "OC-fc5377fba2c3a51c"
+  ],
+  "finalization_allowed": false
+}

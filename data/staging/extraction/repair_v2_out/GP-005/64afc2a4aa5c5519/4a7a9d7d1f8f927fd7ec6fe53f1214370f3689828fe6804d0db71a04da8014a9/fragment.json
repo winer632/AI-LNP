@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-88bd456605ba8727"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The evidence describes gene-expression categories qualitatively but does not provide a recoverable outcome identifier, assay endpoint linked to a specific experiment, comparator, or outcome value."
+}

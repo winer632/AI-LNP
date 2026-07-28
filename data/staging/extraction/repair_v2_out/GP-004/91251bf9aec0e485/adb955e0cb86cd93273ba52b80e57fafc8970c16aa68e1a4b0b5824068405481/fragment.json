@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-e42d02cd0aa8f42f"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The supplied evidence reports mouse cohorts and administered mRNA-LNP doses/routes, but no assay endpoint, comparator, or outcome result for the candidate outcome."
+}

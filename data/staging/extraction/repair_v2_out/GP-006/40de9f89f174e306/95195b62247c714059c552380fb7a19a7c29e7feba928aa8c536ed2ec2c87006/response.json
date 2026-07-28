@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-83293575f233009f\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence describes predominant hepatocyte transfection and lower LSEC expression after hydrodynamic plasmid-DNA injection, but provides no recoverable experiment or outcome identifier, formulation linkage, assay, quantitative endpoint, comparator, dose, route label, or timepoint required to add a non-invented record.\"}",
+  "elapsed_seconds": 8.724,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-83293575f233009f\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The supplied evidence describes predominant hepatocyte transfection and lower LSEC expression after hydrodynamic plasmid-DNA injection, but provides no recoverable experiment or outcome identifier, formulation linkage, assay, quantitative endpoint, comparator, dose, route label, or timepoint required to add a non-invented record.\"}\n"
+}

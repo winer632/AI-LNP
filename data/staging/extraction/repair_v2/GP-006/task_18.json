@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-34e93394fc1b31d3"
+  ],
+  "candidate_ids": [
+    "OC-1c3f88c83b5cb897"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-191ac0774ac7347b",
+      "text": "No indel variants were found the WT F8 gene, we chose NSGHAsgRNA for the subsequent gene at ﬁve top predicted potential off-target sites when compared with un- editing experiments.",
+      "source_ids": [
+        "S-23e0134068c1"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "59703fb68d620f4792d9d1bf3b69daad217d661471b841a61258c3e66498d181"
+}

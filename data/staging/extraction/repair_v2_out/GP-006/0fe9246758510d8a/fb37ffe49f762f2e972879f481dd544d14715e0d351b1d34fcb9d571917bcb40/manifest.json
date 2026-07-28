@@ -1,0 +1,32 @@
+{
+  "status": "completed_pending_merge",
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-006",
+  "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_09.json",
+  "task_checksum": "03e5d9c91601c4cfcbf7c5002140f08e9ef01ae17768149595e435e9295c09f8",
+  "candidate_ids": [
+    "OC-be6096c1e0cde0ec"
+  ],
+  "fingerprint": "fb37ffe49f762f2e972879f481dd544d14715e0d351b1d34fcb9d571917bcb40",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T18:28:22.642407+00:00",
+  "completed_at": "2026-07-28T18:28:31.619521+00:00",
+  "elapsed_seconds": 8.976,
+  "response_validated": true,
+  "validation_error": null,
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-be6096c1e0cde0ec"
+  ],
+  "record_counts": {
+    "experiments": 0,
+    "outcomes": 0
+  },
+  "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/0fe9246758510d8a/fb37ffe49f762f2e972879f481dd544d14715e0d351b1d34fcb9d571917bcb40/fragment.json",
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "cache_hit": false
+}

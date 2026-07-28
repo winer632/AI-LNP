@@ -1,0 +1,10 @@
+{
+  "disposition": "unresolved",
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [
+    "OC-d16b5d218b5f5f5a"
+  ],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_reason": "The evidence reports decreased steatosis after HGF or EGF mRNA-LNPs and greater steatosis reversion with their combination, but does not provide sufficient experiment linkage, assay, comparator definition, or quantitative outcome details to recover a new record without inventing fields."
+}

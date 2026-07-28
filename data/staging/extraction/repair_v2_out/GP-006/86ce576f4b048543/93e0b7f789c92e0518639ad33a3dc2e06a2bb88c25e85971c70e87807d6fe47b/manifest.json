@@ -1,0 +1,30 @@
+{
+  "status": "rejected",
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-006",
+  "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_19.json",
+  "task_checksum": "bbb98b6ee8514677a95951f9f76d9cbc28261865c0ccedb79a0397d747a0aacd",
+  "candidate_ids": [
+    "OC-563eb562f6be8a11"
+  ],
+  "fingerprint": "93e0b7f789c92e0518639ad33a3dc2e06a2bb88c25e85971c70e87807d6fe47b",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T18:30:15.647311+00:00",
+  "completed_at": "2026-07-28T18:30:35.971948+00:00",
+  "elapsed_seconds": 20.323,
+  "response_validated": false,
+  "validation_error": "ValidationError: 4 validation errors for MissingRecordFragment\noutcomes.0.assay\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...y method not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error\noutcomes.0.comparator\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...mparator not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error\noutcomes.0.outcome_value\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...me value not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error\noutcomes.0.outcome_unit\n  Value error, missing fields cannot cite evidence as value support [type=value_error, input_value={'value': None, 'status':...ome unit not reported.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+  "disposition": null,
+  "recovered_candidate_ids": [],
+  "unresolved_candidate_ids": [],
+  "record_counts": {
+    "experiments": 0,
+    "outcomes": 0
+  },
+  "fragment_path": null,
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "cache_hit": false
+}

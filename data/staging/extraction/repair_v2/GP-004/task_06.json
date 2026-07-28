@@ -1,0 +1,39 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-004",
+  "route_ids": [
+    "RT-a6e238ee677b1c5a"
+  ],
+  "candidate_ids": [
+    "OC-ec2f4916beb7b305"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-004-E-cc7782c08c528405",
+      "text": "As described in the CDE-induced liver injury model, influx of CD45+ cells increased after 3 weeks of CDE diet compared to untreated mice.",
+      "source_ids": [
+        "S-a96b8533bdb9",
+        "S-f83607381c9a"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "05a6a5f1b834d1fbccc91489dcc416423e8712a060414d2527b6282101f0467a",
+  "source_inventory_sha256": "04e58e5184b63b163e448c327fc7498492ce7825c27638a818fb2cb0df99243b",
+  "task_checksum": "b00aac3e2fb0a8a8f12286b18dcd488f54d3b195fc902016e4a230d4913fc72f"
+}

@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-cdcc62075b27ec38"
+  ],
+  "candidate_ids": [
+    "OC-577d7d7fe2448951"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-ab6a59c6da34953c",
+      "text": "Our data showed that the in vivo gene editing efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B).Figure 4In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice(A) Plasmid expressing Cas9 and NSGHAsgRNA was delivered to NSG HemA mice through hydrodynamic injection.",
+      "source_ids": [
+        "S-620e08261866"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "8ee97e325a9b61dfe42fce39cf4ced3e977076403c15b0a16c4b367945a62d0a"
+}

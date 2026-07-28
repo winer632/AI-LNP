@@ -1,0 +1,836 @@
+{
+  "inventory_version": "full-outcome-inventory-1.0.0",
+  "paper_id": "GP-006",
+  "source_packet_checksum": "d556f6c414dfb9a90bc9fc06c209986f4e84eac979ced40fc9d45c4e22184dee",
+  "raw_candidate_count": 39,
+  "retained_candidates": [
+    {
+      "candidate_id": "OC-992ce3528e9ad840",
+      "paper_id": "GP-006",
+      "endpoint_family": "cell_target_effect",
+      "evidence_ids": [
+        "GP-006-E-566609fc939d51d8"
+      ],
+      "source_ids": [
+        "S-55f0be143c71",
+        "S-fec7cd0399d1"
+      ],
+      "evidence_text": "Colocalization of LNPs and vascular cells were indicated by white arrowheads.",
+      "direct_signal_terms": [
+        "Colocaliz"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-1aae7f686c18db97",
+      "paper_id": "GP-006",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-006-E-a646b1030db7fdba"
+      ],
+      "source_ids": [
+        "S-55f0be143c71",
+        "S-fec7cd0399d1"
+      ],
+      "evidence_text": "(B) To determine the LSEC-targeting ability, mice were intravenously injected with 1.2 mg/kg of GFP LNPs.",
+      "direct_signal_terms": [
+        "1.2 mg"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-83293575f233009f",
+      "paper_id": "GP-006",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-006-E-1d1871fe74140517"
+      ],
+      "source_ids": [
+        "S-620e08261866"
+      ],
+      "evidence_text": "It was previously demonstrated in our lab that following hydrodynamic injection of plasmid DNA, transfection occurred predominantly in hepatocytes; however, lower transgene expression was also observed in LSECs.",
+      "direct_signal_terms": [
+        "lower",
+        "observed"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-703929685a082d76",
+      "paper_id": "GP-006",
+      "endpoint_family": "expression",
+      "evidence_ids": [
+        "GP-006-E-42aad5557a4b8d6e",
+        "GP-006-E-e77f320b73e493a8"
+      ],
+      "source_ids": [
+        "S-03587aa43190",
+        "S-d439bf18428e"
+      ],
+      "evidence_text": "Luciferase expression was normalized by total protein, measured by BCA assay kit (Bio-Rad, USA), and reported as RLU/mg.",
+      "direct_signal_terms": [
+        "measured"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-563eb562f6be8a11",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-3c6e73bc825c5293"
+      ],
+      "source_ids": [
+        "S-23e0134068c1"
+      ],
+      "evidence_text": "The corrected mutants (around 46.5% of total deletions), together with four base-pair dele- exhibited endogenous FVIII expression and effectively restored the tions, which can help rescue the ﬁve base-pair deletion in NSG coagulation activity in NSG HemA mice.",
+      "direct_signal_terms": [
+        "46.5%"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-179a7e222a4e1927",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf",
+        "GP-006-E-8fbb0d1c6f7ead81"
+      ],
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ],
+      "evidence_text": "tiﬁed the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, Sustained expression of mouse FVIII following Cas9/sgRNA LNP showing insertion and deletion rates of 3.5% and 28.5%, respectively. injection Among all the deletion patterns, approximately 60% were one base- In the last section, we demonstrated two sgRNAs exhibited similar pair deletions that can restore the 50 base-pair deletion to normal in vivo gene editing efﬁcacy through hydrodynamic injection.",
+      "direct_signal_terms": [
+        "3.5%",
+        "28.5%",
+        "60%"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-f4662bac9b4a5cc3",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-7066b69b1d22a88d"
+      ],
+      "source_ids": [
+        "S-23e0134068c1"
+      ],
+      "evidence_text": "NGS sequencing analysis re- HemA, accounting for 50%–60% of all the deletions (Figures 6C vealed an approximately 16.5% deletion frequency in LSECs following and 6D).",
+      "direct_signal_terms": [
+        "analysis",
+        "50%",
+        "60%",
+        "Figures",
+        "16.5%"
+      ],
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-842707c55fd53a55",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-9c61cae7b3cbdfda"
+      ],
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ],
+      "evidence_text": "The investigation of gene editing patterns in LSECs revealed that one base-pair deletions constitute the highest editing pattern (around 46.5% of total deletions), together with four base-pair deletions, which can help rescue the five base-pair deletion in NSG HemA, accounting for 50%–60% of all the deletions (Figures 6C and 6D).",
+      "direct_signal_terms": [
+        "46.5%",
+        "50%",
+        "60%",
+        "Figures"
+      ],
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-827d27435abdd312",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-d51e57e7bfc1ef65"
+      ],
+      "source_ids": [
+        "S-23e0134068c1"
+      ],
+      "evidence_text": "Of the deletions, 1 (7.68%) and 4 indel variants, but their frequencies were signiﬁcantly lower (0.78% (1.38%) deletion were able to restore the reading frame, potentially and 0%, respectively) compared with deletion variants (Table S2).",
+      "direct_signal_terms": [
+        "7.68%",
+        "lower",
+        "0.78%",
+        "1.38%",
+        "0%",
+        "compared",
+        "Table S2"
+      ],
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-be6096c1e0cde0ec",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ],
+      "evidence_text": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2).",
+      "direct_signal_terms": [
+        "significant",
+        "lower",
+        "0.78%",
+        "0%",
+        "compared",
+        "Table S2"
+      ],
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-c0903300f94dcdae",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-e2cb259904655a7d",
+        "GP-006-E-31c0ada2828d03ec",
+        "GP-006-E-b0e824a66a4f04c1",
+        "GP-006-E-c880de483e81461c",
+        "GP-006-E-5b17d5bf9a42504e"
+      ],
+      "source_ids": [
+        "S-54a70efbd7fb",
+        "S-5e3078bd8fb5"
+      ],
+      "evidence_text": "Our data showed that the in vivo gene editing 3 days after transfection to estimate overall gene editing efﬁciency efﬁciency of NSGHAsgRNA was comparable to that of using T7 endonuclease (T7E1) assay. As expected, NSGHAsgRNA showed no Following these results, we selected NSGHAsgRNA for subsequent editing activity in WT F8 gene. The NSGHAsgRNA was encapsulated with Cas9 Evaluation of in vivo gene editing of mutant F8 in HemA NSG mRNA into MC3 LNP and intravenously injected into NSG HemA mouse model mice at a dosage of 4 mg/kg of Cas9/sgRNA LNP. Following injection, Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about we euthanized the treated mice and extracted genomic DNA 52.7% in total liver cells.",
+      "direct_signal_terms": [
+        "showed",
+        "3 days",
+        "4 mg",
+        "resulted",
+        "52.7%"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-6b23a27057538b1e",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-d18589e268d50539"
+      ],
+      "source_ids": [
+        "S-d439bf18428e"
+      ],
+      "evidence_text": "To verify cell-type-spe- CFT were directly measured using NATEM (Non-Activated Throm- ciﬁc gene editing, the livers of treated mice were perfused with HBSS boelastometry) kit assay by rotational thromboelastometry (ROTEM buffer containing 0.5 mM EDTA and 25 mM HEPES, followed by delta, Instrumentation Laboratory, Bedford, MA).",
+      "direct_signal_terms": [
+        "measured"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-34271609df560893",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-f3dda9c744c9ef01"
+      ],
+      "source_ids": [
+        "S-55f0be143c71"
+      ],
+      "evidence_text": "One of these sgRNAs, mF8sgRNA, can To assess the in vivo gene editing efﬁcacy, we established a colony of target both wild-type (WT) F8 gene and mutant F8 gene in NSG hemophilia A mouse model on an immunodeﬁcient NOD.Cg- HemA mice (Figure 3A), while the other, NSGHAsgRNA speciﬁcally Prkdcscid Il2rgtm1Wjl/SzJ mice (NSG) background (NSG HemA).",
+      "direct_signal_terms": [
+        "Figure 3A"
+      ],
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "confidence": "high",
+      "confidence_reasons": [
+        "visual_result_location"
+      ]
+    },
+    {
+      "candidate_id": "OC-577d7d7fe2448951",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-ab6a59c6da34953c"
+      ],
+      "source_ids": [
+        "S-620e08261866"
+      ],
+      "evidence_text": "Our data showed that the in vivo gene editing efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B).Figure 4In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice(A) Plasmid expressing Cas9 and NSGHAsgRNA was delivered to NSG HemA mice through hydrodynamic injection.",
+      "direct_signal_terms": [
+        "showed",
+        "5%",
+        "Figure 4B",
+        "Figure 4In"
+      ],
+      "figure_or_table": "figure 4b",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-da7b686c24311491",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-ab5a32e037c62749",
+        "GP-006-E-d010646bb645e446"
+      ],
+      "source_ids": [
+        "S-23e0134068c1",
+        "S-5e3078bd8fb5"
+      ],
+      "evidence_text": "Since both that the F8 gene was edited in 60.54% ± 11.65% of hepatocytes, sgRNAs exhibit similar gene editing efﬁciencies and to avoid repeated whereas LSECs showed gene editing rates of approximately targeting of the corrected F8 gene by mF8sgRNA, which also targets 16.50% ± 2.96% (Figure 6A; Table S1).",
+      "direct_signal_terms": [
+        "60.54%",
+        "±",
+        "11.65%",
+        "showed",
+        "16.50%",
+        "2.96%",
+        "Figure 6A",
+        "Table S1"
+      ],
+      "figure_or_table": "figure 6a",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-1c3f88c83b5cb897",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-191ac0774ac7347b"
+      ],
+      "source_ids": [
+        "S-23e0134068c1"
+      ],
+      "evidence_text": "No indel variants were found the WT F8 gene, we chose NSGHAsgRNA for the subsequent gene at ﬁve top predicted potential off-target sites when compared with un- editing experiments.",
+      "direct_signal_terms": [
+        "compared"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-bb6af130607dd944",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-d9c30e3abca70fcb"
+      ],
+      "source_ids": [
+        "S-55f0be143c71"
+      ],
+      "evidence_text": "Since LSECs are the primary source of plasma FVIII pro- expression were obtained from both hepatocytes and LSECs with tein, our aim was to induce an indel mutation into the mutant mouse about 17-fold higher expression in hepatocytes than LSECs.",
+      "direct_signal_terms": [
+        "higher"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-fa3d41fbbfb8dbc9",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-1893c0cd1beb2ee9"
+      ],
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ],
+      "evidence_text": "The result indicated that mF8sgRNA, with both sgRNAs resulting in a gene editing efﬁ- mF8sgRNA could induce an indel variant into mouse F8 exon 1 ciency of around 5% in genomic DNA extracted from whole liver with a 23% of indel mutation rate (Figure 3B).",
+      "direct_signal_terms": [
+        "5%",
+        "23%",
+        "Figure 3B"
+      ],
+      "figure_or_table": "figure 3b",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-a5cbad64b11d3b45",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-8af0fe6c0065d45c"
+      ],
+      "source_ids": [
+        "S-5e3078bd8fb5"
+      ],
+      "evidence_text": "These results suggested that Cas9/sgRNA LNP treatment induced indel repair in LSECs and restoration of the endogenous FVIII expression permanently in NSG HemA mice.Figure 6Gene editing efficiency of isolated HPCs and LSECsAfter Cas9/sgRNA LNP injection, HPCs and LSECs were isolated from treated NSG HemA mice, respectively.",
+      "direct_signal_terms": [
+        "Figure 6Gene"
+      ],
+      "figure_or_table": "figure 6gene",
+      "route_hint": "vision",
+      "confidence": "high",
+      "confidence_reasons": [
+        "visual_result_location"
+      ]
+    },
+    {
+      "candidate_id": "OC-e2d4bb67d2cf343a",
+      "paper_id": "GP-006",
+      "endpoint_family": "gene_editing",
+      "evidence_ids": [
+        "GP-006-E-ef798f3259752156"
+      ],
+      "source_ids": [
+        "S-23e0134068c1"
+      ],
+      "evidence_text": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed.",
+      "direct_signal_terms": [
+        "1%",
+        "observed"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result",
+        "explicit_result_language"
+      ]
+    },
+    {
+      "candidate_id": "OC-4ec099151fb53107",
+      "paper_id": "GP-006",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-006-E-0062483addf27f5e"
+      ],
+      "source_ids": [
+        "S-1385dd7253d2",
+        "S-b35a38070366"
+      ],
+      "evidence_text": "The effect of LNP treatment showed signiﬁcant improvement of FVIII activity.",
+      "direct_signal_terms": [
+        "showed"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-d6d8ec31fcbb44d8",
+      "paper_id": "GP-006",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-006-E-0e932dc79aa7ba74"
+      ],
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ],
+      "evidence_text": "HemA mice displayed approximately 2.6% FVIII activity (Fig- ure 4A).",
+      "direct_signal_terms": [
+        "2.6%"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-7e02be28ef250a82",
+      "paper_id": "GP-006",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-006-E-61352269ff3b61f2",
+        "GP-006-E-0043b99ab0bf3320"
+      ],
+      "source_ids": [
+        "S-620e08261866",
+        "S-54a70efbd7fb"
+      ],
+      "evidence_text": "Following injection, we measured endogenous FVIII activity in the treated mice using activated partial thromboplastin time (aPTT) assay.",
+      "direct_signal_terms": [
+        "measured"
+      ],
+      "figure_or_table": null,
+      "route_hint": "text",
+      "confidence": "medium",
+      "confidence_reasons": []
+    },
+    {
+      "candidate_id": "OC-85f7147389be1c5a",
+      "paper_id": "GP-006",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-006-E-5f1df7ac5c7ec3f9"
+      ],
+      "source_ids": [
+        "S-620e08261866"
+      ],
+      "evidence_text": "Specifically, after two injections, treated NSG HemA mice displayed approximately 2.6% FVIII activity (Figure 4A).",
+      "direct_signal_terms": [
+        "2.6%",
+        "Figure 4A"
+      ],
+      "figure_or_table": "figure 4a",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-46a32d7d3a3de39d",
+      "paper_id": "GP-006",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-006-E-8e9084aadcfe157d",
+        "GP-006-E-d9a16a0c73e6b6b2"
+      ],
+      "source_ids": [
+        "S-1385dd7253d2",
+        "S-54a70efbd7fb"
+      ],
+      "evidence_text": "Post-treatment, FVIII activity was measured by aPTT, and our results indicated that the treated mice generated an average of 3.30% ± 0.68% of FVIII activity over a span of 26 weeks (Figure 5A).",
+      "direct_signal_terms": [
+        "measured",
+        "3.30%",
+        "±",
+        "0.68%",
+        "26 weeks",
+        "Figure 5A"
+      ],
+      "figure_or_table": "figure 5a",
+      "route_hint": "text",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_numeric_result"
+      ]
+    },
+    {
+      "candidate_id": "OC-da9a3d11dcdc94d9",
+      "paper_id": "GP-006",
+      "endpoint_family": "therapeutic_function",
+      "evidence_ids": [
+        "GP-006-E-8f4df2feafb0205d"
+      ],
+      "source_ids": [
+        "S-1385dd7253d2"
+      ],
+      "evidence_text": "This result suggested an improved coagulation due to targeted correction of the mutant F8 gene (Figures 5B and 5C).Figure 5Recovery of endogenous FVIII activity after Cas9/sgRNA LNP injection(A) FVIII activity following Cas9/sgRNA LNP treatment.",
+      "direct_signal_terms": [
+        "Figures",
+        "Figure 5Recovery"
+      ],
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "confidence": "high",
+      "confidence_reasons": [
+        "explicit_result_language",
+        "visual_result_location"
+      ]
+    }
+  ],
+  "dispositions": [
+    {
+      "candidate_id": "OC-992ce3528e9ad840",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-992ce3528e9ad840",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-cf67f0bbb37c4d51",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-992ce3528e9ad840",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-1aae7f686c18db97",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-1aae7f686c18db97",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-7ef949313622e346",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-1aae7f686c18db97",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-83293575f233009f",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-83293575f233009f",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-703929685a082d76",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-703929685a082d76",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-42b55c575d866122",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-703929685a082d76",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-563eb562f6be8a11",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-563eb562f6be8a11",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-179a7e222a4e1927",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-179a7e222a4e1927",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-f4662bac9b4a5cc3",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-f4662bac9b4a5cc3",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-842707c55fd53a55",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-842707c55fd53a55",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-827d27435abdd312",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-827d27435abdd312",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-be6096c1e0cde0ec",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-be6096c1e0cde0ec",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-c0903300f94dcdae",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-c0903300f94dcdae",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-fbed8d047f393e0b",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-c0903300f94dcdae",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-6b23a27057538b1e",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-6b23a27057538b1e",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-34271609df560893",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-34271609df560893",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-577d7d7fe2448951",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-577d7d7fe2448951",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-da7b686c24311491",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-da7b686c24311491",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-c028b1bbdc56681a",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-da7b686c24311491",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-1c3f88c83b5cb897",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-1c3f88c83b5cb897",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-84d16f36e8abc183",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-179a7e222a4e1927",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-bb6af130607dd944",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-bb6af130607dd944",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-fa3d41fbbfb8dbc9",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-fa3d41fbbfb8dbc9",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-a5cbad64b11d3b45",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-a5cbad64b11d3b45",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-3b3796b7e0c32c07",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-827d27435abdd312",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-f3f78b36f67b4f7c",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-be6096c1e0cde0ec",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-e2d4bb67d2cf343a",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-e2d4bb67d2cf343a",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-29c27b72a5ac6690",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-179a7e222a4e1927",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-22a1c323615b9066",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-be6096c1e0cde0ec",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-4ec099151fb53107",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-4ec099151fb53107",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-d6d8ec31fcbb44d8",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-d6d8ec31fcbb44d8",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-7e02be28ef250a82",
+      "decision": "needs_human_review",
+      "canonical_candidate_id": "OC-7e02be28ef250a82",
+      "reason": "Plausible outcome lacking a direct high-confidence signal."
+    },
+    {
+      "candidate_id": "OC-49c42aadb9e52528",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-4ec099151fb53107",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-85f7147389be1c5a",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-85f7147389be1c5a",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-46a32d7d3a3de39d",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-46a32d7d3a3de39d",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-002e3262a80d3391",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-46a32d7d3a3de39d",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    },
+    {
+      "candidate_id": "OC-da9a3d11dcdc94d9",
+      "decision": "retained_unique",
+      "canonical_candidate_id": "OC-da9a3d11dcdc94d9",
+      "reason": "High-confidence biological outcome candidate."
+    },
+    {
+      "candidate_id": "OC-c649312dff81a308",
+      "decision": "merged_duplicate",
+      "canonical_candidate_id": "OC-7e02be28ef250a82",
+      "reason": "Same endpoint family and strongly overlapping source context."
+    }
+  ],
+  "candidate_recall_gate": "needs_human_review",
+  "paid_api_requests": 0
+}

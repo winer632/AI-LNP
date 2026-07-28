@@ -1,0 +1,33 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-005",
+  "route_ids": [
+    "RT-105cbe124f4f6d84"
+  ],
+  "candidate_ids": [
+    "OC-3bd6c98e48bb9894"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-005-E-4055debc1dbe30c4",
+      "text": "Overall, the gene expression data enabled a comprehensive understanding of the response of each cell type to LNP: in hepatocytes, the observed upregulation of APP such as Hp, Saa2, and Hpx, coupled with the concurrent downregulation of the negative APP albumin, suggests the initiation of an acute phase response.",
+      "source_ids": [
+        "S-aeda5edf430c"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "68b3be509bff85ef6da30298dd2465fc9a94053327583f70462fbfa542840cb2",
+  "source_inventory_sha256": "48c0cab28d0e0209b751acee15f0337ecec0b0090c3bbcb0de80eb4d8248a3c6",
+  "task_checksum": "ec0c17f61b055bfa67a4191c84c95051fe0139aec049e6e106e56b3d736deab2"
+}

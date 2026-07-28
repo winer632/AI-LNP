@@ -1,0 +1,212 @@
+{
+  "merge_version": "missing-record-merge-1.0.0",
+  "paper_id": "GP-006",
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "result_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_merged/GP-006/final_result.json",
+  "recovered_candidate_ids": [
+    "OC-1c3f88c83b5cb897",
+    "OC-46a32d7d3a3de39d",
+    "OC-577d7d7fe2448951",
+    "OC-7e02be28ef250a82",
+    "OC-842707c55fd53a55",
+    "OC-85f7147389be1c5a",
+    "OC-c0903300f94dcdae",
+    "OC-e2d4bb67d2cf343a",
+    "OC-fa3d41fbbfb8dbc9"
+  ],
+  "unresolved_candidate_ids": [
+    "OC-179a7e222a4e1927",
+    "OC-1aae7f686c18db97",
+    "OC-4ec099151fb53107",
+    "OC-6b23a27057538b1e",
+    "OC-703929685a082d76",
+    "OC-827d27435abdd312",
+    "OC-83293575f233009f",
+    "OC-992ce3528e9ad840",
+    "OC-bb6af130607dd944",
+    "OC-be6096c1e0cde0ec",
+    "OC-d6d8ec31fcbb44d8"
+  ],
+  "inputs": [
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_11.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/055d007c498c3bd0/a1b1848a3f9f809373306095d178dc28516fd1f2aead445a5179a4d695e8b558/fragment.json",
+      "candidate_ids": [
+        "OC-d6d8ec31fcbb44d8"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_07.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/07e863c8aa42ca65/25a0df181a5a118319bdf3675ff5511aa02401c115e9099039962c6a502ba4df/fragment.json",
+      "candidate_ids": [
+        "OC-842707c55fd53a55"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_09.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/0fe9246758510d8a/fb37ffe49f762f2e972879f481dd544d14715e0d351b1d34fcb9d571917bcb40/fragment.json",
+      "candidate_ids": [
+        "OC-be6096c1e0cde0ec"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_03.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/1d9f54282786d465/04ee850fd34a2fd3563bc0093bd7bef829506550561b999f7abc2d7014f73b9d/fragment.json",
+      "candidate_ids": [
+        "OC-4ec099151fb53107"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_18.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/2d977f475d5758b5/cc2dc498938f49f8a5ac5cd21aa3b71868b72ce4cfa0177210416979e7d8b351/fragment.json",
+      "candidate_ids": [
+        "OC-1c3f88c83b5cb897"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_14.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/2deaec6ba4608af5/2247c74997470469f95e1bad8b32a31f79705232a64684130615ee59609928a0/fragment.json",
+      "candidate_ids": [
+        "OC-703929685a082d76"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_06.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/40de9f89f174e306/95195b62247c714059c552380fb7a19a7c29e7feba928aa8c536ed2ec2c87006/fragment.json",
+      "candidate_ids": [
+        "OC-83293575f233009f"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_20.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/496b9875128e6c10/01a253a5e5112dc2a52fd686a43a345cd0d53d45c42e0e2d061fc22114941d0f/fragment.json",
+      "candidate_ids": [
+        "OC-827d27435abdd312"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_21.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/4b4887b1e28dc04f/488f309fc8394fbf0098b7db0bb42956491714355efbedd6d62d5afa07309dcf/fragment.json",
+      "candidate_ids": [
+        "OC-e2d4bb67d2cf343a"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_10.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/50f58df2339b47f1/c4e656e07608ef888d590e8c7cd1323ab05c35ea411aa0ddc96829ad57e0231a/fragment.json",
+      "candidate_ids": [
+        "OC-c0903300f94dcdae"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_12.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/5335e5c4a3f17fe7/ce54aa897487c4297baf59af8cdb2cd79a0db3f0d8ef17335e5129e806cef647/fragment.json",
+      "candidate_ids": [
+        "OC-fa3d41fbbfb8dbc9"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_05.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/585ff5a25fd24acd/35ffa0e0cab4c425f87afee8320e9e5e5e7a2d9e0fac998841c580f3d5ea320b/fragment.json",
+      "candidate_ids": [
+        "OC-7e02be28ef250a82"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_17.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/5ef8267467c124fd/174bc03b82db8881e620f161cfa41c02e510be8e86fc0abf9d9aa4e0dd355335/fragment.json",
+      "candidate_ids": [
+        "OC-bb6af130607dd944"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_08.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/6ab6c85f393988f1/8b090816b2827734cc9a4fddc923930c81e51462ef5d211e3dac3c8e6a62be8c/fragment.json",
+      "candidate_ids": [
+        "OC-85f7147389be1c5a"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_15.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/ae6c029f824348d6/b19b1a0a26e13c1cdb3281b2c3fc6df9919915c85bc4ce79a69504d78b9e91c7/fragment.json",
+      "candidate_ids": [
+        "OC-1aae7f686c18db97"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_16.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/c1da857eae6f8f47/1091543ad395c33d395fe55102ded097afbd1dc702b94fab0380383288d5cf19/fragment.json",
+      "candidate_ids": [
+        "OC-992ce3528e9ad840"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_04.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/cf13cce769e90026/d24a61a8382cc44ff54e80cc386f5beeb753ab6a420ee41017a945b3f633dc37/fragment.json",
+      "candidate_ids": [
+        "OC-577d7d7fe2448951"
+      ],
+      "disposition": "recovered"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_01.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/e6063764964c9ddb/7619ebeaa5b40357cc6445fd7b0968dd2d60ce2a17713ebe60f7ff16132595c5/fragment.json",
+      "candidate_ids": [
+        "OC-179a7e222a4e1927"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_13.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/ed844f0314c02d78/7ae4855b5e97f58d3c8329342b8065fd52e200c62238f53b8a22b4a44281b8f6/fragment.json",
+      "candidate_ids": [
+        "OC-6b23a27057538b1e"
+      ],
+      "disposition": "unresolved"
+    },
+    {
+      "task_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2/GP-006/task_02.json",
+      "fragment_path": "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_out/GP-006/f0ab56457d6776d0/bb53dca37f2950ad580717199c17ee19d19ec63b0a90f6d6674ffca611b9b30e/fragment.json",
+      "candidate_ids": [
+        "OC-46a32d7d3a3de39d"
+      ],
+      "disposition": "recovered"
+    }
+  ],
+  "validation_status": "valid",
+  "coverage_status": "review_unmatched_groups",
+  "coverage_unresolved_candidate_ids": [
+    "OC-179a7e222a4e1927",
+    "OC-1aae7f686c18db97",
+    "OC-34271609df560893",
+    "OC-4ec099151fb53107",
+    "OC-563eb562f6be8a11",
+    "OC-6b23a27057538b1e",
+    "OC-703929685a082d76",
+    "OC-827d27435abdd312",
+    "OC-83293575f233009f",
+    "OC-992ce3528e9ad840",
+    "OC-a5cbad64b11d3b45",
+    "OC-bb6af130607dd944",
+    "OC-be6096c1e0cde0ec",
+    "OC-d6d8ec31fcbb44d8",
+    "OC-da9a3d11dcdc94d9"
+  ],
+  "finalization_allowed": false
+}

@@ -1,0 +1,37 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-008",
+  "route_ids": [
+    "RT-40cb76f9abe51a54"
+  ],
+  "candidate_ids": [
+    "OC-9343dfa7f5af16e4"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-f92f9c6b8d5e5931",
+      "text": "The results showed that, compared with nonfibrotic liver tissues, liver fibrosis caused by various etiologies was associated with increased FAP expression (SI Appendix, Fig.",
+      "source_ids": [
+        "S-479d9bc0ce1e"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1",
+    "F2"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "source_inventory_sha256": "b211de83b66b98330a8f0f537b44161c4be0b31874ce7aa5f20f7b8667588ad8",
+  "task_checksum": "a99cd2a2e390329f92760c6de9464639b3428ca41f68d2bbdce47661c3220d0c"
+}

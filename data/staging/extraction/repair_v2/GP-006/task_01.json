@@ -1,0 +1,41 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-c0b306e3d6099318"
+  ],
+  "candidate_ids": [
+    "OC-179a7e222a4e1927"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-1e527773e8493acf",
+      "text": "tiﬁed the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, Sustained expression of mouse FVIII following Cas9/sgRNA LNP showing insertion and deletion rates of 3.5% and 28.5%, respectively.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    },
+    {
+      "evidence_id": "GP-006-E-8fbb0d1c6f7ead81",
+      "text": "injection Among all the deletion patterns, approximately 60% were one base- In the last section, we demonstrated two sgRNAs exhibited similar pair deletions that can restore the 50 base-pair deletion to normal in vivo gene editing efﬁcacy through hydrodynamic injection.",
+      "source_ids": [
+        "S-54a70efbd7fb"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "cf745c54f397536aa2bcaf5322aa3dbd134071fc1c8e5c4b27a8cdf044abac6e"
+}

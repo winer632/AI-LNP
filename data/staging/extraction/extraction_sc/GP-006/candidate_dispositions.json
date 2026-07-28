@@ -1,0 +1,267 @@
+[
+  {
+    "candidate_id": "OC-992ce3528e9ad840",
+    "disposition": "unresolved",
+    "reason": "Image annotation reports colocalization but supplies no usable quantified outcome."
+  },
+  {
+    "candidate_id": "OC-cf67f0bbb37c4d51",
+    "disposition": "unresolved",
+    "reason": "Image annotation reports colocalization but supplies no usable quantified outcome."
+  },
+  {
+    "candidate_id": "OC-a065416e3c2e72b9",
+    "disposition": "unresolved",
+    "reason": "Image annotation reports colocalization but supplies no usable quantified outcome."
+  },
+  {
+    "candidate_id": "OC-f9e032adae6a307f",
+    "disposition": "unresolved",
+    "reason": "Co-staining annotation supplies no usable quantified outcome."
+  },
+  {
+    "candidate_id": "OC-29aaa2186f60810d",
+    "disposition": "unresolved",
+    "reason": "Co-staining annotation supplies no usable quantified outcome."
+  },
+  {
+    "candidate_id": "OC-e932a675d4a780b2",
+    "disposition": "unresolved",
+    "reason": "Co-staining annotation supplies no usable quantified outcome."
+  },
+  {
+    "candidate_id": "OC-83293575f233009f",
+    "disposition": "not_an_outcome",
+    "reason": "This is background describing a previous hydrodynamic plasmid experiment, not a result of the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-f90d15ceff5c43f1",
+    "disposition": "unresolved",
+    "reason": "The packet describes luciferase quantification but gives no usable signal value."
+  },
+  {
+    "candidate_id": "OC-703929685a082d76",
+    "disposition": "not_an_outcome",
+    "reason": "This is an assay method and normalization description, not a measured result."
+  },
+  {
+    "candidate_id": "OC-563eb562f6be8a11",
+    "disposition": "not_an_outcome",
+    "reason": "The text is an incomplete interpretive statement and does not give a usable LNP-linked measured value."
+  },
+  {
+    "candidate_id": "OC-179a7e222a4e1927",
+    "disposition": "not_an_outcome",
+    "reason": "This result concerns a different context and is not a usable outcome for the extracted LNP experiment."
+  },
+  {
+    "candidate_id": "OC-894103245a2922da",
+    "disposition": "not_an_outcome",
+    "reason": "This describes an in vitro fibroblast procedure/model rather than an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-f4662bac9b4a5cc3",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-07a75909fd15f8e1",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-ba86f359f9d9f1ea",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-239b6d91c90c734a",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate table value not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-2d30418192199c64",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate combined table summary not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-29b60fd0b8a90230",
+    "disposition": "unresolved",
+    "reason": "Table title contains no usable numeric result."
+  },
+  {
+    "candidate_id": "OC-5cb84263242ce55c",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate combined table summary not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-179777a9923e6aa3",
+    "disposition": "unresolved",
+    "reason": "Table title contains no usable numeric result."
+  },
+  {
+    "candidate_id": "OC-721bf86efc1a0c96",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate LSEC deletion value not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-c0903300f94dcdae",
+    "disposition": "not_an_outcome",
+    "reason": "This is a selection statement for subsequent experiments."
+  },
+  {
+    "candidate_id": "OC-fbed8d047f393e0b",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-af8cef7224b7c213",
+    "disposition": "unresolved",
+    "reason": "Figure title gives no usable numeric result."
+  },
+  {
+    "candidate_id": "OC-404249da4799b1c1",
+    "disposition": "not_an_outcome",
+    "reason": "This figure concerns hydrodynamic injection rather than the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-34975a3740ab48ce",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate off-target site value is represented in the aggregate off-target outcome."
+  },
+  {
+    "candidate_id": "OC-77e6e94c1cab2389",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate off-target site value is represented in the aggregate off-target outcome."
+  },
+  {
+    "candidate_id": "OC-ff43a629f318c4b1",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate off-target site value is represented in the aggregate off-target outcome."
+  },
+  {
+    "candidate_id": "OC-fae55d7d981e4ca4",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate off-target site value is represented in the aggregate off-target outcome."
+  },
+  {
+    "candidate_id": "OC-368c8250da6219a7",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate off-target site value is represented in the aggregate off-target outcome."
+  },
+  {
+    "candidate_id": "OC-fcff809ade3a6423",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-1c3f88c83b5cb897",
+    "disposition": "not_an_outcome",
+    "reason": "The text is incomplete and does not provide a usable measured result."
+  },
+  {
+    "candidate_id": "OC-84d16f36e8abc183",
+    "disposition": "not_an_outcome",
+    "reason": "This result concerns a different context and is not a usable LNP outcome."
+  },
+  {
+    "candidate_id": "OC-fa3d41fbbfb8dbc9",
+    "disposition": "not_an_outcome",
+    "reason": "This result concerns hydrodynamic plasmid delivery, not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-52ed3e5d706ec0dc",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate qualitative off-target result is represented by the aggregate off-target outcome."
+  },
+  {
+    "candidate_id": "OC-29c27b72a5ac6690",
+    "disposition": "not_an_outcome",
+    "reason": "This result concerns a different context and is not a usable LNP outcome."
+  },
+  {
+    "candidate_id": "OC-6d02c94fcabd1830",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-93fd31e928fc9732",
+    "disposition": "unresolved",
+    "reason": "Table title contains no usable numeric result."
+  },
+  {
+    "candidate_id": "OC-41b753d19fe8eb2f",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate combined insertion table summary not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-e0051a1718dde432",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate combined insertion table summary not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-c622ea7279a59f4d",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-82d39267a05f69d2",
+    "disposition": "unresolved",
+    "reason": "Table title contains no usable numeric result."
+  },
+  {
+    "candidate_id": "OC-4ee9ac1ef988e432",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate LSEC insertion value not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-12ec86366cd51160",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate hepatocyte insertion value not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-4ec099151fb53107",
+    "disposition": "not_an_outcome",
+    "reason": "Qualitative improvement is not separately cited because the packet provides the linked numeric FVIII result."
+  },
+  {
+    "candidate_id": "OC-d6d8ec31fcbb44d8",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate FVIII value not separately cited in an outcome record."
+  },
+  {
+    "candidate_id": "OC-7e02be28ef250a82",
+    "disposition": "not_an_outcome",
+    "reason": "This is an assay procedure, not a measured result."
+  },
+  {
+    "candidate_id": "OC-49c42aadb9e52528",
+    "disposition": "not_an_outcome",
+    "reason": "Qualitative improvement is not separately cited because the packet provides the linked numeric FVIII result."
+  },
+  {
+    "candidate_id": "OC-b9a2bcc2bb4ec2e0",
+    "disposition": "not_an_outcome",
+    "reason": "This is an assay and statistical-method description, not a measured result."
+  },
+  {
+    "candidate_id": "OC-85f7147389be1c5a",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-5bfa095b8ac21479",
+    "disposition": "not_an_outcome",
+    "reason": "Qualitative figure statement is not separately cited because the packet provides the linked numeric FVIII result."
+  },
+  {
+    "candidate_id": "OC-c649312dff81a308",
+    "disposition": "not_an_outcome",
+    "reason": "This is a garbled duplicate of the clotting result; the clear qualitative result is extracted separately."
+  },
+  {
+    "candidate_id": "OC-d00ad2bc6b1df868",
+    "disposition": "not_an_outcome",
+    "reason": "This is a model annotation, not a measured outcome."
+  }
+]

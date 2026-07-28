@@ -1,0 +1,38 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-004",
+  "route_ids": [
+    "RT-6d98b3e66a0d2063"
+  ],
+  "candidate_ids": [
+    "OC-d16b5d218b5f5f5a"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-004-E-fc1b2e9e166859e2",
+      "text": "We showed that single injections of either HGF or EGF mRNA-LNPs decreased steatosis, although combination of both mRNA-LNP consistently resulted in significantly more efficient steatosis reversion (Fig.",
+      "source_ids": [
+        "S-d7b338b15c20"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "05a6a5f1b834d1fbccc91489dcc416423e8712a060414d2527b6282101f0467a",
+  "source_inventory_sha256": "04e58e5184b63b163e448c327fc7498492ce7825c27638a818fb2cb0df99243b",
+  "task_checksum": "4a061c8d36e2d03727e79c13268bcbb956401aca270ce92955d39a178b0e503a"
+}

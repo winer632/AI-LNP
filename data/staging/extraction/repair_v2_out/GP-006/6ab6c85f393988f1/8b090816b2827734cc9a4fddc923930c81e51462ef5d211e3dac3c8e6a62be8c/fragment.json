@@ -1,0 +1,59 @@
+{
+  "disposition": "recovered",
+  "recovered_candidate_ids": [
+    "OC-85f7147389be1c5a"
+  ],
+  "unresolved_candidate_ids": [],
+  "experiments": [],
+  "outcomes": [
+    {
+      "outcome_id": "OC-85f7147389be1c5a",
+      "experiment_id": "E1",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay not specified in supplied evidence."
+      },
+      "endpoint": {
+        "value": "FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Comparator not specified in supplied evidence."
+      },
+      "outcome_value": {
+        "value": 2.6,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Approximately 2.6% FVIII activity after two injections in treated NSG HemA mice.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_reason": null
+}

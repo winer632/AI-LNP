@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-d76e38c26ff535e0\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence supports a qualitative liver-restricted luciferase-expression outcome measured by bioluminescence, but it does not identify the associated experiment ID among the existing experiments or provide a permitted non-invented experiment identifier.\"}",
+  "elapsed_seconds": 11.138,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-d76e38c26ff535e0\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence supports a qualitative liver-restricted luciferase-expression outcome measured by bioluminescence, but it does not identify the associated experiment ID among the existing experiments or provide a permitted non-invented experiment identifier.\"}\n"
+}

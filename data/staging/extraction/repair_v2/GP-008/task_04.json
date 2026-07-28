@@ -1,0 +1,44 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-008",
+  "route_ids": [
+    "RT-32ff341651770122"
+  ],
+  "candidate_ids": [
+    "OC-8d2b5381931531a4"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-008-E-c0d7ee15259a1fc7",
+      "text": "(C-D) Confocal microscopy images display the phagocytosis of FAP+ LX-2 cells 369 by macrophages subjected to various formulations and the quantitative analysis of the 370 phagocytic index (scale bar=10 μm).",
+      "source_ids": [
+        "S-bd13c7ee602b"
+      ]
+    },
+    {
+      "evidence_id": "GP-008-E-bc0ebbca3fa4955f",
+      "text": "(E-F) Flow cytometry was employed to detect the 371 phagocytic activity of macrophages in response to various formulations, using 372 pHrodo-labeled FAP+ LX-2 cells and statistical analysis.",
+      "source_ids": [
+        "S-bd13c7ee602b"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1",
+    "F2"
+  ],
+  "existing_experiment_ids": [
+    "E1",
+    "E2"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a152228cdbe3cf0bd72e0814959d23b27d1529add59094146d1372e63b6adb47",
+  "source_inventory_sha256": "b211de83b66b98330a8f0f537b44161c4be0b31874ce7aa5f20f7b8667588ad8",
+  "task_checksum": "0377169f8fae335a70e907058bd0c7c7d0f1554b4daa131b98efa952dfba3f34"
+}

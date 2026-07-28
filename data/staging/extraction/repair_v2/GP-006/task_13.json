@@ -1,0 +1,34 @@
+{
+  "task_version": "missing-record-task-1.0.0",
+  "paper_id": "GP-006",
+  "route_ids": [
+    "RT-bf0ad35a3b4f5f0b"
+  ],
+  "candidate_ids": [
+    "OC-6b23a27057538b1e"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "GP-006-E-d18589e268d50539",
+      "text": "To verify cell-type-spe- CFT were directly measured using NATEM (Non-Activated Throm- ciﬁc gene editing, the livers of treated mice were perfused with HBSS boelastometry) kit assay by rotational thromboelastometry (ROTEM buffer containing 0.5 mM EDTA and 25 mM HEPES, followed by delta, Instrumentation Laboratory, Bedford, MA).",
+      "source_ids": [
+        "S-d439bf18428e"
+      ]
+    }
+  ],
+  "existing_formulation_ids": [
+    "F1"
+  ],
+  "existing_experiment_ids": [
+    "E1"
+  ],
+  "existing_outcome_ids": [
+    "O1",
+    "O2"
+  ],
+  "permitted_new_experiments": 1,
+  "permitted_new_outcomes": 2,
+  "source_result_sha256": "a9404ff0e2eefa406918e98b90e0c1c140c66180e224649095aa8cb600b347e2",
+  "source_inventory_sha256": "06b71141039120eb266b86d5c4e9b4ec309948cb9df6ec3b5406b0b7471fe3a9",
+  "task_checksum": "8965873c7587b2984dccefb2ef66f083fb227a5a9f8b58fa9cb7670364111c05"
+}

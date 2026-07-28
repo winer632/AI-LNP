@@ -1,0 +1,40 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-006",
+  "evidence_view": "compact",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T17:50:18.912985+00:00",
+  "completed_at": "2026-07-28T17:52:01.934336+00:00",
+  "elapsed_seconds": 103.019,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-006-E-6a0db3e1706fd8f7",
+      "GP-006-FC-e38553aa49fd6d57",
+      "GP-006-FC-afee66191e056d5c",
+      "GP-006-E-5f1df7ac5c7ec3f9"
+    ],
+    "explanation": "The packet reports intravenous MC3 LNP delivery of Cas9 mRNA/sgRNA to NSG HemA mice, isolation of LSECs after treatment, LSEC editing results, and linked in vivo outcomes."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 1,
+    "experiments": 1,
+    "outcomes": 8,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 53
+}

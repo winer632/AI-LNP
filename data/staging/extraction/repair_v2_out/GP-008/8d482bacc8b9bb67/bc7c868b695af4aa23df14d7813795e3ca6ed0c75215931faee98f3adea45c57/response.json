@@ -1,0 +1,5 @@
+{
+  "text": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-150f3861bcac0be7\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports a qualitative violin-plot comparison of marker-gene expression between Fibrosis and LNP 459 macrophage clusters, but does not provide a recoverable assay endpoint, outcome value/unit, or an identifiable linked experiment.\"}",
+  "elapsed_seconds": 12.285,
+  "stdout_tail": "{\"disposition\":\"unresolved\",\"recovered_candidate_ids\":[],\"unresolved_candidate_ids\":[\"OC-150f3861bcac0be7\"],\"experiments\":[],\"outcomes\":[],\"unresolved_reason\":\"The evidence reports a qualitative violin-plot comparison of marker-gene expression between Fibrosis and LNP 459 macrophage clusters, but does not provide a recoverable assay endpoint, outcome value/unit, or an identifiable linked experiment.\"}\n"
+}
