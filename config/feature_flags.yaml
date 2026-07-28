@@ -196,6 +196,53 @@ flags:
       - src/extraction/identify_selective_vision_referrals.py
       - src/extraction/selective_vision_contracts.py
 
+  coverage_residue_targeting:
+    # No design-document priority id: this completes the fourth cause the
+    # document names in 二·六.7 (repair targeting), rather than opening a new
+    # numbered item.
+    default: false
+    status: available
+    rationale: >-
+      Available, not default. It is the only route by which GO-002 can
+      reach repair at all. GP-004's candidate group carries 41.5% CD11b+,
+      34.1% CD45+, 70.7% CD31+ and "few F4/80+ Kupffer cells expressed
+      eGFP" across two evidence rows; three extracted records match the
+      group, the first consumes it, and the row nobody cited leaves with
+      it. Turning this on re-opens 7 groups on the default root, 4 on
+      codex_union_v1 and 3 on the control first call, and it is what
+      takes GP-004 from 0 repair tasks to 2 -- one of which is built on
+      exactly that uncited row. Measured end to end through the codex
+      harness, that did not move recall: both tasks returned disposition
+      unresolved with zero records, so recall and precision are unchanged
+      on both roots (11/15 at 0.1897 and 11/15 at 0.2157). The stated
+      blocker moved one layer down and is not targeting -- the model
+      answered "the evidence ... does not identify the associated
+      experiment ID", because a MissingRecordTask carries
+      existing_experiment_ids but not the experiment records, so a new
+      outcome has nothing it can legally attach to. Same refusal on the
+      merged root and on the clean first call, so it is not a
+      duplicate-id artifact. Left off because it costs repair calls for a
+      measured gain of zero; turn it on together with a task contract
+      that carries the experiment records.
+    description: >-
+      Keep a matched candidate group repair-eligible when its evidence still
+      holds rows that no extracted record cites. check_outcome_coverage assigns
+      candidates to outcomes one-to-one, but a candidate is an evidence group
+      and one passage routinely carries several distinct measurements, so a
+      group is discharged whole as soon as any single one of its rows is
+      accounted for. This is the same conflation the numeric guard already
+      blocks on the other side of the pairing -- shared evidence is not shared
+      identity -- applied to the rows a match leaves behind. The group is still
+      reported in matched_candidates; below-threshold rows it re-opens are
+      reported with reason partially_covered_group_below_repair_threshold so the
+      coverage report says which mechanism surfaced them.
+    aliases: [residue_targeting, partial_coverage, evidence_residue]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/check_outcome_coverage.py
+
   # ----------------------------------------------------------------------- roadmap
   expanded_discovery:
     priority: roadmap

@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 from typing import Any
 
+from src.config_flags import is_enabled
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.build_outcome_candidates import ENDPOINT_PATTERNS, build_candidates
 from src.extraction.outcome_coverage_contracts import (
@@ -17,6 +18,9 @@ from src.extraction.outcome_coverage_contracts import (
     UnmatchedCandidate,
 )
 from src.rag.compact_api_packet import CompactApiPacket
+
+
+RESIDUE_TARGETING_FLAG = "coverage_residue_targeting"
 
 
 def _value(value: Any) -> Any:
@@ -56,6 +60,14 @@ def _evidence_ids(value: Any) -> set[str]:
             found |= _evidence_ids(child)
         return found
     return set()
+
+
+def _cited_evidence_ids(outcomes: list[dict[str, Any]]) -> set[str]:
+    """Every evidence id any extracted outcome cites, anywhere in the record."""
+    found: set[str] = set()
+    for outcome in outcomes:
+        found |= _evidence_ids(outcome)
+    return found
 
 
 _NUMBER = re.compile(r"-?\d+(?:\.\d+)?")
@@ -168,8 +180,36 @@ def check(
                 score=round(score, 4),
             )
         )
+    # A candidate is an *evidence group*, and the assignment above is one-to-one,
+    # so a group is discharged whole the moment any single one of its rows is
+    # accounted for. That is the same conflation `_contradicts_numerically`
+    # guards against, on the other side of the pairing: GP-004's group carries
+    # 41.5% CD11b+, 34.1% CD45+, 70.7% CD31+ and "few F4/80+ Kupffer cells
+    # expressed eGFP" across two evidence rows. Three records match it, the
+    # first consumes it, and the row nobody cited leaves with it -- so the claim
+    # in that row can never reach repair no matter how the repair stage behaves.
+    #
+    # Under the flag a matched group whose evidence still holds rows that no
+    # extracted record cites stays repair-eligible. It remains in
+    # `matched_candidates` as well: the match it made was real, it just did not
+    # account for the whole group.
+    partially_covered: set[str] = set()
+    if is_enabled(RESIDUE_TARGETING_FLAG):
+        cited = _cited_evidence_ids(outcomes)
+        partially_covered = {
+            row.candidate_id
+            for row in candidates
+            if row.candidate_id in used_candidates
+            and set(row.evidence_ids) - cited
+        }
+    # Candidate order is preserved rather than appended to, because the
+    # duplicate-suppression loop below keeps the first row of each overlapping
+    # group and the task files it feeds are committed artifacts.
     unmatched_rows = [
-        row for row in candidates if row.candidate_id not in used_candidates
+        row
+        for row in candidates
+        if row.candidate_id not in used_candidates
+        or row.candidate_id in partially_covered
     ]
     # Only high-confidence unmatched candidates may trigger repair. Measured on
     # the nine gold papers, that gate sends 118 of 137 candidates to
@@ -213,7 +253,11 @@ def check(
             route_hint=row.route_hint,
             evidence_ids=row.evidence_ids,
             figure_or_table=row.figure_or_table,
-            reason="confidence_below_repair_threshold",
+            reason=(
+                "partially_covered_group_below_repair_threshold"
+                if row.candidate_id in partially_covered
+                else "confidence_below_repair_threshold"
+            ),
         )
         for row in unmatched_rows
         if row.confidence not in allowed
