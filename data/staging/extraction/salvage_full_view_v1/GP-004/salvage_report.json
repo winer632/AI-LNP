@@ -1,0 +1,159 @@
+{
+  "salvage_version": "record-salvage-1.0.0",
+  "paper_id": "GP-004",
+  "flag": "record_level_salvage",
+  "status": "salvaged",
+  "source_validation_status": "invalid",
+  "source_finding_codes": [
+    "unknown_evidence_id"
+  ],
+  "kept": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 4,
+    "outcomes": 6
+  },
+  "rejected": {
+    "formulations": 1,
+    "components": 4,
+    "experiments": 0,
+    "outcomes": 0
+  },
+  "eligibility_kept": false,
+  "dropped": [
+    {
+      "location": [
+        "candidate_dispositions"
+      ],
+      "collection": null,
+      "index": null,
+      "record_id": null,
+      "reason": "unhandled_field",
+      "detail": "'candidate_dispositions' is not part of the compact record contract, so the salvage carries no rule for validating it and does not keep it",
+      "unknown_evidence_ids": []
+    },
+    {
+      "location": [
+        "eligibility",
+        "evidence_ids"
+      ],
+      "collection": null,
+      "index": null,
+      "record_id": null,
+      "reason": "unknown_evidence_id",
+      "detail": "eligibility cites evidence the packet does not contain; the decision is recorded as unusable rather than re-cited",
+      "unknown_evidence_ids": [
+        "GP-004-FC-31eb0348edb2aaf828"
+      ]
+    },
+    {
+      "location": [
+        "formulations",
+        0
+      ],
+      "collection": "formulations",
+      "index": 0,
+      "record_id": "F1",
+      "reason": "unknown_evidence_id",
+      "detail": "record cites evidence the packet does not contain; dropped whole rather than re-cited",
+      "unknown_evidence_ids": [
+        "GP-004-FC-31eb0348edb2aaf828"
+      ]
+    },
+    {
+      "location": [
+        "components",
+        0
+      ],
+      "collection": "components",
+      "index": 0,
+      "record_id": "C1",
+      "reason": "unknown_evidence_id",
+      "detail": "record cites evidence the packet does not contain; dropped whole rather than re-cited",
+      "unknown_evidence_ids": [
+        "GP-004-FC-31eb0348edb2aaf828"
+      ]
+    },
+    {
+      "location": [
+        "components",
+        1
+      ],
+      "collection": "components",
+      "index": 1,
+      "record_id": "C2",
+      "reason": "unknown_evidence_id",
+      "detail": "record cites evidence the packet does not contain; dropped whole rather than re-cited",
+      "unknown_evidence_ids": [
+        "GP-004-FC-31eb0348edb2aaf828"
+      ]
+    },
+    {
+      "location": [
+        "components",
+        2
+      ],
+      "collection": "components",
+      "index": 2,
+      "record_id": "C3",
+      "reason": "unknown_evidence_id",
+      "detail": "record cites evidence the packet does not contain; dropped whole rather than re-cited",
+      "unknown_evidence_ids": [
+        "GP-004-FC-31eb0348edb2aaf828"
+      ]
+    },
+    {
+      "location": [
+        "components",
+        3
+      ],
+      "collection": "components",
+      "index": 3,
+      "record_id": "C4",
+      "reason": "unknown_evidence_id",
+      "detail": "record cites evidence the packet does not contain; dropped whole rather than re-cited",
+      "unknown_evidence_ids": [
+        "GP-004-FC-31eb0348edb2aaf828"
+      ]
+    }
+  ],
+  "dangling_references": [
+    {
+      "location": [
+        "experiments",
+        0
+      ],
+      "record_id": "E1",
+      "field_name": "formulation_id",
+      "references": "F1"
+    },
+    {
+      "location": [
+        "experiments",
+        1
+      ],
+      "record_id": "E2",
+      "field_name": "formulation_id",
+      "references": "F1"
+    },
+    {
+      "location": [
+        "experiments",
+        2
+      ],
+      "record_id": "E3",
+      "field_name": "formulation_id",
+      "references": "F1"
+    },
+    {
+      "location": [
+        "experiments",
+        3
+      ],
+      "record_id": "E4",
+      "field_name": "formulation_id",
+      "references": "F1"
+    }
+  ],
+  "note": null
+}

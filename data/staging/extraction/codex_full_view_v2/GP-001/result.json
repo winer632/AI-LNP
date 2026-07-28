@@ -1,0 +1,24 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-001",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "NOT_ELIGIBLE_LNP",
+      "UNSUPPORTED_PAYLOAD"
+    ],
+    "evidence_ids": [
+      "GP-001-FC-456addd34c57a3be",
+      "GP-001-FC-12c29dc310738d8c"
+    ],
+    "explanation": "The paper reports solid lipid nanoparticles loaded with cantharidin (CTD), not LNP delivery of an allowed RNA payload."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_items": [
+    "The reported carrier is a CTD-loaded solid lipid nanoparticle rather than an eligible LNP-RNA formulation."
+  ]
+}

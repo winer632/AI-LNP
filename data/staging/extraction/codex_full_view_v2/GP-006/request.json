@@ -1,0 +1,1711 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-006",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "evidence_view": "full",
+  "packet_root": "/Users/wangxinxin/Desktop/LNP/AI-LNP/.claude/worktrees/agent-a194b7314f4d1586d/data/staging/rag/full_api_packets_v1",
+  "prompt_version": "compact-prompt-1.2.1",
+  "prompt_checksum": "82d0fb6e3af04a0a805dba0a226213b0b19657492cd35fceefc4319f241c836e",
+  "schema_checksum": "eaaba4f14498642c8feb0f3e5d823c06cba8a6f746a3cde73f92207a96c6ae2a",
+  "packet_checksum": "60a27877c016d26769327c98328c19c5cdecacc6362cb0e31d83a34ec267098a",
+  "prompt_characters": 648575,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": [
+    {
+      "candidate_id": "OC-45dc6c04a518f439",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e5c28811e734910a"
+      ],
+      "summary": "Colocalization of LNPs and vascular cells were indicated by white arrowheads."
+    },
+    {
+      "candidate_id": "OC-c6c53a4de8c8ac2d",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-29ec9852b5f7963c",
+        "GP-006-FC-55973eb2d6a527b2"
+      ],
+      "summary": "Third, mRNA-based therapy eliminates the risk of oncogenic mutagenesis, as mRNA remains in the cytoplasm and does not integrate into host genome. First, LNPs exhibit low immunogenicity, enabling the possibility of repeated treatments without significant immune responses.\\(^{16,55,56}\\) Second, the delivery of mRNA-based CRISPR-Cas9 gene editing via LNPs ensures transient expression of Cas9, there…"
+    },
+    {
+      "candidate_id": "OC-992ce3528e9ad840",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-566609fc939d51d8"
+      ],
+      "summary": "Colocalization of LNPs and vascular cells were indicated by white arrowheads."
+    },
+    {
+      "candidate_id": "OC-0c24e0e60362fd3c",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-17987d9fcb987630"
+      ],
+      "summary": "Third, mRNA-based ther- capable of inducing tolerance.48 They contribute to the establishment apy eliminates the risk of oncogenic mutagenesis, as mRNA remains of hepatic tolerance through the induction of regulatory T-cells in the cytoplasm and does not integrate into host genome."
+    },
+    {
+      "candidate_id": "OC-21b71ddde3c8bc68",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1abbea6a2923c49a"
+      ],
+      "summary": "The immunostaining im- able lipids enables the nucleic acids to be released from the endosome ages showed colocalization of LYVE-1 and GFP signals, indicating that by binding to the negatively charged endosomal membrane."
+    },
+    {
+      "candidate_id": "OC-cf67f0bbb37c4d51",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-566609fc939d51d8"
+      ],
+      "summary": "Colocalization of LNPs and vascular cells were indicated by white arrowheads."
+    },
+    {
+      "candidate_id": "OC-a065416e3c2e72b9",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-31a4e0ae4a31fe1e"
+      ],
+      "summary": "Colocalization of LNPs and vascular cells were indicated by white arrowheads."
+    },
+    {
+      "candidate_id": "OC-e8b9647efc696aa1",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-53c3d06bfb41801e"
+      ],
+      "summary": "Interestingly, DiI-labeled cells also colocalized with Isolectin B4-labeled LSECs suggesting that LNPs have LSEC-targeting ability (Figure 2A)."
+    },
+    {
+      "candidate_id": "OC-64be9d7e6eb4a596",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-22d855d52ffa24a9"
+      ],
+      "summary": "Interestingly, DiI-labeled cells also colocalized with Isolectin B4-labeled LSECs suggesting that LNPs have LSEC-targeting ability (Figure 2A)."
+    },
+    {
+      "candidate_id": "OC-e6847bc20ec3fce0",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-acab04d1f843e5ac"
+      ],
+      "summary": "lipids, speciﬁcally MC3, which is the same lipid used in the ﬁrst Interestingly, DiI-labeled cells also colocalized with Isolectin B4-labeled FDA-approved LNP-based RNA interference (RNAi) drug.10,11 LSECs suggesting that LNPs have LSEC-targeting ability (Figure 2A)."
+    },
+    {
+      "candidate_id": "OC-1a8722acdacc8f20",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-a345bd164dac3c26"
+      ],
+      "summary": "Interestingly, DiI-labeled cells also colocalized with Isolectin B4-labeled LSECs suggesting that LNPs have LSEC-targeting ability (Figure 2A)."
+    },
+    {
+      "candidate_id": "OC-aad4a6cec4a70cc9",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-47f065d216fca644"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-b257a3002e1b45c7",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-2305bce8418d23aa"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-b9cf56e783c09c65",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-91510402d7266cd1"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-b9bae6624aa2938c",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure s1",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-04afacec93536519"
+      ],
+      "summary": "The purified cells were stained with the endothelial cell marker, anti-CD31 antibody to confirm their LSEC lineage specificity (Figure S1)."
+    },
+    {
+      "candidate_id": "OC-f48fb4b74a6a4262",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure s1",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-204527e6a3abcd60"
+      ],
+      "summary": "The purified cells were stained with the endothelial cell marker, anti-CD31 antibody to confirm their LSEC lineage specificity (Figure S1)."
+    },
+    {
+      "candidate_id": "OC-1faf0d776bb88cf1",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-b39613952e9a74a5"
+      ],
+      "summary": "Co-stained cells were highlighted using white arrowheads."
+    },
+    {
+      "candidate_id": "OC-f9e032adae6a307f",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-519aaee997514e7a"
+      ],
+      "summary": "Co-stained cells were highlighted using white arrowheads."
+    },
+    {
+      "candidate_id": "OC-29aaa2186f60810d",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-519aaee997514e7a"
+      ],
+      "summary": "Co-stained cells were highlighted using white arrowheads."
+    },
+    {
+      "candidate_id": "OC-e932a675d4a780b2",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-40e1304d7781783c"
+      ],
+      "summary": "Co-stained cells were highlighted using white arrowheads."
+    },
+    {
+      "candidate_id": "OC-67d07928f7b6794e",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-96ff2731f61025b9"
+      ],
+      "summary": "Liver sections were blocked in 0.5% fetal bovine serum in PBS and stained with anti-GFP (A10262, Thermo Scientific, WA, USA), CD31 (14-0311-81, Thermo Scientific) and LYVE-1 (AF2125, R&D Systems, MN, USA) at \\(4^{\\circ}\\)C overnight, followed by application of the secondary antibodies conjugated with Alexa Fluor 488 or 594 (Invitrogen)."
+    },
+    {
+      "candidate_id": "OC-1aae7f686c18db97",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-a646b1030db7fdba"
+      ],
+      "summary": "(B) To determine the LSEC-targeting ability, mice were intravenously injected with 1.2 mg/kg of GFP LNPs."
+    },
+    {
+      "candidate_id": "OC-b0430ff3433ceaf2",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1abbea6a2923c49a"
+      ],
+      "summary": "The immunostaining im- able lipids enables the nucleic acids to be released from the endosome ages showed colocalization of LYVE-1 and GFP signals, indicating that by binding to the negatively charged endosomal membrane."
+    },
+    {
+      "candidate_id": "OC-7ef949313622e346",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-a646b1030db7fdba"
+      ],
+      "summary": "(B) To determine the LSEC-targeting ability, mice were intravenously injected with 1.2 mg/kg of GFP LNPs."
+    },
+    {
+      "candidate_id": "OC-317626e6d89532a3",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-47f065d216fca644"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-d98e9a13b596db12",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-2305bce8418d23aa"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-5e449efb395ae05f",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-91510402d7266cd1"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-6d5fb40018b69212",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-df78f3f5c4bc9556"
+      ],
+      "summary": "addition, von Willebrand factor (VWF) plays a crucial role as an FVIII carrier protein, preventing premature clearance and proteolytic degradation of FVIII.\\(^{41}\\) VWF is mainly produced in capillary endothelial cells and also expressed in LSECs.\\(^{38,42}\\) Evidence suggests that VWF can influence FVIII biosynthesis by affecting intracellular trafficking in endothelial cells and may mitigate t…"
+    },
+    {
+      "candidate_id": "OC-dcb8f99765130417",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-bcf3fe0881a1c562"
+      ],
+      "summary": "It was previously demonstrated in our lab that following hydrodynamic injection of plasmid DNA, transfection occurred predominantly in hepatocytes; however, lower transgene expression was also observed in LSECs."
+    },
+    {
+      "candidate_id": "OC-9be6f6af7b5191d2",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-af65f22686fff167"
+      ],
+      "summary": "It was previously demonstrated in our lab that following hydrodynamic injection of plasmid DNA, transfection occurred predominantly in hepatocytes; however, lower transgene expression was also observed in LSECs."
+    },
+    {
+      "candidate_id": "OC-831763055397cac4",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-6ec5d6ac04c2e10e"
+      ],
+      "summary": "In conclusion, the gene correction of mutant F8 to rescue endogenous FVIII expression using Cas9 mRNA LNP offers several significant advantages."
+    },
+    {
+      "candidate_id": "OC-035604f98e3961fa",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e17581891b1e151e"
+      ],
+      "summary": "In conclusion, the gene correction of mutant F8 to rescue endogenous FVIII expression using Cas9 mRNA LNP offers several significant advantages."
+    },
+    {
+      "candidate_id": "OC-83293575f233009f",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1d1871fe74140517"
+      ],
+      "summary": "It was previously demonstrated in our lab that following hydrodynamic injection of plasmid DNA, transfection occurred predominantly in hepatocytes; however, lower transgene expression was also observed in LSECs."
+    },
+    {
+      "candidate_id": "OC-9b914c6689375277",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-aa55aa3f16aba27c"
+      ],
+      "summary": "The results indicated that high levels of luciferase expression were obtained from both hepatocytes and LSECs with about 17-fold higher expression in hepatocytes than LSECs."
+    },
+    {
+      "candidate_id": "OC-8210cf05fdd5388d",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-08216490281756b2",
+        "GP-006-FC-f29eb01d9e30bf87"
+      ],
+      "summary": "(B) Encapsulation efficiency of luciferase mRNA LNP (Luc LNP) at N/P ratios of 3 and 8, determined by RiboGreen assay.(C) Evaluation of luciferase expression 6 h after intravenous injection of 0.3 mg/kg Luc LNPs at N/P ratios of 3 and 8 using IVIS imaging. (D) Quantification of luciferase expression from IVIS imaging, presented as mean luciferase signals ± standard deviations, expressed in biolum…"
+    },
+    {
+      "candidate_id": "OC-e13fb92ad33292a5",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-186e1294d06f0436"
+      ],
+      "summary": "The results indicated that high levels of luciferase expression were obtained from both hepatocytes and LSECs with about 17-fold higher expression in hepatocytes than LSECs."
+    },
+    {
+      "candidate_id": "OC-f90d15ceff5c43f1",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-1569d3875361f1fd",
+        "GP-006-FC-3e83d9d90c8da91c"
+      ],
+      "summary": "F (C) Evaluation of luciferase expression 6 h after intravenous injection of 0.3 mg/kg Luc LNPs at N/P ratios of 3 and 8 using IVS imaging. (D) Quantification of luciferase expression from IVS imaging, presented as mean luciferase signals \\(\\pm\\) standard deviations, expressed in bioluminescence light units (BLUs), N/P 3, n = 3; N/P 8, n = 6."
+    },
+    {
+      "candidate_id": "OC-93995eb39811a111",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-87d80263dcc2025a",
+        "GP-006-FC-bee14c3864447aa1"
+      ],
+      "summary": "Luciferase expression was normalized by total protein, measured by BCA assay kit (BioRad, USA), and reported as RLU/mg. Luciferase activity in the extracted protein fraction was evaluated by Luciferase Assay System (Promega) and measured by a Victor 3 plate reader (PerkinElmer, USA)."
+    },
+    {
+      "candidate_id": "OC-703929685a082d76",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1355aca43d156451",
+        "GP-006-E-42aad5557a4b8d6e"
+      ],
+      "summary": "Luciferase activity in the extracted protein fraction was evaluated by Luciferase Assay System (Promega) and measured by a Victor 3 plate reader (PerkinElmer, USA). Luciferase expression was normalized by total protein, measured by BCA assay kit (Bio-Rad, USA), and reported as RLU/mg."
+    },
+    {
+      "candidate_id": "OC-42b55c575d866122",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-e77f320b73e493a8"
+      ],
+      "summary": "Luciferase expression was normalized by total protein, measured by BCA assay kit (Bio- Statistical analyses Rad, USA), and reported as RLU/mg."
+    },
+    {
+      "candidate_id": "OC-d61d866c50c38aa2",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 2c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-df5e0f8ef20dbc9f"
+      ],
+      "summary": "Luciferase activity was examined using in vitro luciferase assay (Figure 2C)."
+    },
+    {
+      "candidate_id": "OC-749a703a9764c710",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-add542e380905def",
+        "GP-006-FC-f3cc817fcc84c413"
+      ],
+      "summary": "NGS sequencing analysis revealed an approximately 16.5% deletion frequency in LSECs following Cas9/sgRNA LNP treatment. Of the deletions, -1 (7.68%) and -4 (1.38%) deletion were able to restore the reading frame, potentially aiding in the recovery of FVIII expression."
+    },
+    {
+      "candidate_id": "OC-edcb11ed6bdcbc5e",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a47efb731926abdd"
+      ],
+      "summary": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-85e1bce4acd515bd",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e6a47f4250e3f133"
+      ],
+      "summary": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-6518dcbe03ffdbde",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-3bd39898ccac13d3",
+        "GP-006-FC-d376b93f9d7b3284"
+      ],
+      "summary": "This model mimics the genetic variant seen in approximately 16% of severe HemA patients with small deletion and insertion variants.29 To edit the mutant F8 gene in NSG HemA mice, we selected two sgRNAs, mF8sgRNA and NSGHAsgRNA, targeting the mutant F8 sequence. Of the deletions, −1 (7.68%) and −4 (1.38%) deletion were able to restore the reading frame, potentially aiding in the recovery of FVIII…"
+    },
+    {
+      "candidate_id": "OC-563eb562f6be8a11",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-3c6e73bc825c5293"
+      ],
+      "summary": "The corrected mutants (around 46.5% of total deletions), together with four base-pair dele- exhibited endogenous FVIII expression and effectively restored the tions, which can help rescue the ﬁve base-pair deletion in NSG coagulation activity in NSG HemA mice."
+    },
+    {
+      "candidate_id": "OC-179a7e222a4e1927",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf",
+        "GP-006-E-8fbb0d1c6f7ead81"
+      ],
+      "summary": "tiﬁed the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, Sustained expression of mouse FVIII following Cas9/sgRNA LNP showing insertion and deletion rates of 3.5% and 28.5%, respectively. injection Among all the deletion patterns, approximately 60% were one base- In the last section, we demonstrated two sgRNAs exhibited sim…"
+    },
+    {
+      "candidate_id": "OC-dc09da15e5951604",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d587464229669da0",
+        "GP-006-E-eabead190d4bc8ce"
+      ],
+      "summary": "Of the deletions, −1 (7.68%) and −4 (1.38%) deletion were able to restore the reading frame, potentially aiding in the recovery of FVIII expression. This model mimics the genetic variant seen in approximately 16% of severe HemA patients with small deletion and insertion variants.29 To edit the mutant F8 gene in NSG HemA mice, we selected two sgRNAs, mF8sgRNA and NSGHAsgRNA, targeting the mutant F…"
+    },
+    {
+      "candidate_id": "OC-855bab2749a87d5a",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-bd3db89338124f05"
+      ],
+      "summary": "The mice carry a five base-pair deletion in mouse exon 1, leading to a premature stop codon (Figure 3A) with only 37 amino acids being"
+    },
+    {
+      "candidate_id": "OC-83629990630de1f1",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-ce3f217d035cf345"
+      ],
+      "summary": "The mice carry a five base-pair deletion in mouse exon 1, leading to a premature stop codon (Figure 3A) with only 37 amino acids being translated."
+    },
+    {
+      "candidate_id": "OC-894103245a2922da",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-08e2bd57bb350010"
+      ],
+      "summary": "We separately The mice carry a ﬁve base-pair deletion in mouse exon 1, leading to delivered Cas9 protein with these two sgRNAs to mouse ﬁbroblast a premature stop codon (Figure 3A) with only 37 amino acids being NIH3T3cells."
+    },
+    {
+      "candidate_id": "OC-988062b624928861",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3c",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-f6232611b11c931c"
+      ],
+      "summary": "Among all the deletion patterns, approximately 60% were one base-pair deletions that can restore the \\(5'\\) base-pair deletion to normal reading frame (Figure 3C)."
+    },
+    {
+      "candidate_id": "OC-0290d0eb8b6ec2f1",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3c",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-b2531a834318c58a"
+      ],
+      "summary": "Among all the deletion patterns, approximately 60% were one base-pair deletions that can restore the 5′ base-pair deletion to normal reading frame (Figure 3C)."
+    },
+    {
+      "candidate_id": "OC-866b0d53eed5ea95",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-97d972a4803b1825"
+      ],
+      "summary": "The investigation of gene editing patterns in LSECs revealed that one base-pair deletions constitute the highest editing pattern (around 46.5% of total deletions), together with four base-pair deletions, which can help rescue the five base-pair deletion in NSG HemA, accounting for 50%–60% of all the deletions (Figures 6C and 6D)."
+    },
+    {
+      "candidate_id": "OC-d106492e993905a5",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-3557777fb23d982a"
+      ],
+      "summary": "The investigation of gene editing patterns in LSECs revealed that one base-pair deletions constitute the highest editing pattern (around 46.5% of total deletions), together with four base-pair deletions, which can help rescue the five base-pair deletion in NSG HemA, accounting for 50%-60% of all the deletions (Figures 6C and 6D)."
+    },
+    {
+      "candidate_id": "OC-f4662bac9b4a5cc3",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-7066b69b1d22a88d"
+      ],
+      "summary": "NGS sequencing analysis re- HemA, accounting for 50%–60% of all the deletions (Figures 6C vealed an approximately 16.5% deletion frequency in LSECs following and 6D)."
+    },
+    {
+      "candidate_id": "OC-842707c55fd53a55",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-9c61cae7b3cbdfda"
+      ],
+      "summary": "The investigation of gene editing patterns in LSECs revealed that one base-pair deletions constitute the highest editing pattern (around 46.5% of total deletions), together with four base-pair deletions, which can help rescue the five base-pair deletion in NSG HemA, accounting for 50%–60% of all the deletions (Figures 6C and 6D)."
+    },
+    {
+      "candidate_id": "OC-07a75909fd15f8e1",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-afee66191e056d5c"
+      ],
+      "summary": "Table S1 | LSEC | -1: 7.68 ± 1.90 %; -2: 1.03 ± 0.28 %; -3: 0.73 ± 0.14 %; -4: 1.38 ± 0.37 %; >-4: 5.68 ± 1.78 %; total deletion frequency: 16.50 ± 2.96 %"
+    },
+    {
+      "candidate_id": "OC-ba86f359f9d9f1ea",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-28a58dda71c052ff"
+      ],
+      "summary": "Table S1 | Hepatocyte | -1: 34.40 ± 5.41 %; -2: 4.36 ± 1.29 %; -3: 3.01 ± 0.93 %; -4: 4.62 ± 1.27 %; >-4: 14.15 ± 3.40 %; total deletion frequency: 60.54 ± 11.65 %"
+    },
+    {
+      "candidate_id": "OC-239b6d91c90c734a",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-12f32cbb49183d26"
+      ],
+      "summary": "Table S1 | Hepatocyte | -1: 34.40 ± 5.41 %; -2: 4.36 ± 1.29 %; -3: 3.01 ± 0.93 %; -4: 4.62 ± 1.27 %; >-4: 14.15 ± 3.40 %; total deletion frequency: 60.54 ± 11.65 %"
+    },
+    {
+      "candidate_id": "OC-2d30418192199c64",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-b2dc8e1a2a2b73d5"
+      ],
+      "summary": "Table S1 | | -1 | -2 | -3 | -4 | >-4 | total deletion frequency ; Hepatocyte | 34.40 ± 5.41 % | 4.36 ± 1.29 % | 3.01 ± 0.93 % | 4.62 ± 1.27 % | 14.15 ± 3.40 % | 60.54 ± 11.65 % ; LSEC | 7.68 ± 1.90 % | 1.03 ± 0.28 % | 0.73 ± 0.14 % | 1.38 ± 0.37 % | 5.68 ± 1.78 % | 16.50 ± 2.96 %"
+    },
+    {
+      "candidate_id": "OC-29b60fd0b8a90230",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-4258812b20c23b8d"
+      ],
+      "summary": "Table S1. Deletion Frequency Patterns Following Cas9/sgRNA LNP Treatment."
+    },
+    {
+      "candidate_id": "OC-5cb84263242ce55c",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-2dc4251b778df7b3"
+      ],
+      "summary": "Table S1 | | -1 | -2 | -3 | -4 | >-4 | total deletion frequency ; Hepatocyte | 34.40 ± 5.41 % | 4.36 ± 1.29 % | 3.01 ± 0.93 % | 4.62 ± 1.27 % | 14.15 ± 3.40 % | 60.54 ± 11.65 % ; LSEC | 7.68 ± 1.90 % | 1.03 ± 0.28 % | 0.73 ± 0.14 % | 1.38 ± 0.37 % | 5.68 ± 1.78 % | 16.50 ± 2.96 %"
+    },
+    {
+      "candidate_id": "OC-179777a9923e6aa3",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-df6cccbe2b1b938e"
+      ],
+      "summary": "Table S1. Deletion Frequency Patterns Following Cas9/sgRNA LNP Treatment."
+    },
+    {
+      "candidate_id": "OC-721bf86efc1a0c96",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-285a02c88e5438eb"
+      ],
+      "summary": "Table S1 | LSEC | -1: 7.68 ± 1.90 %; -2: 1.03 ± 0.28 %; -3: 0.73 ± 0.14 %; -4: 1.38 ± 0.37 %; >-4: 5.68 ± 1.78 %; total deletion frequency: 16.50 ± 2.96 %"
+    },
+    {
+      "candidate_id": "OC-dbbc041fd2f721da",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-37a9637ff739dcba"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-7b84612061840cd8",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-1752f684467f3bf3"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-827d27435abdd312",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d51e57e7bfc1ef65"
+      ],
+      "summary": "Of the deletions, 1 (7.68%) and 4 indel variants, but their frequencies were signiﬁcantly lower (0.78% (1.38%) deletion were able to restore the reading frame, potentially and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-be6096c1e0cde0ec",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-34cd8df775a48f39",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-95ecda1f22c29d5d"
+      ],
+      "summary": "Sequencing data indicated an average gene editing rate of 15.3% in LSECs."
+    },
+    {
+      "candidate_id": "OC-d2b77421a0b39c44",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-1c114da8af322620"
+      ],
+      "summary": "Our data showed that the in vivo gene editing"
+    },
+    {
+      "candidate_id": "OC-20da47c0469dca39",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-7e165fda945241fd",
+        "GP-006-FC-cf1fa2849c62e199"
+      ],
+      "summary": "As expected, NSGHAsgRNA showed no editing activity in WT F8 gene. 3 days after transfection to estimate overall gene editing efficiency using T7 endonuclease (T7E1) assay."
+    },
+    {
+      "candidate_id": "OC-cc237cc1862a7d0c",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-691c3604fe2fd6fa"
+      ],
+      "summary": "The genomic DNA was extracted from the cells 3 days after transfection to estimate overall gene editing efficiency using T7 endonuclease (T7E1) assay."
+    },
+    {
+      "candidate_id": "OC-d47e3fe65fb272e6",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-79f40a3af77effc2"
+      ],
+      "summary": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells."
+    },
+    {
+      "candidate_id": "OC-696b0e560e2b7f54",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a024f30c5856f621"
+      ],
+      "summary": "FVIII is an acute phase protein, and its transcriptional regulation responds to various physiological conditions, such as infection, surgery, pregnancy, and inflammatory states.30,31,32,33 Additionally, the release of FVIII occurs following acute exercise and increases during the recovery period in both healthy individuals and mild-moderate HemA patients.34,35,36,37 Additionally, it offers great…"
+    },
+    {
+      "candidate_id": "OC-c96706072718cbf5",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e655c4067bcac852"
+      ],
+      "summary": "Targeted gene delivery and editing specifically aimed at LSECs hold significant promise for addressing changes related to LSECs in liver diseases."
+    },
+    {
+      "candidate_id": "OC-a7dbccc50f8b7606",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-ba5bdd6464f810c3"
+      ],
+      "summary": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells."
+    },
+    {
+      "candidate_id": "OC-d6ed261d61295fa9",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e46e75ab3ae9003c"
+      ],
+      "summary": "These findings highlight the importance of careful consideration for gene transfer of BDD FVIII.\\(^{67,68}\\) Although we showed that delivery of CRISPR-based gene editing tools by LNPs also produced a high rate of gene correction in hepatocytes, it does not result in functional ectopic FVIII expression, which, if present, could potentially cause cellular toxicity."
+    },
+    {
+      "candidate_id": "OC-2deab74849d4c9ad",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-ae1a1576da76844e"
+      ],
+      "summary": "These findings highlight the importance of careful consideration for gene transfer of BDD FVIII.67,68 Although we showed that delivery of CRISPR-based gene editing tools by LNPs also produced a high rate of gene correction in hepatocytes, it does not result in functional ectopic FVIII expression, which, if present, could potentially cause cellular toxicity."
+    },
+    {
+      "candidate_id": "OC-bdb249208e64b118",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-c9aa0098cbd029ba"
+      ],
+      "summary": "FVIII is an acute phase protein, and its transcriptional regulation responds to various physiological conditions, such as infection, surgery, pregnancy, and inflammatory states.30,31,32,33 Additionally, the release of FVIII occurs following acute exercise and increases during the recovery period in both healthy individuals and mild-moderate HemA patients.34,35,36,37 Additionally, it offers great…"
+    },
+    {
+      "candidate_id": "OC-c0903300f94dcdae",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-31c0ada2828d03ec",
+        "GP-006-E-b0e824a66a4f04c1",
+        "GP-006-E-c880de483e81461c",
+        "GP-006-E-e2cb259904655a7d"
+      ],
+      "summary": "As expected, NSGHAsgRNA showed no Following these results, we selected NSGHAsgRNA for subsequent editing activity in WT F8 gene. The NSGHAsgRNA was encapsulated with Cas9 Evaluation of in vivo gene editing of mutant F8 in HemA NSG mRNA into MC3 LNP and intravenously injected into NSG HemA mouse model mice at a dosage of 4 mg/kg of Cas9/sgRNA LNP. Following injection, Cas9/NSGHAsgRNA LNP resulted…"
+    },
+    {
+      "candidate_id": "OC-fbed8d047f393e0b",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-5b17d5bf9a42504e"
+      ],
+      "summary": "Administration of Cas9/NSGHAsgRNA LNP resulted in a gene editing rate of about 52.7% in total liver cells."
+    },
+    {
+      "candidate_id": "OC-18075c12dd6235a1",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-c630fab5ea0b8a62"
+      ],
+      "summary": "First, LNPs exhibit low immunogenicity, enabling the tematically or locally released along with VWF upon physiological or possibility of repeated treatments without signiﬁcant immune re- pharmacological stimulation.38,45–47 However, when using hepato- sponses.16,55,56 Second, the delivery of mRNA-based CRISPR-Cas9 cytes to produce FVIII, the protein is solely localized in the cytoplasm gene editi…"
+    },
+    {
+      "candidate_id": "OC-1ef086a1939597c7",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d61e0f63122d157d"
+      ],
+      "summary": "These ﬁndings highlight the dysfunction.70,71 importance of careful consideration for gene transfer of BDD FVIII.67,68 Although we showed that delivery of CRISPR-based In conclusion, the gene correction of mutant F8 to rescue endogenous gene editing tools by LNPs also produced a high rate of gene correc- FVIII expression using Cas9 mRNA LNP offers several signiﬁcant ad- tion in hepatocytes, it do…"
+    },
+    {
+      "candidate_id": "OC-6b23a27057538b1e",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d18589e268d50539"
+      ],
+      "summary": "To verify cell-type-spe- CFT were directly measured using NATEM (Non-Activated Throm- ciﬁc gene editing, the livers of treated mice were perfused with HBSS boelastometry) kit assay by rotational thromboelastometry (ROTEM buffer containing 0.5 mM EDTA and 25 mM HEPES, followed by delta, Instrumentation Laboratory, Bedford, MA)."
+    },
+    {
+      "candidate_id": "OC-8607cea8d9a14d6b",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-3e325f52b45e4898"
+      ],
+      "summary": "Figure 3. In vitro gene editing efficiency of two sgRNAs in mouse fibroblast NIH3T3cells (A) Representative genomic DNA sequence of wild-type (WT) and mutant mouse F8 (mF8)."
+    },
+    {
+      "candidate_id": "OC-34271609df560893",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-f3dda9c744c9ef01"
+      ],
+      "summary": "One of these sgRNAs, mF8sgRNA, can To assess the in vivo gene editing efﬁcacy, we established a colony of target both wild-type (WT) F8 gene and mutant F8 gene in NSG hemophilia A mouse model on an immunodeﬁcient NOD.Cg- HemA mice (Figure 3A), while the other, NSGHAsgRNA speciﬁcally Prkdcscid Il2rgtm1Wjl/SzJ mice (NSG) background (NSG HemA)."
+    },
+    {
+      "candidate_id": "OC-c8531e1239e9be60",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3in",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-3c4f4cd8131dc9e1"
+      ],
+      "summary": "As expected, NSGHAsgRNA showed no editing activity in WT F8 gene.Figure 3In vitro gene editing efficiency of two sgRNAs in mouse fibroblast NIH3T3cells(A) Representative genomic DNA sequence of wild-type (WT) and mutant mouse F8 (mF8)."
+    },
+    {
+      "candidate_id": "OC-404249da4799b1c1",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 4",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-68109f64e08c0342"
+      ],
+      "summary": "Figure 4. In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice"
+    },
+    {
+      "candidate_id": "OC-0c65b5f30df66aca",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 4b",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-b79d53f9d5813e61"
+      ],
+      "summary": "Our data showed that the in vivo gene editing efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B).Figure 4In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice(A) Plasmid expressing Cas9 and NSGHAsgRNA was delivered…"
+    },
+    {
+      "candidate_id": "OC-9a86d0b20e31d985",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 4b",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-c4ee2b5f0e788d9d"
+      ],
+      "summary": "efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B)."
+    },
+    {
+      "candidate_id": "OC-577d7d7fe2448951",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 4b",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-ab6a59c6da34953c"
+      ],
+      "summary": "Our data showed that the in vivo gene editing efficiency of NSGHAsgRNA was comparable to that of mF8sgRNA, with both sgRNAs resulting in a gene editing efficiency of around 5% in genomic DNA extracted from whole liver (Figure 4B).Figure 4In vivo gene editing efficiency of two specific Cas9/sgRNAs using hydrodynamic injection in NSG HemA mice(A) Plasmid expressing Cas9 and NSGHAsgRNA was delivered…"
+    },
+    {
+      "candidate_id": "OC-559f37bb95317d90",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-0ec0e6fe75387fa4"
+      ],
+      "summary": "The data indicated that the F8 gene was edited in 60.54% ± 11.65% of hepatocytes, whereas LSECs showed gene editing rates of approximately 16.50% ± 2.96% (Figure 6A; Table S1)."
+    },
+    {
+      "candidate_id": "OC-84eaac90102c9bb4",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-4a7e0c4b676f779a"
+      ],
+      "summary": "The data indicated that the F8 gene was edited in 60.54% ± 11.65% of hepatocytes, whereas LSECs showed gene editing rates of approximately 16.50% ± 2.96% (Figure 6A; Table S1)."
+    },
+    {
+      "candidate_id": "OC-da7b686c24311491",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-ab5a32e037c62749"
+      ],
+      "summary": "Since both that the F8 gene was edited in 60.54% ± 11.65% of hepatocytes, sgRNAs exhibit similar gene editing efﬁciencies and to avoid repeated whereas LSECs showed gene editing rates of approximately targeting of the corrected F8 gene by mF8sgRNA, which also targets 16.50% ± 2.96% (Figure 6A; Table S1)."
+    },
+    {
+      "candidate_id": "OC-c028b1bbdc56681a",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d010646bb645e446"
+      ],
+      "summary": "The data indicated that the F8 gene was edited in 60.54% ± 11.65% of hepatocytes, whereas LSECs showed gene editing rates of approximately 16.50% ± 2.96% (Figure 6A; Table S1)."
+    },
+    {
+      "candidate_id": "OC-7c1ec366ff3fd43c",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a921eb305d7300e0"
+      ],
+      "summary": "ATAAGAAaAaTACCTTGG | Location: Chr3:72768038; % indel In treated mice: 0.30%; % indel in control: 0.31%"
+    },
+    {
+      "candidate_id": "OC-21f2115adafe3651",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a47efb731926abdd"
+      ],
+      "summary": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-e5337a1ee939a392",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-5bcf29ac09267efb"
+      ],
+      "summary": "Potential off-target site | Location | % indel In treated mice | % indel in control ; ATCAGAAGAAACTACCTTg | Chr6:148054722 | 0.00% | 0.00% ; ATAAGAAaAaTACCTTGG | Chr3:72768038 | 0.30% | 0.31% ; AgagGAAGATACTACATTGG | Chr15:98691665 | 0.00% | 0.00% ; cTCAGAAGATACTGcATTGG | Chr11:42761891 | 0.00% | 0.00% ; tgCAGAAGATAATACCTaGG | Chr1:141839085 | 0.17% | 0.22%"
+    },
+    {
+      "candidate_id": "OC-b87c69e3a225f7e1",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e6a47f4250e3f133"
+      ],
+      "summary": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-77e6e94c1cab2389",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-7f31d509a89f1d4e"
+      ],
+      "summary": "AgagGAAGATACTACATTGG | Location: Chr15:98691665; % indel In treated mice: 0.00%; % indel in control: 0.00%"
+    },
+    {
+      "candidate_id": "OC-c6c64beb6270025e",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-c29ca733a864c401"
+      ],
+      "summary": "tgCAGAAGATAATACCTaGG | Location: Chr1:141839085; % indel In treated mice: 0.17%; % indel in control: 0.22%"
+    },
+    {
+      "candidate_id": "OC-fae55d7d981e4ca4",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-2e770ca8f8e852c5"
+      ],
+      "summary": "cTCAGAAGATACTGcATTGG | Location: Chr11:42761891; % indel In treated mice: 0.00%; % indel in control: 0.00%"
+    },
+    {
+      "candidate_id": "OC-368c8250da6219a7",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-6f519fd2d1d3d822"
+      ],
+      "summary": "ATCAGAAGAAACTACCTTg | Location: Chr6:148054722; % indel In treated mice: 0.00%; % indel in control: 0.00%"
+    },
+    {
+      "candidate_id": "OC-1c3f88c83b5cb897",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-191ac0774ac7347b"
+      ],
+      "summary": "No indel variants were found the WT F8 gene, we chose NSGHAsgRNA for the subsequent gene at ﬁve top predicted potential off-target sites when compared with un- editing experiments."
+    },
+    {
+      "candidate_id": "OC-84d16f36e8abc183",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf"
+      ],
+      "summary": "tiﬁed the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, Sustained expression of mouse FVIII following Cas9/sgRNA LNP showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-bb6af130607dd944",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d9c30e3abca70fcb"
+      ],
+      "summary": "Since LSECs are the primary source of plasma FVIII pro- expression were obtained from both hepatocytes and LSECs with tein, our aim was to induce an indel mutation into the mutant mouse about 17-fold higher expression in hepatocytes than LSECs."
+    },
+    {
+      "candidate_id": "OC-0c8765a8bfd24151",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3b",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a36b304d224a9531"
+      ],
+      "summary": "The result indicated that mF8sgRNA could induce an indel variant into mouse F8 exon 1 with a 23% of indel mutation rate (Figure 3B)."
+    },
+    {
+      "candidate_id": "OC-f62584c08281c4e5",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3b",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-b9ae178957e92d5d"
+      ],
+      "summary": "The result indicated that mF8sgRNA could induce an indel variant into mouse F8 exon 1 with a 23% of indel mutation rate (Figure 3B)."
+    },
+    {
+      "candidate_id": "OC-fa3d41fbbfb8dbc9",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 3b",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1893c0cd1beb2ee9"
+      ],
+      "summary": "The result indicated that mF8sgRNA, with both sgRNAs resulting in a gene editing efﬁ- mF8sgRNA could induce an indel variant into mouse F8 exon 1 ciency of around 5% in genomic DNA extracted from whole liver with a 23% of indel mutation rate (Figure 3B)."
+    },
+    {
+      "candidate_id": "OC-486d5f86d31a3f65",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-081e8628c272194c"
+      ],
+      "summary": "No indel variants were found at five top predicted potential off-target sites when compared with untreated mice using next generation sequencing (NGS) analysis (Figure 6B)."
+    },
+    {
+      "candidate_id": "OC-011d2ecb45a0669b",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-d2e00155b363acb0"
+      ],
+      "summary": "No indel variants were found at five top predicted potential off-target sites when compared with untreated mice using next generation sequencing (NGS) analysis (Figure 6B)."
+    },
+    {
+      "candidate_id": "OC-52ed3e5d706ec0dc",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-04a36692cd969e4a"
+      ],
+      "summary": "No indel variants were found at five top predicted potential off-target sites when compared with untreated mice using next generation sequencing (NGS) analysis (Figure 6B)."
+    },
+    {
+      "candidate_id": "OC-9676c44b833dea37",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6gene",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-6dccd1cfb3faae01"
+      ],
+      "summary": "These results suggested that Cas9/sgRNA LNP treatment induced indel repair in LSECs and restoration of the endogenous FVIII expression permanently in NSG HemA mice.Figure 6Gene editing efficiency of isolated HPCs and LSECsAfter Cas9/sgRNA LNP injection, HPCs and LSECs were isolated from treated NSG HemA mice, respectively."
+    },
+    {
+      "candidate_id": "OC-a5cbad64b11d3b45",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "figure 6gene",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-8af0fe6c0065d45c"
+      ],
+      "summary": "These results suggested that Cas9/sgRNA LNP treatment induced indel repair in LSECs and restoration of the endogenous FVIII expression permanently in NSG HemA mice.Figure 6Gene editing efficiency of isolated HPCs and LSECsAfter Cas9/sgRNA LNP injection, HPCs and LSECs were isolated from treated NSG HemA mice, respectively."
+    },
+    {
+      "candidate_id": "OC-875c4122315bcaf0",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-37a9637ff739dcba"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-38752fce039c3502",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-1752f684467f3bf3"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-3b3796b7e0c32c07",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d51e57e7bfc1ef65"
+      ],
+      "summary": "Of the deletions, 1 (7.68%) and 4 indel variants, but their frequencies were signiﬁcantly lower (0.78% (1.38%) deletion were able to restore the reading frame, potentially and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-f3f78b36f67b4f7c",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-663636d6bf46d341",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-57ef375513961d17"
+      ],
+      "summary": "While +2 and +5 insertions can also restore the reading frame, <1% insertion frequency was observed."
+    },
+    {
+      "candidate_id": "OC-376de1bbc0e8cc41",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a47efb731926abdd"
+      ],
+      "summary": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-2c1f196430563dcf",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-e6a47f4250e3f133"
+      ],
+      "summary": "We subsequently identified the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-663313854971c749",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-3bd39898ccac13d3"
+      ],
+      "summary": "This model mimics the genetic variant seen in approximately 16% of severe HemA patients with small deletion and insertion variants.29 To edit the mutant F8 gene in NSG HemA mice, we selected two sgRNAs, mF8sgRNA and NSGHAsgRNA, targeting the mutant F8 sequence."
+    },
+    {
+      "candidate_id": "OC-e2d4bb67d2cf343a",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-ef798f3259752156"
+      ],
+      "summary": "While +2 and +5 insertions These results suggested that Cas9/sgRNA LNP treatment induced in- can also restore the reading frame, <1% insertion frequency was del repair in LSECs and restoration of the endogenous FVIII expres- observed."
+    },
+    {
+      "candidate_id": "OC-29c27b72a5ac6690",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1e527773e8493acf"
+      ],
+      "summary": "tiﬁed the indel pattern at the mutation site via the Sanger sequencing and Tracking of indels by Decomposition (TIDE) online tool, Sustained expression of mouse FVIII following Cas9/sgRNA LNP showing insertion and deletion rates of 3.5% and 28.5%, respectively."
+    },
+    {
+      "candidate_id": "OC-bffd831361912f5d",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-eabead190d4bc8ce"
+      ],
+      "summary": "This model mimics the genetic variant seen in approximately 16% of severe HemA patients with small deletion and insertion variants.29 To edit the mutant F8 gene in NSG HemA mice, we selected two sgRNAs, mF8sgRNA and NSGHAsgRNA, targeting the mutant F8 sequence."
+    },
+    {
+      "candidate_id": "OC-6d02c94fcabd1830",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-bd54a6566769fd63"
+      ],
+      "summary": "Table S2 | LSEC | +1: 0.78 ± 0.27 %; +2: 0.21 ± 0.10 %; +3: 0.01 ± 0.01 %; +4: 0.00; >+4: 0.00; total insertion frequency: 1.01 ± 0.38 %"
+    },
+    {
+      "candidate_id": "OC-93fd31e928fc9732",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-e92e29e601e0a340"
+      ],
+      "summary": "Table S2. Insertion Frequency Patterns Following Cas9/sgRNA LNP Treatment."
+    },
+    {
+      "candidate_id": "OC-0c9f684495e832db",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-37a9637ff739dcba"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-41b753d19fe8eb2f",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-b764a2e329585d75"
+      ],
+      "summary": "Table S2 | | +1 | +2 | +3 | +4 | >+4 | total insertion frequency ; Hepatocyte | 3.39 ± 0.91 % | 0.83 ± 0.27 % | 0.01 ± 0.01 % | 0.00 | 0.00 | 4.23 ± 1.17 % ; LSEC | 0.78 ± 0.27 % | 0.21 ± 0.10 % | 0.01 ± 0.01 % | 0.00 | 0.00 | 1.01 ± 0.38 %"
+    },
+    {
+      "candidate_id": "OC-e0051a1718dde432",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-dcc09e591fa2d376"
+      ],
+      "summary": "Table S2 | | +1 | +2 | +3 | +4 | >+4 | total insertion frequency ; Hepatocyte | 3.39 ± 0.91 % | 0.83 ± 0.27 % | 0.01 ± 0.01 % | 0.00 | 0.00 | 4.23 ± 1.17 % ; LSEC | 0.78 ± 0.27 % | 0.21 ± 0.10 % | 0.01 ± 0.01 % | 0.00 | 0.00 | 1.01 ± 0.38 %"
+    },
+    {
+      "candidate_id": "OC-c622ea7279a59f4d",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-3e5bcf4572ceda00"
+      ],
+      "summary": "Table S2 | Hepatocyte | +1: 3.39 ± 0.91 %; +2: 0.83 ± 0.27 %; +3: 0.01 ± 0.01 %; +4: 0.00; >+4: 0.00; total insertion frequency: 4.23 ± 1.17 %"
+    },
+    {
+      "candidate_id": "OC-82d39267a05f69d2",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-b6b14f41e64d1dd6"
+      ],
+      "summary": "Table S2. Insertion Frequency Patterns Following Cas9/sgRNA LNP Treatment."
+    },
+    {
+      "candidate_id": "OC-4ee9ac1ef988e432",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-a77f5980d7db7ba9"
+      ],
+      "summary": "Table S2 | LSEC | +1: 0.78 ± 0.27 %; +2: 0.21 ± 0.10 %; +3: 0.01 ± 0.01 %; +4: 0.00; >+4: 0.00; total insertion frequency: 1.01 ± 0.38 %"
+    },
+    {
+      "candidate_id": "OC-12ec86366cd51160",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-78739209ea0ad5a8"
+      ],
+      "summary": "Table S2 | Hepatocyte | +1: 3.39 ± 0.91 %; +2: 0.83 ± 0.27 %; +3: 0.01 ± 0.01 %; +4: 0.00; >+4: 0.00; total insertion frequency: 4.23 ± 1.17 %"
+    },
+    {
+      "candidate_id": "OC-5c4b837bccfaa21f",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-1752f684467f3bf3"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-22a1c323615b9066",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": "table s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-b9606d3f1fb87b4c"
+      ],
+      "summary": "We also analyzed the +2 and +5 insertion patterns among indel variants, but their frequencies were significantly lower (0.78% and 0%, respectively) compared with deletion variants (Table S2)."
+    },
+    {
+      "candidate_id": "OC-7a5ae76365b11cbd",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-87fd3bc52c4ba7d8"
+      ],
+      "summary": "apolipoprotein E (ApoE) on the surface of the LNPs contributes to their preferential targeting of hepatocytes that express low-density lipoprotein (LDL) receptors.\\(^{[14,15]}\\) Previous studies have demonstrated that routine administration of FVIII mRNA encapsulated in LNPs significantly enhances clotting activity in Hem A mice, which is more effective than FVIII protein replacement therapy.\\(^{…"
+    },
+    {
+      "candidate_id": "OC-ef07952ecc5eec4a",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-0db776fa5df6e55d"
+      ],
+      "summary": "This restored FVIII activity was sustained for over 26 weeks, resulting in improved function of clot formation in HemA mice."
+    },
+    {
+      "candidate_id": "OC-140d1c34507d07d3",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-7c6a9b0655d883bf"
+      ],
+      "summary": "Sustained endogenous FVIII activity up to 6% was achieved over 26 weeks in treated HemA mice."
+    },
+    {
+      "candidate_id": "OC-a13e7e194997b2ee",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-be944700278beed9"
+      ],
+      "summary": "Patients with severe HemA exhibit less than 1% of FVIII activity and are prone to prolonged bleeding after trauma, as well as spontaneous bleeding in soft tissues such as joints and muscles.\\(^{1,2}\\) Current treatment options, such as frequent infusions of therapeutic recombinant FVIII protein to maintain FVIII activity above the normal trough level of >1% are expensive, inconvenient, short-term…"
+    },
+    {
+      "candidate_id": "OC-1a264aca403dc839",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-1e177ad71161cc4e"
+      ],
+      "summary": "Following injection, we measured endogenous FVIII activity in the treated mice using activated partial thromboplastin time (aPTT) assay."
+    },
+    {
+      "candidate_id": "OC-88cf264b330b2c7f",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-28c547419502491f"
+      ],
+      "summary": "Following injection, we measured endogenous FVIII activity in the treated mice using activated partial thromboplastin time (aPTT) assay."
+    },
+    {
+      "candidate_id": "OC-4ce2d317e901c846",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-67f9a4eff3d4d30d"
+      ],
+      "summary": "Sustained endogenous FVIII activity up to 6% was achieved over 26 weeks in treated HemA mice."
+    },
+    {
+      "candidate_id": "OC-3eeeae8aa158fb84",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-2ad54e453b8cfa53"
+      ],
+      "summary": "The effect of LNP treatment showed significant improvement of FVIII activity."
+    },
+    {
+      "candidate_id": "OC-4ec099151fb53107",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0062483addf27f5e"
+      ],
+      "summary": "The effect of LNP treatment showed signiﬁcant improvement of FVIII activity."
+    },
+    {
+      "candidate_id": "OC-d6d8ec31fcbb44d8",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0e932dc79aa7ba74"
+      ],
+      "summary": "HemA mice displayed approximately 2.6% FVIII activity (Fig- ure 4A)."
+    },
+    {
+      "candidate_id": "OC-7e02be28ef250a82",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-61352269ff3b61f2"
+      ],
+      "summary": "Following injection, we measured endogenous FVIII activity in the treated mice using activated partial thromboplastin time (aPTT) assay."
+    },
+    {
+      "candidate_id": "OC-24ca94bc6f652df8",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-347afe08a5543c1f",
+        "GP-006-E-44f76eb37d91da27"
+      ],
+      "summary": "Sustained endogenous FVIII activity mediated repair.6 This powerful gene editing tool is effective in both up to 6% was achieved over 26 weeks in treated HemA mice. Pa- to deliver therapeutic siRNA or mRNA for treating various diseases.9 tients with severe HemA exhibit less than 1% of FVIII activity and are In fact, the ﬁrst Food and Drug Administration (FDA)-approved LNP prone to prolonged bleed…"
+    },
+    {
+      "candidate_id": "OC-49c42aadb9e52528",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0062483addf27f5e"
+      ],
+      "summary": "The effect of LNP treatment showed signiﬁcant improvement of FVIII activity."
+    },
+    {
+      "candidate_id": "OC-b9a2bcc2bb4ec2e0",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-6e34ccb8adb205c7"
+      ],
+      "summary": "The data were compared using two-tailed unpaired Stu- aPTT assay dent’s t test and one-way analysis of variance (ANOVA) followed Plasma mouse FVIII was examined using activated partial thrombo- by post hoc Bonferroni’s multiple comparison tests; p values <0.05 plastin time (aPTT) assay.16,55 Mouse FVIII activity was evaluated ac- were considered statistically signiﬁcant."
+    },
+    {
+      "candidate_id": "OC-812314c1e8552019",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-f4c4a050824725a3"
+      ],
+      "summary": "This restored To investigate the liver distribution of MC3 LNP, we intrave- FVIII activity was sustained for over 26 weeks, resulting in improved nouslyinjected 1,10-Dioctadecyl-3,3,30,30-tetramethylindocarbocyanine function of clot formation in HemA mice."
+    },
+    {
+      "candidate_id": "OC-ebc2c318f494bc42",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 4a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-69d286605c9bf989"
+      ],
+      "summary": "Specifically, after two injections, treated NSG HemA mice displayed approximately 2.6% FVIII activity (Figure 4A)."
+    },
+    {
+      "candidate_id": "OC-8fd7aeddbfae105e",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 4a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-ff750937aea99e21"
+      ],
+      "summary": "Specifically, after two injections, treated NSG HemA mice displayed approximately 2.6% FVIII activity (Figure 4A)."
+    },
+    {
+      "candidate_id": "OC-85f7147389be1c5a",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 4a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-5f1df7ac5c7ec3f9"
+      ],
+      "summary": "Specifically, after two injections, treated NSG HemA mice displayed approximately 2.6% FVIII activity (Figure 4A)."
+    },
+    {
+      "candidate_id": "OC-5bfa095b8ac21479",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 5",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-6229461d065ec956",
+        "GP-006-FC-a723bd95ab95e8f2"
+      ],
+      "summary": "Figure 5. Recovery of endogenous FVIII activity after Cas9/sgRNA LNP injection (A) FVIII activity following Cas9/sgRNA LNP treatment. The effect of LNP treatment showed significant improvement of FVIII activity."
+    },
+    {
+      "candidate_id": "OC-a04f58fadbd3dec7",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 5a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-4c3748ac35567211"
+      ],
+      "summary": "Post-treatment, FVIII activity was measured by aPTT, and our results indicated that the treated mice generated an average of 3.30% ± 0.68% of FVIII activity over a span of 26 weeks (Figure 5A)."
+    },
+    {
+      "candidate_id": "OC-90c9d37b9c5272b0",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 5a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-efb68146d026a57b"
+      ],
+      "summary": "Post-treatment, FVIII activity was measured by aPTT, and our results indicated that the treated mice generated an average of 3.30% ± 0.68% of FVIII activity over a span of 26 weeks (Figure 5A)."
+    },
+    {
+      "candidate_id": "OC-46a32d7d3a3de39d",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 5a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-8e9084aadcfe157d"
+      ],
+      "summary": "Post-treatment, FVIII activity was measured by aPTT, and our results indicated that the treated mice generated an average of 3.30% ± 0.68% of FVIII activity over a span of 26 weeks (Figure 5A)."
+    },
+    {
+      "candidate_id": "OC-002e3262a80d3391",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 5a",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-d9a16a0c73e6b6b2"
+      ],
+      "summary": "Post-treatment, It was previously demonstrated in our lab that following hydrody- FVIII activity was measured by aPTT, and our results indicated namic injection of plasmid DNA, transfection occurred predomi- that the treated mice generated an average of 3.30% ± 0.68% of nantly in hepatocytes; however, lower transgene expression was FVIII activity over a span of 26 weeks (Figure 5A)."
+    },
+    {
+      "candidate_id": "OC-e30aa677d80c78d5",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-d5b2d1f16c3ab06e"
+      ],
+      "summary": "This result suggested an improved coagulation due to targeted correction of the mutant F8 gene (Figures 5B and 5C).Figure 5Recovery of endogenous FVIII activity after Cas9/sgRNA LNP injection(A) FVIII activity following Cas9/sgRNA LNP treatment."
+    },
+    {
+      "candidate_id": "OC-da9a3d11dcdc94d9",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-8f4df2feafb0205d"
+      ],
+      "summary": "This result suggested an improved coagulation due to targeted correction of the mutant F8 gene (Figures 5B and 5C).Figure 5Recovery of endogenous FVIII activity after Cas9/sgRNA LNP injection(A) FVIII activity following Cas9/sgRNA LNP treatment."
+    },
+    {
+      "candidate_id": "OC-8a1ab297140e59a3",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-FC-73422228237f5745"
+      ],
+      "summary": "LNPs as therapeutic delivery vehicles are suitable for most HemA patients without the need for screening for antibodies against viral vectors."
+    },
+    {
+      "candidate_id": "OC-c649312dff81a308",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-0043b99ab0bf3320"
+      ],
+      "summary": "Following injection, we measured endogenous FVIII that Cas9/sgRNA LNP-treated mice exhibited shorter CT and CFT activity in the treated mice using activated partial thromboplastin durations compared with untreated mice, displaying a clotting ability time (aPTT) assay."
+    },
+    {
+      "candidate_id": "OC-d00ad2bc6b1df868",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-006-E-1f4927afa9b8c773"
+      ],
+      "summary": "Premature Stop codon resulted from frameshift mutation in mutant mF8 was labeled by an asterisk."
+    },
+    {
+      "candidate_id": "OC-c0c03192f2936201",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-47f065d216fca644"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-53acd850d737f761",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-FC-2305bce8418d23aa"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    },
+    {
+      "candidate_id": "OC-4b819d91380037aa",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 2b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-006-E-91510402d7266cd1"
+      ],
+      "summary": "The immunostaining images showed colocalization of LYVE-1 and GFP signals, indicating that LSECs not only uptake LNPs but can also express GFP protein (Figure 2B)."
+    }
+  ]
+}

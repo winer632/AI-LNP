@@ -1,0 +1,200 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-003",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "evidence_view": "full",
+  "packet_root": "/Users/wangxinxin/Desktop/LNP/AI-LNP/.claude/worktrees/agent-a194b7314f4d1586d/data/staging/rag/full_api_packets_v1",
+  "prompt_version": "compact-prompt-1.2.1",
+  "prompt_checksum": "82d0fb6e3af04a0a805dba0a226213b0b19657492cd35fceefc4319f241c836e",
+  "schema_checksum": "eaaba4f14498642c8feb0f3e5d823c06cba8a6f746a3cde73f92207a96c6ae2a",
+  "packet_checksum": "68edfe0e6f9590433fcd0c780754a11d7b786b0235ddb1e66ccad123ad02b510",
+  "prompt_characters": 258969,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": [
+    {
+      "candidate_id": "OC-20c91a3ac85fea9e",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-FC-f533cec92da97d20"
+      ],
+      "summary": "Antisense inhibition of miR-33a/b in nonhuman primates increases hepatic ABCA1 expression, raises plasma HDL cholesterol, and lowers VLDL-associated TGs [101], while genetic deletion of miR-33 in mice elevates HDL levels [100]."
+    },
+    {
+      "candidate_id": "OC-3473d9c3ff318307",
+      "endpoint_family": "gene_editing",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-FC-4c3fd79abdf8a837"
+      ],
+      "summary": "In a nonhuman primate study, a single intravenous infusion of VERVE-101 (1.5 mg/kg) achieved 70% PCSK9 editing in the liver, resulting in 83% reduction in circulating PCSK9 protein and 69% reduction in LDL-C, with durable effects lasting up to 476 d."
+    },
+    {
+      "candidate_id": "OC-ad2d084b1b6f801a",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-a15bf95eca360754",
+        "GP-003-E-b201c3671c94cc14"
+      ],
+      "summary": "IPE (4 g/day) significantly reduced MACE by 25% in the REDUCE-IT trial, with consistent benefit even in patients with baseline LDL-C <55 mg/dl. Cardiovascular death was reduced by 20%, though therapy was associated with increased atrial fibrillation risk [84,85]."
+    },
+    {
+      "candidate_id": "OC-7b7d5799d9b35413",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-0c7c32778de6f71a",
+        "GP-003-E-78230ce6f07c2d1d",
+        "GP-003-E-e8f660510575fe40"
+      ],
+      "summary": "In a phase 2b study, pelacarsen achieved robust Lp(a) reductions of ≥80%, with a favorable safety profile, and it is currently being evaluated for cardiovascular outcomes in the phase 3 Lp(a) HORIZON trial (NCT04023552). Existing lipid-lowering therapies, including PCSK9 inhibitors, provide only modest Lp(a) reduction, falling short of the substantial lowering required for meaningful risk mitigat…"
+    },
+    {
+      "candidate_id": "OC-a466de2cd104ea8c",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-35298dcafb76377e",
+        "GP-003-E-7671b904a7cb4a0d",
+        "GP-003-E-fdfc4227a198d52f"
+      ],
+      "summary": "The study concluded that solbinsiran 400 mg effectively reduces ApoB and is well tolerated, although its effect on cardiovascular outcomes remains to be determined [234]. Compared with the placebo, the 400-mg dose administered on days 0 and 90 produced a significant reduction in ApoB on day 180 (−14.3%, P = 0.0085), whereas the effects of the 100- and 800-mg doses did not reach statistical signif…"
+    },
+    {
+      "candidate_id": "OC-c6f3f02c9c3a770a",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-392c65b7b82f8da5",
+        "GP-003-E-98e47d1f0bf72f10",
+        "GP-003-E-b7317c4685f18efa",
+        "GP-003-E-dab09eefee98a9db",
+        "GP-003-E-eae5d1d24fe9bed7",
+        "GP-003-E-fab746f9ca7c5b56"
+      ],
+      "summary": "In the ODYSSEY OUTCOMES trial, alirocumab added to statin therapy reduced LDL-C by 54.7% compared with placebo (from 101.4 to 53.3 mg/dl) and significantly decreased MACE (HR 0.85; 95% CI 0.78 to 0.93) (NCT01663402) [71]. Beyond LDL-C lowering, PCSK9 inhibitors also reduce Lp(a) by 20% to 30%, supporting their use in patients with elevated Lp(a) as reflected in the 2023 ESC guidelines (Class IIa…"
+    },
+    {
+      "candidate_id": "OC-0d112a70772a2205",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-0be751eb53c9ad08"
+      ],
+      "summary": "The translational importance of this target has been further demonstrated in a novel mouse model of combined hyperlipidemia, where therapeutic lipid lowering successfully reduced atherosclerotic plaque burden, providing a robust system for evaluating future APOC3-targeting therapies [181]."
+    },
+    {
+      "candidate_id": "OC-ac6aaf7eabc760d5",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-23eabfe45dbc0815",
+        "GP-003-E-9c824c288f3b656a"
+      ],
+      "summary": "The Improved Reduction of Outcomes: Vytorin Efficacy International trial demonstrated that for patients experiencing acute coronary syndrome, the incorporation of ezetimibe to intense statin therapy resulted in a substantial decrease in major cardiovascular events. Oral ezetimibe (10 mg daily) reduces Lp(a) by approximately 7%, though this is of limited clinical relevance [59,60]."
+    },
+    {
+      "candidate_id": "OC-87aa18a308f2f47a",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-54cdf545cd149322",
+        "GP-003-E-d66458032daf6478"
+      ],
+      "summary": "Zodasiran treatment produced dose-dependent reductions, with the 200-mg dose lowering TGs by >50%, non-HDL cholesterol by 36%, ApoB by 22%, and LDL cholesterol by 20%. The phase 2 GATEWAY trial reported LDL cholesterol reductions of approximately 35.7% to 39.9% at month 6 in patients with HoFH, with even greater reductions (55.8%) observed in those also receiving concomitant PCSK9 inhibitor thera…"
+    },
+    {
+      "candidate_id": "OC-51f29cfac12a4242",
+      "endpoint_family": "knockdown",
+      "figure_or_table": "table 1.",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-003-E-192784c26a03e809"
+      ],
+      "summary": "Collectively, the clinical development and regulatory status of leading siRNA and ASO therapies for dyslipidemia are summarized in Table 1."
+    },
+    {
+      "candidate_id": "OC-236bf6f6e7ce5f6b",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-FC-4b3b3ce320828dff"
+      ],
+      "summary": "Therapeutic silencing of miR-148a in mice increases hepatic LDLR and ABCA1 expression, lowering LDL-C while raising HDL-C [108,110], and reduces atherosclerotic plaque burden and promotes plaque stability [111]."
+    },
+    {
+      "candidate_id": "OC-a14a5cab03d05bc7",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-FC-1aef17f3681cc0cd",
+        "GP-003-FC-c21b418c5c12846b"
+      ],
+      "summary": "For miR-148a, anti-miR-148a silencing in mice increases hepatic LDLR and ABCA1 expression, lowers LDL-C while raising HDL-C, and reduces atherosclerotic plaque burden [108,111]. Anti-miR-122 silencing in mice lowered plasma cholesterol levels and improved hepatic steatosis [104], and the landmark antagomir study demonstrated that miR-122 inhibition reduces cholesterol biosynthesis gene expression…"
+    },
+    {
+      "candidate_id": "OC-debb46b3020ff4e1",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-FC-855f878a58165e1f"
+      ],
+      "summary": "A cross-species, LNP-formulated siRNA targeting PCSK9 induced potent (50% to 70%) and durable silencing of hepatic mRNA in rodents and nonhuman primates."
+    },
+    {
+      "candidate_id": "OC-be74b022a5a6469d",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-62558978e9349ea4",
+        "GP-003-E-a231d9a9d9d56d3c"
+      ],
+      "summary": "Anti-miR-122 silencing in mice lowered plasma cholesterol levels and improved hepatic steatosis [104], and the landmark antagomir study demonstrated that miR-122 inhibition reduces cholesterol biosynthesis gene expression and plasma cholesterol [113]. For miR-148a, anti-miR-148a silencing in mice increases hepatic LDLR and ABCA1 expression, lowers LDL-C while raising HDL-C, and reduces atheroscle…"
+    },
+    {
+      "candidate_id": "OC-4a970dc96e63e6a1",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-003-E-9481c6fd6fddfdee"
+      ],
+      "summary": "A cross-species, LNP-formulated siRNA targeting PCSK9 induced potent (50% to 70%) and durable silencing of hepatic mRNA in rodents and nonhuman primates."
+    },
+    {
+      "candidate_id": "OC-dfc5e4f6342bea9c",
+      "endpoint_family": "knockdown",
+      "figure_or_table": "fig. 2.",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-003-FC-a1490acee45465ee"
+      ],
+      "summary": "This figure illustrates the mechanism of liver-targeted gene silencing by subcutaneously administered N-acetylgalactosamine (GalNAc)-conjugated oligonucleotides."
+    },
+    {
+      "candidate_id": "OC-f74ac8d16a32768d",
+      "endpoint_family": "knockdown",
+      "figure_or_table": "table 1.",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-003-FC-5ab8de3f16397244"
+      ],
+      "summary": "Table 1.Clinical development status of siRNA and ASO therapies for dyslipidemiaDrug nameTargetTypeCurrent statusClinical trial (NCT)CompanyInclisiranPCSK9siRNAFDA approved (2021) for hypercholesterolemiaMultiple ORION and VICTORION trialsNovartis PharmaceuticalsVolanesorsenAPOC3ASORejected by FDA; conditionally approved in EU for FCS (Phase III)(NCT02211209) [204]Ionis Pharmaceuticals and Akcea T…"
+    }
+  ]
+}

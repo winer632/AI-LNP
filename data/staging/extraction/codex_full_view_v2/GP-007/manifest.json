@@ -1,0 +1,41 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-007",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-28T22:17:47.497757+00:00",
+  "completed_at": "2026-07-28T22:19:33.971494+00:00",
+  "elapsed_seconds": 106.472,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-007-E-0fcf3d19800c7d6f",
+      "GP-007-E-450ee76f1f41150a",
+      "GP-007-E-47d77dd97cd9a252",
+      "GP-007-E-1db684478f7dee70"
+    ],
+    "explanation": "Original mouse HIRI experiments used siMicu1-LNPs, with reported LSEC-relevant outcomes linked to the LNP intervention; full lipid composition is incomplete in the packet."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 3,
+    "experiments": 1,
+    "outcomes": 4,
+    "unresolved_items": 3
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 74
+}

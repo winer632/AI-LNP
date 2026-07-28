@@ -1,0 +1,87 @@
+[
+  {
+    "candidate_id": "OC-20c91a3ac85fea9e",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summary of anti-miR experiments; not an outcome from an eligible original LNP experiment."
+  },
+  {
+    "candidate_id": "OC-3473d9c3ff318307",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summary of a VERVE-101 study; this paper is not the original experiment."
+  },
+  {
+    "candidate_id": "OC-ad2d084b1b6f801a",
+    "disposition": "not_an_outcome",
+    "reason": "Reported result concerns IPE, not an LNP RNA delivery experiment."
+  },
+  {
+    "candidate_id": "OC-7b7d5799d9b35413",
+    "disposition": "not_an_outcome",
+    "reason": "Reported result concerns GalNAc-conjugated pelacarsen, not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-a466de2cd104ea8c",
+    "disposition": "not_an_outcome",
+    "reason": "Reported result concerns GalNAc-conjugated solbinsiran, not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-c6f3f02c9c3a770a",
+    "disposition": "not_an_outcome",
+    "reason": "Reported results concern PCSK9 antibodies and an oral inhibitor, not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-0d112a70772a2205",
+    "disposition": "not_an_outcome",
+    "reason": "The passage is a general interpretation of therapeutic lipid lowering, without an identifiable LNP formulation-experiment link."
+  },
+  {
+    "candidate_id": "OC-ac6aaf7eabc760d5",
+    "disposition": "not_an_outcome",
+    "reason": "Reported results concern ezetimibe, not an LNP RNA delivery experiment."
+  },
+  {
+    "candidate_id": "OC-87aa18a308f2f47a",
+    "disposition": "not_an_outcome",
+    "reason": "Reported results concern GalNAc-conjugated zodasiran, not an LNP experiment."
+  },
+  {
+    "candidate_id": "OC-51f29cfac12a4242",
+    "disposition": "not_an_outcome",
+    "reason": "Table-reference statement reports no measured outcome."
+  },
+  {
+    "candidate_id": "OC-236bf6f6e7ce5f6b",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summary of anti-miR experiments; not an outcome from an eligible original LNP experiment."
+  },
+  {
+    "candidate_id": "OC-a14a5cab03d05bc7",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summaries of anti-miR experiments; not outcomes from eligible original LNP experiments."
+  },
+  {
+    "candidate_id": "OC-debb46b3020ff4e1",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summary of an LNP-siRNA study; this paper is not the original experiment."
+  },
+  {
+    "candidate_id": "OC-be74b022a5a6469d",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summaries of anti-miR experiments; not outcomes from eligible original LNP experiments."
+  },
+  {
+    "candidate_id": "OC-4a970dc96e63e6a1",
+    "disposition": "not_an_outcome",
+    "reason": "Secondary review summary of an LNP-siRNA study; this paper is not the original experiment."
+  },
+  {
+    "candidate_id": "OC-dfc5e4f6342bea9c",
+    "disposition": "not_an_outcome",
+    "reason": "Figure caption describes a mechanism, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-f74ac8d16a32768d",
+    "disposition": "not_an_outcome",
+    "reason": "Table lists development status rather than a measured outcome."
+  }
+]

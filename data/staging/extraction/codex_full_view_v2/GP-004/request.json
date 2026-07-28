@@ -1,0 +1,604 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-004",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "evidence_view": "full",
+  "packet_root": "/Users/wangxinxin/Desktop/LNP/AI-LNP/.claude/worktrees/agent-a194b7314f4d1586d/data/staging/rag/full_api_packets_v1",
+  "prompt_version": "compact-prompt-1.2.1",
+  "prompt_checksum": "82d0fb6e3af04a0a805dba0a226213b0b19657492cd35fceefc4319f241c836e",
+  "schema_checksum": "eaaba4f14498642c8feb0f3e5d823c06cba8a6f746a3cde73f92207a96c6ae2a",
+  "packet_checksum": "6ffa789cf1e7f365b4e4544d03ed8bc9323c3d8d38c81f96862202e249110ed5",
+  "prompt_characters": 548899,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": [
+    {
+      "candidate_id": "OC-b924d98c5ee0c618",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-22e032321011f16e",
+        "GP-004-FC-80ed9ef13fd5ae2d"
+      ],
+      "summary": "Dead cells were eliminated using the Zombie NIR viability die. Care was taken to include proper unstained and isotype controls to derive the compensation matrix.: Cells were first gated using the SSC and FSC parameters to help eliminate debris."
+    },
+    {
+      "candidate_id": "OC-f12ccc22e6498844",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-17ea1941b359be56",
+        "GP-004-FC-e1fbe7fc2781550b"
+      ],
+      "summary": "; Instrument | Stratifiedigm S1000EXi flow cytometer ; Software | FlowJo v10 software ; Cell population abundance | we collected at least 20,000 cells ; Gating strategy | Cells were first gated using the SSC and FSC parameters to help eliminate debris. Dead cells were eliminated using the Zombie NIR viability die."
+    },
+    {
+      "candidate_id": "OC-932439097b0f1733",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-56aa79972a8c0e71"
+      ],
+      "summary": "Altogether, mRNA-LNP treatments during CDE-induced chronic injury demonstrate the clinical benefit of injections of HGF/EGF mRNA-LNP to sharply eliminate the NAFLD characteristics such as lipid accumulation and liver damage."
+    },
+    {
+      "candidate_id": "OC-fdc2e205d8bbc85d",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "figure 4",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-cf9e37f897ca00db"
+      ],
+      "summary": "4 Subpopulations of blood cells, most likely phagocytic cells of the lung, are targeted by eGFP mRNA-LNP."
+    },
+    {
+      "candidate_id": "OC-b70aafe9c0f6b3a5",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-d7f66ab7a14baf43"
+      ],
+      "summary": "White arrowheads indicate co-stained cells."
+    },
+    {
+      "candidate_id": "OC-266f7215cca1dfa7",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": "fig. 2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-59b1322fd090722e"
+      ],
+      "summary": "White arrowheads indicate co-stained cells."
+    },
+    {
+      "candidate_id": "OC-cfc3f3ff55d8113f",
+      "endpoint_family": "expression",
+      "figure_or_table": "Supplementary Fig. 1",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-7080e27ce5a79091",
+        "GP-004-FC-8ab05c380ff8612e",
+        "GP-004-FC-aade38b1bcc9dca2",
+        "GP-004-FC-e91439ffe3e5ef15"
+      ],
+      "summary": "The same pattern was observed for intestine where eGFP expression was confined to the lamina propria, which contains small blood and lymph vessels as well as blood cells (Supplementary Fig. 1), eGFP expression was absent in parenchymal cells of the other organs analyzed (Supplementary Figs. To further evaluate the histologic specificity of IV-injected mRNA-LNP, we performed immunostaining on sect…"
+    },
+    {
+      "candidate_id": "OC-fd36192dd56da171",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-a2c53db8556fa5a1"
+      ],
+      "summary": "Mice were either 10–12 week-old Bl6/C57 female for the liver injury models or 7–8 week-old Balb/c female (purchased from the Jackson Laboratory, Bar Harbor, ME) to study the kinetics of expression and identity of cell types transfected in vivo using luciferase- and eGFP mRNA-LNP at homeostasis."
+    },
+    {
+      "candidate_id": "OC-054c58b2a15d1231",
+      "endpoint_family": "expression",
+      "figure_or_table": "Fig. Virtually",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-3d422f83e13b8f7d",
+        "GP-004-FC-77680227c5fcc705",
+        "GP-004-FC-c78b9fb30d51fff7"
+      ],
+      "summary": "Significant percentages of these cell populations express eGFP, including 41.5 ± 14.6% CD11b+ cells, 34.1 ± 2.2% CD45+ cells, and 70.7 ± 9% CD31+ cells (Fig. Virtually all hepatocytes identified with HNF4α expressed eGFP (Fig. eGFP expression was absent in CK19+ cholangiocytes and α-SMA+ vascular smooth muscle cells, while few F4/80+ Kupffer cells expressed eGFP."
+    },
+    {
+      "candidate_id": "OC-e824765650c8380b",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-ba736f023c9104f6"
+      ],
+      "summary": "Given the sustained luciferase activity in the liver for 3 consecutive days after a single Luc mRNA-LNP injection, and robust transfection efficiency of eGFP mRNA-LNP to hepatocytes, we extrapolate that HGF and EGF activity is as robust as that of luciferase and, hence, lasts 3 days following mRNA-LNP injection...”"
+    },
+    {
+      "candidate_id": "OC-e42d02cd0aa8f42f",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-b293f56409c89709",
+        "GP-004-E-e29c5e3c31a38827"
+      ],
+      "summary": "Mice were administered 100 μl of diluted mRNA-LNP-encoding luciferase (5 μg), eGFP (10 μg), HGF (10 μg), Poly(C) (10 μg), or combination HGF (5 μg) + EGF (5 μg) intravenously by either retro-orbital or tail vein injections using 1/2cc lo-dose insulin syringes (EXELINT). Mice were either 10–12 week-old Bl6/C57 female for the liver injury models or 7–8 week-old Balb/c female (purchased from the Jac…"
+    },
+    {
+      "candidate_id": "OC-518896544650d441",
+      "endpoint_family": "expression",
+      "figure_or_table": "Supplementary Fig. To",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-9727e33fb834be68",
+        "GP-004-E-a72862f18ec2ffcd",
+        "GP-004-E-ac5ffef51d25a107",
+        "GP-004-E-fd825b27dcaebf09"
+      ],
+      "summary": "The same pattern was observed for intestine where eGFP expression was confined to the lamina propria, which contains small blood and lymph vessels as well as blood cells (Supplementary Fig. To further evaluate the histologic specificity of IV-injected mRNA-LNP, we performed immunostaining on sections from liver, lung, intestine, and spleen 5 h following a single injection of mRNA-LNP encoding enh…"
+    },
+    {
+      "candidate_id": "OC-88f65d75fdf21989",
+      "endpoint_family": "expression",
+      "figure_or_table": "Fig. eGFP",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-0e95fa28bea7a24c",
+        "GP-004-E-1f28a42d83d7b914"
+      ],
+      "summary": "Significant percentages of these cell populations express eGFP, including 41.5 ± 14.6% CD11b+ cells, 34.1 ± 2.2% CD45+ cells, and 70.7 ± 9% CD31+ cells (Fig. eGFP expression was absent in CK19+ cholangiocytes and α-SMA+ vascular smooth muscle cells, while few F4/80+ Kupffer cells expressed eGFP."
+    },
+    {
+      "candidate_id": "OC-31142d755597b87a",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 4",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-07ad4307450feadf",
+        "GP-004-FC-cf9e37f897ca00db"
+      ],
+      "summary": "White arrowheads represent co-stained \\(GFP^{+}\\) CD45\\(^{+}\\) cells. 4 Subpopulations of blood cells, most likely phagocytic cells of the lung, are targeted by eGFP mRNA-LNP."
+    },
+    {
+      "candidate_id": "OC-a0003dea2317b7f7",
+      "endpoint_family": "expression",
+      "figure_or_table": "table 1",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-98235da2214e15c0"
+      ],
+      "summary": "Table 1 | GFP | Cat."
+    },
+    {
+      "candidate_id": "OC-4f4f95c7a5f70408",
+      "endpoint_family": "expression",
+      "figure_or_table": "table 2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-5220a7516469049f"
+      ],
+      "summary": "Table 2 | Luciferase | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCA…"
+    },
+    {
+      "candidate_id": "OC-1119599841842f36",
+      "endpoint_family": "expression",
+      "figure_or_table": "table 2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-8b19bcc24507c269"
+      ],
+      "summary": "Table 2 | eGFP | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCACCGTGG…"
+    },
+    {
+      "candidate_id": "OC-c8f3682e8d6f8b2a",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-3e0af3e8a096bfad"
+      ],
+      "summary": "This study introduces mRNA-LNP as a potentially translatable safe therapeutic intervention to harness liver regeneration via controlled expression of endogenous mitogens in vivo."
+    },
+    {
+      "candidate_id": "OC-46fea00be5424de3",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-4edf1fef91a68100"
+      ],
+      "summary": "Both IV delivery routes resulted in similar protein expression levels and kinetics, indicating either approach can be employed for transient expression of proteins into the liver."
+    },
+    {
+      "candidate_id": "OC-5a41f5c550b1d73d",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-0fc40055358372a6"
+      ],
+      "summary": "This study demonstrates robust expression of HGF and EGF in virtually all hepatocytes after a single IV injection of the corresponding nucleoside-modified mRNA-LNP."
+    },
+    {
+      "candidate_id": "OC-7dd02c7e03b984a6",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-43469d7d31dc2f74",
+        "GP-004-FC-8527be07372d2f01"
+      ],
+      "summary": "Further, the expression from these mRNAs is transient and diminishes after 4 days making it a powerful tool to achieve synthesis of desired factors in the liver over a short and controllable time frame needed to trigger liver regeneration. Overall, this study introduces the nucleoside-modified mRNA-LNP platform as an unprecedented, non-integrative, and potentially translatable safe therapeutic in…"
+    },
+    {
+      "candidate_id": "OC-a8da74c4cf9abd64",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-05a15a60c5de6cb0"
+      ],
+      "summary": "Moreover, lower ASGPR expression observed in the event of diseases such as hepatocellular carcinoma and hepatitis may diminish effectiveness of the ASGPR-based strategy treatment\\(^{36}\\).”"
+    },
+    {
+      "candidate_id": "OC-6abc02f349d20f49",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-212a3f5a97ef9ecb"
+      ],
+      "summary": "Given the transient expression of mitogen proteins in these additional cell types and the healthy condition of the organs where they reside, we have not observed any overall health issues."
+    },
+    {
+      "candidate_id": "OC-4a2f1296751af41e",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-5231570dd3626ea0"
+      ],
+      "summary": "Moreover, lower ASGPR expression observed in the event of diseases such as hepatocellular carcinoma and hepatitis may diminish effectiveness of the ASGPR-based strategy treatment 36.” 2."
+    },
+    {
+      "candidate_id": "OC-f83a3866b46afe29",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-aa1c2885867bfc0a"
+      ],
+      "summary": "Both IV delivery routes resulted in similar protein expression levels and kinetics, indicating either approach can be employed for transient expression of proteins into the liver.Fig."
+    },
+    {
+      "candidate_id": "OC-497fb2743cabc900",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-4e62cb53c25d4df7"
+      ],
+      "summary": "Moreover, lower ASGPR expression observed in the event of diseases such as hepatocellular carcinoma and hepatitis may diminish effectiveness of the ASGPR-based strategy treatment37."
+    },
+    {
+      "candidate_id": "OC-2e4e0062d6ab3e65",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-a2c53db8556fa5a1"
+      ],
+      "summary": "Mice were either 10–12 week-old Bl6/C57 female for the liver injury models or 7–8 week-old Balb/c female (purchased from the Jackson Laboratory, Bar Harbor, ME) to study the kinetics of expression and identity of cell types transfected in vivo using luciferase- and eGFP mRNA-LNP at homeostasis."
+    },
+    {
+      "candidate_id": "OC-f52b94fef90ad854",
+      "endpoint_family": "expression",
+      "figure_or_table": "Fig. Here",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-616c6c9b68898327",
+        "GP-004-FC-e82b93b20b7075cd"
+      ],
+      "summary": "Both delivery methods led to liver restricted Luc mRNA-LNP expression as measured by bioluminescence (Fig. Here, we determined the organ distribution and duration of protein activity produced by firefly luciferase encoding mRNA-LNP (Luc mRNA-LNP) during a 1-week time course (at 5 h, days 1, 2, 3, 6, and 8) following a single IV injection (5 μg Luc mRNA-LNP/20 g body weight)."
+    },
+    {
+      "candidate_id": "OC-60db5cd03c0b23a6",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-ba736f023c9104f6"
+      ],
+      "summary": "Given the sustained luciferase activity in the liver for 3 consecutive days after a single Luc mRNA-LNP injection, and robust transfection efficiency of eGFP mRNA-LNP to hepatocytes, we extrapolate that HGF and EGF activity is as robust as that of luciferase and, hence, lasts 3 days following mRNA-LNP injection...”"
+    },
+    {
+      "candidate_id": "OC-d1bcdf6d436f92d1",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-b293f56409c89709",
+        "GP-004-E-e29c5e3c31a38827"
+      ],
+      "summary": "Mice were administered 100 μl of diluted mRNA-LNP-encoding luciferase (5 μg), eGFP (10 μg), HGF (10 μg), Poly(C) (10 μg), or combination HGF (5 μg) + EGF (5 μg) intravenously by either retro-orbital or tail vein injections using 1/2cc lo-dose insulin syringes (EXELINT). Mice were either 10–12 week-old Bl6/C57 female for the liver injury models or 7–8 week-old Balb/c female (purchased from the Jac…"
+    },
+    {
+      "candidate_id": "OC-d76e38c26ff535e0",
+      "endpoint_family": "expression",
+      "figure_or_table": "Fig. Here",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-525e4ad8fb4e4525",
+        "GP-004-E-67be9e835a79ab2f"
+      ],
+      "summary": "Both delivery methods led to liver restricted Luc mRNA-LNP expression as measured by bioluminescence (Fig. Here, we determined the organ distribution and duration of protein activity produced by firefly luciferase encoding mRNA-LNP (Luc mRNA-LNP) during a 1-week time course (at 5 h, days 1, 2, 3, 6, and 8) following a single IV injection (5 μg Luc mRNA-LNP/20 g body weight)."
+    },
+    {
+      "candidate_id": "OC-e98ed7f1f044d714",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-7959fb9320bc6c28"
+      ],
+      "summary": "In addition to the PolyC loaded LNP, we have utilized LNP loaded with Luciferase mRNA, and showed that the combination of HGF/EGF mRNA-LNP greatly reduce steatosis by inducing release of cholesterol in serum and decrease of Oil Red O staining as well as restoring baseline levels of serum ALT compared to both PolyC RNA-LNPs and Luciferase mRNA-LNP with the same significance (p<0.005) for both cont…"
+    },
+    {
+      "candidate_id": "OC-6ef5a85bdd95807e",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "summary": "In addition to the PolyC loaded LNP, we have utilized LNP loaded with Luciferase mRNA, and showed that the combination of HGF/EGF mRNA-LNP greatly reduce steatosis by inducing release of cholesterol in serum and decrease of Oil Red O staining as well as restoring baseline levels of serum ALT compared to both PolyC RNA-LNPs and Luciferase mRNA-LNP with the same significance (p<0.005) for both cont…"
+    },
+    {
+      "candidate_id": "OC-83b81cbc99e7d961",
+      "endpoint_family": "expression",
+      "figure_or_table": "table 2",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-5220a7516469049f"
+      ],
+      "summary": "Table 2 | Luciferase | ATGGAGGACGCCAAGAACATCAAGAAGGGCCCCCGCCCCTTCTACCCCTGGAGGACGGCACCGCCGGCGAGCAGCTGCACAAGGCC ATGAAGCGTGACCGCCTGGTGCCCCGGCACCATCGCCTTCACCGACGCCCCACATCGAGGTGGACATCACCTACGCCGAGTACTTCGAGAT GTCCGTGCGCCTGGCGAGGCCATGAAGCGTGACGGCCTGAACACCAACCGCACCATCGTGGTGTGCTCCGAGAACTCCCTGCAGTTCT TCATGCCCCGTGCTGGGCGCCCTGTTCATCGCGCGTGGCCGTGGCCCCCGCCAACGACATCTACAACGAGCGCGAGCTGCTGAACTCCATG GGCATCTCCCAGCCCA…"
+    },
+    {
+      "candidate_id": "OC-40963798573c6a43",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-0a9b95ce825021c9"
+      ],
+      "summary": "We showed that single injections of either HGF or EGF mRNA-LNPs decreased steatosis, although combination of both mRNA-LNP consistently resulted in significantly more efficient steatosis reversion (Fig."
+    },
+    {
+      "candidate_id": "OC-8efff77fdb279db6",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-edc3539834a29b54"
+      ],
+      "summary": "The highest Luc activity was detected as early as 5 h after injection, and remained stable for 24 h."
+    },
+    {
+      "candidate_id": "OC-f8f899baab5a982d",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-288df659c2dbc047"
+      ],
+      "summary": "Single injections of either HGF or EGF mRNA-LNP decreased steatosis, although combination of both mRNA-LNP consistently resulted in significantly more efficient steatosis reversion assessed with serum cholesterol levels and Oil Red O staining (Fig."
+    },
+    {
+      "candidate_id": "OC-4d4829bf783ab83d",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-35fbac5ab5e96d03"
+      ],
+      "summary": "The highest Luc activity was detected as early as 5 h after injection, and remained stable for 24 h."
+    },
+    {
+      "candidate_id": "OC-89baa17c6fd4f543",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-a0464be15711c6e6"
+      ],
+      "summary": "No Yes Public health National security nature Crops and/or livestock Ecosystems Any other significant area research | Experiments of concern Does the work involve any of these experiments of concern: reporting No Yes Demonstrate how to render a vaccine ineffective Confer resistance to therapeutically useful antibiotics or antiviral agents summary Enhance the virulence of a pathogen or render a no…"
+    },
+    {
+      "candidate_id": "OC-d16b5d218b5f5f5a",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-fc1b2e9e166859e2"
+      ],
+      "summary": "We showed that single injections of either HGF or EGF mRNA-LNPs decreased steatosis, although combination of both mRNA-LNP consistently resulted in significantly more efficient steatosis reversion (Fig."
+    },
+    {
+      "candidate_id": "OC-1a11cc805e137876",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-30f8f872b346590e"
+      ],
+      "summary": "Thereafter, bioluminescence decreased progressively with an average rate of one log per day to finally reach baseline activity at day 8 post-injection (Fig."
+    },
+    {
+      "candidate_id": "OC-675ff78454d65c26",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-440906cb169c4960"
+      ],
+      "summary": "Thereafter, bioluminescence decreased progressively with an average rate of one log per day to finally reach baseline activity at day 8 post-injection (Fig."
+    },
+    {
+      "candidate_id": "OC-6e95eb7f9a180e84",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-e5256e5de6315999"
+      ],
+      "summary": "However, a second injection of HGF/EGF mRNA-LNP significantly released cholesterol into the serum, diminished steatosis, and decreased serum ALT levels at T8, suggesting that a repeated regimen of HGF/EGF mRNA-LNP injections could alleviate chronic liver damage."
+    },
+    {
+      "candidate_id": "OC-51ff57a0a06eb1d9",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-475dc42bab808895"
+      ],
+      "summary": "HGF/EGF mRNA-LNP significantly released cholesterol into the serum, diminished steatosis, and decreased serum ALT levels at T8, suggesting that a repeated regimen of HGF/EGF mRNA-LNP injections could alleviate chronic liver damage."
+    },
+    {
+      "candidate_id": "OC-3312457f9efcbcab",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-56f198ac7afbe965",
+        "GP-004-FC-8fe9cc23be8ea5ba"
+      ],
+      "summary": "Moreover, serum levels of ALT, which are indicative of liver damage and hepatocyte necrosis, were restored to normal levels at T2, 2 days after the first injection of HGF/EGF mRNA-LNP. ALT levels in control Poly(C) RNA-LNP-treated mice were as high as T0 levels and slightly decreased in the control Luc mRNA-LNP-treated group, yet significantly greater than those in the HGF/EGF mRNA-LNP-treated gr…"
+    },
+    {
+      "candidate_id": "OC-cb1dfc03c6c5675c",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-7959fb9320bc6c28"
+      ],
+      "summary": "In addition to the PolyC loaded LNP, we have utilized LNP loaded with Luciferase mRNA, and showed that the combination of HGF/EGF mRNA-LNP greatly reduce steatosis by inducing release of cholesterol in serum and decrease of Oil Red O staining as well as restoring baseline levels of serum ALT compared to both PolyC RNA-LNPs and Luciferase mRNA-LNP with the same significance (p<0.005) for both cont…"
+    },
+    {
+      "candidate_id": "OC-ac30f8413d9525a1",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "summary": "In addition to the PolyC loaded LNP, we have utilized LNP loaded with Luciferase mRNA, and showed that the combination of HGF/EGF mRNA-LNP greatly reduce steatosis by inducing release of cholesterol in serum and decrease of Oil Red O staining as well as restoring baseline levels of serum ALT compared to both PolyC RNA-LNPs and Luciferase mRNA-LNP with the same significance (p<0.005) for both cont…"
+    },
+    {
+      "candidate_id": "OC-f83b0a5ef45facc3",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-b6885133ef1829b2"
+      ],
+      "summary": "As described in the CDE-induced liver injury model, influx of CD45\\(^{+}\\) cells increased after 3 weeks of CDE diet compared to untreated mice."
+    },
+    {
+      "candidate_id": "OC-8aca7ce3776539ab",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-fca4f015314f1330"
+      ],
+      "summary": "As described in the CDE-induced liver injury model, influx of CD45+ cells increased after 3 weeks of CDE diet compared to untreated mice."
+    },
+    {
+      "candidate_id": "OC-ec2f4916beb7b305",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "summary": "As described in the CDE-induced liver injury model, influx of CD45+ cells increased after 3 weeks of CDE diet compared to untreated mice."
+    },
+    {
+      "candidate_id": "OC-cfd19f26417f2c38",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "summary": "As described in the CDE-induced liver injury model, influx of CD45+ cells increased after 3 weeks of CDE diet compared to untreated mice."
+    },
+    {
+      "candidate_id": "OC-3aa23151f38aab3d",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "fig. 4",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-2e8f5a6d0e0a4294"
+      ],
+      "summary": "HGF/EGF mRNA-LNP accelerate restoration of liver function during recovery from CDE-induced chronic liver injury.a Injury scheme timeline: mice were fed CDD choline deficient diet for 1 week followed by three weeks of CDD diet supplemented with 0.1% ethionine (CDE)."
+    },
+    {
+      "candidate_id": "OC-6d7c8567a5ab3d71",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "fig. 5",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-66ac09c4b5f261eb"
+      ],
+      "summary": "HGF/EGF mRNA-LNP ameliorate liver function during continuous CDE-induced chronic liver injury.a Injury scheme timeline: mice were fed CDD choline deficient diet for 1 week followed by continuous CDD diet supplemented with 0.1% ethionine (CDE) for 4 weeks."
+    },
+    {
+      "candidate_id": "OC-e9f813076a9d1b4f",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure 6",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-9f6bb28c7bb574ae"
+      ],
+      "summary": "Figure 6 demonstrates that HGF/EGF mRNA-LNP accelerate restoration of liver function in the acute acetaminophen-induced liver injury model."
+    },
+    {
+      "candidate_id": "OC-9379257d471cefab",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure additions",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-9a04fb9c692f62ae"
+      ],
+      "summary": "albumin was a suggestion not a hard target (as the authors could have tried other markers such as KRT 18 etc); the addition of the additional injury model and overall text and figure additions greatly strengthen the manuscript."
+    },
+    {
+      "candidate_id": "OC-e50ff7b5de4e8fcc",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure additions",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-b176eb235b24a33a"
+      ],
+      "summary": "albumin was a suggestion not a hard target (as the authors could have tried other markers such as KRT 18 etc); the addition of the additional injury model and overall text and figure additions greatly strengthen the manuscript."
+    },
+    {
+      "candidate_id": "OC-86da2d8538970e2e",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-748a7c1bb95e21b3"
+      ],
+      "summary": "Analyses of lipid accumulation in hepatocytes as assessed by Oil Red O staining on liver sections revealed a sharp decrease of steatosis 2 days after the first injection of HGF/EGF mRNA-LNP compared to that with Poly(C) RNA-LNP treatment, in which steatosis was evenly maintained with persistent macrosteatosis (Fig."
+    }
+  ]
+}

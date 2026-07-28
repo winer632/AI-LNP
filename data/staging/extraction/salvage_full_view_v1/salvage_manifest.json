@@ -1,0 +1,284 @@
+{
+  "salvage_version": "record-salvage-1.0.0",
+  "flag": "record_level_salvage",
+  "flag_enabled": true,
+  "run_roots": [
+    "data/staging/extraction/codex_full_view_v2_gp004_retry",
+    "data/staging/extraction/codex_full_view_v2"
+  ],
+  "papers": [
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2_gp004_retry/GP-004",
+      "paper_id": "GP-004",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-004.json",
+      "packet_drift": false,
+      "validation_status": "invalid",
+      "validation_findings": [
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "eligibility",
+            "evidence_ids"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "formulations",
+            0,
+            "formulation_name"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "formulations",
+            0,
+            "composition"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "formulations",
+            0,
+            "composition_basis"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            0,
+            "identity"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            0,
+            "role"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            1,
+            "identity"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            1,
+            "role"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            2,
+            "identity"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            2,
+            "role"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            3,
+            "identity"
+          ]
+        },
+        {
+          "code": "unknown_evidence_id",
+          "location": [
+            "components",
+            3,
+            "role"
+          ]
+        }
+      ],
+      "salvage_status": "salvaged",
+      "kept": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 4,
+        "outcomes": 6
+      },
+      "rejected": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "eligibility_kept": false,
+      "dropped": 7
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-001",
+      "paper_id": "GP-001",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-001.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-002",
+      "paper_id": "GP-002",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-002.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-003",
+      "paper_id": "GP-003",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-003.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-004",
+      "paper_id": "GP-004",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-004.json",
+      "packet_drift": false,
+      "validation_status": "invalid",
+      "validation_findings": [
+        {
+          "code": "pydantic.value_error",
+          "location": [
+            "outcomes",
+            0,
+            "comparator"
+          ]
+        }
+      ],
+      "salvage_status": "salvaged",
+      "kept": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 3,
+        "outcomes": 3
+      },
+      "rejected": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 1
+      },
+      "eligibility_kept": false,
+      "dropped": 3,
+      "skipped_conflict": true
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-005",
+      "paper_id": "GP-005",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-005.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-006",
+      "paper_id": "GP-006",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-006.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-007",
+      "paper_id": "GP-007",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-007.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-008",
+      "paper_id": "GP-008",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-008.json",
+      "packet_drift": false,
+      "validation_status": "valid",
+      "validation_findings": [],
+      "salvage_status": "not_attempted",
+      "kept": {},
+      "rejected": {},
+      "eligibility_kept": false,
+      "dropped": 0
+    },
+    {
+      "run_dir": "data/staging/extraction/codex_full_view_v2/GP-009",
+      "paper_id": "GP-009",
+      "packet": "/Users/wangxinxin/Desktop/LNP/AI-LNP/data/staging/rag/full_api_packets_v1/GP-009.json",
+      "packet_drift": false,
+      "validation_status": "invalid",
+      "validation_findings": [
+        {
+          "code": "pydantic.value_error",
+          "location": [
+            "eligibility"
+          ]
+        }
+      ],
+      "salvage_status": "unsalvageable",
+      "kept": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "rejected": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0
+      },
+      "eligibility_kept": false,
+      "dropped": 2
+    }
+  ]
+}

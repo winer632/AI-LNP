@@ -1,0 +1,20 @@
+{
+  "report_version": "compact-validation-1.0.0",
+  "paper_id": "GP-009",
+  "status": "invalid",
+  "findings": [
+    {
+      "finding_id": "VF-99da98d033fcd3af",
+      "code": "pydantic.value_error",
+      "message": "Value error, uncertain requires a manual-review reason code",
+      "location": [
+        "eligibility"
+      ],
+      "record_collection": null,
+      "record_index": null,
+      "field_name": null,
+      "cited_evidence_ids": [],
+      "repairable": false
+    }
+  ]
+}

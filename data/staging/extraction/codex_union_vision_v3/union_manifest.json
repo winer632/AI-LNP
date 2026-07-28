@@ -1,0 +1,19 @@
+{
+  "union_version": "union-extraction-1.2.0",
+  "note": "codex_union_v1, with GP-004 unioned against the record-level salvage of the full-view run, then the GP-004 and GP-006 panel reads merged in. Requires vision_relationship_polarity and record_level_salvage.",
+  "base_root": "data/staging/extraction/codex_union_v1",
+  "salvage_root": "data/staging/extraction/salvage_full_view_v1",
+  "salvage_source_runs": [
+    "data/staging/extraction/codex_full_view_v2_gp004_retry",
+    "data/staging/extraction/codex_full_view_v2"
+  ],
+  "vision_observations": [
+    "data/staging/extraction/codex_vision_v1/GP-004/observation.json",
+    "data/staging/extraction/codex_vision_v1/GP-006/observation.json"
+  ],
+  "total_outcomes": 59,
+  "requires_flags": [
+    "vision_relationship_polarity",
+    "record_level_salvage"
+  ]
+}

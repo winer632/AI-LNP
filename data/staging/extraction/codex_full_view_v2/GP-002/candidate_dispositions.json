@@ -1,0 +1,552 @@
+[
+  {
+    "candidate_id": "OC-c07a6b58d3f32a1e",
+    "disposition": "not_an_outcome",
+    "reason": "Imaging-scale method and autofluorescence description, not a measured delivery outcome."
+  },
+  {
+    "candidate_id": "OC-3d52c3821fd6eafb",
+    "disposition": "not_an_outcome",
+    "reason": "Imaging-scale method and autofluorescence description, not a measured delivery outcome."
+  },
+  {
+    "candidate_id": "OC-1cc441afd5c7df7e",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-e40193481016f6ec",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor result is reported, but no linked eligible hepatocyte experiment was extracted for it."
+  },
+  {
+    "candidate_id": "OC-db8eead32fb8fcfc",
+    "disposition": "unresolved",
+    "reason": "Qualitative observation is reported without a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-8bd63f07cb5c450a",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of what eGFP expression integrates, not a measured endpoint."
+  },
+  {
+    "candidate_id": "OC-79fcfd6592318e0e",
+    "disposition": "unresolved",
+    "reason": "Reports results from different tumor experiments in one candidate; no single usable linked outcome extracted."
+  },
+  {
+    "candidate_id": "OC-4b7988bead8ecef1",
+    "disposition": "unresolved",
+    "reason": "Reported liver-staining range lacks an explicit experiment linkage in the candidate evidence."
+  },
+  {
+    "candidate_id": "OC-0a3cf6650c9c014a",
+    "disposition": "unresolved",
+    "reason": "Tumor comparison outcome is not linked to an eligible hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-ef4207be1e24b850",
+    "disposition": "not_an_outcome",
+    "reason": "Dataset availability statement, not a measured result."
+  },
+  {
+    "candidate_id": "OC-e6d525f64ff4f864",
+    "disposition": "unresolved",
+    "reason": "Candidate combines separate outcomes; only the directly linked F3/F4 staining outcome was extracted elsewhere."
+  },
+  {
+    "candidate_id": "OC-ead54395fc4bda44",
+    "disposition": "not_an_outcome",
+    "reason": "Study aim and assay setup, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-acb0a7f1f2fc2b6e",
+    "disposition": "unresolved",
+    "reason": "Qualitative cross-model interpretation without a usable reported value."
+  },
+  {
+    "candidate_id": "OC-fc5c061d9c1fe10a",
+    "disposition": "unresolved",
+    "reason": "Qualitative heterogeneous steatotic-tumor observations lack a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-f4b5ab858a576dd8",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver protein result is not linked to an eligible hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-eed7e1f75d3b9456",
+    "disposition": "unresolved",
+    "reason": "Candidate combines two endpoints; hepatocyte staining is extracted separately and transcript count uses different evidence."
+  },
+  {
+    "candidate_id": "OC-4a93b99682dec868",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of the eGFP readout, not a measured uptake outcome."
+  },
+  {
+    "candidate_id": "OC-90a967746b7e75c8",
+    "disposition": "not_an_outcome",
+    "reason": "Dataset availability statement, not a measured result."
+  },
+  {
+    "candidate_id": "OC-10f94cefc36674ce",
+    "disposition": "unresolved",
+    "reason": "Tumor comparison outcome is not linked to an eligible hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-e194c9b63fe178c7",
+    "disposition": "unresolved",
+    "reason": "Candidate combines separate endpoints; the F3/F4 staining outcome is extracted with full-corpus evidence."
+  },
+  {
+    "candidate_id": "OC-a24ea8745e9f9b5e",
+    "disposition": "not_an_outcome",
+    "reason": "Administration description, not a measured result."
+  },
+  {
+    "candidate_id": "OC-e8da04bb044e4869",
+    "disposition": "not_an_outcome",
+    "reason": "Administration description, not a measured result."
+  },
+  {
+    "candidate_id": "OC-1452a581799c1397",
+    "disposition": "unresolved",
+    "reason": "Qualitative western-blot result lacks a reported numerical value."
+  },
+  {
+    "candidate_id": "OC-f0015c41f8adba68",
+    "disposition": "unresolved",
+    "reason": "Qualitative western-blot result lacks a reported numerical value."
+  },
+  {
+    "candidate_id": "OC-15fb7f52ef1af536",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-1242d5e32b089413",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-060b5cffa31e22f4",
+    "disposition": "unresolved",
+    "reason": "The same outcome is extracted using the full-corpus evidence identifier."
+  },
+  {
+    "candidate_id": "OC-d0497bb64e05ec7e",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-7e9a8ced3133e50e",
+    "disposition": "unresolved",
+    "reason": "The same outcome is extracted using the full-corpus evidence identifier."
+  },
+  {
+    "candidate_id": "OC-8f0c2a178c780bf3",
+    "disposition": "unresolved",
+    "reason": "Protein comparison is reported but no numerical protein abundance value is supplied."
+  },
+  {
+    "candidate_id": "OC-fdd971ebca4815de",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver comparison is outside the extracted eligible hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-ef26ce88f2b65b1c",
+    "disposition": "not_an_outcome",
+    "reason": "Dosing schedule and euthanasia method, not a measured result."
+  },
+  {
+    "candidate_id": "OC-9743adcae645e923",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor western-blot result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-b35011d5bbb83a51",
+    "disposition": "not_an_outcome",
+    "reason": "Model and dosing description, not a measured result."
+  },
+  {
+    "candidate_id": "OC-1718400554085c04",
+    "disposition": "not_an_outcome",
+    "reason": "Model and dosing description, not a measured result."
+  },
+  {
+    "candidate_id": "OC-5076126bfcd36521",
+    "disposition": "not_an_outcome",
+    "reason": "Xenograft protocol, not a measured result."
+  },
+  {
+    "candidate_id": "OC-2152faf4b7b6614d",
+    "disposition": "unresolved",
+    "reason": "Candidate combines two secondary-tumor outcomes rather than one usable linked result."
+  },
+  {
+    "candidate_id": "OC-8a6b10a6846fa309",
+    "disposition": "unresolved",
+    "reason": "Figure note reports qualitative negative/marginal results without usable values."
+  },
+  {
+    "candidate_id": "OC-8db00015f31358d1",
+    "disposition": "unresolved",
+    "reason": "Figure note reports qualitative negative/marginal results without usable values."
+  },
+  {
+    "candidate_id": "OC-2777d59ff45dfa26",
+    "disposition": "unresolved",
+    "reason": "Reported digestive-tract fluorescence is identified as gut-content signal rather than eGFP expression."
+  },
+  {
+    "candidate_id": "OC-b5214a6283fd2e8d",
+    "disposition": "unresolved",
+    "reason": "Reported digestive-tract fluorescence is identified as gut-content signal rather than eGFP expression."
+  },
+  {
+    "candidate_id": "OC-3698f18bef004f7b",
+    "disposition": "unresolved",
+    "reason": "Negative serum result is reported but belongs to a non-hepatocyte specimen and no serum experiment was extracted."
+  },
+  {
+    "candidate_id": "OC-d5b8b2bc47e261ff",
+    "disposition": "unresolved",
+    "reason": "Negative serum result is reported but belongs to a non-hepatocyte specimen and no serum experiment was extracted."
+  },
+  {
+    "candidate_id": "OC-d10a17e36a8d32a0",
+    "disposition": "unresolved",
+    "reason": "Negative lung-metastasis result is outside the extracted hepatic-cell experiments."
+  },
+  {
+    "candidate_id": "OC-ae0f83a43c359c8e",
+    "disposition": "unresolved",
+    "reason": "Qualitative secondary-tumor IHC result lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-92ba436b2d104f01",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor IHC result lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-6a2afb79532684a5",
+    "disposition": "not_an_outcome",
+    "reason": "Assay-development method, not a measured biological result."
+  },
+  {
+    "candidate_id": "OC-e9b802bb0d8c800c",
+    "disposition": "unresolved",
+    "reason": "Candidate combines tumor staining outcomes and qualitative observations."
+  },
+  {
+    "candidate_id": "OC-2312390bb883a065",
+    "disposition": "unresolved",
+    "reason": "Tumor protein result is outside the extracted eligible hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-427ec555f9f6c54d",
+    "disposition": "unresolved",
+    "reason": "The same hepatocyte qualitative result is extracted using the figure-specific evidence."
+  },
+  {
+    "candidate_id": "OC-638db68febd191fa",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution statement does not provide a cell-specific usable value."
+  },
+  {
+    "candidate_id": "OC-2623599d94a7d60e",
+    "disposition": "unresolved",
+    "reason": "Liver-level fluorescence does not directly identify hepatocytes."
+  },
+  {
+    "candidate_id": "OC-faa78845363ecaf0",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution statement does not provide a cell-specific usable value."
+  },
+  {
+    "candidate_id": "OC-51ed93e8a25a6f2a",
+    "disposition": "not_an_outcome",
+    "reason": "Cited prior-study discussion, not this paper's measured result."
+  },
+  {
+    "candidate_id": "OC-af998d475785c2e3",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of a result, not a separately measured outcome."
+  },
+  {
+    "candidate_id": "OC-9afe4cec178dfc59",
+    "disposition": "unresolved",
+    "reason": "Liver-cell PD-L1 result is not cell-type-resolved to an eligible target cell."
+  },
+  {
+    "candidate_id": "OC-9cd00f8db7b25012",
+    "disposition": "unresolved",
+    "reason": "Cell-density result includes an interpretation and is outside the extracted hepatic-cell delivery outcomes."
+  },
+  {
+    "candidate_id": "OC-ce2de3c06dac0313",
+    "disposition": "unresolved",
+    "reason": "Cross-model interpretation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-c420cea94b720305",
+    "disposition": "unresolved",
+    "reason": "Summary interpretation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-be130a2c955ead0b",
+    "disposition": "unresolved",
+    "reason": "Secondary-tumor fluorescence result is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-37cbe8e8083c87a8",
+    "disposition": "unresolved",
+    "reason": "Broad summary combines multiple models without a single usable linked value."
+  },
+  {
+    "candidate_id": "OC-a50489141b99ce89",
+    "disposition": "unresolved",
+    "reason": "Broad summary combines multiple models without a single usable linked value."
+  },
+  {
+    "candidate_id": "OC-4fda5466f4a1b88c",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver fluorescence result is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-fda65cbaa1dc0d40",
+    "disposition": "not_an_outcome",
+    "reason": "Rationale for endpoint selection, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-9ebfc67de0eb3924",
+    "disposition": "unresolved",
+    "reason": "Cell-density result includes an interpretation and is outside the extracted hepatic-cell delivery outcomes."
+  },
+  {
+    "candidate_id": "OC-22c6a3379426a8a8",
+    "disposition": "unresolved",
+    "reason": "Abstract-level summary lacks a usable experiment-specific value."
+  },
+  {
+    "candidate_id": "OC-c2173308d4b9dc9b",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver fluorescence result is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-79c01123bfb9fd67",
+    "disposition": "unresolved",
+    "reason": "Liver-cell PD-L1 result is not cell-type-resolved to an eligible target cell."
+  },
+  {
+    "candidate_id": "OC-e5bc4a6ea74c1e2d",
+    "disposition": "not_an_outcome",
+    "reason": "Cited prior-study discussion, not this paper's measured result."
+  },
+  {
+    "candidate_id": "OC-5585c3665131c9c6",
+    "disposition": "unresolved",
+    "reason": "Liver-level fluorescence does not directly identify hepatocytes."
+  },
+  {
+    "candidate_id": "OC-1f86aa230eea2dfa",
+    "disposition": "unresolved",
+    "reason": "Liver-level fluorescence does not directly identify hepatocytes."
+  },
+  {
+    "candidate_id": "OC-db7ad83f410ef5aa",
+    "disposition": "unresolved",
+    "reason": "Tumor-size correlation is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-2b41da7089faf21a",
+    "disposition": "unresolved",
+    "reason": "Tumor-size correlation is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-ec210798fe5601a0",
+    "disposition": "unresolved",
+    "reason": "Tumor protein comparison is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-c962ac4a172bfea5",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor observation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-3b9d090c78a1fafa",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor observation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-2eef306098b8b345",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor-interior observation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-62b35887d2baafde",
+    "disposition": "unresolved",
+    "reason": "Qualitative tumor-interior observation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-fff703ebbe2af44e",
+    "disposition": "unresolved",
+    "reason": "Tumor-size correlation is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-2086c33e826594d7",
+    "disposition": "unresolved",
+    "reason": "Tumor-size correlation is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-e343c1205e8998d7",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver correlation is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-9333deedb233158a",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver correlation is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-9902ae2b23153a34",
+    "disposition": "unresolved",
+    "reason": "LDLR staining is not a direct LNP uptake measurement."
+  },
+  {
+    "candidate_id": "OC-5973999c1ad40414",
+    "disposition": "unresolved",
+    "reason": "Statement confirms tumor-interior expression but supplies no usable value."
+  },
+  {
+    "candidate_id": "OC-8ca17f0adde56c50",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver fluorescence result is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-da52b5204614836f",
+    "disposition": "unresolved",
+    "reason": "Tumor-versus-liver fluorescence result is outside the extracted hepatic-cell experiment."
+  },
+  {
+    "candidate_id": "OC-bf7b61afb5002f9b",
+    "disposition": "not_an_outcome",
+    "reason": "Xenograft model setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-e22293ae0e958cf1",
+    "disposition": "not_an_outcome",
+    "reason": "Xenograft model setup, not a measured result."
+  },
+  {
+    "candidate_id": "OC-a5a09b0f38c731f6",
+    "disposition": "not_an_outcome",
+    "reason": "Assay rationale and method, not a measured result."
+  },
+  {
+    "candidate_id": "OC-1eeb58b3052cd7fb",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic interpretation, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-0acd35384f0497ba",
+    "disposition": "unresolved",
+    "reason": "The F3/F4 expression outcome is extracted as an expression endpoint, not therapeutic function."
+  },
+  {
+    "candidate_id": "OC-8c7ca01754323a85",
+    "disposition": "not_an_outcome",
+    "reason": "Literature-context statement, not a measured result."
+  },
+  {
+    "candidate_id": "OC-5068c4e9cf3a34bb",
+    "disposition": "unresolved",
+    "reason": "The F3/F4 expression outcome is extracted as an expression endpoint, not therapeutic function."
+  },
+  {
+    "candidate_id": "OC-13fa607811d50470",
+    "disposition": "unresolved",
+    "reason": "Qualitative fibrosis interpretation lacks a usable numerical value."
+  },
+  {
+    "candidate_id": "OC-7c0b8124aaeed9f1",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model description, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-12b403408c46e1cf",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model description, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-e501e282d4efe3f9",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-7fa110cf43998272",
+    "disposition": "not_an_outcome",
+    "reason": "Fibrosis-score characterization, not an LNP delivery outcome."
+  },
+  {
+    "candidate_id": "OC-a7a685b740db1fb4",
+    "disposition": "unresolved",
+    "reason": "Hepatocyte-only staining comparison is reported but no explicit experiment record identifies that subset's dosing/timepoint."
+  },
+  {
+    "candidate_id": "OC-b3cb876e43d0a613",
+    "disposition": "unresolved",
+    "reason": "LDLR transcript result is not a direct LNP delivery outcome."
+  },
+  {
+    "candidate_id": "OC-01ccdc93de318e97",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution statement lacks a cell-specific usable value."
+  },
+  {
+    "candidate_id": "OC-78af0ec441549249",
+    "disposition": "unresolved",
+    "reason": "LDLR transcript result is not a direct LNP delivery outcome."
+  },
+  {
+    "candidate_id": "OC-1eb0177ddb77db8e",
+    "disposition": "unresolved",
+    "reason": "Broad biodistribution statement lacks a cell-specific usable value."
+  },
+  {
+    "candidate_id": "OC-26854cb0684f0bb8",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic background statement, not a measured outcome."
+  },
+  {
+    "candidate_id": "OC-1a55d0c33d784cd8",
+    "disposition": "unresolved",
+    "reason": "LDLR staining is not a toxicity outcome."
+  },
+  {
+    "candidate_id": "OC-35bd01ba9d5a4e36",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of what eGFP expression integrates, not a direct uptake measurement."
+  },
+  {
+    "candidate_id": "OC-3193df37ffc2d5ef",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of what eGFP expression integrates, not a direct uptake measurement."
+  },
+  {
+    "candidate_id": "OC-68d1d2bfe17d0592",
+    "disposition": "unresolved",
+    "reason": "LDLR staining is not a direct LNP uptake measurement."
+  },
+  {
+    "candidate_id": "OC-642ce45daa21829b",
+    "disposition": "unresolved",
+    "reason": "LDLR staining is not a direct LNP uptake measurement."
+  },
+  {
+    "candidate_id": "OC-9394a5f0cec55250",
+    "disposition": "unresolved",
+    "reason": "Negative lung-metastasis result is outside the extracted hepatic-cell experiment."
+  }
+]
