@@ -47,13 +47,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.config_flags import is_enabled
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.build_outcome_candidates import build_candidates
 from src.extraction.check_outcome_coverage import check
 from src.extraction.compact_prompt_v1 import (
-    COMPACT_EXTRACTION_PROMPT,
-    PROMPT_VERSION,
-    prompt_sha256,
+    active_prompt,
+    candidate_slot_payload,
 )
 from src.extraction.compact_validation import validate_candidate
 from src.rag.compact_api_packet import CompactApiPacket
@@ -63,6 +63,10 @@ DEFAULT_MODEL = "gpt-5.6-terra"
 DEFAULT_REASONING_EFFORT = "low"
 DEFAULT_TIMEOUT_SECONDS = 1800
 HARNESS = "codex-exec"
+# Kept as a literal rather than imported from run_compact_one_call: that module
+# imports the OpenAI SDK at module level, and this harness must stay loadable
+# without it.
+CANDIDATE_SLOT_FLAG = "candidate_slot_enforcement"
 
 PACKET_ROOT_BY_VIEW = {
     "compact": ROOT / "data" / "staging" / "rag" / "compact_api_packets_v1",
@@ -79,7 +83,7 @@ def _canonical_json(payload: Any) -> str:
     return json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
-def strict_schema() -> dict[str, Any]:
+def strict_schema(candidate_slot_enforcement: bool = False) -> dict[str, Any]:
     """Return the same strict schema the paid path sends.
 
     Imported lazily: ``openai`` is only needed for the schema transform, not for
@@ -88,9 +92,16 @@ def strict_schema() -> dict[str, Any]:
     """
     from openai.lib._pydantic import to_strict_json_schema
 
-    from src.extraction.compact_contracts import CompactExtractionResponse
+    from src.extraction.compact_contracts import (
+        CandidateSlotExtractionResponse,
+        CompactExtractionResponse,
+    )
 
-    return to_strict_json_schema(CompactExtractionResponse)
+    return to_strict_json_schema(
+        CandidateSlotExtractionResponse
+        if candidate_slot_enforcement
+        else CompactExtractionResponse
+    )
 
 
 def load_packet(paper_id: str, packet_root: Path) -> CompactApiPacket:
@@ -107,13 +118,22 @@ def load_packet(paper_id: str, packet_root: Path) -> CompactApiPacket:
     return packet
 
 
-def build_prompt(packet: CompactApiPacket) -> str:
+def build_prompt(
+    packet: CompactApiPacket,
+    candidate_slots: list[dict[str, Any]] | None = None,
+) -> str:
     payload = packet.model_dump(mode="json", exclude_none=True)
-    return (
-        f"{COMPACT_EXTRACTION_PROMPT}\n\n"
+    prompt = active_prompt(candidate_slots is not None)
+    text = (
+        f"{prompt.text}\n\n"
         "Return only the JSON object required by the output schema.\n\n"
         "INPUT PACKET:\n" + _canonical_json(payload)
     )
+    if candidate_slots is not None:
+        text += "\n\nCANDIDATE SLOTS:\n" + _canonical_json(
+            {"candidate_slots": candidate_slots}
+        )
+    return text
 
 
 def codex_available() -> bool:
@@ -199,18 +219,26 @@ def run_one(
         )
 
     packet = load_packet(paper_id, resolved_root)
-    prompt = build_prompt(packet)
-    schema = strict_schema()
+
+    complexity = assess(packet)
+    outcome_candidates = (
+        build_candidates(packet) if complexity.route == "complex" else None
+    )
+    candidate_slots = (
+        candidate_slot_payload(outcome_candidates)
+        if outcome_candidates and is_enabled(CANDIDATE_SLOT_FLAG)
+        else None
+    )
+    prompt = build_prompt(packet, candidate_slots)
+    prompt_selection = active_prompt(candidate_slots is not None)
+    schema = strict_schema(candidate_slots is not None)
 
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    complexity = assess(packet)
     (run_dir / "complexity.json").write_text(
         complexity.model_dump_json(indent=2) + "\n", encoding="utf-8"
     )
-    outcome_candidates = None
-    if complexity.route == "complex":
-        outcome_candidates = build_candidates(packet)
+    if outcome_candidates is not None:
         (run_dir / "outcome_candidates.json").write_text(
             json.dumps(
                 [row.model_dump(mode="json") for row in outcome_candidates],
@@ -220,26 +248,30 @@ def run_one(
             + "\n",
             encoding="utf-8",
         )
-
-    (run_dir / "request.json").write_text(
-        json.dumps(
-            {
-                "harness": HARNESS,
-                "paper_id": paper_id,
-                "model": model,
-                "reasoning_effort": reasoning_effort,
-                "evidence_view": evidence_view,
-                "packet_root": str(resolved_root),
-                "prompt_version": PROMPT_VERSION,
-                "prompt_checksum": prompt_sha256(),
-                "schema_checksum": _sha256(_canonical_json(schema).encode("utf-8")),
-                "packet_checksum": packet.packet_checksum,
-                "prompt_characters": len(prompt),
-            },
-            ensure_ascii=False,
-            indent=2,
+    if candidate_slots is not None:
+        (run_dir / "candidate_slots.json").write_text(
+            json.dumps(candidate_slots, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
         )
-        + "\n",
+
+    request_snapshot = {
+        "harness": HARNESS,
+        "paper_id": paper_id,
+        "model": model,
+        "reasoning_effort": reasoning_effort,
+        "evidence_view": evidence_view,
+        "packet_root": str(resolved_root),
+        "prompt_version": prompt_selection.version,
+        "prompt_checksum": prompt_selection.checksum,
+        "schema_checksum": _sha256(_canonical_json(schema).encode("utf-8")),
+        "packet_checksum": packet.packet_checksum,
+        "prompt_characters": len(prompt),
+    }
+    if candidate_slots is not None:
+        request_snapshot["candidate_slot_enforcement"] = True
+        request_snapshot["candidate_slots"] = candidate_slots
+    (run_dir / "request.json").write_text(
+        json.dumps(request_snapshot, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
@@ -261,14 +293,36 @@ def run_one(
         response["text"],
         paper_id=paper_id,
         allowed_evidence_ids={row.evidence_id for row in packet.evidence},
+        required_candidate_ids=(
+            None
+            if candidate_slots is None
+            else [str(slot["candidate_id"]) for slot in candidate_slots]
+        ),
     )
     (run_dir / "validation_report.json").write_text(
         validation.model_dump_json(indent=2) + "\n", encoding="utf-8"
     )
+    result_payload = (
+        None
+        if parsed is None
+        else parsed.model_dump(mode="json", exclude={"candidate_dispositions"})
+    )
     if parsed is not None:
+        if candidate_slots is not None:
+            (run_dir / "candidate_dispositions.json").write_text(
+                json.dumps(
+                    [
+                        row.model_dump(mode="json")
+                        for row in getattr(parsed, "candidate_dispositions", [])
+                    ],
+                    ensure_ascii=False,
+                    indent=2,
+                )
+                + "\n",
+                encoding="utf-8",
+            )
         (run_dir / "result.json").write_text(
-            json.dumps(parsed.model_dump(mode="json"), ensure_ascii=False, indent=2)
-            + "\n",
+            json.dumps(result_payload, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
 
@@ -276,7 +330,7 @@ def run_one(
     if parsed is not None and complexity.route == "complex":
         coverage = check(
             packet,
-            parsed.model_dump(mode="json"),
+            result_payload,
             assessment=complexity,
             candidates=outcome_candidates,
         )
@@ -311,6 +365,9 @@ def run_one(
         "openai_api_requests": 0,
         "codex_exec_turns": 1,
     }
+    if candidate_slots is not None:
+        manifest["candidate_slot_enforcement"] = True
+        manifest["candidate_slots"] = len(candidate_slots)
     (run_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

@@ -4,11 +4,12 @@ from __future__ import annotations
 
 import hashlib
 import json
-from typing import Any, Literal
+from typing import Any, Iterable, Mapping, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 from src.extraction.compact_contracts import (
+    CandidateSlotExtractionResponse,
     CompactExtractionResponse,
     ReportedField,
 )
@@ -122,13 +123,108 @@ def _finding(
     )
 
 
+def _slot_coverage_findings(
+    parsed: CompactExtractionResponse,
+    candidate: dict[str, Any],
+    *,
+    paper_id: str,
+    required_candidate_ids: Iterable[str],
+    candidate_evidence_ids: Mapping[str, Iterable[str]] | None = None,
+) -> list[ValidationFinding]:
+    """Reject a response that leaves a supplied candidate slot unanswered.
+
+    This is the first-call half of the rule the repair stage already enforces:
+    every candidate ID that was sent must come back with a disposition, and no
+    disposition may name an ID that was never sent.
+
+    ``extracted`` is additionally checked against the returned records. Measured
+    on GP-006, a response marked all four candidates covering Table S2's
+    insertion-frequency row as ``extracted`` while returning no record carrying
+    1.01, so an unverified self-report reintroduces exactly the silent omission
+    the slots exist to prevent.
+    """
+
+    required = list(dict.fromkeys(required_candidate_ids))
+    answered = parsed.candidate_disposition_ids()
+    findings: list[ValidationFinding] = []
+
+    for candidate_id in required:
+        if candidate_id in answered:
+            continue
+        findings.append(
+            _finding(
+                paper_id=paper_id,
+                code="missing_candidate_disposition",
+                message=(
+                    f"Candidate {candidate_id} was sent as an answerable slot but "
+                    "the response returned no disposition for it; silence is not "
+                    "a valid disposition"
+                ),
+                location=["candidate_dispositions", candidate_id],
+                candidate=candidate,
+            )
+        )
+
+    for candidate_id in sorted(answered - set(required)):
+        findings.append(
+            _finding(
+                paper_id=paper_id,
+                code="unknown_candidate_id",
+                message=(
+                    f"Response dispositions candidate {candidate_id}, which was "
+                    "not supplied as a slot"
+                ),
+                location=["candidate_dispositions", candidate_id],
+                candidate=candidate,
+            )
+        )
+
+    if candidate_evidence_ids:
+        cited = _evidence_ids(
+            [row.model_dump(mode="json") for row in parsed.outcomes]
+        )
+        cited_set = set(cited)
+        for disposition in getattr(parsed, "candidate_dispositions", []) or []:
+            if disposition.disposition != "extracted":
+                continue
+            expected = set(candidate_evidence_ids.get(disposition.candidate_id, ()))
+            if not expected or expected & cited_set:
+                continue
+            findings.append(
+                _finding(
+                    paper_id=paper_id,
+                    code="unsupported_extracted_disposition",
+                    message=(
+                        f"Candidate {disposition.candidate_id} is marked extracted "
+                        "but none of its evidence is cited by any returned outcome"
+                    ),
+                    location=["candidate_dispositions", disposition.candidate_id],
+                    candidate=candidate,
+                )
+            )
+    return findings
+
+
 def validate_candidate(
     candidate_text: str,
     *,
     paper_id: str,
     allowed_evidence_ids: set[str],
+    required_candidate_ids: Iterable[str] | None = None,
+    candidate_evidence_ids: Mapping[str, Iterable[str]] | None = None,
 ) -> tuple[CompactExtractionResponse | None, ValidationReport]:
-    """Validate one first-call candidate and return machine-readable findings."""
+    """Validate one first-call candidate and return machine-readable findings.
+
+    ``required_candidate_ids`` switches on candidate-slot enforcement (P3): the
+    response is parsed against :class:`CandidateSlotExtractionResponse` and must
+    account for every ID that was sent. Leave it ``None`` -- the default -- for
+    the baseline contract and the baseline findings.
+    """
+    response_model: type[CompactExtractionResponse] = (
+        CompactExtractionResponse
+        if required_candidate_ids is None
+        else CandidateSlotExtractionResponse
+    )
     try:
         candidate = json.loads(candidate_text)
     except json.JSONDecodeError as error:
@@ -144,7 +240,7 @@ def validate_candidate(
         )
 
     try:
-        parsed = CompactExtractionResponse.model_validate(candidate)
+        parsed = response_model.model_validate(candidate)
     except ValidationError as error:
         findings = [
             _finding(
@@ -206,6 +302,17 @@ def validate_candidate(
                             candidate=candidate,
                         )
                     )
+
+    if required_candidate_ids is not None:
+        findings.extend(
+            _slot_coverage_findings(
+                parsed,
+                candidate,
+                paper_id=paper_id,
+                required_candidate_ids=required_candidate_ids,
+                candidate_evidence_ids=candidate_evidence_ids,
+            )
+        )
 
     report = ValidationReport(
         paper_id=paper_id,

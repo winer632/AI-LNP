@@ -1,4 +1,10 @@
-"""Build one-crop vision tasks only for explicit unresolved table/figure referrals."""
+"""Build one-crop vision tasks only for explicit unresolved table/figure referrals.
+
+When P2 is on and the referral carries a uniparse panel, the panel's own PNG
+becomes the crop instead of a freshly rendered PDF region: uniparse already cut
+the object out at parse time, so re-cropping would only add a second, differently
+derived picture of the same panel to disagree with.
+"""
 
 from __future__ import annotations
 
@@ -10,15 +16,19 @@ from typing import Any, Callable
 
 from openai.lib._pydantic import to_strict_json_schema
 
+from src.config_flags import is_enabled
 from src.extraction.build_repair_tasks import COLLECTION_MODELS
 from src.extraction.compact_validation import ValidationReport
 from src.extraction.selective_vision_contracts import (
+    P2_FLAG,
     CropBox,
     SelectiveVisionTask,
     VisionReferral,
     VisionTextEvidence,
+    VisualPanel,
 )
 from src.rag.compact_api_packet import CompactApiPacket
+from src.rag.uniparse_client import IMAGE_ROOT
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -79,6 +89,32 @@ def render_pdf_region(
     document.close()
 
 
+def resolve_panel_image(
+    panel: VisualPanel,
+    paper_id: str,
+    *,
+    image_root: Path = IMAGE_ROOT,
+) -> Path | None:
+    """Locate the PNG uniparse already saved for ``panel``, or ``None``.
+
+    ``image_ref`` is the service's own key (``images/page_001_block_004_...png``);
+    ``save_images`` flattens it to a basename under ``<image_root>/<paper_id>/``,
+    optionally inside a per-source subdirectory. The digest is re-checked here
+    rather than trusted, so a stale or replaced asset falls back to rendering
+    instead of silently feeding the wrong picture to the model.
+    """
+    if not panel.has_image:
+        return None
+    assert panel.image_ref is not None
+    base = image_root / paper_id
+    if not base.is_dir():
+        return None
+    for candidate in sorted(base.rglob(Path(panel.image_ref).name)):
+        if candidate.is_file() and _sha256(candidate.read_bytes()) == panel.image_sha256:
+            return candidate
+    return None
+
+
 def _schema_fragment(collection: str, field_name: str) -> dict[str, Any]:
     model = COLLECTION_MODELS[collection]
     schema = to_strict_json_schema(model)
@@ -106,6 +142,7 @@ def build_task(
     pdf_path: Path,
     output_root: Path = OUTPUT_ROOT,
     renderer: Renderer = render_pdf_region,
+    image_root: Path = IMAGE_ROOT,
 ) -> SelectiveVisionTask:
     if referral.paper_id != report.paper_id or referral.paper_id != packet.paper_id:
         raise ValueError("Referral, validation report, and packet paper IDs must match")
@@ -145,9 +182,26 @@ def build_task(
     if missing_ids:
         raise ValueError(f"Referral evidence absent from packet: {sorted(missing_ids)}")
 
+    panel = referral.panel if is_enabled(P2_FLAG) else None
+    if panel is not None and panel.page_id != referral.page_number:
+        raise ValueError("Referral page does not match its uniparse panel page")
+
     task_dir = output_root / referral.paper_id / referral.finding_id
     crop_path = task_dir / "crop.png"
-    renderer(pdf_path, referral.page_number, referral.crop_box, crop_path)
+    panel_image = (
+        resolve_panel_image(panel, referral.paper_id, image_root=image_root)
+        if panel is not None
+        else None
+    )
+    if panel_image is None:
+        renderer(pdf_path, referral.page_number, referral.crop_box, crop_path)
+        crop_source = "rendered_pdf_region"
+    else:
+        # Copied rather than referenced so the task directory stays
+        # self-contained; the bytes, and therefore crop_sha256, are the panel's.
+        task_dir.mkdir(parents=True, exist_ok=True)
+        crop_path.write_bytes(panel_image.read_bytes())
+        crop_source = "uniparse_panel"
     if not crop_path.exists() or crop_path.stat().st_size == 0:
         raise ValueError("Renderer did not create a non-empty crop")
     crop_sha256 = _sha256(crop_path.read_bytes())
@@ -183,6 +237,13 @@ def build_task(
         ],
         "expected_schema_fragment": _schema_fragment(collection, field_name),
     }
+    # Signed only when they carry information, mirroring
+    # SelectiveVisionTask.unsigned_payload, so a P2-off task keeps the checksum
+    # -- and therefore the vision fingerprint and its cache -- it had before P2.
+    if panel is not None:
+        unsigned["panel"] = panel.model_dump(mode="json")
+    if crop_source != "rendered_pdf_region":
+        unsigned["crop_source"] = crop_source
     task = SelectiveVisionTask.model_validate(
         {**unsigned, "task_checksum": _sha256(_canonical_json(unsigned))}
     )
@@ -200,6 +261,7 @@ def main() -> None:
     parser.add_argument("--packet", type=Path, required=True)
     parser.add_argument("--pdf", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_ROOT)
+    parser.add_argument("--image-root", type=Path, default=IMAGE_ROOT)
     args = parser.parse_args()
     task = build_task(
         referral=VisionReferral.model_validate_json(
@@ -213,6 +275,7 @@ def main() -> None:
         ),
         pdf_path=args.pdf,
         output_root=args.output_dir,
+        image_root=args.image_root,
     )
     print(task.model_dump_json(indent=2))
 

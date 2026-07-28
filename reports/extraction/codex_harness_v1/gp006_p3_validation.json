@@ -1,0 +1,75 @@
+{
+  "report_version": "compact-validation-1.0.0",
+  "paper_id": "GP-006",
+  "status": "invalid",
+  "findings": [
+    {
+      "finding_id": "VF-ccdc7dba2fda88f0",
+      "code": "unknown_evidence_id",
+      "message": "Unknown evidence IDs: ['GP-006-FC-d7a6c5b7066a40c4']",
+      "location": [
+        "experiments",
+        1,
+        "species"
+      ],
+      "record_collection": "experiments",
+      "record_index": 1,
+      "field_name": "species",
+      "cited_evidence_ids": [
+        "GP-006-FC-d7a6c5b7066a40c4"
+      ],
+      "repairable": true
+    },
+    {
+      "finding_id": "VF-2e73a0cef7b0fa71",
+      "code": "unknown_evidence_id",
+      "message": "Unknown evidence IDs: ['GP-006-FC-d7a6c5b7066a40c4']",
+      "location": [
+        "experiments",
+        1,
+        "experimental_context"
+      ],
+      "record_collection": "experiments",
+      "record_index": 1,
+      "field_name": "experimental_context",
+      "cited_evidence_ids": [
+        "GP-006-FC-d7a6c5b7066a40c4"
+      ],
+      "repairable": true
+    },
+    {
+      "finding_id": "VF-56c437695e91148c",
+      "code": "unknown_evidence_id",
+      "message": "Unknown evidence IDs: ['GP-006-FC-d7a6c5b7066a40c4']",
+      "location": [
+        "experiments",
+        1,
+        "dose"
+      ],
+      "record_collection": "experiments",
+      "record_index": 1,
+      "field_name": "dose",
+      "cited_evidence_ids": [
+        "GP-006-FC-d7a6c5b7066a40c4"
+      ],
+      "repairable": true
+    },
+    {
+      "finding_id": "VF-c1494c1eb42b4c0d",
+      "code": "unknown_evidence_id",
+      "message": "Unknown evidence IDs: ['GP-006-FC-d7a6c5b7066a40c4']",
+      "location": [
+        "experiments",
+        1,
+        "dose_unit"
+      ],
+      "record_collection": "experiments",
+      "record_index": 1,
+      "field_name": "dose_unit",
+      "cited_evidence_ids": [
+        "GP-006-FC-d7a6c5b7066a40c4"
+      ],
+      "repairable": true
+    }
+  ]
+}

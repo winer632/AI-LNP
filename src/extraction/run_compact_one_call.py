@@ -13,7 +13,11 @@ from typing import Any
 from dotenv import load_dotenv
 from openai import OpenAI
 from openai.lib._pydantic import to_strict_json_schema
-from src.extraction.compact_contracts import CompactExtractionResponse
+from src.config_flags import is_enabled
+from src.extraction.compact_contracts import (
+    CandidateSlotExtractionResponse,
+    CompactExtractionResponse,
+)
 from src.extraction.compact_validation import validate_candidate
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.build_outcome_candidates import build_candidates
@@ -21,6 +25,8 @@ from src.extraction.check_outcome_coverage import check
 from src.extraction.compact_prompt_v1 import (
     COMPACT_EXTRACTION_PROMPT,
     PROMPT_VERSION,
+    active_prompt,
+    candidate_slot_payload,
     prompt_sha256,
 )
 from src.rag.compact_api_packet import CompactApiPacket, estimate_tokens
@@ -46,6 +52,9 @@ PACKET_ROOT_BY_VIEW = {
 # The full view ships every parsed block, so an oversized or wrongly built
 # packet must fail locally instead of becoming a very expensive request.
 DEFAULT_MAX_INPUT_TOKENS = 150_000
+# P3. Off by default; when on, the locally enumerated outcome candidates are
+# sent with the packet and the response must account for every one of them.
+CANDIDATE_SLOT_FLAG = "candidate_slot_enforcement"
 
 
 def _canonical_json(value: Any) -> str:
@@ -86,41 +95,62 @@ def packet_root_for(evidence_view: str = DEFAULT_EVIDENCE_VIEW) -> Path:
         ) from None
 
 
-def estimated_input_tokens(packet_payload: dict[str, Any]) -> dict[str, int]:
-    """Estimate the request's input size with the packet builder's own method."""
-    prompt_tokens = estimate_tokens(COMPACT_EXTRACTION_PROMPT)
+def estimated_input_tokens(
+    packet_payload: dict[str, Any],
+    *,
+    prompt: str = COMPACT_EXTRACTION_PROMPT,
+    candidate_slots: list[dict[str, Any]] | None = None,
+) -> dict[str, int]:
+    """Estimate the request's input size with the packet builder's own method.
+
+    The candidate-slot term is added only when slots are actually sent, so the
+    baseline estimate -- and the manifest it is written into -- is unchanged.
+    """
+    prompt_tokens = estimate_tokens(prompt)
     schema_tokens = estimate_tokens(
         json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     )
     packet_tokens = estimate_tokens(packet_payload)
-    return {
+    counts = {
         "prompt": prompt_tokens,
         "response_schema": schema_tokens,
         "evidence_packet": packet_tokens,
-        "total": prompt_tokens + schema_tokens + packet_tokens,
     }
+    if candidate_slots is not None:
+        counts["candidate_slots"] = estimate_tokens(candidate_slots)
+    counts["total"] = sum(counts.values())
+    return counts
 
 
 def request_fingerprint(
     packet: CompactApiPacket,
     model: str,
     evidence_view: str = DEFAULT_EVIDENCE_VIEW,
+    *,
+    prompt_version: str = PROMPT_VERSION,
+    prompt_checksum: str | None = None,
+    candidate_slots_checksum: str | None = None,
 ) -> str:
     """Identify one request, and never let two views share a prompt cache key.
 
     The compact view's fingerprint payload is frozen: the view key is added only
-    for other views, so already-cached compact requests keep their cache key.
+    for other views, and the candidate-slot key only when slots are sent, so
+    already-cached compact requests keep their cache key. A slot-enforced call
+    carries a different prompt version and a checksum of the slots themselves,
+    which is what stops it from reusing a baseline cache entry.
     """
     payload = {
         "paper_id": packet.paper_id,
         "packet_checksum": packet.packet_checksum,
-        "prompt_version": PROMPT_VERSION,
-        "prompt_checksum": prompt_sha256(),
+        "prompt_version": prompt_version,
+        "prompt_checksum": prompt_checksum or prompt_sha256(),
         "schema_checksum": _sha256(SCHEMA_PATH.read_bytes()),
         "model": model,
     }
     if evidence_view != DEFAULT_EVIDENCE_VIEW:
         payload["evidence_view"] = evidence_view
+    if candidate_slots_checksum is not None:
+        payload["candidate_slots"] = candidate_slots_checksum
     return _sha256(_canonical_json(payload))
 
 
@@ -162,7 +192,27 @@ def run_one(
             f"A completed response already exists for {paper_id}; refusing a duplicate paid call."
         )
     packet_payload = packet.model_dump(mode="json", exclude_none=True)
-    input_tokens = estimated_input_tokens(packet_payload)
+    # Both are pure functions of the packet; computing them before the size
+    # guard lets the guard also cover the candidate slots, without writing
+    # anything to disk any earlier than before.
+    complexity = assess(packet)
+    outcome_candidates = (
+        build_candidates(packet) if complexity.route == "complex" else None
+    )
+    candidate_slots = (
+        candidate_slot_payload(outcome_candidates)
+        if outcome_candidates and is_enabled(CANDIDATE_SLOT_FLAG)
+        else None
+    )
+    prompt = active_prompt(candidate_slots is not None)
+    response_model = (
+        CandidateSlotExtractionResponse
+        if candidate_slots is not None
+        else CompactExtractionResponse
+    )
+    input_tokens = estimated_input_tokens(
+        packet_payload, prompt=prompt.text, candidate_slots=candidate_slots
+    )
     if input_tokens["total"] > max_input_tokens:
         raise ValueError(
             f"Estimated input for {paper_id} in the {evidence_view} view is "
@@ -170,13 +220,10 @@ def run_one(
             f"{max_input_tokens:,} token limit; refusing to send the request."
         )
     run_dir.mkdir(parents=True, exist_ok=True)
-    complexity = assess(packet)
     (run_dir / "complexity.json").write_text(
         complexity.model_dump_json(indent=2) + "\n", encoding="utf-8"
     )
-    outcome_candidates = None
-    if complexity.route == "complex":
-        outcome_candidates = build_candidates(packet)
+    if outcome_candidates is not None:
         (run_dir / "outcome_candidates.json").write_text(
             json.dumps(
                 [row.model_dump(mode="json") for row in outcome_candidates],
@@ -186,8 +233,22 @@ def run_one(
             + "\n",
             encoding="utf-8",
         )
+    if candidate_slots is not None:
+        (run_dir / "candidate_slots.json").write_text(
+            json.dumps(candidate_slots, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
 
-    fingerprint = request_fingerprint(packet, model, evidence_view)
+    fingerprint = request_fingerprint(
+        packet,
+        model,
+        evidence_view,
+        prompt_version=prompt.version,
+        prompt_checksum=prompt.checksum,
+        candidate_slots_checksum=(
+            None if candidate_slots is None else _sha256(_canonical_json(candidate_slots))
+        ),
+    )
     request_snapshot = {
         "paper_id": paper_id,
         "model": model,
@@ -199,19 +260,35 @@ def run_one(
         "store": False,
         "service_tier": "default",
         "max_output_tokens": max_output_tokens,
-        "prompt_version": PROMPT_VERSION,
-        "prompt_checksum": prompt_sha256(),
+        "prompt_version": prompt.version,
+        "prompt_checksum": prompt.checksum,
         "schema_checksum": _sha256(SCHEMA_PATH.read_bytes()),
         "packet_checksum": packet.packet_checksum,
         "request_fingerprint": fingerprint,
-        "system_prompt": COMPACT_EXTRACTION_PROMPT,
+        "system_prompt": prompt.text,
         "packet": packet_payload,
     }
+    if candidate_slots is not None:
+        request_snapshot["candidate_slot_enforcement"] = True
+        request_snapshot["candidate_slots"] = candidate_slots
     (run_dir / "request.json").write_text(
         json.dumps(request_snapshot, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
+    # The packet stays its own message in its original position, so the slot
+    # message can only ever be appended after it.
+    request_input: list[dict[str, str]] = [
+        {"role": "system", "content": prompt.text},
+        {"role": "user", "content": _canonical_json(packet_payload)},
+    ]
+    if candidate_slots is not None:
+        request_input.append(
+            {
+                "role": "user",
+                "content": _canonical_json({"candidate_slots": candidate_slots}),
+            }
+        )
     started_at = datetime.now(timezone.utc)
     response = client.responses.create(
         model=model,
@@ -220,15 +297,12 @@ def run_one(
         service_tier="default",
         max_output_tokens=max_output_tokens,
         prompt_cache_key=fingerprint,
-        input=[
-            {"role": "system", "content": COMPACT_EXTRACTION_PROMPT},
-            {"role": "user", "content": _canonical_json(packet_payload)},
-        ],
+        input=request_input,
         text={
             "format": {
                 "type": "json_schema",
-                "name": "CompactExtractionResponse",
-                "schema": to_strict_json_schema(CompactExtractionResponse),
+                "name": response_model.__name__,
+                "schema": to_strict_json_schema(response_model),
                 "strict": True,
             }
         },
@@ -248,6 +322,11 @@ def run_one(
         response.output_text,
         paper_id=paper_id,
         allowed_evidence_ids={row.evidence_id for row in packet.evidence},
+        required_candidate_ids=(
+            None
+            if candidate_slots is None
+            else [str(slot["candidate_id"]) for slot in candidate_slots]
+        ),
     )
     (run_dir / "validation_report.json").write_text(
         validation_report.model_dump_json(indent=2) + "\n",
@@ -259,15 +338,30 @@ def run_one(
             "deterministic validation check(s); see validation_report.json"
         )
 
+    # The dispositions are a record of this run, not part of the extraction
+    # contract, so result.json stays exactly what every downstream consumer of
+    # CompactExtractionResponse already expects.
+    dispositions = [
+        row.model_dump(mode="json")
+        for row in getattr(parsed, "candidate_dispositions", [])
+    ]
+    if candidate_slots is not None:
+        (run_dir / "candidate_dispositions.json").write_text(
+            json.dumps(dispositions, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    result_payload = parsed.model_dump(
+        mode="json", exclude={"candidate_dispositions"}
+    )
     result_path.write_text(
-        json.dumps(parsed.model_dump(mode="json"), ensure_ascii=False, indent=2) + "\n",
+        json.dumps(result_payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     coverage = None
     if complexity.route == "complex":
         coverage = check(
             packet,
-            parsed.model_dump(mode="json"),
+            result_payload,
             assessment=complexity,
             candidates=outcome_candidates,
         )
@@ -294,8 +388,8 @@ def run_one(
         "estimated_input_tokens": input_tokens,
         "max_input_tokens": max_input_tokens,
         "packet_checksum": packet.packet_checksum,
-        "prompt_version": PROMPT_VERSION,
-        "prompt_checksum": prompt_sha256(),
+        "prompt_version": prompt.version,
+        "prompt_checksum": prompt.checksum,
         "schema_checksum": _sha256(SCHEMA_PATH.read_bytes()),
         "started_at": started_at.isoformat(),
         "completed_at": completed_at.isoformat(),
@@ -321,6 +415,14 @@ def run_one(
             ),
         },
     }
+    if candidate_slots is not None:
+        manifest["candidate_slot_enforcement"] = True
+        manifest["candidate_slots"] = len(candidate_slots)
+        manifest["candidate_disposition_counts"] = {
+            code: sum(1 for row in dispositions if row["disposition"] == code)
+            for code in ("extracted", "not_an_outcome", "unresolved")
+        }
+        manifest["checks"]["candidate_slot_coverage"] = "complete"
     (run_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

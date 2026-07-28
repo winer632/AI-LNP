@@ -3,6 +3,20 @@
 The response intentionally contains no evidence quotations. Evidence text and
 coordinates remain in the local evidence packet and are joined by
 ``evidence_ids`` after the model response is validated.
+
+Two response shapes live here:
+
+``CompactExtractionResponse``
+    The frozen baseline contract. Its JSON Schema is exported to
+    ``docs/extraction/schemas/compact_v1/`` and its checksum is part of the
+    request fingerprint, so this class must not gain or lose fields.
+
+``CandidateSlotExtractionResponse``
+    The same contract plus ``candidate_dispositions``, used only when the
+    ``candidate_slot_enforcement`` (P3) flag is on. Keeping it a subclass is
+    what lets the flag-off request stay byte-identical: the baseline schema,
+    prompt, and fingerprint are untouched, and a slot-aware response still
+    validates as -- and is an instance of -- the baseline contract.
 """
 
 from __future__ import annotations
@@ -236,6 +250,11 @@ class CompactExtractionResponse(StrictContract):
             raise ValueError("outcome references an unknown experiment_id")
         return self
 
+    def candidate_disposition_ids(self) -> set[str]:
+        """Candidate IDs this response accounts for; empty on the baseline contract."""
+
+        return set()
+
     def validate_evidence_ids(self, allowed_evidence_ids: set[str]) -> None:
         """Reject model citations that do not exist in the local packet."""
 
@@ -264,3 +283,50 @@ class CompactExtractionResponse(StrictContract):
                         f"{record.__class__.__name__}.{field_name} references "
                         f"unknown evidence IDs: {sorted(unknown)}"
                     )
+
+
+CandidateDispositionCode = Literal["extracted", "not_an_outcome", "unresolved"]
+
+
+class CandidateDisposition(StrictContract):
+    """How one locally enumerated outcome candidate was accounted for.
+
+    Mirrors the repair-stage rule in
+    :mod:`src.extraction.missing_record_contracts`: a response must account for
+    every candidate ID, and every disposition other than ``extracted`` has to
+    say why. Silence is not a valid disposition.
+    """
+
+    candidate_id: str
+    disposition: CandidateDispositionCode
+    reason: str | None
+
+    @model_validator(mode="after")
+    def require_reason_unless_extracted(self) -> "CandidateDisposition":
+        if self.disposition != "extracted" and not (self.reason or "").strip():
+            raise ValueError(
+                f"candidate {self.candidate_id} is {self.disposition} and "
+                "therefore requires a reason"
+            )
+        return self
+
+
+class CandidateSlotExtractionResponse(CompactExtractionResponse):
+    """Baseline response plus an explicit answer for every candidate slot.
+
+    Sent only when ``candidate_slot_enforcement`` is enabled. ``result.json``
+    is still written from the inherited baseline fields, so every downstream
+    consumer of the compact contract keeps working unchanged.
+    """
+
+    candidate_dispositions: list[CandidateDisposition]
+
+    @model_validator(mode="after")
+    def validate_candidate_dispositions(self) -> "CandidateSlotExtractionResponse":
+        seen = [row.candidate_id for row in self.candidate_dispositions]
+        if len(set(seen)) != len(seen):
+            raise ValueError("candidate_dispositions must not repeat a candidate_id")
+        return self
+
+    def candidate_disposition_ids(self) -> set[str]:
+        return {row.candidate_id for row in self.candidate_dispositions}

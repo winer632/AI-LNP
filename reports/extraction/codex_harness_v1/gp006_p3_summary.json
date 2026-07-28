@@ -1,0 +1,19 @@
+{
+  "note": "P3 enabled, uniparse corpus, GP-006. Model complied with slots but 76 of 83 extracted claims cite no returned evidence.",
+  "outcomes": 7,
+  "candidate_dispositions": {
+    "not_an_outcome": 78,
+    "extracted": 83,
+    "unresolved": 7
+  },
+  "contains_1_01": false,
+  "endpoints": [
+    "LSEC uptake and GFP expression",
+    "luciferase expression in hepatocytes and LSECs",
+    "F8 gene editing rate in LSECs",
+    "F8 gene editing rate in hepatocytes",
+    "endogenous FVIII activity",
+    "clotting time and clot formation time",
+    "indels at five predicted off-target sites"
+  ]
+}

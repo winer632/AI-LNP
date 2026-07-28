@@ -19,6 +19,8 @@ from src.extraction.build_repair_tasks import COLLECTION_MODELS
 from src.extraction.selective_vision_contracts import (
     SelectiveVisionResponse,
     SelectiveVisionTask,
+    p2_prompt_suffix,
+    p2_response_properties,
 )
 
 
@@ -35,6 +37,16 @@ Return the panel or table-cell location. Any visually estimated value must be
 routed to human review. Do not alter any field other than the requested field."""
 
 
+def vision_prompt() -> str:
+    """System prompt for the current flag state.
+
+    With ``local_vlm_vision`` off this returns :data:`VISION_PROMPT` unchanged,
+    so the prompt hash inside :func:`vision_fingerprint` -- and therefore every
+    cached run -- is untouched.
+    """
+    return VISION_PROMPT + p2_prompt_suffix()
+
+
 def _canonical_json(value: Any) -> str:
     return json.dumps(
         value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
@@ -49,8 +61,7 @@ def _sha256(value: bytes | str) -> str:
 
 def load_task(path: Path) -> SelectiveVisionTask:
     task = SelectiveVisionTask.model_validate_json(path.read_text(encoding="utf-8"))
-    unsigned = task.model_dump(mode="json", exclude={"task_checksum"})
-    actual = _sha256(_canonical_json(unsigned))
+    actual = _sha256(_canonical_json(task.unsigned_payload()))
     if actual != task.task_checksum:
         raise ValueError("Selective-vision task checksum mismatch")
     crop_path = Path(task.crop_path)
@@ -63,7 +74,11 @@ def response_schema(task: SelectiveVisionTask) -> dict[str, Any]:
     field_name = task.finding.field_name
     assert field_name is not None
     fragment = task.expected_schema_fragment
-    return {
+    # Strict mode requires every declared property to be required, so the P2
+    # block is spliced into both maps or neither. With the flag off both splices
+    # are empty and the schema is byte-identical to the pre-P2 one.
+    extra_properties = p2_response_properties()
+    schema = {
         "type": "object",
         "properties": {
             "finding_id": {"type": "string"},
@@ -105,6 +120,7 @@ def response_schema(task: SelectiveVisionTask) -> dict[str, Any]:
                 "enum": ["high", "medium", "low"],
             },
             "requires_human_review": {"type": "boolean"},
+            **extra_properties,
         },
         "required": [
             "finding_id",
@@ -119,10 +135,36 @@ def response_schema(task: SelectiveVisionTask) -> dict[str, Any]:
             "derivation",
             "confidence",
             "requires_human_review",
+            *extra_properties,
         ],
         "additionalProperties": False,
         "$defs": fragment.get("$defs", {}),
     }
+    return schema
+
+
+def _validate_panel_provenance(
+    response: SelectiveVisionResponse, task: SelectiveVisionTask
+) -> None:
+    """Reject an observation that claims to have looked at a different object.
+
+    Only meaningful once a task carries a uniparse panel, which only happens
+    with ``local_vlm_vision`` on; a pre-P2 task has no panel and this is a
+    no-op, so the pre-P2 acceptance set is unchanged.
+    """
+    panel = task.panel
+    if panel is None:
+        return
+    if response.object_id and response.object_id != panel.object_id:
+        raise ValueError("Vision response reports a different panel object_id")
+    if response.page_id and response.page_id != panel.page_id:
+        raise ValueError("Vision response reports a different panel page")
+    if (
+        response.image_sha256
+        and panel.image_sha256
+        and response.image_sha256 != panel.image_sha256
+    ):
+        raise ValueError("Vision response reports a different panel image digest")
 
 
 def validate_response(
@@ -144,6 +186,7 @@ def validate_response(
     unknown = set(response.supporting_evidence_ids) - allowed_evidence
     if unknown:
         raise ValueError(f"Vision response cites unknown evidence: {sorted(unknown)}")
+    _validate_panel_provenance(response, task)
     if response.corrected_fragment is None:
         return
     field_name = finding.field_name
@@ -179,7 +222,7 @@ def vision_fingerprint(task: SelectiveVisionTask, model: str) -> str:
             {
                 "task_checksum": task.task_checksum,
                 "prompt_version": PROMPT_VERSION,
-                "prompt_sha256": _sha256(VISION_PROMPT),
+                "prompt_sha256": _sha256(vision_prompt()),
                 "response_schema": response_schema(task),
                 "model": model,
             }
@@ -211,6 +254,7 @@ def run_vision(
     run_dir.mkdir(parents=True)
 
     text_payload = task.text_payload()
+    system_prompt = vision_prompt()
     request_snapshot = {
         "model": model,
         "reasoning_effort": "low",
@@ -218,7 +262,7 @@ def run_vision(
         "max_output_tokens": max_output_tokens,
         "vision_fingerprint": fingerprint,
         "prompt_version": PROMPT_VERSION,
-        "system_prompt": VISION_PROMPT,
+        "system_prompt": system_prompt,
         "text_payload": text_payload,
         "image": {
             "crop_path": task.crop_path,
@@ -238,7 +282,7 @@ def run_vision(
         service_tier="default",
         max_output_tokens=max_output_tokens,
         input=[
-            {"role": "system", "content": VISION_PROMPT},
+            {"role": "system", "content": system_prompt},
             {
                 "role": "user",
                 "content": [
