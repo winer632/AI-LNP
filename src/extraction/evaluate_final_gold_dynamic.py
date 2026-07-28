@@ -10,10 +10,12 @@ from functools import lru_cache
 from pathlib import Path
 
 from src.config_flags import is_enabled
+from src.extraction.selective_vision_contracts import RELATIONSHIP_POLARITY
 
 
 ROOT = Path(__file__).resolve().parents[2]
 PRECISION_METRICS_FLAG = "precision_metrics"
+VISION_RELATIONSHIP_FLAG = "vision_relationship_polarity"
 GOLD_ROOT = ROOT / "data/annotations/gold_v1"
 OUTPUT_ROOT = ROOT / "reports/extraction/final_gold_dynamic_v1"
 RESULT_ROOTS = [
@@ -39,6 +41,47 @@ FUNCTION_WORDS = {
     "whereas", "during", "between", "per", "via", "when", "where", "within",
 }
 _NUMBER = re.compile(r"[0-9][0-9,]*(?:\.[0-9]+)?(?:[eE][-+]?[0-9]+)?")
+
+# Terms whose presence in a gold qualitative claim makes the claim specific
+# enough that a candidate record has to echo them to count as the same
+# measurement.
+#
+# What this set does NOT do is decide polarity, despite the name of the gate
+# built on it. Membership is tested against the candidate's tokens, and
+# tokenising a denial leaves the affirmed word in place: "not colocalized"
+# yields {"not", "colocalized"} and satisfies a gold row asserting
+# "colocalized". Measured on 500 generated opposite-polarity candidates, this
+# test accepts 70 of them.
+#
+# The axis it really separates is vocabulary reuse, not direction, so any
+# change that makes matching more generous makes it accept MORE denials:
+# equivalence classes over these terms took the same 500 to 150 accepted, and
+# collapsing the -ize/-ization family took them to 110. Both were rejected on
+# that measurement. `_declared_relationship` is the structural route that can
+# see a denial, and the only one that improved the number.
+#
+# Written in surface form and normalised through `_tokens` below, never
+# compared raw. `obvious` used to be listed here as a literal and was
+# unreachable for it: the de-pluraliser turned the text "obvious" into
+# "obviou", so the entry could never match anything. Normalising the set
+# through the same function as the text makes that class of bug impossible
+# rather than merely fixed once.
+#
+# `eradicated` occurs in no gold qualitative claim, so it is never looked up.
+# Retained because the set describes claim vocabulary generally, not only the
+# rows frozen today.
+_DISTINCTIVE_SURFACE = {
+    "few",
+    "no",
+    "obvious",
+    "solely",
+    "eliminated",
+    "eradicated",
+    "localized",
+    "colocalized",
+    "reduced",
+    "defenestration",
+}
 
 
 def _rows(path: Path) -> list[dict[str, str]]:
@@ -77,19 +120,43 @@ def _fuse_marker_names(text: str) -> str:
 
 
 def _tokens(text: str) -> set[str]:
+    # "colocalization" was folded into "colocalized" here. Removed on
+    # measurement: it bought no recall on any root, and it cost precision on
+    # the polarity gate, taking generated opposite-polarity candidates from
+    # 70/500 accepted to 80/500. The gate is negation-blind, so every extra
+    # surface form that reaches a lexicon entry reaches it just as readily
+    # from inside a denial -- "no colocalization was observed" became a match
+    # for a gold row asserting colocalisation. The recall it was there for is
+    # now served by the declared relationship, which can tell the two apart.
     normalized = (
         _fuse_marker_names(text.lower())
         .replace("_", " ")
         .replace("exclusively", "solely")
-        .replace("colocalization", "colocalized")
     )
     found = set()
     for token in re.findall(r"[a-z0-9]+", normalized):
-        if len(token) >= 5 and token.endswith("s") and not token.endswith("ss"):
+        # A trailing "s" is a plural marker only when it does not belong to
+        # the stem. Guarding "ss" alone mangled every -us/-is/-as word:
+        # "obvious" became "obviou" and "analysis" became "analysi". That is
+        # wrong on its own terms, and it silently killed the "obvious" entry
+        # in the distinctive lexicon, which is compared against these tokens.
+        if (
+            len(token) >= 5
+            and token.endswith("s")
+            and not token.endswith(("ss", "us", "is", "as"))
+        ):
             token = token[:-1]
         if len(token) >= 2 and token not in STOP:
             found.add(token)
     return found
+
+
+# Normalised through `_tokens`, so a lexicon entry is compared in the same
+# space as the text it is matched against and cannot go stale when the
+# tokeniser changes.
+DISTINCTIVE_TERMS = {
+    token for term in _DISTINCTIVE_SURFACE for token in _tokens(term)
+}
 
 
 def _result_path(paper_id: str, result_roots: list[Path] | None = None) -> Path:
@@ -170,6 +237,27 @@ def _number_in_text(value: float, text: str) -> bool:
         abs(candidate - value) <= tolerance
         for candidate in _numbers_in_text(text)
     )
+
+
+def _declared_relationship(outcome: dict) -> tuple[str, bool] | None:
+    """The relation this record declares structurally, as ``(base, affirmed)``.
+
+    Reads the dedicated ``vision_relationship`` field written by
+    :mod:`src.extraction.merge_vision_observations` from the vision contract's
+    closed vocabulary. Returns ``None`` for a record that declares nothing,
+    which is every record produced by the text route, so those keep the
+    unchanged token behaviour.
+
+    Structural on purpose. The same value carried as text would be read by the
+    tokeniser as its own opposite, because "not_colocalized" contains
+    "colocalized"; consulting the enum is what makes a denial legible.
+    """
+    if not is_enabled(VISION_RELATIONSHIP_FLAG):
+        return None
+    value = _value(outcome.get("vision_relationship"))
+    if not isinstance(value, str):
+        return None
+    return RELATIONSHIP_POLARITY.get(value)
 
 
 def _claim_terms(text: str) -> set[str]:
@@ -352,22 +440,34 @@ def _score(
             )
         )
     )
-    distinctive_qualitative = _tokens(gold["qualitative_outcome"]) & {
-        "few",
-        "no",
-        "obvious",
-        "solely",
-        "eliminated",
-        "eradicated",
-        "localized",
-        "colocalized",
-        "reduced",
-        "defenestration",
-    }
+    distinctive_qualitative = _tokens(gold["qualitative_outcome"]) & DISTINCTIVE_TERMS
     polarity_gate = (
         not distinctive_qualitative
         or bool(distinctive_qualitative & outcome_only_tokens)
     )
+    # A record that declares a relation structurally is judged on that
+    # declaration rather than on its prose. This is the only way a denial can
+    # be seen at all: the prose of a denial contains the affirmed word, so the
+    # token test above reads "not colocalized" as a match for "colocalized".
+    declared = _declared_relationship(outcome)
+    if declared is not None:
+        base, affirmed = declared
+        # Normalised through `_tokens`, for the same reason the lexicon is:
+        # comparing the raw enum value against normalised tokens is how a
+        # hard-coded string goes dead without anything failing.
+        base_tokens = _tokens(base)
+        asserted = base_tokens & distinctive_qualitative
+        if asserted:
+            if not affirmed:
+                # The record denies exactly what the gold row asserts.
+                polarity_gate = False
+            else:
+                # The declaration discharges its own term; any other
+                # distinctive term the gold row carries still has to be met.
+                remaining = distinctive_qualitative - asserted
+                polarity_gate = not remaining or bool(
+                    remaining & outcome_only_tokens
+                )
     numeric_gate = (
         gold_value is None
         or gold.get("value_status") != "reported"
@@ -432,6 +532,13 @@ def _best_one_to_one_matches(
         score, detail = scored[(gold_index, outcome_index)]
         matches[gold["gold_outcome_id"]] = {
             "outcome_id": outcome.get("outcome_id"),
+            # Position in result_outcomes, and the only identifier here that
+            # is unique. outcome_id is not: a union root merges records from
+            # several runs and each run numbers its own records from O1, so
+            # codex_union_v1 holds 51 records under 32 distinct ids. Callers
+            # must select the matched record by this index -- selecting by id
+            # picks an arbitrary record among the duplicates.
+            "outcome_index": outcome_index,
             "score": round(score, 4),
             **detail,
         }
@@ -497,21 +604,21 @@ def evaluate(
             result_outcomes,
             scored,
         )
-        outcomes_by_id = {
-            outcome.get("outcome_id"): outcome for outcome in result_outcomes
-        }
         for gold in gold_rows:
             gold_id = gold["gold_outcome_id"]
             match = matches.get(gold_id)
             checked = supported = False
             check_detail = None
             if match is not None:
-                matched_outcome = outcomes_by_id.get(match["outcome_id"])
-                if matched_outcome is not None:
-                    checked, supported, check_detail = _evidence_supports(
-                        matched_outcome,
-                        evidence_texts,
-                    )
+                # By index, not by id. Looking the record up by outcome_id
+                # returned whichever duplicate came last in the list, so on a
+                # union root the evidence check could run against a record
+                # the matcher never chose.
+                matched_outcome = result_outcomes[match["outcome_index"]]
+                checked, supported, check_detail = _evidence_supports(
+                    matched_outcome,
+                    evidence_texts,
+                )
             results.append(
                 {
                     "gold_outcome_id": gold_id,
@@ -523,9 +630,13 @@ def evaluate(
                     "evidence_check": check_detail,
                 }
             )
-        matched_outcome_ids = {match["outcome_id"] for match in matches.values()}
-        for outcome in result_outcomes:
-            if outcome.get("outcome_id") in matched_outcome_ids:
+        # Exclude the matched records by position. Excluding by outcome_id
+        # dropped every record sharing an id with a matched one, so a union
+        # root's 19 duplicate ids were subtracted from the false-addition
+        # count and precision came out higher than the records justify.
+        matched_indices = {match["outcome_index"] for match in matches.values()}
+        for outcome_index, outcome in enumerate(result_outcomes):
+            if outcome_index in matched_indices:
                 continue
             false_additions.append(
                 _outcome_summary(

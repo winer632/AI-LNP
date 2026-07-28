@@ -60,6 +60,7 @@ def union_paper(paper_id: str, run_roots: list[Path]) -> dict[str, Any] | None:
     """Merge one paper's outcomes across runs, keeping the first of each key."""
     base: dict[str, Any] | None = None
     seen: set[tuple] = set()
+    seen_outcome_ids: set[str] = set()
     outcomes: list[dict[str, Any]] = []
     experiments: list[dict[str, Any]] = []
     seen_experiments: set[str] = set()
@@ -84,6 +85,22 @@ def union_paper(paper_id: str, run_roots: list[Path]) -> dict[str, Any] | None:
             seen.add(key)
             row = dict(outcome)
             row["source_run"] = root.name
+            # Deduplicating by endpoint keeps records that different runs
+            # numbered identically, so the merged list would otherwise hold
+            # several records called O1. Anything downstream that groups by
+            # outcome_id then silently conflates them -- the evaluator counted
+            # false additions that way and reported precision too high.
+            # Rename only on collision, so ids that were already unique are
+            # left alone, and keep the original for traceability.
+            outcome_id = str(outcome.get("outcome_id"))
+            if outcome_id in seen_outcome_ids:
+                row["source_outcome_id"] = outcome_id
+                suffix = 2
+                while f"{outcome_id}-{suffix}" in seen_outcome_ids:
+                    suffix += 1
+                outcome_id = f"{outcome_id}-{suffix}"
+                row["outcome_id"] = outcome_id
+            seen_outcome_ids.add(outcome_id)
             outcomes.append(row)
 
     if base is None:

@@ -50,6 +50,26 @@ VisualRelationship = Literal[
     "absent",
 ]
 
+# Every relationship asserts a base relation together with a sign. This lives
+# next to the vocabulary because it is a property of the vocabulary itself, not
+# of any one consumer: "not_colocalized" denies exactly the relation
+# "colocalized" affirms, and "absent" denies "present".
+#
+# A consumer must read the sign from here rather than infer it from the string.
+# The names are designed to be read by people, so the negative member is
+# spelled with the positive one inside it, and any text-level test sees the
+# affirmation inside the denial -- tokenising "not_colocalized" yields
+# {"not", "colocalized"}, which reads as a match for "colocalized".
+RELATIONSHIP_POLARITY: dict[str, tuple[str, bool]] = {
+    "colocalized": ("colocalized", True),
+    "not_colocalized": ("colocalized", False),
+    "present": ("present", True),
+    "absent": ("present", False),
+    "increased": ("increased", True),
+    "decreased": ("increased", False),
+    "unchanged": ("unchanged", True),
+}
+
 
 def p2_enabled() -> bool:
     """Whether the P2 visual-observation rules are switched on right now.
