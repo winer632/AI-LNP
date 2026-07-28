@@ -472,6 +472,36 @@ format:   html
   </div>
 
   <div class="warn">
+    <b>v11 · 剩余 4 条缺口的精确分解（此前的说法不准，此处更正）</b><br>
+    我此前说「剩下 4 条全部卡在 polarity 门」。逐条测下来<b>不成立</b>——
+    那只在并入视觉记录之后、且只对其中两条成立。真实分解：
+    <div class="scroll">
+    <table>
+      <thead><tr><th>gold</th><th>无视觉的 union（即 11/15 口径）</th><th>并入视觉后</th></tr></thead>
+      <tbody>
+        <tr><td>GO-002</td><td class="no">该测量根本没被抽取</td><td>视觉补上 → 被 polarity 门拦住</td></tr>
+        <tr><td>GO-003</td><td class="no">该测量根本没被抽取</td><td>视觉补上 → 被 polarity 门拦住</td></tr>
+        <tr><td>GO-017</td><td class="no">该测量根本没被抽取</td><td class="no">仍未抽取（GP-008 从未跑过视觉）</td></tr>
+        <tr><td>GO-018</td><td class="no">该测量根本没被抽取</td><td class="no">仍未抽取（同上）</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>文本链路对这四个测量的产出是零。</b>视觉链路是目前唯一能产出它们的东西——
+    所以 P2 不是「读得对但没用」，而是<b>唯一的供给来源</b>，只是随后卡在第二道门上。
+    这也说明先前把 <code>local_vlm_vision</code> 判为「打开只会拉低 precision」时，
+    我看的是它没能计分，而没有区分「没能计分」的责任在视觉本身还是在下游的门。
+    <br><br>
+    <b>关于那道门：</b>判别词表是
+    <code>{few, no, obvious, solely, eliminated, eradicated, localized, colocalized, reduced, defenestration}</code>，
+    15 条 gold 里 6 条会触发它。它<b>并非纯极性词表</b>——混了否定词、方向词、空间关系词、
+    强调词，还有一个纯领域名词 <code>defenestration</code>（本身没有极性可言）。
+    是否可以改为「保极性等价类」正在由独立 Agent 做对抗性检验，
+    <b>否决条件是：GO-002 必须仍被拒</b>——它的 gold 是「<i>Few</i> F4/80-positive Kupffer cells expressed eGFP」，
+    盲审也正是以极性为由拒绝了它。若改动后的门放过了 GO-002，说明它已经分不清弱阳性和阴性，
+    那就该保持原样、并把结论记为「这是标注词汇问题，不是抽取问题」。
+  </div>
+
+  <div class="warn">
     <b>第 21–22 轮 · 一个负结果与四个真缺陷</b><br>
     <b>负结果（分词归一化，实测 +0）：</b>gold 在同一行里就有两种拼法——GO-003 的
     <code>endpoint_name</code> 写 <code>LYVE1</code>、<code>qualitative_outcome</code> 写 <code>LYVE-1</code>；
