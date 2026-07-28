@@ -47,6 +47,12 @@ class DocumentBlock(StrictModel):
     char_end: int
     parser: str
     parser_confidence: float = Field(ge=0, le=1)
+    # The design document's section 9 identifier, e.g.
+    # "GP-006-mmc1-p01-tabS2-r2". Carried *alongside* block_id, never instead
+    # of it: block_id is cited by committed extraction results, so replacing it
+    # would invalidate every one of them. None on every corpus built before
+    # `structured_evidence_ids` was switched on, which is why it is optional.
+    locator_id: str | None = None
     # Structured-ingestion fields. Every one of these must stay optional so that
     # block corpora written before uniparse ingestion keep validating, and so
     # that reverse construction from a retrieval hit (compact_packet.block_from_hit)
@@ -98,6 +104,7 @@ class RetrievalHit(StrictModel):
     xml_element_id: str | None = None
     table_number: str | None = None
     figure_number: str | None = None
+    locator_id: str | None = None
     bbox: BoundingBox | None = None
     table_html: str | None = None
     caption_text: str | None = None

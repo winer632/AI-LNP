@@ -57,6 +57,11 @@ from src.extraction.compact_prompt_v1 import (
     candidate_slot_payload,
 )
 from src.extraction.compact_validation import validate_candidate
+from src.idempotent_write import (
+    IDEMPOTENT_UPSERT_FLAG,
+    UpsertConflict,
+    fingerprint,
+)
 from src.rag.compact_api_packet import CompactApiPacket
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -229,6 +234,55 @@ def run_codex(
         shutil.rmtree(workdir, ignore_errors=True)
 
 
+def _completed_run(
+    run_dir: Path, request_snapshot: dict[str, Any]
+) -> dict[str, Any]:
+    """Return the finished run when its request matches; refuse when it does not.
+
+    The comparison is against ``request.json``, which this module has always
+    written and which already records everything that determines the answer:
+    model, effort, evidence view, packet checksum, prompt checksum, schema
+    checksum and the candidate slots. A run whose ``request.json`` is missing
+    is refused rather than assumed equivalent -- an unproven match is not a
+    match, and this is the guard that stops a rerun from destroying a
+    completed one.
+    """
+    request_path = run_dir / "request.json"
+    proposed = fingerprint(request_snapshot)
+    if not request_path.exists():
+        raise UpsertConflict(
+            run_dir / "result.json",
+            existing="unrecorded",
+            proposed=proposed,
+            hint=(
+                "A result exists but request.json does not, so the inputs it "
+                "was produced from cannot be checked. Use a new --output-root."
+            ),
+        )
+    recorded = json.loads(request_path.read_text(encoding="utf-8"))
+    existing = fingerprint(recorded)
+    if existing != proposed:
+        raise UpsertConflict(
+            run_dir / "result.json",
+            existing=existing,
+            proposed=proposed,
+            hint=(
+                "A completed result exists for different inputs. Re-run with "
+                "the same packet, prompt and model, or use a new "
+                "--output-root."
+            ),
+        )
+    manifest_path = run_dir / "manifest.json"
+    manifest: dict[str, Any] = (
+        json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest_path.exists()
+        else {"paper_id": request_snapshot.get("paper_id"), "harness": HARNESS}
+    )
+    # Reported honestly: this call consumed no Codex turn, and nothing on disk
+    # was touched, so an aggregator summing turns stays correct.
+    return {**manifest, "upsert": "unchanged", "codex_exec_turns": 0}
+
+
 def run_one(
     paper_id: str,
     *,
@@ -249,7 +303,13 @@ def run_one(
 
     run_dir = output_root / paper_id
     result_path = run_dir / "result.json"
-    if result_path.exists():
+    # This stage's output cannot be recomputed to compare against -- doing so
+    # would mean running the model again, which is the thing being avoided --
+    # so convergence is decided on the recorded *inputs* instead, once the
+    # request snapshot below has been built. Everything up to that point is
+    # local and free. With the flag off the original guard stands here.
+    idempotent = is_enabled(IDEMPOTENT_UPSERT_FLAG)
+    if result_path.exists() and not idempotent:
         raise FileExistsError(
             f"A completed result already exists for {paper_id}; "
             "refusing to overwrite. Use a new --output-root."
@@ -284,6 +344,31 @@ def run_one(
     prompt_selection = active_prompt(candidate_slots is not None)
     schema = strict_schema(candidate_slots is not None)
 
+    request_snapshot = {
+        "harness": HARNESS,
+        "paper_id": paper_id,
+        "model": model,
+        "reasoning_effort": reasoning_effort,
+        "evidence_view": evidence_view,
+        "packet_root": str(resolved_root),
+        "prompt_version": prompt_selection.version,
+        "prompt_checksum": prompt_selection.checksum,
+        "schema_checksum": _sha256(_canonical_json(schema).encode("utf-8")),
+        "packet_checksum": packet.packet_checksum,
+        "prompt_characters": len(prompt),
+    }
+    if candidate_slots is not None:
+        request_snapshot["candidate_slot_enforcement"] = True
+        request_snapshot["candidate_slots"] = candidate_slots
+
+    if result_path.exists():
+        # Only reachable with the flag on; the guard above already returned
+        # otherwise. Same request -> the completed run is the answer, and no
+        # Codex turn is spent. Different request -> still refused, because a
+        # changed packet or prompt would produce a different result and there
+        # is nothing here that could reconcile the two.
+        return _completed_run(run_dir, request_snapshot)
+
     run_dir.mkdir(parents=True, exist_ok=True)
 
     (run_dir / "complexity.json").write_text(
@@ -305,22 +390,6 @@ def run_one(
             encoding="utf-8",
         )
 
-    request_snapshot = {
-        "harness": HARNESS,
-        "paper_id": paper_id,
-        "model": model,
-        "reasoning_effort": reasoning_effort,
-        "evidence_view": evidence_view,
-        "packet_root": str(resolved_root),
-        "prompt_version": prompt_selection.version,
-        "prompt_checksum": prompt_selection.checksum,
-        "schema_checksum": _sha256(_canonical_json(schema).encode("utf-8")),
-        "packet_checksum": packet.packet_checksum,
-        "prompt_characters": len(prompt),
-    }
-    if candidate_slots is not None:
-        request_snapshot["candidate_slot_enforcement"] = True
-        request_snapshot["candidate_slots"] = candidate_slots
     (run_dir / "request.json").write_text(
         json.dumps(request_snapshot, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

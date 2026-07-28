@@ -216,6 +216,7 @@ def _evidence_texts(
     threshold, so no record's match depends on it.
     """
     texts: dict[str, str] = {}
+    aliases: dict[str, str] = {}
     for path in (
         packet_root / f"{paper_id}.json",
         task_root / paper_id / "task.json",
@@ -225,6 +226,7 @@ def _evidence_texts(
             text = row.get("text")
             if evidence_id and isinstance(text, str):
                 texts[evidence_id] = text
+                _record_locator_alias(row, text, aliases)
     # The structured view cites corpus evidence (`-FC-` ids) that no compact
     # packet contains, so without this the report quietly stopped covering the
     # records that view produced: 11 recovered outcomes, 7 of them checkable.
@@ -235,7 +237,25 @@ def _evidence_texts(
         text = row.get("text")
         if evidence_id and isinstance(text, str):
             texts.setdefault(evidence_id, text)
+            _record_locator_alias(row, text, aliases)
+    # A packet built with `structured_evidence_ids` on carries both ids for the
+    # same passage, so a record citing the legible one resolves to exactly the
+    # text the hash id resolves to. `setdefault` because an alias may never
+    # displace a real evidence_id: this can add resolvable ids, never move one.
+    for locator_id, text in aliases.items():
+        texts.setdefault(locator_id, text)
     return texts
+
+
+def _record_locator_alias(
+    row: dict,
+    text: str,
+    aliases: dict[str, str],
+) -> None:
+    """Note a packet row's legible locator as another name for its text."""
+    locator_id = row.get("locator_id")
+    if isinstance(locator_id, str) and locator_id:
+        aliases.setdefault(locator_id, text)
 
 
 def _norm(value) -> str:
