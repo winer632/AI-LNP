@@ -1,0 +1,32 @@
+{
+  "report_version": "uniparse-crop-verification-1.0.0",
+  "note": "Independent re-read of every uniparse table and caption block against a crop of its own recorded bbox. Blocks are stamped, never dropped: deleting an unverified block would trade a hallucination risk for the silent-omission risk this project is already fighting.",
+  "finding": "GP-004 carries 5 contradicted blocks. uniparse gave the eGFP and HGF rows of Supplementary Table 2 the Luciferase row's sequence. Those pages are ordinary vector text and the rendered pixels agree with the text layer, so this is the model inventing rather than a hard parse. No gold evidence cites these sequences, so no measurement is affected.",
+  "go_006_status": "GP-006's Table S2 block carrying 1.01 VERIFIES. That bbox has no text layer at all, so the parse was its only account, but every number in the row is recovered by OCR of the crop.",
+  "by_paper": {
+    "GP-001": {
+      "verified": 23
+    },
+    "GP-002": {},
+    "GP-003": {},
+    "GP-004": {
+      "verified": 29,
+      "no_claims": 45,
+      "contradicted": 5
+    },
+    "GP-005": {},
+    "GP-006": {
+      "unverified": 18,
+      "no_claims": 5
+    },
+    "GP-007": {
+      "verified": 18,
+      "no_claims": 1
+    },
+    "GP-008": {
+      "verified": 81,
+      "no_claims": 23
+    },
+    "GP-009": {}
+  }
+}
