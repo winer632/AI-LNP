@@ -13,6 +13,10 @@ from typing import Any
 
 from pydantic import Field
 
+from src.config_flags import is_enabled
+from src.idempotent_write import IDEMPOTENT_UPSERT_FLAG, upsert_json
+
+from .evidence_locators import clause_locator
 from .models import DocumentBlock, StrictModel
 
 
@@ -80,10 +84,19 @@ class SourceLocation(StrictModel):
     xml_element_id: str | None = None
     table_number: str | None = None
     figure_number: str | None = None
+    # The block's design-document section 9 locator, carried through unchanged.
+    # `compact_api_packet._source_id` explicitly excludes it, so populating this
+    # field cannot re-key an S- id that a committed packet already contains.
+    locator_id: str | None = None
 
 
 class CompactEvidence(StrictModel):
     evidence_id: str
+    # The legible counterpart of evidence_id: the locator of the block this
+    # clause came from plus the clause's ordinal, e.g.
+    # "GP-006-mmc1-p01-tabS2-r2-s1". Additive -- evidence_id remains the key
+    # every committed extraction result cites and every validator checks.
+    locator_id: str | None = None
     clause_ids: list[str]
     chunk_ids: list[str]
     text: str
@@ -243,6 +256,7 @@ def source_location(block: DocumentBlock) -> SourceLocation:
         xml_element_id=block.xml_element_id,
         table_number=block.table_number,
         figure_number=block.figure_number,
+        locator_id=block.locator_id,
     )
 
 
@@ -260,6 +274,7 @@ def block_from_hit(hit: dict[str, Any]) -> DocumentBlock:
         xml_element_id=hit.get("xml_element_id"),
         table_number=hit.get("table_number"),
         figure_number=hit.get("figure_number"),
+        locator_id=hit.get("locator_id"),
         char_start=0,
         char_end=len(text),
         parser="retrieval_packet_fallback",
@@ -347,6 +362,10 @@ def build_packet(
                     "entity_types": set(),
                     "experiment_candidate_ids": set(),
                     "locations": {},
+                    # clause_id -> legible locator, so the evidence's locator is
+                    # picked by the same rule that picks its first clause_id
+                    # rather than by whichever block happened to be seen first.
+                    "locators": {},
                     "context_before": clauses[index - 2]
                     if index > 1
                     and sentences_are_contextually_related(
@@ -364,6 +383,10 @@ def build_packet(
                 }
             evidence = clause_rows[normalized_clause]
             evidence["clause_ids"].add(clause_id)
+            if block.locator_id:
+                evidence["locators"][clause_id] = clause_locator(
+                    block.locator_id, index
+                )
             evidence["chunk_ids"].update(passage["chunk_ids"])
             evidence["field_tags"].update(passage["field_tags"])
             evidence["field_groups"].update(passage["field_groups"])
@@ -375,10 +398,12 @@ def build_packet(
     evidence_items = []
     for normalized_clause, row in clause_rows.items():
         text_hash = hashlib.sha256(normalized_clause.encode("utf-8")).hexdigest()
+        clause_ids = sorted(row["clause_ids"])
         evidence_items.append(
             CompactEvidence(
                 evidence_id=f"{paper_id}-E-{text_hash[:16]}",
-                clause_ids=sorted(row["clause_ids"]),
+                locator_id=row["locators"].get(clause_ids[0]),
+                clause_ids=clause_ids,
                 chunk_ids=sorted(row["chunk_ids"]),
                 text=row["text"],
                 normalized_text_sha256=text_hash,
@@ -436,16 +461,24 @@ def build_packet(
 
 
 def write_packet(packet: CompactEvidencePacket, output_root: Path = OUTPUT_ROOT) -> Path:
+    """Write one review packet, converging on a rerun that changes nothing.
+
+    A packet is a pure function of its retrieval packet and corpus, so the
+    normal rerun produces identical bytes and must leave the file -- and
+    therefore ``git status`` -- alone. When it does differ the inputs or the
+    code moved, which is a real event: ``version`` keeps the previous content
+    under ``<name>.versions/`` and records it, rather than the previous
+    behaviour of overwriting with no trace. Section 9 of the design document
+    exists because that trace was missing: 6 of 9 committed packets no longer
+    matched what the code produced and nothing said when they diverged.
+    """
     output_root.mkdir(parents=True, exist_ok=True)
     path = output_root / f"{packet.paper_id}.json"
-    path.write_text(
-        json.dumps(
-            packet.model_dump(mode="json", exclude_none=True),
-            indent=2,
-            ensure_ascii=False,
-        )
-        + "\n",
-        encoding="utf-8",
+    upsert_json(
+        path,
+        packet.model_dump(mode="json", exclude_none=True),
+        on_conflict="version",
+        enabled=is_enabled(IDEMPOTENT_UPSERT_FLAG),
     )
     return path
 

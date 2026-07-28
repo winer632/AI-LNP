@@ -215,6 +215,83 @@ flags:
     integration_points:
       []
 
+  # ---------------------------------------------------------- section 9 (ID)
+  structured_evidence_ids:
+    priority: S9-a
+    default: false
+    status: available
+    rationale: >-
+      Available, not default, and it must stay that way until every
+      artifact is regenerated. Evidence ids are cited by committed
+      extraction results and are what the evaluator resolves a record's
+      claim against, so a scheme change that reached those ids would
+      invalidate all of them at once. This flag is therefore additive
+      rather than replacing: a block keeps its GP-006-B-<sha> block_id
+      and gains a locator_id beside it, and _source_id was narrowed to a
+      frozen field list so that populating the new field cannot re-key a
+      single S- id. Measured with evaluate() on the default roots before
+      and after, off and on: 11/15 recovered, precision 0.1897,
+      evidence 6/11 supported, unchanged in all three conditions --
+      because the committed corpus carries no locators until it is
+      rebuilt, which is exactly the opt-in the constraint asks for.
+    description: >-
+      Mint the design document's section 9 deterministic, human-legible
+      evidence ids during ingestion -- GP-006-mmc1-p01-tabS2-r2, that is
+      paper, source file, page, table, row, with -c<column> for a cell and
+      -s<clause> for a sentence -- and carry them beside the existing content
+      hashes through the retrieval hit, the compact packet, the API packet and
+      the full corpus view. src/rag/evidence_locators.py owns the grammar and
+      is pure; ingestion decides whether to mint. Off, nothing anywhere
+      changes: locator_id is None and every id, checksum and digest is what it
+      was. On, a corpus must be rebuilt before the ids appear downstream, and
+      packets rebuilt from that corpus get a different packet_checksum because
+      they carry a field they did not carry before -- which is why this is not
+      a default.
+    aliases: [S9-a, s9a, deterministic_ids, legible_evidence_ids]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/rag/ingestion.py
+
+  idempotent_upsert:
+    priority: S9-b
+    default: false
+    status: available
+    rationale: >-
+      Available, not default. The property is "same inputs converge,
+      different inputs are rejected or recorded as a new version", not
+      "overwrite freely": the FileExistsError guards this replaces exist
+      to stop a rerun destroying a completed run, several of them
+      guarding results that cost a paid call. Rejection is kept as the
+      default conflict action for exactly that reason -- versioning a
+      divergent rerun silently would make destruction invisible rather
+      than impossible. Left off because turning it on changes what a
+      rerun of a wired stage does, and the four wired stages include one
+      that decides whether a model is called at all.
+    description: >-
+      Give wired stages converge-or-refuse write semantics through
+      src/idempotent_write.py. A rerun that would produce byte-identical
+      content writes nothing at all, so the file's mtime does not move and the
+      tree stays clean; a rerun that would produce different content raises
+      UpsertConflict (a FileExistsError subclass, so existing handlers keep
+      working) unless the call site opted into on_conflict="version", which
+      archives the previous content under <name>.versions/ and appends to a
+      ledger. run_codex_one_call compares the request snapshot it already
+      writes instead of the output, because its output cannot be recomputed
+      without running the model: an identical request returns the completed run
+      untouched and makes no call, a changed one still refuses.
+    aliases: [S9-b, s9b, idempotent_writes, upsert]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/merge_missing_records.py
+      - src/extraction/run_codex_one_call.py
+      - src/idempotent_write.py
+      - src/rag/compact_api_packet.py
+      - src/rag/compact_packet.py
+
   # ------------------------------------------------------------------ baseline
   # ---------------------------------------------------------------------- P3
   candidate_slot_enforcement:

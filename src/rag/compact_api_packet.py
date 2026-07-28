@@ -13,7 +13,9 @@ from typing import Any
 
 from pydantic import Field
 
+from src.config_flags import is_enabled
 from src.extraction.compact_prompt_v1 import COMPACT_EXTRACTION_PROMPT
+from src.idempotent_write import IDEMPOTENT_UPSERT_FLAG, upsert_json
 
 from .compact_packet import (
     OUTPUT_ROOT as REVIEW_PACKET_ROOT,
@@ -93,10 +95,18 @@ class ApiSource(StrictModel):
     xml_element_id: str | None = None
     table_number: str | None = None
     figure_number: str | None = None
+    # Design-document section 9 locator, carried alongside source_id. Excluded
+    # from the source_id digest below, so a packet rebuilt with locators on has
+    # exactly the S- ids it had before.
+    locator_id: str | None = None
 
 
 class ApiEvidence(StrictModel):
     evidence_id: str
+    # The legible counterpart of evidence_id. Additive: evidence_id stays the
+    # id the extraction prompt asks the model to cite and the validator checks
+    # against, so no committed result stops resolving.
+    locator_id: str | None = None
     text: str
     retrieval_field_tags: list[str]
     experiment_candidate_ids: list[str] = Field(default_factory=list)
@@ -126,8 +136,38 @@ def estimate_tokens(value: Any) -> int:
     return math.ceil(len(value.encode("utf-8")) / 4)
 
 
+# Fields that have ever contributed to an S- id. Frozen: the S- ids in every
+# committed packet were computed over exactly this set, and results cite them.
+# Anything added to SourceLocation later is excluded by omission rather than by
+# a rule someone has to remember, which is why this is a literal tuple and not
+# `set(SourceLocation.model_fields) - {...}`.
+_SOURCE_ID_FIELDS = (
+    "chunk_id",
+    "source_path",
+    "source_kind",
+    "block_type",
+    "section",
+    "subsection",
+    "page_number",
+    "xml_element_id",
+    "table_number",
+    "figure_number",
+)
+
+
 def _source_id(location: SourceLocation) -> str:
-    canonical = location.model_dump_json(exclude_none=True)
+    """The frozen content hash. Unchanged, including when a locator is present.
+
+    Previously this dumped the whole model, so adding any field to
+    SourceLocation would have silently re-keyed every source in every packet.
+    Projecting onto the frozen field list first makes that impossible; the
+    digest for a location without a locator is byte-for-byte what it always
+    was, which `test_source_id_digest_is_frozen` pins.
+    """
+    canonical = location.model_dump_json(
+        exclude_none=True,
+        include=set(_SOURCE_ID_FIELDS),
+    )
     digest = hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:12]
     return f"S-{digest}"
 
@@ -222,6 +262,7 @@ def _prepare(
             source_ids.append(source.source_id)
         prepared[evidence.evidence_id] = ApiEvidence(
             evidence_id=evidence.evidence_id,
+            locator_id=evidence.locator_id,
             text=evidence.text,
             retrieval_field_tags=evidence.field_tags,
             experiment_candidate_ids=evidence.experiment_candidate_ids,
@@ -523,22 +564,24 @@ def write_outputs(
     manifest: dict[str, Any],
     output_root: Path = OUTPUT_ROOT,
 ) -> tuple[Path, Path]:
+    """Write the packet and its manifest, converging on an unchanged rebuild.
+
+    Both files are pure functions of the review packet and the budget, so a
+    rebuild that changes nothing must write nothing; a rebuild that changes
+    something keeps the superseded content under ``<name>.versions/`` instead
+    of overwriting it silently.
+    """
     output_root.mkdir(parents=True, exist_ok=True)
     packet_path = output_root / f"{api_packet.paper_id}.json"
     manifest_path = output_root / f"{api_packet.paper_id}.manifest.json"
-    packet_path.write_text(
-        json.dumps(
-            api_packet.model_dump(mode="json", exclude_none=True),
-            ensure_ascii=False,
-            indent=2,
-        )
-        + "\n",
-        encoding="utf-8",
+    enabled = is_enabled(IDEMPOTENT_UPSERT_FLAG)
+    upsert_json(
+        packet_path,
+        api_packet.model_dump(mode="json", exclude_none=True),
+        on_conflict="version",
+        enabled=enabled,
     )
-    manifest_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    upsert_json(manifest_path, manifest, on_conflict="version", enabled=enabled)
     return packet_path, manifest_path
 
 

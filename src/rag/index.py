@@ -273,6 +273,7 @@ class HybridIndex:
                 source_kind=block.source_kind, block_type=block.block_type,
                 page_number=block.page_number, xml_element_id=block.xml_element_id,
                 table_number=block.table_number, figure_number=block.figure_number,
+                locator_id=block.locator_id,
                 lexical_score=lexical_scores.get(block_id),
                 vector_score=vector_scores.get(block_id), fused_score=fused[block_id],
                 entity_types=sorted({x.entity_type for x in self.entities.get(block_id, [])}),
@@ -338,6 +339,7 @@ class HybridIndex:
                     xml_element_id=neighbor.xml_element_id,
                     table_number=neighbor.table_number,
                     figure_number=neighbor.figure_number,
+                    locator_id=neighbor.locator_id,
                     fused_score=seed.fused_score * 0.18,
                     entity_types=sorted({
                         value.entity_type

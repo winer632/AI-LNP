@@ -14,6 +14,7 @@ from typing import Iterable
 from src.config_flags import is_enabled
 from src.extraction.pdf_multimodal_contracts import BoundingBox
 
+from .evidence_locators import LocatorMinter, cell_locator, row_locator
 from .models import DocumentBlock
 from .uniparse_client import (
     IMAGE_ROOT,
@@ -33,6 +34,7 @@ CORPUS_ROOT = ROOT / "data" / "staging" / "rag" / "gold_v1"
 
 UNIPARSE_ENABLED_ENV = "UNIPARSE_ENABLED"
 UNIPARSE_FLAG = "uniparse_ingestion"
+STRUCTURED_ID_FLAG = "structured_evidence_ids"
 SUPPLEMENT_SECTION_ROOT = "Supplement"
 
 LABEL_PREFIX = r"(?:Supplementary\s+|Supplemental\s+|Extended\s+Data\s+)?"
@@ -59,6 +61,20 @@ def element_text(element: ET.Element) -> str:
 
 def stable_id(*values: str) -> str:
     return hashlib.sha256("\0".join(values).encode()).hexdigest()[:20]
+
+
+def structured_ids_enabled() -> bool:
+    """Whether ingestion mints design-document section 9 locators.
+
+    Additive when on: a block keeps its ``block_id`` content hash and gains a
+    ``locator_id`` beside it. Nothing downstream re-keys, so a corpus built
+    with this on stays readable by code and artifacts that predate it.
+    """
+    return is_enabled(STRUCTURED_ID_FLAG)
+
+
+def _minter(paper_id: str) -> LocatorMinter | None:
+    return LocatorMinter(paper_id) if structured_ids_enabled() else None
 
 
 def relative_source(path: Path) -> str:
@@ -173,19 +189,26 @@ def table_block_text(grid: list[list[str]], label: str | None) -> str:
     return f"{label} | {body}" if label else body
 
 
-def table_row_texts(grid: list[list[str]], label: str | None) -> list[str]:
-    """Render one self-contained sentence per data row.
+def table_row_entries(
+    grid: list[list[str]], label: str | None
+) -> list[tuple[int, str]]:
+    """Render one self-contained sentence per data row, with its grid row number.
 
     Each row repeats its table label, its row label and every column header so
     that a single row block answers a question such as
     "(Table S2, LSEC, total insertion frequency)" without any other context.
     Separators avoid ". " because downstream clause splitting breaks there.
+
+    The row number counts the header as row 1, so the first data row is 2 and a
+    locator reads ``...-tabS2-r2``. It is the *grid* index, not the index of
+    the emitted text, because a row whose cells are all empty is skipped and
+    must not renumber the rows after it.
     """
     if len(grid) < 2:
         return []
     header = grid[0]
-    texts: list[str] = []
-    for row in grid[1:]:
+    entries: list[tuple[int, str]] = []
+    for row_number, row in enumerate(grid[1:], start=2):
         row_label = row[0] if row else ""
         pairs = []
         for index, cell in enumerate(row):
@@ -198,8 +221,43 @@ def table_row_texts(grid: list[list[str]], label: str | None) -> list[str]:
         if not pairs:
             continue
         prefix = " | ".join(part for part in (label, row_label) if part)
-        texts.append(f"{prefix} | {'; '.join(pairs)}" if prefix else "; ".join(pairs))
-    return texts
+        entries.append((
+            row_number,
+            f"{prefix} | {'; '.join(pairs)}" if prefix else "; ".join(pairs),
+        ))
+    return entries
+
+
+def table_row_texts(grid: list[list[str]], label: str | None) -> list[str]:
+    """The rendered rows only. Kept because callers and tests read this shape."""
+    return [text for _, text in table_row_entries(grid, label)]
+
+
+def table_cell_locators(block: DocumentBlock) -> dict[tuple[int, int], str]:
+    """Every addressable cell of a parsed table, keyed by ``(row, column)``.
+
+    This is what makes the design document's column segment real rather than
+    theoretical. Block granularity stops at the row -- ``table_row_entries``
+    emits one text per row -- so nothing in the corpus is a cell, but the grid
+    that produced the row is retained as ``table_html``, and a caller that
+    wants to cite the single cell holding ``1.01 ± 0.38 %`` can name it::
+
+        table_cell_locators(table_block)[(2, 7)]
+        'GP-006-mmc1-p01-tabS2-r2-c7'
+
+    Returns an empty mapping for a block with no locator or no grid, so it is
+    safe to call on any block.
+    """
+    if not block.locator_id or not block.table_html:
+        return {}
+    grid = table_grid_from_html(block.table_html)
+    return {
+        (row_number, column_number): cell_locator(
+            block.locator_id, row_number, column_number
+        )
+        for row_number, row in enumerate(grid, start=1)
+        for column_number, _ in enumerate(row, start=1)
+    }
 
 
 def label_from_text(text: str, pattern: re.Pattern[str], noun: str) -> str | None:
@@ -234,28 +292,53 @@ def xml_blocks(paper_id: str, path: Path) -> list[DocumentBlock]:
     rows: list[DocumentBlock] = []
     seen: set[int] = set()
     emitted: set[str] = set()
+    minter = _minter(paper_id)
 
-    def add_text(text: str, block_type: str, section: str, **metadata) -> None:
+    def add_text(
+        text: str,
+        block_type: str,
+        section: str,
+        *,
+        locator_id: str | None = None,
+        **metadata,
+    ) -> None:
         if not text:
             return
         block_id = f"{paper_id}-B-{stable_id(str(path), section, block_type, text)}"
         if block_id in emitted:
             return
         emitted.add(block_id)
+        # Minted after the duplicate check so a suppressed block cannot consume
+        # an ordinal and shift every later locator on its page.
+        if minter is not None and locator_id is None:
+            locator_id = minter.block(
+                source_path=source_path,
+                page_number=None,
+                block_type=block_type,
+                table_number=metadata.get("table_number"),
+                figure_number=metadata.get("figure_number"),
+            )
         rows.append(DocumentBlock(
             block_id=block_id, paper_id=paper_id, source_path=source_path,
             source_kind="pmc_xml", section_path=section, block_type=block_type,
             text=text, char_start=0, char_end=len(text), parser="pmc_xml",
-            parser_confidence=1.0, **metadata,
+            parser_confidence=1.0, locator_id=locator_id, **metadata,
         ))
 
-    def add(element: ET.Element, block_type: str, section: str, **metadata):
+    def add(
+        element: ET.Element,
+        block_type: str,
+        section: str,
+        *,
+        locator_id: str | None = None,
+        **metadata,
+    ):
         text = element_text(element)
         if not text or id(element) in seen:
             return
         seen.add(id(element))
         add_text(
-            text, block_type, section,
+            text, block_type, section, locator_id=locator_id,
             xml_element_id=element.attrib.get("id"), **metadata,
         )
 
@@ -295,18 +378,35 @@ def xml_blocks(paper_id: str, path: Path) -> list[DocumentBlock]:
             )
             grid = table_grid_from_xml(element)
             table_number = label or table_number_from(label, caption)
+            # One base locator for the table, shared by the whole-table block
+            # and every row, so a row number comes from the grid rather than
+            # from an independent counter that could disagree with it.
+            base = (
+                minter.table(
+                    source_path=source_path,
+                    page_number=None,
+                    table_number=table_number or None,
+                )
+                # Only when something will actually be emitted: an anchor
+                # claimed by a block that is never written is an anchor a
+                # later table cannot have.
+                if minter is not None and (grid or element_text(element))
+                else None
+            )
             # The flattened whole-table text is kept as the `table` block so
             # existing corpora and block ids stay comparable; the structure is
             # added alongside it as HTML plus one block per data row.
             add(
                 element, "table", section,
+                locator_id=base,
                 table_number=table_number or None,
                 table_html=grid_to_html(grid) if grid else None,
                 caption_text=caption or None,
             )
-            for row_text in table_row_texts(grid, table_number):
+            for row_number, row_text in table_row_entries(grid, table_number):
                 add_text(
                     row_text, "table_row", section,
+                    locator_id=row_locator(base, row_number) if base else None,
                     table_number=table_number or None,
                     xml_element_id=element.attrib.get("id"),
                 )
@@ -353,11 +453,19 @@ def uniparse_blocks(
     rows: list[DocumentBlock] = []
     emitted: set[str] = set()
     heading_stack: list[tuple[int, str]] = []
+    minter = _minter(paper_id)
 
     def current_section() -> str:
         return " > ".join([section_root, *(title for _, title in heading_stack)])
 
-    def emit(block_type: str, text: str, page_number: int, **metadata) -> None:
+    def emit(
+        block_type: str,
+        text: str,
+        page_number: int,
+        *,
+        locator_id: str | None = None,
+        **metadata,
+    ) -> None:
         text = compact(text)
         if not text:
             return
@@ -368,11 +476,22 @@ def uniparse_blocks(
         if block_id in emitted:
             return
         emitted.add(block_id)
+        # Minted after the duplicate check so a suppressed block cannot consume
+        # an ordinal and shift every later locator on its page.
+        if minter is not None and locator_id is None:
+            locator_id = minter.block(
+                source_path=source_path,
+                page_number=page_number,
+                block_type=block_type,
+                table_number=metadata.get("table_number"),
+                figure_number=metadata.get("figure_number"),
+            )
         rows.append(DocumentBlock(
             block_id=block_id, paper_id=paper_id, source_path=source_path,
             source_kind="uniparse", section_path=section, block_type=block_type,
             text=text, page_number=page_number, char_start=0, char_end=len(text),
-            parser=parser_name, parser_confidence=0.9, **metadata,
+            parser=parser_name, parser_confidence=0.9, locator_id=locator_id,
+            **metadata,
         ))
 
     def image_metadata(element: UniparseContent) -> dict[str, str]:
@@ -438,21 +557,40 @@ def uniparse_blocks(
                     else []
                 )
                 table_number = table_number_from(*annotation_texts)
+                # One base locator for the table, shared by the whole-table
+                # block and every row, so a row number comes from the grid
+                # rather than from an independent counter.
+                base = (
+                    minter.table(
+                        source_path=source_path,
+                        page_number=page_number,
+                        table_number=table_number,
+                    )
+                    # Only when something will actually be emitted: an anchor
+                    # claimed by a block that is never written is an anchor a
+                    # later table cannot have.
+                    if minter is not None
+                    and (grid or compact(element.text or ""))
+                    else None
+                )
                 if grid:
                     emit(
                         "table", table_block_text(grid, table_number), page_number,
+                        locator_id=base,
                         bbox=bbox, table_number=table_number,
                         table_html=grid_to_html(grid), caption_text=caption_text,
                         **image_metadata(element),
                     )
-                    for row_text in table_row_texts(grid, table_number):
+                    for row_number, row_text in table_row_entries(grid, table_number):
                         emit(
                             "table_row", row_text, page_number, bbox=bbox,
+                            locator_id=row_locator(base, row_number) if base else None,
                             table_number=table_number, caption_text=caption_text,
                         )
                 elif compact(element.text or ""):
                     emit(
                         "table", element.text or "", page_number, bbox=bbox,
+                        locator_id=base,
                         table_number=table_number, caption_text=caption_text,
                         **image_metadata(element),
                     )
@@ -495,6 +633,7 @@ def pymupdf_page_blocks(paper_id: str, path: Path) -> list[DocumentBlock]:
     except ImportError as error:
         raise RuntimeError("PyMuPDF is required in the RAG environment") from error
     rows = []
+    minter = _minter(paper_id)
     with pymupdf.open(path) as document:
         for page_index, page in enumerate(document):
             text = compact(page.get_text("text", sort=True))
@@ -502,6 +641,15 @@ def pymupdf_page_blocks(paper_id: str, path: Path) -> list[DocumentBlock]:
                 continue
             rows.append(DocumentBlock(
                 block_id=f"{paper_id}-B-{stable_id(str(path), str(page_index + 1), text)}",
+                locator_id=(
+                    minter.block(
+                        source_path=relative_source(path),
+                        page_number=page_index + 1,
+                        block_type="pdf_page",
+                    )
+                    if minter is not None
+                    else None
+                ),
                 paper_id=paper_id, source_path=relative_source(path), source_kind="pdf",
                 section_path=f"Supplement page {page_index + 1}", block_type="pdf_page",
                 text=text, page_number=page_index + 1, char_start=0, char_end=len(text),

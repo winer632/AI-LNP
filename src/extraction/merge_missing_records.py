@@ -7,6 +7,7 @@ import json
 from copy import deepcopy
 from pathlib import Path
 
+from src.config_flags import is_enabled
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.check_outcome_coverage import check
 from src.extraction.compact_validation import validate_candidate
@@ -21,6 +22,7 @@ from src.extraction.run_missing_record_vision import (
     load_task as load_vision_task,
     validate as validate_vision,
 )
+from src.idempotent_write import IDEMPOTENT_UPSERT_FLAG, upsert_json
 from src.rag.compact_api_packet import CompactApiPacket
 
 
@@ -37,7 +39,14 @@ def merge(
     inventory_path: Path,
     output_path: Path,
 ) -> dict:
-    if output_path.exists():
+    # With the flag off this is the original guard: an existing output ends the
+    # run before anything is read. With it on the guard moves to the write
+    # below, which can tell "you already ran this" from "you are about to
+    # replace it with something else" -- the merge is pure and local, so the
+    # answer is computable rather than guessable. Nothing here is paid for, and
+    # nothing on disk is touched until the comparison has been made.
+    idempotent = is_enabled(IDEMPOTENT_UPSERT_FLAG)
+    if output_path.exists() and not idempotent:
         raise FileExistsError("Refusing to overwrite an existing recovered result")
     source_bytes = result_path.read_bytes()
     merged = deepcopy(json.loads(source_bytes))
@@ -146,9 +155,19 @@ def merge(
         "not_applicable",
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(
-        json.dumps(parsed.model_dump(mode="json"), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
+    # Same inputs converge: byte-identical content is not rewritten and the
+    # rerun is a no-op. Different inputs are refused, because a recovered
+    # result that disagrees with the one already on disk is exactly the case
+    # the original FileExistsError was protecting.
+    upsert_json(
+        output_path,
+        parsed.model_dump(mode="json"),
+        on_conflict="refuse",
+        hint=(
+            "A recovered result for this paper already exists and differs. "
+            "Re-run with the same inputs, or write to a new --output-path."
+        ),
+        enabled=idempotent,
     )
     report = {
         "merge_version": "missing-record-merge-1.0.0",
@@ -175,8 +194,11 @@ def merge(
         ),
         "finalization_allowed": not unresolved_candidates and coverage_complete,
     }
-    (output_path.parent / "missing_record_merge_report.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
+    upsert_json(
+        output_path.parent / "missing_record_merge_report.json",
+        report,
+        on_conflict="refuse",
+        hint="The merge report for this paper already exists and differs.",
+        enabled=idempotent,
     )
     return report

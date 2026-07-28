@@ -21,6 +21,7 @@ from src.rag.compact_packet import (
     CompactEvidencePacket,
     sentence_clauses,
 )
+from src.rag.evidence_locators import clause_locator
 from src.rag.models import DocumentBlock
 
 
@@ -120,6 +121,7 @@ def full_corpus_view(
             xml_element_id=block.xml_element_id,
             table_number=block.table_number,
             figure_number=block.figure_number,
+            locator_id=block.locator_id,
         )
         normalized_block_text = block.text.translate(OCR_NORMALIZATION)
         clauses = sentence_clauses(normalized_block_text)
@@ -141,6 +143,11 @@ def full_corpus_view(
                 evidence_id,
                 ApiEvidence(
                     evidence_id=evidence_id,
+                    locator_id=(
+                        clause_locator(block.locator_id, index)
+                        if block.locator_id
+                        else None
+                    ),
                     text=text,
                     retrieval_field_tags=(
                         ["outcomes"]
