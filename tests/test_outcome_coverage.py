@@ -2,6 +2,7 @@ import hashlib
 import json
 from unittest.mock import patch
 
+from src.config_flags import override
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.build_outcome_candidates import build_candidates
 from src.extraction.check_outcome_coverage import check
@@ -174,6 +175,75 @@ def test_one_outcome_cannot_satisfy_two_candidate_groups():
     matched_outcome_ids = [row.outcome_id for row in report.matched_candidates]
     assert matched_outcome_ids.count("O1") == 1
     assert report.status == "review_unmatched_groups"
+
+
+def _two_row_group_packet():
+    """One candidate group holding two evidence rows; the result cites one."""
+    packet = _packet()
+    packet.evidence.append(
+        ApiEvidence(
+            evidence_id="E-FVIII-SECOND",
+            text="FVIII activity reached 6.0% after a second intervention.",
+            retrieval_field_tags=["outcomes"],
+            source_ids=["S-TEXT"],
+        )
+    )
+    group = next(
+        row for row in build_candidates(packet) if "E-FVIII" in row.evidence_ids
+    )
+    assert set(group.evidence_ids) == {"E-FVIII", "E-FVIII-SECOND"}
+    return packet, group
+
+
+def test_partially_covered_group_is_discharged_whole_by_default():
+    packet, group = _two_row_group_packet()
+    report = check(packet, _result())
+    assert group.candidate_id in {
+        row.candidate_id for row in report.matched_candidates
+    }
+    assert group.candidate_id not in {
+        row.candidate_id for row in report.unmatched_candidates
+    }
+
+
+def test_residue_targeting_reopens_a_group_holding_uncited_evidence():
+    packet, group = _two_row_group_packet()
+    with override(coverage_residue_targeting=True):
+        report = check(packet, _result())
+    # Still a real match -- the flag adds a second chance, it does not undo one.
+    assert group.candidate_id in {
+        row.candidate_id for row in report.matched_candidates
+    }
+    assert group.candidate_id in {
+        row.candidate_id for row in report.unmatched_candidates
+    }
+
+
+def test_residue_targeting_leaves_a_fully_accounted_group_alone():
+    packet = _packet()
+    shipped = check(packet, _result())
+    with override(coverage_residue_targeting=True):
+        flagged = check(packet, _result())
+    # Every row of the matched group is cited, so nothing is re-opened.
+    assert flagged == shipped
+
+
+def test_reopened_group_below_the_repair_threshold_says_why():
+    packet, group = _two_row_group_packet()
+    candidates = build_candidates(packet)
+    next(
+        row for row in candidates if row.candidate_id == group.candidate_id
+    ).confidence = "medium"
+    with override(coverage_residue_targeting=True):
+        report = check(
+            packet, _result(), assessment=assess(packet), candidates=candidates
+        )
+    reason = next(
+        row.reason
+        for row in report.review_candidates
+        if row.candidate_id == group.candidate_id
+    )
+    assert reason == "partially_covered_group_below_repair_threshold"
 
 
 def test_complexity_detects_mistagged_quantitative_biological_outcome():

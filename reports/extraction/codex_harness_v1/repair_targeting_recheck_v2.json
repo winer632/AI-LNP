@@ -1,0 +1,101 @@
+{
+  "report_version": "repair-targeting-recheck-2.0.0",
+  "harness": "codex-exec",
+  "supersedes": "reports/extraction/codex_harness_v1/repair_targeting_diagnosis.json",
+  "why": "That file records the v7 measurement, taken before c21a758 gated the shared-evidence branch of check_outcome_coverage._score. Three of its per-paper numbers no longer reproduce, and its headline (0 of 9 missing gold outcomes reach any repair task) is no longer true. It is left in place as the historical record; this file is the re-run against current code.",
+  "question": "Re-run against current code: where does the coverage check still over- and under-report, and would repair as it stands surface any currently-missing gold outcome?",
+  "reproduce": {
+    "diagnosis": "build_candidates -> consolidate -> check_outcome_coverage.check -> route_compact_findings.route -> build_missing_record_tasks.build_text_tasks, per paper, no model call",
+    "metrics": "src.extraction.evaluate_final_gold_dynamic.evaluate(result_roots=...) -- library call, writes nothing",
+    "note": "A merged result carries `source_run` on each outcome record and cites V-* crop ids, neither of which the strict first-call contract permits, so the shipped build_repair_route_local cannot route a merged root without those two tolerances."
+  },
+
+  "stored_versus_current": {
+    "conditions": "codex_control_compact_v1 + compact_api_packets_v1_1 -- the same root and packets the stored artifact used",
+    "per_paper": [
+      {"paper": "GP-002", "gold": 1, "missing_gold": 0, "unmatched_stored": 8, "unmatched_now": 8,
+       "verdict": "over-reports, unchanged. 8 repair-eligible groups on a paper with no missing gold."},
+      {"paper": "GP-004", "gold": 2, "missing_gold": 1, "unmatched_stored": 1, "unmatched_now": 1,
+       "verdict": "under-reports, and the stored artifact did not flag it. GO-002's evidence sits inside a group the check marks matched."},
+      {"paper": "GP-005", "gold": 2, "missing_gold": 1, "unmatched_stored": 0, "unmatched_now": 0,
+       "verdict": "stored artifact blamed the coverage check; the cause is one layer earlier. GP-005-E-d5934f7a75e37a6b fails DIRECT_SIGNAL in build_outcome_candidates, so GO-010's passage is in no candidate group for coverage to mark either way."},
+      {"paper": "GP-006", "gold": 5, "missing_gold": 4, "unmatched_stored": 15, "unmatched_now": 16,
+       "verdict": "c21a758 released one more group."},
+      {"paper": "GP-007", "gold": 1, "missing_gold": 0, "unmatched_stored": 0, "unmatched_now": 0,
+       "verdict": "unchanged."},
+      {"paper": "GP-008", "gold": 4, "missing_gold": 3, "unmatched_stored": 1, "unmatched_now": 3,
+       "verdict": "c21a758 fixed most of the stored under-report here."}
+    ],
+    "gold_evidence_in_repair_tasks": {
+      "stored": "0 of 9",
+      "now": "3 of 9 on strong support (GO-006, GO-007, GO-015), 4 of 9 counting one weak lexical match (GO-003)",
+      "support_rule": "a packet evidence row supports a gold row when it shares >= 0.45 of the gold row's content tokens, with a bonus for carrying the gold value literally"
+    }
+  },
+
+  "current_misses": {
+    "default_root": {"recall": "11/15", "precision": 0.1897, "false_additions": 47,
+                     "missing": ["GO-002", "GO-003", "GO-017", "GO-018"]},
+    "codex_union_v1": {"recall": "11/15", "precision": 0.2157, "false_additions": 40,
+                       "missing": ["GO-002", "GO-003", "GO-017", "GO-018"]},
+    "reachability": [
+      {"gold": "GO-002", "paper": "GP-004",
+       "supporting_evidence": "GP-004-E-1f28a42d83d7b914",
+       "in_compact_packet": true, "in_structured_packet": false, "in_full_packet": true,
+       "blocked_by": "repair targeting",
+       "detail": "The row is inside candidate group OC-88f65d75fdf21989, which also carries 41.5% CD11b+, 34.1% CD45+ and 70.7% CD31+. Three extracted records score 1.0 against the group; the one-to-one assignment consumes it on the first, and the row nobody cited leaves the repair-eligible set with it.",
+       "caveat": "Reachable only when the repair route is built from the compact packets, which is the packet family GP-004's records in the default root actually cite. The structured packet does not contain this row at all, so a route built from structured packets is blocked on evidence selection here too."},
+      {"gold": "GO-003", "paper": "GP-006",
+       "supporting_evidence": "GP-006-E-1abbea6a2923c49a",
+       "in_compact_packet": false, "in_structured_packet": false, "in_full_packet": true,
+       "blocked_by": "evidence selection (P0-a), not targeting",
+       "detail": "The sentence asserting colocalization of LYVE-1 and GFP appears only in the full evidence view. No repair task built from the packets the default route uses can carry it, however the coverage check behaves."},
+      {"gold": "GO-017", "paper": "GP-008",
+       "supporting_evidence": "GP-008-E-3e62b1e372ac7846",
+       "in_compact_packet": false, "in_structured_packet": false, "in_full_packet": true,
+       "blocked_by": "evidence selection (P0-a), not targeting",
+       "detail": "Also recorded as human-adjudicated twice as inference rather than measurement (D8M-0108)."},
+      {"gold": "GO-018", "paper": "GP-008",
+       "supporting_evidence": "GP-008-E-7ea0f3f9a2002394",
+       "in_compact_packet": false, "in_structured_packet": false, "in_full_packet": true,
+       "blocked_by": "evidence selection (P0-a) / visual route (P2), not targeting",
+       "detail": "An Appendix figure claim about ALB/Desmin/F4-80/SOX9 co-staining."}
+    ]
+  },
+
+  "residual_targeting_defect": {
+    "name": "a candidate group is discharged whole by one row",
+    "where": "src/extraction/check_outcome_coverage.check",
+    "statement": "The candidate/outcome assignment is one-to-one, but a candidate is an evidence group and one passage routinely carries several distinct measurements. Once any single record is matched to a group, the group leaves the repair-eligible set carrying every claim nobody accounted for. c21a758 named this conflation and fixed the arm where the matching record measures something the evidence contradicts; this is the arm where the match is real and simply incomplete.",
+    "fix": "flag coverage_residue_targeting -- a matched group whose evidence still holds rows no extracted record cites stays repair-eligible",
+    "packet_root_for_the_counts_below": "data/staging/rag/compact_api_packets_v1_1",
+    "repair_eligible_groups": {
+      "default_root": {"off": 10, "on": 17},
+      "codex_union_v1": {"off": 17, "on": 21},
+      "codex_control_compact_v1": {"off": 28, "on": 31}
+    },
+    "gp004_repair_tasks": {"default_root": {"off": 0, "on": 2}, "control_first_call": {"off": 1, "on": 3}}
+  },
+
+  "second_defect_found_not_fixed": {
+    "name": "used_outcomes is keyed by outcome_id, which is not unique",
+    "where": "src/extraction/check_outcome_coverage.check",
+    "statement": "A merged root numbers each contributing run's records from O1, so 21 of 58 records on the default root and 19 of 51 on codex_union_v1 share an id with another record. The first record to claim an id blocks every other record holding it from discharging any candidate, which inflates the repair-eligible set. evaluate_final_gold_dynamic was fixed for exactly this and now selects by position.",
+    "measured": "GP-006 falls from 9 repair-eligible groups to 5 on the default root, and 6 to 3 on codex_union_v1, when the key is the record's position instead of its id.",
+    "why_not_fixed": "With coverage_residue_targeting on it changes the repair-eligible set by nothing on any of the three roots: every group the id collision wrongly held back also holds uncited evidence, so residue targeting keeps it eligible regardless. Fixing it alone would change matched_candidates counts for no measured gain."
+  },
+
+  "end_to_end": {
+    "codex_exec_turns": 3,
+    "what_ran": "The two repair tasks coverage_residue_targeting adds for GP-004 on the default root, plus the equivalent task rebuilt from the clean codex_control_compact_v1 first call to rule out a duplicate-id artifact.",
+    "results": "3 of 3 responses validated; 3 of 3 disposition=unresolved with zero experiments and zero outcomes.",
+    "model_reason": "The evidence reports eGFP expression percentages and qualitative cell-type expression, but does not identify the associated experiment ID or provide enough context to create a new experiment without inventing required experiment fields.",
+    "recall_precision": {
+      "default_root": {"before": "11/15 @ 0.1897, 47 false additions", "after": "11/15 @ 0.1897, 47 false additions"},
+      "codex_union_v1": {"before": "11/15 @ 0.2157, 40 false additions", "after": "11/15 @ 0.2157, 40 false additions"}
+    },
+    "conclusion": "Nothing was mergeable, so before and after are the same artifact. Targeting is now correct for GO-002 -- the passage asserting it reaches the model, in a task that names a candidate group and a passage and never the gold row or its value -- and the model declines to emit a record. The blocker is a fifth cause, one layer below targeting: MissingRecordTask carries existing_experiment_ids but not the experiment records, so a recovered outcome has nothing it can legally attach to and the model will not invent an experiment. Reproduced on both a merged root and a clean first call."
+  },
+
+  "openai_api_requests": 0
+}
