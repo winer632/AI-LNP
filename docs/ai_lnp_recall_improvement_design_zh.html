@@ -425,6 +425,22 @@ format:   html
     <code>UNIPARSE_ENABLED</code> 降级为覆盖项而非绕行通道。
   </div>
 
+  <div class="warn">
+    <b>v10 更正 · 「11/15」与「10/15」是两个口径，此前混为一谈了</b><br>
+    对抗性验证指出 <code>evaluation.json</code> 里的 11/15 复现不出来，重跑得 10/15。
+    核实结果：<b>两个数都是真的，但测的不是一回事</b>——
+    <ul>
+      <li><b>10/15</b> = 默认跑一遍，读 4 个基线 result root</li>
+      <li><b>11/15</b> = <code>codex_union_v1</code>，跨配置<b>集成</b>后的并集</li>
+    </ul>
+    真正的缺陷是这两个数<b>写进了同一个文件</b>，而文件里没有任何字段说明自己来自哪个 root，
+    重跑默认命令就会静默覆盖掉集成的那个数。这是我的问题：报告应当自述来源。
+    第 22 轮已加 <code>result_roots</code> 字段并加测试钉住两者的区分。
+    <br><br>
+    <b>对外应当引用哪个数：</b>单次流水线跑出来是 <b>10/15</b>；
+    需要跨配置集成才能到 <b>11/15</b>。历史最高 12/15 是另一套架构且带人工裁决，不同口径。
+  </div>
+
   <h3 id="s2b-flags">1·五 开关上线状态（v9 · 第 19–20 轮）</h3>
   <p>每个默认打开的开关都必须在注册表里带 <code>rationale</code> 字段写明实测依据，
      这条由 <code>test_a_flag_may_only_ship_enabled_with_a_recorded_rationale</code> 强制。</p>
@@ -453,6 +469,31 @@ format:   html
           <td>无实现，仅为 roadmap 占位</td></tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="warn">
+    <b>第 21–22 轮 · 一个负结果与四个真缺陷</b><br>
+    <b>负结果（分词归一化，实测 +0）：</b>gold 在同一行里就有两种拼法——GO-003 的
+    <code>endpoint_name</code> 写 <code>LYVE1</code>、<code>qualitative_outcome</code> 写 <code>LYVE-1</code>；
+    GO-002 写 <code>F4_80</code> 与 <code>F4/80</code>。加了对称的标记名归一化后
+    <code>lyve1</code> 确实能对上了，但 <b>recall 没变</b>：GO-003 的 <code>endpoint_gate</code>
+    修复前就已经是 <code>True</code>，卡的一直是 <code>polarity_gate</code>——gold 说
+    <code>colocalized</code>，视觉读出的是 <code>overlapping / present in</code>。
+    这是<b>语义等价</b>判断，属于盲审旁路的职责；放松确定性门来迁就它就是在为通过而调参，所以没做。
+    归一化保留（正确且对称），按 <b>+0</b> 记录。
+    <br><br>
+    <b>期间踩的坑：</b>归一化第一版允许跨空格合并，把证据里的
+    <code>more than 80%</code> 并成了 <code>than80</code>，吃掉了 <code>80</code> 这个词元、
+    弄挂一个证据落地测试。改为只认标点分隔符。
+    <br><br>
+    <b>四个真缺陷（均由对抗性验证查出）：</b>
+    ① 第 19 轮声称修好了 <code>--help</code> 写盘，实际<b>只修了 6 个入口里的 3 个</b>，
+    漏掉的恰好包含持有 recall 数字的那个；② <code>ingestion --paper-id</code>
+    会把 9 篇的 manifest <b>截断成 1 篇</b>，删掉其余 8 条；
+    ③ 注册表 <code>integration_points</code> <b>16 条里 10 条是错的</b>，
+    而三个开关的真实读取点一条都没登记；
+    ④ <code>compact_route</code> 开着但在出厂默认下<b>无可观测行为</b>，
+    且描述与代码实际所做的事不符。全部已修，并各自加了测试。
   </div>
 
   <div class="ok">
