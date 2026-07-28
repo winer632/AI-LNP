@@ -1,0 +1,576 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-007",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE",
+      "FORMULATION_INCOMPLETE"
+    ],
+    "evidence_ids": [
+      "GP-007-E-450ee76f1f41150a",
+      "GP-007-E-47d77dd97cd9a252",
+      "GP-007-E-1db684478f7dee70",
+      "GP-007-E-4249c47d2d7ef839"
+    ],
+    "explanation": "Original in vivo experiments evaluated siMicu1-LNPs in HIRI mice, reporting LSEC-relevant outcomes; full LNP composition is not reported in the packet."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "siMicu1-LNPs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "Cholesterol; DSPE-PEG; ApoE-associated",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-b551b3484ce0c2df",
+          "GP-007-E-450ee76f1f41150a"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Relative composition basis not reported."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio not reported."
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "Cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-b551b3484ce0c2df"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-b551b3484ce0c2df"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Amount not reported."
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DSPE-PEG",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-b551b3484ce0c2df"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-b551b3484ce0c2df"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Amount not reported."
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "ApoE",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "targeting_ligand",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Amount not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Amount not reported."
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "siRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-0fcf3d19800c7d6f"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "siMicu1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-0fcf3d19800c7d6f"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "siRNA does not encode a product."
+      },
+      "molecular_target": {
+        "value": "Micu1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Liver was identified as the target organ, but LNP delivery to a specific hepatic cell type was not demonstrated."
+      },
+      "therapeutic_target_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a",
+          "GP-007-E-1db684478f7dee70"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2755d54b950854b9"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-FC-b360a234fb68377d"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "hepatic ischemia-reperfusion injury (HIRI)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-ed5fce0eb33d0dce"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-47d77dd97cd9a252"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 5.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8a573add8f5b7936"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "µl/g",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8a573add8f5b7936"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8a573add8f5b7936"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 2.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8a573add8f5b7936"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h before surgery",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8a573add8f5b7936"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "The packet does not report the full LNP composition, component molar ratios, or N/P ratio.",
+    "Cell-type-specific uptake of siMicu1-LNPs was not directly demonstrated; liver-level biodistribution cannot establish LSEC delivery."
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "Plasma biochemical analysis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "AST, ALT, MDA, and SOD",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "HIRI + LNPs-blank",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-1165d6b8d3a712de"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical values reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical values reported in the packet."
+      },
+      "qualitative_outcome": {
+        "value": "HIRI-induced AST, ALT, and MDA elevations and reduced SOD activity were largely improved with siMicu1-LNPs; improvements were greater with siMicu1-LNPs plus ACT.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_treatment_full_v1"
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "Liver histology",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8585a45cd0259fe9"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Liver sinus congestion, inflammatory-cell infiltration, and liver-lobule structure",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8585a45cd0259fe9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "HIRI + LNPs-blank",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8585a45cd0259fe9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical values reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical values reported in the packet."
+      },
+      "qualitative_outcome": {
+        "value": "Liver-lobule structure was significantly restored in HIRI mice given siMicu1-LNPs, with or without ACT.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-8585a45cd0259fe9"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_treatment_full_v1"
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "Transmission electron microscopy",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and LSEC defenestration",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "HIRI-induced pathology",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical values reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical values reported in the packet."
+      },
+      "qualitative_outcome": {
+        "value": "ACT plus siMicu1-LNPs ameliorated HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and LSEC defenestration.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_treatment_full_v1"
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "In vivo and ex vivo fluorescence imaging",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-ec5a4dc4f7a76100",
+          "GP-007-E-2755d54b950854b9"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Organ biodistribution of FITC-labeled siMicu1-LNPs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-ec5a4dc4f7a76100",
+          "GP-007-E-2755d54b950854b9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical photon-flux values reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical photon-flux values reported in the packet."
+      },
+      "qualitative_outcome": {
+        "value": "At 6 h post-injection, ex vivo imaging showed the liver was the primary target organ.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2755d54b950854b9"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_treatment_full_v1"
+    },
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "plasma biochemical measurements and oxidative-stress activity measurements",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "plasma AST, plasma ALT, MDA, and SOD activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "HIRI+LNPs-blank group",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-1165d6b8d3a712de",
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric values not reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric values not reported in the packet."
+      },
+      "qualitative_outcome": {
+        "value": "HIRI-induced AST, ALT, and MDA elevations and reduced SOD activity were largely improved by siMicu1-LNPs; improvement was greater with siMicu1-LNPs plus ACT.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-2cee26f38a1d4591"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_control_compact_v1"
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "transmission electron microscopy",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "LSEC defenestration phenotype, mitochondrial cristae fragmentation, and mitochondrial Ca2+ accumulation",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Comparator was not stated in this evidence passage."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric values not reported in the packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric values not reported in the packet."
+      },
+      "qualitative_outcome": {
+        "value": "ACT synergized with siMicu1-LNPs to ameliorate HIRI-induced mitochondrial cristae fragmentation, mitochondrial Ca2+ accumulation, and the LSEC defenestration phenotype.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-007-E-4249c47d2d7ef839"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_control_compact_v1"
+    }
+  ]
+}
