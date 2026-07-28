@@ -64,7 +64,21 @@ class TfidfVectorBackend:
 
 class SentenceTransformerBackend:
     def __init__(self, model_name: str = "multi-qa-MiniLM-L6-cos-v1"):
-        from sentence_transformers import SentenceTransformer
+        try:
+            from sentence_transformers import SentenceTransformer
+        except ImportError as error:
+            # The retrieval stack is a separate environment on purpose: torch
+            # and faiss are large and the extraction path does not need them.
+            # A bare ModuleNotFoundError here reads as a broken repository
+            # rather than as "you are in the wrong venv", so say which one.
+            raise ImportError(
+                "SentenceTransformerBackend needs the retrieval dependencies, "
+                "which live in a separate environment:\n"
+                "    python3 -m venv .venv-rag\n"
+                "    .venv-rag/bin/pip install -r requirements-rag.txt\n"
+                "Then run this module with .venv-rag/bin/python. The extraction "
+                "path does not need them and runs from .venv."
+            ) from error
         self.model = SentenceTransformer(model_name)
         self.blocks: list[DocumentBlock] = []
         self.matrix: np.ndarray | None = None

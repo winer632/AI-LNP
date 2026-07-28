@@ -17,10 +17,17 @@ open-access gold-set papers.
 |---|---:|
 | Gold papers | 9 |
 | Gold outcome records | 15 |
-| Final recovered outcome records | 10/15 (66.7%) |
-| Missing outcome records | 5/15 (33.3%) |
+| Final recovered outcome records, one run | 10/15 (66.7%) |
+| Final recovered outcome records, union of configurations | 11/15 (73.3%) |
+| Missing outcome records, one run | 5/15 (33.3%) |
 | Local candidate-inventory recall | 15/15 |
 | Current quality-gate status | **Not passed** |
+
+Two recall figures, because they measure different things. A single run scores
+the four baseline result roots and recovers 10/15. Taking the union across
+extraction configurations recovers 11/15, adding GO-006. Both are written by
+the same evaluator, so its report records `result_roots` and says which it is.
+Quote the single-run figure unless you mean the ensemble.
 
 The 15/15 candidate-inventory result means local code can flag evidence groups
 that may represent outcomes. It does **not** mean those outcomes have been
@@ -182,7 +189,11 @@ recovery while the gold-set gate remains below target.
 ```bash
 python3 -m venv .venv-rag
 .venv-rag/bin/pip install -r requirements-rag.txt
-.venv-rag/bin/python -m src.rag.ingestion
+
+# --confirm-write is required: these rewrite tracked corpus and report files.
+# --paper-id restricts the run; --skip-missing-xml records a missing source
+# as a warning instead of aborting after earlier papers are already written.
+.venv-rag/bin/python -m src.rag.ingestion --confirm-write
 .venv-rag/bin/python -m src.rag.run_pipeline
 ```
 
