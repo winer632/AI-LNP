@@ -1,0 +1,40 @@
+{
+  "report_version": "repair-lever-ablation-1.0.0",
+  "question": "Which repair levers pay for themselves?",
+  "levers": {
+    "split_tasks": {
+      "change": "max_candidates_per_task=1",
+      "tasks": 7,
+      "recall": "6/15 -> 7/15",
+      "gained": [
+        "GO-007"
+      ],
+      "verdict": "pays -- the gold sentence was already in the bundled task; only turn size blocked it"
+    },
+    "widen_confidence": {
+      "change": "repair_confidence_levels=(high,medium)",
+      "tasks": "8 -> 38",
+      "recall": "7/15 (no additional gain over split alone)",
+      "precision": "0.429 -> 0.292",
+      "false_additions": "8 -> 17",
+      "verdict": "does not pay -- 4.75x the calls for zero additional gold, and nine more false additions"
+    },
+    "coverage_numeric_gate": {
+      "change": "shared evidence must also agree on endpoint family and not contradict numerically",
+      "effect": "unmatched detection restored for GP-004/006/008",
+      "recall_effect": "none on its own",
+      "verdict": "necessary but not sufficient -- it makes the gap visible, it does not close it"
+    }
+  },
+  "still_missing": [
+    "GO-002",
+    "GO-003",
+    "GO-004",
+    "GO-006",
+    "GO-010",
+    "GO-015",
+    "GO-017",
+    "GO-018"
+  ],
+  "recommendation": "Keep repair_confidence_levels defaulting to high. Adopt max_candidates_per_task=1. The coverage gate stays because a wrong covered verdict is worse than a visible gap."
+}
