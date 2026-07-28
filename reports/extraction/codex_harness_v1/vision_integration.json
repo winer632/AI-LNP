@@ -1,0 +1,50 @@
+{
+  "report_version": "vision-integration-1.0.0",
+  "vision_reads": {
+    "GO-003": {
+      "paper": "GP-006",
+      "panels": "Merge + GFP + LYVE-1",
+      "disposition": "resolved",
+      "qualitative_outcome": "GFP signal is present in LYVE-1-positive cells.",
+      "relationship": "colocalized"
+    },
+    "GO-002": {
+      "paper": "GP-004",
+      "panel": "Figure 2",
+      "disposition": "resolved",
+      "qualitative_outcome": "eGFP signal is not colocalized with F4-80-positive cells; the printed eGFP mRNA flow-cytometry value for the CD11b+ fraction is 41.5 +/- 14.6%.",
+      "outcome_value": 41.5,
+      "printed_labels_count": 20
+    }
+  },
+  "recall_effect": {
+    "union_without_vision": "11/15",
+    "union_with_vision": "11/15",
+    "delta": 0
+  },
+  "why_no_gain": {
+    "GO-003": {
+      "gold_endpoint_tokens": [
+        "gfp",
+        "lsec",
+        "lyve1",
+        "positive"
+      ],
+      "vision_record_tokens": [
+        "gfp",
+        "is",
+        "lyve",
+        "positive",
+        "present",
+        "signal"
+      ],
+      "overlap": [
+        "gfp",
+        "positive"
+      ],
+      "blocker": "LYVE1 versus LYVE-1 tokenise differently under [a-z0-9]+, so the marker name never matches"
+    },
+    "note": "The gold set is itself inconsistent here: endpoint_name writes LYVE1 while its own qualitative_outcome writes LYVE-1."
+  },
+  "position": "The reads are correct and the records are faithful. Closing the gap would mean rewording the vision output to match the gold phrasing, or loosening the evaluator. Both are teaching to the test, so neither was done."
+}
