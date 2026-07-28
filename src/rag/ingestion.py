@@ -321,19 +321,15 @@ def xml_blocks(paper_id: str, path: Path) -> list[DocumentBlock]:
 
 
 def uniparse_enabled() -> bool:
-    """Resolve the P1 flag through the registry, not a private env var.
+    """Resolve the P1 flag through the registry.
 
-    This used to read UNIPARSE_ENABLED directly and default it to "1", so the
-    registry reported uniparse_ingestion as off while ingestion was in fact
-    routing through uniparse. Anything auditing the flag file got the wrong
-    answer about what the pipeline was doing.
-
-    UNIPARSE_ENABLED is still honoured, because deployments set it, but it is
-    now one input to the flag rather than a way around it.
+    UNIPARSE_ENABLED is honoured because deployments set it, but it is now
+    declared on the flag as extra_env_vars rather than read here. Reading it
+    first meant it beat both override() and the flag's own
+    AI_LNP_FLAG_UNIPARSE_INGESTION, so a test or a caller could not turn
+    uniparse off in an environment that had it set -- a bypass, not an
+    override, whatever the previous docstring called it.
     """
-    raw = os.environ.get(UNIPARSE_ENABLED_ENV, "").strip().lower()
-    if raw:
-        return raw not in {"0", "false", "no", "off"}
     return is_enabled(UNIPARSE_FLAG)
 
 

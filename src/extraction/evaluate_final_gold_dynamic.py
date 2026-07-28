@@ -574,7 +574,7 @@ def _best_one_to_one_matches(
 def evaluate(
     *,
     gold_root: Path = GOLD_ROOT,
-    output_root: Path = OUTPUT_ROOT,
+    output_root: Path | None = None,
     result_roots: list[Path] | None = None,
     packet_root: Path = PACKET_ROOT,
     task_root: Path = GOLD_GAP_TASK_ROOT,
@@ -724,11 +724,17 @@ def evaluate(
                 },
             }
         )
-    output_root.mkdir(parents=True, exist_ok=True)
-    (output_root / "evaluation.json").write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    # Writing is opt-in. This used to default to the tracked report path, so
+    # any analysis that merely called evaluate() rewrote a committed file --
+    # which is how a verification run dirtied the tree while explicitly trying
+    # not to. The CLI passes OUTPUT_ROOT; a library caller gets a value back
+    # and nothing on disk.
+    if output_root is not None:
+        output_root.mkdir(parents=True, exist_ok=True)
+        (output_root / "evaluation.json").write_text(
+            json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     return summary
 
 
@@ -743,7 +749,9 @@ def main() -> None:
     args = parser.parse_args()
     if not args.confirm_write:
         parser.error("--confirm-write is required; this rewrites tracked files")
-    print(json.dumps(evaluate(), ensure_ascii=False, indent=2, default=str))
+    print(json.dumps(
+        evaluate(output_root=OUTPUT_ROOT), ensure_ascii=False, indent=2, default=str
+    ))
 
 
 if __name__ == "__main__":

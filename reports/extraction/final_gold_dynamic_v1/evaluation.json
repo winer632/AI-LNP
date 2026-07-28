@@ -24,6 +24,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O5",
+        "outcome_index": 4,
         "score": 1.0,
         "overlap_terms": [
           "14",
@@ -98,6 +99,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O3",
+        "outcome_index": 2,
         "score": 1.0,
         "overlap_terms": [
           "hepatocyte",
@@ -140,12 +142,16 @@
       "evidence_supported": true,
       "evidence_check": {
         "claim_type": "numeric",
-        "claim": 60.54,
+        "claim": 17.0,
         "cited_evidence_ids": [
-          "GP-006-FC-28a58dda71c052ff"
+          "GP-006-E-331470ab8527c636",
+          "GP-006-E-42aad5557a4b8d6e",
+          "GP-006-E-d9c30e3abca70fcb"
         ],
         "resolved_evidence_ids": [
-          "GP-006-FC-28a58dda71c052ff"
+          "GP-006-E-331470ab8527c636",
+          "GP-006-E-42aad5557a4b8d6e",
+          "GP-006-E-d9c30e3abca70fcb"
         ],
         "unsupported_terms": []
       }
@@ -156,6 +162,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O1",
+        "outcome_index": 8,
         "score": 1.0,
         "overlap_terms": [
           "16",
@@ -206,6 +213,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O7",
+        "outcome_index": 14,
         "score": 1.0,
         "overlap_terms": [
           "01",
@@ -263,6 +271,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O7",
+        "outcome_index": 6,
         "score": 1.0,
         "overlap_terms": [
           "26",
@@ -300,12 +309,16 @@
       "evidence_supported": true,
       "evidence_check": {
         "claim_type": "numeric",
-        "claim": 1.01,
+        "claim": 3.3,
         "cited_evidence_ids": [
-          "GP-006-FC-bd54a6566769fd63"
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-8f4df2feafb0205d",
+          "GP-006-E-d9a16a0c73e6b6b2"
         ],
         "resolved_evidence_ids": [
-          "GP-006-FC-bd54a6566769fd63"
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-8f4df2feafb0205d",
+          "GP-006-E-d9a16a0c73e6b6b2"
         ],
         "unsupported_terms": []
       }
@@ -316,6 +329,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O1",
+        "outcome_index": 0,
         "score": 1.0,
         "overlap_terms": [
           "all",
@@ -376,6 +390,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O2",
+        "outcome_index": 1,
         "score": 0.7,
         "overlap_terms": [
           "but",
@@ -413,17 +428,24 @@
         "numeric_gate": true
       },
       "evidence_checked": true,
-      "evidence_supported": true,
+      "evidence_supported": false,
       "evidence_check": {
         "claim_type": "qualitative",
-        "claim": "Hepatocytes were most efficient in EGFP protein production; differences were statistically significant.",
+        "claim": "Both Kupffer cells and hepatocytes had comparable high and rapid uptake, but EGFP mRNA translation occurred exclusively in hepatocytes during intravital imaging.",
         "cited_evidence_ids": [
-          "GP-005-E-bffa32a057398b00"
+          "GP-005-E-60a7b4a513e710e6",
+          "GP-005-E-d5934f7a75e37a6b",
+          "GP-005-E-dad8173744c1bc04"
         ],
         "resolved_evidence_ids": [
-          "GP-005-E-bffa32a057398b00"
+          "GP-005-E-60a7b4a513e710e6",
+          "GP-005-E-d5934f7a75e37a6b",
+          "GP-005-E-dad8173744c1bc04"
         ],
-        "unsupported_terms": []
+        "unsupported_terms": [
+          "kupffer",
+          "occurred"
+        ]
       }
     },
     {
@@ -432,6 +454,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O1",
+        "outcome_index": 3,
         "score": 0.75,
         "overlap_terms": [
           "by",
@@ -441,7 +464,7 @@
           "intravital",
           "kupffer",
           "no",
-          "obviou",
+          "obvious",
           "positive"
         ],
         "exact_numeric": false,
@@ -461,7 +484,7 @@
           "egfp",
           "kupffer",
           "no",
-          "obviou",
+          "obvious",
           "positive"
         ],
         "endpoint_gate": true,
@@ -493,6 +516,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O3",
+        "outcome_index": 2,
         "score": 0.7667,
         "overlap_terms": [
           "accumulation",
@@ -548,6 +572,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O3",
+        "outcome_index": 2,
         "score": 1.0,
         "overlap_terms": [
           "80",
@@ -616,6 +641,7 @@
       "recovered": true,
       "match": {
         "outcome_id": "O4",
+        "outcome_index": 3,
         "score": 1.0,
         "overlap_terms": [
           "20",
@@ -691,9 +717,9 @@
     }
   ],
   "paid_api_requests": 0,
-  "precision": 0.25862068965517243,
+  "precision": 0.1896551724137931,
   "false_additions": {
-    "count": 43,
+    "count": 47,
     "items": [
       {
         "paper_id": "GP-004",
@@ -778,6 +804,15 @@
       },
       {
         "paper_id": "GP-006",
+        "outcome_id": "O1",
+        "experiment_id": "E1",
+        "endpoint": "F8 gene editing rate in isolated hepatocytes",
+        "outcome_value": 60.54,
+        "outcome_unit": "% (± 11.65%)",
+        "summary": "F8 gene editing rate in isolated hepatocytes deep sequencing % (± 11.65%) Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
         "outcome_id": "O2",
         "experiment_id": "E1",
         "endpoint": "F8 gene editing rate in isolated LSECs",
@@ -829,6 +864,15 @@
         "outcome_value": 16.5,
         "outcome_unit": "%",
         "summary": "LSEC total deletion frequency Table S1 deletion-frequency analysis % 16.50 ± 2.96% total deletion frequency in LSECs. Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
+      },
+      {
+        "paper_id": "GP-006",
+        "outcome_id": "O3",
+        "experiment_id": "E1",
+        "endpoint": "hepatocyte total deletion frequency",
+        "outcome_value": 60.54,
+        "outcome_unit": "%",
+        "summary": "hepatocyte total deletion frequency Table S1 deletion-frequency analysis % 60.54 ± 11.65% total deletion frequency in hepatocytes. Cas9 mRNA and NSGHAsgRNA Cas9 hepatocytes and LSECs LSECs liver NSG HemA mice"
       },
       {
         "paper_id": "GP-006",
@@ -985,12 +1029,30 @@
       },
       {
         "paper_id": "GP-005",
+        "outcome_id": "O1",
+        "experiment_id": "E1",
+        "endpoint": "Egfp mRNA uptake relative to total RNA",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "Egfp mRNA uptake relative to total RNA quantitative realtime-PCR other tested cell types Kupffer cells, followed by hepatocytes, internalized the largest amounts of LNP1. Egfp mRNA EGFP primary murine hepatocytes and Kupffer cells"
+      },
+      {
+        "paper_id": "GP-005",
         "outcome_id": "O3",
         "experiment_id": "E3",
         "endpoint": "LNP16 uptake",
         "outcome_value": null,
         "outcome_unit": null,
         "summary": "LNP16 uptake qPCR-based detection of Egfp mRNA hepatic stellate cells versus hepatocytes and Kupffer cells LNP16 was taken up in significant amounts by hepatocytes and Kupffer cells, whereas hepatic stellate cells did not absorb LNP at a significant level. Egfp mRNA and negative-control siRNA EGFP hepatocytes, Kupffer cells, and hepatic stellate cells liver"
+      },
+      {
+        "paper_id": "GP-005",
+        "outcome_id": "O2",
+        "experiment_id": "E2",
+        "endpoint": "EGFP protein production",
+        "outcome_value": null,
+        "outcome_unit": null,
+        "summary": "EGFP protein production immunoblot Kupffer cells and other tested cell types Hepatocytes were most efficient in EGFP protein production; differences were statistically significant. Egfp mRNA EGFP hepatocytes and Kupffer cells liver"
       },
       {
         "paper_id": "GP-005",
@@ -1086,8 +1148,8 @@
   },
   "evidence_accuracy": {
     "checked": 11,
-    "supported": 7,
-    "rate": 0.6363636363636364
+    "supported": 6,
+    "rate": 0.5454545454545454
   },
   "unresolved_declared": {
     "result_items": 19,

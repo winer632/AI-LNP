@@ -1,86 +1,19 @@
 {
-  "union_version": "union-extraction-1.0.0",
-  "note": "Recall-first ensemble over configurations. Every record was produced and validated by one of the input runs.",
-  "run_roots": [
-    "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/repair_v2_merged",
-    "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/p1_exp/extraction_sc",
-    "/private/tmp/claude-1138299188/-Users-wangxinxin-Desktop-LNP/a27161b7-f146-4d81-a9f8-6aca2d85f1cc/scratchpad/p1_exp/extraction_p3_compact",
-    "data/staging/extraction/codex_treatment_full_v1",
-    "data/staging/extraction/codex_control_compact_v1"
+  "union_version": "union-extraction-1.1.0",
+  "note": "codex_union_v1 with the GP-004 and GP-006 panel reads merged. The GP-008 reads are deliberately excluded: they recover no outcome and drop evidence coverage from 10 checked to 9, because one-to-one matching reassigns an evidence-bearing record to another gold row.",
+  "base_root": "data/staging/extraction/codex_union_v1",
+  "vision_observations": [
+    "data/staging/extraction/codex_vision_v1/GP-004/observation.json",
+    "data/staging/extraction/codex_vision_v1/GP-006/observation.json"
   ],
-  "papers": [
-    {
-      "paper_id": "GP-001",
-      "outcomes": 0,
-      "experiments": 0,
-      "by_source_run": {}
-    },
-    {
-      "paper_id": "GP-002",
-      "outcomes": 2,
-      "experiments": 1,
-      "by_source_run": {
-        "codex_treatment_full_v1": 2
-      }
-    },
-    {
-      "paper_id": "GP-003",
-      "outcomes": 0,
-      "experiments": 0,
-      "by_source_run": {}
-    },
-    {
-      "paper_id": "GP-004",
-      "outcomes": 6,
-      "experiments": 3,
-      "by_source_run": {
-        "repair_v2_merged": 4,
-        "codex_treatment_full_v1": 2
-      }
-    },
-    {
-      "paper_id": "GP-005",
-      "outcomes": 3,
-      "experiments": 1,
-      "by_source_run": {
-        "repair_v2_merged": 2,
-        "codex_treatment_full_v1": 1
-      }
-    },
-    {
-      "paper_id": "GP-006",
-      "outcomes": 29,
-      "experiments": 3,
-      "by_source_run": {
-        "repair_v2_merged": 11,
-        "extraction_sc": 8,
-        "extraction_p3_compact": 7,
-        "codex_treatment_full_v1": 3
-      }
-    },
-    {
-      "paper_id": "GP-007",
-      "outcomes": 6,
-      "experiments": 1,
-      "by_source_run": {
-        "codex_treatment_full_v1": 4,
-        "codex_control_compact_v1": 2
-      }
-    },
-    {
-      "paper_id": "GP-008",
-      "outcomes": 5,
-      "experiments": 2,
-      "by_source_run": {
-        "repair_v2_merged": 3,
-        "codex_treatment_full_v1": 2
-      }
-    },
-    {
-      "paper_id": "GP-009",
-      "outcomes": 0,
-      "experiments": 0,
-      "by_source_run": {}
-    }
-  ]
+  "total_outcomes": 53,
+  "by_source": {
+    "repair_v2_merged": 20,
+    "codex_treatment_full_v1": 14,
+    "vision": 2,
+    "codex_control_compact_v1": 2,
+    "extraction_sc": 8,
+    "extraction_p3_compact": 7
+  },
+  "requires_flag": "vision_relationship_polarity"
 }

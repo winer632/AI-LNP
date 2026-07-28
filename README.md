@@ -17,17 +17,22 @@ open-access gold-set papers.
 |---|---:|
 | Gold papers | 9 |
 | Gold outcome records | 15 |
-| Final recovered outcome records, one run | 10/15 (66.7%) |
-| Final recovered outcome records, union of configurations | 11/15 (73.3%) |
-| Missing outcome records, one run | 5/15 (33.3%) |
+| Final recovered outcome records, one run | 11/15 (73.3%) |
+| Final recovered outcome records, union plus vision | 12/15 (80.0%) |
+| Missing outcome records, one run | 4/15 (26.7%) |
 | Local candidate-inventory recall | 15/15 |
 | Current quality-gate status | **Not passed** |
 
 Two recall figures, because they measure different things. A single run scores
-the four baseline result roots and recovers 10/15. Taking the union across
-extraction configurations recovers 11/15, adding GO-006. Both are written by
-the same evaluator, so its report records `result_roots` and says which it is.
-Quote the single-run figure unless you mean the ensemble.
+the five result roots in `RESULT_ROOTS` and recovers 11/15 at precision 0.1897.
+The union across extraction configurations, with the GP-004 and GP-006 panel
+reads merged and `vision_relationship_polarity` on, recovers 12/15 at 0.2264.
+Both are written by the same evaluator, so its report records `result_roots`
+and says which it is. Quote the single-run figure unless you mean the ensemble.
+
+A third figure, 13/15, comes from the blind adjudication side channel and is
+deliberately not called recall: a model verdict cannot be reproduced byte for
+byte, which is the property the primary number exists to have.
 
 The 15/15 candidate-inventory result means local code can flag evidence groups
 that may represent outcomes. It does **not** mean those outcomes have been

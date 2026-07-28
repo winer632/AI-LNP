@@ -80,3 +80,37 @@ def test_components_are_stable_across_hash_seeds():
         )
         outputs.add(completed.stdout.strip())
     assert len(outputs) == 1, f"grouping varied by hash seed: {outputs}"
+
+
+def test_the_committed_evaluation_matches_what_the_code_produces():
+    """A committed report must be reproducible from the code that ships with it.
+
+    The report at reports/extraction/final_gold_dynamic_v1/evaluation.json was
+    written before the duplicate-id fix and kept a precision the shipped
+    evaluator no longer produces -- 0.2586 against 0.1897 -- while the flag
+    registry quoted the stale figure as evidence. Nothing caught it, because
+    the determinism test above only covers task grouping and no test read the
+    committed file at all.
+
+    Only the derived numbers are compared. The full report embeds absolute
+    paths and per-record detail that legitimately differ by checkout.
+    """
+    import json
+    from pathlib import Path
+
+    from src.extraction.evaluate_final_gold_dynamic import ROOT, evaluate
+
+    committed_path = ROOT / "reports/extraction/final_gold_dynamic_v1/evaluation.json"
+    if not committed_path.exists():
+        return
+    committed = json.loads(committed_path.read_text(encoding="utf-8"))
+    fresh = evaluate()
+
+    for key in ("recovered", "total", "missing_gold_outcome_ids"):
+        assert committed[key] == fresh[key], f"{key} drifted from the code"
+    if "precision" in committed and "precision" in fresh:
+        assert round(committed["precision"], 6) == round(fresh["precision"], 6)
+        assert (
+            committed["false_additions"]["count"]
+            == fresh["false_additions"]["count"]
+        )

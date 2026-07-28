@@ -101,9 +101,24 @@ def test_flags_are_documented_and_declare_integration_points():
 
 
 def test_every_flag_has_a_distinct_environment_variable():
-    variables = [flag.env_var for flag in registry().values()]
-    assert len(variables) == len(set(variables))
-    assert all(name.startswith("AI_LNP_FLAG_") for name in variables)
+    """No two flags share a variable, and the conventional name always works.
+
+    The registry supports `env:` for a flag that a deployment already sets
+    under its own name -- uniparse_ingestion declares UNIPARSE_ENABLED -- so
+    requiring every env_var to carry the AI_LNP_FLAG_ prefix would forbid the
+    feature. What must hold is that the prefixed name stays available on every
+    flag, so a caller who knows only the convention can always reach one, and
+    that no variable governs two flags.
+    """
+    every = [name for flag in registry().values() for name in flag.env_vars]
+    assert len(every) == len(set(every)), "a variable governs more than one flag"
+    # env_var_for returns the declared name when there is one, so build the
+    # conventional name here rather than asking for "the" variable.
+    for flag in registry().values():
+        conventional = "AI_LNP_FLAG_" + flag.name.upper().replace("-", "_")
+        assert conventional in flag.env_vars, (
+            f"{flag.name} cannot be reached by the conventional variable"
+        )
 
 
 # --------------------------------------------------------------------------- #

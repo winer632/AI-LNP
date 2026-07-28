@@ -25,22 +25,30 @@ env_prefix: AI_LNP_FLAG_
 
 flags:
 
-  # --------------------------------------------------------------------- P0-a
+  # --------------------------------------------------------------------- P1
   uniparse_ingestion:
     priority: P1
     default: true
     status: enabled
     rationale: >-
-      Enabled on measurement. GP-006 corpus goes 54 -> 260 blocks and
-      the value 1.01 appears 4 times where page.get_text() found it 0
-      times; that value is GO-006. Safe to default on because an
-      unreachable service degrades to the pymupdf path with a recorded
-      warning rather than failing ingestion.
+      Enabled on measurement. GP-006's corpus goes 54 blocks to 259, and
+      1.01 -- the value of GO-006 -- appears 6 times where the PyMuPDF
+      path produced it 0 times; Table S2 is a rendered image, so
+      page.get_text() returns nothing for it. Safe to default on because
+      an unreachable service degrades to the pymupdf path with a
+      recorded warning rather than failing ingestion.
     description: >-
       Route document ingestion through the external UniParse structural parsing
       service (see UNIPARSE_BASE_URL in .env.example) instead of the in-repo
       PDF/XML parser. Preserves sections, captions, tables, cells, and reading
       order so figure/table objects survive into the evidence graph.
+    # Declared so the registry owns the precedence. It used to be read by hand
+    # inside ingestion.uniparse_enabled() before is_enabled() was consulted,
+    # which made it invisible to describe_flag and to anyone auditing what
+    # governs this flag. Declaring it keeps deployments working -- a declared
+    # env var outranks the conventional AI_LNP_FLAG_ one by the documented
+    # resolution order -- while making it appear in env_vars.
+    env: UNIPARSE_ENABLED
     aliases: [P1, p1, uniparse]
     # Files that actually call is_enabled() for this flag. Verified by
     # test_declared_integration_points_really_read_the_flag, because this
@@ -48,7 +56,7 @@ flags:
     integration_points:
       - src/rag/ingestion.py
 
-  # --------------------------------------------------------------------- P0-b
+  # --------------------------------------------------------------------- P0-a
   full_evidence_view:
     priority: P0-a
     default: false
@@ -76,18 +84,15 @@ flags:
     default: true
     status: enabled
     rationale: >-
-      Enabled on measurement. uniparse (P1) puts Table S2 into the corpus,
-      but the compact packet's ranker then drops the row again: the GP-006
-      compact packet contains 1.01 zero times while the committed structured
-      packet at the same 16k budget contains it four times (206 evidence, 98
-      structured, 15,995 tokens). With this on, the default run recovers
-      GO-006 -- exact_numeric, and the record's own cited evidence supports
-      it -- and single-run recall goes 10/15 -> 11/15. It costs precision,
-      0.3125 -> 0.2586, because a run that emits more records matches a
-      smaller fraction of them; precision_metrics carries that number.
-      Two papers overshoot the budget on purpose (GP-004 29.7k, GP-008
-      22.6k): structured evidence is never dropped, so a paper whose tables
-      alone exceed the budget costs more tokens rather than losing a row.
+      Enabled on measurement. The structured packet keeps table rows the
+      budget would otherwise evict: GP-006's compact packet contains
+      1.01 zero times and its structured packet contains it four times,
+      which takes the default run from 10/15 to 11/15. The cost is
+      precision 0.3125 to 0.1897 -- one-to-one matching means an added
+      stage can only raise recall and lower precision -- and three
+      papers exceed the 16k budget (GP-004 29,676, GP-008 22,624, GP-001
+      18,551) because structured evidence is never dropped, so token
+      cost is not bounded by budget_tokens.
     description: >-
       Build the extraction packet with src/rag/structured_compact_packet.py
       instead of the plain compact packet: keep every table, table_row,
@@ -105,16 +110,18 @@ flags:
     integration_points:
       - src/extraction/run_codex_one_call.py
 
-  # ----------------------------------------------------------------------- P1
+  # ----------------------------------------------------------------------- P0-b
   precision_metrics:
     priority: P0-b
     default: true
     status: enabled
     rationale: >-
       Enabled on measurement. Recall alone cannot separate a run that
-      found more from one that emitted more: the 11/15 union carries
-      precision 0.373 and 32 false additions. Reporting-only, so it
-      cannot change an extraction.
+      found more from one that emitted more: codex_union_v1 scores 11/15
+      across 51 records at precision 0.2157 with 40 false additions.
+      Reporting-only, so it cannot change an extraction. (The 0.373 and
+      32 quoted here previously were the pre-fix figures produced when
+      matches were counted by id-set membership.)
     description: >-
       Compute dynamic precision/recall metrics during final gold evaluation
       rather than reporting only one-to-one recovery counts.
@@ -131,15 +138,17 @@ flags:
     default: true
     status: enabled
     rationale: >-
-      Enabled on measurement, and on safety. No result record in any
-      shipped root carries vision_relationship, so turning this on moves
-      no existing number: default stays 10/15 and codex_union_v1 stays
-      11/15. On a union+vision root it takes recall 11/15 -> 12/15 and
-      precision 0.3585 -> 0.3774, admitting GO-003 while GO-002 stays
-      refused. The safety half is why it is not off: without it a
-      not_colocalized read satisfies a gold row asserting colocalized,
-      because tokenising the denial leaves "colocalized" in place. Off
-      means that hole is open whenever vision records are merged.
+      Enabled. A SelectiveVisionResponse carries a closed 7-value
+      relationship enum emitted by a model that never saw the gold set;
+      carrying it structurally lets a record satisfy the polarity gate
+      on a declaration rather than on prose. This IS a loosening of that
+      gate, and the only pair it flips across five result roots is
+      GO-003 against its vision record. On the union plus the GP-004 and
+      GP-006 reads: 11/15 at 0.2157 becomes 12/15 at 0.2264. It moves
+      nothing on any root the repository ships as default, because those
+      carry no vision records. A denied relation is vetoed, so
+      not_colocalized cannot satisfy a gold row saying colocalized --
+      which matters because that string tokenises to {not, colocalized}.
     description: >-
       Judge a record that declares a vision relationship on that structured
       declaration rather than on its prose. Reads the vision contract's closed
@@ -166,20 +175,18 @@ flags:
     rationale: >-
       Available, not default. Its reads are the only source for the four
       outcomes the text path never produces, and with the relationship
-      enum carried structurally they now score: merging the GP-004 and
-      GP-006 reads takes the union from 11/15 to 12/15 and raises
-      precision 0.2157 -> 0.2264. Left off because the merge is not
-      uniformly positive -- adding the GP-008 reads gains no outcome and
-      costs evidence coverage, because one-to-one matching reassigns an
-      evidence-bearing record to another gold row. Corrects the earlier
-      rationale here, which said the reads do not score; what was
-      measured then was that they did not score, without separating
-      whether the fault lay in the reads or in a downstream gate. It lay
-      downstream.
+      enum carried structurally they score: merging the GP-004 and
+      GP-006 reads takes codex_union_v1 from 11/15 at precision 0.2157
+      to 12/15 at 0.2264. Left off because the merge is not uniformly
+      positive -- adding the GP-008 reads gains no outcome and drops
+      evidence coverage from 10 checked to 9, because one-to-one
+      matching reassigns an evidence-bearing record to another gold row.
     description: >-
-      Use a local vision-language model (Ollama + Gemma) for targeted figure and
-      table observation instead of a paid multimodal call. Output must stay
-      structured observations with explicit abstention, never conclusions.
+      Attach panel crops and the stricter abstain contract to a vision
+      read. The route calls SELECTIVE_VISION_MODEL, which today is
+      gpt-5.6-terra through the codex harness; an earlier version of
+      this text said Ollama plus Gemma, and no such code exists in this
+      repository.
     aliases: [P2, p2]
     # Files that actually call is_enabled() for this flag. Verified by
     # test_declared_integration_points_really_read_the_flag, because this
@@ -189,7 +196,7 @@ flags:
       - src/extraction/identify_selective_vision_referrals.py
       - src/extraction/selective_vision_contracts.py
 
-  # ----------------------------------------------------------------------- P3
+  # ----------------------------------------------------------------------- roadmap
   expanded_discovery:
     priority: roadmap
     default: false
@@ -215,11 +222,16 @@ flags:
     default: true
     status: enabled
     rationale: >-
-      Enabled on measurement. Recovers GO-004, and the
-      unsupported_extracted_disposition check rejects 76 of 83
-      unsupported claims including 4 of 4 covering 1.01. It degrades
-      with slot count -- 39 slots come back fully dispositioned, 168 do
-      not -- so large papers should chunk via max_slots_per_call.
+      Enabled on measurement: it is the only ablation condition that
+      recovers GO-004, and slot compliance degrades with count -- 39
+      slots come back fully dispositioned, 168 do not -- so large papers
+      should chunk via max_slots_per_call. A previous version of this
+      rationale claimed the validator rejects 76 of 83 unsupported
+      claims. That was a misreading of a note recording the opposite
+      fact -- that 76 of 83 extracted claims cited no returned evidence
+      -- and no committed validation report contains a single
+      unsupported_extracted_disposition finding. Note also that GO-004
+      is itself listed as a doubtful annotation in the design document.
     description: >-
       Send the locally enumerated outcome-candidate slots with the first
       extraction call and require the model to account for every candidate id.
@@ -237,10 +249,9 @@ flags:
     priority: baseline
     status: enabled
     rationale: >-
-      Enabled on measurement, reversing the earlier plan to retire it.
-      Compact plus slots scores 8/15 against the full view's 7/15, and
-      37 of the 51 records in the 11/15 union come from compact-spec
-      runs.
+      Enabled. Compact plus slots scores 8/15 against the full view's
+      7/15, and 37 of the 51 records in codex_union_v1 come from
+      compact-spec runs.
     # The compact route's activation gate used to be a dead config value that no
     # runtime code read. It is now a real switch: this flag mirrors the YAML key
     # below, and `is_enabled("compact_route")` is the only supported way to ask
