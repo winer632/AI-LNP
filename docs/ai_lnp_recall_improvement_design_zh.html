@@ -122,7 +122,7 @@
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
     当前 15 条金标准结果只恢复了 10 条。经实测排查，剩下 5 条没有一条卡在「模型不够强」。
-    <b>v4 更新：P0-a / P0-b / P1 与工程改造已落地并推送 main，测试 160 → 313。
+    <b>v4 更新：P0-a / P0-b / P1 与工程改造已落地并推送 main，测试 160 → 472。
     证据可得性门已通过（<code>1.01</code> 命中 0 → 4），同 harness 消融 recall 6/15 → 8/15。
     但 GO-006 仍未被恢复 —— 证据可得是必要条件、不是充分条件。</b>
   </p>
@@ -379,7 +379,7 @@ format:   html
             + 5 个可选字段；<code>_source_id()</code> 哈希不变并有测试钉住；
             Europe PMC 提为主路径。<b>验收：GP-006 语料 54 → 260 blocks，
             <code>1.01</code> 命中 0 → 4</b></td>
-        <td class="mid">9 篇语料只重建了 GP-006，其余 8 篇仍是 pymupdf 产物（约 2–3 分钟/篇）</td>
+        <td class="yes">已完成（v12 更正）：有补充 PDF 的 5 篇全部重建——GP-001/004/006/007/008 分别 27/304/221/150/281 个 uniparse 块。<b>全仓库已无一个 <code>pdf_page</code> 块</b></td>
       </tr>
       <tr>
         <td>工程就绪度 + 开关</td><td class="num yes">95%<br><small>(45%)</small></td>
@@ -388,7 +388,7 @@ format:   html
             priority 与设计文档由测试钉住；<code>.env.example</code> 3 → 19；
             <code>pymupdf</code> 入 requirements；测试写副作用消除（pytest 后工作树干净）；
             <code>.github/workflows/ci.yml</code></td>
-        <td class="mid">CI 尚未在 GitHub 上实际触发过一次</td>
+        <td class="yes">已完成（v12 更正）：CI 已在 GitHub 上多次运行并通过，含「跑完测试后工作树必须干净」的防写入闸门</td>
       </tr>
       <tr>
         <td><b>P2</b> 视觉观察</td><td class="num yes">100%<br><small>(65%)</small></td>
