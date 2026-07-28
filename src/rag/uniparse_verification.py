@@ -73,13 +73,23 @@ only (250 blocks; GP-001/004/006/007/008 are the papers with supplements):
 * **GP-004 Supplementary Tables 2 and 3 do not.** 42 of the 45 distinct
   sequence-length runs uniparse produced for pages 10-11 of
   ``41467_2021_20903_MOESM1_ESM.pdf`` do not occur in those pages' own text
-  layer. It gave the eGFP and HGF rows the *Luciferase* row's sequence -- the
-  page prints ``eGFP ATGGTGAGCAAGGGCGAGGAG...``, uniparse says ``eGFP
-  ATGGAGGACGCCAAGAACATC...``, which is how Luciferase starts -- and corrupted
-  the bases besides, dropping and adding characters from homopolymer runs. Those
-  pages are ordinary vector text, so this is not a hard parse: a deterministic
-  reader gets it right and the VLM did not. Five blocks in the committed corpus
-  carry it.
+  layer. On page 11 uniparse emitted a decoder repetition loop: the 23-mer
+  ``GCTGCTCCCTGCGCTGCTCCCTG`` occurs 173 times in its output and nowhere in the
+  source. Its EGF row scores 0.026 identity against the real EGF sequence, and
+  HGF is truncated to 353 of 2184 bases. Those pages are ordinary vector text,
+  so this is not a hard parse: a deterministic reader gets it right and the VLM
+  did not. Five blocks in the committed corpus carry it.
+
+  CORRECTION. This paragraph previously said uniparse gave the eGFP and HGF
+  rows the Luciferase row's sequence. That was wrong, and wrong in the
+  direction that exonerated this repository's own code. Each row carries its
+  own gene -- the eGFP row matches real eGFP at 0.977 identity and Luciferase
+  at 0.113. The apparent swap came from ``table_row_entries`` treating a
+  header-less table's first row as a header, so the Luciferase sequence became
+  a pseudo column name pasted into every other row, and a truncated view of any
+  row read as though it carried Luciferase's sequence. That parser bug also
+  dropped the Luciferase row entirely. Both are fixed; the fabrication above is
+  what remains after fixing them.
 
 That second result is section 十's warning happening: "前置验证证明它在 GP-006
 上是对的，但这不等于它在所有论文上都对" -- verifying it on GP-006 does not mean

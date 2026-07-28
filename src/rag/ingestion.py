@@ -191,6 +191,32 @@ def table_block_text(grid: list[list[str]], label: str | None) -> str:
     return f"{label} | {body}" if label else body
 
 
+def _looks_like_header(row: list[str]) -> bool:
+    """Decide whether a grid's first row names columns or carries data.
+
+    Column names are short and wordy. A cell holding a 1.6 kb nucleotide run,
+    or a number, is a value. Requiring every non-empty cell to look like a name
+    keeps a genuine header while refusing one made of data.
+    """
+    cells = [cell.strip() for cell in row if cell and cell.strip()]
+    if not cells:
+        return False
+    for cell in cells:
+        if len(cell) > 60:
+            return False
+        compact_cell = cell.replace(" ", "")
+        if not compact_cell:
+            continue
+        if sum(ch.isdigit() for ch in compact_cell) / len(compact_cell) > 0.5:
+            return False
+        # A nucleotide or peptide run is a value however short. Checked by
+        # composition rather than length so a 24-base cell is caught too.
+        letters = [ch for ch in compact_cell.upper() if ch.isalpha()]
+        if len(letters) >= 12 and all(ch in "ACGTUN" for ch in letters):
+            return False
+    return True
+
+
 def table_row_entries(
     grid: list[list[str]], label: str | None
 ) -> list[tuple[int, str]]:
@@ -206,11 +232,27 @@ def table_row_entries(
     the emitted text, because a row whose cells are all empty is skipped and
     must not renumber the rows after it.
     """
-    if len(grid) < 2:
+    if not grid:
         return []
-    header = grid[0]
+    # A header-less table must not lose its first row. Supplementary Table 2 of
+    # GP-004 is a two-column label/sequence table with no header, so treating
+    # grid[0] as one consumed the Luciferase row entirely -- it got no block at
+    # all -- and pasted its 1.6 kb sequence into every other row as a pseudo
+    # column name. Truncated for inspection, the eGFP row then read as though
+    # it carried Luciferase's sequence, which is how a parser bug was published
+    # as a uniparse hallucination.
+    #
+    # A row is a header when its cells look like names rather than values: short,
+    # and not dominated by digits or long sequence-like runs.
+    # Single-row grids are decided the same way: a lone header row carries no
+    # data, a lone data row does. Deciding by row count instead would either
+    # drop a one-row table's only data or emit a bare header as a finding.
+    header_present = _looks_like_header(grid[0])
+    header = grid[0] if header_present else []
+    body = grid[1:] if header_present else grid
+    start = 2 if header_present else 1
     entries: list[tuple[int, str]] = []
-    for row_number, row in enumerate(grid[1:], start=2):
+    for row_number, row in enumerate(body, start=start):
         row_label = row[0] if row else ""
         pairs = []
         for index, cell in enumerate(row):

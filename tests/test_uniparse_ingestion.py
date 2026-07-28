@@ -19,6 +19,7 @@ from src.rag.ingestion import (
     grid_to_html,
     pdf_blocks,
     table_grid_from_html,
+    table_row_entries,
     table_row_texts,
     uniparse_blocks,
     xml_blocks,
@@ -428,3 +429,54 @@ def test_structured_fields_do_not_shift_existing_source_ids():
         bbox={"x0": 1.0, "y0": 2.0, "x1": 3.0, "y1": 4.0},
     )
     assert _source_id(plain) == _source_id(enriched)
+
+
+def test_a_header_less_table_keeps_its_first_row_and_does_not_leak_it():
+    """The bug that got published as a uniparse hallucination.
+
+    GP-004's Supplementary Table 2 is a two-column label/sequence table with no
+    header row. Treating grid[0] as a header consumed the Luciferase row
+    entirely -- it received no block at all -- and pasted its 1.6 kb sequence
+    into every other row as a pseudo column name. Truncated for inspection the
+    eGFP row then read as though it carried Luciferase's sequence, and that
+    reading was written into the design document, a flag rationale and a
+    docstring as evidence that uniparse had fabricated data.
+
+    uniparse had not. Its eGFP row matches the real eGFP sequence at 0.977 and
+    Luciferase at 0.113. The parser did this.
+    """
+    grid = [
+        ["Luciferase", "ATGGAGGACGCCAAGAACATCAAG"],
+        ["eGFP", "ATGGTGAGCAAGGGCGAGGAGCTG"],
+        ["HGF", "ATGTGGGTGACCAAGCTGCTGCCC"],
+    ]
+    entries = table_row_entries(grid, "Table 2")
+
+    assert len(entries) == 3, "a header-less table lost a data row"
+    rendered = [text for _, text in entries]
+    assert any("Luciferase" in text for text in rendered)
+    # No row may carry another row's sequence.
+    for text, own in zip(rendered, ("ATGGAGGACGCCAAGAACATCAAG",
+                                    "ATGGTGAGCAAGGGCGAGGAGCTG",
+                                    "ATGTGGGTGACCAAGCTGCTGCCC")):
+        assert own in text
+        others = {"ATGGAGGACGCCAAGAACATCAAG", "ATGGTGAGCAAGGGCGAGGAGCTG",
+                  "ATGTGGGTGACCAAGCTGCTGCCC"} - {own}
+        for other in others:
+            assert other not in text, "a row leaked another row's sequence"
+
+
+def test_a_real_header_is_still_used_as_column_names():
+    """The fix must not cost the capability it protects."""
+    grid = [["Cell type", "Frequency"], ["LSEC", "1.01"], ["Hepatocyte", "16.5"]]
+    entries = table_row_entries(grid, "Table S2")
+    assert len(entries) == 2, "a genuine header row became a data row"
+    assert "Frequency: 1.01" in entries[0][1]
+
+
+def test_a_lone_header_row_still_produces_nothing():
+    assert table_row_entries([["only", "header"]], "Table S9") == []
+
+
+def test_a_lone_data_row_is_not_discarded_as_a_header():
+    assert len(table_row_entries([["Luciferase", "ATGGAGGACGCCAAGAAC"]], "T")) == 1

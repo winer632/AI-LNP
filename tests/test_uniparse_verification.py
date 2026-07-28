@@ -62,7 +62,11 @@ CORPUS = ROOT / "data/staging/rag/gold_v1"
 # Table S2 on mmc1.pdf page 2, exactly as the committed corpus records it.
 TABLE_S2_BBOX = (70.38, 536.976, 549.576, 602.712)
 GO_006_BLOCK = "GP-006-B-098d79d1de1fdd6819a5"
-GP004_SEQUENCE_BLOCK = "GP-004-B-b10cf9b65ae0e67364db"
+# Located by content, not by id. A block id is a hash of its text, so pinning
+# one makes any legitimate parser improvement look like a regression -- which
+# it did: fixing the header-less-table flattener changed every row's text and
+# broke these tests while the behaviour under test was unaffected.
+GP004_SEQUENCE_MARKER = "ACGAGAACAAAGGACTACATCCGCAACTGC"
 
 # Real macOS Vision output for a 600 dpi render of TABLE_S2_BBOX. See docstring.
 VISION_LINES = (
@@ -103,6 +107,23 @@ class _RecordedOcr:
         assert png[:4] == b"\x89PNG", "the engine must be handed a rendered crop"
         self.calls += 1
         return list(self._lines)
+
+
+def _find(paper_id: str, marker: str):
+    """Return the one corpus block whose text contains `marker`."""
+    import json
+
+    path = CORPUS / f"{paper_id}.blocks.jsonl"
+    matches = [
+        DocumentBlock.model_validate_json(line)
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if marker in line
+    ]
+    assert matches, f"no block in {path.name} contains {marker!r}"
+    # Prefer the row over the whole-table block: a table block spans several
+    # rows, so feeding it one row's true text cannot verify it.
+    rows = [block for block in matches if block.block_type == "table_row"]
+    return (rows or matches)[0]
 
 
 def _load(paper_id: str, block_id: str) -> DocumentBlock:
@@ -439,7 +460,7 @@ def test_gp004_sequence_row_is_contradicted_by_the_pages_own_text_layer():
     is not OCR noise and not a confidence judgement: the PDF's own content
     stream says something else.
     """
-    block = _load("GP-004", GP004_SEQUENCE_BLOCK)
+    block = _find("GP-004", GP004_SEQUENCE_MARKER)
     verdict = verify_blocks([block]).blocks[0]
     assert verdict.status == "contradicted"
     assert verdict.fabricated_long_tokens
@@ -456,7 +477,7 @@ def test_a_correct_sequence_transcription_would_have_passed_the_same_check():
     returns verified, so the verdict above is about this parse, not about the
     rule being impossible to satisfy.
     """
-    block = _load("GP-004", GP004_SEQUENCE_BLOCK)
+    block = _find("GP-004", GP004_SEQUENCE_MARKER)
     truth = render_crop(
         ROOT / block.source_path,
         block.page_number,

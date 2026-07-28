@@ -62,31 +62,19 @@ flags:
     default: true
     status: enabled
     rationale: >-
-      Enabled on measurement, and enabled because the alternative is
-      citing a VLM transcription with nothing behind it. Section 十 says
-      an unaudited uniparse parse "只是把幻觉从抽取阶段挪到解析阶段" --
-      it merely moves hallucination from extraction to parsing, where it
-      is harder to see because it looks like structured data. Measured on
-      the block that carries GO-006's value: GP-006-B-098d79d1de1fdd6819a5,
-      "Table S2 | LSEC | ... total insertion frequency: 1.01 ± 0.38 %",
-      mmc1.pdf page 2. That region has no text layer at all --
-      page.get_text() returns "" inside the recorded bbox -- so the parse
-      was the only account of it. All 12 of the row's numbers are
-      corroborated by macOS Vision OCR of a 600 dpi crop, and a second
-      uniparse read of the region cut out on its own returns table HTML
-      byte-identical to the first. The transcription is correct. But the
-      same sweep over all 248 uniparse table/caption blocks in the corpus
-      found five that are not: 42 of the 45 distinct sequence-length runs
-      uniparse produced for GP-004's Supplementary Tables 2 and 3
-      (41467_2021_20903_MOESM1_ESM.pdf pages 10-11) do not occur in those
-      pages' own text layer. It gave the eGFP and HGF rows the Luciferase
-      row's sequence, and corrupted the bases besides. Those pages are
-      ordinary vector text, so a deterministic reader gets them right and
-      the VLM did not. That is what section 十 warned about and what this
-      flag exists to surface. Safe to default on because it
-      costs no network call (the second read is opt-in), never drops a
-      block, and degrades to "unverified" plus a warning when no reader is
-      available -- which is the honest verdict, not a failure.
+      Enabled on measurement, and it caught real fabrication. On GP-004
+      page 11 uniparse emitted a decoder repetition loop -- one 23-mer
+      repeated 173 times, absent from the source pages -- an EGF row at
+      0.026 identity to the real sequence, and HGF truncated to 353 of
+      2184 bases. Five blocks are stamped contradicted. It also cleared
+      GO-006: that bbox has no text layer at all, so the parse was its
+      only account, yet every number in the row is recovered by OCR of
+      the crop and a standalone re-parse returns byte-identical HTML.
+      CORRECTION: this rationale previously said uniparse gave the eGFP
+      and HGF rows the Luciferase sequence. It did not -- each row
+      carries its own gene, eGFP at 0.977 identity. That reading came
+      from table_row_entries treating a header-less table's first row as
+      a header, a bug in this repository since fixed.
     description: >-
       Cross-check every uniparse table and caption block against a fresh crop of
       the page region it records. Renders the bbox with PyMuPDF, then re-reads it

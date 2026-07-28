@@ -44,17 +44,17 @@
         "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM2_ESM.pdf",
         "data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM3_ESM.pdf"
       ],
-      "blocks": 348,
-      "characters": 136528,
+      "blocks": 350,
+      "characters": 132907,
       "block_types": {
         "abstract": 2,
         "caption": 4,
         "figure": 18,
         "figure_caption": 6,
         "heading": 44,
-        "paragraph": 198,
+        "paragraph": 194,
         "table": 17,
-        "table_row": 58,
+        "table_row": 64,
         "title": 1
       }
     },
@@ -139,11 +139,15 @@
   ],
   "uniparse_available": true,
   "uniparse_base_url": "http://100.67.181.118:8020",
-  "warnings": [],
+  "warnings": [
+    "uniparse verification contradicted for GP-004-B-1c5ff0eef8ea5c71c0cf (data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf p10): uncorroborated []; readers ['pdf_text_layer', 'ocr:macos_vision']",
+    "uniparse verification contradicted for GP-004-B-2e2314fd679eebf17583 (data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf p10): uncorroborated []; readers ['pdf_text_layer', 'ocr:macos_vision']",
+    "uniparse verification contradicted for GP-004-B-0cddad6dfba367819291 (data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf p10): uncorroborated []; readers ['pdf_text_layer', 'ocr:macos_vision']",
+    "uniparse verification contradicted for GP-004-B-303da7ccca97bd3b37de (data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf p10): uncorroborated []; readers ['pdf_text_layer', 'ocr:macos_vision']",
+    "uniparse verification contradicted for GP-004-B-65ffd379c0b65cd30b4a (data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf p11): uncorroborated []; readers ['pdf_text_layer', 'ocr:macos_vision']",
+    "uniparse verification contradicted for GP-004-B-d02b34eea9c7b153a0eb (data/raw/fulltext/oa_packages/PMC7840919/41467_2021_20903_MOESM1_ESM.pdf p11): uncorroborated []; readers ['pdf_text_layer', 'ocr:macos_vision']"
+  ],
   "partial_rebuild": [
-    "GP-001",
-    "GP-004",
-    "GP-007",
-    "GP-008"
+    "GP-004"
   ]
 }
