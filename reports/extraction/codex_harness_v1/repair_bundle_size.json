@@ -1,0 +1,30 @@
+{
+  "report_version": "repair-bundle-size-1.0.0",
+  "question": "Does missing-record task bundle size affect recovery?",
+  "design": "Same task, same 12 evidence rows, only the candidate count per task changes.",
+  "bundled": {
+    "candidates_per_task": 7,
+    "attempts": 2,
+    "fragments": 0,
+    "records": 0,
+    "note": "invalid on attempt 1, all-unresolved on attempt 2"
+  },
+  "split": {
+    "candidates_per_task": 1,
+    "tasks": 7,
+    "fragments": 6,
+    "recovered": 5,
+    "unresolved": 1,
+    "note": "recovered FVIII activity 3.3, which is GO-007"
+  },
+  "recall": {
+    "before_repair": "6/15",
+    "bundled_repair": "6/15",
+    "split_repair": "7/15",
+    "delta": "+1"
+  },
+  "gained": [
+    "GO-007"
+  ],
+  "implication": "Bundle size, not evidence coverage, was blocking recovery. The gold sentence for GO-007 was present in the bundled task all along."
+}
