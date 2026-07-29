@@ -1,6 +1,6 @@
 """Short scientific instructions for compact extraction route v1.
 
-Two prompt versions live here.
+Four prompt versions live here, over two independent switches.
 
 ``compact-prompt-1.1.0`` (:data:`COMPACT_EXTRACTION_PROMPT`)
     The frozen baseline. Its text and checksum are part of the compact request
@@ -13,6 +13,14 @@ Two prompt versions live here.
     separately -- rather than editing the baseline in place -- is what keeps the
     flag-off request byte-identical, including its prompt cache key.
 
+``compact-prompt-1.3.0`` (:data:`INTERPRETIVE_EXTRACTION_PROMPT`) and
+``compact-prompt-1.3.1``
+(:data:`CANDIDATE_SLOT_INTERPRETIVE_EXTRACTION_PROMPT`)
+    Those two, each with the interpretive-outcome rules appended. Used only
+    when the ``interpretive_outcome_admission`` flag is on. Same discipline
+    again: the two prompts above are appended to, never rewritten, so every
+    request made with the flag off stays byte-identical.
+
 Call :func:`active_prompt` instead of importing a constant directly, so a call
 site automatically picks up the text, version, and checksum that belong
 together.
@@ -24,6 +32,7 @@ import hashlib
 import re
 from typing import Iterable, NamedTuple
 
+from src.config_flags import is_enabled
 from src.extraction.outcome_coverage_contracts import OutcomeCandidate
 
 
@@ -67,6 +76,62 @@ CANDIDATE_SLOT_RULES = (
 
 CANDIDATE_SLOT_EXTRACTION_PROMPT = COMPACT_EXTRACTION_PROMPT + CANDIDATE_SLOT_RULES
 
+INTERPRETIVE_OUTCOME_FLAG = "interpretive_outcome_admission"
+
+INTERPRETIVE_PROMPT_VERSION = "compact-prompt-1.3.0"
+CANDIDATE_SLOT_INTERPRETIVE_PROMPT_VERSION = "compact-prompt-1.3.1"
+
+# What the two prompts above tell the model an outcome is:
+#
+#   "Extract only directly reported LNP evidence"
+#   "Do not convert a mechanism, hypothesis, or interpretation into a measured
+#    outcome."
+#   "not_an_outcome when the cited evidence is a method, hypothesis, or
+#    interpretation rather than a measured or reported result"
+#
+# Read together those draw the line at *measured*, and the annotation side does
+# not: the frozen gold set records claims a paper states about its own results
+# in prose. So the rule below narrows the prohibition to what it is actually
+# for -- inventing a value the text does not give -- rather than deleting it.
+# Deliberately written about the *kind* of statement and its provenance, with
+# no endpoint, marker, cell type or finding named: naming one would make the
+# prompt an answer key rather than a rule.
+INTERPRETIVE_OUTCOME_RULES = (
+    " Read the rule about interpretation as follows. A sentence stating what "
+    "this paper's own experiments showed is a reportable outcome even when it "
+    "is written as a summary, a conclusion, or an account of how an effect "
+    "works rather than as a measurement. Report it as an outcome record whose "
+    "qualitative_outcome carries that claim in the paper's own terms, with "
+    "outcome_value missing unless the cited evidence itself states a value: "
+    "the prohibition on converting an interpretation into a measured outcome "
+    "forbids inventing a value or a unit for such a claim, not reporting the "
+    "claim. This admits nothing the paper does not assert. A statement "
+    "attributed to earlier work, an aim, a hypothesis, an expectation, a "
+    "proposal, or a description of a method or an assay is still not an "
+    "outcome. Cite the packet evidence that carries the statement, and assert "
+    "no more than that evidence says; a record whose claim goes beyond its own "
+    "cited evidence is worse than no record."
+)
+
+# Only meaningful alongside CANDIDATE_SLOT_RULES, which is the text that
+# defines the three disposition codes in the first place.
+INTERPRETIVE_DISPOSITION_RULES = (
+    " Accordingly a candidate whose cited evidence states something this paper "
+    "found is extracted, or unresolved when the packet gives no usable value "
+    "for it, rather than not_an_outcome; reserve not_an_outcome for evidence "
+    "that reports no finding of this paper at all."
+)
+
+INTERPRETIVE_EXTRACTION_PROMPT = (
+    COMPACT_EXTRACTION_PROMPT + INTERPRETIVE_OUTCOME_RULES
+)
+
+CANDIDATE_SLOT_INTERPRETIVE_EXTRACTION_PROMPT = (
+    CANDIDATE_SLOT_EXTRACTION_PROMPT
+    + INTERPRETIVE_OUTCOME_RULES
+    + INTERPRETIVE_DISPOSITION_RULES
+)
+
 # Enough of the grouped evidence to identify the slot, without re-sending the
 # packet text the model already has in the first user message.
 SLOT_SUMMARY_MAX_CHARS = 400
@@ -90,8 +155,35 @@ def candidate_slot_prompt_sha256() -> str:
     ).hexdigest()
 
 
-def active_prompt(candidate_slot_enforcement: bool = False) -> PromptSelection:
-    """Return the prompt for this call, with its own version and checksum."""
+def _sha256(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def active_prompt(
+    candidate_slot_enforcement: bool = False,
+    interpretive_outcome_admission: bool | None = None,
+) -> PromptSelection:
+    """Return the prompt for this call, with its own version and checksum.
+
+    ``interpretive_outcome_admission`` defaults to whatever the flag resolves
+    to, so a caller that knows nothing about it still records the prompt it
+    actually sent. An explicit value wins, which is what lets a test pin both
+    sides of the switch without touching the environment.
+    """
+
+    if interpretive_outcome_admission is None:
+        interpretive_outcome_admission = is_enabled(INTERPRETIVE_OUTCOME_FLAG)
+
+    if interpretive_outcome_admission:
+        text, version = (
+            (
+                CANDIDATE_SLOT_INTERPRETIVE_EXTRACTION_PROMPT,
+                CANDIDATE_SLOT_INTERPRETIVE_PROMPT_VERSION,
+            )
+            if candidate_slot_enforcement
+            else (INTERPRETIVE_EXTRACTION_PROMPT, INTERPRETIVE_PROMPT_VERSION)
+        )
+        return PromptSelection(text, version, _sha256(text))
 
     if candidate_slot_enforcement:
         return PromptSelection(

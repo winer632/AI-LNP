@@ -1,0 +1,38 @@
+{
+  "union_version": "union-extraction-1.2.0",
+  "purpose": "Measure what interpretive_outcome_admission costs and buys. Not a shipped result root: the flag it measures ships off.",
+  "note": "codex_union_vision_v3 with the interpretive_outcome_admission GP-008 run merged over its GP-008. Every other paper is copied byte for byte from the base.",
+  "base_root": "data/staging/extraction/codex_union_vision_v3",
+  "base_root_provenance": "codex_union_v1 with GP-004 unioned against salvage_full_view_v1, then the GP-004 and GP-006 panel reads merged in. Rebuild with `python -m src.extraction.build_union_vision_v3 --confirm-write`.",
+  "overlay_root": "data/staging/extraction/codex_interpretive_gp008_v1",
+  "overlay_paper": "GP-008",
+  "rebuild": [
+    "AI_LNP_FLAG_INTERPRETIVE_OUTCOME_ADMISSION=1 OPENAI_API_KEY= python -m src.extraction.run_codex_one_call --paper-id GP-008 --evidence-view full --output-root data/staging/extraction/codex_interpretive_gp008_v1 --confirm-codex-quota",
+    "copy data/staging/extraction/codex_union_vision_v3 to this root",
+    "in a scratch copy of the overlay result, rename experiment_id E1 to E1-i and repoint its outcomes, then write union_extraction_results.union_paper('GP-008', [base_root, scratch_root]) over this root's GP-008/final_result.json"
+  ],
+  "experiment_id_rename": {
+    "E1": "E1-i",
+    "why": "union_paper keeps the first record for a colliding experiment_id, exactly as it keeps the first outcome for a colliding key. The base root's GP-008 E1 is the in vitro BMDM experiment and the overlay's E1 is the in vivo hepatic-macrophage one, so without the rename the overlay's outcomes would be scored against the wrong experiment's fields."
+  },
+  "total_outcomes": 61,
+  "gp008_outcomes": {
+    "base": 5,
+    "overlay": 3,
+    "merged": 7,
+    "deduplicated_by_endpoint_key": 1
+  },
+  "requires_flags": [
+    "vision_relationship_polarity",
+    "record_level_salvage"
+  ],
+  "scoring_reads_flag": "vision_relationship_polarity",
+  "measured_against_the_base": {
+    "recovered": "13/15 before and after",
+    "precision": "0.220339 before, 0.213115 after",
+    "false_additions": "46 before, 48 after",
+    "result_outcomes": "59 before, 61 after",
+    "evidence_accuracy": "7 of 12 checked, before and after",
+    "reassignments": "none; every recovered gold row matched a record identical in content to the one it matched before"
+  }
+}
