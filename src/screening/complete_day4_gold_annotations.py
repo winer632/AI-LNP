@@ -7,6 +7,7 @@ are replaced, while unrelated records are preserved.
 
 from __future__ import annotations
 
+import argparse
 import csv
 from pathlib import Path
 
@@ -200,6 +201,20 @@ def main() -> None:
     for name in ("papers.csv","formulations.csv","components.csv","experiments.csv","outcomes.csv","evidence.csv","issues.csv"):
         _, rows = read_csv(name)
         print(f"  {name}: {len(rows)} rows")
+
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--confirm-write",
+        action="store_true",
+        help="Required: this rewrites tracked files in place.",
+    )
+    args = parser.parse_args()
+    if not args.confirm_write:
+        parser.error("--confirm-write is required; this rewrites tracked files")
+    main()
 
 
 if __name__ == "__main__":

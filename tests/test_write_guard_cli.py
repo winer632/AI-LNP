@@ -37,14 +37,28 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 # The audited entry points, module path as ``python -m`` takes it.
 CONFIRM_WRITE_ENTRY_POINTS = (
+    "src.extraction.apply_day8_human_adjudication",
+    "src.extraction.build_g1_review",
+    "src.extraction.build_g1_v3_field_review",
+    "src.extraction.build_object_vision_review",
+    "src.extraction.build_union_vision_v3",
     "src.extraction.evaluate_day5_afternoon",
     "src.extraction.evaluate_final_gold_dynamic",
-    "src.extraction.build_union_vision_v3",
+    "src.extraction.evaluate_outcome_inventory_gold",
+    "src.extraction.finalize_day5_gp008_repair",
+    "src.extraction.finalize_g1",
+    "src.extraction.freeze_g1_v3_boundaries",
     "src.extraction.merge_structured_view_pass",
     "src.extraction.prepare_day5_g1_repair",
     "src.extraction.run_enforced_compact_workflow_local",
     "src.extraction.run_outcome_coverage_gold",
+    "src.rag.analyze_g1_errors",
+    "src.rag.finalize_day7_afternoon",
+    "src.rag.finalize_day7_v41",
+    "src.rag.finalize_fulltext_g1",
     "src.rag.ingestion",
+    "src.screening.complete_day4_gold_annotations",
+    "src.screening.retrieve_gold_oa_packages",
 )
 
 # Git-ignored tool and tooling state, none of it repository content. ``.claude``
@@ -129,7 +143,7 @@ def test_the_snapshot_actually_sees_the_repository():
 def test_every_confirm_write_entry_point_is_covered():
     """The parametrised cases below must not be able to silently empty out."""
     assert _discover_confirm_write_modules() == set(CONFIRM_WRITE_ENTRY_POINTS)
-    assert len(CONFIRM_WRITE_ENTRY_POINTS) == 8
+    assert len(CONFIRM_WRITE_ENTRY_POINTS) == 22
 
 
 @pytest.mark.parametrize("module", CONFIRM_WRITE_ENTRY_POINTS)
