@@ -1,0 +1,774 @@
+[
+  {
+    "candidate_id": "OC-74556b00caf82795",
+    "paper_id": "GP-001",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-001-FC-c361b0e3f447d3eb"
+    ],
+    "source_ids": [
+      "FC-S-337a07b96c61abe8"
+    ],
+    "evidence_text": "The results of pharmacokinetic parameter analysis (Figure 6B) showed that compared with the CSLNs group, the elimination half-life (t1/2β) of the FA-CSLNs group and GA-FA-CSLNs group was significantly prolonged, and the area under the blood concentration-time curve (AUC(0-∞))was significantly increased, suggesting that ligand modification could prolong the in vivo circulation time of the nanoformulations.",
+    "direct_signal_terms": [
+      "analysis",
+      "Figure 6B",
+      "showed",
+      "compared",
+      "eliminat",
+      "significant",
+      "increased"
+    ],
+    "figure_or_table": "figure 6b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-5a338e85d8d04041",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-7893006909f0cd57"
+    ],
+    "source_ids": [
+      "FC-S-5de0e07e42ae90ca"
+    ],
+    "evidence_text": "Among them, the GA-FA-CSLNs group showed the maximum upregulation of caspase 3 and Bax expressions and the maximum downregulation of Bcl-2 expression.",
+    "direct_signal_terms": [
+      "showed"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-e0d18fa9f42542c4",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-d7c24993607fb341"
+    ],
+    "source_ids": [
+      "FC-S-9b845c274e065992"
+    ],
+    "evidence_text": "The results showed that compared with the normal saline group, the protein expression levels of EphB4 and Bcl-2 in the tumor tissue of all experimental groups were significantly decreased, while the protein expression levels of caspase 3 and Bax were significantly increased.",
+    "direct_signal_terms": [
+      "showed",
+      "compared",
+      "significant",
+      "decreased",
+      "increased"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-bf0568973bb49cad",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-71e007738247df18"
+    ],
+    "source_ids": [
+      "FC-S-c143b9de2a81633a"
+    ],
+    "evidence_text": "The results showed that compared with the C6-SLNs group, the intracellular fluorescent intensity in the GA-C6-SLNs group was significantly increased, while the fluorescent intensities in the FA-C6-SLNs and GA-FA-C6-SLNs groups were significantly lower than that in the GA-C6-SLNs group.",
+    "direct_signal_terms": [
+      "showed",
+      "compared",
+      "significant",
+      "increased",
+      "lower"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-1161fe2ac5209615",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-f925e704a67d15d2"
+    ],
+    "source_ids": [
+      "FC-S-d264cf1fa9f1791c"
+    ],
+    "evidence_text": "GA receptors are expressed at higher levels in hepatocellular carcinoma cells than in adjacent normal liver cells and non-hepatocellular carcinoma cell lines (Sun et al.",
+    "direct_signal_terms": [
+      "higher"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f8399b890d6538a7",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-0a8ad94a7abbd8e8"
+    ],
+    "source_ids": [
+      "S-63aed168ef13"
+    ],
+    "evidence_text": "GA receptors are expressed at higher levels in hepatocellular carcinoma cells than in adjacent normal liver cells and non-hepatocellular carcinoma cell lines (Sun et al.",
+    "direct_signal_terms": [
+      "higher"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-b39ff2dfff11a3b2",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-d4ec172c54e2ac13"
+    ],
+    "source_ids": [
+      "FC-S-13c8581cf16bdbfc"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6ae042a5e6c4ec59",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-1844c6e99e829834"
+    ],
+    "source_ids": [
+      "S-2e8ac4bab714",
+      "S-401b9faa3e2b",
+      "S-65230eac3b20"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 2.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2fd06750910f70a7",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-50cac0303ed694d5",
+      "GP-001-FC-56f4b211b83733d6",
+      "GP-001-FC-7f2bbddf7bf21554",
+      "GP-001-FC-a2013b9f2151fe0b"
+    ],
+    "source_ids": [
+      "FC-S-a5be2caab0344082"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 3.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ae9adb20b23ac516",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-c0de3e779a9bd745"
+    ],
+    "source_ids": [
+      "FC-S-5de0e07e42ae90ca"
+    ],
+    "evidence_text": "The results (Figure 3E−H) showed that compared with the control group, the expression levels of pro-apoptotic proteins (caspase 3, Bax) in all experimental groups were significantly upregulated (P < 0.01), while the expression level of the anti-apoptotic protein (Bcl-2) was significantly downregulated (P < 0.01).",
+    "direct_signal_terms": [
+      "Figure 3E",
+      "showed",
+      "compared",
+      "significant"
+    ],
+    "figure_or_table": "figure 3e",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3f79dd112867c595",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-b605eb35c78851a6"
+    ],
+    "source_ids": [
+      "FC-S-d5b413bd6b8c27f8"
+    ],
+    "evidence_text": "Western blot results (Figure 3I and J) showed that all experimental groups could significantly downregulate the expression level of EphB4 protein in Huh-7 cells, and the GA-FA-CSLNs group had the lowest EphB4 expression level, suggesting that GA-FA-CSLNs might inhibit the proliferation of Huh-7 cells by downregulating the expression of EphB4 protein, thereby exerting an antitumor effect.",
+    "direct_signal_terms": [
+      "Figure 3I",
+      "showed",
+      "significant"
+    ],
+    "figure_or_table": "figure 3i",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-e695156fad39845e",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-d7196c899ba16ff6",
+      "GP-001-FC-e224973b95177aa7",
+      "GP-001-FC-f3796d4f7b36937b"
+    ],
+    "source_ids": [
+      "FC-S-251da741eae88060"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 4. The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 4.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9c2a8cdaf3b01111",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-1844c6e99e829834",
+      "GP-001-E-8ea413a376130c4f"
+    ],
+    "source_ids": [
+      "S-2e8ac4bab714",
+      "S-401b9faa3e2b",
+      "S-65230eac3b20"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3. The data are expressed as the means ± SDs, n = 4.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 4.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6f17128690434eec",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-83bab615246669f7"
+    ],
+    "source_ids": [
+      "FC-S-121e7f186bf3b99e"
+    ],
+    "evidence_text": "The results showed that GA-Cy5.5-SLNs had the strongest fluorescent intensity at the tumor site, which was consistent with the in vivo imaging results (Figure 4B), confirming that the nanoformulations could achieve drug enrichment in tumor tissue through active targeting.",
+    "direct_signal_terms": [
+      "showed",
+      "Figure 4B"
+    ],
+    "figure_or_table": "figure 4b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-687c1f02e581dc26",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-9bd030566dacf061"
+    ],
+    "source_ids": [
+      "FC-S-9b845c274e065992"
+    ],
+    "evidence_text": "The expression levels of EphB4, caspase 3, Bcl-2, and Bax proteins in tumor tissue were further detected (Figure 4G and H).",
+    "direct_signal_terms": [
+      "Figure 4G"
+    ],
+    "figure_or_table": "figure 4g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-af0b5a11cfef82c5",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-FC-99807e8956afd310",
+      "GP-001-FC-b099316c5877af52"
+    ],
+    "source_ids": [
+      "FC-S-5b265310ba27c6e4"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 5.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d62bf69eb1bdb37a",
+    "paper_id": "GP-001",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-001-E-1844c6e99e829834"
+    ],
+    "source_ids": [
+      "S-2e8ac4bab714",
+      "S-401b9faa3e2b",
+      "S-65230eac3b20"
+    ],
+    "evidence_text": "The data are expressed as the means ± SDs, n = 3.",
+    "direct_signal_terms": [
+      "±"
+    ],
+    "figure_or_table": "figure 5.",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-7d44ec7f828d2faf",
+    "paper_id": "GP-001",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-001-FC-935c45168f937552"
+    ],
+    "source_ids": [
+      "FC-S-337a07b96c61abe8"
+    ],
+    "evidence_text": "At the same time, the clearance (CL) of the two groups was significantly reduced, indicating that ligand modification could effectively reduce the CL of nanoparticles.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-5b77535f0639de84",
+    "paper_id": "GP-001",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-001-FC-f2d680259f8bfcc2"
+    ],
+    "source_ids": [
+      "FC-S-f6db0e3d7aee5e1f"
+    ],
+    "evidence_text": "However, all serum biochemical indicators of the GA-CSLNs group, FA-CSLNs group, and GA-FA-CSLNs group were within the normal range, and no obvious liver or kidney function damage was observed, suggesting that GA and FA ligand modification could significantly reduce the hepatotoxicity and nephrotoxicity of CTD.",
+    "direct_signal_terms": [
+      "observed",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-672d4b9d22fc1193",
+    "paper_id": "GP-001",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-001-E-396fb5c771577626"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "However, all serum biochemical indicators of the GA-CSLNs group, FA-CSLNs group, and GA-FA-CSLNs group were within the normal range, and no obvious liver or kidney function damage was observed, suggesting that GA and FA ligand modification could significantly reduce the hepatotoxicity and nephrotoxicity of CTD.",
+    "direct_signal_terms": [
+      "observed",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-4afd4a55a6556ee9",
+    "paper_id": "GP-001",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-001-FC-0fd0084f1f4c2446"
+    ],
+    "source_ids": [
+      "FC-S-5de0e07e42ae90ca"
+    ],
+    "evidence_text": "Compared with the free CTD group, the GA-FA-CSLNs group exhibited the most significant inhibitory effect on Huh-7 cells, with a significantly reduced IC50 (Figure 3B), suggesting that GA-FA-CSLNs had the strongest in vitro toxicity against Huh-7 cells.",
+    "direct_signal_terms": [
+      "Compared",
+      "significant",
+      "Figure 3B"
+    ],
+    "figure_or_table": "figure 3b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9b4d6092624f62aa",
+    "paper_id": "GP-001",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-001-FC-becc88288fdfc9b0"
+    ],
+    "source_ids": [
+      "FC-S-9b845c274e065992"
+    ],
+    "evidence_text": "The number of positive cells in other experimental groups was significantly reduced, and the GA-FA-CSLNs group had the fewest positive cells (Figure 4F).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 4F"
+    ],
+    "figure_or_table": "figure 4f",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-41adc590b381e55e",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-FC-310c4831b4f42ff3"
+    ],
+    "source_ids": [
+      "FC-S-9b845c274e065992"
+    ],
+    "evidence_text": "HE staining results showed that tumor tissues in the CSLNs group, GA-CSLNs group, FA-CSLNs group, and GA-FA-CSLNs group exhibited varying degrees of necrosis and cytoplasmic vacuolation.",
+    "direct_signal_terms": [
+      "showed"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-74fab10d50525575",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-FC-ae45332afbd9a347"
+    ],
+    "source_ids": [
+      "FC-S-f6db0e3d7aee5e1f"
+    ],
+    "evidence_text": "This indicated that GA-FA-CSLNs could significantly prolong the survival time of nude mice, with a better effect than the single-ligand modified groups and the positive drug group.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-eed166322924c2b5",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-E-08638d164fe1a033",
+      "GP-001-E-d03e681cbbdbeedd"
+    ],
+    "source_ids": [
+      "S-63aed168ef13"
+    ],
+    "evidence_text": "Notably, the dual-ligand strategy employed in this study successfully balanced the often-competing demands of prolonged circulation (achieved via FA-PEG3500) and active tumor targeting (achieved via GA), achieving superior antitumor efficacy in vivo while significantly reducing CTD-associated systemic toxicity. Therefore, in this study, CTD, a natural active compound with significant anti-HCC potential, was selected to construct an actively targeted nano-drug delivery system, aiming to enhance the targeting of the drug to HCC tissue and improve its antitumor efficacy.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2a91221fd904245f",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-E-fa7338c29ac71fbd"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "This indicated that GA-FA-CSLNs could significantly prolong the survival time of nude mice, with a better effect than the single-ligand modified groups and the positive drug group.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9ece2aebd1906382",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-FC-551abf687a255e55"
+    ],
+    "source_ids": [
+      "FC-S-5de0e07e42ae90ca"
+    ],
+    "evidence_text": "Compared with the control group, the GA-FA-CSLNs group showed the most significant apoptotic effect (Figure 3C and D), further confirming its excellent in vitro antitumor activity.",
+    "direct_signal_terms": [
+      "Compared",
+      "showed",
+      "significant",
+      "Figure 3C"
+    ],
+    "figure_or_table": "figure 3c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-022f5abef04f01ae",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-FC-5cf2f5d9dd7836e7"
+    ],
+    "source_ids": [
+      "FC-S-f6db0e3d7aee5e1f"
+    ],
+    "evidence_text": "Survival curve results (Figure 5B) showed that after 14 days of treatment, the survival rates of nude mice in the CSLNs group and GA-CSLNs group were 83.33%, and the survival rate of the GA-FA-CSLNs group reached 100%, while the survival rate of the positive drug group was only 66.67%.",
+    "direct_signal_terms": [
+      "Figure 5B",
+      "showed",
+      "14 days",
+      "83.33%",
+      "reached",
+      "100%",
+      "66.67%"
+    ],
+    "figure_or_table": "figure 5b",
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result"
+    ]
+  },
+  {
+    "candidate_id": "OC-411a5ae6f57b0f99",
+    "paper_id": "GP-001",
+    "endpoint_family": "therapeutic_function",
+    "evidence_ids": [
+      "GP-001-E-be64c844dfb248d1"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "Survival curve results (Figure 5B) showed that after 14 days of treatment, the survival rates of nude mice in the CSLNs group and GA-CSLNs group were 83.33%, and the survival rate of the GA-FA-CSLNs group reached 100%, while the survival rate of the positive drug group was only 66.67%.",
+    "direct_signal_terms": [
+      "Figure 5B",
+      "showed",
+      "14 days",
+      "83.33%",
+      "reached",
+      "100%",
+      "66.67%"
+    ],
+    "figure_or_table": "figure 5b",
+    "route_hint": "text",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_numeric_result"
+    ]
+  },
+  {
+    "candidate_id": "OC-9bd74ce4ee7d3ee3",
+    "paper_id": "GP-001",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-001-FC-13dda8e33420eb56"
+    ],
+    "source_ids": [
+      "FC-S-f6db0e3d7aee5e1f"
+    ],
+    "evidence_text": "The results showed that the serum Cr level in the free CTD group was significantly increased (Figure 5C), and the AST and BUN levels in the CSLNs group and positive drug group showed significant abnormalities.",
+    "direct_signal_terms": [
+      "showed",
+      "significant",
+      "increased",
+      "Figure 5C"
+    ],
+    "figure_or_table": "figure 5c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-4311765f166d50a2",
+    "paper_id": "GP-001",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-001-E-471b48044e702afd"
+    ],
+    "source_ids": [
+      "S-e086e15279f0"
+    ],
+    "evidence_text": "The results showed that the serum Cr level in the free CTD group was significantly increased (Figure 5C), and the AST and BUN levels in the CSLNs group and positive drug group showed significant abnormalities.",
+    "direct_signal_terms": [
+      "showed",
+      "significant",
+      "increased",
+      "Figure 5C"
+    ],
+    "figure_or_table": "figure 5c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-99f79026211fc8de",
+    "paper_id": "GP-001",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-001-E-198e0da882acb9f6"
+    ],
+    "source_ids": [
+      "S-63aed168ef13"
+    ],
+    "evidence_text": "This dual-targeting platform significantly improved the tumor-specific delivery of MMAE while reducing toxicity to normal tissues.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-0ed7cd93ddc0fa47",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-FC-b26524307099e365"
+    ],
+    "source_ids": [
+      "FC-S-121e7f186bf3b99e"
+    ],
+    "evidence_text": "Among them, GA-Cy5.5-SLNs had the highest accumulation in tumor tissue, followed by GA-FA-Cy5.5-SLNs (Figure 4A).",
+    "direct_signal_terms": [
+      "Figure 4A"
+    ],
+    "figure_or_table": "figure 4a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ed6dda36e8002ed0",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-FC-7f5ef06297f2c8c6"
+    ],
+    "source_ids": [
+      "FC-S-c143b9de2a81633a"
+    ],
+    "evidence_text": "In contrast, the intracellular fluorescent signals in the GA-C6-SLNs and GA-FA-C6-SLNs treatment groups were significantly enhanced, demonstrating that ligand modification could effectively promote the cellular uptake of nanoparticles.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3266908ba34856bc",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-E-0a6c0815d6383edc",
+      "GP-001-E-fe70809e816e7652"
+    ],
+    "source_ids": [
+      "S-1ddf553a0607"
+    ],
+    "evidence_text": "The results showed that when FA receptors were saturated, the intracellular fluorescent signal of the FA-C6-SLNs group was significantly weakened (almost no fluorescence), indicating that its cellular uptake was effectively inhibited. Even if a single targeting pathway was blocked, efficient cellular uptake could still be achieved through the pathway mediated by the other ligand, significantly improving the reliability of targeted drug delivery.",
+    "direct_signal_terms": [
+      "showed",
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-22f6e9befb9310c8",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-E-0bb25cf6ead04d2f",
+      "GP-001-E-2cd80ac2114421cb"
+    ],
+    "source_ids": [
+      "S-63aed168ef13"
+    ],
+    "evidence_text": "(2020) demonstrated that dual-ligand-modified doxorubicin (DOX) carriers exhibited significant advantages in enhancing cellular uptake by hepatoma cells, improving in vitro and in vivo antitumor activity, and reducing systemic toxicity. GA specifically binds to GA receptors highly expressed on hepatocellular carcinoma cells, mediating active targeting uptake and significantly enhancing antitumor activity.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-bf67f0ea29e548ab",
+    "paper_id": "GP-001",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-001-FC-aa69d27bf8f0a3ae"
+    ],
+    "source_ids": [
+      "FC-S-c143b9de2a81633a"
+    ],
+    "evidence_text": "The results of the cell uptake visualization experiment (Figure 2A) showed that compared with the control group, cells in the C6-SLNs treatment group exhibited only a weak fluorescent signal, indicating low uptake of unmodified SLNs by hepatoma cells.",
+    "direct_signal_terms": [
+      "Figure 2A",
+      "showed",
+      "compared"
+    ],
+    "figure_or_table": "figure 2a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  }
+]

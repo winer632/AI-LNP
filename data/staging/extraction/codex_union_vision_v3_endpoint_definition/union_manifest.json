@@ -1,0 +1,71 @@
+{
+  "union_version": "union-extraction-1.2.0",
+  "purpose": "Measure what endpoint_definition costs and buys. Not a shipped result root: the flag it measures ships off.",
+  "note": "data/staging/extraction/codex_union_vision_v3 with every paper of data/staging/extraction/codex_endpoint_definition_v1 merged over its own. Rebuild with `python -m src.extraction.build_union_endpoint_definition --overlay-root data/staging/extraction/codex_endpoint_definition_v1 --output-root data/staging/extraction/codex_union_vision_v3_endpoint_definition --confirm-write`.",
+  "base_root": "data/staging/extraction/codex_union_vision_v3",
+  "overlay_root": "data/staging/extraction/codex_endpoint_definition_v1",
+  "experiment_id_suffix": "-e",
+  "papers": [
+    {
+      "paper_id": "GP-001",
+      "base": 0,
+      "overlay": 0,
+      "merged": 0
+    },
+    {
+      "paper_id": "GP-002",
+      "base": 2,
+      "overlay": 14,
+      "merged": 16
+    },
+    {
+      "paper_id": "GP-003",
+      "base": 0,
+      "overlay": 0,
+      "merged": 0
+    },
+    {
+      "paper_id": "GP-004",
+      "base": 13,
+      "overlay": 7,
+      "merged": 20
+    },
+    {
+      "paper_id": "GP-005",
+      "base": 3,
+      "overlay": 4,
+      "merged": 7
+    },
+    {
+      "paper_id": "GP-006",
+      "base": 30,
+      "overlay": 3,
+      "merged": 33
+    },
+    {
+      "paper_id": "GP-007",
+      "base": 6,
+      "overlay": 4,
+      "merged": 10
+    },
+    {
+      "paper_id": "GP-008",
+      "base": 5,
+      "overlay": 4,
+      "merged": 9
+    },
+    {
+      "paper_id": "GP-009",
+      "overlay": null,
+      "base": 0,
+      "merged": 0,
+      "note": "overlay absent; base copied unchanged"
+    }
+  ],
+  "total_outcomes": 95,
+  "requires_flags": [
+    "vision_relationship_polarity",
+    "record_level_salvage"
+  ],
+  "scoring_reads_flag": "vision_relationship_polarity"
+}

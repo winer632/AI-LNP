@@ -1,0 +1,372 @@
+[
+  {
+    "candidate_id": "OC-784fb0e02f647b15",
+    "disposition": "unresolved",
+    "reason": "Measured LSEC outcome lacks a usable value and is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-62bd02bad99d9333",
+    "disposition": "unresolved",
+    "reason": "Reported association is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-278da20594396dd1",
+    "disposition": "unresolved",
+    "reason": "Reported association is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-f84d2212b5743f1c",
+    "disposition": "unresolved",
+    "reason": "Measured LSEC outcome lacks a usable LNP-linked value."
+  },
+  {
+    "candidate_id": "OC-6eb1b19d7f503310",
+    "disposition": "unresolved",
+    "reason": "Measured LSEC outcome lacks a usable LNP-linked value."
+  },
+  {
+    "candidate_id": "OC-6e5ee6dcd156e8e5",
+    "disposition": "unresolved",
+    "reason": "Expression result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-299f739d312bf355",
+    "disposition": "not_an_outcome",
+    "reason": "This is a dataset-analysis method description."
+  },
+  {
+    "candidate_id": "OC-ddc32d23bd8af825",
+    "disposition": "unresolved",
+    "reason": "Reported patient-dataset result is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-efbfcb00e32037e5",
+    "disposition": "unresolved",
+    "reason": "Reported patient-dataset result is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-db19c6bea99f84c8",
+    "disposition": "unresolved",
+    "reason": "Expression correlation is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-f5783d1c0f001de2",
+    "disposition": "unresolved",
+    "reason": "Expression correlation is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-ca077ebaea215db7",
+    "disposition": "unresolved",
+    "reason": "Expression result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-5575768101f5e972",
+    "disposition": "unresolved",
+    "reason": "Expression result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-92a14df3d7f778fc",
+    "disposition": "unresolved",
+    "reason": "Expression observation is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-f01b38f12590a155",
+    "disposition": "unresolved",
+    "reason": "Expression observation is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-465bc0a124764332",
+    "disposition": "not_an_outcome",
+    "reason": "This is a gene-classification analysis description."
+  },
+  {
+    "candidate_id": "OC-c3c42636ac3f462b",
+    "disposition": "not_an_outcome",
+    "reason": "This is a gene-classification analysis description."
+  },
+  {
+    "candidate_id": "OC-3c22dd631c9c4b73",
+    "disposition": "unresolved",
+    "reason": "Measured expression result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-3f32c5d72eeacbd9",
+    "disposition": "unresolved",
+    "reason": "Measured expression result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-1fb038abd55729c4",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-db2e6fd1cbbcfbe1",
+    "disposition": "unresolved",
+    "reason": "Negative result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-62cae5619708a8f2",
+    "disposition": "unresolved",
+    "reason": "Negative result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-329a90cbece17fb7",
+    "disposition": "unresolved",
+    "reason": "Expression correlation is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-81e1b1ca824013ac",
+    "disposition": "unresolved",
+    "reason": "Expression correlation is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-48c9d3891351d197",
+    "disposition": "unresolved",
+    "reason": "Reported result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-54ff7b1912c04f1a",
+    "disposition": "unresolved",
+    "reason": "Reported result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-c86c122443acd17b",
+    "disposition": "not_an_outcome",
+    "reason": "This is an assay-method statement."
+  },
+  {
+    "candidate_id": "OC-c9819f8aac80dbfa",
+    "disposition": "unresolved",
+    "reason": "Reporter-assay result is from an AAV-promoter experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-481e687333cb42f3",
+    "disposition": "unresolved",
+    "reason": "Reporter-assay result is from an AAV-promoter experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-ab93f589f0a03733",
+    "disposition": "unresolved",
+    "reason": "Measured metabolic result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-786bfcaaff95208a",
+    "disposition": "unresolved",
+    "reason": "Measured metabolic result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-11542ff43ba86b59",
+    "disposition": "unresolved",
+    "reason": "Measured colocalization result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-d2d20c35ca73a486",
+    "disposition": "unresolved",
+    "reason": "Measured colocalization result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-a7101adbec7213eb",
+    "disposition": "unresolved",
+    "reason": "Measured glycolytic result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-966ac40fe9112902",
+    "disposition": "unresolved",
+    "reason": "Measured glycolytic result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-8c76c54793c7cc61",
+    "disposition": "unresolved",
+    "reason": "Measured lactylation result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-05f1adca393122b7",
+    "disposition": "unresolved",
+    "reason": "Measured lactylation result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-fbb60532bf7ec6de",
+    "disposition": "unresolved",
+    "reason": "Measured ChIP result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-9d29576348506328",
+    "disposition": "unresolved",
+    "reason": "Measured ChIP result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-803306b188494625",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an in-vitro transfection experiment, not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-d19c182eb7924f04",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-bef1b85255328ae7",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-b79e7e6719df6e67",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-9b70e24aa9e45f4a",
+    "disposition": "unresolved",
+    "reason": "Expression result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-8548d39d97fb6d1c",
+    "disposition": "unresolved",
+    "reason": "Expression result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-2e48ce3f2b147df9",
+    "disposition": "unresolved",
+    "reason": "Sequencing visualization is not a usable LNP-linked outcome."
+  },
+  {
+    "candidate_id": "OC-c936c391ed18e1dd",
+    "disposition": "unresolved",
+    "reason": "Sequencing visualization is not a usable LNP-linked outcome."
+  },
+  {
+    "candidate_id": "OC-49ebea3cf0c1b0d7",
+    "disposition": "not_an_outcome",
+    "reason": "This is a correlation-analysis objective."
+  },
+  {
+    "candidate_id": "OC-b78c003b900b882b",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-db3d370db5df904e",
+    "disposition": "unresolved",
+    "reason": "Duplicate reported outcome was not used as the cited extraction evidence."
+  },
+  {
+    "candidate_id": "OC-c519735f75144873",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-891617e7174d13db",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-79cb23ea8ed9c8c3",
+    "disposition": "unresolved",
+    "reason": "Measured result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-75d447e1a3dd4c9e",
+    "disposition": "unresolved",
+    "reason": "Measured result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-80c39ce48811716a",
+    "disposition": "unresolved",
+    "reason": "Measured result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-e366232881d9619a",
+    "disposition": "unresolved",
+    "reason": "Measured result is from a non-LNP experiment."
+  },
+  {
+    "candidate_id": "OC-ae66179cde6821b3",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage observation is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-7771f197de1f4843",
+    "disposition": "unresolved",
+    "reason": "Measured derivative result is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-5fd0b6d98fbb7b35",
+    "disposition": "unresolved",
+    "reason": "Reported macrophage observation is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-ccebe7a13ec1bc33",
+    "disposition": "unresolved",
+    "reason": "Measured in-vitro result is not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-f3173a4a393cef09",
+    "disposition": "not_an_outcome",
+    "reason": "This is a study rationale and model-establishment statement."
+  },
+  {
+    "candidate_id": "OC-c91c42e24e01bb3e",
+    "disposition": "not_an_outcome",
+    "reason": "This is a study rationale and model-establishment statement."
+  },
+  {
+    "candidate_id": "OC-4fa91f1c4f31ad58",
+    "disposition": "unresolved",
+    "reason": "Measured HIRI result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-2ffe64f09b17139e",
+    "disposition": "unresolved",
+    "reason": "Measured HIRI result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-859dfdaab03f8995",
+    "disposition": "unresolved",
+    "reason": "Measured in-vitro result is not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-41ab0af7d4eb0e3c",
+    "disposition": "unresolved",
+    "reason": "Measured in-vitro result is not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-dbac4c13630b5e55",
+    "disposition": "unresolved",
+    "reason": "Measured in-vitro result is not LNP delivery."
+  },
+  {
+    "candidate_id": "OC-a31d9c462077e40d",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-8079f7a645a01025",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-144ad293ea115694",
+    "disposition": "unresolved",
+    "reason": "Measured result is from an AAV experiment, not the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-263e13774543b039",
+    "disposition": "unresolved",
+    "reason": "Measured derivative result is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-29cfa6e19e931c2e",
+    "disposition": "unresolved",
+    "reason": "Measured derivative result is not an LNP experiment outcome."
+  },
+  {
+    "candidate_id": "OC-dfd9a6e60cb31287",
+    "disposition": "unresolved",
+    "reason": "Expression result is not linked to the LNP experiment."
+  },
+  {
+    "candidate_id": "OC-99ea7ccc692da470",
+    "disposition": "unresolved",
+    "reason": "Expression result is not linked to the LNP experiment."
+  }
+]

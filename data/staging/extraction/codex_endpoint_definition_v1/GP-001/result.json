@@ -1,0 +1,26 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-001",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "NOT_ELIGIBLE_LNP",
+      "UNSUPPORTED_PAYLOAD",
+      "NO_TARGET_CELL_EVIDENCE"
+    ],
+    "evidence_ids": [
+      "GP-001-E-75bb5b8e8164f65e",
+      "GP-001-E-a2d40855b331cf35"
+    ],
+    "explanation": "The paper reports CTD-loaded solid lipid nanoparticles, not an LNP delivering a supported RNA payload; it studies Huh-7 hepatoma cells/tumors rather than directly reported target hepatic cell types."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "outcomes": [],
+  "unresolved_items": [
+    "The reported carrier is a solid lipid nanoparticle rather than a qualifying RNA-LNP.",
+    "The payload is cantharidin (CTD), not mRNA, siRNA, saRNA, or circRNA.",
+    "Huh-7 hepatoma-cell evidence does not directly establish hepatocyte, Kupffer-cell, LSEC, or hepatic-stellate-cell evidence."
+  ]
+}

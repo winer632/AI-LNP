@@ -1,0 +1,40 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-005",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-29T04:03:12.594070+00:00",
+  "completed_at": "2026-07-29T04:05:53.069869+00:00",
+  "elapsed_seconds": 160.473,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-005-E-ac7e05a4c142ccbb",
+      "GP-005-E-f3b6eafdb0a35892",
+      "GP-005-E-ff46bd7368a05ccb",
+      "GP-005-E-ed8d22bb5d1997c2"
+    ],
+    "explanation": "Original in vivo LNP experiments report mRNA and siRNA delivery outcomes in hepatocytes, Kupffer cells, LSECs, and hepatic stellate cells."
+  },
+  "record_counts": {
+    "formulations": 3,
+    "components": 4,
+    "experiments": 3,
+    "outcomes": 4,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 82
+}

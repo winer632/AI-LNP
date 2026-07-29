@@ -140,15 +140,10 @@ def strict_schema(candidate_slot_enforcement: bool = False) -> dict[str, Any]:
     """
     from openai.lib._pydantic import to_strict_json_schema
 
-    from src.extraction.compact_contracts import (
-        CandidateSlotExtractionResponse,
-        CompactExtractionResponse,
-    )
+    from src.extraction.compact_contracts import active_response_contract
 
     return to_strict_json_schema(
-        CandidateSlotExtractionResponse
-        if candidate_slot_enforcement
-        else CompactExtractionResponse
+        active_response_contract(candidate_slot_enforcement)
     )
 
 

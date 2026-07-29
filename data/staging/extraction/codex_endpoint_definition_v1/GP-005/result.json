@@ -1,0 +1,813 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-005",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-005-E-ac7e05a4c142ccbb",
+      "GP-005-E-f3b6eafdb0a35892",
+      "GP-005-E-ff46bd7368a05ccb",
+      "GP-005-E-ed8d22bb5d1997c2"
+    ],
+    "explanation": "Original in vivo LNP experiments report mRNA and siRNA delivery outcomes in hepatocytes, Kupffer cells, LSECs, and hepatic stellate cells."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "LNP1 (Egfp mRNA-LNP)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-23cde312d42649c2"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "MC3, DSPC, cholesterol, and PEG2000-lipid at a 50:10:38.5:1.5 molar ratio",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "molar ratio",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    },
+    {
+      "formulation_id": "F16",
+      "formulation_name": {
+        "value": "LNP16",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "Co-encapsulated Egfp mRNA and negative-control siRNA at 2:1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "mRNA:siRNA ratio",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    },
+    {
+      "formulation_id": "F17",
+      "formulation_name": {
+        "value": "LNP17",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "Egfp mRNA and Tlr4-targeting siRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Ratio not reported for LNP17."
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "MC3",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 50.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DSPC",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 38.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "PEG2000-lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 1.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-3f986b9d3b171d96"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Egfp mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "EGFP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-f3b6eafdb0a35892"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No molecular target reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes and Kupffer cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes and Kupffer cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "C57BL6J wild-type mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No disease model reported."
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 2.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg kg−1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 16.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-5476ac363ed05d4c"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-5476ac363ed05d4c"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F16",
+      "payload_type": {
+        "value": "mRNA and siRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Egfp mRNA and negative-control siRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "EGFP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Control siRNA has no reported molecular target."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes, Kupffer cells, and hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-b045ff5d6a1cd42b"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes, Kupffer cells, and hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-b045ff5d6a1cd42b"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No disease model reported."
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 3.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg kg−1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ff46bd7368a05ccb"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable timepoint reported."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable timepoint reported."
+      }
+    },
+    {
+      "experiment_id": "E3",
+      "formulation_id": "F17",
+      "payload_type": {
+        "value": "mRNA and siRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Egfp mRNA and Tlr4 siRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "EGFP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "Tlr4",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes, Kupffer cells, and hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ed8d22bb5d1997c2"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes, Kupffer cells, and hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ed8d22bb5d1997c2"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Tissue not explicitly stated for this result."
+      },
+      "species": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Species not explicitly stated for this result."
+      },
+      "disease_model": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No disease model reported."
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-bd128a1a5b6cb1e1"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose stated only by reference to an identical prior experiment."
+      },
+      "dose_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Dose not directly reported for LNP17."
+      },
+      "route": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Route not directly reported for LNP17."
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Timepoint not reported."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Timepoint not reported."
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "intravital microscopy with F4/80 staining",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-f3b6eafdb0a35892"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "EGFP-positive Kupffer cells in vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-f3b6eafdb0a35892"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated/control mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-abc999c842d9e20c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "qualitative_outcome": {
+        "value": "No EGFP-positive Kupffer cells were detected; no obvious EGFP signal was detected in other hepatic cell types.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-f3b6eafdb0a35892",
+          "GP-005-FC-3c647114f1cc74ae"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "intravital microscopy",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Egfp mRNA translation in hepatocytes and Kupffer cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "hepatocytes versus Kupffer cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Egfp mRNA translation occurred exclusively in hepatocytes during intravital imaging despite high and rapid uptake in both cell types.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-d5934f7a75e37a6b"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "qPCR",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-b045ff5d6a1cd42b"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Egfp mRNA uptake in hepatocytes, Kupffer cells, and hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-b045ff5d6a1cd42b"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "hepatocytes and Kupffer cells versus hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-b045ff5d6a1cd42b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "qualitative_outcome": {
+        "value": "LNP16 was taken up in significant amounts by hepatocytes and Kupffer cells, whereas hepatic stellate cells did not absorb it at a significant level.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-b045ff5d6a1cd42b",
+          "GP-005-FC-c6225d6f5f81f865"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "E3",
+      "assay": {
+        "value": "qPCR",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ed8d22bb5d1997c2"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Tlr4 mRNA level in hepatocytes, Kupffer cells, and hepatic stellate cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ed8d22bb5d1997c2"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "LNP17 versus LNP16 control-siRNA LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ed8d22bb5d1997c2"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical value reported."
+      },
+      "qualitative_outcome": {
+        "value": "LNP17 significantly reduced Tlr4 mRNA in hepatocytes, Kupffer cells, and hepatic stellate cells; LNP16 did not knock down Tlr4.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-005-E-ed8d22bb5d1997c2",
+          "GP-005-FC-0396554188bb71ce"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "The packet does not provide directly usable numerical outcome values for the reported uptake, expression, or knockdown findings.",
+    "LNP17 dose, route, species, and timepoint are not directly stated in the supplied LNP17 result text."
+  ]
+}

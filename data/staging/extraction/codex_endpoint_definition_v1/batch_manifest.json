@@ -1,0 +1,355 @@
+{
+  "harness": "codex-exec",
+  "evidence_view": "full",
+  "evidence_view_pinned": true,
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "papers": [
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-001",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T03:56:03.111883+00:00",
+      "completed_at": "2026-07-29T03:56:54.519337+00:00",
+      "elapsed_seconds": 51.404,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "NOT_ELIGIBLE_LNP",
+          "UNSUPPORTED_PAYLOAD",
+          "NO_TARGET_CELL_EVIDENCE"
+        ],
+        "evidence_ids": [
+          "GP-001-E-75bb5b8e8164f65e",
+          "GP-001-E-a2d40855b331cf35"
+        ],
+        "explanation": "The paper reports CTD-loaded solid lipid nanoparticles, not an LNP delivering a supported RNA payload; it studies Huh-7 hepatoma cells/tumors rather than directly reported target hepatic cell types."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 37
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-002",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T03:56:54.615970+00:00",
+      "completed_at": "2026-07-29T04:00:16.617390+00:00",
+      "elapsed_seconds": 201.999,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-002-FC-00efd9890a222343",
+          "GP-002-FC-8d93ef4368a8c488",
+          "GP-002-FC-c9b2482b6114a861"
+        ],
+        "explanation": "Original mouse experiments used defined SM-102 mRNA-LNPs and directly reported eGFP expression in hepatocytes."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 2,
+        "outcomes": 14,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 110
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-003",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:00:16.729225+00:00",
+      "completed_at": "2026-07-29T04:00:54.996688+00:00",
+      "elapsed_seconds": 38.266,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "ineligible",
+        "reason_codes": [
+          "NOT_ORIGINAL_RESEARCH"
+        ],
+        "evidence_ids": [
+          "GP-003-E-93c2af1bcf62a929"
+        ],
+        "explanation": "The packet identifies the paper as a review, not an original experimental report."
+      },
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 1
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 17
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-004",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:00:55.087724+00:00",
+      "completed_at": "2026-07-29T04:03:12.509131+00:00",
+      "elapsed_seconds": 137.418,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b",
+          "GP-004-E-b293f56409c89709",
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "explanation": "Original mouse experiments used identifiable mRNA-LNP formulations, directly reported hepatocyte-targeted expression/proliferation, and linked formulations to outcomes."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 3,
+        "outcomes": 7,
+        "unresolved_items": 3
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 57
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-005",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:03:12.594070+00:00",
+      "completed_at": "2026-07-29T04:05:53.069869+00:00",
+      "elapsed_seconds": 160.473,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-005-E-ac7e05a4c142ccbb",
+          "GP-005-E-f3b6eafdb0a35892",
+          "GP-005-E-ff46bd7368a05ccb",
+          "GP-005-E-ed8d22bb5d1997c2"
+        ],
+        "explanation": "Original in vivo LNP experiments report mRNA and siRNA delivery outcomes in hepatocytes, Kupffer cells, LSECs, and hepatic stellate cells."
+      },
+      "record_counts": {
+        "formulations": 3,
+        "components": 4,
+        "experiments": 3,
+        "outcomes": 4,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 82
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-006",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:05:53.199448+00:00",
+      "completed_at": "2026-07-29T04:08:23.356400+00:00",
+      "elapsed_seconds": 150.155,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-006-FC-869327d0f31db8b5",
+          "GP-006-FC-a9970f61b7d8daaa",
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "explanation": "Original mouse experiments used MC3 LNPs containing Cas9 mRNA/sgRNA, with measured editing in isolated LSECs and linked outcomes."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 4,
+        "experiments": 1,
+        "outcomes": 3,
+        "unresolved_items": 1
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 168
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-007",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:08:23.447343+00:00",
+      "completed_at": "2026-07-29T04:10:07.759327+00:00",
+      "elapsed_seconds": 104.311,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-007-E-450ee76f1f41150a",
+          "GP-007-E-ed5fce0eb33d0dce",
+          "GP-007-E-47d77dd97cd9a252",
+          "GP-007-E-1db684478f7dee70"
+        ],
+        "explanation": "Original mouse HIRI experiments used siMicu1-LNPs, with outcomes linked to the LNP treatment and reported effects on LSECs."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 0,
+        "experiments": 1,
+        "outcomes": 4,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 74
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-008",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:10:07.870793+00:00",
+      "completed_at": "2026-07-29T04:12:10.948801+00:00",
+      "elapsed_seconds": 123.076,
+      "validation_status": "valid",
+      "eligibility": {
+        "decision": "eligible",
+        "reason_codes": [
+          "ORIGINAL_EXPERIMENT",
+          "IDENTIFIABLE_LNP",
+          "SUPPORTED_PAYLOAD",
+          "TARGET_CELL_EVIDENCE",
+          "USABLE_FORMULATION_OUTCOME_LINKAGE"
+        ],
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1",
+          "GP-008-E-38bead8279685734",
+          "GP-008-E-0bd62635eb18e64c"
+        ],
+        "explanation": "Original experiments report CD163-targeted LNP delivery of FAPCAR mRNA to macrophages in fibrotic mouse liver, with linked reported outcomes."
+      },
+      "record_counts": {
+        "formulations": 1,
+        "components": 5,
+        "experiments": 2,
+        "outcomes": 4,
+        "unresolved_items": 2
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 85
+    },
+    {
+      "harness": "codex-exec",
+      "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+      "paper_id": "GP-009",
+      "evidence_view": "full",
+      "model_requested": "gpt-5.6-terra",
+      "reasoning_effort": "low",
+      "started_at": "2026-07-29T04:12:11.027547+00:00",
+      "completed_at": "2026-07-29T04:13:10.908840+00:00",
+      "elapsed_seconds": 59.879,
+      "validation_status": "invalid",
+      "eligibility": null,
+      "record_counts": {
+        "formulations": 0,
+        "components": 0,
+        "experiments": 0,
+        "outcomes": 0,
+        "unresolved_items": 0
+      },
+      "openai_api_requests": 0,
+      "codex_exec_turns": 1,
+      "salvage": {
+        "status": "unsalvageable",
+        "kept": {
+          "formulations": 0,
+          "components": 0,
+          "experiments": 0,
+          "outcomes": 0
+        },
+        "rejected": {
+          "formulations": 0,
+          "components": 0,
+          "experiments": 0,
+          "outcomes": 0
+        },
+        "eligibility_kept": false,
+        "dropped": 2
+      },
+      "candidate_slot_enforcement": true,
+      "candidate_slots": 74
+    }
+  ]
+}

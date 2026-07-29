@@ -17,6 +17,15 @@ Two response shapes live here:
     what lets the flag-off request stay byte-identical: the baseline schema,
     prompt, and fingerprint are untouched, and a slot-aware response still
     validates as -- and is an instance of -- the baseline contract.
+
+``EndpointDefinedExtractionResponse`` / ``EndpointDefinedSlotExtractionResponse``
+    Whichever of the two above applies, with ``endpoint`` given the definition
+    it has never had. Used only when the ``endpoint_definition`` flag is on.
+    Same discipline once more, and here it is the whole reason for the shape:
+    a description added to :class:`OutcomeRecord` in place would change the
+    exported baseline schema, and therefore the schema checksum inside every
+    request fingerprint, for runs that never asked for it. Call
+    :func:`active_response_contract` rather than importing one of these.
 """
 
 from __future__ import annotations
@@ -24,6 +33,8 @@ from __future__ import annotations
 from typing import Generic, Literal, TypeVar
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
+
+from src.config_flags import is_enabled
 
 
 T = TypeVar("T")
@@ -205,6 +216,50 @@ class OutcomeRecord(StrictContract):
     qualitative_outcome: TextField
 
 
+ENDPOINT_DEFINITION_FLAG = "endpoint_definition"
+
+# `endpoint` is the only scientific field in this contract that has never been
+# defined anywhere. The class above says `endpoint: TextField` and stops, and
+# the extraction prompt does not mention the field at all, so what belongs in
+# it has been left entirely to the model's own reading of the word.
+#
+# The definition below is taken from how the field is actually written on the
+# annotation side, where it has a settled convention: an endpoint names the
+# thing measured *and* the population it was measured in, and it names both
+# even though the experiment row it hangs off already carries a
+# recipient-population column of its own. A record that carries only half of
+# that has dropped a fact its author had, so this asks for both halves.
+#
+# Deliberately general: it names no population, no cell type and no marker,
+# because a definition that listed them would stop being a definition of the
+# field and start being a list of expected answers. The second half is the
+# part that keeps it honest -- a paper that states no population must not have
+# one supplied for it.
+ENDPOINT_DEFINITION = (
+    "What this record measures, in the paper's own terms: the quantity, "
+    "signal or event that was measured, together with the population it was "
+    "measured in whenever the paper states one. Name both parts here even "
+    "when the experiment this outcome belongs to also names that population, "
+    "so that the endpoint identifies the measurement on its own. When the "
+    "paper reports the measurement without saying what population it was made "
+    "in, name the measurement alone; do not supply a population the cited "
+    "evidence does not give."
+)
+
+
+class DefinedEndpointOutcomeRecord(OutcomeRecord):
+    """:class:`OutcomeRecord` with ``endpoint`` actually defined.
+
+    Sent only when ``endpoint_definition`` is enabled. It adds, removes and
+    renames nothing: the sole difference from the baseline record is that the
+    exported schema for ``endpoint`` carries a ``description``. A response to
+    this contract therefore still validates as -- and is an instance of -- the
+    baseline one, so nothing downstream needs to know which was sent.
+    """
+
+    endpoint: TextField = Field(description=ENDPOINT_DEFINITION)
+
+
 class CompactExtractionResponse(StrictContract):
     """One paper response joined to a local evidence packet after validation."""
 
@@ -330,3 +385,49 @@ class CandidateSlotExtractionResponse(CompactExtractionResponse):
 
     def candidate_disposition_ids(self) -> set[str]:
         return {row.candidate_id for row in self.candidate_dispositions}
+
+
+class EndpointDefinedExtractionResponse(CompactExtractionResponse):
+    """The baseline response whose outcome records define ``endpoint``."""
+
+    outcomes: list[DefinedEndpointOutcomeRecord]
+
+
+class EndpointDefinedSlotExtractionResponse(CandidateSlotExtractionResponse):
+    """The slot-aware response whose outcome records define ``endpoint``."""
+
+    outcomes: list[DefinedEndpointOutcomeRecord]
+
+
+def active_response_contract(
+    candidate_slot_enforcement: bool = False,
+    *,
+    endpoint_definition: bool | None = None,
+) -> type[CompactExtractionResponse]:
+    """Pick the response contract for this request from the flags that amend it.
+
+    Both amendments are subclasses rather than edits, for the same reason the
+    prompt amendments are new versions rather than edits: with every flag off
+    the request is byte-identical to what shipped, down to the schema checksum
+    in its fingerprint, and the exported baseline schema in
+    ``docs/extraction/schemas/compact_v1/`` -- whose sha256 is pinned in
+    ``config/extraction/compact_route_v1.yaml`` -- does not move.
+
+    An explicit argument beats the flag in both directions so a test can
+    exercise either side without touching the environment.
+    """
+
+    defined = (
+        is_enabled(ENDPOINT_DEFINITION_FLAG)
+        if endpoint_definition is None
+        else endpoint_definition
+    )
+    if candidate_slot_enforcement:
+        return (
+            EndpointDefinedSlotExtractionResponse
+            if defined
+            else CandidateSlotExtractionResponse
+        )
+    return (
+        EndpointDefinedExtractionResponse if defined else CompactExtractionResponse
+    )

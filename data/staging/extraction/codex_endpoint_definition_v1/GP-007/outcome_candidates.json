@@ -1,0 +1,1536 @@
+[
+  {
+    "candidate_id": "OC-784fb0e02f647b15",
+    "paper_id": "GP-007",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-007-FC-6c4d2be27c3495c0"
+    ],
+    "source_ids": [
+      "FC-S-59e10a2d0ffaf5b5"
+    ],
+    "evidence_text": "(D) ER-mitochondria colocalization analysis in LSECs.",
+    "direct_signal_terms": [
+      "colocaliz",
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-62bd02bad99d9333",
+    "paper_id": "GP-007",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-007-FC-1dc235b42825b16c"
+    ],
+    "source_ids": [
+      "FC-S-a0e947447ae7f914"
+    ],
+    "evidence_text": "After correlating the different cell markers in 389 cell types with covarying gene modules expressed in the above groups, we indicated that the transcription of liver genes post-ACT treatment was selectively associated with LSECs programs (Figure 2A).",
+    "direct_signal_terms": [
+      "Figure 2A"
+    ],
+    "figure_or_table": "figure 2a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-278da20594396dd1",
+    "paper_id": "GP-007",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-007-E-340b56b1780e79cc"
+    ],
+    "source_ids": [
+      "S-e259b5f9d750"
+    ],
+    "evidence_text": "After correlating the different cell markers in 389 cell types with covarying gene modules expressed in the above groups, we indicated that the transcription of liver genes post-ACT treatment was selectively associated with LSECs programs (Figure 2A).",
+    "direct_signal_terms": [
+      "Figure 2A"
+    ],
+    "figure_or_table": "figure 2a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f84d2212b5743f1c",
+    "paper_id": "GP-007",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-007-FC-3e0a81d187075db7"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "This Ca2+ increase further enhanced intracellular glycolysis (Figure S5D) and induced phagocytic dysfunction in LSECs (Figure 5D and Figure S5E).",
+    "direct_signal_terms": [
+      "Figure S5D",
+      "phagocyt",
+      "Figure 5D",
+      "Figure S5E"
+    ],
+    "figure_or_table": "figure s5d",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6eb1b19d7f503310",
+    "paper_id": "GP-007",
+    "endpoint_family": "cell_target_effect",
+    "evidence_ids": [
+      "GP-007-E-8e627575f92dd385"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "This Ca2+ increase further enhanced intracellular glycolysis (Figure S5D) and induced phagocytic dysfunction in LSECs (Figure 5D and Figure S5E).",
+    "direct_signal_terms": [
+      "Figure S5D",
+      "phagocyt",
+      "Figure 5D",
+      "Figure S5E"
+    ],
+    "figure_or_table": "figure s5d",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-6e5ee6dcd156e8e5",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-e82a659b39647adc"
+    ],
+    "source_ids": [
+      "FC-S-1889ef224acbd9fb"
+    ],
+    "evidence_text": "Interestingly, unlike the moderate impact on MCU, we observed a significant increase in the mRNA expression of Micu1 following HIRI/HR, which was significantly decreased by ACT administration.",
+    "direct_signal_terms": [
+      "observed",
+      "significant",
+      "decreased"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-299f739d312bf355",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-c1f32ff0da7b908f",
+      "GP-007-FC-def14030f0da68bf"
+    ],
+    "source_ids": [
+      "FC-S-2acd49d3528532ac"
+    ],
+    "evidence_text": "We selected the dataset GSE14951 (5 LT recipients), GSE112713 (11 LT recipients), GSE12720 (19 LT recipients), and performed the differential analysis of gene expression data in dataset by the GEO2R online tool in the GEO database. Bioinformatic analysis of HIRI-related genes from Gene Expression Omnibus (GEO) database.",
+    "direct_signal_terms": [
+      "analysis"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ddc32d23bd8af825",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-ef2296c34cf394e5"
+    ],
+    "source_ids": [
+      "FC-S-eed6320d3341d5e5"
+    ],
+    "evidence_text": "After analyzing the top 10,000 genes expression profiles of patients before and after liver transplantation in the GSE12720, GSE112713 and GSE14951, we identified 4,346 intersecting genes (Figure 1A).",
+    "direct_signal_terms": [
+      "Figure 1A"
+    ],
+    "figure_or_table": "figure 1a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-efbfcb00e32037e5",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-74f0f77e9c4bdc9e"
+    ],
+    "source_ids": [
+      "S-a9ed7e20aed2"
+    ],
+    "evidence_text": "After analyzing the top 10,000 genes expression profiles of patients before and after liver transplantation in the GSE12720, GSE112713 and GSE14951, we identified 4,346 intersecting genes (Figure 1A).",
+    "direct_signal_terms": [
+      "Figure 1A"
+    ],
+    "figure_or_table": "figure 1a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-db19c6bea99f84c8",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-15470c13beaf99a6"
+    ],
+    "source_ids": [
+      "FC-S-a0e947447ae7f914"
+    ],
+    "evidence_text": "Correlation analysis demonstrated a high degree of uniformity among samples in both whole liver and single LSECs type groups, with high coupling correlations observed in the expression of core genes related to ER function [Eif2ak3, Ddit3, heat shock protein family a member 5 (Hspa5, GRP78), Atf4] (Figure 2D, lower panel).",
+    "direct_signal_terms": [
+      "analysis",
+      "observed",
+      "Figure 2D",
+      "lower"
+    ],
+    "figure_or_table": "figure 2d",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f5783d1c0f001de2",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-f8c288f426cf9248"
+    ],
+    "source_ids": [
+      "S-e259b5f9d750"
+    ],
+    "evidence_text": "Correlation analysis demonstrated a high degree of uniformity among samples in both whole liver and single LSECs type groups, with high coupling correlations observed in the expression of core genes related to ER function [Eif2ak3, Ddit3, heat shock protein family a member 5 (Hspa5, GRP78), Atf4] (Figure 2D, lower panel).",
+    "direct_signal_terms": [
+      "analysis",
+      "observed",
+      "Figure 2D",
+      "lower"
+    ],
+    "figure_or_table": "figure 2d",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ca077ebaea215db7",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-ac8003fcbdbc82ee"
+    ],
+    "source_ids": [
+      "FC-S-d8e76a0d49d9a14d"
+    ],
+    "evidence_text": "As expected, the expression of Ca2+ transport-related genes (Mcu, Vdac1, Itpr1 and Atp2a2) was partially downregulated after ACT administration (Figure 3A, lower panel), which was confirmed by molecular biology experiments both in livers and LSECs (Figure 3B, 3C and Figure S3B).",
+    "direct_signal_terms": [
+      "Figure 3A",
+      "lower",
+      "Figure 3B",
+      "Figure S3B"
+    ],
+    "figure_or_table": "figure 3a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-5575768101f5e972",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-cb365924fb01a96d"
+    ],
+    "source_ids": [
+      "S-df884e684b2b"
+    ],
+    "evidence_text": "As expected, the expression of Ca2+ transport-related genes (Mcu, Vdac1, Itpr1 and Atp2a2) was partially downregulated after ACT administration (Figure 3A, lower panel), which was confirmed by molecular biology experiments both in livers and LSECs (Figure 3B, 3C and Figure S3B).",
+    "direct_signal_terms": [
+      "Figure 3A",
+      "lower",
+      "Figure 3B",
+      "Figure S3B"
+    ],
+    "figure_or_table": "figure 3a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-92a14df3d7f778fc",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-0675323503985fe7"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "Concurrently, the accumulation of lactate, a by-product of glycolysis, was associated with an increase in intracellular Ca2+ (Figure 5C, Figure S5B) and induced Ca2+ channel protein expression on the ER-mitochondrial axis (Figure S5C).",
+    "direct_signal_terms": [
+      "Figure 5C",
+      "Figure S5B",
+      "Figure S5C"
+    ],
+    "figure_or_table": "figure 5c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f01b38f12590a155",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-1e29ca7755ded607"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "Concurrently, the accumulation of lactate, a by-product of glycolysis, was associated with an increase in intracellular Ca2+ (Figure 5C, Figure S5B) and induced Ca2+ channel protein expression on the ER-mitochondrial axis (Figure S5C).",
+    "direct_signal_terms": [
+      "Figure 5C",
+      "Figure S5B",
+      "Figure S5C"
+    ],
+    "figure_or_table": "figure 5c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-465bc0a124764332",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-a655e6f08c85d2c1"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "To identify H3K18la-target genes in LSECs, we classified genes into 4 categories according to their expression and H3K18la modification: upregulated genes with or without differential H3K18la, and downregulated genes with or without differential H3K18la (Figure 5G and Figure S5F).",
+    "direct_signal_terms": [
+      "Figure 5G",
+      "Figure S5F"
+    ],
+    "figure_or_table": "figure 5g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c3c42636ac3f462b",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-f8e9b1d97ec38688"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "To identify H3K18la-target genes in LSECs, we classified genes into 4 categories according to their expression and H3K18la modification: upregulated genes with or without differential H3K18la, and downregulated genes with or without differential H3K18la (Figure 5G and Figure S5F).",
+    "direct_signal_terms": [
+      "Figure 5G",
+      "Figure S5F"
+    ],
+    "figure_or_table": "figure 5g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3c22dd631c9c4b73",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-e285f21d225829ea"
+    ],
+    "source_ids": [
+      "FC-S-d4d854b7ed1e6189"
+    ],
+    "evidence_text": "Regarding the Ca2+-stimulated glycolytic process, we observed that ACT inhibited the protein expression and enzyme activity of key glycolytic enzymes, particularly HK, pyruvate kinase (PK) and LDH with the help of galloflavin or oxamate, while exerting minimal impact on PFK expression and enzyme activity (Figure 6G and Figure S6G).",
+    "direct_signal_terms": [
+      "observed",
+      "Figure 6G",
+      "Figure S6G"
+    ],
+    "figure_or_table": "figure 6g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-3f32c5d72eeacbd9",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-a3b2bd19ef2275f9"
+    ],
+    "source_ids": [
+      "FC-S-d4d854b7ed1e6189"
+    ],
+    "evidence_text": "ACT also synergistically reduced the expression of ER stress-related proteins such as CHOP, GRP78, IRF3 and PERK (Figure 6H), and improved mitochondrial fragmentation (Figure 6I), maintaining the normal functions of ER and mitochondria in cooperation with galloflavin or oxamate.",
+    "direct_signal_terms": [
+      "Figure 6H",
+      "Figure 6I"
+    ],
+    "figure_or_table": "figure 6h",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-1fb038abd55729c4",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-90238d9305d60b0e"
+    ],
+    "source_ids": [
+      "FC-S-613c5f2b1ad4e388"
+    ],
+    "evidence_text": "Consistent with in vitro experiments, ACT and siMicu1 synergistically inhibited the expression of genes and proteins related to Ca2+ transfer in the ER-mitochondrial axis (Figure 7I and Figure S7D), alleviated mitochondrial Ca2+ accumulation (Figure 7J and Figure S7E), and reversed the increased expression and activity of glycolysis-related enzymes induced by HIRI (Figure 7K and Figure S7F), thereby protecting the function of LSECs (Figure 7L and Figure S7G).",
+    "direct_signal_terms": [
+      "Figure 7I",
+      "Figure S7D",
+      "Figure 7J",
+      "Figure S7E",
+      "increased",
+      "Figure 7K",
+      "Figure S7F",
+      "Figure 7L",
+      "Figure S7G"
+    ],
+    "figure_or_table": "figure 7i",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-db2e6fd1cbbcfbe1",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-0fb2c8b2d06039a2"
+    ],
+    "source_ids": [
+      "FC-S-e7b9b7d4936a9eea"
+    ],
+    "evidence_text": "Additionally, ACT didn't obviously influence the Micu1 overexpressing-induced glycolytic flux, as evidenced by unchanged expressions and activities of HK, PK, and LDH, along with L-lactate production (Figure 8G and Figure S8H).",
+    "direct_signal_terms": [
+      "Figure 8G",
+      "Figure S8H"
+    ],
+    "figure_or_table": "figure 8g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-62cae5619708a8f2",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-842f91f5f74ce35c"
+    ],
+    "source_ids": [
+      "S-5c830a9bf9f6"
+    ],
+    "evidence_text": "Additionally, ACT didn't obviously influence the Micu1 overexpressing-induced glycolytic flux, as evidenced by unchanged expressions and activities of HK, PK, and LDH, along with L-lactate production (Figure 8G and Figure S8H).",
+    "direct_signal_terms": [
+      "Figure 8G",
+      "Figure S8H"
+    ],
+    "figure_or_table": "figure 8g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-329a90cbece17fb7",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-cc719d536f543b61"
+    ],
+    "source_ids": [
+      "FC-S-92f9a34e45bed00c"
+    ],
+    "evidence_text": "Furthermore, the expression changes of glycolysis-genes in LSECs and liver tissues demonstrated a strict correlation (Figure S4B and S4C).",
+    "direct_signal_terms": [
+      "Figure S4B"
+    ],
+    "figure_or_table": "figure s4b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-81e1b1ca824013ac",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-973d8de1e6f2b75e"
+    ],
+    "source_ids": [
+      "S-61913a7ecabf"
+    ],
+    "evidence_text": "Furthermore, the expression changes of glycolysis-genes in LSECs and liver tissues demonstrated a strict correlation (Figure S4B and S4C).",
+    "direct_signal_terms": [
+      "Figure S4B"
+    ],
+    "figure_or_table": "figure s4b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-48c9d3891351d197",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-8839116040aa44c7"
+    ],
+    "source_ids": [
+      "FC-S-e7b9b7d4936a9eea"
+    ],
+    "evidence_text": "Following the overexpression of Micu1 in LSECs (Figure S8C), we observed an increased ratio of spleen to body weight (Figure S8D) and a high intensity of green fluorescence in the hepatic sinusoids of mice treated with HIRI + AAV8-Stab2-oeMicu1 (Figure 8C).",
+    "direct_signal_terms": [
+      "Figure S8C",
+      "observed",
+      "increased",
+      "Figure S8D",
+      "Figure 8C"
+    ],
+    "figure_or_table": "figure s8c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-54ff7b1912c04f1a",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-027f7dd947f25b84"
+    ],
+    "source_ids": [
+      "S-5c830a9bf9f6"
+    ],
+    "evidence_text": "Following the overexpression of Micu1 in LSECs (Figure S8C), we observed an increased ratio of spleen to body weight (Figure S8D) and a high intensity of green fluorescence in the hepatic sinusoids of mice treated with HIRI + AAV8-Stab2-oeMicu1 (Figure 8C).",
+    "direct_signal_terms": [
+      "Figure S8C",
+      "observed",
+      "increased",
+      "Figure S8D",
+      "Figure 8C"
+    ],
+    "figure_or_table": "figure s8c",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c86c122443acd17b",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-da59e34a4cb1a5b0"
+    ],
+    "source_ids": [
+      "FC-S-fc1c8289cab29440"
+    ],
+    "evidence_text": "The luciferase reporter gene activity was then measured according to the manufacturer's instructions for the Firefly Luciferase Reporter Gene Assay Kit (Beyotime, China).",
+    "direct_signal_terms": [
+      "measured"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c9819f8aac80dbfa",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-FC-2a8d0261742822f5"
+    ],
+    "source_ids": [
+      "FC-S-e7b9b7d4936a9eea"
+    ],
+    "evidence_text": "Dual-luciferase reporter assays demonstrated that a 644 bp truncated fragment (designated Stab2-2), spanning from -500 to +144 relative to the transcription start site, exhibited significantly higher activity compared to the full-length promoter and other truncations, while showing no detectable activity in hepatocytes (Figure 8A and Figure S8A).",
+    "direct_signal_terms": [
+      "significant",
+      "higher",
+      "compared",
+      "table activity",
+      "Figure 8A",
+      "Figure S8A"
+    ],
+    "figure_or_table": "figure 8a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-481e687333cb42f3",
+    "paper_id": "GP-007",
+    "endpoint_family": "expression",
+    "evidence_ids": [
+      "GP-007-E-c14c55fc63e06d91"
+    ],
+    "source_ids": [
+      "S-5c830a9bf9f6"
+    ],
+    "evidence_text": "Dual-luciferase reporter assays demonstrated that a 644 bp truncated fragment (designated Stab2-2), spanning from -500 to +144 relative to the transcription start site, exhibited significantly higher activity compared to the full-length promoter and other truncations, while showing no detectable activity in hepatocytes (Figure 8A and Figure S8A).",
+    "direct_signal_terms": [
+      "significant",
+      "higher",
+      "compared",
+      "table activity",
+      "Figure 8A",
+      "Figure S8A"
+    ],
+    "figure_or_table": "figure 8a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ab93f589f0a03733",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-FC-84cbfe13ae0c3d4c"
+    ],
+    "source_ids": [
+      "FC-S-92f9a34e45bed00c"
+    ],
+    "evidence_text": "The results of oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) further confirmed that glycolytic reserves were significantly reduced in the HR+ACT group.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-786bfcaaff95208a",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-E-5a61cb9f13551fa5"
+    ],
+    "source_ids": [
+      "S-61913a7ecabf"
+    ],
+    "evidence_text": "The results of oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) further confirmed that glycolytic reserves were significantly reduced in the HR+ACT group.",
+    "direct_signal_terms": [
+      "significant"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-11542ff43ba86b59",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-FC-aeb2cc0d9d6e1c79"
+    ],
+    "source_ids": [
+      "FC-S-d8e76a0d49d9a14d"
+    ],
+    "evidence_text": "ACT significantly reduced the signal coincidence of the IP3R (located in the ER)-VDAC1 [(located in the outer mitochondrial membrane (OMM)]-MCU [(located in the inner mitochondrial membrane (IMM)] complex at the ER-mitochondria contact sites (Figure 3F lower part, Figure S3F and S3G).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 3F",
+      "lower",
+      "Figure S3F"
+    ],
+    "figure_or_table": "figure 3f",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d2d20c35ca73a486",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-E-3092adb8699af0e5"
+    ],
+    "source_ids": [
+      "S-df884e684b2b"
+    ],
+    "evidence_text": "ACT significantly reduced the signal coincidence of the IP3R (located in the ER)-VDAC1 [(located in the outer mitochondrial membrane (OMM)]-MCU [(located in the inner mitochondrial membrane (IMM)] complex at the ER-mitochondria contact sites (Figure 3F lower part, Figure S3F and S3G).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 3F",
+      "lower",
+      "Figure S3F"
+    ],
+    "figure_or_table": "figure 3f",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-a7101adbec7213eb",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-FC-bba3c258581017cf"
+    ],
+    "source_ids": [
+      "FC-S-92f9a34e45bed00c"
+    ],
+    "evidence_text": "Consistently, the activities of key enzyme [hexokinase (HK), phosphofructokinase (PFK) and lactate dehydrogenase (LDH)] activities, as well as mRNA and protein levels of glycolytic metabolites and their corresponding canonical glycolytic enzymes, were significantly reduced after ACT administration (Figure 4A, Figure S4D and S4E).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 4A",
+      "Figure S4D"
+    ],
+    "figure_or_table": "figure 4a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-966ac40fe9112902",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-E-6be2abee251630f5"
+    ],
+    "source_ids": [
+      "S-61913a7ecabf"
+    ],
+    "evidence_text": "Consistently, the activities of key enzyme [hexokinase (HK), phosphofructokinase (PFK) and lactate dehydrogenase (LDH)] activities, as well as mRNA and protein levels of glycolytic metabolites and their corresponding canonical glycolytic enzymes, were significantly reduced after ACT administration (Figure 4A, Figure S4D and S4E).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 4A",
+      "Figure S4D"
+    ],
+    "figure_or_table": "figure 4a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-8c76c54793c7cc61",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-FC-b47a253e67daf03e"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "As illustrated in Figure 5A, 5B and Figure S5A, ACT significantly reduced the levels of global lactylation and H3K18la induced by HR or excessive lactate in a dose-dependent manner.",
+    "direct_signal_terms": [
+      "Figure 5A",
+      "Figure S5A",
+      "significant"
+    ],
+    "figure_or_table": "figure 5a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-05f1adca393122b7",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-E-5a5c8908d5d1a041"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "As illustrated in Figure 5A, 5B and Figure S5A, ACT significantly reduced the levels of global lactylation and H3K18la induced by HR or excessive lactate in a dose-dependent manner.",
+    "direct_signal_terms": [
+      "Figure 5A",
+      "Figure S5A",
+      "significant"
+    ],
+    "figure_or_table": "figure 5a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-fbb60532bf7ec6de",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-FC-e298eb227a35793f"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "Subsequently, ChIP-qPCR analysis indicated that ACT effectively reduced the enrichment of H3K18la in the promoter region of Micu1, but not in Vdac1 or Mcu (Figure 5M).",
+    "direct_signal_terms": [
+      "analysis",
+      "Figure 5M"
+    ],
+    "figure_or_table": "figure 5m",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9d29576348506328",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-E-c213d4c2bdca23d2"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "Subsequently, ChIP-qPCR analysis indicated that ACT effectively reduced the enrichment of H3K18la in the promoter region of Micu1, but not in Vdac1 or Mcu (Figure 5M).",
+    "direct_signal_terms": [
+      "analysis",
+      "Figure 5M"
+    ],
+    "figure_or_table": "figure 5m",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-803306b188494625",
+    "paper_id": "GP-007",
+    "endpoint_family": "knockdown",
+    "evidence_ids": [
+      "GP-007-FC-fa3c5783c85050d1"
+    ],
+    "source_ids": [
+      "FC-S-0cbac785bc17a57b"
+    ],
+    "evidence_text": "Meanwhile, ACT primarily functioned in conjunction with siMicu1 to reduce glycolytic levels (Figure S4J) and significantly inhibit the HR-induced increase in Ca2+ levels in LSECs (Figure S3I).",
+    "direct_signal_terms": [
+      "Figure S4J",
+      "significant",
+      "Figure S3I"
+    ],
+    "figure_or_table": "figure s4j",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-d19c182eb7924f04",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-9a131ef8ecebcb6d"
+    ],
+    "source_ids": [
+      "FC-S-613c5f2b1ad4e388"
+    ],
+    "evidence_text": "The increased levels of plasma AST and ALT, along with elevated MDA and reduced SOD activities induced by HIRI, were largely improved in the HIRI + LNPs-siMicu1 group, more significantly in the HIRI + LNPs-siMicu1 + ACT group (Figure 7F).",
+    "direct_signal_terms": [
+      "increased",
+      "significant",
+      "Figure 7F"
+    ],
+    "figure_or_table": "figure 7f",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-bef1b85255328ae7",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-e979bc50cb1c28e1"
+    ],
+    "source_ids": [
+      "FC-S-e7b9b7d4936a9eea"
+    ],
+    "evidence_text": "Compared to the HIRI + AAV8-CMV group, the overexpression of Micu1 resulted in more severe HIRI damage, as evidenced by significantly increased levels of serum ALT, AST and hepatic MDA levels, along with decreased SOD levels (Figure 8D).",
+    "direct_signal_terms": [
+      "Compared",
+      "resulted",
+      "significant",
+      "increased",
+      "decreased",
+      "Figure 8D"
+    ],
+    "figure_or_table": "figure 8d",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-b79e7e6719df6e67",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-cbb728756a80c83f"
+    ],
+    "source_ids": [
+      "S-5c830a9bf9f6"
+    ],
+    "evidence_text": "Compared to the HIRI + AAV8-CMV group, the overexpression of Micu1 resulted in more severe HIRI damage, as evidenced by significantly increased levels of serum ALT, AST and hepatic MDA levels, along with decreased SOD levels (Figure 8D).",
+    "direct_signal_terms": [
+      "Compared",
+      "resulted",
+      "significant",
+      "increased",
+      "decreased",
+      "Figure 8D"
+    ],
+    "figure_or_table": "figure 8d",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-9b70e24aa9e45f4a",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-3c617c64a6e617ae"
+    ],
+    "source_ids": [
+      "FC-S-eed6320d3341d5e5"
+    ],
+    "evidence_text": "Significant alterations in ER function (protein folding, Ca2+ transport)-related genes [activating transcription factor 4 (Atf4), DNA damage inducible transcript 3 (Ddit3, CHOP), inositol 1,4,5-trisphosphate receptor type 1 (Itpr1, IP3R), mitochondrial calcium uniporter (Mcu, MCU)] and glycolysis-related genes [pyruvate kinase m (Pkm), glyceraldehyde-3-phosphate dehydrogenase (Gapdh), dynamin 1 like (Dnm1l), lactate dehydrogenase a (Ldha)] were observed across all three datasets following HIRI (Figure 1B).",
+    "direct_signal_terms": [
+      "Significant",
+      "observed",
+      "Figure 1B"
+    ],
+    "figure_or_table": "figure 1b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-8548d39d97fb6d1c",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-711d21c5ebb85242"
+    ],
+    "source_ids": [
+      "S-a9ed7e20aed2"
+    ],
+    "evidence_text": "Significant alterations in ER function (protein folding, Ca2+ transport)-related genes [activating transcription factor 4 (Atf4), DNA damage inducible transcript 3 (Ddit3, CHOP), inositol 1,4,5-trisphosphate receptor type 1 (Itpr1, IP3R), mitochondrial calcium uniporter (Mcu, MCU)] and glycolysis-related genes [pyruvate kinase m (Pkm), glyceraldehyde-3-phosphate dehydrogenase (Gapdh), dynamin 1 like (Dnm1l), lactate dehydrogenase a (Ldha)] were observed across all three datasets following HIRI (Figure 1B).",
+    "direct_signal_terms": [
+      "Significant",
+      "observed",
+      "Figure 1B"
+    ],
+    "figure_or_table": "figure 1b",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2e48ce3f2b147df9",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-a6e4fe5b4a7c6873"
+    ],
+    "source_ids": [
+      "FC-S-d8e76a0d49d9a14d"
+    ],
+    "evidence_text": "Subsequently, the significantly altered genes in the HIRI and HR groups from the liver/LSECs sequencing were visualized using a Venn diagram, followed by a heatmap visualization that included the ACT group (Figure 3A, upper panel and Figure S3A).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 3A",
+      "Figure S3A"
+    ],
+    "figure_or_table": "figure 3a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c936c391ed18e1dd",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-5542e347ca40e34f"
+    ],
+    "source_ids": [
+      "S-df884e684b2b"
+    ],
+    "evidence_text": "Subsequently, the significantly altered genes in the HIRI and HR groups from the liver/LSECs sequencing were visualized using a Venn diagram, followed by a heatmap visualization that included the ACT group (Figure 3A, upper panel and Figure S3A).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 3A",
+      "Figure S3A"
+    ],
+    "figure_or_table": "figure 3a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-49ebea3cf0c1b0d7",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-f9c71696f0500244"
+    ],
+    "source_ids": [
+      "FC-S-0cbac785bc17a57b"
+    ],
+    "evidence_text": "Under HR conditions, we assessed the correlation between MICU1 and key genes involved in glycolysis (Hk2, Ldha, Pkm) and Ca2+ transport (Mcu, Vdac1, Eif2ak3, Itpr1), trying to uncover the potential relationship among MICU1, alterations in ER functionality and glycolytic process (Figure 4G).",
+    "direct_signal_terms": [
+      "assessed",
+      "Figure 4G"
+    ],
+    "figure_or_table": "figure 4g",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-b78c003b900b882b",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-0164ecc0c5a3a106"
+    ],
+    "source_ids": [
+      "FC-S-613c5f2b1ad4e388"
+    ],
+    "evidence_text": "The areas of liver sinus congestion and inflammatory cell infiltration in the HIRI + LNPs-blank group were significantly increased, but the fundamental structure of liver lobules was significantly restored in HIRI + LNPs-siMicu1 and HIRI + LNPs-siMicu1 + ACT groups (Figure 7G).",
+    "direct_signal_terms": [
+      "significant",
+      "increased",
+      "Figure 7G"
+    ],
+    "figure_or_table": "figure 7g",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-db3d370db5df904e",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-8585a45cd0259fe9"
+    ],
+    "source_ids": [
+      "S-6cff29076b57"
+    ],
+    "evidence_text": "The areas of liver sinus congestion and inflammatory cell infiltration in the HIRI + LNPs-blank group were significantly increased, but the fundamental structure of liver lobules was significantly restored in HIRI + LNPs-siMicu1 and HIRI + LNPs-siMicu1 + ACT groups (Figure 7G).",
+    "direct_signal_terms": [
+      "significant",
+      "increased",
+      "Figure 7G"
+    ],
+    "figure_or_table": "figure 7g",
+    "route_hint": "vision",
+    "confidence": "high",
+    "confidence_reasons": [
+      "explicit_result_language"
+    ]
+  },
+  {
+    "candidate_id": "OC-c519735f75144873",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-a231867cf1aab952"
+    ],
+    "source_ids": [
+      "FC-S-e7b9b7d4936a9eea"
+    ],
+    "evidence_text": "Moreover, ACT appeared to have minimal effect on reversing the alterations of Ca2+-related targets within the ER-mitochondrial axis (Figure 8F and Figure S8E-8G) in HIRI + AAV8-Stab2-oeMicu1 mice.",
+    "direct_signal_terms": [
+      "Figure 8F",
+      "Figure S8E"
+    ],
+    "figure_or_table": "figure 8f",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-891617e7174d13db",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-b8826b6ba5fe4e21"
+    ],
+    "source_ids": [
+      "S-5c830a9bf9f6"
+    ],
+    "evidence_text": "Moreover, ACT appeared to have minimal effect on reversing the alterations of Ca2+-related targets within the ER-mitochondrial axis (Figure 8F and Figure S8E-8G) in HIRI + AAV8-Stab2-oeMicu1 mice.",
+    "direct_signal_terms": [
+      "Figure 8F",
+      "Figure S8E"
+    ],
+    "figure_or_table": "figure 8f",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-79cb23ea8ed9c8c3",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-069cb422bbf916dd"
+    ],
+    "source_ids": [
+      "FC-S-eed6320d3341d5e5"
+    ],
+    "evidence_text": "Focusing on the characteristics of HIRI-induced oxidative stress and provocative inflammation, ACT significantly mitigated the elevation of aminotransferases (Figure S1A and S1B).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure S1A"
+    ],
+    "figure_or_table": "figure s1a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-75d447e1a3dd4c9e",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-e62094dfc418e8c4"
+    ],
+    "source_ids": [
+      "S-a9ed7e20aed2"
+    ],
+    "evidence_text": "Focusing on the characteristics of HIRI-induced oxidative stress and provocative inflammation, ACT significantly mitigated the elevation of aminotransferases (Figure S1A and S1B).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure S1A"
+    ],
+    "figure_or_table": "figure s1a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-80c39ce48811716a",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-FC-6daedbede4612637"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "Notably, these HR-induced pathological alterations and their reversal by ACT were also validated in human LSECs, showing consistent attenuation of ER stress, Ca2+ dysregulation, glycolytic lactate production and H3K18la modification (Figure S9).",
+    "direct_signal_terms": [
+      "attenuat",
+      "Figure S9"
+    ],
+    "figure_or_table": "figure s9",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-e366232881d9619a",
+    "paper_id": "GP-007",
+    "endpoint_family": "toxicity",
+    "evidence_ids": [
+      "GP-007-E-5c8b7ada194395d5"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "Notably, these HR-induced pathological alterations and their reversal by ACT were also validated in human LSECs, showing consistent attenuation of ER stress, Ca2+ dysregulation, glycolytic lactate production and H3K18la modification (Figure S9).",
+    "direct_signal_terms": [
+      "attenuat",
+      "Figure S9"
+    ],
+    "figure_or_table": "figure s9",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ae66179cde6821b3",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-9d42dda18d160fde"
+    ],
+    "source_ids": [
+      "FC-S-6758ee8595e9d840"
+    ],
+    "evidence_text": "Under pathological conditions of aggravated inflammation in metabolic dysfunction-associated steatotic liver disease 31 and HCC 32, liver macrophages also exhibited the increased H3K18la levels similar to those in LSECs due to a lactate-accumulated microenvironment.",
+    "direct_signal_terms": [
+      "increased"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-7771f197de1f4843",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-981f90d7b660fd72"
+    ],
+    "source_ids": [
+      "S-058b0130bbe0"
+    ],
+    "evidence_text": "The removal of these groups (ACT-d2) resulted in the loss of its ability to regulate Ca2+ and glycolysis, while the derivative retaining the key hydroxyl group (ACT-d1) exhibited stronger MICU1 affinity and alleviated mitochondrial Ca2+ accumulation.",
+    "direct_signal_terms": [
+      "resulted"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-5fd0b6d98fbb7b35",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-2cc57dc914d7bfa3"
+    ],
+    "source_ids": [
+      "S-bec033965724"
+    ],
+    "evidence_text": "Under pathological conditions of aggravated inflammation in metabolic dysfunction-associated steatotic liver disease 31 and HCC 32, liver macrophages also exhibited the increased H3K18la levels similar to those in LSECs due to a lactate-accumulated microenvironment.",
+    "direct_signal_terms": [
+      "increased"
+    ],
+    "figure_or_table": null,
+    "route_hint": "text",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-ccebe7a13ec1bc33",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-4e76faa543beae58"
+    ],
+    "source_ids": [
+      "FC-S-1889ef224acbd9fb"
+    ],
+    "evidence_text": "Additionally, a combined analysis of MitoSOX, Rhod-2 AM and intracellular ROS levels demonstrated that ACT, in conjunction with siMicu1, alleviated superoxide accumulation caused by HR-induced mitochondrial Ca2+ overload stress (Figure 3K and Figure S3L).",
+    "direct_signal_terms": [
+      "analysis",
+      "Figure 3K",
+      "Figure S3L"
+    ],
+    "figure_or_table": "figure 3k",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-f3173a4a393cef09",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-392bcdcc6db93658"
+    ],
+    "source_ids": [
+      "FC-S-d88f150157f852a5"
+    ],
+    "evidence_text": "Considering the established association between glycolysis and histone lactylation 6, together with our existing results (Figure 4), we inquired whether ACT could influence these processes to ameliorate HR injury, and established models for HR and lactate accumulation.",
+    "direct_signal_terms": [
+      "Figure 4"
+    ],
+    "figure_or_table": "figure 4",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-c91c42e24e01bb3e",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-9aa5e75c0f1fd4a6"
+    ],
+    "source_ids": [
+      "S-1c9cad17b225"
+    ],
+    "evidence_text": "Considering the established association between glycolysis and histone lactylation 6, together with our existing results (Figure 4), we inquired whether ACT could influence these processes to ameliorate HR injury, and established models for HR and lactate accumulation.",
+    "direct_signal_terms": [
+      "Figure 4"
+    ],
+    "figure_or_table": "figure 4",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-4fa91f1c4f31ad58",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-e7a70455a5714185"
+    ],
+    "source_ids": [
+      "FC-S-92f9a34e45bed00c"
+    ],
+    "evidence_text": "Concurrently, ACT alleviated the accumulation of lactic acid and the insufficient supply of ATP caused by HIRI (Figure 4A).",
+    "direct_signal_terms": [
+      "Figure 4A"
+    ],
+    "figure_or_table": "figure 4a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-2ffe64f09b17139e",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-0ffb308f4724320a"
+    ],
+    "source_ids": [
+      "S-61913a7ecabf"
+    ],
+    "evidence_text": "Concurrently, ACT alleviated the accumulation of lactic acid and the insufficient supply of ATP caused by HIRI (Figure 4A).",
+    "direct_signal_terms": [
+      "Figure 4A"
+    ],
+    "figure_or_table": "figure 4a",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-859dfdaab03f8995",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-9292fb95e9629178"
+    ],
+    "source_ids": [
+      "FC-S-0cbac785bc17a57b"
+    ],
+    "evidence_text": "As shown in Figure 4H and Figure S4I, ACT synergized with siMicu1 to inhibit the activities of key glycolytic enzymes, especially for LDH and increase ATP content, accompanied by the decreased accumulation of L-lactate, but not D-lactate levels in LSECs.",
+    "direct_signal_terms": [
+      "Figure 4H",
+      "Figure S4I",
+      "decreased"
+    ],
+    "figure_or_table": "figure 4h",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-41ab0af7d4eb0e3c",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-7caceef6daa0cdc2"
+    ],
+    "source_ids": [
+      "FC-S-d4d854b7ed1e6189"
+    ],
+    "evidence_text": "Although the cooperation between ACT and galloflavin or oxamate significantly inhibited the global lactylation of LSECs under conditions of lactate accumulation or HR stimulation, consistent with Figure 5, this ACT-targeted lactylation also specifically occurred at H3K18 site (Figure 6B and Figure S6B).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 5",
+      "Figure 6B",
+      "Figure S6B"
+    ],
+    "figure_or_table": "figure 5",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-dbac4c13630b5e55",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-bfe9ff26e65f2f42"
+    ],
+    "source_ids": [
+      "FC-S-d4d854b7ed1e6189"
+    ],
+    "evidence_text": "The assessment of Ca2+ transient response amplitude (Figure 6E and Figure S6E) and intracellular Ca2+ content (Figure 6F and Figure S6F) indicated that the synergy of ACT with galloflavin or particularly oxamate, mitigated intracellular Ca2+ dysregulation induced by HR or lactate accumulation.",
+    "direct_signal_terms": [
+      "Figure 6E",
+      "Figure S6E",
+      "Figure 6F",
+      "Figure S6F"
+    ],
+    "figure_or_table": "figure 6e",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-a31d9c462077e40d",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-8b836a831a11b0e3"
+    ],
+    "source_ids": [
+      "FC-S-613c5f2b1ad4e388"
+    ],
+    "evidence_text": "TEM results indicated that ACT synergized with siMicu1-LNPs to ameliorate mitochondrial cristae fragmentation, Ca2+ accumulation in mitochondria and the “defenestration” phenotype of LSECs induced by HIRI, thereby protecting the sinusoidal microenvironment (Figure 7H).",
+    "direct_signal_terms": [
+      "Figure 7H"
+    ],
+    "figure_or_table": "figure 7h",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-8079f7a645a01025",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-64b07d6f22651e86"
+    ],
+    "source_ids": [
+      "FC-S-e7b9b7d4936a9eea"
+    ],
+    "evidence_text": "The HIRI+AAV8-Stab2-oeMicu1 group exhibited more pronounced hepatic sinusoidal necrosis, mitochondrial cristae fragmentation and Ca2+ accumulation, as well as LSECs damage (Figure 8E), of which pathological phenomenon was minimally alleviated by ACT.",
+    "direct_signal_terms": [
+      "Figure 8E"
+    ],
+    "figure_or_table": "figure 8e",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-144ad293ea115694",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-8c12948da3b6a70f"
+    ],
+    "source_ids": [
+      "S-5c830a9bf9f6"
+    ],
+    "evidence_text": "The HIRI+AAV8-Stab2-oeMicu1 group exhibited more pronounced hepatic sinusoidal necrosis, mitochondrial cristae fragmentation and Ca2+ accumulation, as well as LSECs damage (Figure 8E), of which pathological phenomenon was minimally alleviated by ACT.",
+    "direct_signal_terms": [
+      "Figure 8E"
+    ],
+    "figure_or_table": "figure 8e",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-263e13774543b039",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-14e261b479d96493"
+    ],
+    "source_ids": [
+      "FC-S-9cfe887c5ca30894"
+    ],
+    "evidence_text": "Functionally, ACT-d1 effectively reduced intracellular L-lactate levels and inhibited mitochondrial Ca2+ accumulation (Figure 8J and Figure S8I), thereby restoring the structural integrity of LSECs in vitro (Figure 8K).",
+    "direct_signal_terms": [
+      "Figure 8J",
+      "Figure S8I",
+      "Figure 8K"
+    ],
+    "figure_or_table": "figure 8j",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-29cfa6e19e931c2e",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-d6660d0ae8439fc3"
+    ],
+    "source_ids": [
+      "S-a30755f5ac7a"
+    ],
+    "evidence_text": "Functionally, ACT-d1 effectively reduced intracellular L-lactate levels and inhibited mitochondrial Ca2+ accumulation (Figure 8J and Figure S8I), thereby restoring the structural integrity of LSECs in vitro (Figure 8K).",
+    "direct_signal_terms": [
+      "Figure 8J",
+      "Figure S8I",
+      "Figure 8K"
+    ],
+    "figure_or_table": "figure 8j",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-dfd9a6e60cb31287",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-FC-13b60fb7929b9e4c"
+    ],
+    "source_ids": [
+      "FC-S-eed6320d3341d5e5"
+    ],
+    "evidence_text": "Notably, ACT significantly reversed the HIRI-induced increase in ER function-related genes [Atf4, Ddit3, ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2 (Atp2a2), voltage dependent anion channel 1 (Vdac1, VDAC1), mitochondrial calcium uniporter regulator 1 (Mcur1), eukaryotic translation initiation factor 2 alpha kinase 3 (Eif2ak3, PERK), Itpr1, mitochondrial calcium uptake 1 (Micu1, MICU1), Mcu] and glycolysis-related genes [Ldha, Pkm, hexokinase 2 (Hk2), glucose-6-phosphate dehydrogenase (G6pdx)] (Figure 1E).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 1E"
+    ],
+    "figure_or_table": "figure 1e",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  },
+  {
+    "candidate_id": "OC-99ea7ccc692da470",
+    "paper_id": "GP-007",
+    "endpoint_family": "uptake",
+    "evidence_ids": [
+      "GP-007-E-5c2b4261d571e76e"
+    ],
+    "source_ids": [
+      "S-a9ed7e20aed2"
+    ],
+    "evidence_text": "Notably, ACT significantly reversed the HIRI-induced increase in ER function-related genes [Atf4, Ddit3, ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2 (Atp2a2), voltage dependent anion channel 1 (Vdac1, VDAC1), mitochondrial calcium uniporter regulator 1 (Mcur1), eukaryotic translation initiation factor 2 alpha kinase 3 (Eif2ak3, PERK), Itpr1, mitochondrial calcium uptake 1 (Micu1, MICU1), Mcu] and glycolysis-related genes [Ldha, Pkm, hexokinase 2 (Hk2), glucose-6-phosphate dehydrogenase (G6pdx)] (Figure 1E).",
+    "direct_signal_terms": [
+      "significant",
+      "Figure 1E"
+    ],
+    "figure_or_table": "figure 1e",
+    "route_hint": "vision",
+    "confidence": "medium",
+    "confidence_reasons": []
+  }
+]

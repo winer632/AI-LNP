@@ -1,0 +1,87 @@
+[
+  {
+    "candidate_id": "OC-20c91a3ac85fea9e",
+    "disposition": "unresolved",
+    "reason": "Reported result, but no eligible original LNP formulation–experiment–outcome record is available from this review."
+  },
+  {
+    "candidate_id": "OC-3473d9c3ff318307",
+    "disposition": "unresolved",
+    "reason": "Reported result, but no eligible original LNP formulation–experiment–outcome record is available from this review."
+  },
+  {
+    "candidate_id": "OC-ad2d084b1b6f801a",
+    "disposition": "unresolved",
+    "reason": "Reported result concerns IPE, not an eligible original LNP delivery record."
+  },
+  {
+    "candidate_id": "OC-7b7d5799d9b35413",
+    "disposition": "unresolved",
+    "reason": "Reported result concerns a GalNAc-conjugated ASO, not an eligible original LNP delivery record."
+  },
+  {
+    "candidate_id": "OC-a466de2cd104ea8c",
+    "disposition": "unresolved",
+    "reason": "Reported result concerns a GalNAc-conjugated siRNA, not an eligible original LNP delivery record."
+  },
+  {
+    "candidate_id": "OC-c6f3f02c9c3a770a",
+    "disposition": "unresolved",
+    "reason": "Reported results concern non-LNP therapies and do not provide an eligible original LNP record."
+  },
+  {
+    "candidate_id": "OC-0d112a70772a2205",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks an identified eligible LNP formulation and linked original experiment."
+  },
+  {
+    "candidate_id": "OC-ac6aaf7eabc760d5",
+    "disposition": "unresolved",
+    "reason": "Reported result concerns ezetimibe, not an eligible original LNP delivery record."
+  },
+  {
+    "candidate_id": "OC-87aa18a308f2f47a",
+    "disposition": "unresolved",
+    "reason": "Reported result concerns a GalNAc-conjugated siRNA, not an eligible original LNP delivery record."
+  },
+  {
+    "candidate_id": "OC-51f29cfac12a4242",
+    "disposition": "not_an_outcome",
+    "reason": "This is a statement that Table 1 summarizes clinical-development status, not a measured result."
+  },
+  {
+    "candidate_id": "OC-236bf6f6e7ce5f6b",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks an identified eligible LNP formulation and linked original experiment."
+  },
+  {
+    "candidate_id": "OC-a14a5cab03d05bc7",
+    "disposition": "unresolved",
+    "reason": "Reported results lack an identified eligible LNP formulation and linked original experiment."
+  },
+  {
+    "candidate_id": "OC-debb46b3020ff4e1",
+    "disposition": "unresolved",
+    "reason": "Reported LNP result appears in a review; no eligible original experiment record can be returned."
+  },
+  {
+    "candidate_id": "OC-be74b022a5a6469d",
+    "disposition": "unresolved",
+    "reason": "Reported results lack an identified eligible LNP formulation and linked original experiment."
+  },
+  {
+    "candidate_id": "OC-4a970dc96e63e6a1",
+    "disposition": "unresolved",
+    "reason": "Reported LNP result appears in a review; no eligible original experiment record can be returned."
+  },
+  {
+    "candidate_id": "OC-dfc5e4f6342bea9c",
+    "disposition": "not_an_outcome",
+    "reason": "This figure description states a mechanism of gene silencing, not a measured result."
+  },
+  {
+    "candidate_id": "OC-f74ac8d16a32768d",
+    "disposition": "not_an_outcome",
+    "reason": "This table lists clinical-development status, not a measured result."
+  }
+]

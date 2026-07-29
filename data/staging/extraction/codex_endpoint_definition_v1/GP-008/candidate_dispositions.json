@@ -1,0 +1,427 @@
+[
+  {
+    "candidate_id": "OC-92135e5be8d7fab7",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-e4b23b846dcf5f0f",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-a7b13328f385e6cb",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-c7a13d00e8c8c4b8",
+    "disposition": "not_an_outcome",
+    "reason": "Mechanistic interpretation."
+  },
+  {
+    "candidate_id": "OC-69b6dbe6ed860af4",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-530cdf5caff26b5c",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-0518f9520b8f32aa",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretive statement."
+  },
+  {
+    "candidate_id": "OC-cac5720989243a47",
+    "disposition": "not_an_outcome",
+    "reason": "Assay heading only."
+  },
+  {
+    "candidate_id": "OC-c2073be0bb3a1db2",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretive statement."
+  },
+  {
+    "candidate_id": "OC-7e58e9babef856dc",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-e1ead3d5698415e0",
+    "disposition": "not_an_outcome",
+    "reason": "Assay interpretation, not a reported result."
+  },
+  {
+    "candidate_id": "OC-064bc53eedf5fb2d",
+    "disposition": "not_an_outcome",
+    "reason": "Background literature statement."
+  },
+  {
+    "candidate_id": "OC-b4889da95215f4b6",
+    "disposition": "not_an_outcome",
+    "reason": "Method description."
+  },
+  {
+    "candidate_id": "OC-149e56ea89756cde",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-80578e00cfe0379c",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-c7aaccbbfc8741c8",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-baf2d08bb4cc9e88",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-0610281a3a820015",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-ce19d510efb9a91c",
+    "disposition": "not_an_outcome",
+    "reason": "Method description."
+  },
+  {
+    "candidate_id": "OC-58807a11fad15b65",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-da143b8ffcf82310",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-772028d5375b96b5",
+    "disposition": "not_an_outcome",
+    "reason": "Method description."
+  },
+  {
+    "candidate_id": "OC-81751072419c1a0c",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-8d2b5381931531a4",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-15366239f60c1cdf",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretive statement."
+  },
+  {
+    "candidate_id": "OC-e9cfdf78cc422188",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-f437510fa0871b58",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-44274f8b82b3a01d",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-0eac53a140b09af7",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-9b5f0ad9a347d47b",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-b1a34539ef173873",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-073c6262f43a6240",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-17802bf06011df86",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-98d4db1f890a608a",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-d553bf2d9422bfcb",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-49809f5b9d0c7b2a",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-5de3504162944924",
+    "disposition": "not_an_outcome",
+    "reason": "Cell-line preparation method."
+  },
+  {
+    "candidate_id": "OC-33bfa043a5d9d0c5",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-4a9c0e9b186dc45c",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-f309f9910a75a2f4",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-597ced8c48cebea9",
+    "disposition": "not_an_outcome",
+    "reason": "Calculation formula."
+  },
+  {
+    "candidate_id": "OC-d60c059b4f7f86f5",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-0ccb77eebd665f6c",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-432e6e3142b86712",
+    "disposition": "not_an_outcome",
+    "reason": "Background statement."
+  },
+  {
+    "candidate_id": "OC-0b4658adc11c8580",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-9201ec9c64407582",
+    "disposition": "not_an_outcome",
+    "reason": "Analysis method."
+  },
+  {
+    "candidate_id": "OC-6a324d1dcd01a7af",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-49ac19315a9fb4cd",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-be8430abe2d01253",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-10e46c995546bedf",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-0e760eba2f435321",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-e8124051820d575e",
+    "disposition": "not_an_outcome",
+    "reason": "Calculation formula."
+  },
+  {
+    "candidate_id": "OC-331193ac418cb39a",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-75f5e516703d38c8",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-ebe514c5d8529c9c",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-d49efe6a06da914e",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-bba030158bcbc536",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-446035e072c83c6b",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-98e9bb203f7df32b",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-fc5377fba2c3a51c",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-f563113b801536e9",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-523decfcf1416ebc",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-cf92f13f32639821",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-af8393323f2df91b",
+    "disposition": "not_an_outcome",
+    "reason": "Experiment description."
+  },
+  {
+    "candidate_id": "OC-a006a8759fe7ed17",
+    "disposition": "not_an_outcome",
+    "reason": "Assay interpretation, not a reported result."
+  },
+  {
+    "candidate_id": "OC-f9c77f861d720c9b",
+    "disposition": "not_an_outcome",
+    "reason": "Experiment method."
+  },
+  {
+    "candidate_id": "OC-afbca7f025f827e6",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-253842cb0fa076e8",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-341696036dd9f69a",
+    "disposition": "not_an_outcome",
+    "reason": "Assay method and interpretation."
+  },
+  {
+    "candidate_id": "OC-cc01419e8097b5f9",
+    "disposition": "unresolved",
+    "reason": "Assay caption lacks usable values."
+  },
+  {
+    "candidate_id": "OC-afc5dce8bb5ff87d",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-25d877fdf10c624d",
+    "disposition": "not_an_outcome",
+    "reason": "Experiment description."
+  },
+  {
+    "candidate_id": "OC-2c4c4e756a9d0bb6",
+    "disposition": "not_an_outcome",
+    "reason": "Model induction method."
+  },
+  {
+    "candidate_id": "OC-669ec52ce5a7da46",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretive statement."
+  },
+  {
+    "candidate_id": "OC-2fae229e42a5b526",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-89c69d93daf1b2e9",
+    "disposition": "unresolved",
+    "reason": "Multiple reported results lack usable values."
+  },
+  {
+    "candidate_id": "OC-e29b68ab1cf64e5d",
+    "disposition": "not_an_outcome",
+    "reason": "Background literature statement."
+  },
+  {
+    "candidate_id": "OC-f5da06c966a7b8c1",
+    "disposition": "not_an_outcome",
+    "reason": "Experiment method."
+  },
+  {
+    "candidate_id": "OC-95d23bb33038ed0d",
+    "disposition": "unresolved",
+    "reason": "Reported results lack usable values."
+  },
+  {
+    "candidate_id": "OC-6da6f8a7627669aa",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable value."
+  },
+  {
+    "candidate_id": "OC-9343dfa7f5af16e4",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  },
+  {
+    "candidate_id": "OC-150f3861bcac0be7",
+    "disposition": "unresolved",
+    "reason": "Figure caption lacks usable result values."
+  },
+  {
+    "candidate_id": "OC-d6796c30efcbe8a1",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-0db22506d1f21549",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-86947d2faa7832aa",
+    "disposition": "unresolved",
+    "reason": "Reported result lacks usable values."
+  }
+]

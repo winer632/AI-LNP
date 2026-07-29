@@ -1,0 +1,907 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-004",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-004-E-9335d981dba2b73b",
+      "GP-004-E-b293f56409c89709",
+      "GP-004-E-12343d379452fe6d"
+    ],
+    "explanation": "Original mouse experiments used identifiable mRNA-LNP formulations, directly reported hepatocyte-targeted expression/proliferation, and linked formulations to outcomes."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "Acuitas mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "ionizable cationic lipid (proprietary to Acuitas; pKa 6.0–6.5) / phosphatidylcholine / cholesterol / PEG-lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "components listed without proportions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "proprietary ionizable cationic lipid (Acuitas; pKa 6.0–6.5)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "phosphatidylcholine",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "PEG-lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-9335d981dba2b73b"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "nucleoside-modified mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-50647e1940bafbbd"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "eGFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "enhanced green fluorescent protein",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-44b663f029e6e370"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-44b663f029e6e370"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "homeostasis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-e29c5e3c31a38827"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "μg mRNA-LNP per 20 g body weight",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 5.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-a72862f18ec2ffcd"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "nucleoside-modified mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-50647e1940bafbbd"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "HGF mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-ed8fea0eb24b05c5"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "hepatocyte growth factor",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-f68f615dad942e41"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1021bbc69d3e566e"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1021bbc69d3e566e"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "homeostasis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-55df7b214d2ae8d5"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-ed8fea0eb24b05c5"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "μg mRNA-LNP per 20 g body weight",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-ed8fea0eb24b05c5"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-f68f615dad942e41"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 48.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-12343d379452fe6d"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E3",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "nucleoside-modified mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-50647e1940bafbbd"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "HGF mRNA + EGF mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-b293f56409c89709"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "hepatocyte growth factor + epidermal growth factor",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-781c50d67af751aa"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1e6611acdea22c63"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-575b2fc9ece61198"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-575b2fc9ece61198"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-025f5c277aab5b54"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "CDE-induced chronic liver injury",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-025f5c277aab5b54"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-025f5c277aab5b54"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-b293f56409c89709"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "μg total mRNA-LNP per mouse (5 μg HGF + 5 μg EGF)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-b293f56409c89709"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-b293f56409c89709"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 2.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-575b2fc9ece61198"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "days after first injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-575b2fc9ece61198"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "flow cytometry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP-positive CD11b+ liver NPCs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1bce9423e81c94ae"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 41.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% (mean ± SD 14.6)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric result reported."
+      }
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "flow cytometry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP-positive CD45+ liver NPCs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1bce9423e81c94ae"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 34.1,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% (mean ± SD 2.2)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric result reported."
+      }
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "flow cytometry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP-positive CD31+ liver NPCs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-E-1bce9423e81c94ae"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 70.7,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% (mean ± SD 9)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-3d422f83e13b8f7d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Numeric result reported."
+      }
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "EdU/HNF4α co-staining",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-6d8d172afc08e599"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "HNF4α+ EdU+ hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-6d8d172afc08e599"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-6d8d172afc08e599"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 61.25,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-6d8d172afc08e599"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% at 48 h (mean ± SD 10.66)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-6d8d172afc08e599"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "121-fold increase versus Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-6d8d172afc08e599"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O5",
+      "experiment_id": "E3",
+      "assay": {
+        "value": "Oil Red O staining",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-748a7c1bb95e21b3"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "steatosis in hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-748a7c1bb95e21b3"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-748a7c1bb95e21b3"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable numeric value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable numeric value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Sharp decrease of steatosis 2 days after the first HGF/EGF mRNA-LNP injection; persistent macrosteatosis with Poly(C) RNA-LNP.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-748a7c1bb95e21b3"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O6",
+      "experiment_id": "E3",
+      "assay": {
+        "value": "serum ALT assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-56f198ac7afbe965"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "serum ALT level",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-56f198ac7afbe965"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "Poly(C) RNA-LNP and Luc mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-8fe9cc23be8ea5ba"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable numeric value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable numeric value reported."
+      },
+      "qualitative_outcome": {
+        "value": "ALT was restored to normal levels at T2 and was significantly lower than in controls.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-56f198ac7afbe965",
+          "GP-004-FC-8fe9cc23be8ea5ba"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O7",
+      "experiment_id": "E3",
+      "assay": {
+        "value": "serum cholesterol assay, Oil Red O staining, and serum ALT assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-e5256e5de6315999"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "serum cholesterol, hepatocyte steatosis, and serum ALT",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-e5256e5de6315999"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "before second injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-e5256e5de6315999"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable numeric value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No usable numeric value reported."
+      },
+      "qualitative_outcome": {
+        "value": "After the second injection, cholesterol release increased, steatosis diminished, and serum ALT decreased at T8.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-004-FC-e5256e5de6315999"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "Individual lipid identities and component molar proportions are not reported.",
+    "LNP N/P ratio is not reported.",
+    "Several outcomes are qualitative in the packet and lack usable numeric values."
+  ]
+}
