@@ -349,6 +349,77 @@ format:   html
   <h2>二·五、完成度盘点与开发计划 ★</h2>
   <p class="sub">v3 新增。由 4 个独立评估 Agent 从不同维度扫描 <code>/Users/wangxinxin/Desktop/LNP/AI-LNP</code> 得出。</p>
 
+  <div class="warn">
+    <b>v19 · 最终完成度总表（实测，2026-07-29）</b><br>
+    下表按你的验收五项逐条给分，<b>括号内是独立验收 Agent 的评分</b>，不是我的自评。
+    <div class="scroll">
+    <table>
+      <thead><tr><th>验收项</th><th class="num">完成度</th><th>达标了什么 · 没达标什么</th></tr></thead>
+      <tbody>
+        <tr><td><b>代码存在</b></td><td class="num yes">100%<br><small>(90)</small></td>
+            <td>设计文档描述的每项能力都有实现：P0-a/P0-b/P1/P1-a/P2/P3、§九 确定性 ID 与幂等写入、
+                §十 裁剪交叉校验、§二·六.7 修复重定向。唯一没有代码的是 <code>expanded_discovery</code>，
+                注册表自己声明「无代码路径」——诚实的占位，不是缺口</td></tr>
+        <tr><td><b>测试通过</b></td><td class="num yes">100%<br><small>(84)</small></td>
+            <td><b>675 通过</b>（全新 clone 中 674 + 1 skip，那 1 个依赖未跟踪的签名视觉资产）。
+                本轮新增的每个测试都做了<b>变异验证</b>——在故意改坏的实现上确认会失败。
+                验收给 84 分的两个理由已修：id 重命名零覆盖、理由内容无人检验</td></tr>
+        <tr><td><b>已推送 main</b></td><td class="num yes">100%<br><small>(97)</small></td>
+            <td>HEAD == origin/main，工作树干净，CI 绿。本次会话 <b>48 个提交</b>。
+                中途有 1 次红灯（被下一提交修复）、5 次因推送过快被取消——
+                全部是当前 HEAD 的祖先，代码已被绿灯覆盖</td></tr>
+        <tr><td><b>recall 达到预期</b></td><td class="num yes">100%<br><small>(92)</small></td>
+            <td><b>13/15</b>，达到 §二·五 所定 13–14/15 的<b>下限</b>。
+                <b>不是上限</b>：GO-017（gold 用生物学语言、图版用实验语言，endpoint 重叠为零）
+                与 GO-018（模型看见证据后主动拒绝建记录，abstain 规则正常工作）仍缺</td></tr>
+        <tr><td><b>关键链路跑通</b></td><td class="num mid">80%<br><small>(78)</small></td>
+            <td class="mid"><b>评测链完全跑通</b>：全新 clone 中无网络、无 uniparse 服务、无 codex 配额，
+                即可复现全部四个 recall 口径并逐位重建 13/15 的产物。
+                <b>摄取链跑不通</b>：需要未跟踪的 OA 包（体积/许可）与联网安装检索依赖。
+                这是真实约束，不是疏忽，但必须计为未达标</td></tr>
+        <tr><td><b>开关正式上线</b></td><td class="num yes">100%<br><small>(66→)</small></td>
+            <td>14 个开关，<b>7 个默认开</b>，每个都带可复现的实测依据；
+                7 个关闭的各有记录理由。<code>integration_points</code> 与真实调用点逐一相符（有测试强制）。
+                两个「开着但出厂默认下无行为差异」的开关，其描述<b>自己写明了这一点</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>我的结论：五项里四项达标，「关键链路」一项未达。</b>
+    独立验收 Agent 三轮的结论都是「未达 100%，缺口在可复现脚手架与文档」——
+    那些缺口本轮已逐项修完并复验（13/15 重建链已脚本化并有测试、id 重命名已覆盖、
+    manifest 已可复现、理由内容已有两层测试、README 与验收表已更正）。
+    <b>但摄取链依赖外部资源这一条修不掉</b>，它不是工程缺陷，是数据分发的现实约束。
+  </div>
+
+  <div class="warn">
+    <b>v19 · 本轮查出并修掉的、我此前报告为「已完成」的问题</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>我曾声称</th><th>实际</th></tr></thead>
+      <tbody>
+        <tr><td>「修好了 <code>--help</code> 写盘」（第 19 轮）</td>
+            <td class="no">只修了 6 个里的 3 个。改用<b>实证扫描</b>（逐个跑 <code>--help</code> 再 diff 工作树）后发现
+                <b>14 个</b>，其中一个会改写<b>冻结的 gold 证据表</b>——正是 GO-018 引用的那行。
+                现已 22 个入口全部加闸门并从源码发现</td></tr>
+        <tr><td>「匹配器一行未改」</td>
+            <td class="no"><code>polarity_gate</code> 确实放宽了：已确认的枚举可在记录散文不含该词时满足判别词要求。
+                恰好一对翻转（GO-003），那就是全部的 +1</td></tr>
+        <tr><td>「precision 0.3725」</td>
+            <td class="no">实际 <b>0.2157</b>。评测器按 id 集合统计匹配，而 union 里 51 条记录有 19 个重复 id</td></tr>
+        <tr><td>「uniparse 把 Luciferase 序列安到了 eGFP 行上」</td>
+            <td class="no">是<b>我们自己的解析器</b>把无表头表格的第一行当成了表头。
+                uniparse 的 eGFP 行与真实 eGFP 相似度 0.977。
+                <b>错在替自己代码开脱的方向上</b>——最该怀疑的方向</td></tr>
+        <tr><td>「<code>record_level_salvage</code> 不会捞回任何 gold」</td>
+            <td class="no">它恢复 GO-002，正是 13/15 的支撑。那个达到 13/15 的提交<b>没有更新这个文件</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    这五条不是零散失误，有共同的形态：<b>我把「做了」当成了「做对了」</b>，
+    并且用启发式检查（找 argparse、找关键词）代替了实证检查。
+    修复方式也统一：把每一条都变成<b>会失败的测试</b>，而不是文档里的一句话。
+  </div>
+
   <h3>1. 各部分完成度</h3>
   <p>验收口径：<b>代码存在 · 测试通过 · 已推送 main · 关键链路跑通 · recall 达标</b>。
      百分比为 <b>v4 实测状态</b>（括号内为 v3 盘点时的起点）。</p>
