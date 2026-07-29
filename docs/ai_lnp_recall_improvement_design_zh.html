@@ -422,66 +422,50 @@ format:   html
 
   <h3>1. 各部分完成度</h3>
   <p>验收口径：<b>代码存在 · 测试通过 · 已推送 main · 关键链路跑通 · recall 达标</b>。
-     百分比为 <b>v4 实测状态</b>（括号内为 v3 盘点时的起点）。</p>
+     百分比为 <b>v19 实测状态（2026-07-29）</b>，非自评——
+     括号内是独立验收 Agent 给的分。测试 <b>675</b> 通过，开关 <b>14 个 / 7 开</b>。</p>
 
   <div class="scroll">
   <table>
-    <thead><tr><th>模块</th><th class="num">完成度</th><th>已交付</th><th>剩余缺口</th></tr></thead>
+    <thead><tr><th>模块</th><th class="num">完成度</th><th class="num">开关</th><th>状态 · 剩余缺口</th></tr></thead>
     <tbody>
-      <tr>
-        <td><b>P0-b</b> 精度指标</td><td class="num yes">100%<br><small>(12%)</small></td>
-        <td>evaluation 1.1.0 输出 4 个新字段：precision 0.3125 / false_additions 22 /
-            <b>evidence_accuracy 0.50</b> / unresolved_declared；<code>evaluate()</code> 全部常量改为可注入；
-            测试 1 → 44 个；<code>paid_api_requests</code> 保持 0</td>
-        <td class="yes">无</td>
-      </tr>
-      <tr>
-        <td><b>P0-a</b> 完整证据视图</td><td class="num yes">100%<br><small>(30%)</small></td>
-        <td><code>src/rag/full_api_packet.py</code>；<code>--evidence-view {compact,full}</code>、
-            <code>--packet-root</code>、<code>--max-input-tokens</code>（发送前拦截）；9 篇 packet 全部通过
-            <code>load_packet()</code> 校验；complexity 阈值 view-aware；
-            <b>compact 路径在全部 18 个既有 packet 上逐字节不变</b></td>
-        <td class="yes">无</td>
-      </tr>
-      <tr>
-        <td><b>P1</b> uniparse ingestion</td><td class="num yes">90%<br><small>(8%)</small></td>
-        <td><code>src/rag/uniparse_client.py</code>（<code>heading_level_*</code> 三重断言禁止发送）；
-            block schema 扩 <code>figure</code>/<code>caption</code>/<code>heading</code>/<code>table_row</code>
-            + 5 个可选字段；<code>_source_id()</code> 哈希不变并有测试钉住；
-            Europe PMC 提为主路径。<b>验收：GP-006 语料 54 → 259 blocks，
-            <code>1.01</code> 命中 0 → 4</b></td>
-        <td class="yes">已完成（v12 更正）：有补充 PDF 的 5 篇全部重建——GP-001/004/006/007/008 分别 27/304/221/150/281 个 uniparse 块。<b>全仓库已无一个 <code>pdf_page</code> 块</b></td>
-      </tr>
-      <tr>
-        <td>工程就绪度 + 开关</td><td class="num yes">95%<br><small>(45%)</small></td>
-        <td>测试 <b>160 → 646</b>（2 failed → 0）；<code>src/config_flags.py</code> 使
-            <code>activation_gate</code> 成为真开关；每个设计优先级一个 flag，默认 off，
-            priority 与设计文档由测试钉住；<code>.env.example</code> 3 → 19；
-            <code>pymupdf</code> 入 requirements；测试写副作用消除（pytest 后工作树干净）；
-            <code>.github/workflows/ci.yml</code></td>
-        <td class="yes">已完成（v12 更正）：CI 已在 GitHub 上多次运行并通过，含「跑完测试后工作树必须干净」的防写入闸门</td>
-      </tr>
-      <tr>
-        <td><b>P2</b> 视觉观察</td><td class="num yes">100%<br><small>(65%)</small></td>
-        <td><code>printed_labels</code> 已加；<code>exact_reported</code> 现在<b>强制要求逐字标签</b>
-            （无标签的「精确值」与自信的猜测无法区分）；<code>derived</code> 豁免（推导自带溯源）；
-            既有的「估算值 → 人工审核」规则未被放松；11 个测试</td>
-        <td class="yes">无</td>
-      </tr>
-      <tr>
-        <td><b>P3</b> 候选必答前移</td><td class="num yes">100%<br><small>(25%)</small></td>
-        <td>候选 id 随 packet 下发；每个槽位必须有处置；
-            <b>并核验 <code>extracted</code> 是否属实</b>（<code>unsupported_extracted_disposition</code>）；
-            prompt 1.1.0 / 1.2.1 双版本，off 时逐字节不变；16 个测试</td>
-        <td class="yes"><b>v18 更正：已默认打开。</b>它是唯一恢复 GO-004 的消融条件。原文的前置条件（extracted 核验）本身已被撤回——那条「拦下 83 条中的 76 条」是对一条记录相反事实的误读，全仓库 <code>unsupported_extracted_disposition</code> 实际为 0 条</td>
-      </tr>
-      <tr class="hl">
-        <td><b>recall 验收</b></td><td class="num mid">部分</td>
-        <td>建立了无需 API key 的 codex harness 并完成三条件消融：
-            <b>6/15 → 7/15 → 8/15</b>，precision 0.429 → 0.533。
-            证据可得性门<b>已通过</b></td>
-        <td class="yes"><b>v18 更正：已达标。</b>确定性 <b>13/15</b>（union + 视觉 + 抢救，precision 0.2203、证据 7/12），达到 13–14/15 的下限；默认单次跑 11/15。<b>GO-006 已恢复</b>，得分 1.0。剩余 GO-017（gold 用生物学语言、图版用实验语言，endpoint 重叠为零）与 GO-018（模型看见证据后主动拒绝建记录）</td>
-      </tr>
+      <tr><td><b>P0-b</b> 精度指标</td><td class="num yes">100%</td><td class="num yes">开</td>
+          <td>4 个字段全部输出。<b>本轮修正</b>：precision 曾因按 id 集合统计而全线虚高
+              （0.3725 → 实为 <b>0.2157</b>），已在评测器与 union 合并两处修掉，
+              并加「precision ≡ recovered/records」不变式断言</td></tr>
+      <tr><td><b>P0-a</b> 完整证据视图</td><td class="num yes">100%</td><td class="num">关</td>
+          <td>实现完整。默认关是<b>实测决定</b>：单独作为路线只有 7/15（紧凑路线 8/15），
+              它是集成成员而非替代品。gold 证据覆盖上它其实最好（8 条低于 0.5，紧凑 11、结构化 12）</td></tr>
+      <tr><td><b>P1</b> uniparse ingestion</td><td class="num yes">100%</td><td class="num yes">开</td>
+          <td>5 篇有补充材料的论文全部重建，全仓库已无 <code>pdf_page</code> 块。
+              GP-006 语料 54 → 259 块，<code>1.01</code> 从 0 次到 4 次——这是 GO-006 的唯一来源</td></tr>
+      <tr><td><b>P1-a</b> 结构化证据视图<br><small>（文档原先未登记）</small></td><td class="num yes">100%</td><td class="num yes">开</td>
+          <td>此前是<b>死代码</b>（全仓库零引用）。接线后默认单次跑 10/15 → <b>11/15</b>。
+              代价已量化：它在同一 16k 预算内无条件保留结构化证据，把散文挤出去，
+              gold 证据覆盖反而三者最差</td></tr>
+      <tr><td><b>P2</b> 视觉观察</td><td class="num yes">100%</td><td class="num">关</td>
+          <td>读图正确且是四条缺失结果的<b>唯一来源</b>。默认关因为合并<b>非一致正向</b>：
+              GP-004/006 读图使 union 11/15 → 12/15，但 GP-008 读图不涨 recall 且损证据覆盖</td></tr>
+      <tr><td><b>P3</b> 候选必答前移</td><td class="num yes">100%</td><td class="num yes">开</td>
+          <td>唯一恢复 GO-004 的消融条件。槽位数大时退化（39 个全回填、168 个不行）。
+              <b>本轮撤回</b>一条不实理由：「拦下 83 条中的 76 条」是对相反事实的误读，实际为 0 条</td></tr>
+      <tr><td><b>§十</b> 幻觉交叉校验<br><small>（文档称「必需」）</small></td><td class="num yes">100%</td><td class="num yes">开</td>
+          <td>建起来就查出真幻觉：GP-004 第 11 页有 23-mer 重复 173 次、EGF 行相似度 0.026。
+              <b>同时洗清 GO-006</b>。<b>本轮更正</b>：原诊断「序列被调包」其实是<b>我们自己解析器</b>
+              把无表头表格首行当表头，错在替自己代码开脱的方向上</td></tr>
+      <tr><td><b>§九</b> 可复现性</td><td class="num yes">100%</td><td class="num">关</td>
+          <td>确定性 ID 与幂等写入均已实现（增量式，3022 条已提交摘要逐位不变）。
+              <b>本轮补</b>：union 曾引用 3 个从未提交的目录——全新 clone 只能跑出 <b>9/15</b>；
+              13/15 的重建链此前零文档零测试，现已脚本化</td></tr>
+      <tr><td><b>recall 验收</b></td><td class="num yes">100%<br><small>(92)</small></td><td class="num">—</td>
+          <td><b>13/15</b>，达 13–14/15 的<b>下限</b>。默认单次跑 11/15。
+              剩 GO-017（gold 用生物学语言、图版用实验语言）与 GO-018（模型主动 abstain）。
+              <b>两条正在按项目方决定重试</b>：解释性陈述计入 outcome、抽取补充细胞类型</td></tr>
+      <tr><td><b>关键链路跑通</b></td><td class="num mid">80%<br><small>(78)</small></td><td class="num">—</td>
+          <td class="mid"><b>唯一未达标项。</b>评测链在全新 clone 中完全跑通（无网络/无服务/无配额），
+              可复现四个口径并逐位重建 13/15。<b>摄取链需联网两次</b>（取 OA 包、装 torch/faiss）——
+              数据分发的现实约束，非工程缺陷，但仍计未达标。本轮已把引导路径写进 README、
+              并让报错指出该跑哪条命令</td></tr>
     </tbody>
   </table>
   </div>
