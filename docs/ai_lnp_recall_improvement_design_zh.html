@@ -361,7 +361,7 @@ format:   html
         <td><b>P0-b</b> 精度指标</td><td class="num yes">100%<br><small>(12%)</small></td>
         <td>evaluation 1.1.0 输出 4 个新字段：precision 0.3125 / false_additions 22 /
             <b>evidence_accuracy 0.50</b> / unresolved_declared；<code>evaluate()</code> 全部常量改为可注入；
-            测试 1 → 15 个；<code>paid_api_requests</code> 保持 0</td>
+            测试 1 → 44 个；<code>paid_api_requests</code> 保持 0</td>
         <td class="yes">无</td>
       </tr>
       <tr>
@@ -467,6 +467,14 @@ format:   html
               <s>打开只会拉低 precision</s>（<b>v18 撤回</b>：见 v11/v12——它是那四个测量的唯一来源，合并 GP-004/006 读图可使 union 11/15 → 12/15）</td></tr>
       <tr><td><code>expanded_discovery</code></td><td class="num">关</td>
           <td>无实现，仅为 roadmap 占位</td></tr>
+      <tr><td><code>coverage_residue_targeting</code></td><td class="num">关</td><td>Available, not default. It is the only route by which GO-002 can reach repair at all. GP-004's candidate group carries 41.5% CD11b+, 34.1% CD45+, 70.7…</td></tr>
+      <tr><td><code>idempotent_upsert</code></td><td class="num">关</td><td>Available, not default. The property is "same inputs converge, different inputs are rejected or recorded as a new version", not "overwrite freely": th…</td></tr>
+      <tr><td><code>record_level_salvage</code></td><td class="num">关</td><td>Available, not default -- but NOT because it buys nothing. An earlier version of this rationale said it recovers no gold outcome. That is false, and i…</td></tr>
+      <tr><td><code>structured_evidence_ids</code></td><td class="num">关</td><td>Available, not default, and it must stay that way until every artifact is regenerated. Evidence ids are cited by committed extraction results and are …</td></tr>
+      <tr><td><code>structured_evidence_view</code></td><td class="num yes">开</td><td>Enabled on measurement. The structured packet keeps table rows the budget would otherwise evict: GP-006's compact packet contains 1.01 zero times and …</td></tr>
+      <tr><td><code>uniparse_crop_verification</code></td><td class="num yes">开</td><td>Enabled on measurement, and it caught real fabrication. GP-004 carries six contradicted blocks -- six, not the five an earlier version of this text sa…</td></tr>
+      <tr><td><code>vision_relationship_polarity</code></td><td class="num yes">开</td><td>Enabled. A SelectiveVisionResponse carries a closed 7-value relationship enum emitted by a model that never saw the gold set; carrying it structurally…</td></tr>
+      <tr><td colspan="3"><b>v18 补全</b>：此表原先只列 7 个开关，而注册表实际有 <b>14 个</b>——上面 7 行是后续新增、此前未登记在文档里的。每个默认开的开关都必须带可复现的实测依据，由 <code>test_a_rationale_that_quotes_a_recall_figure_reproduces_it</code> 与 <code>test_a_rationale_that_names_a_before_and_after_pair_is_checked_as_a_pair</code> 强制。</td></tr>
     </tbody>
   </table>
   </div>
@@ -702,7 +710,7 @@ format:   html
     而是先用它们重建 union，验证能<b>逐字节复现</b> manifest、以及全部 51 条记录的负载、顺序和
     <code>source_run</code>。全部一致，才说明提交它们是<b>恢复历史</b>而非编造历史。
     现在 <code>docs/extraction/union_provenance.md</code> 记录了重建命令，
-    <code>tests/test_union_provenance.py</code>（10 个测试）会实际跑它，
+    <code>tests/test_union_provenance.py</code>（11 个测试）会实际跑它，
     并断言 manifest 引用的每个 root 都存在于仓库中。
     <br><br>
     <b>默认单次跑的 11/15 从未受影响</b>——它的五个 <code>RESULT_ROOTS</code> 一直都在仓库里。
