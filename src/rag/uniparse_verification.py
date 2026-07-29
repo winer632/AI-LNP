@@ -64,7 +64,7 @@ the Table S2 blocks ``contradicted`` over uniparse's correct ``0.91``.
 What it found on the committed corpus
 -------------------------------------
 Run over every uniparse block in the nine gold papers with the offline readers
-only (250 blocks; GP-001/004/006/007/008 are the papers with supplements):
+only (254 blocks; GP-001/004/006/007/008 are the papers with supplements):
 
 * **GP-006 Table S2 verifies.** All twelve numbers of the row that supplies
   GO-006's ``1.01 ± 0.38 %`` are recovered from a 600 dpi crop of the recorded
@@ -78,7 +78,7 @@ only (250 blocks; GP-001/004/006/007/008 are the papers with supplements):
   source. Its EGF row scores 0.026 identity against the real EGF sequence, and
   HGF is truncated to 353 of 2184 bases. Those pages are ordinary vector text,
   so this is not a hard parse: a deterministic reader gets it right and the VLM
-  did not. Five blocks in the committed corpus carry it.
+  did not. Six blocks in the committed corpus carry it.
 
   CORRECTION. This paragraph previously said uniparse gave the eGFP and HGF
   rows the Luciferase row's sequence. That was wrong, and wrong in the

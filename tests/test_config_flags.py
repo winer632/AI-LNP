@@ -464,3 +464,69 @@ def test_declared_integration_points_really_read_the_flag():
             f"{flag.name}: declared {sorted(declared)} but "
             f"is_enabled is called from {sorted(actual)}"
         )
+
+
+def test_a_rationale_that_quotes_a_recall_figure_reproduces_it():
+    """Rationale content, not just its presence.
+
+    test_a_flag_may_only_ship_enabled_with_a_recorded_rationale asserts the
+    string is non-empty. An audit then found seventeen quoted numbers that no
+    longer reproduced, including one rationale that stated the exact opposite
+    of what the repository's own headline artifact demonstrates -- because the
+    commit that reached 13/15 never updated the flag file. Every one of those
+    survived a green suite.
+
+    A rationale cannot be checked in general. What can be checked is that any
+    "N/15" it quotes is a figure some committed configuration actually
+    produces, which catches a stale headline -- the failure that happened.
+    """
+    import re
+
+    from src.extraction.evaluate_final_gold_dynamic import ROOT, evaluate
+
+    # Every committed extraction root, not just the headline ones: a rationale
+    # may legitimately cite an ablation figure from a single run, and a set
+    # narrowed to the union roots would reject those as unreachable. This test
+    # is meant to catch a stale headline, not to forbid citing a measurement.
+    achievable = set()
+    extraction = ROOT / "data/staging/extraction"
+    roots = [None] + [
+        [path] for path in sorted(extraction.iterdir())
+        if path.is_dir() and any(path.glob("GP-*/*result*.json"))
+    ]
+    for candidate in roots:
+        for polarity in (False, True):
+            with override(vision_relationship_polarity=polarity):
+                try:
+                    recovered = evaluate(result_roots=candidate)["recovered"]
+                except Exception:  # noqa: BLE001 - an unscorable root is not this test's concern
+                    continue
+                achievable.add(f"{recovered}/15")
+
+    # A rationale may legitimately cite a before-state: "the structured view
+    # takes the default run from 10/15 to 11/15" names a figure no committed
+    # root produces on its own, because it is the default with that stage
+    # removed. Dropping each stage in turn covers those honestly, rather than
+    # exempting any figure a rationale happens to contain.
+    from src.extraction.evaluate_final_gold_dynamic import RESULT_ROOTS
+
+    for dropped in RESULT_ROOTS:
+        kept = [root for root in RESULT_ROOTS if root != dropped]
+        if not kept:
+            continue
+        try:
+            achievable.add(f"{evaluate(result_roots=kept)['recovered']}/15")
+        except Exception:  # noqa: BLE001
+            continue
+
+    quoted: dict[str, set[str]] = {}
+    for flag in registry().values():
+        for figure in re.findall(r"\b(\d{1,2}/15)\b", flag.rationale or ""):
+            quoted.setdefault(flag.name, set()).add(figure)
+
+    for name, figures in quoted.items():
+        unreachable = figures - achievable
+        assert not unreachable, (
+            f"{name}'s rationale quotes {sorted(unreachable)}, which no "
+            f"committed configuration produces. Reachable: {sorted(achievable)}"
+        )

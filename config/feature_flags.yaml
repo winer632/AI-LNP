@@ -62,19 +62,16 @@ flags:
     default: true
     status: enabled
     rationale: >-
-      Enabled on measurement, and it caught real fabrication. On GP-004
-      page 11 uniparse emitted a decoder repetition loop -- one 23-mer
-      repeated 173 times, absent from the source pages -- an EGF row at
-      0.026 identity to the real sequence, and HGF truncated to 353 of
-      2184 bases. Five blocks are stamped contradicted. It also cleared
-      GO-006: that bbox has no text layer at all, so the parse was its
-      only account, yet every number in the row is recovered by OCR of
-      the crop and a standalone re-parse returns byte-identical HTML.
-      CORRECTION: this rationale previously said uniparse gave the eGFP
-      and HGF rows the Luciferase sequence. It did not -- each row
-      carries its own gene, eGFP at 0.977 identity. That reading came
-      from table_row_entries treating a header-less table's first row as
-      a header, a bug in this repository since fixed.
+      Enabled on measurement, and it caught real fabrication. GP-004
+      carries six contradicted blocks -- six, not the five an earlier
+      version of this text said; the parser fix that gave the Luciferase
+      row its own block made it six and this file was not updated. Page
+      11 carries a decoder repetition loop absent from the source pages.
+      It also stamps GP-006's blocks unverified rather than verified: a
+      live re-parse with OCR available does verify the row carrying
+      GO-006's 1.01, but the corpus this repository ships records
+      unverified, and the earlier text stated the live result as though
+      it were the artifact. Blocks are stamped, never dropped.
     description: >-
       Cross-check every uniparse table and caption block against a fresh crop of
       the page region it records. Renders the bbox with PyMuPDF, then re-reads it
@@ -291,29 +288,18 @@ flags:
     default: false
     status: available
     rationale: >-
-      Available, not default, on measurement: it recovers no gold
-      outcome and it costs precision. Of the 38 committed run
-      directories carrying a raw response, 4 fail the document contract
-      today; the salvage keeps 33 records from 3 of them -- GP-002 15,
-      GP-006 10, GP-007 8 -- and rejects 1, GP-007's experiment record,
-      which cites GP-007-FC-b360a234fb68377d, an id the full packet does
-      not contain. The count of salvaged records citing an id outside
-      their own packet is 0, and that is the number the whole design
-      exists to hold at 0. Wired into the union as a sixth run root it
-      adds 5 records on GP-002 and takes 11/15 at precision 0.2157 to
-      11/15 at 0.1964: recall unchanged, 40 false additions to 45, and
-      every gold row keeps the record it had already matched. On the
-      shipped roots nothing moves at all, off or on -- default roots
-      11/15 at 0.1897 with evidence 6/11, codex_union_v1 11/15 at
-      0.2157 with 6/11, codex_union_vision_v2 with
-      vision_relationship_polarity on 12/15 at 0.2264 with 6/11 --
-      because those roots carry results that never needed salvaging.
-      And the one response this repository actually discarded to the
-      all-or-nothing rule, structured_compact_one_call_v1/GP-001, which
-      hallucinated GP-001-FC-62738f4303a2f in eligibility, returned zero
-      records, so there was nothing in it to keep. Turn it on for a run
-      whose responses are being rejected; leave it off until a
-      measurement shows it buying recall.
+      Available, not default -- but NOT because it buys nothing. An
+      earlier version of this rationale said it recovers no gold
+      outcome. That is false, and it was false by the time it shipped:
+      the commit that reached 13/15 did not update this file. Measured
+      now, unioning the salvage into GP-004 takes codex_union_v1 from
+      11/15 at precision 0.2157 to 12/15 at 0.2105, recovering GO-002,
+      and it is what codex_union_vision_v3 rests on for 13/15. It stays
+      off because the gain needs a union merge rather than an extra
+      result root -- appended, _result_path never reads its GP-004;
+      prepended, it replaces GP-004 and trades GO-002 for GO-001, still
+      11/15. The build that uses it correctly is scripted and tested;
+      see docs/extraction/union_provenance.md.
     description: >-
       When a response fails the document-level contract, keep the records that
       individually validate and whose own evidence citations are all in the

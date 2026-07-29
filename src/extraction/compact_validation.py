@@ -15,7 +15,12 @@ from src.extraction.compact_contracts import (
 )
 
 
-COLLECTIONS = {"formulations", "components", "experiments", "outcomes"}
+# A tuple, not a set. Findings are emitted in iteration order and written into
+# committed artifacts, so a set literal made the salvage manifest differ run to
+# run under Python's randomised hashing. Section 九 names this defect and it was
+# fixed in build_missing_record_tasks; this site was missed. Membership tests
+# still work, and the order is now the contract's own field order.
+COLLECTIONS = ("formulations", "components", "experiments", "outcomes")
 
 
 class StrictModel(BaseModel):
