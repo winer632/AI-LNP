@@ -1006,15 +1006,25 @@ format:   html
     <thead><tr><th>模块</th><th class="num">起点</th><th>状态</th><th>关键产出</th></tr></thead>
     <tbody>
       <tr><td><b>P0-b</b> 精度指标</td><td class="num">12%</td><td class="yes">✅ 完成</td>
-        <td>evaluation 1.1.0：precision 0.3125 / false_additions 22 / <b>evidence_accuracy 0.50</b> / unresolved_declared</td></tr>
+        <td>evaluation 1.1.0：precision <b>0.1897</b> / false_additions <b>47</b> / <b>evidence_accuracy 0.5455</b>（<b>v19</b>：原记 0.3125/22/0.50 是接入结构化视图<b>之前</b>的基线） / unresolved_declared</td></tr>
       <tr><td><b>P0-a</b> 完整证据视图</td><td class="num">30%</td><td class="yes">✅ 完成</td>
         <td><code>full_api_packet.py</code>；<code>--evidence-view {compact,full}</code>；9 篇 packet 通过校验；compact 路径逐字节不变</td></tr>
       <tr><td><b>P1</b> uniparse ingestion</td><td class="num">8%</td><td class="yes">✅ 完成</td>
-        <td>GP-006 语料 54 → <b>260</b> blocks，<code>pdf_page</code> 消失，<code>table_row</code> 13 个</td></tr>
+        <td>GP-006 语料 54 → <b>259</b> blocks，<code>pdf_page</code> 消失，<code>table_row</code> 13 个</td></tr>
       <tr><td>工程就绪度 + 开关</td><td class="num">45%</td><td class="yes">✅ 完成</td>
-        <td>测试 160→<b>646</b>；CI 已建；<code>activation_gate</code> 变真开关；<code>.env.example</code> 3→19</td></tr>
-      <tr><td><b>P3</b> 候选必答</td><td class="num">25%</td><td class="mid">开发中</td><td>—</td></tr>
-      <tr><td><b>P2</b> 视觉观察</td><td class="num">65%</td><td class="mid">开发中</td><td>—</td></tr>
+        <td>测试 160→<b>675</b>；CI 已建；<code>activation_gate</code> 变真开关；<code>.env.example</code> 3→19</td></tr>
+      <tr><td><b>P3</b> 候选必答</td><td class="num">25%</td><td class="yes">✅ 完成 · <b>默认开</b></td>
+        <td>唯一恢复 GO-004 的消融条件；槽位 39 个全回填、168 个退化，大文章需按
+            <code>max_slots_per_call</code> 分块</td></tr>
+      <tr><td><b>P2</b> 视觉观察</td><td class="num">65%</td><td class="yes">✅ 完成 · 默认关</td>
+        <td>四条缺失结果的<b>唯一来源</b>；GP-004/006 读图使 union 11/15 → 12/15。
+            默认关因合并<b>非一致正向</b>：GP-008 读图不涨 recall 且损证据覆盖</td></tr>
+      <tr><td><b>P1-a</b> 结构化证据视图</td><td class="num">0%</td><td class="yes">✅ 完成 · <b>默认开</b></td>
+        <td>此前是<b>死代码</b>（全仓库零引用）。接线后默认单次跑 10/15 → <b>11/15</b></td></tr>
+      <tr><td><b>§十</b> 幻觉交叉校验</td><td class="num">0%</td><td class="yes">✅ 完成 · <b>默认开</b></td>
+        <td>查出 GP-004 真幻觉（23-mer 重复 173 次），<b>同时洗清 GO-006</b></td></tr>
+      <tr><td><b>§九</b> 确定性 ID + 幂等</td><td class="num">0%</td><td class="yes">✅ 完成 · 默认关</td>
+        <td>增量式，3022 条已提交摘要逐位不变；13/15 重建链已脚本化并有测试</td></tr>
     </tbody>
   </table>
   </div>
