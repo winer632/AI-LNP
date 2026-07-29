@@ -1,0 +1,70 @@
+{
+  "paper_id": "GP-002",
+  "proposed": 6,
+  "kept": 6,
+  "mappings": [
+    {
+      "line_name": "HuH-7",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-002-FC-45c6b51945e5e6d2"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "A549",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-002-FC-72fd54cfdc87cb3a"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HCT116",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-002-FC-8e97c33ab6ffc357"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "A549-mCherry",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-002-FC-370c71d6f8a5afa2",
+        "GP-002-FC-f9d4ca9b221e7005"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HCT116-mCherry",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-002-FC-370c71d6f8a5afa2",
+        "GP-002-FC-f9d4ca9b221e7005"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HuH-7-FLuc-mCherry",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-002-FC-29edf2b1149ec7e6",
+        "GP-002-FC-dabab29b405af904"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

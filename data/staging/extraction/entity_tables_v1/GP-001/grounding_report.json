@@ -1,0 +1,28 @@
+{
+  "paper_id": "GP-001",
+  "proposed": 2,
+  "kept": 1,
+  "mappings": [
+    {
+      "line_name": "Huh-7",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-001-E-8add8993c11cae27",
+        "GP-001-E-5463939b0a643e62"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HepG2",
+      "kept": false,
+      "reason": "nothing_grounded_beyond_the_line_name",
+      "cited_evidence_ids": [
+        "GP-001-E-1beeded3ca6c7af8"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

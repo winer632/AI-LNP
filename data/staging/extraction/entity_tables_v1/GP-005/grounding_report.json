@@ -1,0 +1,62 @@
+{
+  "paper_id": "GP-005",
+  "proposed": 5,
+  "kept": 5,
+  "mappings": [
+    {
+      "line_name": "J774A.1",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-005-FC-4222d6f3e7a1fd8b",
+        "GP-005-E-7a4317dc270edf63"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "Hepa1‐6",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-005-FC-4222d6f3e7a1fd8b",
+        "GP-005-E-7a4317dc270edf63"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "NCTC clone 929",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-005-FC-4222d6f3e7a1fd8b",
+        "GP-005-E-7a4317dc270edf63"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "EA.hy926",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-005-FC-4222d6f3e7a1fd8b",
+        "GP-005-E-7a4317dc270edf63"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HeLa cells",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-005-FC-4222d6f3e7a1fd8b",
+        "GP-005-E-7a4317dc270edf63"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

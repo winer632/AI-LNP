@@ -1,0 +1,35 @@
+{
+  "report_version": "compact-validation-1.0.0",
+  "paper_id": "GP-008",
+  "status": "invalid",
+  "findings": [
+    {
+      "finding_id": "VF-4ddb84b9c82c1f0e",
+      "code": "missing_candidate_disposition",
+      "message": "Candidate OC-0518f9520b8f32aa was sent as an answerable slot but the response returned no disposition for it; silence is not a valid disposition",
+      "location": [
+        "candidate_dispositions",
+        "OC-0518f9520b8f32aa"
+      ],
+      "record_collection": null,
+      "record_index": null,
+      "field_name": null,
+      "cited_evidence_ids": [],
+      "repairable": false
+    },
+    {
+      "finding_id": "VF-94939a54baa06c6c",
+      "code": "unknown_candidate_id",
+      "message": "Response dispositions candidate OC-0518f9520b8f32b, which was not supplied as a slot",
+      "location": [
+        "candidate_dispositions",
+        "OC-0518f9520b8f32b"
+      ],
+      "record_collection": null,
+      "record_index": null,
+      "field_name": null,
+      "cited_evidence_ids": [],
+      "repairable": false
+    }
+  ]
+}

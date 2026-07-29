@@ -1,0 +1,17 @@
+{
+  "paper_id": "GP-006",
+  "proposed": 1,
+  "kept": 1,
+  "mappings": [
+    {
+      "line_name": "NIH3T3cells",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-006-E-08e2bd57bb350010"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

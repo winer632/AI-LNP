@@ -1,0 +1,645 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-008",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-008-E-9f4e4aba562731a4",
+      "GP-008-E-5d890aae8e82c789",
+      "GP-008-E-85ffa081af3058cd"
+    ],
+    "explanation": "Original experiments report αCD163/LNP delivery of FAPCAR mRNA to BMDMs/macrophages with measured transfection and functional outcomes."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "αCD163/LNP-FAPCAR",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-ca8a2e82a75114a8"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "Ionizable lipid:DSPC:cholesterol:PEG-lipid at 45:30:23.5:1.5 molar ratio; anti-CD163 antibody conjugated to LNP surface; encapsulated FAPCAR mRNA.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1",
+          "GP-008-E-78b7081add1094e3",
+          "GP-008-E-9f4e4aba562731a4"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "molar ratio",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "N/P ratio was not reported."
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "heptadecan-9-yl 8-((2-hydroxyethyl)(8-(nonyloxy)-8-oxooctyl)amino)octanoate",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-9f06a8fd077bd7aa"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1",
+          "GP-008-E-9f06a8fd077bd7aa"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 45.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "mol%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DSPC",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 30.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "mol%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 23.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "mol%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "PEG-lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 1.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "mol%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-536ddd1a9e1a2ad1"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C5",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "anti-CD163 antibody",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-78b7081add1094e3"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "targeting_ligand",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-78b7081add1094e3"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No formulation-specific ligand amount was reported."
+      },
+      "amount_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No formulation-specific ligand amount unit was reported."
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "FAPCAR mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "FAPCAR",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "FAP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-38bead8279685734"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "BMDMs (bone-marrow-derived macrophages)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "FAP+ JS-1 cells (mouse HSC cell line; differentiated with TGF-β1 and FAP-enriched)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-1c77f25c0e57c6f8",
+          "GP-008-FC-c84b61ed3d52a342",
+          "GP-008-FC-ce4622f1d65e2e72",
+          "GP-008-FC-4131dfbfce0bc63d"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "In-vitro experiment."
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-080d16c7d2dc094b"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "in vitro simulated fibrosis environment",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-15deffa773020d66"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vitro",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No FAPCAR-LNP dose was reported for this experiment."
+      },
+      "dose_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No FAPCAR-LNP dose unit was reported for this experiment."
+      },
+      "route": {
+        "value": "incubation",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 48.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-5d890aae8e82c789"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "FAPCAR mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "FAPCAR",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-0bd62635eb18e64c"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "FAP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-38bead8279685734"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "macrophages in fibrotic mouse liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-0bd62635eb18e64c"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "hepatic stellate cells (Desmin+)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-FC-e49ea32377a5fe1d"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-0bd62635eb18e64c"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "CCL4-induced liver fibrosis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-0bd62635eb18e64c"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 0.4,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg mRNA/kg body weight",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous tail-vein injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 14.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "d",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-c2f49c1ec1cd78d3"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "flow cytometry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-f5d81377181acad0"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "BMDMs expressing GFP or FAPCAR after αCD163/LNP delivery",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-85ffa081af3058cd",
+          "GP-008-FC-ae52a82275a629e9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "unmodified LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-7d00a9f09c5299f7",
+          "GP-008-FC-bb35f9a58576ee15"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 80.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-85ffa081af3058cd",
+          "GP-008-FC-ae52a82275a629e9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% (greater than 80%)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-85ffa081af3058cd",
+          "GP-008-FC-ae52a82275a629e9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Unmodified LNP delivered mRNA to fewer than 20% of target BMDMs.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-7d00a9f09c5299f7",
+          "GP-008-FC-bb35f9a58576ee15"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "phagocytosis assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-55839a1df762b042"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "BMDM phagocytic rate",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-edd6ef141fbe5f9e",
+          "GP-008-FC-aa6de20adbc5c17b"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "WT group and LNP-FAPCAR group",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-edd6ef141fbe5f9e",
+          "GP-008-FC-aa6de20adbc5c17b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Exact phagocytic-rate values were not reported in the packet text."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Exact rate unit/value was not reported."
+      },
+      "qualitative_outcome": {
+        "value": "αCD163/LNP-FAPCAR induced a phagocytic rate more than tenfold that of WT and approximately threefold that of LNP-FAPCAR.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-E-edd6ef141fbe5f9e",
+          "GP-008-FC-aa6de20adbc5c17b"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "immunofluorescence staining",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-FC-e49ea32377a5fe1d"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "FAPCAR+ macrophage localization",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-FC-e49ea32377a5fe1d"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "CCL4 + PBS group",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-FC-e49ea32377a5fe1d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric localization value was reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric localization unit was reported."
+      },
+      "qualitative_outcome": {
+        "value": "FAPCAR+ macrophages accumulated in Desmin+ HSC-populated areas; this was absent in CCL4 + PBS mice.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-008-FC-e49ea32377a5fe1d"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "Exact numerical phagocytic-rate values were not supplied for the reported fold-change result.",
+    "The packet reports several figure-based assays without extractable numerical values."
+  ]
+}
