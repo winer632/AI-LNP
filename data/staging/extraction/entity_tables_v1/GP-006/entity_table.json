@@ -1,0 +1,16 @@
+{
+  "entity_table_version": "entity-table-1.0.0",
+  "paper_id": "GP-006",
+  "cell_lines": [
+    {
+      "line_name": "NIH3T3cells",
+      "population": "mouse fibroblast",
+      "state": "delivered Cas9 protein with these two sgRNAs",
+      "species": "mouse",
+      "evidence_ids": [
+        "GP-006-E-08e2bd57bb350010"
+      ],
+      "derivation": "This evidence identifies NIH3T3cells as mouse fibroblast cells and states that Cas9 protein with these two sgRNAs was delivered to them."
+    }
+  ]
+}

@@ -19,6 +19,12 @@ Four prompt versions live here.
     rather than an edit, so both prompts above stay byte-identical when the
     flag is off.
 
+``compact-prompt-1.5.0`` / ``compact-prompt-1.5.1``
+    Whichever text the flags above selected, plus :data:`ENTITY_TABLE_RULE`.
+    Used only when the ``entity_resolution_prepass`` flag is on. Same
+    discipline once more; with the flag off every prompt above is
+    byte-identical to what shipped.
+
 Call :func:`active_prompt` instead of importing a constant directly, so a call
 site automatically picks up the text, version, and checksum that belong
 together.
@@ -130,6 +136,32 @@ def cell_identity_prompt_sha256(candidate_slot_enforcement: bool = False) -> str
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+ENTITY_RESOLUTION_FLAG = "entity_resolution_prepass"
+
+# The difference from CELL_IDENTITY_RULE above is where the answer comes from.
+# That rule asks the model to work out what a line is while it is extracting;
+# this one tells it that the question has already been answered, separately,
+# against this same packet, and that the answer is on the table it was handed
+# with its evidence ids attached. The rule names no line and no population: it
+# describes a table whose contents come from the paper.
+ENTITY_TABLE_RULE = (
+    " An entity_table may be supplied alongside the packet. It lists cell lines "
+    "this packet names and, for each, the population that line represents and "
+    "the state it was in, together with the packet evidence ids those were read "
+    "from. It was derived from this same packet by a separate pass and adds no "
+    "outside knowledge; every entry that could not be shown in its own cited "
+    "evidence was removed before you saw it. When a record you return names a "
+    "line the table covers, name that population and state alongside the line's "
+    "own name rather than instead of it, and cite the table's evidence ids for "
+    "that line together with whatever evidence the record already cites. A line "
+    "the table does not cover is left as the bare line name. The entity_table "
+    "states what a cell is, never what an experiment showed: it is not evidence "
+    "for an outcome and never licenses a record the packet does not support."
+)
+
+ENTITY_TABLE_PROMPT_VERSION = "compact-prompt-1.5.0"
+ENTITY_TABLE_SLOT_PROMPT_VERSION = "compact-prompt-1.5.1"
+
 INTERPRETIVE_OUTCOME_FLAG = "interpretive_outcome_admission"
 
 INTERPRETIVE_PROMPT_VERSION = "compact-prompt-1.4.0"
@@ -219,14 +251,17 @@ def active_prompt(
     *,
     interpretive_outcome_admission: bool | None = None,
     cell_line_identity: bool | None = None,
+    entity_resolution_prepass: bool | None = None,
 ) -> PromptSelection:
     """Pick the prompt for this call from the flags that amend it.
 
-    Two independent switches append to the frozen texts, never rewrite them,
-    so a request made with both off is byte-identical to what shipped. They
-    are checked in a fixed order and both may apply: the interpretive rule
+    Three independent switches append to the frozen texts, never rewrite them,
+    so a request made with all off is byte-identical to what shipped. They
+    are checked in a fixed order and may all apply: the interpretive rule
     changes what counts as an outcome, the cell-identity rule changes how a
-    record names its population, and they do not interact.
+    record names its population from the packet alone, and the entity-table
+    rule tells the model that a separate grounded pass has already answered
+    that question and handed it the answer.
     """
     if candidate_slots:
         version = CANDIDATE_SLOT_PROMPT_VERSION
@@ -248,6 +283,11 @@ def active_prompt(
         if cell_line_identity is None
         else cell_line_identity
     )
+    entity_table = (
+        is_enabled(ENTITY_RESOLUTION_FLAG)
+        if entity_resolution_prepass is None
+        else entity_resolution_prepass
+    )
 
     if interpretive:
         # Use the prompts the interpretive work assembled rather than
@@ -267,6 +307,14 @@ def active_prompt(
             else CELL_IDENTITY_PROMPT_VERSION
         )
         text = text + CELL_IDENTITY_RULE
+
+    if entity_table:
+        version = (
+            ENTITY_TABLE_SLOT_PROMPT_VERSION
+            if candidate_slots
+            else ENTITY_TABLE_PROMPT_VERSION
+        )
+        text = text + ENTITY_TABLE_RULE
 
     return PromptSelection(
         text=text,

@@ -1,0 +1,17 @@
+{
+  "entity_table_version": "entity-table-1.0.0",
+  "paper_id": "GP-009",
+  "cell_lines": [
+    {
+      "line_name": "RAW 264.7",
+      "population": "Mouse macrophage",
+      "state": "transfected with 10 μg CD47/LNP-GFP or LNP-GFP for 18 h",
+      "species": "Mouse",
+      "evidence_ids": [
+        "GP-009-E-dd4cb43e647a7c68",
+        "GP-009-E-23f4fd2b8e69ab8e"
+      ],
+      "derivation": "One evidence item identifies RAW 264.7 as Mouse macrophage cells, and the other states the transfection condition used."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-008",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-29T03:24:54.294489+00:00",
+  "completed_at": "2026-07-29T03:26:58.262442+00:00",
+  "elapsed_seconds": 123.966,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-008-E-9f4e4aba562731a4",
+      "GP-008-E-5d890aae8e82c789",
+      "GP-008-E-85ffa081af3058cd"
+    ],
+    "explanation": "Original experiments report αCD163/LNP delivery of FAPCAR mRNA to BMDMs/macrophages with measured transfection and functional outcomes."
+  },
+  "record_counts": {
+    "formulations": 1,
+    "components": 5,
+    "experiments": 2,
+    "outcomes": 3,
+    "unresolved_items": 2
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 85,
+  "entity_resolution_prepass": true,
+  "entity_table_cell_lines": 5,
+  "entity_table_root": "data/staging/extraction/entity_tables_v1"
+}

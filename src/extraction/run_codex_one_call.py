@@ -57,6 +57,11 @@ from src.extraction.compact_prompt_v1 import (
     candidate_slot_payload,
 )
 from src.extraction.compact_validation import validate_candidate
+from src.extraction.entity_resolution import (
+    GroundedEntityTable,
+    entity_table_payload,
+    restrict_to_packet,
+)
 from src.extraction.salvage_invalid_response import salvage_response
 from src.idempotent_write import (
     IDEMPOTENT_UPSERT_FLAG,
@@ -77,6 +82,10 @@ CANDIDATE_SLOT_FLAG = "candidate_slot_enforcement"
 FULL_EVIDENCE_VIEW_FLAG = "full_evidence_view"
 COMPACT_ROUTE_FLAG = "compact_route"
 STRUCTURED_EVIDENCE_VIEW_FLAG = "structured_evidence_view"
+ENTITY_RESOLUTION_FLAG = "entity_resolution_prepass"
+DEFAULT_ENTITY_TABLE_ROOT = (
+    ROOT / "data" / "staging" / "extraction" / "entity_tables_v1"
+)
 
 PACKET_ROOT_BY_VIEW = {
     "compact": ROOT / "data" / "staging" / "rag" / "compact_api_packets_v1",
@@ -160,6 +169,7 @@ def load_packet(paper_id: str, packet_root: Path) -> CompactApiPacket:
 def build_prompt(
     packet: CompactApiPacket,
     candidate_slots: list[dict[str, Any]] | None = None,
+    entity_table: dict[str, Any] | None = None,
 ) -> str:
     payload = packet.model_dump(mode="json", exclude_none=True)
     prompt = active_prompt(candidate_slots is not None)
@@ -172,7 +182,35 @@ def build_prompt(
         text += "\n\nCANDIDATE SLOTS:\n" + _canonical_json(
             {"candidate_slots": candidate_slots}
         )
+    if entity_table is not None:
+        text += "\n\nENTITY TABLE:\n" + _canonical_json(
+            {"entity_table": entity_table}
+        )
     return text
+
+
+def load_entity_table(
+    paper_id: str, packet: CompactApiPacket, entity_table_root: Path | None
+) -> dict[str, Any] | None:
+    """Load a pre-pass entity table for this paper, re-checked against this packet.
+
+    Returns ``None`` -- and therefore leaves the request byte-identical to a run
+    without the capability -- when the flag is off, when no root was given, when
+    the paper has no table, or when nothing in the table survives being re-checked
+    against the packet actually being sent. The re-check is not redundant with the
+    pre-pass's own grounding: the pre-pass may have read a different evidence view,
+    and a citation the model cannot look up is a citation it must not be given.
+    """
+    if not is_enabled(ENTITY_RESOLUTION_FLAG) or entity_table_root is None:
+        return None
+    path = entity_table_root / paper_id / "entity_table.json"
+    if not path.exists():
+        return None
+    table = GroundedEntityTable.model_validate_json(path.read_text(encoding="utf-8"))
+    restricted = restrict_to_packet(table, packet)
+    if not restricted.cell_lines:
+        return None
+    return entity_table_payload(restricted)
 
 
 def codex_available() -> bool:
@@ -294,6 +332,7 @@ def run_one(
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
     timeout: int = DEFAULT_TIMEOUT_SECONDS,
     consolidate_candidates: bool = False,
+    entity_table_root: Path | None = DEFAULT_ENTITY_TABLE_ROOT,
 ) -> dict[str, Any]:
     # None means "whatever the flags say"; an explicit value always wins, so a
     # measurement run can pin the view regardless of deployment configuration.
@@ -341,7 +380,8 @@ def run_one(
         if outcome_candidates and is_enabled(CANDIDATE_SLOT_FLAG)
         else None
     )
-    prompt = build_prompt(packet, candidate_slots)
+    entity_table = load_entity_table(paper_id, packet, entity_table_root)
+    prompt = build_prompt(packet, candidate_slots, entity_table)
     prompt_selection = active_prompt(candidate_slots is not None)
     schema = strict_schema(candidate_slots is not None)
 
@@ -361,6 +401,12 @@ def run_one(
     if candidate_slots is not None:
         request_snapshot["candidate_slot_enforcement"] = True
         request_snapshot["candidate_slots"] = candidate_slots
+    if entity_table is not None:
+        # Part of the fingerprint: a run that saw a different entity table saw
+        # different inputs, and an idempotent rerun must not treat it as the
+        # same request.
+        request_snapshot["entity_resolution_prepass"] = True
+        request_snapshot["entity_table"] = entity_table
 
     if result_path.exists():
         # Only reachable with the flag on; the guard above already returned
@@ -522,6 +568,15 @@ def run_one(
     if candidate_slots is not None:
         manifest["candidate_slot_enforcement"] = True
         manifest["candidate_slots"] = len(candidate_slots)
+    if entity_table is not None:
+        manifest["entity_resolution_prepass"] = True
+        manifest["entity_table_cell_lines"] = len(entity_table["cell_lines"])
+        manifest["entity_table_root"] = (
+            str(entity_table_root.relative_to(ROOT))
+            if entity_table_root is not None
+            and entity_table_root.is_relative_to(ROOT)
+            else str(entity_table_root)
+        )
     (run_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -556,6 +611,17 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--entity-table-root",
+        type=Path,
+        default=DEFAULT_ENTITY_TABLE_ROOT,
+        help=(
+            "Where run_entity_prepass wrote its grounded entity tables. Read "
+            "only when entity_resolution_prepass is on; a paper with no table "
+            "there, or whose table cites nothing in this packet, is sent the "
+            "same request as a run without the capability."
+        ),
+    )
+    parser.add_argument(
         "--confirm-codex-quota",
         action="store_true",
         help=(
@@ -583,6 +649,7 @@ def main() -> None:
                 reasoning_effort=args.reasoning_effort,
                 timeout=args.timeout,
                 consolidate_candidates=args.consolidate_candidates,
+                entity_table_root=args.entity_table_root,
             )
         except Exception as error:  # noqa: BLE001 - one bad paper must not abort the sweep
             manifest = {

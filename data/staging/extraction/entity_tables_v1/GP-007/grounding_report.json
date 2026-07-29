@@ -1,0 +1,58 @@
+{
+  "paper_id": "GP-007",
+  "proposed": 5,
+  "kept": 3,
+  "mappings": [
+    {
+      "line_name": "Primary LSECs",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-007-E-65f7ae6a4e2f0351",
+        "GP-007-E-7ca3afbeddc8c338"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "LSECs (BNBIO)",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-007-E-65f7ae6a4e2f0351"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HEK293T",
+      "kept": false,
+      "reason": "nothing_grounded_beyond_the_line_name",
+      "cited_evidence_ids": [
+        "GP-007-E-65f7ae6a4e2f0351"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "AAV-293",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-007-E-4e67cd2ac21136cb"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "AML12",
+      "kept": false,
+      "reason": "nothing_grounded_beyond_the_line_name",
+      "cited_evidence_ids": [
+        "GP-007-FC-657d6b2db9ca42f6"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

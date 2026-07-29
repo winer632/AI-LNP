@@ -1,0 +1,22 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "stage": "entity_prepass",
+  "prepass_version": "entity-prepass-1.0.0",
+  "entity_table_version": "entity-table-1.0.0",
+  "paper_id": "GP-007",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "evidence_view": "full",
+  "packet_checksum": "fb08857708c4b06452d1d9dad27d0ab434d9a4768ecf428a89990292c4609e9f",
+  "packet_evidence_items": 835,
+  "selected_evidence_items": 260,
+  "completed_at": "2026-07-29T03:22:48.659013+00:00",
+  "elapsed_seconds": 40.896,
+  "contract_accepted": true,
+  "contract_error": null,
+  "mappings_proposed": 5,
+  "mappings_kept": 3,
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1
+}

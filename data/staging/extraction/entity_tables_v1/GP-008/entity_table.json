@@ -1,0 +1,64 @@
+{
+  "entity_table_version": "entity-table-1.0.0",
+  "paper_id": "GP-008",
+  "cell_lines": [
+    {
+      "line_name": "JS-1 cells",
+      "population": "mouse HSC cell lines",
+      "state": "differentiated with TGF-β1, followed by FAP positivity enrichment via flow cytometry",
+      "species": "m.musculus",
+      "evidence_ids": [
+        "GP-008-FC-c84b61ed3d52a342",
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-4131dfbfce0bc63d"
+      ],
+      "derivation": "The table identifies JS-1 cells as m.musculus, the cell-culture text identifies the YaJi Biological lines as mouse HSC cell lines, and the results text states their differentiation and enrichment."
+    },
+    {
+      "line_name": "LX-2 cells",
+      "population": "human HSC cell lines",
+      "state": null,
+      "species": null,
+      "evidence_ids": [
+        "GP-008-FC-3970aca2de336204",
+        "GP-008-FC-ce4622f1d65e2e72"
+      ],
+      "derivation": "The table names LX-2 cells as H.sapiens and the cell-culture text identifies the human HSC cell lines."
+    },
+    {
+      "line_name": "JS-1/LUC cells",
+      "population": "mouse HSC cell lines",
+      "state": null,
+      "species": "m.musculus",
+      "evidence_ids": [
+        "GP-008-FC-ad5930de2e219c7a",
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-cbad0a8c3cbb0bd9"
+      ],
+      "derivation": "The table identifies JS-1/LUC cells as m.musculus, the cell-culture text identifies the YaJi Biological lines as mouse HSC cell lines, and the killing-assay text gives their stimulation and screening state."
+    },
+    {
+      "line_name": "LX-2/LUC cells",
+      "population": "human HSC cell lines",
+      "state": null,
+      "species": "H.sapiens",
+      "evidence_ids": [
+        "GP-008-FC-6835fcc1db5b6f09",
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-cbad0a8c3cbb0bd9"
+      ],
+      "derivation": "The table identifies LX-2/LUC cells as H.sapiens, the cell-culture text identifies the human HSC cell lines, and the killing-assay text gives their stimulation and screening state."
+    },
+    {
+      "line_name": "THP-1",
+      "population": "THP-1 monocytes",
+      "state": "seeded in complete RPMI-1640 with 80 nM phorbol 12-myristate 13-acetate (PMA) for 72 h to obtain adherent macrophages",
+      "species": "human",
+      "evidence_ids": [
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-7cdc501baf03684e"
+      ],
+      "derivation": "The cell-culture text calls them THP-1 monocytes alongside the human cell lines and states the PMA treatment used to obtain adherent macrophages."
+    }
+  ]
+}

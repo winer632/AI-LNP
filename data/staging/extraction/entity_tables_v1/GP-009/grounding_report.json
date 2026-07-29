@@ -1,0 +1,37 @@
+{
+  "paper_id": "GP-009",
+  "proposed": 2,
+  "kept": 1,
+  "mappings": [
+    {
+      "line_name": "RAW264.7",
+      "kept": false,
+      "reason": "line_name_not_in_cited_evidence",
+      "cited_evidence_ids": [
+        "GP-009-E-cf6cf88a82065dd1",
+        "GP-009-E-dfd77809010fff99"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": [
+        {
+          "field": "line_name",
+          "value": "RAW264.7",
+          "missing_terms": [
+            "raw264"
+          ]
+        }
+      ]
+    },
+    {
+      "line_name": "RAW 264.7",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-009-E-dd4cb43e647a7c68",
+        "GP-009-E-23f4fd2b8e69ab8e"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

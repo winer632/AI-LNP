@@ -1,0 +1,17 @@
+{
+  "entity_table_version": "entity-table-1.0.0",
+  "paper_id": "GP-001",
+  "cell_lines": [
+    {
+      "line_name": "Huh-7",
+      "population": "hepatoma cells",
+      "state": "co-incubated with different formulations at various drug concentrations for 48 hours",
+      "species": null,
+      "evidence_ids": [
+        "GP-001-E-8add8993c11cae27",
+        "GP-001-E-5463939b0a643e62"
+      ],
+      "derivation": "One evidence calls Huh-7 hepatoma cells, and the other describes them as co-incubated with different formulations at various drug concentrations for 48 hours."
+    }
+  ]
+}

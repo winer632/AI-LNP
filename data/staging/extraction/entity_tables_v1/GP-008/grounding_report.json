@@ -1,0 +1,99 @@
+{
+  "paper_id": "GP-008",
+  "proposed": 6,
+  "kept": 5,
+  "mappings": [
+    {
+      "line_name": "JS-1 cells",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-008-FC-c84b61ed3d52a342",
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-4131dfbfce0bc63d"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "LX-2 cells",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-008-FC-3970aca2de336204",
+        "GP-008-FC-ce4622f1d65e2e72"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": [
+        {
+          "field": "species",
+          "value": "H.sapiens",
+          "missing_terms": [
+            "sapiens"
+          ]
+        }
+      ]
+    },
+    {
+      "line_name": "JS-1/LUC cells",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-008-FC-ad5930de2e219c7a",
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-cbad0a8c3cbb0bd9"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": [
+        {
+          "field": "state",
+          "value": "stimulated with 5 ng/ml TGF-β1 for 48 h, and the cells were screened for FAP+ using a flow cytometer",
+          "missing_terms": [
+            "β1"
+          ]
+        }
+      ]
+    },
+    {
+      "line_name": "LX-2/LUC cells",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-008-FC-6835fcc1db5b6f09",
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-cbad0a8c3cbb0bd9"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": [
+        {
+          "field": "state",
+          "value": "stimulated with 5 ng/ml TGF-β1 for 48 h, and the cells were screened for FAP+ using a flow cytometer",
+          "missing_terms": [
+            "β1"
+          ]
+        }
+      ]
+    },
+    {
+      "line_name": "THP-1",
+      "kept": true,
+      "reason": null,
+      "cited_evidence_ids": [
+        "GP-008-FC-ce4622f1d65e2e72",
+        "GP-008-FC-7cdc501baf03684e"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    },
+    {
+      "line_name": "HEK293T",
+      "kept": false,
+      "reason": "nothing_grounded_beyond_the_line_name",
+      "cited_evidence_ids": [
+        "GP-008-FC-d351bd333c1ae502"
+      ],
+      "unknown_evidence_ids": [],
+      "dropped_fields": []
+    }
+  ]
+}

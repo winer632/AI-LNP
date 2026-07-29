@@ -464,6 +464,63 @@ flags:
     integration_points:
       - src/extraction/compact_prompt_v1.py
 
+  entity_resolution_prepass:
+    # No design-document priority id: this adds a stage before extraction
+    # rather than changing which route the extraction takes.
+    default: false
+    status: available
+    rationale: >-
+      MEASURED. The pre-pass works and the extraction does not put its answer
+      where the matcher can see it, so this ships off. What it was aimed at:
+      GP-008's killing record names a cell line and the gold row names the
+      population that line stands for, and the paper never equates the two in
+      one sentence -- the join is a reagent-table row giving the line's supplier
+      and species, plus a cell-culture sentence saying what that supplier
+      provided. Run over all nine papers on the full view, the pass proposed 27
+      mappings and kept 22, on seven papers; GP-003 and GP-004 name no
+      characterised line and correctly produced nothing. It refused five
+      mappings outright and dropped three unsupported fields from mappings it
+      kept, every refusal recorded with its reason. For
+      GP-008 it made exactly the intended join, citing the catalogue row, the
+      procurement sentence and the induction sentence together. Merging that
+      run's GP-008 over codex_union_vision_v3 leaves recall at 13/15 with GO-017
+      still missed. Precision 0.220339 becomes 0.209677 as 59 records become 62
+      and false additions 46 become 49; evidence accuracy improves from 7 to 8
+      of 12 checked. One previously matched row changed assignment: GO-016 moved
+      from a base record scoring 0.700 whose cited evidence did not support it
+      to the new run's record scoring 1.000 whose evidence does. Why GO-017 is
+      still missed, exactly: the extraction puts the resolved population on the
+      *experiment* record's target-cell field -- verbatim, in both flag-on runs
+      -- and the matcher's gates read only the outcome record's own endpoint,
+      assay, comparator, unit and qualitative text. The killing record therefore
+      reaches the polarity gate and fails the endpoint gate one token short:
+      endpoint overlap {elimination}, qualitative overlap {eliminated, fapcar},
+      and the gate wants two endpoint tokens or three qualitative ones. The
+      token it needs is in that record's own experiment row and excluded by
+      design. n is one contract-valid run per side; a second flag-on run was
+      rejected by slot validation on a malformed candidate id, and its response
+      shows the same placement.
+    description: >-
+      Run a separate grounded pass over a paper's methods, cell-culture text and
+      reagent/resource tables that answers what each named cell line is, and send
+      its answer alongside the packet. The mapping travels as an entity_table:
+      line name, the population it represents, the state it was in, and the
+      packet evidence ids each was read from. Every mapping is checked before it
+      is written -- it must cite ids the packet contains, and every word of its
+      population and state must occur in the text those ids point at -- so a
+      field the paper does not support is dropped rather than guessed, and a
+      mapping left saying nothing is discarded. Selects compact-prompt-1.5.0, or
+      compact-prompt-1.5.1 when candidate slots are also sent; every prompt above
+      is byte-identical with this off, and a run whose paper has no table sends
+      the same request as a run without the capability.
+    aliases: [entity_prepass, paper_entity_resolution]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/compact_prompt_v1.py
+      - src/extraction/run_codex_one_call.py
+
   # ------------------------------------------------------------------ baseline
   # ---------------------------------------------------------------------- P3
   candidate_slot_enforcement:
