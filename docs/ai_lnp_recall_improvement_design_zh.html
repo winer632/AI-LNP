@@ -425,6 +425,39 @@ format:   html
     已提交的九次请求指纹逐位未变。
   </div>
 
+  <div class="ok">
+    <b>v26 · 摄取链已修复：0/9 → 9/9，而修复过程又更正了我一处诊断</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th></th><th class="num">修复前</th><th class="num">修复后</th></tr></thead>
+      <tbody>
+        <tr><td>取到的论文</td><td class="num no">0 / 9</td><td class="num yes"><b>9 / 9</b></td></tr>
+        <tr><td>PDF</td><td class="num no">0</td><td class="num yes"><b>20</b></td></tr>
+        <tr><td>失败</td><td class="num no">9</td><td class="num yes"><b>0</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>我自己 clone 一份重跑确认过，不是采信 Agent 的声称。</b>
+    <br><br>
+    <b>两个缺陷，我只诊断对了一个：</b>
+    <ul>
+      <li><b>对的那个</b>——前两个策略调用 <code>local_xml()</code>，本地无 XML 即抛异常。属实。</li>
+      <li><b>错的那个</b>——我说 FTP 路径里的 <code>22/b6</code> 是「硬编码或猜测的」。
+          <b>不是。</b>代码<b>确实先查询了</b> OA 服务，<code>22/b6</code> 是<b>服务自己返回的答案</b>。
+          真正的原因是那个 href <b>已经过期</b>：NCBI 在 2026 年 4 月把全部历史文件移到了
+          <code>deprecated</code> 目录，整个 <code>/pub/pmc/oa_package/</code> 树都 404，
+          而服务返回的链接<b>没有跟着更新</b>。换到新路径即 200、22 MB。</li>
+    </ul>
+    <b>这是第五次同一形态的错误</b>——我读了代码就推断，没有去请求一次那个 URL。
+    <br><br>
+    <b>两条独立的正确性证据：</b>① 九篇在 OA 子集中<b>全部可取</b>，
+    <code>oa.fcgi</code> 对每篇都返回 200 和许可证，无一篇是真的取不到；
+    ② 取回的字节经 <code>sha256</code> 与仓库中<b>冻结任务签名时的哈希逐位一致</b>——
+    此前因缺资产而 skip 的那个测试，现在能跑且通过。
+    <br>GP-002 与 GP-009 在 Europe PMC 上三条路都不通（两个 404、一个 500），
+    <b>修好的 tgz 路径是唯一能拿到它们的通道</b>——所以那条必须修，不能绕过。
+  </div>
+
   <div class="warn">
     <b>v25 · 第四次「用解释代替测量」——这次是关于摄取链</b><br>
     我把「摄取链跑不通」记为<b>数据分发的现实约束、非工程缺陷</b>，并据此给了 80%。
@@ -709,7 +742,7 @@ format:   html
               前两个策略调用 <code>local_xml()</code>，<b>要求本地已有 XML 才能跑</b>
               （它们是设计来「补齐已有 XML 的附件」，不是「从零获取论文」）；
               第三个策略拼出的 FTP 路径返回 <b>404</b>。
-              <b>全新 clone 里没有任何一条路能取到论文。</b>已派 Agent 修复并实测验证。本轮已把引导路径写进 README、
+              <b>v26：已修复并实测验证</b>——全新 clone 中取数 <b>0/9 → 9/9，20 个 PDF，0 失败</b>（我自己 clone 一份重跑确认，非采信声称）。本轮已把引导路径写进 README、
               并让报错指出该跑哪条命令。<br><b>80% 是判断值不是算出来的</b>：评测链 4 条命令全通、摄取链 3 条全不通，按条数算约 57%。给 80% 是因为<b>验证</b>结果只需评测链，<b>从原始 PDF 重新生产</b>才需摄取链——这个权重可以商榷</td></tr>
     </tbody>
   </table>
