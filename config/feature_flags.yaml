@@ -485,21 +485,36 @@ flags:
       procurement sentence and the induction sentence together. Merging that
       run's GP-008 over codex_union_vision_v3 leaves recall at 13/15 with GO-017
       still missed. Precision 0.220339 becomes 0.209677 as 59 records become 62
-      and false additions 46 become 49; evidence accuracy improves from 7 to 8
-      of 12 checked. One previously matched row changed assignment: GO-016 moved
-      from a base record scoring 0.700 whose cited evidence did not support it
-      to the new run's record scoring 1.000 whose evidence does. Why GO-017 is
-      still missed, exactly: the extraction puts the resolved population on the
-      *experiment* record's target-cell field -- verbatim, in both flag-on runs
-      -- and the matcher's gates read only the outcome record's own endpoint,
-      assay, comparator, unit and qualitative text. The killing record therefore
-      reaches the polarity gate and fails the endpoint gate one token short:
+      and false additions 46 become 49; evidence accuracy goes from 7 to 8 of 12
+      checked, and one previously matched row changes assignment -- GO-016 from
+      a base record scoring 0.700 whose cited evidence did not support it to a
+      record scoring 1.000 whose evidence does. NEITHER OF THOSE IS THE TABLE'S.
+      A control merging a table-free GP-008 run over the same base through the
+      same builder -- codex_cell_identity_v1, same model, effort, evidence view,
+      slot count and packet checksum, differing only in the appended prompt rule
+      and the absence of a table -- reproduces every one of those figures
+      exactly: 0.209677, 49 false additions, 8 of 12, and the same GO-016 move
+      to the same record index. A second table-free control, codex_full_view_v2,
+      also reaches 8 of 12. What is being paid for is a second contract-valid
+      reading of the paper to merge; the table adds nothing measurable on top.
+      Why GO-017 is still missed, exactly: the extraction puts the resolved
+      population on the *experiment* record's target-cell field -- verbatim, in
+      both flag-on runs -- and the matcher's gates read only the outcome
+      record's own endpoint, assay, comparator, unit and qualitative text, so
+      the table's answer cannot reach a gate at all, whatever record it is
+      about. The record the gold row is about is a token short of the endpoint
+      gate independently of that, and on any configuration that emits it:
       endpoint overlap {elimination}, qualitative overlap {eliminated, fapcar},
-      and the gate wants two endpoint tokens or three qualitative ones. The
-      token it needs is in that record's own experiment row and excluded by
-      design. n is one contract-valid run per side; a second flag-on run was
+      where the gate wants two endpoint tokens or three qualitative ones. That
+      record is not in the merged root measured here at all -- the flag-on run
+      disposed the sentence carrying it as unresolved for want of a reported
+      value, a judgement about outcome admissibility the table has no bearing
+      on. n is one contract-valid run per side; a second flag-on run was
       rejected by slot validation on a malformed candidate id, and its response
-      shows the same placement.
+      shows the same placement, that time alongside the record the gold row is
+      about -- which is the clearest evidence that the placement is the model's
+      settled reading of the rule rather than an accident of which records a
+      given run happened to emit.
     description: >-
       Run a separate grounded pass over a paper's methods, cell-culture text and
       reagent/resource tables that answers what each named cell line is, and send

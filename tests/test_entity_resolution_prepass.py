@@ -685,6 +685,10 @@ def test_the_committed_grounding_reports_record_what_was_refused():
 OVERLAY_RUN = ROOT / "data/staging/extraction/codex_entity_prepass_gp008_v1"
 MEASURED_ROOT = ROOT / "data/staging/extraction/codex_union_vision_v3_entity_prepass"
 BASE_ROOT = ROOT / "data/staging/extraction/codex_union_vision_v3"
+# The control arm. A GP-008 run made without a table, matched to the treatment
+# on every field the request fingerprint records, so overlaying it through the
+# same builder isolates what the merge does from what the table does.
+CONTROL_RUN = ROOT / "data/staging/extraction/codex_cell_identity_v1"
 
 needs_measurement = pytest.mark.skipif(
     not (OVERLAY_RUN.exists() and BASE_ROOT.exists()),
@@ -764,6 +768,142 @@ def test_exactly_one_matched_row_changed_assignment_and_it_improved():
     assert after["GO-016"]["evidence_supported"] is True
     assert (after["GO-016"]["match"]["score"]
             > before["GO-016"]["match"]["score"])
+
+
+@pytest.mark.skipif(
+    not (CONTROL_RUN.exists() and MEASURED_ROOT.exists() and BASE_ROOT.exists()),
+    reason="the control run, the measured root or its base is not present",
+)
+def test_the_control_attributes_the_whole_delta_to_the_merge_not_to_the_table():
+    """The arm that says what the capability actually bought: nothing.
+
+    The measurement above is a merge, and a merge changes two things at once --
+    it adds the treatment, and it adds a second contract-valid reading of the
+    paper for the matcher to choose from. Reading the delta as the treatment's
+    requires ruling the second one out, and until this arm existed it was not
+    ruled out; the recorded rationale credited the flag with an evidence-accuracy
+    gain and a reassignment that the merge produces on its own.
+
+    The control overlays a table-free GP-008 run over the same base through the
+    same builder. It is matched on everything the request fingerprint records --
+    model, reasoning effort, evidence view, candidate-slot count and packet
+    checksum -- and differs in the appended prompt rule and in carrying no
+    entity_table. Every figure the treatment arm moved, it moves identically.
+
+    Asserted as equality rather than as a bound, because the claim is not "the
+    control is close": it is that the table contributed nothing these numbers
+    can see, and an inequality would let a real contribution hide inside it.
+    """
+    from src.extraction.build_union_entity_prepass import build
+    from src.extraction.evaluate_final_gold_dynamic import evaluate
+
+    control_request = json.loads(
+        (CONTROL_RUN / "GP-008/request.json").read_text(encoding="utf-8")
+    )
+    treatment_request = json.loads(
+        (OVERLAY_RUN / "GP-008/request.json").read_text(encoding="utf-8")
+    )
+    assert "entity_table" not in control_request, (
+        "the control carries a table and controls for nothing"
+    )
+    for field in ("model", "reasoning_effort", "evidence_view", "packet_checksum"):
+        assert control_request[field] == treatment_request[field], field
+    assert len(control_request["candidate_slots"]) == len(
+        treatment_request["candidate_slots"]
+    )
+
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as scratch:
+        build(
+            output_root=Path(scratch) / "control",
+            base_root=BASE_ROOT,
+            overlay_root=CONTROL_RUN,
+        )
+        with override(vision_relationship_polarity=True, precision_metrics=True):
+            control = evaluate(result_roots=[Path(scratch) / "control"])
+            treatment = evaluate(result_roots=[MEASURED_ROOT])
+            base = evaluate(result_roots=[BASE_ROOT])
+
+    assert base["evidence_accuracy"]["supported"] == 7
+    assert control["recovered"] == treatment["recovered"] == 13
+    assert control["missing_gold_outcome_ids"] == treatment["missing_gold_outcome_ids"]
+    assert round(control["precision"], 6) == round(treatment["precision"], 6)
+    assert control["false_additions"]["count"] == treatment["false_additions"]["count"]
+    assert (
+        control["evidence_accuracy"]["supported"]
+        == treatment["evidence_accuracy"]["supported"]
+        == 8
+    )
+
+    control_rows = {row["gold_outcome_id"]: row for row in control["results"]}
+    treatment_rows = {row["gold_outcome_id"]: row for row in treatment["results"]}
+    for gold_id, row in treatment_rows.items():
+        other = control_rows[gold_id]
+        assert (row.get("match") or {}).get("outcome_index") == (
+            other.get("match") or {}
+        ).get("outcome_index"), f"{gold_id} lands on a different record"
+        assert row["evidence_supported"] == other["evidence_supported"], gold_id
+
+
+@pytest.mark.skipif(
+    not CONTROL_RUN.exists(),
+    reason="the control run is not present",
+)
+def test_the_control_carries_the_record_the_gold_row_is_about_and_still_misses_it():
+    """Why no prompt change here could be honest.
+
+    The control run emitted the record the missed gold row describes; the
+    flag-on run did not. So the two arms differ in that record's presence, and
+    the control is the arm where the question "would the table have helped, had
+    the record been there?" can be asked. It is answered: the record is present,
+    it passes the polarity gate, and the row is still missed, because the
+    endpoint gate wants a second gold endpoint token that the record's own
+    outcome fields do not carry.
+
+    That token is the only thing any prompt change could be aimed at, and
+    aiming at it means writing the gold row's vocabulary into an extraction
+    rule. Pinned so that a later attempt has to argue with a measurement.
+    """
+    from src.extraction.evaluate_final_gold_dynamic import (
+        GOLD_ROOT,
+        _rows,
+        _score,
+        _tokens as tokens,
+    )
+
+    gold = {row["gold_outcome_id"]: row for row in _rows(GOLD_ROOT / "outcomes.csv")}
+    evidence = {
+        row["evidence_id"]: row for row in _rows(GOLD_ROOT / "evidence.csv")
+    }
+    frequency: dict[str, int] = {}
+    for row in gold.values():
+        for token in tokens(row["endpoint_name"]):
+            frequency[token] = frequency.get(token, 0) + 1
+
+    target = gold["GO-017"]
+    result = json.loads(
+        (CONTROL_RUN / "GP-008/result.json").read_text(encoding="utf-8")
+    )
+    experiments = {row["experiment_id"]: row for row in result["experiments"]}
+    details = [
+        _score(
+            target,
+            evidence[target["evidence_id"]],
+            outcome,
+            experiments.get(outcome.get("experiment_id")),
+            frequency,
+        )[1]
+        for outcome in result["outcomes"]
+    ]
+    passed_polarity = [row for row in details if row["polarity_gate"]]
+    assert passed_polarity, "the control does not carry the record after all"
+    assert not any(row["endpoint_gate"] and row["polarity_gate"] for row in details), (
+        "the control root now recovers this row; the recorded explanation is stale"
+    )
+    assert all(
+        len(row["endpoint_overlap_terms"]) < 2 for row in passed_polarity
+    ), "the endpoint gate is no longer short of a second token"
 
 
 @needs_measurement
