@@ -12,10 +12,29 @@ Design document sections 2.6 and 6.1 record two measured facts about
 So Europe PMC was promoted to the primary route and the NCBI OA tgz demoted to
 last resort. Until now that ordering was a claim the code made to nobody.
 
+Re-measured 2026-07-29 against a fresh clone, which corrected the *reason* for
+the second fact without disturbing the ordering:
+
+* the OA API does **not** deny the gold set. ``oa.fcgi`` answers 200 with a
+  licence and a ``format="tgz"`` link for all nine papers, no ``<error>``;
+* its ``href`` is stale, not wrong. NCBI moved the legacy FTP tree in April
+  2026 (``https://ftp.ncbi.nlm.nih.gov/pub/pmc/readme.txt``), so
+  ``/pub/pmc/oa_package/...`` 404s and ``/pub/pmc/deprecated/oa_package/...``
+  serves the same file; and
+* Europe PMC does not hold every paper. ``PMC13334401`` and ``PMC12265960``
+  answer 404 on ``fullTextXML`` and ``supplementaryFiles`` and 500 on
+  ``?pdf=render``, so the tgz route is the only one that reaches them.
+
+Europe PMC therefore stays first -- it is still the route that returns
+supplements unpacked in one request -- and the tgz route stays last but has to
+actually work.
+
 ``request_bytes`` is the module's only network boundary. Every test here
 replaces it with a recorder, so the whole of ``run()`` executes with no socket
 and no ``data/`` write: ``ROOT``, ``OA_ROOT``, ``XML_ROOT`` and ``GOLD_PAPERS``
-are redirected into ``tmp_path``.
+are redirected into ``tmp_path``. The two tests that pin ``request_bytes``'
+own retry policy stub ``urllib.request.urlopen`` instead, one level below it,
+which is still socketless.
 """
 
 from __future__ import annotations
@@ -54,12 +73,26 @@ NXML = (
     "</article>"
 )
 
+# Transcribed from the live answer of
+# https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC11617921, including
+# the ``96/12`` segments -- those come from the service, they are never built
+# by this repository.
 OA_API_XML = (
     '<?xml version="1.0" encoding="UTF-8"?>'
-    "<OA><records><record id=\"PMC11617921\">"
+    "<OA><records><record id=\"PMC11617921\" license=\"CC BY-NC-ND\">"
     '<link format="tgz" '
-    'href="ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/ab/cd/PMC11617921.tar.gz"/>'
+    'href="ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/96/12/PMC11617921.tar.gz"/>'
     "</record></records></OA>"
+)
+
+# The location the OA service advertises, and the one that actually serves the
+# bytes since NCBI moved the legacy tree under ``deprecated/``.
+LEGACY_TGZ = (
+    "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/96/12/PMC11617921.tar.gz"
+)
+RELOCATED_TGZ = (
+    "https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/96/12/"
+    "PMC11617921.tar.gz"
 )
 
 PDF_BYTES = b"%PDF-1.7\n% rendered article\n%%EOF\n"
@@ -108,13 +141,22 @@ class _Unexpected(RuntimeError):
     """Raised by a handler for a URL the test did not plan for."""
 
 
-def _install(monkeypatch, tmp_path: Path, handler) -> tuple[Path, _Boundary]:
+def _install(
+    monkeypatch, tmp_path: Path, handler, *, tracked_xml: bool = True
+) -> tuple[Path, _Boundary]:
+    """Redirect the module at ``tmp_path``.
+
+    ``tracked_xml=False`` models a fresh clone: ``data/raw/fulltext/`` is
+    gitignored, so the XML the Europe PMC strategies used to require is simply
+    not there.
+    """
     root = tmp_path / "checkout"
     xml_root = root / "data/raw/fulltext/gold_v1/xml"
     xml_root.mkdir(parents=True)
-    (xml_root / f"{PAPER['candidate_id']}_{PAPER['pmcid']}.xml").write_text(
-        NXML, encoding="utf-8"
-    )
+    if tracked_xml:
+        (xml_root / f"{PAPER['candidate_id']}_{PAPER['pmcid']}.xml").write_text(
+            NXML, encoding="utf-8"
+        )
 
     papers = root / "data/annotations/gold_v1/papers.csv"
     papers.parent.mkdir(parents=True)
@@ -293,6 +335,231 @@ def test_every_strategy_failing_is_reported_as_a_failed_paper(tmp_path, monkeypa
         "europe_pmc_linked_assets",
         "ncbi_oa_tgz",
     ]
+
+
+# ---------------------------------------------------------------------------
+# Bootstrapping: a fresh clone has no data/raw/fulltext/ at all
+# ---------------------------------------------------------------------------
+
+
+def test_a_fresh_clone_retrieves_without_any_tracked_xml(tmp_path, monkeypatch):
+    """The whole gold set used to fail here, with the network up.
+
+    ``data/raw/fulltext/gold_v1/xml/`` is gitignored, and both Europe PMC
+    strategies opened with ``local_xml``, so a clone got nine
+    ``FileNotFoundError``s before a single request was made. Europe PMC serves
+    the same JATS over ``fullTextXML``, so there is a route from nothing.
+    """
+
+    def handler(url: str) -> bytes:
+        if url.endswith("/fullTextXML"):
+            return NXML.encode()
+        if "europepmc.org" in url:
+            return PDF_BYTES
+        if url.endswith("/supplementaryFiles"):
+            return _zip_bytes({"mmc2.pdf": PDF_BYTES})
+        raise _Unexpected(url)
+
+    root, boundary = _install(monkeypatch, tmp_path, handler, tracked_xml=False)
+
+    summary = retrieval.run()
+    row = _manifest(root)
+
+    assert boundary.unexpected == []
+    assert summary == {"papers": 1, "retrieved": 1, "failed": 0, "pdfs": 2}
+    assert row["retrieval_method"] == "europe_pmc_pdf_and_supplements"
+    # Nothing was skipped on the way: the primary route bootstrapped itself.
+    assert row["failed_strategies"] == []
+    # The XML was fetched first, because the supplement names come out of it.
+    assert boundary.urls[0].endswith(f"/{PAPER['pmcid']}/fullTextXML")
+    assert not [url for url in boundary.urls if "oa.fcgi" in url]
+
+
+def test_the_bootstrapped_xml_lands_where_ingestion_looks_for_it(
+    tmp_path, monkeypatch
+):
+    """``src.rag.ingestion.find_xml`` globs ``OA_ROOT/{pmcid}/*.nxml``."""
+
+    def handler(url: str) -> bytes:
+        if url.endswith("/fullTextXML"):
+            return NXML.encode()
+        if "europepmc.org" in url:
+            return PDF_BYTES
+        if url.endswith("/supplementaryFiles"):
+            return _zip_bytes({"mmc2.pdf": PDF_BYTES})
+        raise _Unexpected(url)
+
+    root, boundary = _install(monkeypatch, tmp_path, handler, tracked_xml=False)
+
+    retrieval.run()
+
+    package = root / "data/raw/fulltext/oa_packages" / PAPER["pmcid"]
+    assert boundary.unexpected == []
+    assert sorted(path.name for path in package.glob("*.nxml")) == [
+        f"{PAPER['pmcid']}.nxml"
+    ]
+    assert (package / f"{PAPER['pmcid']}.nxml").read_text(encoding="utf-8") == NXML
+    # It was fetched once and then reused, not downloaded per strategy.
+    assert len([url for url in boundary.urls if url.endswith("/fullTextXML")]) == 1
+    # ``mmc1.pdf`` is named by the fetched XML, which proves the fetched copy
+    # -- not a tracked one -- drove the rest of the strategy.
+    assert (package / "mmc1.pdf").read_bytes() == PDF_BYTES
+    assert (package / "mmc2.pdf").read_bytes() == PDF_BYTES
+
+
+def test_the_linked_asset_route_stays_a_supplement_to_a_tracked_xml(
+    tmp_path, monkeypatch
+):
+    """It completes an XML this checkout has; it must not invent one.
+
+    Kept on ``local_xml`` on purpose. Bootstrapping belongs to the primary
+    route, so in a fresh clone this one is expected to be skipped -- and the
+    manifest has to say so rather than hide it.
+    """
+
+    def handler(url: str) -> bytes:
+        if url.endswith("/fullTextXML"):
+            raise HTTPError(url, 404, "Not Found", {}, None)
+        if "europepmc.org" in url:
+            raise HTTPError(url, 500, "Internal Server Error", {}, None)
+        if "oa.fcgi" in url:
+            return OA_API_XML.encode()
+        if url == RELOCATED_TGZ:
+            return _tar_gz_bytes({f"{PAPER['pmcid']}/{PAPER['pmcid']}.nxml": NXML.encode()})
+        if url == LEGACY_TGZ:
+            raise HTTPError(url, 404, "Not Found", {}, None)
+        raise _Unexpected(url)
+
+    root, boundary = _install(monkeypatch, tmp_path, handler, tracked_xml=False)
+
+    retrieval.run()
+    row = _manifest(root)
+
+    assert boundary.unexpected == []
+    skipped = {attempt["strategy"]: attempt["error"] for attempt in row["failed_strategies"]}
+    assert skipped["europe_pmc_linked_assets"].startswith("FileNotFoundError:")
+    # Never reached the network: no /bin/ request was made without a tracked XML.
+    assert not [url for url in boundary.urls if "/bin/" in url]
+    # Skipping it is only acceptable because another route covers the paper.
+    # Being skipped and the paper failing is the bug, not the design.
+    assert row["status"] == "retrieved"
+    assert row["retrieval_method"] == "ncbi_oa_tgz"
+
+
+# ---------------------------------------------------------------------------
+# Where the OA tgz actually lives
+# ---------------------------------------------------------------------------
+
+
+def test_package_urls_adds_the_relocated_path_after_the_service_href(monkeypatch):
+    """The ``XX/YY`` segments are the service's; the ``deprecated/`` hop is ours."""
+    monkeypatch.setattr(
+        retrieval, "request_bytes", lambda url, **kwargs: OA_API_XML.encode()
+    )
+
+    assert retrieval.package_urls(PAPER["pmcid"]) == [LEGACY_TGZ, RELOCATED_TGZ]
+
+
+def test_the_tgz_falls_back_to_the_relocated_path_when_the_href_404s(
+    tmp_path, monkeypatch
+):
+    """GP-002 and GP-009 in miniature: Europe PMC has nothing, so the tgz must work.
+
+    The OA service still advertises the pre-2026 FTP path. Following it
+    literally is a 404, which used to end the last-resort route -- and with it
+    the only route to a paper Europe PMC does not hold.
+    """
+    tgz = _tar_gz_bytes({
+        f"{PAPER['pmcid']}/{PAPER['pmcid']}.nxml": NXML.encode(),
+        f"{PAPER['pmcid']}/mmc1.pdf": PDF_BYTES,
+    })
+
+    def handler(url: str) -> bytes:
+        if url.endswith(("/fullTextXML", "/supplementaryFiles")):
+            raise HTTPError(url, 404, "Not Found", {}, None)
+        if "europepmc.org" in url:
+            raise HTTPError(url, 500, "Internal Server Error", {}, None)
+        if "oa.fcgi" in url:
+            return OA_API_XML.encode()
+        if url == LEGACY_TGZ:
+            raise HTTPError(url, 404, "Not Found", {}, None)
+        if url == RELOCATED_TGZ:
+            return tgz
+        raise _Unexpected(url)
+
+    root, boundary = _install(monkeypatch, tmp_path, handler, tracked_xml=False)
+
+    summary = retrieval.run()
+    row = _manifest(root)
+
+    assert boundary.unexpected == []
+    assert summary["retrieved"] == 1
+    assert row["retrieval_method"] == "ncbi_oa_tgz"
+    # The service's own answer is tried first and the relocation is the fallback,
+    # not the other way round: when NCBI deletes the deprecated tree the code
+    # follows the live href without another edit.
+    assert [url for url in boundary.urls if url.endswith(".tar.gz")] == [
+        LEGACY_TGZ,
+        RELOCATED_TGZ,
+    ]
+    # The manifest records the URL that served the bytes, not the one that 404ed.
+    assert row["package_url"] == RELOCATED_TGZ
+    package = root / "data/raw/fulltext/oa_packages" / PAPER["pmcid"]
+    assert (package / f"{PAPER['pmcid']}.nxml").exists()
+    assert (package / "mmc1.pdf").read_bytes() == PDF_BYTES
+
+
+def test_a_tgz_is_flattened_even_when_an_earlier_strategy_left_a_file_behind(tmp_path):
+    """The bootstrap makes a partly-populated destination the normal case.
+
+    The primary route can fetch ``{pmcid}.nxml`` and then fail on the PDF. The
+    old "flatten only if there is exactly one child" rule then did nothing, and
+    the article stayed one directory down where ingestion never globs.
+    """
+    destination = tmp_path / PAPER["pmcid"]
+    nested = destination / PAPER["pmcid"]
+    nested.mkdir(parents=True)
+    (nested / "main.nxml").write_text(NXML, encoding="utf-8")
+    (nested / "mmc1.pdf").write_bytes(PDF_BYTES)
+    # The leftover from the strategy that failed before this one.
+    (destination / f"{PAPER['pmcid']}.nxml").write_text("<article/>", encoding="utf-8")
+
+    retrieval.flatten_single_directory(destination, PAPER["pmcid"])
+
+    assert (destination / "main.nxml").read_text(encoding="utf-8") == NXML
+    assert (destination / "mmc1.pdf").read_bytes() == PDF_BYTES
+    assert not nested.exists()
+
+
+def test_a_404_is_answered_once_while_a_transient_error_is_retried(monkeypatch):
+    """``request_bytes`` now leans on 404s, so it must not sleep through them.
+
+    The tgz route probes a location that is expected to 404 before the one that
+    works. Four attempts with exponential backoff turned that into seven wasted
+    seconds per paper for an answer the server gave immediately.
+    """
+    calls: list[str] = []
+    slept: list[float] = []
+    monkeypatch.setattr(retrieval.time, "sleep", lambda seconds: slept.append(seconds))
+
+    def raising(code: int):
+        def urlopen(request, timeout=None, context=None):
+            calls.append(request.full_url)
+            raise HTTPError(request.full_url, code, "boom", {}, None)
+
+        return urlopen
+
+    monkeypatch.setattr("urllib.request.urlopen", raising(404))
+    with pytest.raises(HTTPError):
+        retrieval.request_bytes(LEGACY_TGZ, attempts=4)
+    assert (len(calls), slept) == (1, [])
+
+    calls.clear()
+    monkeypatch.setattr("urllib.request.urlopen", raising(503))
+    with pytest.raises(HTTPError):
+        retrieval.request_bytes(LEGACY_TGZ, attempts=4)
+    assert len(calls) == 4
+    assert slept == [1, 2, 4]
 
 
 # ---------------------------------------------------------------------------
