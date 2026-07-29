@@ -452,7 +452,7 @@ format:   html
           <td>GP-006 语料 54 → 259 blocks；<code>1.01</code> 出现 4 次（原为 0 次），该值即 GO-006。
               服务不可达时降级到 pymupdf 并留告警，<b>已实测</b>，故默认开是安全的</td></tr>
       <tr><td><code>candidate_slot_enforcement</code></td><td class="num yes">开</td>
-          <td>恢复 GO-004；<code>unsupported_extracted_disposition</code> 拦下 83 条无据声明中的 76 条。
+          <td>恢复 GO-004；<s><code>unsupported_extracted_disposition</code> 拦下 83 条中的 76 条</s>（<b>v18 撤回</b>：原始笔记说的是「83 条抽取声明中有 76 条引用了不存在的证据」——那是在描述<b>失败</b>而非<b>防御</b>，意思正好相反；全仓库该 finding 实际为 <b>0 条</b>）。
               槽位数大时退化（39 个全部回填，168 个不行），大文章需按 <code>max_slots_per_call</code> 分块</td></tr>
       <tr><td><code>compact_route</code></td><td class="num yes">开</td>
           <td>单独 8/15，高于完整视图 7/15；11/15 union 的 51 条记录里 37 条来自紧凑路线。
