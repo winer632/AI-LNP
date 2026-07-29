@@ -122,7 +122,7 @@
   <h1>把「看不见」<br>变成「看得见」</h1>
   <p class="lede">
     当前 15 条金标准结果只恢复了 10 条。经实测排查，剩下 5 条没有一条卡在「模型不够强」。
-    <b>v4 更新：P0-a / P0-b / P1 与工程改造已落地并推送 main，测试 160 → 591。
+    <b>v4 更新：P0-a / P0-b / P1 与工程改造已落地并推送 main，测试 160 → 646。
     证据可得性门已通过（<code>1.01</code> 命中 0 → 4），同 harness 消融 recall 6/15 → 8/15。
     但 GO-006 仍未被恢复 —— 证据可得是必要条件、不是充分条件。</b>
   </p>
@@ -383,7 +383,7 @@ format:   html
       </tr>
       <tr>
         <td>工程就绪度 + 开关</td><td class="num yes">95%<br><small>(45%)</small></td>
-        <td>测试 <b>160 → 313</b>（2 failed → 0）；<code>src/config_flags.py</code> 使
+        <td>测试 <b>160 → 646</b>（2 failed → 0）；<code>src/config_flags.py</code> 使
             <code>activation_gate</code> 成为真开关；每个设计优先级一个 flag，默认 off，
             priority 与设计文档由测试钉住；<code>.env.example</code> 3 → 19；
             <code>pymupdf</code> 入 requirements；测试写副作用消除（pytest 后工作树干净）；
@@ -402,14 +402,14 @@ format:   html
         <td>候选 id 随 packet 下发；每个槽位必须有处置；
             <b>并核验 <code>extracted</code> 是否属实</b>（<code>unsupported_extracted_disposition</code>）；
             prompt 1.1.0 / 1.2.1 双版本，off 时逐字节不变；16 个测试</td>
-        <td class="mid">flag 需保持 off，直至模型能满足 extracted 核验（见二·六节）</td>
+        <td class="yes"><b>v18 更正：已默认打开。</b>它是唯一恢复 GO-004 的消融条件。原文的前置条件（extracted 核验）本身已被撤回——那条「拦下 83 条中的 76 条」是对一条记录相反事实的误读，全仓库 <code>unsupported_extracted_disposition</code> 实际为 0 条</td>
       </tr>
       <tr class="hl">
         <td><b>recall 验收</b></td><td class="num mid">部分</td>
         <td>建立了无需 API key 的 codex harness 并完成三条件消融：
             <b>6/15 → 7/15 → 8/15</b>，precision 0.429 → 0.533。
             证据可得性门<b>已通过</b></td>
-        <td class="no">未达 13–14/15 目标；GO-006 仍未恢复（详见二·六节）</td>
+        <td class="yes"><b>v18 更正：已达标。</b>确定性 <b>13/15</b>（union + 视觉 + 抢救，precision 0.2203、证据 7/12），达到 13–14/15 的下限；默认单次跑 11/15。<b>GO-006 已恢复</b>，得分 1.0。剩余 GO-017（gold 用生物学语言、图版用实验语言，endpoint 重叠为零）与 GO-018（模型看见证据后主动拒绝建记录）</td>
       </tr>
     </tbody>
   </table>
@@ -458,13 +458,13 @@ format:   html
           <td>单独 8/15，高于完整视图 7/15；11/15 union 的 51 条记录里 37 条来自紧凑路线。
               <b>这一条推翻了此前「去掉紧凑路线」的判断</b>，是我的判断失误</td></tr>
       <tr><td><code>precision_metrics</code></td><td class="num yes">开</td>
-          <td>纯报告项，不改变抽取行为；使 precision 0.373 与 32 条虚增记录可见</td></tr>
+          <td>纯报告项，不改变抽取行为；使 precision 与虚增记录可见（<b>v18 更正</b>：正确值 0.2157 / 40 条，0.373 是重复 id 修复前的虚高值）</td></tr>
       <tr><td><code>full_evidence_view</code></td><td class="num">关</td>
           <td>是集成成员而非路线：为 union 贡献 GO-015 / GO-007，但单独只有 7/15。
               与 <code>compact_route</code> 一同关闭即可固定为完整视图运行</td></tr>
       <tr><td><code>local_vlm_vision</code></td><td class="num">关</td>
           <td>读图正确但<b>无法计分</b>：gold 写 <code>LYVE1</code>、读出的是 <code>LYVE-1</code>，分词只切后者。
-              现在打开只会拉低 precision 而不涨 recall</td></tr>
+              <s>打开只会拉低 precision</s>（<b>v18 撤回</b>：见 v11/v12——它是那四个测量的唯一来源，合并 GP-004/006 读图可使 union 11/15 → 12/15）</td></tr>
       <tr><td><code>expanded_discovery</code></td><td class="num">关</td>
           <td>无实现，仅为 roadmap 占位</td></tr>
     </tbody>
@@ -617,7 +617,7 @@ format:   html
     <table>
       <thead><tr><th>论文</th><th class="num">verified</th><th class="num">contradicted</th><th class="num">unverified</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td>GP-004</td><td class="num">29</td><td class="num no">5</td><td class="num">0</td>
+        <tr><td>GP-004</td><td class="num">24</td><td class="num no">6</td><td class="num">0</td>
             <td class="no"><b>查出编造</b>：Supplementary Table 2 的 eGFP 和 HGF 行被安上了 <b>Luciferase 的序列</b></td></tr>
         <tr><td>GP-006</td><td class="num">—</td><td class="num">0</td><td class="num mid">18</td>
             <td>含 GO-006 的 <code>1.01</code> 那一块<b>通过校验</b>（见下）</td></tr>
@@ -874,7 +874,7 @@ format:   html
     <b>三条设计原则</b>
     <b>①向后兼容</b>：所有新 schema 字段一律 <code>| None = None</code>，已提交的 9 个 <code>blocks.jsonl</code> 必须继续可加载；
     <code>_source_id()</code> 哈希输入<b>不得变更</b>，否则全部 <code>FC-S-*</code> 漂移。<br>
-    <b>②灰度可回退</b>：每项新能力挂一个 flag，默认 off；compact 视图下的现有行为必须逐位不变。<br>
+    <b>②灰度可回退</b>：每项新能力挂一个 flag；compact 视图下的现有行为必须逐位不变。<b>v18 更正：</b>原文写「默认 off」，现在 14 个开关里 7 个默认开——每个默认开的都必须在注册表里带可复现的实测依据，由 <code>test_a_rationale_that_quotes_a_recall_figure_reproduces_it</code> 强制。<br>
     <b>③零付费默认</b>：所有评估/校验路径 <code>paid_api_requests</code> 必须为 0；付费调用保留 <code>--confirm-paid-call</code> 强制闸门。
   </div>
 
@@ -949,7 +949,7 @@ format:   html
       <tr><td><b>P1</b> uniparse ingestion</td><td class="num">8%</td><td class="yes">✅ 完成</td>
         <td>GP-006 语料 54 → <b>260</b> blocks，<code>pdf_page</code> 消失，<code>table_row</code> 13 个</td></tr>
       <tr><td>工程就绪度 + 开关</td><td class="num">45%</td><td class="yes">✅ 完成</td>
-        <td>测试 160→<b>313</b>；CI 已建；<code>activation_gate</code> 变真开关；<code>.env.example</code> 3→19</td></tr>
+        <td>测试 160→<b>646</b>；CI 已建；<code>activation_gate</code> 变真开关；<code>.env.example</code> 3→19</td></tr>
       <tr><td><b>P3</b> 候选必答</td><td class="num">25%</td><td class="mid">开发中</td><td>—</td></tr>
       <tr><td><b>P2</b> 视觉观察</td><td class="num">65%</td><td class="mid">开发中</td><td>—</td></tr>
     </tbody>
@@ -1588,23 +1588,23 @@ silence is not a valid disposition.</code></pre>
         <td class="yes">已通过：uniparse 从 Table S2 提取出 <code>1.01 ± 0.38 %</code>，与金标准逐字段吻合</td>
       </tr>
       <tr>
-        <td>1</td><td><b>P0-b</b> 精度指标</td><td>待做</td><td>纯本地</td><td>全部前提</td>
+        <td>1</td><td><b>P0-b</b> 精度指标</td><td class="yes">已上线</td><td>纯本地</td><td>全部前提</td>
         <td>evaluation.json 输出 precision / false_additions / evidence_accuracy；对当前 10/15 基线给出精度基准值</td>
       </tr>
       <tr>
-        <td>2</td><td><b>P0-a</b> 完整证据视图</td><td>待做</td><td>2 次调用</td><td>GO-002/003</td>
+        <td>2</td><td><b>P0-a</b> 完整证据视图</td><td class="mid">已实现，默认关（集成成员）</td><td>2 次调用</td><td>GO-002/003</td>
         <td>GP-004、GP-006 用全文包重跑；GO-003 回来则确认打分器压制为主因（<code>LYVE</code> 在 blocks 中有 10 次）</td>
       </tr>
       <tr>
-        <td>3</td><td><b>P1</b> uniparse ingestion</td><td>待做</td><td>中</td><td>GO-006</td>
+        <td>3</td><td><b>P1</b> uniparse ingestion</td><td class="yes">已上线</td><td>中</td><td>GO-006</td>
         <td>GP-006 补充材料入库后，<code>(Table S2, LSEC, total insertion frequency)</code> 可作为单元格级 evidence 被精确引用</td>
       </tr>
       <tr>
-        <td>4</td><td><b>P2</b> 视觉观察</td><td>待做</td><td>中</td><td>GO-018</td>
+        <td>4</td><td><b>P2</b> 视觉观察</td><td class="mid">已实现，默认关（合并非一致正向）</td><td>中</td><td>GO-018</td>
         <td>panel crop 产出符合契约的结构化观察；无印刷依据的数值全部 abstained</td>
       </tr>
       <tr>
-        <td>5</td><td><b>P3</b> 候选必答前移</td><td>待做</td><td>改 prompt</td><td>防新漏</td>
+        <td>5</td><td><b>P3</b> 候选必答前移</td><td class="yes">已上线</td><td>改 prompt</td><td>防新漏</td>
         <td>GP-001/003/009 不再出现「返回 0 条且无说明」；每个候选均有 disposition</td>
       </tr>
     </tbody>
