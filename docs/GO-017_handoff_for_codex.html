@@ -1,41 +1,56 @@
-<title>GO-017：一个未解决的召回缺口 · 交接说明</title>
+<title>GO-017 · 一个未解决的召回缺口 / An Unsolved Recall Gap</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root{
     --bg:#fbfaf7; --fg:#1f2328; --muted:#5b636b; --line:#e3e0d8;
     --card:#fff; --accent:#8a6d3b; --bad:#b3261e; --good:#2e6b34; --mid:#8a6d3b;
-    --code-bg:#f4f2ec;
+    --code-bg:#f4f2ec; --btn:#fff; --btn-on:#1f2328; --btn-on-fg:#fff;
   }
   @media (prefers-color-scheme: dark){
     :root{ --bg:#15171a; --fg:#e8e6e1; --muted:#a3a8ad; --line:#2c3036;
            --card:#1c1f23; --accent:#d3b177; --bad:#f2857c; --good:#7bc07f; --mid:#d3b177;
-           --code-bg:#22262b; }
+           --code-bg:#22262b; --btn:#1c1f23; --btn-on:#e8e6e1; --btn-on-fg:#15171a; }
   }
   :root[data-theme="dark"]{
     --bg:#15171a; --fg:#e8e6e1; --muted:#a3a8ad; --line:#2c3036;
     --card:#1c1f23; --accent:#d3b177; --bad:#f2857c; --good:#7bc07f; --mid:#d3b177;
-    --code-bg:#22262b;
+    --code-bg:#22262b; --btn:#1c1f23; --btn-on:#e8e6e1; --btn-on-fg:#15171a;
   }
   :root[data-theme="light"]{
     --bg:#fbfaf7; --fg:#1f2328; --muted:#5b636b; --line:#e3e0d8;
     --card:#fff; --accent:#8a6d3b; --bad:#b3261e; --good:#2e6b34; --mid:#8a6d3b;
-    --code-bg:#f4f2ec;
+    --code-bg:#f4f2ec; --btn:#fff; --btn-on:#1f2328; --btn-on-fg:#fff;
   }
   *{box-sizing:border-box}
   body{
-    margin:0; padding:1.1rem .95rem 4rem; background:var(--bg); color:var(--fg);
+    margin:0; padding:1rem .95rem 4rem; background:var(--bg); color:var(--fg);
     font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
     max-width:52rem; margin-inline:auto; overflow-wrap:break-word;
   }
-  h1{font-size:1.45rem; line-height:1.35; margin:.2rem 0 .3rem}
-  h2{font-size:1.15rem; margin:2.2rem 0 .6rem; padding-top:.9rem; border-top:1px solid var(--line)}
-  h3{font-size:1rem; margin:1.5rem 0 .4rem; color:var(--accent)}
+  .langbar{
+    position:sticky; top:0; z-index:10; display:flex; gap:.4rem; align-items:center;
+    padding:.6rem 0 .7rem; margin-bottom:.4rem;
+    background:linear-gradient(var(--bg) 78%, transparent);
+  }
+  .langbar button{
+    font:inherit; font-size:.85rem; padding:.32rem .95rem; cursor:pointer;
+    background:var(--btn); color:var(--fg); border:1px solid var(--line);
+    border-radius:999px; -webkit-tap-highlight-color:transparent;
+  }
+  .langbar button[aria-pressed="true"]{ background:var(--btn-on); color:var(--btn-on-fg); border-color:var(--btn-on) }
+  .langbar .hint{ color:var(--muted); font-size:.78rem; margin-left:.15rem }
+  :root:not([data-lang="en"]) .en{ display:none }
+  :root[data-lang="en"] .zh{ display:none }
+
+  h1{font-size:1.42rem; line-height:1.35; margin:.1rem 0 .3rem}
+  h2{font-size:1.14rem; margin:2.1rem 0 .6rem; padding-top:.9rem; border-top:1px solid var(--line)}
+  h3{font-size:1rem; margin:1.4rem 0 .4rem; color:var(--accent)}
   p,li{margin:.5rem 0}
-  .sub{color:var(--muted); font-size:.9rem; margin:0 0 1.2rem}
+  .sub{color:var(--muted); font-size:.9rem; margin:0 0 1.1rem}
   code{background:var(--code-bg); padding:.1em .34em; border-radius:4px; font-size:.87em;
        font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   pre{background:var(--code-bg); padding:.85rem .9rem; border-radius:8px; overflow-x:auto;
-      font-size:.83rem; line-height:1.55; margin:.7rem 0;
+      font-size:.82rem; line-height:1.55; margin:.7rem 0;
       font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   pre code{background:none; padding:0; font-size:inherit}
   .card{background:var(--card); border:1px solid var(--line); border-radius:10px;
@@ -44,67 +59,120 @@
   .card.good{border-left:4px solid var(--good)}
   .card.mid{border-left:4px solid var(--mid)}
   .scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:.8rem 0}
-  table{border-collapse:collapse; width:100%; min-width:30rem; font-size:.9rem}
+  table{border-collapse:collapse; width:100%; min-width:30rem; font-size:.89rem}
   th,td{border:1px solid var(--line); padding:.45rem .6rem; text-align:left; vertical-align:top}
   th{background:var(--code-bg); font-weight:600}
   td.n{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
   .bad{color:var(--bad)} .good{color:var(--good)} .mid{color:var(--mid)}
-  .lede{font-size:1.02rem}
+  .lede{font-size:1.01rem}
   ul{padding-left:1.3rem}
   .tag{display:inline-block; background:var(--code-bg); border:1px solid var(--line);
        border-radius:999px; padding:.08rem .55rem; font-size:.78rem; color:var(--muted)}
 </style>
 
-<h1>GO-017：一个未解决的召回缺口</h1>
-<p class="sub">交接给 Codex · 2026-07-29 · 仓库 <code>~/Desktop/LNP/AI-LNP</code> · 当前 recall 13/15</p>
-
-<div class="card lede">
-  <p style="margin-top:0"><b>请你判断的问题：</b>有没有一种<b>正当的</b>办法让 GO-017 被匹配上。</p>
-  <p style="margin-bottom:0">「正当」的定义在本文<a href="#rules">第 5 节</a>，它比问题本身重要。
-  已经有 <b>9 种</b>方案被试过，<b>8 种失败</b>，其中 4 种是因为跨越了那条线而被主动否决 ——
-  它们能提高数字，但那个数字不再代表任何东西。<b>「无解」是一个可接受且有用的答案。</b></p>
+<div class="langbar">
+  <button id="btn-zh" aria-pressed="true"  onclick="setLang('zh')">中文</button>
+  <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+  <span class="hint zh">代码与数字不翻译</span>
+  <span class="hint en">Code and figures are not translated</span>
 </div>
 
-<h2>1. 这个项目在做什么</h2>
-<p>从 9 篇 LNP（脂质纳米颗粒）论文中抽取实验结果，与人工标注的 15 条金标准（gold set）比对。
-评测器做<b>一对一确定性匹配</b>：每条 gold 只能配一条抽取记录，同一输入必得同一结果，可逐字节复现。</p>
+<h1><span class="zh">GO-017：一个未解决的召回缺口</span><span class="en">GO-017: An Unsolved Recall Gap</span></h1>
+<p class="sub">
+  <span class="zh">交接给 Codex · 2026-07-29 · 仓库 <code>~/Desktop/LNP/AI-LNP</code> · 当前 recall 13/15</span>
+  <span class="en">Handoff to Codex · 2026-07-29 · Repository <code>~/Desktop/LNP/AI-LNP</code> · Current recall 13/15</span>
+</p>
+
+<div class="card lede">
+  <p style="margin-top:0">
+    <span class="zh"><b>请你判断的问题：</b>有没有一种<b>正当的</b>办法让 GO-017 被匹配上。</span>
+    <span class="en"><b>The question for you:</b> is there a <b>legitimate</b> way to make GO-017 match?</span>
+  </p>
+  <p style="margin-bottom:0">
+    <span class="zh">「正当」的定义在<a href="#rules">第 5 节</a>，它比问题本身重要。
+      已经有 <b>9 种</b>方案被试过，<b>8 种失败</b>，其中 4 种是因为跨越了那条线而被<b>主动否决</b> ——
+      它们能提高数字，但那个数字不再代表任何东西。<b>「无解」是一个可接受且有用的答案。</b></span>
+    <span class="en">What counts as legitimate is defined in <a href="#rules">section 5</a>, and it matters more
+      than the question itself. <b>Nine</b> approaches have been tried and <b>eight failed</b>. Four of those were
+      <b>refused deliberately</b>: they would have raised the number, but the number would no longer have
+      meant anything. <b>"There is no legitimate way" is an acceptable and useful answer.</b></span>
+  </p>
+</div>
+
+<h2><span class="zh">1. 这个项目在做什么</span><span class="en">1. What this project does</span></h2>
+<p>
+  <span class="zh">从 9 篇 LNP（脂质纳米颗粒）论文中抽取实验结果，与人工标注的 15 条金标准（gold set）比对。
+    评测器做<b>一对一确定性匹配</b>：每条 gold 只能配一条抽取记录，同一输入必得同一结果，可逐字节复现。</span>
+  <span class="en">It extracts experimental outcomes from 9 lipid-nanoparticle papers and compares them against
+    a hand-annotated gold set of 15 outcomes. The evaluator performs <b>deterministic one-to-one matching</b>:
+    each gold row can claim at most one extracted record, the same input always yields the same result, and
+    the result is byte-reproducible.</span>
+</p>
 
 <div class="scroll">
 <table>
-  <thead><tr><th>指标</th><th class="n">当前</th><th>含义</th></tr></thead>
+  <thead><tr>
+    <th><span class="zh">指标</span><span class="en">Metric</span></th>
+    <th class="n"><span class="zh">当前</span><span class="en">Current</span></th>
+    <th><span class="zh">含义</span><span class="en">Meaning</span></th>
+  </tr></thead>
   <tbody>
-    <tr><td>recall</td><td class="n good"><b>13/15</b></td><td>15 条 gold 中找回 13 条，缺 GO-017、GO-018</td></tr>
-    <tr><td>precision</td><td class="n">0.2203</td><td>输出 59 条记录，13 条对上 gold</td></tr>
-    <tr><td>evidence accuracy</td><td class="n">7/12</td><td>匹配记录里，引用证据确实支持其说法的比例</td></tr>
+    <tr><td>recall</td><td class="n good"><b>13/15</b></td>
+        <td><span class="zh">15 条 gold 中找回 13 条，缺 GO-017、GO-018</span>
+            <span class="en">13 of 15 gold outcomes recovered; GO-017 and GO-018 missing</span></td></tr>
+    <tr><td>precision</td><td class="n">0.2203</td>
+        <td><span class="zh">输出 59 条记录，13 条对上 gold</span>
+            <span class="en">59 records emitted, 13 matched a gold row</span></td></tr>
+    <tr><td>evidence accuracy</td><td class="n">7/12</td>
+        <td><span class="zh">匹配记录里，引用证据确实支持其说法的比例</span>
+            <span class="en">Of matched records, how many are actually supported by the evidence they cite</span></td></tr>
   </tbody>
 </table>
 </div>
 
-<p><b>precision 低不代表 73% 是错的。</b>那 46 条未匹配记录里混着三类：真正多余的、
-论文里真实存在但 gold 没标注的、以及同一结果被拆成多条的。评测器一对一匹配，
-多输出记录只会降 precision —— 所以任何「多捞一条」的方案都自带 precision 代价。</p>
+<p>
+  <span class="zh"><b>precision 低不代表 73% 是错的。</b>那 46 条未匹配记录里混着三类：真正多余的、
+    论文里真实存在但 gold 没标注的、以及同一结果被拆成多条的。评测器一对一匹配，
+    多输出记录只会降 precision —— 所以任何「多捞一条」的方案都自带 precision 代价。</span>
+  <span class="en"><b>Low precision does not mean 73% of the output is wrong.</b> The 46 unmatched records mix
+    three kinds: genuinely spurious ones, results the paper really reports but the gold set never annotated,
+    and one result split across several records. Because matching is one-to-one, emitting more records can only
+    lower precision — so every "recover one more" idea carries a precision cost by construction.</span>
+</p>
 
-<h2>2. GO-017 是什么</h2>
+<h2><span class="zh">2. GO-017 是什么</span><span class="en">2. What GO-017 is</span></h2>
 
 <div class="card">
 <pre><code>gold_outcome_id:      GO-017
 endpoint_name:        activated_HSC_elimination
 qualitative_outcome:  FAPCAR macrophages recognized, phagocytosed,
                       and eliminated activated HSC models.
-value_status:         qualitative_reported   (无数值)
+value_status:         qualitative_reported   (no numeric value)
 evidence_id:          EVID-029</code></pre>
-<p style="margin-bottom:0"><b>它引用的证据原文</b>（来自 GP-008，PNAS，PMC13229182）：</p>
+<p style="margin-bottom:0">
+  <span class="zh"><b>它引用的证据原文</b>（来自 GP-008，PNAS，PMC13229182）：</span>
+  <span class="en"><b>The evidence it cites</b>, verbatim (from GP-008, PNAS, PMC13229182):</span>
+</p>
 <pre style="margin-bottom:0"><code>FAPCAR-expressing macrophages recognized and eliminated
 FAP-positive activated HSC models; the LNP cargo was
 expressed in macrophages, not HSCs.</code></pre>
 </div>
 
-<p><code>endpoint_name</code> 分词后是 <code>['activated', 'elimination', 'hsc']</code>，
-<b>三个词在 15 条 gold 里都属于罕见词</b>（全局出现 ≤2 次）。这一点在第 4 节的门判定里很关键。</p>
+<p>
+  <span class="zh"><code>endpoint_name</code> 分词后是 <code>['activated', 'elimination', 'hsc']</code>，
+    <b>三个词在 15 条 gold 里都属于罕见词</b>（全局出现 ≤2 次）。这一点在第 4 节的门判定里很关键。</span>
+  <span class="en"><code>endpoint_name</code> tokenises to <code>['activated', 'elimination', 'hsc']</code>, and
+    <b>all three are rare across the gold set</b> (each occurs at most twice globally). That matters for the
+    gate logic in section 4.</span>
+</p>
 
-<h2>3. 抽取端产出了什么</h2>
+<h2><span class="zh">3. 抽取端产出了什么</span><span class="en">3. What the extraction produced</span></h2>
 
-<p>抽取端<b>确实抽到了这个实验</b>，记录如下（这是所有配置中<b>唯一</b>能过 polarity 门的 GP-008 记录）：</p>
+<p>
+  <span class="zh">抽取端<b>确实抽到了这个实验</b>。下面这条是所有配置中<b>唯一</b>能过 polarity 门的 GP-008 记录：</span>
+  <span class="en">The extraction <b>did capture this experiment</b>. The record below is the <b>only</b> GP-008
+    record in any configuration that passes the polarity gate:</span>
+</p>
 
 <div class="card">
 <pre><code>endpoint:             elimination of FAP+ JS-1 target cells
@@ -112,31 +180,52 @@ expressed in macrophages, not HSCs.</code></pre>
 qualitative_outcome:  CAR-M derived from αCD163/LNP-FAPCAR significantly
                       eliminated FAP+ JS-1 cells in vitro.
 assay:                luciferase killing assay
-outcome_value:        (无)</code></pre>
+outcome_value:        (none)</code></pre>
 </div>
 
-<p><b>关键事实：JS-1 是一株活化肝星状细胞（activated HSC）系。</b>
-所以 gold 说的 <code>activated HSC</code> 和记录说的 <code>FAP+ JS-1</code> 指的是<b>同一群细胞</b>，
-只是 gold 用生物学类型名、论文用细胞系名。</p>
+<p>
+  <span class="zh"><b>关键事实：JS-1 是一株活化肝星状细胞（activated HSC）系。</b>
+    所以 gold 说的 <code>activated HSC</code> 和记录说的 <code>FAP+ JS-1</code> 指的是<b>同一群细胞</b>，
+    只是 gold 用生物学类型名、论文用细胞系名。</span>
+  <span class="en"><b>The key fact: JS-1 is an activated hepatic stellate cell line.</b>
+    So the gold row's <code>activated HSC</code> and the record's <code>FAP+ JS-1</code> denote the
+    <b>same population</b>. The gold set names the cell type; the paper names the cell line.</span>
+</p>
 
 <div class="card mid">
-  <p style="margin-top:0"><b>论文从没在一句话里说过 JS-1 是什么。</b>信息在，但要<b>两跳</b>：</p>
-<pre><code>SI 细胞培养:  "The mouse HSC cell lines were procured from
-              the YaJi Biological, the human HSC cell lines and
-              THP-1 monocytes were procured from the Chinese
-              Academy of Sciences' Cell Bank."
+  <p style="margin-top:0">
+    <span class="zh"><b>论文从没在一句话里说过 JS-1 是什么。</b>信息在，但要<b>两跳</b>：</span>
+    <span class="en"><b>The paper never states what JS-1 is in a single sentence.</b> The information is
+      there, but it takes <b>two hops</b>:</span>
+  </p>
+<pre><code>SI Cell Culture:  "The mouse HSC cell lines were procured from
+                   the YaJi Biological, the human HSC cell lines and
+                   THP-1 monocytes were procured from the Chinese
+                   Academy of Sciences' Cell Bank."
 
-试剂表:       JS-1 cells (m.musculus) | YaJi Biological | YS2162C
-              LX-2 cells (H. sapiens) | Chinese Academy   | SCSP-527</code></pre>
-  <p style="margin-bottom:0">物种标签让它接近确定：JS-1 是小鼠、来自 YaJi，而 YaJi 供的就是小鼠 HSC 系。
-  <b>还有一条更直接的路</b>：论文写 <code>JS-1 cells were differentiated with TGF-β1,
-  followed by FAP positivity enrichment</code> —— TGF-β1 诱导正是活化肝星状细胞的标准方法，
-  而 gold 说的正是 <b>activated</b> HSC。</p>
+Reagents table:    JS-1 cells (m.musculus) | YaJi Biological | YS2162C
+                   LX-2 cells (H. sapiens) | Chinese Academy  | SCSP-527</code></pre>
+  <p style="margin-bottom:0">
+    <span class="zh">物种标签让它接近确定：JS-1 是小鼠、来自 YaJi，而 YaJi 供的就是小鼠 HSC 系。
+      <b>还有一条更直接的路</b>：论文写 <code>JS-1 cells were differentiated with TGF-β1,
+      followed by FAP positivity enrichment</code> —— TGF-β1 诱导正是活化肝星状细胞的标准方法，
+      而 gold 说的正是 <b>activated</b> HSC。</span>
+    <span class="en">The species tags make the join near-deterministic: JS-1 is mouse and came from YaJi,
+      and YaJi supplied the mouse HSC lines. <b>There is also a more direct route</b>: the paper writes
+      <code>JS-1 cells were differentiated with TGF-β1, followed by FAP positivity enrichment</code>.
+      TGF-β1 induction is the standard activation protocol for hepatic stellate cells, and
+      <b>activated</b> is exactly what the gold row says.</span>
+  </p>
 </div>
 
-<h2>4. 为什么匹配不上 —— 门的判定</h2>
+<h2><span class="zh">4. 为什么匹配不上 —— 门的判定</span><span class="en">4. Why it does not match — the gates</span></h2>
 
-<p>评测器有三道门，任何一道不过则得分归零。相关的两道（<code>src/extraction/evaluate_final_gold_dynamic.py</code>）：</p>
+<p>
+  <span class="zh">评测器有三道门，任何一道不过则得分归零。相关的两道
+    （<code>src/extraction/evaluate_final_gold_dynamic.py</code>）：</span>
+  <span class="en">The evaluator has three gates; failing any one zeroes the score. The two that matter here
+    (<code>src/extraction/evaluate_final_gold_dynamic.py</code>):</span>
+</p>
 
 <pre><code>endpoint_gate = bool(
     endpoint_overlap
@@ -155,75 +244,86 @@ polarity_gate = (
     or bool(distinctive_qualitative &amp; outcome_only_tokens)
 )</code></pre>
 
-<p><code>distinctive_qualitative</code> 是 gold 的 qualitative 文本与一个固定词表的交集，
-词表为 <code>{few, no, obvious, solely, eliminated, eradicated, localized,
-colocalized, reduced, defenestration}</code>。GO-017 的判别词是 <code>eliminated</code>。</p>
+<p>
+  <span class="zh"><code>distinctive_qualitative</code> 是 gold 的 qualitative 文本与一个固定词表的交集，
+    词表为 <code>{few, no, obvious, solely, eliminated, eradicated, localized, colocalized, reduced,
+    defenestration}</code>。GO-017 的判别词是 <code>eliminated</code>。</span>
+  <span class="en"><code>distinctive_qualitative</code> is the intersection of the gold row's qualitative text
+    with a fixed lexicon: <code>{few, no, obvious, solely, eliminated, eradicated, localized, colocalized,
+    reduced, defenestration}</code>. GO-017's distinctive term is <code>eliminated</code>.</span>
+</p>
 
-<h3>当前主口径（<code>codex_union_vision_v3</code>，13/15）</h3>
+<h3><span class="zh">当前主口径（<code>codex_union_vision_v3</code>，13/15）</span>
+    <span class="en">The shipped configuration (<code>codex_union_vision_v3</code>, 13/15)</span></h3>
 <div class="scroll">
 <table>
-  <thead><tr><th>候选</th><th class="n">endpoint 门</th><th class="n">polarity 门</th><th>endpoint 重叠</th></tr></thead>
+  <thead><tr>
+    <th><span class="zh">候选</span><span class="en">Candidate</span></th>
+    <th class="n">endpoint gate</th><th class="n">polarity gate</th>
+    <th><span class="zh">endpoint 重叠</span><span class="en">endpoint overlap</span></th>
+  </tr></thead>
   <tbody>
-    <tr><td>杀伤实验记录</td><td class="n bad">False</td><td class="n good">True</td><td><code>[]</code>（空集）</td></tr>
-    <tr><td>其余 4 条</td><td class="n bad">False</td><td class="n bad">False</td><td><code>[]</code></td></tr>
+    <tr><td><span class="zh">杀伤实验记录</span><span class="en">the killing record</span></td>
+        <td class="n bad">False</td><td class="n good">True</td><td><code>[]</code></td></tr>
+    <tr><td><span class="zh">其余 4 条</span><span class="en">the other 4</span></td>
+        <td class="n bad">False</td><td class="n bad">False</td><td><code>[]</code></td></tr>
   </tbody>
 </table>
 </div>
-<p>杀伤记录写的是 <code>JS-1</code>，gold 写的是 <code>hsc</code>，
-两者作为词元不相等，所以 endpoint 重叠是<b>空集</b>，门直接不过。</p>
+<p>
+  <span class="zh">杀伤记录写的是 <code>JS-1</code>，gold 写的是 <code>hsc</code>，
+    两者作为词元不相等，所以 endpoint 重叠是<b>空集</b>，门直接不过。</span>
+  <span class="en">The killing record says <code>JS-1</code> where the gold row says <code>hsc</code>. As tokens
+    they are not equal, so the endpoint overlap is <b>empty</b> and the gate fails outright.</span>
+</p>
 
-<h3>并入实体解析后（<code>codex_union_vision_v3_entity_prepass</code>）</h3>
-<p>我们做过一个<b>论文级实体解析前置步骤</b>：先从方法学和试剂表里建一张
-<code>细胞系 → 细胞类型/状态</code> 表，再随证据包交给抽取。它<b>成功了</b> ——
-模型完成了两跳连接，引用的正是上面那三句话，逐字核对通过：</p>
-<pre><code>population: "mouse HSC cell lines"
-state:      "differentiated with TGF-β1, followed by FAP positivity enrichment"
-species:    "m.musculus"</code></pre>
-
-<div class="card bad">
-  <p style="margin-top:0"><b>但结果仍是 13/15。</b>因为 <code>mouse HSC cell line</code>
-  被写进了<b>错误的那条记录</b>：</p>
-  <div class="scroll">
-  <table>
-    <thead><tr><th>候选</th><th class="n">endpoint 门</th><th class="n">polarity 门</th><th>问题</th></tr></thead>
-    <tbody>
-      <tr><td>免疫荧光<b>定位</b>记录</td><td class="n good">True（<code>hsc</code>）</td><td class="n bad">False</td>
-          <td>它讲的是「定位」不是「清除」，缺 <code>eliminated</code></td></tr>
-      <tr><td><b>杀伤</b>记录</td><td class="n bad">False</td><td class="n good">True</td>
-          <td>没拿到群体信息，重叠仍是空集</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <p style="margin-bottom:0"><b>两条记录各过一道门，没有一条两道都过。</b>
-  实体信息只进了定位记录，没进杀伤记录 —— 原因尚未查清。</p>
-</div>
-
-<h2 id="rules">5. 什么算「正当」的解法 —— 请务必读这一节</h2>
+<h2 id="rules"><span class="zh">5. 什么算「正当」的解法 —— 请务必读这一节</span>
+                <span class="en">5. What counts as a legitimate fix — please read this</span></h2>
 
 <div class="card bad">
-<p style="margin-top:0"><b>已经有 4 种方案因为跨越这条线而被主动否决，尽管它们能提高数字。</b></p>
+<p style="margin-top:0">
+  <span class="zh"><b>已经有 4 种方案因为跨越这条线而被主动否决，尽管它们能提高数字。</b></span>
+  <span class="en"><b>Four approaches were deliberately refused for crossing this line, even though they
+    would have raised the number.</b></span>
+</p>
 <div class="scroll">
 <table>
-  <thead><tr><th>被否决的方案</th><th>否决依据</th></tr></thead>
+  <thead><tr>
+    <th><span class="zh">被否决的方案</span><span class="en">Refused approach</span></th>
+    <th><span class="zh">否决依据</span><span class="en">Evidence that killed it</span></th>
+  </tr></thead>
   <tbody>
-    <tr><td>把「等价词」分组，让同义词能互相匹配</td>
-        <td>500 个机械生成的反向对照中<b>错误接受 150 个</b>；默认口径 recall 从 10 掉到 8</td></tr>
-    <tr><td>归并 <code>-ize/-ization</code> 词形</td>
-        <td>反向对照 80/500 → <b>110/500</b>；零收益</td></tr>
-    <tr><td>把 <code>colocalized</code> 映射到 <code>localized</code></td>
-        <td>能直接给 13/15 也拒了。理由：那套枚举词表是<b>一元</b>的，
-            它命名关系、从不命名关系的参数 —— 同一张图、同一条证据，
-            模型声明 <code>colocalized</code> 则通过、声明 <code>not_colocalized</code> 则否决，
-            <b>判定翻转取决于一个任意选择</b></td></tr>
-    <tr><td>把分母从 <code>min()</code> 改成 jaccard（惩罚冗长记录）</td>
-        <td>recall 掉到 10/15；且第一轮看似支持它的测量后来被证明<b>被另一个 bug 混淆</b></td></tr>
+    <tr><td><span class="zh">把「等价词」分组，让同义词能互相匹配</span>
+            <span class="en">Group terms into equivalence classes so synonyms can match</span></td>
+        <td><span class="zh">500 个机械生成的反向对照中<b>错误接受 150 个</b>；默认口径 recall 从 10 掉到 8</span>
+            <span class="en"><b>150 of 500</b> mechanically generated negative controls wrongly accepted;
+              recall on the default root fell from 10 to 8</span></td></tr>
+    <tr><td><span class="zh">归并 <code>-ize/-ization</code> 词形</span>
+            <span class="en">Collapse the <code>-ize/-ization</code> morphology</span></td>
+        <td><span class="zh">反向对照 80/500 → <b>110/500</b>；零收益</span>
+            <span class="en">Negative controls 80/500 → <b>110/500</b>; no outcome gained</span></td></tr>
+    <tr><td><span class="zh">把 <code>colocalized</code> 映射到 <code>localized</code></span>
+            <span class="en">Map <code>colocalized</code> onto <code>localized</code></span></td>
+        <td><span class="zh">能直接给 13/15 也拒了。理由：那套枚举词表是<b>一元</b>的，
+              它命名关系、从不命名关系的参数 —— 同一张图、同一条证据，
+              模型声明 <code>colocalized</code> 则通过、声明 <code>not_colocalized</code> 则否决，
+              <b>判定翻转取决于一个任意选择</b></span>
+            <span class="en">Refused although it would have delivered 13/15 on its own. The enum vocabulary is
+              <b>unary</b>: it names a relation and never the relation's arguments. On the same figure and the
+              same evidence, declaring <code>colocalized</code> admits the row and declaring
+              <code>not_colocalized</code> vetoes it — <b>the verdict flips on an arbitrary choice</b></span></td></tr>
+    <tr><td><span class="zh">把分母从 <code>min()</code> 改成 jaccard（惩罚冗长记录）</span>
+            <span class="en">Change the denominator from <code>min()</code> to Jaccard (charge for bulk)</span></td>
+        <td><span class="zh">recall 掉到 10/15；且第一轮看似支持它的测量后来被证明<b>被另一个 bug 混淆</b></span>
+            <span class="en">Recall fell to 10/15, and the first measurement that appeared to favour it was
+              later shown to have been <b>confounded by an unrelated bug</b></span></td></tr>
   </tbody>
 </table>
 </div>
 </div>
 
-<h3>硬性禁止</h3>
-<ul>
+<h3><span class="zh">硬性禁止</span><span class="en">Hard prohibitions</span></h3>
+<ul class="zh">
   <li><b>不得修改</b> <code>src/extraction/evaluate_final_gold_dynamic.py</code> 的匹配逻辑、三道门、或 <code>minimum_score</code>（0.42）。</li>
   <li><b>不得</b>在打分路径上加入任何「细胞系 → 细胞类型」的别名表或映射表。</li>
   <li><b>不得</b>把 <code>activated HSC</code>、<code>hepatic stellate</code>、<code>JS-1</code>
@@ -232,9 +332,21 @@ species:    "m.musculus"</code></pre>
       <span class="tag">判定标准</span> 如果一个改动的<b>出发点</b>是读了门的行为，那就是照着答案改。</li>
   <li><b>不得</b>修改 <code>data/annotations/gold_v1/</code> 下的任何文件。</li>
 </ul>
+<ul class="en">
+  <li><b>Do not modify</b> the matching logic, the three gates, or <code>minimum_score</code> (0.42) in
+      <code>src/extraction/evaluate_final_gold_dynamic.py</code>.</li>
+  <li><b>Do not</b> add any cell-line-to-cell-type alias or mapping table anywhere on the scoring path.</li>
+  <li><b>Do not</b> put <code>activated HSC</code>, <code>hepatic stellate</code>, <code>JS-1</code> or any
+      gold phrasing into a prompt, a contract or code as a term to use. The rule must be <b>general</b> and
+      apply to all nine papers alike.</li>
+  <li><b>Do not</b> write a rule whose justification is "this makes the killing record pass the gate".
+      <span class="tag">test</span> If a change <b>originates</b> from reading how the gate behaves, it is
+      fitting the answer key.</li>
+  <li><b>Do not</b> modify anything under <code>data/annotations/gold_v1/</code>.</li>
+</ul>
 
-<h3>什么是可以的</h3>
-<ul>
+<h3><span class="zh">什么是可以的</span><span class="en">What is allowed</span></h3>
+<ul class="zh">
   <li>让<b>抽取产出更完整、更真实的信息</b> —— 例如让实体信息一致地到达每一条引用了同一细胞系的记录。
       这是修一个不一致，不是放松尺子。</li>
   <li>修一个<b>正在错误丢弃正确结果</b>的缺陷。<span class="tag">已验证有效</span>
@@ -243,36 +355,63 @@ species:    "m.musculus"</code></pre>
   <li>一切改动<b>必须挂在开关后面</b>（<code>config/feature_flags.yaml</code>），默认关闭，
       理由里写<b>实测数字</b>而不是期望。</li>
 </ul>
+<ul class="en">
+  <li>Make the <b>extraction produce more complete, more faithful information</b> — for instance, making entity
+      information reach every record about the same cell line consistently. That fixes an inconsistency; it does
+      not loosen the ruler.</li>
+  <li>Fix a defect that is <b>discarding correct results</b>. <span class="tag">proven</span>
+      The one approach that worked was of this kind: a hallucinated evidence id in the
+      <code>eligibility</code> field caused an entire response — including <b>six correct records</b> — to be
+      thrown away, and one of them was GO-002, another missing outcome.</li>
+  <li>Every change <b>must sit behind a flag</b> in <code>config/feature_flags.yaml</code>, defaulting off, with
+      a rationale stating <b>measured numbers</b> rather than expectations.</li>
+</ul>
 
 <div class="card mid">
-<p style="margin-top:0"><b>必须做对照组。</b>最近三次实验都出现过「看似有收益」的情况，
-而对照组证明收益来自<b>合并动作本身</b>、不是那个改动。
-其中一次如果没做对照，会被报成「证据准确率 +1 的成功」。</p>
-<p style="margin-bottom:0"><b>必须报告全部影响</b>：recall、precision、evidence accuracy、
-以及<b>每一条已匹配结果有没有换配对</b>。一个 +1 掩盖着一次错换，不算收益。</p>
+<p style="margin-top:0">
+  <span class="zh"><b>必须做对照组。</b>最近三次实验都出现过「看似有收益」的情况，
+    而对照组证明收益来自<b>合并动作本身</b>、不是那个改动。
+    其中一次如果没做对照，会被报成「证据准确率 +1 的成功」。</span>
+  <span class="en"><b>Run a control arm.</b> The last three experiments all showed apparent gains that a control
+    attributed to the <b>merge itself</b> rather than to the change under test. One of them would have shipped
+    as "evidence accuracy +1, a success" had no control been run.</span>
+</p>
+<p style="margin-bottom:0">
+  <span class="zh"><b>必须报告全部影响</b>：recall、precision、evidence accuracy、
+    以及<b>每一条已匹配结果有没有换配对</b>。一个 +1 掩盖着一次错换，不算收益。</span>
+  <span class="en"><b>Report the whole effect</b>: recall, precision, evidence accuracy, and
+    <b>whether any already-matched outcome changed assignment</b>. A +1 that hides a swap is not a gain.</span>
+</p>
 </div>
 
-<h2>6. 怎么部署</h2>
+<h2><span class="zh">6. 怎么部署</span><span class="en">6. Deployment</span></h2>
 
-<p>项目有<b>两条链</b>，需求完全不同。</p>
+<p>
+  <span class="zh">项目有<b>两条链</b>，需求完全不同。</span>
+  <span class="en">There are <b>two chains</b>, with different requirements.</span>
+</p>
 
-<h3>评测链 —— clone 下来即可跑，无需网络、服务或 API 配额</h3>
+<h3><span class="zh">评测链 —— clone 下来即可跑，无需网络、服务或 API 配额</span>
+    <span class="en">Evaluation — runs from a clone with no network, no services and no API quota</span></h3>
 <pre><code>git clone &lt;repo&gt; AI-LNP &amp;&amp; cd AI-LNP
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-# 全部测试：791 通过（全新 clone 中 790 通过 + 1 skip）
+# full suite: 800 pass (799 + 1 skip in a fresh clone)
 OPENAI_API_KEY= .venv/bin/python -m pytest tests/ -q
 
-# 默认单次跑的 recall：11/15
+# single-run recall: 11/15
 OPENAI_API_KEY= .venv/bin/python -m src.extraction.evaluate_final_gold_dynamic \
   --confirm-write
 
-# 重建 13/15 的产物（逐字节可复现）
+# rebuild the 13/15 artifact (byte-reproducible)
 AI_LNP_FLAG_RECORD_LEVEL_SALVAGE=1 \
   .venv/bin/python -m src.extraction.build_union_vision_v3 --confirm-write</code></pre>
 
-<p class="sub" style="margin-bottom:0">评分某个 result root：</p>
+<p class="sub" style="margin-bottom:0">
+  <span class="zh">评分某个 result root：</span>
+  <span class="en">Score a given result root:</span>
+</p>
 <pre><code>OPENAI_API_KEY= .venv/bin/python -c "
 from pathlib import Path
 from src.config_flags import override
@@ -282,132 +421,257 @@ with override(vision_relationship_polarity=True):
 print(r['recovered'], '/', r['total'], r['precision'], r['missing_gold_outcome_ids'])
 "</code></pre>
 
-<h3>摄取链 —— 已验证可从零跑通</h3>
-<p class="sub" style="margin-bottom:.5rem">全新 clone 实测：取数 9/9、建语料 9 篇共 1455 块、块数与仓库已提交的逐篇一致。仅需联网。</p>
-<pre><code># 1. 取开放获取包（体积大、许可不同，未纳入 Git）
+<h3><span class="zh">摄取链 —— 已验证可从零跑通，仅需联网</span>
+    <span class="en">Ingestion — verified to work from nothing; needs network</span></h3>
+<p class="sub" style="margin-bottom:.5rem">
+  <span class="zh">全新 clone 实测：取数 9/9、建语料 9 篇共 1455 块、块数与仓库已提交的逐篇一致。</span>
+  <span class="en">Measured in a fresh clone: 9/9 papers fetched, all nine corpora built at 1455 blocks, and the
+    rebuilt block counts match the committed ones paper for paper.</span>
+</p>
+<pre><code># 1. fetch the open-access packages (gitignored: large, differently licensed)
 .venv/bin/python -m src.screening.retrieve_gold_oa_packages --confirm-write
 
-# 2. 建语料。--skip-missing-xml 把缺失记为告警而非中断
+# 2. build the block corpus
 .venv/bin/python -m src.rag.ingestion --confirm-write --skip-missing-xml
 
-# 3. 检索依赖（torch / faiss）在另一个环境
+# 3. retrieval needs torch and faiss, in a second environment
 python3 -m venv .venv-rag &amp;&amp; .venv-rag/bin/pip install -r requirements-rag.txt
 .venv-rag/bin/python -m src.rag.run_pipeline</code></pre>
 
-<h2>7. 怎么调用 Codex</h2>
+<h2><span class="zh">7. 怎么调用 Codex</span><span class="en">7. How Codex is invoked</span></h2>
 
 <div class="card good">
-<p style="margin-top:0"><b>本项目全程不使用 OpenAI 付费 API</b>，所有模型调用都走本机的
-<code>codex exec</code>，<code>openai_api_requests</code> 恒为 <code>0</code>。
-<code>OPENAI_API_KEY</code> 必须<b>置空</b>传入，否则会走付费路径。</p>
+<p style="margin-top:0">
+  <span class="zh"><b>免费路径全程不使用 OpenAI 付费 API</b>，所有模型调用都走本机的
+    <code>codex exec</code>，<code>openai_api_requests</code> 恒为 <code>0</code>。
+    <code>OPENAI_API_KEY</code> 必须<b>置空</b>传入，否则会走付费路径。</span>
+  <span class="en"><b>The free path makes no paid OpenAI API requests.</b> Every model call goes through the local
+    <code>codex exec</code> binary and <code>openai_api_requests</code> is always <code>0</code>.
+    <code>OPENAI_API_KEY</code> must be passed <b>blank</b>, or the paid path is taken instead.</span>
+</p>
 </div>
 
-<p>核心调用（见 <code>src/extraction/run_codex_one_call.py</code>）：</p>
+<p>
+  <span class="zh">核心调用（见 <code>src/extraction/run_codex_one_call.py</code>）：</span>
+  <span class="en">The core invocation (see <code>src/extraction/run_codex_one_call.py</code>):</span>
+</p>
 <pre><code>subprocess.run(
     [
         "codex", "exec",
         "-m", "gpt-5.6-terra",
         "-c", "model_reasoning_effort=low",
-        "--output-schema", str(schema_path),   # 严格 JSON Schema
+        "--output-schema", str(schema_path),   # strict JSON Schema
         "--sandbox", "read-only",
         "--skip-git-repo-check",
         "--ephemeral",
-        "-o", str(output_path),                # 模型最终回复写到这里
-        "-",                                   # prompt 从 stdin 读入
+        "-o", str(output_path),                # final message written here
+        "-",                                   # prompt arrives on stdin
     ],
     cwd=workdir, input=prompt, capture_output=True, text=True,
     timeout=timeout,
     env={**os.environ, "OPENAI_API_KEY": "", "SENSENOVA_API_KEY": ""},
 )</code></pre>
 
-<p>命令行入口（所有写盘入口都需要显式确认参数）：</p>
-<pre><code># 抽取一篇论文
+<p>
+  <span class="zh"><b>codex CLI 不在本仓库中</b> —— 它由 <code>shutil.which("codex")</code> 从 PATH 解析，
+    需单独安装（开发时用的是 <code>codex-cli 0.145.0</code>）。它是平台二进制、独立升级，
+    本项目依赖的只是它的 CLI 契约。</span>
+  <span class="en"><b>The codex CLI is not vendored here</b> — it is resolved from <code>PATH</code> via
+    <code>shutil.which("codex")</code> and must be installed separately (developed against
+    <code>codex-cli 0.145.0</code>). It is a platform binary on its own release cycle; this repository depends
+    only on its CLI contract.</span>
+</p>
+
+<p>
+  <span class="zh">命令行入口。<b>免费与付费之间没有配置开关</b> ——
+    选择体现在你调用哪个模块、传哪个确认参数上，这是刻意的：付费调用必须写在命令行上，
+    而不是由某人上周改过的配置文件静默开启。</span>
+  <span class="en">Command-line entry points. <b>There is no configuration switch between free and paid</b> —
+    the choice is which module you invoke and which confirmation flag you pass. That is deliberate: a paid call
+    must be visible on the command line, not enabled by a config file someone edited last week.</span>
+</p>
+<pre><code># extract one paper — free path
 OPENAI_API_KEY= .venv/bin/python -m src.extraction.run_codex_one_call \
   --paper-id GP-008 --evidence-view full --confirm-codex-quota
 
-# 实体解析前置（九篇）
-OPENAI_API_KEY= AI_LNP_FLAG_ENTITY_RESOLUTION_PREPASS=1 \
-  .venv/bin/python -m src.extraction.run_entity_prepass --confirm-codex-quota</code></pre>
+# the same work on the paid path — different module, different flag
+.venv/bin/python -m src.extraction.run_compact_one_call \
+  --paper-id GP-008 --evidence-view full --confirm-paid-call</code></pre>
 
-<h3>严格 Schema 的两个坑</h3>
-<ul>
+<h3><span class="zh">严格 Schema 的两个坑</span><span class="en">Two traps in strict schema mode</span></h3>
+<ul class="zh">
   <li>OpenAI 的 strict 模式要求<b>每一个 object 都有</b> <code>additionalProperties: false</code>。
       <code>to_strict_json_schema</code> 对自由映射会输出 <code>true</code>，必须<b>强制覆盖</b>，
       用 <code>setdefault</code> 不起作用。</li>
   <li>把一个自由映射封死成空对象，会让「<code>resolved</code> 必须带 <code>corrected_fragment</code>」
       这类约束<b>无法被满足</b>。正确做法是给它一个具体的字段结构，而不是封死。</li>
 </ul>
+<ul class="en">
+  <li>Strict mode requires <code>additionalProperties: false</code> on <b>every</b> object.
+      <code>to_strict_json_schema</code> emits <code>true</code> for a free-form mapping, so it must be
+      <b>forced</b> — <code>setdefault</code> does not work.</li>
+  <li>Sealing a free-form mapping into an empty object makes constraints such as "<code>resolved</code> requires
+      <code>corrected_fragment</code>" <b>unsatisfiable</b>. Give it a concrete field shape instead of sealing it.</li>
+</ul>
 
-<h2>8. 关键文件</h2>
+<h2><span class="zh">8. 关键文件</span><span class="en">8. Key files</span></h2>
 <div class="scroll">
 <table>
-  <thead><tr><th>路径</th><th>作用</th></tr></thead>
+  <thead><tr>
+    <th><span class="zh">路径</span><span class="en">Path</span></th>
+    <th><span class="zh">作用</span><span class="en">Role</span></th>
+  </tr></thead>
   <tbody>
-    <tr><td><code>src/extraction/evaluate_final_gold_dynamic.py</code></td><td>评测器与三道门 · <b>禁止修改</b></td></tr>
-    <tr><td><code>src/extraction/compact_prompt_v1.py</code></td><td>抽取 prompt，按开关追加规则、从不改写冻结文本</td></tr>
-    <tr><td><code>src/extraction/compact_contracts.py</code></td><td>输出契约（pydantic）</td></tr>
-    <tr><td><code>src/extraction/entity_resolution.py</code></td><td>实体解析前置：细胞系 → 类型/状态，每条映射必须引用包内证据 id</td></tr>
-    <tr><td><code>src/extraction/build_union_vision_v3.py</code></td><td>重建 13/15 产物的脚本</td></tr>
-    <tr><td><code>config/feature_flags.yaml</code></td><td>18 个开关；默认开的必须带可复现的实测依据</td></tr>
-    <tr><td><code>data/annotations/gold_v1/</code></td><td>金标准 · <b>禁止修改</b></td></tr>
-    <tr><td><code>docs/ai_lnp_recall_improvement_design_zh.html</code></td><td>完整设计文档，含全部 9 次尝试的记录与否决理由</td></tr>
+    <tr><td><code>src/extraction/evaluate_final_gold_dynamic.py</code></td>
+        <td><span class="zh">评测器与三道门 · <b>禁止修改</b></span>
+            <span class="en">Evaluator and the three gates · <b>do not modify</b></span></td></tr>
+    <tr><td><code>src/extraction/compact_prompt_v1.py</code></td>
+        <td><span class="zh">抽取 prompt，按开关追加规则、从不改写冻结文本</span>
+            <span class="en">Extraction prompts; flags append rules and never rewrite the frozen text</span></td></tr>
+    <tr><td><code>src/extraction/compact_contracts.py</code></td>
+        <td><span class="zh">输出契约（pydantic）</span><span class="en">Output contracts (pydantic)</span></td></tr>
+    <tr><td><code>src/extraction/entity_resolution.py</code></td>
+        <td><span class="zh">实体解析前置：细胞系 → 类型/状态，每条映射必须引用包内证据 id</span>
+            <span class="en">Entity pre-pass: cell line → population/state; every mapping must cite evidence ids in the packet</span></td></tr>
+    <tr><td><code>src/extraction/build_union_vision_v3.py</code></td>
+        <td><span class="zh">重建 13/15 产物的脚本</span>
+            <span class="en">Script that rebuilds the 13/15 artifact</span></td></tr>
+    <tr><td><code>config/feature_flags.yaml</code></td>
+        <td><span class="zh">18 个开关；默认开的必须带可复现的实测依据</span>
+            <span class="en">18 flags; anything defaulting on must carry a reproducible measurement</span></td></tr>
+    <tr><td><code>data/annotations/gold_v1/</code></td>
+        <td><span class="zh">金标准 · <b>禁止修改</b></span>
+            <span class="en">The gold set · <b>do not modify</b></span></td></tr>
+    <tr><td><code>docs/ai_lnp_recall_improvement_design_zh.html</code></td>
+        <td><span class="zh">完整设计文档，含全部 9 次尝试的记录与否决理由</span>
+            <span class="en">Full design document, with all nine attempts and the reasoning behind each refusal</span></td></tr>
   </tbody>
 </table>
 </div>
 
-<h2>9. 一条线索已查证 —— 结论是「无可修之处」</h2>
+<h2><span class="zh">9. 一条线索已查证 —— 结论是「无可修之处」</span>
+    <span class="en">9. One lead investigated — the answer was "nothing to fix"</span></h2>
 <div class="card bad">
-<p style="margin-top:0">此前我以为：实体信息只到达了免疫荧光记录、没到达杀伤记录，
-是「实体表未被一致应用」的可修缺陷。<b>派 Agent 查证后，这个前提的两半都是错的。</b></p>
+<p style="margin-top:0">
+  <span class="zh">此前我以为：实体信息只到达了免疫荧光记录、没到达杀伤记录，
+    是「实体表未被一致应用」的可修缺陷。<b>查证后，这个前提的两半都是错的。</b></span>
+  <span class="en">The working theory was that the entity information reached the immunofluorescence record but
+    not the killing record, and that this was a fixable inconsistency. <b>Both halves of that premise were
+    false.</b></span>
+</p>
 <div class="scroll">
 <table>
-  <thead><tr><th>原假设</th><th>查证结果</th></tr></thead>
+  <thead><tr>
+    <th><span class="zh">原假设</span><span class="en">Hypothesis</span></th>
+    <th><span class="zh">查证结果</span><span class="en">What was found</span></th>
+  </tr></thead>
   <tbody>
-    <tr><td>实体表把群体写进了免疫荧光记录</td>
-        <td><b>没有。</b>那条记录里的 <code>hsc</code> 是模型对包内原句
-            <code>"…observed in areas populated by HSCs (Desmin+)"</code> 的改写，
-            与实体表无关。该记录的实验目标是体内原代细胞，实体表本就不覆盖，
-            按规则保留裸名 —— <b>行为正确</b></td></tr>
-    <tr><td>杀伤记录没拿到群体信息</td>
-        <td><b>那条记录根本不在该 root 里。</b>它的槽位被判为 <code>unresolved</code>
-            （「报告的靶细胞清除缺少可用数值」）—— 这是关于「无数值的句子算不算 outcome」的判断，
-            与实体表无关</td></tr>
+    <tr><td><span class="zh">实体表把群体写进了免疫荧光记录</span>
+            <span class="en">The entity table put the population into the IF record</span></td>
+        <td><span class="zh"><b>没有。</b>那条记录里的 <code>hsc</code> 是模型对包内原句
+              <code>"…observed in areas populated by HSCs (Desmin+)"</code> 的改写，与实体表无关。
+              该记录的实验目标是体内原代细胞，实体表本就不覆盖，按规则保留裸名 —— <b>行为正确</b></span>
+            <span class="en"><b>It did not.</b> The <code>hsc</code> token in that record is the model
+              paraphrasing a packet sentence, <code>"…observed in areas populated by HSCs (Desmin+)"</code>,
+              and has nothing to do with the table. That record's experiment targets primary cells in vivo,
+              which the table does not cover, so the bare line name was kept by rule — <b>correct behaviour</b></span></td></tr>
+    <tr><td><span class="zh">杀伤记录没拿到群体信息</span>
+            <span class="en">The killing record was denied the population</span></td>
+        <td><span class="zh"><b>那条记录根本不在该 root 里。</b>它的槽位被判为 <code>unresolved</code>
+              （「报告的靶细胞清除缺少可用数值」）—— 这是关于「无数值的句子算不算 outcome」的判断，与实体表无关</span>
+            <span class="en"><b>That record is not in that root at all.</b> Its slots were dispositioned
+              <code>unresolved</code> — "reported target-cell elimination lacks a usable value" — a judgement
+              about whether a sentence with no number is an outcome, unrelated to the table</span></td></tr>
   </tbody>
 </table>
 </div>
-<p><b>而且这不是偶然。</b>第二次带表运行<b>确实</b>产出了杀伤记录，
-在实体表就在眼前的情况下，它<b>仍然</b>只把群体写进 <code>therapeutic_target_cell</code>，
-endpoint 保持裸的 <code>"elimination of FAP+ JS-1 target cells"</code>。
-两次采样、同一放置方式 —— <b>这是模型稳定的判断，不是不一致。</b></p>
-<p style="margin-bottom:0"><b>没有任何一条记录拿到了群体、而另一条可比记录被拒绝。零处可修。</b></p>
+<p>
+  <span class="zh"><b>而且这不是偶然。</b>第二次带表运行<b>确实</b>产出了杀伤记录，
+    在实体表就在眼前的情况下，它<b>仍然</b>只把群体写进 <code>therapeutic_target_cell</code>，
+    endpoint 保持裸的 <code>"elimination of FAP+ JS-1 target cells"</code>。
+    两次采样、同一放置方式 —— <b>这是模型稳定的判断，不是不一致。</b></span>
+  <span class="en"><b>And it was not an accident.</b> A second run with the table attached <b>did</b> emit the
+    killing record, and <b>still</b> placed the population only on <code>therapeutic_target_cell</code>, leaving
+    the endpoint as the bare <code>"elimination of FAP+ JS-1 target cells"</code>. Two samples, same placement —
+    <b>a settled reading, not an inconsistency.</b></span>
+</p>
+<p style="margin-bottom:0">
+  <span class="zh"><b>没有任何一条记录拿到了群体、而另一条可比记录被拒绝。零处可修。</b></span>
+  <span class="en"><b>No record received the population while a comparable one was denied it. Nothing to fix.</b></span>
+</p>
 </div>
 
 <div class="card mid">
-<p style="margin-top:0"><b>对照组给出的最关键事实：</b>
-不带实体表的 root <b>包含</b>杀伤记录，而 GO-017 在那里<b>同样匹配不上</b>：</p>
-<pre style="margin-bottom:.5rem"><code>polarity 门:  过（记录含 eliminated）
-endpoint 门:  不过
-  gold 需要:  {activated, elimination, hsc}
-  记录只有:   {elimination}
-  差的两个:   activated · hsc</code></pre>
-<p style="margin-bottom:0"><b>差的这两个词，正是 gold 自己的词汇。</b>
-任何把它们塞进 outcome 字段的规则，其瞄准的对象就是这一点本身 ——
-按<a href="#rules">第 5 节</a>的判定标准，那属于照着答案改。
-<b>这是目前所有已知路径的终点。</b></p>
+<p style="margin-top:0">
+  <span class="zh"><b>对照组给出的最关键事实：</b>不带实体表的 root <b>包含</b>杀伤记录，
+    而 GO-017 在那里<b>同样匹配不上</b>：</span>
+  <span class="en"><b>The control arm's decisive fact:</b> the table-free root <b>does</b> contain the killing
+    record, and GO-017 is <b>still</b> missed there:</span>
+</p>
+<pre style="margin-bottom:.5rem"><code>polarity gate:  passes (the record contains "eliminated")
+endpoint gate:  fails
+  gold needs:   {activated, elimination, hsc}
+  record has:   {elimination}
+  missing:      activated · hsc</code></pre>
+<p style="margin-bottom:0">
+  <span class="zh"><b>差的这两个词，正是 gold 自己的词汇。</b>
+    任何把它们塞进 outcome 字段的规则，其瞄准的对象就是这一点本身 ——
+    按<a href="#rules">第 5 节</a>的判定标准，那属于照着答案改。<b>这是目前所有已知路径的终点。</b></span>
+  <span class="en"><b>The two missing tokens are the gold row's own vocabulary.</b> Any rule that put them into
+    an outcome field would be aimed at precisely that — which, by the test in <a href="#rules">section 5</a>, is
+    fitting the answer key. <b>This is the end of every path currently known.</b></span>
+</p>
 </div>
 
 <div class="card mid">
-<p style="margin-top:0"><b>另一条已知但我判断不该走的路</b>：GO-018。</p>
-<p style="margin-bottom:0">模型看到了证据，主动返回 <code>unresolved</code>，理由是
-「共染图像描述缺少可用的结果值」。<b>这是 abstain 规则在正常工作</b> ——
-该规则的存在意义就是「读不出来就说读不出来，不要编一句像样的话」。
-要让 GO-018 通过，得让模型在没有可报数值时仍然建记录，那等于拆掉这个项目最值得保留的东西。</p>
+<p style="margin-top:0">
+  <span class="zh"><b>另一条已知但我判断不该走的路</b>：GO-018。</span>
+  <span class="en"><b>A second known path, deliberately not taken</b>: GO-018.</span>
+</p>
+<p style="margin-bottom:0">
+  <span class="zh">模型看到了证据，主动返回 <code>unresolved</code>，理由是
+    「共染图像描述缺少可用的结果值」。<b>这是 abstain 规则在正常工作</b> ——
+    该规则的存在意义就是「读不出来就说读不出来，不要编一句像样的话」。
+    要让 GO-018 通过，得让模型在没有可报数值时仍然建记录，那等于拆掉这个项目最值得保留的东西。</span>
+  <span class="en">The model saw the evidence and returned <code>unresolved</code> of its own accord:
+    "co-staining image description lacks a usable result value." <b>That is the abstain rule working as
+    designed</b> — its whole purpose is that a model which cannot ground a claim says so rather than producing
+    a plausible sentence. Making GO-018 pass would require the model to emit a record with no reportable value,
+    which dismantles the single most worthwhile property this project has.</span>
+</p>
 </div>
 
-<h2>10. 一句话总结</h2>
+<h2><span class="zh">10. 一句话总结</span><span class="en">10. In one sentence</span></h2>
 <div class="card lede">
-<p style="margin-top:0">九条路里唯一成功的那条，<b>不是「想办法多捞一条」，而是「发现有东西正在被错误丢弃」</b>。</p>
-<p style="margin-bottom:0">当召回卡住时，改评判标准几乎总是错的方向。
-如果你找不到一个「正在丢弃正确结果」的地方，
-那么<b>「当前架构下无解，除非改变标注策略」</b>就是正确答案，请直接给出它。</p>
+<p style="margin-top:0">
+  <span class="zh">九条路里唯一成功的那条，<b>不是「想办法多捞一条」，而是「发现有东西正在被错误丢弃」</b>。</span>
+  <span class="en">Of nine approaches, the only one that worked <b>was not "find a way to recover one more" but
+    "find something that is being wrongly discarded"</b>.</span>
+</p>
+<p style="margin-bottom:0">
+  <span class="zh">当召回卡住时，改评判标准几乎总是错的方向。
+    如果你找不到一个「正在丢弃正确结果」的地方，
+    那么<b>「当前架构下无解，除非改变标注策略」</b>就是正确答案，请直接给出它。</span>
+  <span class="en">When recall is stuck, changing the yardstick is almost always the wrong direction. If you
+    cannot find a place where correct results are being thrown away, then <b>"there is no solution under the
+    current architecture short of changing the annotation policy"</b> is the right answer — please give it
+    plainly.</span>
+</p>
 </div>
+
+<script>
+  function setLang(lang){
+    document.documentElement.setAttribute('data-lang', lang);
+    document.getElementById('btn-zh').setAttribute('aria-pressed', String(lang === 'zh'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+    try { localStorage.setItem('go017-lang', lang); } catch (e) {}
+  }
+  (function(){
+    var saved = null;
+    try { saved = localStorage.getItem('go017-lang'); } catch (e) {}
+    if (!saved) {
+      saved = (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en';
+    }
+    setLang(saved);
+  })();
+</script>
