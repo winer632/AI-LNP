@@ -426,6 +426,40 @@ format:   html
   </div>
 
   <div class="warn">
+    <b>v24 · 「实体信息只进了错的那条记录」——这个前提的两半都是错的</b><br>
+    我据此判断「实体表没被一致应用，是个可修的不一致」。派 Agent 查证后，<b>两半都不成立</b>：
+    <div class="scroll">
+    <table>
+      <thead><tr><th>我的说法</th><th>查证结果</th></tr></thead>
+      <tbody>
+        <tr><td>实体表把 <code>mouse HSC cell line</code> 写进了免疫荧光记录</td>
+            <td class="no"><b>没有。</b>那条记录里开启 endpoint 门的 <code>hsc</code>，
+                是模型对包内原句 <code>"…observed in areas populated by HSCs (Desmin+)"</code>
+                的改写，<b>与实体表无关</b>。该记录所属实验的目标细胞是体内原代细胞，
+                实体表<b>本就不覆盖</b>，按规则「表未覆盖的细胞系保留裸名」——行为正确</td></tr>
+        <tr><td>杀伤记录没拿到群体信息</td>
+            <td class="no"><b>那条记录根本不在该 root 里。</b>它的槽位被判为
+                <code>unresolved</code>（「报告的靶细胞清除缺少可用数值」）。
+                同参数但<b>不带实体表</b>的姊妹运行把同一批槽位判为 <code>extracted</code>——
+                这是关于「无数值的句子算不算 outcome」的判断，<b>与实体表无关</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>而且这不是偶然：</b>第二次带表运行<b>确实</b>产出了杀伤记录，
+    在实体表就在眼前的情况下，它<b>仍然</b>只把群体写进 <code>therapeutic_target_cell</code>，
+    endpoint 保持裸的 <code>"elimination of FAP+ JS-1 target cells"</code>。
+    两次采样、同一放置方式。<b>这是模型稳定的判断，不是不一致。</b>
+    <br><br>
+    <b>零处可修。</b>没有任何一条记录拿到了群体，而另一条可比记录被拒绝 ——
+    Agent 逐条核对后如实报告「无可修之处」并停手，没有硬推。
+    <br><br>
+    对照组还显示：不带实体表的 root <b>包含</b>杀伤记录，而 GO-017 在那里<b>同样匹配不上</b> ——
+    polarity 门过（有 <code>eliminated</code>），endpoint 门差的是
+    <code>activated</code> 和 <code>hsc</code>，<b>正是 gold 自己的词汇</b>。
+    任何把这两个词塞进 outcome 字段的规则，其瞄准的就是这一点。
+  </div>
+
+  <div class="warn">
     <b>v23 更正 · 「差一个词元」这个说法是错的，我把两次运行的数据混了</b><br>
     我此前写过：GO-017「差一个词元，而那个词元就在这条记录自己的证据里，
     在门看不到的字段中」。实测下来<b>两处都不成立</b>：
@@ -484,7 +518,7 @@ format:   html
 
   <div class="ok">
     <b>v21 · 实体解析前置：技术上成功，recall 仍 +0，但换来证据准确率 +1</b><br>
-    这是八条路里<b>唯一真正做成了它承诺的技术任务</b>的一条。模型完成了那个两跳连接，
+    这是八条路里<b>唯一真正做成了它承诺的技术任务</b>的一条——它确实建出了正确的表。但<b>那张表没有改变任何测量</b>（见下方 v23 更正）。模型完成了那个两跳连接，
     引用的正是预判的三句话，逐字核对通过：
     <blockquote style="margin:.6em 0;padding:.5em .9em;border-left:3px solid #8a8;font-size:.92em;">
     <code>JS-1 cells (m.musculus) | YaJi Biological | YS2162C</code><br>
@@ -516,8 +550,12 @@ format:   html
       </tbody>
     </table>
     </div>
-    <b>那 +1 是真实质量提升</b>：GO-016 从一条得 0.700 但<b>证据不支持</b>的记录，
-    换到一条得 1.000 且<b>证据支持</b>的记录。
+    <b>v23 更正：那 +1 不是实体解析的功劳。</b>
+    用一次<b>不带实体表</b>的 GP-008 运行走同一个合并流程，
+    得到<b>完全相同</b>的 13/15、8/12、49 条虚增，以及<b>完全相同</b>的 GO-016 换配对
+    （0.700 证据不支持 → 1.000 证据支持）。<b>增益来自合并动作本身。</b>
+    实体表自己的贡献是 0。这条已写进开关理由并加了对照测试
+    （断言的是<b>相等</b>而非落在某个区间内，所以真实贡献藏不住）。
     <br><br>
     <b>Agent 的一个自我约束值得记：</b>它发现这个字段级缺口后，
     <b>没有</b>去改 prompt 把 population 挪进 outcome 记录，理由是
