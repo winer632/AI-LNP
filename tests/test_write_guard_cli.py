@@ -39,6 +39,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CONFIRM_WRITE_ENTRY_POINTS = (
     "src.extraction.evaluate_day5_afternoon",
     "src.extraction.evaluate_final_gold_dynamic",
+    "src.extraction.build_union_vision_v3",
     "src.extraction.merge_structured_view_pass",
     "src.extraction.prepare_day5_g1_repair",
     "src.extraction.run_enforced_compact_workflow_local",
@@ -128,7 +129,7 @@ def test_the_snapshot_actually_sees_the_repository():
 def test_every_confirm_write_entry_point_is_covered():
     """The parametrised cases below must not be able to silently empty out."""
     assert _discover_confirm_write_modules() == set(CONFIRM_WRITE_ENTRY_POINTS)
-    assert len(CONFIRM_WRITE_ENTRY_POINTS) == 7
+    assert len(CONFIRM_WRITE_ENTRY_POINTS) == 8
 
 
 @pytest.mark.parametrize("module", CONFIRM_WRITE_ENTRY_POINTS)

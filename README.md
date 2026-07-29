@@ -19,6 +19,7 @@ open-access gold-set papers.
 | Gold outcome records | 15 |
 | Final recovered outcome records, one run | 11/15 (73.3%) |
 | Final recovered outcome records, union plus vision | 12/15 (80.0%) |
+| Final recovered outcome records, plus record-level salvage | 13/15 (86.7%) |
 | Missing outcome records, one run | 4/15 (26.7%) |
 | Local candidate-inventory recall | 15/15 |
 | Current quality-gate status | **Not passed** |
@@ -30,15 +31,26 @@ reads merged and `vision_relationship_polarity` on, recovers 12/15 at 0.2264.
 Both are written by the same evaluator, so its report records `result_roots`
 and says which it is. Quote the single-run figure unless you mean the ensemble.
 
-A third figure, 13/15, comes from the blind adjudication side channel and is
-deliberately not called recall: a model verdict cannot be reproduced byte for
-byte, which is the property the primary number exists to have.
+The 13/15 figure is deterministic and rebuildable, not a side channel. It comes
+from `codex_union_vision_v3`, which unions GP-004 against a record-level salvage
+of the full-view runs and then merges two panel reads. Rebuild it with
+
+```bash
+AI_LNP_FLAG_RECORD_LEVEL_SALVAGE=1 \
+  python -m src.extraction.build_union_vision_v3 --confirm-write
+```
+
+and score it with `vision_relationship_polarity` on. An earlier version of this
+paragraph described 13/15 as a blind-adjudication side channel that could not be
+reproduced byte for byte. That was true of a different 13/15, from an earlier
+round; the current one reproduces exactly and is pinned by
+`tests/test_union_vision_v3_rebuild.py`.
 
 The 15/15 candidate-inventory result means local code can flag evidence groups
 that may represent outcomes. It does **not** mean those outcomes have been
-correctly extracted, validated, and merged. The final recovery result remains
-10/15, so the compact route is not yet reliable enough for unattended database
-expansion.
+correctly extracted, validated, and merged. The single-run recovery result is 11/15, and 13/15 is reachable only by
+combining configurations, so the compact route is not yet reliable enough for
+unattended database expansion.
 
 ## Current compact workflow
 
