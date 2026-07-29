@@ -202,6 +202,71 @@ The application does not claim a universally best formulation, validated
 four-cell prediction, prospective biological validation, or complete evidence
 recovery while the gold-set gate remains below target.
 
+## External requirements
+
+Nothing here is vendored. Three things live outside the repository, and each is
+needed by a different part of it.
+
+| | Needed by | Without it |
+|---|---|---|
+| **`codex` CLI** | every model call on the free path | those commands refuse to start |
+| **OpenAI API key** | the paid path only | the paid entry points refuse to start |
+| **UniParse service** | structural PDF parsing during ingestion | ingestion degrades to PyMuPDF with a warning |
+
+### The `codex` CLI
+
+Four modules shell out to it: `run_codex_one_call.py`, `run_codex_vision.py`,
+`run_entity_prepass.py`, `adjudicate_rejected_matches.py`. They resolve it with
+`shutil.which("codex")` — it must be on `PATH`. It is **not** committed here and
+should not be: it is a platform binary, it upgrades on its own schedule, and
+this repository depends only on its CLI contract (`codex exec`, `--output-schema`,
+stdin/stdout), not on any version.
+
+```bash
+brew install codex          # or see the codex-cli install docs
+codex --version             # developed against codex-cli 0.145.0
+```
+
+Calls made this way report `openai_api_requests: 0` and blank `OPENAI_API_KEY`
+in the child environment, so the free path cannot silently bill you.
+
+### Choosing free or paid
+
+**There is no configuration switch.** The two paths are separate entry points,
+and the choice is made by which module you invoke and which confirmation flag
+you pass. That is deliberate: a paid call must be visible on the command line,
+not enabled by a config file someone edited last week.
+
+```bash
+# free — codex CLI, zero paid requests
+OPENAI_API_KEY= .venv/bin/python -m src.extraction.run_codex_one_call \
+  --paper-id GP-008 --evidence-view full --confirm-codex-quota
+
+# paid — OpenAI SDK, spends real quota
+.venv/bin/python -m src.extraction.run_compact_one_call \
+  --paper-id GP-008 --evidence-view full --confirm-paid-call
+```
+
+Both read the same contracts, the same prompt module and the same evidence
+packet; only the executor differs. Six entry points take `--confirm-paid-call`:
+`run_compact_one_call`, `run_consolidated_gap_recovery`, `run_narrow_repair`,
+`run_missing_record_repair`, `run_missing_record_vision`, `run_selective_vision`.
+
+One asymmetry worth knowing: the **structured** evidence view is wired to the
+free path only — the paid path's `PACKET_ROOT_BY_VIEW` holds just `compact` and
+`full`. That view has only ever been measured through the codex harness, and
+wiring it to the paid path would change an assertion whose result could not be
+checked without spending money on it.
+
+### The UniParse service
+
+Set `UNIPARSE_BASE_URL` (see `.env.example`). Reachability is probed before use;
+if the service is down, ingestion falls back to the PyMuPDF page parser and
+records a warning rather than failing. That fallback is what makes
+`uniparse_ingestion` safe to default on — but the fallback loses table
+structure, which is where GO-006's value lives, so a corpus built while the
+service was unreachable is not equivalent to one built with it.
+
 ## Local setup
 
 Two chains, with different requirements. The evaluation chain needs nothing
