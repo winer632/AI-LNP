@@ -421,6 +421,49 @@ flags:
       - src/rag/compact_api_packet.py
       - src/rag/compact_packet.py
 
+  cell_line_identity:
+    # No design-document priority id: this changes what an extraction is asked
+    # to write down, not which route runs.
+    default: false
+    status: available
+    rationale: >-
+      Off, and measured off rather than assumed. The hypothesis was that
+      GP-008's killing record names only a cell line, and that a record
+      naming the population that line stands for would overlap the
+      GO-017 gold row on the biology instead of only on the assay. Two
+      full-view GP-008 runs through the codex-exec harness at this
+      instruction returned the same endpoint and the same qualitative
+      sentence as the run without it, word for word, and neither
+      response contains the words HSC, stellate or "cell line" anywhere.
+      The instruction was applied -- one run expanded BMDMs to
+      bone-marrow-derived macrophages and added the exposure time -- but
+      never to the line in the record that matters. Recall on
+      codex_union_vision_v3 plus that run is unchanged at 13/15 and
+      GO-017 is still missed, with the endpoint gate failing exactly as
+      before: endpoint overlap {elimination}, qualitative overlap
+      {eliminated, fapcar}, and the gate wants two endpoint tokens or
+      three qualitative ones. Kept because the instruction is sound on
+      its own terms and costs nothing while off; not shipped because it
+      bought nothing measured.
+    description: >-
+      Ask the extraction to name the cell type or population a cell line
+      represents, and the state it was measured in, alongside the line's own
+      name, taken only from the packet. A record carrying just a line name has
+      kept the catalogue fact and dropped the biological one, so a reader
+      cannot tell which population was measured without knowing the line. The
+      instruction is general and applies to every paper: a line the packet
+      never characterises is left as the bare line name, because the
+      alternative is the model filling it in from outside knowledge, which the
+      baseline prompt forbids. Selects compact-prompt-1.3.0, or
+      compact-prompt-1.3.1 when candidate slots are also sent; both prompts
+      above are byte-identical with this off.
+    aliases: [cell_type_alongside_line, cell_identity]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/compact_prompt_v1.py
+
   # ------------------------------------------------------------------ baseline
   # ---------------------------------------------------------------------- P3
   candidate_slot_enforcement:

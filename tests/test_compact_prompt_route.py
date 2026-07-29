@@ -4,9 +4,14 @@ from pathlib import Path
 
 import yaml
 
+from src.config_flags import override
 from src.extraction.compact_prompt_v1 import (
+    CANDIDATE_SLOT_EXTRACTION_PROMPT,
+    CANDIDATE_SLOT_PROMPT_VERSION,
+    CELL_IDENTITY_RULE,
     COMPACT_EXTRACTION_PROMPT,
     PROMPT_VERSION,
+    active_prompt,
     prompt_sha256,
 )
 
@@ -78,6 +83,52 @@ def test_route_versions_prompt_contract_packet_and_baseline():
     assert route["baseline"]["manifest"] == str(
         BASELINE.relative_to(ROOT)
     )
+
+
+def test_cell_line_identity_appends_and_leaves_both_frozen_prompts_intact():
+    """The new prompt is the old one plus a suffix, and the old one is untouched.
+
+    The whole point of versioning a prompt rather than editing it is that a run
+    made before the flag existed can still be reproduced byte for byte, cache
+    key included. Asserting the flag-on text merely "contains" the baseline
+    would pass for an edit in the middle; asserting the append explicitly is
+    what pins it.
+    """
+    baseline = COMPACT_EXTRACTION_PROMPT
+    slots = CANDIDATE_SLOT_EXTRACTION_PROMPT
+    with override(cell_line_identity=True):
+        without_slots = active_prompt(False)
+        with_slots = active_prompt(True)
+    assert COMPACT_EXTRACTION_PROMPT == baseline
+    assert CANDIDATE_SLOT_EXTRACTION_PROMPT == slots
+    assert without_slots.text == baseline + CELL_IDENTITY_RULE
+    assert with_slots.text == slots + CELL_IDENTITY_RULE
+    assert without_slots.version == "compact-prompt-1.3.0"
+    assert with_slots.version == "compact-prompt-1.3.1"
+    for selection in (without_slots, with_slots):
+        assert selection.checksum == hashlib.sha256(
+            selection.text.encode("utf-8")
+        ).hexdigest()
+    assert {without_slots.version, with_slots.version}.isdisjoint(
+        {PROMPT_VERSION, CANDIDATE_SLOT_PROMPT_VERSION}
+    )
+
+
+def test_cell_line_identity_rule_names_no_cell_type_of_its_own():
+    """It asks for the type a line represents; it must not supply one.
+
+    A rule that named a cell type would be a lexicon smuggled into the prompt:
+    the model would echo the term back and the gold row would match on the
+    prompt's vocabulary rather than on the paper's. The instruction has to work
+    for any paper, so the answer has to come from the packet.
+    """
+    lowered = CELL_IDENTITY_RULE.lower()
+    for named_type in (
+        "hsc", "hepatic stellate", "stellate", "kupffer", "hepatocyte",
+        "lsec", "endothelial", "macrophage", "fibroblast", "js-1", "activated",
+    ):
+        assert named_type not in lowered
+    assert "from outside knowledge" in lowered
 
 
 def test_frozen_baseline_checksums_match_files():
