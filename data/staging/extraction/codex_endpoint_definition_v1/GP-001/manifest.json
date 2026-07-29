@@ -1,0 +1,36 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-001",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-29T03:56:03.111883+00:00",
+  "completed_at": "2026-07-29T03:56:54.519337+00:00",
+  "elapsed_seconds": 51.404,
+  "validation_status": "valid",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "NOT_ELIGIBLE_LNP",
+      "UNSUPPORTED_PAYLOAD",
+      "NO_TARGET_CELL_EVIDENCE"
+    ],
+    "evidence_ids": [
+      "GP-001-E-75bb5b8e8164f65e",
+      "GP-001-E-a2d40855b331cf35"
+    ],
+    "explanation": "The paper reports CTD-loaded solid lipid nanoparticles, not an LNP delivering a supported RNA payload; it studies Huh-7 hepatoma cells/tumors rather than directly reported target hepatic cell types."
+  },
+  "record_counts": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0,
+    "unresolved_items": 3
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 37
+}

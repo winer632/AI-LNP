@@ -1,0 +1,2388 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-006",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-006-E-c44f9ee6708e752d",
+      "GP-006-E-6a0db3e1706fd8f7",
+      "GP-006-E-d010646bb645e446"
+    ],
+    "explanation": "Original mouse experiments used MC3 LNPs to deliver Cas9 mRNA/NSGHAsgRNA, with cell-specific gene-editing outcomes reported for isolated hepatocytes and LSECs."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "MC3 LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d",
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "MC3:cholesterol:DOPE:DMG-PEG2000 = 50:10:39:1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "lipid ethanol phase ratios",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": 8.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-0d51446684dc2c77"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "MC3",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b7f2369f5b7b5a22",
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 50.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DOPE",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-500278fee45a8a70",
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 39.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DMG-PEG2000",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-500278fee45a8a70",
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 1.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c44f9ee6708e752d"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA and sgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Cas9 mRNA/NSGHAsgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "Cas9",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "mutant F8 gene",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c96069ae41c1c7d0"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes and LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d9c30e3abca70fcb",
+          "GP-006-E-30adff05e58443b2"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "NSG HemA mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 4.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg/kg Cas9/sgRNA LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No cell-specific gene-editing collection timepoint reported."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No cell-specific gene-editing collection timepoint reported."
+      }
+    },
+    {
+      "experiment_id": "EX1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Cas9 mRNA and NSGHAsgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "Cas9",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "mutant F8 gene",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-e6fa7ca93c7f9511"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "LSEC",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-e38553aa49fd6d57"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "LSEC",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-e38553aa49fd6d57"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-e38553aa49fd6d57"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "NSG HemA mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 4.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg/kg",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-6a0db3e1706fd8f7"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Outcome timepoint is not directly reported for this experiment."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Outcome timepoint is not directly reported for this experiment."
+      }
+    },
+    {
+      "experiment_id": "E2",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-2a75a690d1b66c13"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "luciferase mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-2a75a690d1b66c13"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "luciferase",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-2a75a690d1b66c13"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes and LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1026eebfa4555fab"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter experiment; no therapeutic target cell reported."
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b55e158bccb134a3"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d7a6c5b7066a40c4"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d7a6c5b7066a40c4"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 0.2,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d7a6c5b7066a40c4"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg/kg",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d7a6c5b7066a40c4"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported for this Luc LNP experiment."
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      }
+    },
+    {
+      "experiment_id": "E1-e",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA and sgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "Cas9 mRNA and NSGHAsgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "Cas9",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": "mutant F8 exon 1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-869327d0f31db8b5"
+        ],
+        "missing_reason": null
+      },
+      "delivery_recipient_cell": {
+        "value": "LSECs and hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-869327d0f31db8b5"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "NSG hemophilia A mouse model",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-869327d0f31db8b5"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 4.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "mg/kg Cas9/sgRNA LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "intravenous",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-a9970f61b7d8daaa"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No single sampling timepoint reported for the cell-editing analysis."
+      },
+      "timepoint_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No single sampling timepoint reported."
+      }
+    }
+  ],
+  "unresolved_items": [
+    "The packet reports the 50:10:39:1 MC3 formulation for luciferase mRNA LNPs and identifies the Cas9/sgRNA carrier as MC3 LNP, but does not explicitly restate that full component ratio for the Cas9/sgRNA experiment.",
+    "The cell-specific gene-editing experiment's post-dose collection timepoint is not reported in the supplied evidence."
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing of genomic DNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5307426a332d226c",
+          "GP-006-E-22a954aae3f000e4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene editing rate in isolated hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported for this cell-specific editing rate."
+      },
+      "outcome_value": {
+        "value": 60.54,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% (mean ± 11.65%)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "F8 gene editing was detected in isolated hepatocytes.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing of genomic DNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5307426a332d226c",
+          "GP-006-E-22a954aae3f000e4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene editing rate in isolated LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported for this cell-specific editing rate."
+      },
+      "outcome_value": {
+        "value": 16.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% (mean ± 2.96%)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "F8 gene editing was detected in isolated LSECs.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-842707c55fd53a55",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "gene editing pattern analysis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "one base-pair deletions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "total deletions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 46.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "One base-pair deletions constituted the highest editing pattern in LSECs.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-1c3f88c83b5cb897",
+      "experiment_id": "E1",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay method was not reported."
+      },
+      "endpoint": {
+        "value": "Indel variants at five top predicted potential off-target sites",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-191ac0774ac7347b"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "un-editing experiments",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-191ac0774ac7347b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric outcome value was reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No outcome unit was reported."
+      },
+      "qualitative_outcome": {
+        "value": "No indel variants were found in the WT F8 gene.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-191ac0774ac7347b"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-e2d4bb67d2cf343a",
+      "experiment_id": "E1",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "endpoint": {
+        "value": "insertion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ef798f3259752156"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reported only as less than 1%; no exact numeric value provided."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reported only as part of an inequality."
+      },
+      "qualitative_outcome": {
+        "value": "Less than 1% insertion frequency was observed.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ef798f3259752156"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-c0903300f94dcdae",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "gene editing rate",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c880de483e81461c",
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "gene editing rate in total liver cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c880de483e81461c",
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator was reported."
+      },
+      "outcome_value": {
+        "value": 52.7,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c880de483e81461c",
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-c880de483e81461c",
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No additional qualitative outcome was reported."
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-fa3d41fbbfb8dbc9",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "genomic DNA indel analysis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "indel mutation rate in mouse F8 exon 1",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 23.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "mF8sgRNA induced an indel variant in mouse F8 exon 1.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-1893c0cd1beb2ee9"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-7e02be28ef250a82",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "activated partial thromboplastin time (aPTT) assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-61352269ff3b61f2",
+          "GP-006-E-0043b99ab0bf3320"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "endogenous FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-61352269ff3b61f2",
+          "GP-006-E-0043b99ab0bf3320"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-0043b99ab0bf3320"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric outcome value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No outcome unit reported."
+      },
+      "qualitative_outcome": {
+        "value": "Shorter clotting time compared with untreated mice.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-0043b99ab0bf3320"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-85f7147389be1c5a",
+      "experiment_id": "E1",
+      "assay": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Assay not specified in supplied evidence."
+      },
+      "endpoint": {
+        "value": "FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Comparator not specified in supplied evidence."
+      },
+      "outcome_value": {
+        "value": 2.6,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Approximately 2.6% FVIII activity after two injections in treated NSG HemA mice.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-577d7d7fe2448951",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "gene editing efficiency in genomic DNA extracted from whole liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "in vivo gene editing efficiency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "mF8sgRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 5.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Comparable to mF8sgRNA; both sgRNAs resulted in around 5% gene editing efficiency.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-ab6a59c6da34953c"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "OC-46a32d7d3a3de39d",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "aPTT",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-d9a16a0c73e6b6b2"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-d9a16a0c73e6b6b2"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator was reported in the supplied evidence."
+      },
+      "outcome_value": {
+        "value": 3.3,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-d9a16a0c73e6b6b2"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-d9a16a0c73e6b6b2"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Average FVIII activity was 3.30% ± 0.68% over 26 weeks.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-d9a16a0c73e6b6b2"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O1-2",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4ceac57b349b591a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "LSEC total deletion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-afee66191e056d5c"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported in this table row."
+      },
+      "outcome_value": {
+        "value": 16.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-afee66191e056d5c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-afee66191e056d5c"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "A numeric result is reported."
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O1"
+    },
+    {
+      "outcome_id": "O2-2",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4ceac57b349b591a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "hepatocyte total deletion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-28a58dda71c052ff"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported in this table row."
+      },
+      "outcome_value": {
+        "value": 60.54,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-28a58dda71c052ff"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-28a58dda71c052ff"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "A numeric result is reported."
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O2"
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4ceac57b349b591a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "LSEC total insertion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-bd54a6566769fd63"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported in this table row."
+      },
+      "outcome_value": {
+        "value": 1.01,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-bd54a6566769fd63"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-bd54a6566769fd63"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "A numeric result is reported."
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4ceac57b349b591a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "hepatocyte total insertion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-3e5bcf4572ceda00"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported in this table row."
+      },
+      "outcome_value": {
+        "value": 4.23,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-3e5bcf4572ceda00"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-3e5bcf4572ceda00"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "A numeric result is reported."
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O5",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "total liver-cell gene editing rate",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported."
+      },
+      "outcome_value": {
+        "value": 52.7,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "A numeric result is reported."
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O6",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "aPTT assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-61352269ff3b61f2"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "endogenous FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value is reported for this result."
+      },
+      "outcome_value": {
+        "value": 2.6,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5f1df7ac5c7ec3f9"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "A numeric result is reported."
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O7",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "ROTEM",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-4f5bf6ad6622f76c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "clotting time and clot formation time",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-4f5bf6ad6622f76c"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-4f5bf6ad6622f76c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric CT or CFT value is provided."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric CT or CFT value is provided."
+      },
+      "qualitative_outcome": {
+        "value": "Cas9/sgRNA LNP-treated mice had shorter CT and CFT durations than untreated mice.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-4f5bf6ad6622f76c"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O8",
+      "experiment_id": "EX1",
+      "assay": {
+        "value": "next generation sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-eb4d5fb309467d40"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "indel frequency at five predicted off-target sites",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-eb4d5fb309467d40"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-eb4d5fb309467d40"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Five site-specific values are reported rather than one aggregate value."
+      },
+      "outcome_unit": {
+        "value": "% indel",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-eb4d5fb309467d40"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Off-target indel frequencies were 0.00%, 0.30%, 0.00%, 0.00%, and 0.17% in treated mice versus 0.00%, 0.31%, 0.00%, 0.00%, and 0.22% in controls.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-eb4d5fb309467d40"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O1-3",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5307426a332d226c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene editing rate in hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446",
+          "GP-006-E-ab5a32e037c62749"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 60.54,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446",
+          "GP-006-E-ab5a32e037c62749"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446",
+          "GP-006-E-ab5a32e037c62749"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "± 11.65%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O1"
+    },
+    {
+      "outcome_id": "O2-3",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5307426a332d226c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene editing rate in LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446",
+          "GP-006-E-ab5a32e037c62749"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 16.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446",
+          "GP-006-E-ab5a32e037c62749",
+          "GP-006-E-7066b69b1d22a88d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446",
+          "GP-006-E-ab5a32e037c62749",
+          "GP-006-E-7066b69b1d22a88d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "± 2.96%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O2"
+    },
+    {
+      "outcome_id": "O3-2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5307426a332d226c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "gene editing rate in total liver cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e",
+          "GP-006-E-c880de483e81461c"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 52.7,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e",
+          "GP-006-E-c880de483e81461c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-5b17d5bf9a42504e",
+          "GP-006-E-c880de483e81461c"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not reported."
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O3"
+    },
+    {
+      "outcome_id": "O4-2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "one base-pair deletions among LSEC deletions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda",
+          "GP-006-E-3c6e73bc825c5293"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 46.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda",
+          "GP-006-E-3c6e73bc825c5293"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent of total deletions",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "highest editing pattern",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-9c61cae7b3cbdfda"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O4"
+    },
+    {
+      "outcome_id": "O5-2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "indel variant analysis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b9606d3f1fb87b4c"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "+2 insertion frequency",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b9606d3f1fb87b4c",
+          "GP-006-E-d51e57e7bfc1ef65",
+          "GP-006-E-ef798f3259752156"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "deletion variants",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b9606d3f1fb87b4c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 0.78,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b9606d3f1fb87b4c",
+          "GP-006-E-d51e57e7bfc1ef65"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b9606d3f1fb87b4c"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "significantly lower than deletion variants",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-b9606d3f1fb87b4c"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O5"
+    },
+    {
+      "outcome_id": "O6-2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "aPTT assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-0062483addf27f5e"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric comparator reported."
+      },
+      "outcome_value": {
+        "value": 3.3,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "± 0.68% over 26 weeks; significant improvement reported",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d",
+          "GP-006-E-0062483addf27f5e"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O6"
+    },
+    {
+      "outcome_id": "O7-2",
+      "experiment_id": "E2",
+      "assay": {
+        "value": "luciferase assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-331470ab8527c636"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "luciferase expression in hepatocytes relative to LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d9c30e3abca70fcb"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d9c30e3abca70fcb"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 17.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d9c30e3abca70fcb"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "fold higher expression",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d9c30e3abca70fcb"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "expression obtained from both hepatocytes and LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d9c30e3abca70fcb"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O7"
+    },
+    {
+      "outcome_id": "O1-4",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-22a954aae3f000e4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene-editing rate in isolated LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported for this cell-specific editing value."
+      },
+      "outcome_value": {
+        "value": 16.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "%",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "F8 gene editing was detected in isolated LSECs.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-d010646bb645e446"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O1"
+    },
+    {
+      "outcome_id": "O2-4",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "activated partial thromboplastin time (aPTT) assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "FVIII activity over 26 weeks",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numerical comparator reported for this outcome."
+      },
+      "outcome_value": {
+        "value": 3.3,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Average FVIII activity was sustained over 26 weeks.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-8e9084aadcfe157d"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O2"
+    },
+    {
+      "outcome_id": "O3-3",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "next-generation sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-04a36692cd969e4a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "indel variants at five predicted off-target sites",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-04a36692cd969e4a"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-04a36692cd969e4a"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric value reported."
+      },
+      "qualitative_outcome": {
+        "value": "No indel variants were found at the five predicted off-target sites.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-E-04a36692cd969e4a"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3",
+      "source_outcome_id": "O3"
+    },
+    {
+      "outcome_id": "V1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "Figure 2B",
+        "status": "reported",
+        "evidence_ids": [],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "Merge, GFP channel, and LYVE-1 channel 100 µm",
+        "status": "reported",
+        "evidence_ids": [],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not printed in the panel."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not printed in the panel."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Not printed in the panel."
+      },
+      "qualitative_outcome": {
+        "value": "GFP signal is present in LYVE-1-positive cells.",
+        "status": "reported",
+        "evidence_ids": [],
+        "missing_reason": null
+      },
+      "source_stage": "vision",
+      "vision_panel": "Merge, GFP channel, and LYVE-1 channel",
+      "printed_labels": [
+        "100 µm"
+      ],
+      "vision_relationship": "colocalized",
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O1-5",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene-editing rate in isolated LSECs",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value reported for this endpoint."
+      },
+      "outcome_value": {
+        "value": 16.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4",
+          "GP-006-FC-afee66191e056d5c"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "F8 editing was detected in LSECs.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay",
+      "source_outcome_id": "O1"
+    },
+    {
+      "outcome_id": "O2-5",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "deep sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "F8 gene-editing rate in isolated hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator value reported for this endpoint."
+      },
+      "outcome_value": {
+        "value": 60.54,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-0ec0e6fe75387fa4"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No additional qualitative result required."
+      },
+      "source_run": ".overlay",
+      "source_outcome_id": "O2"
+    },
+    {
+      "outcome_id": "O3-4",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "activated partial thromboplastin time assay",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "endogenous FVIII activity in treated NSG HemA mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "untreated NSG HemA mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-ef97cd72b14edbc4"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 3.3,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "percent FVIII activity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Mean FVIII activity was sustained over 26 weeks.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-006-FC-4c3748ac35567211"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay",
+      "source_outcome_id": "O3"
+    }
+  ]
+}

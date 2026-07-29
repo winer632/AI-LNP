@@ -1,0 +1,574 @@
+{
+  "coverage_version": "outcome-coverage-1.1.0",
+  "paper_id": "GP-004",
+  "complexity_route": "complex",
+  "candidate_groups": 57,
+  "extracted_outcomes": 7,
+  "matched_candidates": [
+    {
+      "candidate_id": "OC-054c58b2a15d1231",
+      "outcome_id": "O1",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-6e95eb7f9a180e84",
+      "outcome_id": "O7",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-3312457f9efcbcab",
+      "outcome_id": "O6",
+      "score": 1.0
+    },
+    {
+      "candidate_id": "OC-88f65d75fdf21989",
+      "outcome_id": "O2",
+      "score": 0.7667
+    },
+    {
+      "candidate_id": "OC-f8f899baab5a982d",
+      "outcome_id": "O5",
+      "score": 0.4615
+    }
+  ],
+  "unmatched_candidates": [
+    {
+      "candidate_id": "OC-cfc3f3ff55d8113f",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-7080e27ce5a79091",
+        "GP-004-FC-8ab05c380ff8612e",
+        "GP-004-FC-aade38b1bcc9dca2",
+        "GP-004-FC-e91439ffe3e5ef15"
+      ],
+      "figure_or_table": "Supplementary Fig. 1",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-518896544650d441",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-9727e33fb834be68",
+        "GP-004-E-a72862f18ec2ffcd",
+        "GP-004-E-ac5ffef51d25a107",
+        "GP-004-E-fd825b27dcaebf09"
+      ],
+      "figure_or_table": "Supplementary Fig. To",
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-40963798573c6a43",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-0a9b95ce825021c9"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-d16b5d218b5f5f5a",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-fc1b2e9e166859e2"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-51ff57a0a06eb1d9",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-475dc42bab808895"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    },
+    {
+      "candidate_id": "OC-86da2d8538970e2e",
+      "endpoint_family": "uptake",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-748a7c1bb95e21b3"
+      ],
+      "figure_or_table": null,
+      "confidence": "high"
+    }
+  ],
+  "review_candidates": [
+    {
+      "candidate_id": "OC-b924d98c5ee0c618",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-22e032321011f16e",
+        "GP-004-FC-80ed9ef13fd5ae2d"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-f12ccc22e6498844",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-17ea1941b359be56",
+        "GP-004-FC-e1fbe7fc2781550b"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-932439097b0f1733",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-56aa79972a8c0e71"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-fdc2e205d8bbc85d",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-cf9e37f897ca00db"
+      ],
+      "figure_or_table": "figure 4",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-b70aafe9c0f6b3a5",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-d7f66ab7a14baf43"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-266f7215cca1dfa7",
+      "endpoint_family": "cell_target_effect",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-59b1322fd090722e"
+      ],
+      "figure_or_table": "fig. 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-fd36192dd56da171",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-a2c53db8556fa5a1"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-e824765650c8380b",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-ba736f023c9104f6"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-e42d02cd0aa8f42f",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-b293f56409c89709",
+        "GP-004-E-e29c5e3c31a38827"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-31142d755597b87a",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-07ad4307450feadf",
+        "GP-004-FC-cf9e37f897ca00db"
+      ],
+      "figure_or_table": "figure 4",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-a0003dea2317b7f7",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-98235da2214e15c0"
+      ],
+      "figure_or_table": "table 1",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-4f4f95c7a5f70408",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-5220a7516469049f"
+      ],
+      "figure_or_table": "table 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-1119599841842f36",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-8b19bcc24507c269"
+      ],
+      "figure_or_table": "table 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-c8f3682e8d6f8b2a",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-3e0af3e8a096bfad"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-46fea00be5424de3",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-4edf1fef91a68100"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-5a41f5c550b1d73d",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-0fc40055358372a6"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-7dd02c7e03b984a6",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-43469d7d31dc2f74",
+        "GP-004-FC-8527be07372d2f01"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-a8da74c4cf9abd64",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-05a15a60c5de6cb0"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-6abc02f349d20f49",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-212a3f5a97ef9ecb"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-4a2f1296751af41e",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-5231570dd3626ea0"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-f83a3866b46afe29",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-aa1c2885867bfc0a"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-497fb2743cabc900",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-4e62cb53c25d4df7"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-2e4e0062d6ab3e65",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-a2c53db8556fa5a1"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-f52b94fef90ad854",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-616c6c9b68898327",
+        "GP-004-FC-e82b93b20b7075cd"
+      ],
+      "figure_or_table": "Fig. Here",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-60db5cd03c0b23a6",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-ba736f023c9104f6"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-d1bcdf6d436f92d1",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-b293f56409c89709",
+        "GP-004-E-e29c5e3c31a38827"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-d76e38c26ff535e0",
+      "endpoint_family": "expression",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-525e4ad8fb4e4525",
+        "GP-004-E-67be9e835a79ab2f"
+      ],
+      "figure_or_table": "Fig. Here",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-e98ed7f1f044d714",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-7959fb9320bc6c28"
+      ],
+      "figure_or_table": "figure 4c",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-6ef5a85bdd95807e",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "figure_or_table": "figure 4c",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-83b81cbc99e7d961",
+      "endpoint_family": "expression",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-5220a7516469049f"
+      ],
+      "figure_or_table": "table 2",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-8efff77fdb279db6",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-edc3539834a29b54"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-4d4829bf783ab83d",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-35fbac5ab5e96d03"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-89baa17c6fd4f543",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-a0464be15711c6e6"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-1a11cc805e137876",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-30f8f872b346590e"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-675ff78454d65c26",
+      "endpoint_family": "therapeutic_function",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-440906cb169c4960"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-cb1dfc03c6c5675c",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-7959fb9320bc6c28"
+      ],
+      "figure_or_table": "figure 4c",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-ac30f8413d9525a1",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-E-6e6304c87e73980f"
+      ],
+      "figure_or_table": "figure 4c",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-f83b0a5ef45facc3",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-b6885133ef1829b2"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-8aca7ce3776539ab",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-fca4f015314f1330"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-ec2f4916beb7b305",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-cfd19f26417f2c38",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-E-cc7782c08c528405"
+      ],
+      "figure_or_table": null,
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-3aa23151f38aab3d",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-2e8f5a6d0e0a4294"
+      ],
+      "figure_or_table": "fig. 4",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-6d7c8567a5ab3d71",
+      "endpoint_family": "toxicity",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-004-FC-66ac09c4b5f261eb"
+      ],
+      "figure_or_table": "fig. 5",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-e9f813076a9d1b4f",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-9f6bb28c7bb574ae"
+      ],
+      "figure_or_table": "figure 6",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-9379257d471cefab",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-9a04fb9c692f62ae"
+      ],
+      "figure_or_table": "figure additions",
+      "reason": "confidence_below_repair_threshold"
+    },
+    {
+      "candidate_id": "OC-e50ff7b5de4e8fcc",
+      "endpoint_family": "toxicity",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-004-FC-b176eb235b24a33a"
+      ],
+      "figure_or_table": "figure additions",
+      "reason": "confidence_below_repair_threshold"
+    }
+  ],
+  "status": "review_unmatched_groups",
+  "paid_api_requests": 0
+}

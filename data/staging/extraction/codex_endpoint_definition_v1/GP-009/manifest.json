@@ -1,0 +1,41 @@
+{
+  "harness": "codex-exec",
+  "harness_note": "Driven through `codex exec`, not client.responses.create. Compare deltas within this harness only.",
+  "paper_id": "GP-009",
+  "evidence_view": "full",
+  "model_requested": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "started_at": "2026-07-29T04:12:11.027547+00:00",
+  "completed_at": "2026-07-29T04:13:10.908840+00:00",
+  "elapsed_seconds": 59.879,
+  "validation_status": "invalid",
+  "eligibility": null,
+  "record_counts": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0,
+    "unresolved_items": 0
+  },
+  "openai_api_requests": 0,
+  "codex_exec_turns": 1,
+  "salvage": {
+    "status": "unsalvageable",
+    "kept": {
+      "formulations": 0,
+      "components": 0,
+      "experiments": 0,
+      "outcomes": 0
+    },
+    "rejected": {
+      "formulations": 0,
+      "components": 0,
+      "experiments": 0,
+      "outcomes": 0
+    },
+    "eligibility_kept": false,
+    "dropped": 2
+  },
+  "candidate_slot_enforcement": true,
+  "candidate_slots": 74
+}

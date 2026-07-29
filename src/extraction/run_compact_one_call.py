@@ -14,10 +14,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from openai.lib._pydantic import to_strict_json_schema
 from src.config_flags import is_enabled
-from src.extraction.compact_contracts import (
-    CandidateSlotExtractionResponse,
-    CompactExtractionResponse,
-)
+from src.extraction.compact_contracts import active_response_contract
 from src.extraction.compact_validation import validate_candidate
 from src.extraction.assess_outcome_complexity import assess
 from src.extraction.build_outcome_candidates import build_candidates
@@ -205,11 +202,7 @@ def run_one(
         else None
     )
     prompt = active_prompt(candidate_slots is not None)
-    response_model = (
-        CandidateSlotExtractionResponse
-        if candidate_slots is not None
-        else CompactExtractionResponse
-    )
+    response_model = active_response_contract(candidate_slots is not None)
     input_tokens = estimated_input_tokens(
         packet_payload, prompt=prompt.text, candidate_slots=candidate_slots
     )

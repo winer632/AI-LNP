@@ -521,6 +521,74 @@ flags:
       - src/extraction/compact_prompt_v1.py
       - src/extraction/run_codex_one_call.py
 
+  endpoint_definition:
+    # No design-document priority id: this defines a field the contract already
+    # has, rather than adding a stage or changing which route runs.
+    default: false
+    status: available
+    rationale: >-
+      MEASURED, AND THE MEASUREMENT SAYS NO -- the third prompt amendment
+      in a row to say it. The gap it addresses is real and is not a
+      matter of opinion: the contract defines every scientific field it
+      has except this one, and the annotation convention it is silent
+      about is firm. The definition is also obeyed. What it does not buy
+      is a record anyone was missing. Nine papers, full view,
+      gpt-5.6-terra at low effort, prompt 1.6.1 against the 1.2.1
+      control already committed in codex_full_view_v2 -- same evidence
+      view, same packets down to their checksums, same candidate slots,
+      differing only in the appended rule and the schema description.
+      Nine codex-exec turns, zero paid API requests. Eight of nine
+      responses validated; GP-009 failed on an eligibility reason code,
+      as its control did. Endpoints did get more specific: mean endpoint
+      length rose on every eligible paper, and on GP-005 all four
+      endpoints name the population where the control's named none. But
+      the control was already naming a population in 16 of its 21
+      records, against 29 of 36 here, which is the finding -- the model
+      mostly did this unprompted, and what the rule reliably added was
+      records, 36 against 21 for the same nine packets. Merged over
+      codex_union_vision_v3, recall is 13/15 before and after, GO-017
+      and GO-018 missed in both. Precision 0.220339 falls to 0.136842 as
+      59 records become 95 and false additions 46 become 82. Evidence
+      accuracy improves, 7 of 12 checked to 8 of 12. Three matched rows
+      changed assignment and none regressed: GO-016 moved to a record
+      scoring 1.000 whose cited evidence supports it from one scoring
+      0.700 whose evidence did not, and GO-011 (0.675 to 0.781) and
+      GO-013 (0.711 to 0.878) moved to records whose cited passages do
+      carry their claims, both still failing the literal check on the
+      same words as the records they replaced. The comparison that
+      settles it is the control arm: overlaying the flag-OFF nine-paper
+      run the same way gives the same 13/15, the same 8 of 12, the same
+      GO-016 improvement, and precision 0.166667 -- so the reassignments
+      and the evidence gain are the merge, not the definition, and the
+      definition's own contribution is 17 further records and 0.166667
+      to 0.136842. Off on that. n is one run per side and a codex-exec
+      turn is not deterministic, so read the record counts as indicative
+      and the precision arithmetic as exact for these artifacts.
+    description: >-
+      Give the outcome contract's endpoint field the definition it has never
+      had. OutcomeRecord declares `endpoint: TextField` and says nothing more,
+      and no version of the extraction prompt mentions the field at all, so
+      what belongs in it is decided by the model's own reading of the word.
+      The definition asks for what the annotation side has always written: the
+      quantity, signal or event measured, together with the population it was
+      measured in when the paper states one, both named in the endpoint itself
+      even though the experiment record separately carries a recipient
+      population -- and the measurement alone, with nothing supplied, when the
+      paper states no population. It travels on two surfaces at once from a
+      single text: the schema description on
+      DefinedEndpointOutcomeRecord.endpoint, and one appended prompt rule
+      selecting compact-prompt-1.6.0 (or 1.6.1 alongside candidate slots).
+      Both are subclass-and-append, never edit, so with this off the baseline
+      prompt, the exported baseline schema and its pinned sha256 are
+      untouched and a request is byte-identical to what shipped.
+    aliases: [endpoint_names_its_population, defined_endpoint]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/compact_contracts.py
+      - src/extraction/compact_prompt_v1.py
+
   # ------------------------------------------------------------------ baseline
   # ---------------------------------------------------------------------- P3
   candidate_slot_enforcement:

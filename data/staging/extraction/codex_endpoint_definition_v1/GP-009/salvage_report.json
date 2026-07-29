@@ -1,0 +1,49 @@
+{
+  "salvage_version": "record-salvage-1.0.0",
+  "paper_id": "GP-009",
+  "flag": "record_level_salvage",
+  "status": "unsalvageable",
+  "source_validation_status": "invalid",
+  "source_finding_codes": [
+    "pydantic.value_error"
+  ],
+  "kept": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0
+  },
+  "rejected": {
+    "formulations": 0,
+    "components": 0,
+    "experiments": 0,
+    "outcomes": 0
+  },
+  "eligibility_kept": false,
+  "dropped": [
+    {
+      "location": [
+        "candidate_dispositions"
+      ],
+      "collection": null,
+      "index": null,
+      "record_id": null,
+      "reason": "unhandled_field",
+      "detail": "'candidate_dispositions' is not part of the compact record contract, so the salvage carries no rule for validating it and does not keep it",
+      "unknown_evidence_ids": []
+    },
+    {
+      "location": [
+        "eligibility"
+      ],
+      "collection": null,
+      "index": null,
+      "record_id": null,
+      "reason": "contract_invalid",
+      "detail": "<root>: Value error, uncertain requires a manual-review reason code",
+      "unknown_evidence_ids": []
+    }
+  ],
+  "dangling_references": [],
+  "note": "the response returned no records to salvage"
+}

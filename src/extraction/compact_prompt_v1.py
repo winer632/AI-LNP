@@ -37,6 +37,10 @@ import re
 from typing import Iterable, NamedTuple
 
 from src.config_flags import is_enabled
+from src.extraction.compact_contracts import (
+    ENDPOINT_DEFINITION,
+    ENDPOINT_DEFINITION_FLAG,
+)
 from src.extraction.outcome_coverage_contracts import OutcomeCandidate
 
 
@@ -162,6 +166,19 @@ ENTITY_TABLE_RULE = (
 ENTITY_TABLE_PROMPT_VERSION = "compact-prompt-1.5.0"
 ENTITY_TABLE_SLOT_PROMPT_VERSION = "compact-prompt-1.5.1"
 
+ENDPOINT_DEFINITION_PROMPT_VERSION = "compact-prompt-1.6.0"
+ENDPOINT_DEFINITION_SLOT_PROMPT_VERSION = "compact-prompt-1.6.1"
+
+# The words are the contract's, imported rather than restated, because the
+# schema field and the instruction are the same definition and two copies of a
+# definition drift. Nothing here names a population, a cell type, a marker or a
+# finding: the rule is about what the field is for, and holds for a paper this
+# project has never seen.
+ENDPOINT_DEFINITION_RULE = (
+    " The endpoint field of an outcome record is defined as follows. "
+    + ENDPOINT_DEFINITION
+)
+
 INTERPRETIVE_OUTCOME_FLAG = "interpretive_outcome_admission"
 
 INTERPRETIVE_PROMPT_VERSION = "compact-prompt-1.4.0"
@@ -252,16 +269,19 @@ def active_prompt(
     interpretive_outcome_admission: bool | None = None,
     cell_line_identity: bool | None = None,
     entity_resolution_prepass: bool | None = None,
+    endpoint_definition: bool | None = None,
 ) -> PromptSelection:
     """Pick the prompt for this call from the flags that amend it.
 
-    Three independent switches append to the frozen texts, never rewrite them,
+    Four independent switches append to the frozen texts, never rewrite them,
     so a request made with all off is byte-identical to what shipped. They
     are checked in a fixed order and may all apply: the interpretive rule
     changes what counts as an outcome, the cell-identity rule changes how a
-    record names its population from the packet alone, and the entity-table
+    record names its population from the packet alone, the entity-table
     rule tells the model that a separate grounded pass has already answered
-    that question and handed it the answer.
+    that question and handed it the answer, and the endpoint rule says what
+    the endpoint field is for -- a question no version of this prompt has ever
+    answered.
     """
     if candidate_slots:
         version = CANDIDATE_SLOT_PROMPT_VERSION
@@ -287,6 +307,11 @@ def active_prompt(
         is_enabled(ENTITY_RESOLUTION_FLAG)
         if entity_resolution_prepass is None
         else entity_resolution_prepass
+    )
+    endpoint_defined = (
+        is_enabled(ENDPOINT_DEFINITION_FLAG)
+        if endpoint_definition is None
+        else endpoint_definition
     )
 
     if interpretive:
@@ -315,6 +340,14 @@ def active_prompt(
             else ENTITY_TABLE_PROMPT_VERSION
         )
         text = text + ENTITY_TABLE_RULE
+
+    if endpoint_defined:
+        version = (
+            ENDPOINT_DEFINITION_SLOT_PROMPT_VERSION
+            if candidate_slots
+            else ENDPOINT_DEFINITION_PROMPT_VERSION
+        )
+        text = text + ENDPOINT_DEFINITION_RULE
 
     return PromptSelection(
         text=text,

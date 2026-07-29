@@ -1,0 +1,287 @@
+[
+  {
+    "candidate_id": "OC-b924d98c5ee0c618",
+    "disposition": "not_an_outcome",
+    "reason": "Flow-cytometry viability and gating method."
+  },
+  {
+    "candidate_id": "OC-f12ccc22e6498844",
+    "disposition": "not_an_outcome",
+    "reason": "Instrument, event count, and gating method."
+  },
+  {
+    "candidate_id": "OC-932439097b0f1733",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretive summary rather than a measured result."
+  },
+  {
+    "candidate_id": "OC-fdc2e205d8bbc85d",
+    "disposition": "not_an_outcome",
+    "reason": "Figure heading without a usable measured value."
+  },
+  {
+    "candidate_id": "OC-b70aafe9c0f6b3a5",
+    "disposition": "not_an_outcome",
+    "reason": "Image annotation only."
+  },
+  {
+    "candidate_id": "OC-266f7215cca1dfa7",
+    "disposition": "not_an_outcome",
+    "reason": "Image annotation only."
+  },
+  {
+    "candidate_id": "OC-cfc3f3ff55d8113f",
+    "disposition": "unresolved",
+    "reason": "Expression is reported, but no usable value is supplied."
+  },
+  {
+    "candidate_id": "OC-fd36192dd56da171",
+    "disposition": "not_an_outcome",
+    "reason": "Animal/model description."
+  },
+  {
+    "candidate_id": "OC-054c58b2a15d1231",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-e824765650c8380b",
+    "disposition": "not_an_outcome",
+    "reason": "Extrapolation, not a measured HGF/EGF result."
+  },
+  {
+    "candidate_id": "OC-e42d02cd0aa8f42f",
+    "disposition": "not_an_outcome",
+    "reason": "Administration and animal-method description."
+  },
+  {
+    "candidate_id": "OC-518896544650d441",
+    "disposition": "unresolved",
+    "reason": "Expression pattern is reported without a usable value."
+  },
+  {
+    "candidate_id": "OC-88f65d75fdf21989",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-31142d755597b87a",
+    "disposition": "not_an_outcome",
+    "reason": "Figure annotation and heading, without a usable value."
+  },
+  {
+    "candidate_id": "OC-a0003dea2317b7f7",
+    "disposition": "not_an_outcome",
+    "reason": "Antibody catalog table entry."
+  },
+  {
+    "candidate_id": "OC-4f4f95c7a5f70408",
+    "disposition": "not_an_outcome",
+    "reason": "Sequence table entry."
+  },
+  {
+    "candidate_id": "OC-1119599841842f36",
+    "disposition": "not_an_outcome",
+    "reason": "Sequence table entry."
+  },
+  {
+    "candidate_id": "OC-c8f3682e8d6f8b2a",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretation of study purpose."
+  },
+  {
+    "candidate_id": "OC-46fea00be5424de3",
+    "disposition": "unresolved",
+    "reason": "Similar expression kinetics are reported without a usable value."
+  },
+  {
+    "candidate_id": "OC-5a41f5c550b1d73d",
+    "disposition": "unresolved",
+    "reason": "Expression claim lacks a usable value."
+  },
+  {
+    "candidate_id": "OC-7dd02c7e03b984a6",
+    "disposition": "not_an_outcome",
+    "reason": "Interpretive discussion statement."
+  },
+  {
+    "candidate_id": "OC-a8da74c4cf9abd64",
+    "disposition": "not_an_outcome",
+    "reason": "Discussion of ASGPR strategy."
+  },
+  {
+    "candidate_id": "OC-6abc02f349d20f49",
+    "disposition": "unresolved",
+    "reason": "No health issues are reported, but no usable measured value is supplied."
+  },
+  {
+    "candidate_id": "OC-4a2f1296751af41e",
+    "disposition": "not_an_outcome",
+    "reason": "Discussion of ASGPR strategy."
+  },
+  {
+    "candidate_id": "OC-f83a3866b46afe29",
+    "disposition": "unresolved",
+    "reason": "Similar expression kinetics are reported without a usable value."
+  },
+  {
+    "candidate_id": "OC-497fb2743cabc900",
+    "disposition": "not_an_outcome",
+    "reason": "Discussion of ASGPR strategy."
+  },
+  {
+    "candidate_id": "OC-2e4e0062d6ab3e65",
+    "disposition": "not_an_outcome",
+    "reason": "Animal/model description."
+  },
+  {
+    "candidate_id": "OC-f52b94fef90ad854",
+    "disposition": "unresolved",
+    "reason": "Expression time course is described without a usable numeric outcome."
+  },
+  {
+    "candidate_id": "OC-60db5cd03c0b23a6",
+    "disposition": "not_an_outcome",
+    "reason": "Extrapolation rather than measured HGF/EGF activity."
+  },
+  {
+    "candidate_id": "OC-d1bcdf6d436f92d1",
+    "disposition": "not_an_outcome",
+    "reason": "Administration and animal-method description."
+  },
+  {
+    "candidate_id": "OC-d76e38c26ff535e0",
+    "disposition": "unresolved",
+    "reason": "Expression time course is described without a usable numeric outcome."
+  },
+  {
+    "candidate_id": "OC-e98ed7f1f044d714",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-6ef5a85bdd95807e",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-83b81cbc99e7d961",
+    "disposition": "not_an_outcome",
+    "reason": "Sequence table entry."
+  },
+  {
+    "candidate_id": "OC-40963798573c6a43",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-8efff77fdb279db6",
+    "disposition": "unresolved",
+    "reason": "Reported activity lacks a usable numeric value."
+  },
+  {
+    "candidate_id": "OC-f8f899baab5a982d",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate qualitative steatosis interpretation without usable value."
+  },
+  {
+    "candidate_id": "OC-4d4829bf783ab83d",
+    "disposition": "unresolved",
+    "reason": "Reported activity lacks a usable numeric value."
+  },
+  {
+    "candidate_id": "OC-89baa17c6fd4f543",
+    "disposition": "not_an_outcome",
+    "reason": "Reporting-form text."
+  },
+  {
+    "candidate_id": "OC-d16b5d218b5f5f5a",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate qualitative steatosis interpretation without usable value."
+  },
+  {
+    "candidate_id": "OC-1a11cc805e137876",
+    "disposition": "unresolved",
+    "reason": "Reported bioluminescence decline lacks a usable numeric value."
+  },
+  {
+    "candidate_id": "OC-675ff78454d65c26",
+    "disposition": "unresolved",
+    "reason": "Reported bioluminescence decline lacks a usable numeric value."
+  },
+  {
+    "candidate_id": "OC-6e95eb7f9a180e84",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-51ff57a0a06eb1d9",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate qualitative result."
+  },
+  {
+    "candidate_id": "OC-3312457f9efcbcab",
+    "disposition": "extracted",
+    "reason": null
+  },
+  {
+    "candidate_id": "OC-cb1dfc03c6c5675c",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate multi-endpoint summary."
+  },
+  {
+    "candidate_id": "OC-ac30f8413d9525a1",
+    "disposition": "not_an_outcome",
+    "reason": "Duplicate multi-endpoint summary."
+  },
+  {
+    "candidate_id": "OC-f83b0a5ef45facc3",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model baseline finding, not an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-8aca7ce3776539ab",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model baseline finding, not an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-ec2f4916beb7b305",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model baseline finding, not an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-cfd19f26417f2c38",
+    "disposition": "not_an_outcome",
+    "reason": "Disease-model baseline finding, not an LNP outcome."
+  },
+  {
+    "candidate_id": "OC-3aa23151f38aab3d",
+    "disposition": "not_an_outcome",
+    "reason": "Figure title and study timeline."
+  },
+  {
+    "candidate_id": "OC-6d7c8567a5ab3d71",
+    "disposition": "not_an_outcome",
+    "reason": "Figure title and study timeline."
+  },
+  {
+    "candidate_id": "OC-e9f813076a9d1b4f",
+    "disposition": "not_an_outcome",
+    "reason": "Figure-description claim without a usable value."
+  },
+  {
+    "candidate_id": "OC-9379257d471cefab",
+    "disposition": "not_an_outcome",
+    "reason": "Reviewer comment."
+  },
+  {
+    "candidate_id": "OC-e50ff7b5de4e8fcc",
+    "disposition": "not_an_outcome",
+    "reason": "Reviewer comment."
+  },
+  {
+    "candidate_id": "OC-86da2d8538970e2e",
+    "disposition": "extracted",
+    "reason": null
+  }
+]

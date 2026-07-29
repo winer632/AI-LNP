@@ -41,6 +41,7 @@ CONFIRM_WRITE_ENTRY_POINTS = (
     "src.extraction.build_g1_review",
     "src.extraction.build_g1_v3_field_review",
     "src.extraction.build_object_vision_review",
+    "src.extraction.build_union_endpoint_definition",
     "src.extraction.build_union_entity_prepass",
     "src.extraction.build_union_vision_v3",
     "src.extraction.evaluate_day5_afternoon",
@@ -144,7 +145,7 @@ def test_the_snapshot_actually_sees_the_repository():
 def test_every_confirm_write_entry_point_is_covered():
     """The parametrised cases below must not be able to silently empty out."""
     assert _discover_confirm_write_modules() == set(CONFIRM_WRITE_ENTRY_POINTS)
-    assert len(CONFIRM_WRITE_ENTRY_POINTS) == 23
+    assert len(CONFIRM_WRITE_ENTRY_POINTS) == 24
 
 
 @pytest.mark.parametrize("module", CONFIRM_WRITE_ENTRY_POINTS)

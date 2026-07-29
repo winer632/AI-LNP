@@ -1,0 +1,766 @@
+{
+  "harness": "codex-exec",
+  "paper_id": "GP-009",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "evidence_view": "full",
+  "packet_root": "/Users/wangxinxin/Desktop/LNP/AI-LNP/.claude/worktrees/agent-a9112533eafd9bbbe/data/staging/rag/full_api_packets_v1",
+  "prompt_version": "compact-prompt-1.6.1",
+  "prompt_checksum": "13484a3983afb9e155c08efd14a9823a43261f9ac5628566f4788af32a1b9dae",
+  "schema_checksum": "cb2a6cf4825b8f67320a6fe9fb13a4e5dc0e45fda5c0d26d5318fb1ea298cf39",
+  "packet_checksum": "8553891b5d5c63b9b15519360de55e8baa556a6b47b382bbdf2e0eb3f9f0fed2",
+  "prompt_characters": 238209,
+  "candidate_slot_enforcement": true,
+  "candidate_slots": [
+    {
+      "candidate_id": "OC-56c33393739a4351",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-e4ff5ed8235e9812"
+      ],
+      "summary": "developed a CD47-overexpressing lentiviral vector that inhibited phagocytosis and reduced acute inflammatory responses in non-human primates.60 Additionally, SIRP-α-expressing macrophages, Kupffer cells (KCs), which reside in the liver, account for ∼15% of the total liver cell population.61,62 We, therefore, hypothesize that CD47 modification could suppress the phagocytic uptake of LNP-mRNA by KC…"
+    },
+    {
+      "candidate_id": "OC-1e7fa01fc72d66bd",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-a1bf6a818e57e2cb"
+      ],
+      "summary": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was pe…"
+    },
+    {
+      "candidate_id": "OC-3f88ea422debcd2b",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-0db26254b0433529"
+      ],
+      "summary": "Eight genes belong to the acute phase response (APR) pro-inflammatory protein family, including Saa3,25 Timp1,26 Plscr1,27 Cxcl9,28 Cd14,29 Hamp,30 Hpx,31 and Serpina10.32 Notably, the most differentially expressed gene, Saa3, which is downregulated by a fold change of −18.40 (p = 1E−7) in the CD47-modified group, is a murine APR apolipoprotein gene produced in hepatic or extrahepatic tissues and…"
+    },
+    {
+      "candidate_id": "OC-4e267674dc20c8c3",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-8644644941f5d32c"
+      ],
+      "summary": "Eight genes belong to the acute phase response (APR) pro-inflammatory protein family, including Saa3,25 Timp1,26 Plscr1,27 Cxcl9,28 Cd14,29 Hamp,30 Hpx,31 and Serpina10.32 Notably, the most differentially expressed gene, Saa3, which is downregulated by a fold change of −18.40 (p = 1E−7) in the CD47-modified group, is a murine APR apolipoprotein gene produced in hepatic or extrahepatic tissues and…"
+    },
+    {
+      "candidate_id": "OC-f37140241ce54b17",
+      "endpoint_family": "cell_target_effect",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-cf6cf88a82065dd1"
+      ],
+      "summary": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was pe…"
+    },
+    {
+      "candidate_id": "OC-27aa7f23f5702904",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-a1bf6a818e57e2cb",
+        "GP-009-FC-b3905634223db0ca"
+      ],
+      "summary": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was pe…"
+    },
+    {
+      "candidate_id": "OC-7c186adc250dc630",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-85388b2dfd5a8ac6"
+      ],
+      "summary": "Nevertheless, the GFP+ cells constitute only a minor fraction (∼0.5%), which could be attributed to the incomplete depletion of the recipient’s HSC and the equal competence (if not higher) of the remaining recipient HSCs and the transferred HSCs."
+    },
+    {
+      "candidate_id": "OC-420453d9985a394f",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-cf6cf88a82065dd1"
+      ],
+      "summary": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was pe…"
+    },
+    {
+      "candidate_id": "OC-a29ec77c2e39042b",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-5efc0390aa8cf4f8"
+      ],
+      "summary": "(H) Percentage of GFP+ engrafted cells in granulocytes and RBC populations of the PB 2 weeks after BMT."
+    },
+    {
+      "candidate_id": "OC-5018474106e4d820",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 1c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-2cc8eb8485fe4b9f",
+        "GP-009-FC-adf0cd7525ab8059"
+      ],
+      "summary": "At 24 h after treatment, we imaged the cells and found that cells transfected with CD47/LNP-GFP showed a substantial decrease in GFP expression, suggesting that CD47 modification reduced macrophage uptake of LNP-mRNA (Figure 1C, two center panels). The reduction of GFP expression was partially reversed by SIRP-α blockade (Figure 1C, right panel)."
+    },
+    {
+      "candidate_id": "OC-9df3f623a3847ea6",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 1c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-03ef0f86d9857a8f"
+      ],
+      "summary": "At 24 h after treatment, we imaged the cells and found that cells transfected with CD47/LNP-GFP showed a substantial decrease in GFP expression, suggesting that CD47 modification reduced macrophage uptake of LNP-mRNA (Figure 1C, two center panels)."
+    },
+    {
+      "candidate_id": "OC-108d1c4df31ea76c",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 3g",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-6dda0c6aaadf336e"
+      ],
+      "summary": "Four months post-BMT, mice preconditioned with CD47+aCD117/tLNP-Puma resulted in prominently higher GFP expression in the CD45+, CD19+, CD3+, and GR1+ blood-derived monocyte populations, compared to those preconditioned with aCD117/tLNP-Puma (Figure 3G), suggesting a higher HSC depletion efficacy with CD47+aCD117/tLNP-Puma."
+    },
+    {
+      "candidate_id": "OC-843c2a71fbe1f778",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 3g",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-4b10c9bf88c3f622"
+      ],
+      "summary": "Four months post-BMT, mice preconditioned with CD47+aCD117/tLNP-Puma resulted in prominently higher GFP expression in the CD45+, CD19+, CD3+, and GR1+ blood-derived monocyte populations, compared to those preconditioned with aCD117/tLNP-Puma (Figure 3G), suggesting a higher HSC depletion efficacy with CD47+aCD117/tLNP-Puma."
+    },
+    {
+      "candidate_id": "OC-f31733fcf10ac25f",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 3h",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-b185ecc022dc58e4"
+      ],
+      "summary": "Indeed, when we analyzed the percentage of GFP+ blood cells at a much earlier time point (2 weeks post-BMT) compared to the 4-month time point, we observed a higher percentage of GFP+ granulocytes (∼1.5%) and a comparable percentage of GFP+ red blood cells (RBCs) in mice preconditioned with CD47+aCD117/tLNP-Puma (Figure 3H)."
+    },
+    {
+      "candidate_id": "OC-6fa76f58fb92ec20",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-f746a7e6ca16adea"
+      ],
+      "summary": "and harvested the spleen 24 h after the flow cytometry analysis of ZsGreen expression in T cells."
+    },
+    {
+      "candidate_id": "OC-3c955fd698793e3f",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-8719bb1d89ec748b",
+        "GP-009-FC-b1ba40b3f831c3d3"
+      ],
+      "summary": "(H) ZsGreen expression in splenic CD4+ T cells (CD3+CD8−) isolated from mice 24 h post-treatment with either 1 μg CD47+aCD4/tLNP-ZsGreen or aCD4/tLNP-ZsGreen i.v. (D) Flow cytometry analysis of ZsGreen expression in CD31+ endothelial cells isolated from the lungs of mice 24 h post-treatment with either 1 μg CD47+aCD31/tLNP-ZsGreen or aCD31/tLNP-ZsGreen intravenously (i.v.)."
+    },
+    {
+      "candidate_id": "OC-d715f61c5b60edc4",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-b6c21460605d9ba1"
+      ],
+      "summary": "(D) ZsGreen expression in HSCs from Ai6 mice 24 h post-treatment with 1 μg CD47+aCD117/tLNP-Cre or aCD117/tLNP-Cre."
+    },
+    {
+      "candidate_id": "OC-b61022ccdddf1279",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-35e68bcf841b7641"
+      ],
+      "summary": "We showed that the resulting CD47/tLNP-mRNAs led to significantly higher levels of mRNA delivery and expression in each target cell."
+    },
+    {
+      "candidate_id": "OC-9bd74740fc2d0519",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-b5db4b224efcb15d"
+      ],
+      "summary": "We showed that the resulting CD47/tLNP-mRNAs led to significantly higher levels of mRNA delivery and expression in each target cell."
+    },
+    {
+      "candidate_id": "OC-dadbd8679494f071",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-d466bffcc4cd6893"
+      ],
+      "summary": "and harvested the spleen 24 h after the flow cytometry analysis of ZsGreen expression in T cells."
+    },
+    {
+      "candidate_id": "OC-29779631bb07db27",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-1b34e93429910f4b",
+        "GP-009-E-bce8941e51be1df0"
+      ],
+      "summary": "(H) ZsGreen expression in splenic CD4+ T cells (CD3+CD8−) isolated from mice 24 h post-treatment with either 1 μg CD47+aCD4/tLNP-ZsGreen or aCD4/tLNP-ZsGreen i.v. (D) Flow cytometry analysis of ZsGreen expression in CD31+ endothelial cells isolated from the lungs of mice 24 h post-treatment with either 1 μg CD47+aCD31/tLNP-ZsGreen or aCD31/tLNP-ZsGreen intravenously (i.v.)."
+    },
+    {
+      "candidate_id": "OC-69b0e48984be03b4",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-e2b7b4b4bd4a579d"
+      ],
+      "summary": "To trace mRNA expression in bone marrow (BM), 24 h post-tLNP-Cre treatment, mice were euthanized, femurs were dislodged, and connective tissues were removed with 70% ethanol."
+    },
+    {
+      "candidate_id": "OC-acfcc66004aa6f5e",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-fd3c5b18917729ef"
+      ],
+      "summary": "(D) ZsGreen expression in HSCs from Ai6 mice 24 h post-treatment with 1 μg CD47+aCD117/tLNP-Cre or aCD117/tLNP-Cre."
+    },
+    {
+      "candidate_id": "OC-90ee71e6b80a4d9c",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 4c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-055b0ae4cd858d07"
+      ],
+      "summary": "The differential gene expression analysis indicates a significant downregulation of 30 genes, ranging from −18.40 to −2.11-fold in CD47/LNP-mRNA-treated and untreated mice compared to unmodified LNP-mRNA-treated mice (Figure 4C)."
+    },
+    {
+      "candidate_id": "OC-6ce82e9e228b0c61",
+      "endpoint_family": "expression",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-8f0d3e1fb7bc4ef8"
+      ],
+      "summary": "We found enhanced mRNA expression in the spleen and reduced mRNA expression in the liver in mice injected with CD47+aCD4/tLNP-Luc (Figures 2F and 2G)."
+    },
+    {
+      "candidate_id": "OC-6d3406f2f4fb158d",
+      "endpoint_family": "expression",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-99d46b26172e4daf"
+      ],
+      "summary": "We found enhanced mRNA expression in the spleen and reduced mRNA expression in the liver in mice injected with CD47+aCD4/tLNP-Luc (Figures 2F and 2G)."
+    },
+    {
+      "candidate_id": "OC-0d0ae60d4ff77645",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-24b201934b313fd8"
+      ],
+      "summary": "and then measured luciferase expression in the liver and spleen."
+    },
+    {
+      "candidate_id": "OC-c78c2dd5117bb127",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-5eefbd8a1f07af11"
+      ],
+      "summary": "To further assess how CD47 modification affects LNP-mRNA biodistribution and protein expression, we generated CD47-modified LNP-luciferase mRNA (CD47/LNP-Luc) for in vivo imaging system (IVIS) bioluminescence analysis."
+    },
+    {
+      "candidate_id": "OC-eeb69e670b4e46ab",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-595b95628f92c606"
+      ],
+      "summary": "In the absence of HSCs-targeting element aCD117, CD47 modification potently reduced liver expression of luciferase (CD47+immunoglobulin G (IgG)/tLNP vs."
+    },
+    {
+      "candidate_id": "OC-1177168f48d8a869",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-1e48dc52cc5f8d84"
+      ],
+      "summary": "and then measured luciferase expression in the liver and spleen."
+    },
+    {
+      "candidate_id": "OC-c6c2a4f38efad2bf",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-b97a5efafb4b7d5f"
+      ],
+      "summary": "To further assess how CD47 modification affects LNP-mRNA biodistribution and protein expression, we generated CD47-modified LNP-luciferase mRNA (CD47/LNP-Luc) for in vivo imaging system (IVIS) bioluminescence analysis."
+    },
+    {
+      "candidate_id": "OC-50e9955062b3c820",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-7751cdab01fb3099"
+      ],
+      "summary": "Luciferase activity was then measured in the supernatant using a Victor 3 1420 Multilabel Plate Counter (PerkinElmer)."
+    },
+    {
+      "candidate_id": "OC-dd236ab675d15343",
+      "endpoint_family": "expression",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-c08c59def2816517",
+        "GP-009-E-fd388f96c72c290a"
+      ],
+      "summary": "In the absence of HSCs-targeting element aCD117, CD47 modification potently reduced liver expression of luciferase (CD47+immunoglobulin G (IgG)/tLNP vs. We injected 1 μg of aCD117/tLNP-Luc or CD47+aCD117/tLNP-Luc in the mice and then imaged luciferase biodistribution in the liver and whole-femur BM using IVIS."
+    },
+    {
+      "candidate_id": "OC-7feffc1f3a13be54",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 1j",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-c19a78ff3660f781"
+      ],
+      "summary": "In the CD47-modified group, the liver showed a ∼3-fold decrease in luciferase activity, and the spleen showed a ∼2-fold decrease, as measured by total flux photons per second (p/s) (Figure 1J)."
+    },
+    {
+      "candidate_id": "OC-f2c67c0b0e62d4a7",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 1j",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-6e3f276531062d8c"
+      ],
+      "summary": "In the CD47-modified group, the liver showed a ∼3-fold decrease in luciferase activity, and the spleen showed a ∼2-fold decrease, as measured by total flux photons per second (p/s) (Figure 1J)."
+    },
+    {
+      "candidate_id": "OC-3efa534f85152552",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 3b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-5e3670c877f7ca3d"
+      ],
+      "summary": "When aCD117 was added to the surface of LNPs, CD47 modification not only reduced luciferase expression in liver but also enhanced expression in the BM (Figure 3B)."
+    },
+    {
+      "candidate_id": "OC-308c49e44e56b400",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure 3b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-325002ed130c098e"
+      ],
+      "summary": "When aCD117 was added to the surface of LNPs, CD47 modification not only reduced luciferase expression in liver but also enhanced expression in the BM (Figure 3B)."
+    },
+    {
+      "candidate_id": "OC-3bdb0182e282909a",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-af06072ff95e570a"
+      ],
+      "summary": "without CD47, we measured the luciferase activity per milligram protein in the desired organs and found lung-specific luciferase expression increased from 1.5E+6 LU/mg protein in the unmodified group to 2E+6 LU/mg protein in the CD47-modified group, demonstrating a ∼33% enhancement; in contrast, liver and spleen uptake was significantly reduced in the CD47-modified group (Figure S2)."
+    },
+    {
+      "candidate_id": "OC-72703dcc62e5d69f",
+      "endpoint_family": "expression",
+      "figure_or_table": "figure s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-b30ec97297726a5b"
+      ],
+      "summary": "without CD47, we measured the luciferase activity per milligram protein in the desired organs and found lung-specific luciferase expression increased from 1.5E+6 LU/mg protein in the unmodified group to 2E+6 LU/mg protein in the CD47-modified group, demonstrating a ∼33% enhancement; in contrast, liver and spleen uptake was significantly reduced in the CD47-modified group (Figure S2)."
+    },
+    {
+      "candidate_id": "OC-17b429ad73ceef01",
+      "endpoint_family": "expression",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-33594e289892f555"
+      ],
+      "summary": "The CD47-modified LNP-Luc group demonstrated a boosted luciferase expression in the lung and a reduced expression in liver and spleen (Figures 2B and 2C)."
+    },
+    {
+      "candidate_id": "OC-ecf4fc477577d4bd",
+      "endpoint_family": "expression",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-a1611fa237a13491"
+      ],
+      "summary": "The CD47-modified LNP-Luc group demonstrated a boosted luciferase expression in the lung and a reduced expression in liver and spleen (Figures 2B and 2C)."
+    },
+    {
+      "candidate_id": "OC-c8bdf7d6bb673d87",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-cf9e82df2faa2c60"
+      ],
+      "summary": "The data from the protein corona composition analysis of a corona surrounding CD47/LNP-mRNA indicate that such an increase may likely be attributed to the composition of its serum protein corona and reduced affinity for Apoe, an important protein for shuttling LNP-mRNA to the liver.55 We observed significantly increased targeting efficiency of CD47/tLNP-mRNA, including a 150% increase in lung tar…"
+    },
+    {
+      "candidate_id": "OC-3bb1caa147d90cd6",
+      "endpoint_family": "knockdown",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-0f890eaf2fd62f29"
+      ],
+      "summary": "The data from the protein corona composition analysis of a corona surrounding CD47/LNP-mRNA indicate that such an increase may likely be attributed to the composition of its serum protein corona and reduced affinity for Apoe, an important protein for shuttling LNP-mRNA to the liver.55 We observed significantly increased targeting efficiency of CD47/tLNP-mRNA, including a 150% increase in lung tar…"
+    },
+    {
+      "candidate_id": "OC-63701aa5d5e39a45",
+      "endpoint_family": "knockdown",
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-87df5e2edea07a45"
+      ],
+      "summary": "Compared with aCD117/tLNP-Cre, CD47-modified tLNPs yielded significantly higher ZsGreen+ proportion in the Lin−Sca1+CD117+ HSCs, boosting ∼3-fold from 6.9% to 22.2% (Figures 3D and 3E).Figure 3CD47 modification combined with aCD117/tLNP containing Puma mRNA reduces off-target Puma-induced toxicity and enables bone marrow transplantation (BMT)(A) CD47-modified aCD117/tLNP-Puma for in vivo HSC depl…"
+    },
+    {
+      "candidate_id": "OC-c1bfbda8a7abf730",
+      "endpoint_family": "knockdown",
+      "figure_or_table": "figures",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-5c29dade95736079"
+      ],
+      "summary": "Compared with aCD117/tLNP-Cre, CD47-modified tLNPs yielded significantly higher ZsGreen+ proportion in the Lin−Sca1+CD117+ HSCs, boosting ∼3-fold from 6.9% to 22.2% (Figures 3D and 3E).Figure 3CD47 modification combined with aCD117/tLNP containing Puma mRNA reduces off-target Puma-induced toxicity and enables bone marrow transplantation (BMT)(A) CD47-modified aCD117/tLNP-Puma for in vivo HSC depl…"
+    },
+    {
+      "candidate_id": "OC-3799c09c2aa0b6e8",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-dbf6e81c18a677c4"
+      ],
+      "summary": "(F) Kaplan-Meier survival analysis of mice treated with 1 μg CD47+aCD117/LNP-Puma (n = 7)."
+    },
+    {
+      "candidate_id": "OC-507efbe893957a82",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-6c5070a0a7ef71ad"
+      ],
+      "summary": "(F) Kaplan-Meier survival analysis of mice treated with 1 μg CD47+aCD117/LNP-Puma (n = 7)."
+    },
+    {
+      "candidate_id": "OC-79cde982f4e7f345",
+      "endpoint_family": "therapeutic_function",
+      "figure_or_table": "figure 3f",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-58cf763891313678"
+      ],
+      "summary": "Compared to mice treated with unmodified aCD117/tLNP-Puma (1 μg), those treated with CD47+aCD117/tLNP-Puma exhibited a substantially higher survival rate 7 days after treatment (Figure 3F; 100% vs."
+    },
+    {
+      "candidate_id": "OC-385eaaa001a56b1b",
+      "endpoint_family": "toxicity",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-03629c6dd83f9ed0",
+        "GP-009-E-0a141230afc73d92",
+        "GP-009-E-40bada8f0136da9c",
+        "GP-009-E-de310f77672b8fc2"
+      ],
+      "summary": "Peripheral blood mononuclear cell (PBMC) recruitment is an indicator of inflammatory stimuli.24 To test whether CD47-modified LNP-mRNA are less inflammatory than unmodified LNPs, we compared PBMC counts in mice treated with either unmodified LNP-mRNA or CD47/LNP-mRNA after i.v. These data indicate that CD47-modified LNP-mRNA are less inflammatory compared to unmodified LNP-mRNA. at 2 mg/kg to ind…"
+    },
+    {
+      "candidate_id": "OC-241e67019e1f3ad8",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure 4b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-89837e0ee08a925b"
+      ],
+      "summary": "ELISA assays showed a significantly lower IL-6 level in the serum of CD47/LNP-mRNA-treated mice compared to those treated with unmodified LNP-mRNA (Figure 4B), further suggesting that CD47-modified LNP-mRNA is less inflammatory.Figure 4Effect of CD47 modification on total liver transcriptome and protein corona composition(A) PBMC count/mL from PB at T = 24 h post-injection of unmodified LNP-mRNA…"
+    },
+    {
+      "candidate_id": "OC-e733a4060c78650c",
+      "endpoint_family": "toxicity",
+      "figure_or_table": "figure 4b",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-4a7af178cb988700"
+      ],
+      "summary": "ELISA assays showed a significantly lower IL-6 level in the serum of CD47/LNP-mRNA-treated mice compared to those treated with unmodified LNP-mRNA (Figure 4B), further suggesting that CD47-modified LNP-mRNA is less inflammatory.Figure 4Effect of CD47 modification on total liver transcriptome and protein corona composition(A) PBMC count/mL from PB at T = 24 h post-injection of unmodified LNP-mRNA…"
+    },
+    {
+      "candidate_id": "OC-565edb721f10226a",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 1f",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-455fcd703653c47f"
+      ],
+      "summary": "To evaluate how CD47 modification affects the biodistribution of LNP-mRNA in vivo, we radiolabeled unmodified LNP-mRNA and CD47/LNP-mRNA with Na125I for particle biodistribution analysis (Figure 1F)."
+    },
+    {
+      "candidate_id": "OC-242702171eb43232",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-258060b4572ac970",
+        "GP-009-FC-aa032774df05ec0c"
+      ],
+      "summary": "To quantitatively assess the difference of tissue uptake of tLNP with vs. To assess whether elevated lung uptake reflects an enhanced delivery to the lung CD31+ endothelial cells, we injected 1 μg aCD31/tLNP-ZsGreen or CD47+aCD31/tLNP-ZsGreen into the mice i.v.; then, we harvested and dissociated lungs 24 h post-treatment to measure ZsGreen expression in CD45−CD31+ endothelial cells."
+    },
+    {
+      "candidate_id": "OC-463fa80b30a23a91",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-60e8a22b88da4095"
+      ],
+      "summary": "We showed that CD47 modification decreased macrophage and hepatic uptake both in vitro and in vivo."
+    },
+    {
+      "candidate_id": "OC-91b7a31790a0b644",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-e4ff5ed8235e9812"
+      ],
+      "summary": "developed a CD47-overexpressing lentiviral vector that inhibited phagocytosis and reduced acute inflammatory responses in non-human primates.60 Additionally, SIRP-α-expressing macrophages, Kupffer cells (KCs), which reside in the liver, account for ∼15% of the total liver cell population.61,62 We, therefore, hypothesize that CD47 modification could suppress the phagocytic uptake of LNP-mRNA by KC…"
+    },
+    {
+      "candidate_id": "OC-efd0e74fdee86684",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-a1bf6a818e57e2cb"
+      ],
+      "summary": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was pe…"
+    },
+    {
+      "candidate_id": "OC-164c6785b221b927",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-c9fc6f3b3423c2b5"
+      ],
+      "summary": "In accordance, Apoc3 and Apoc4, which act as antagonists to Apoe and inhibit liver uptake of triglyceride-rich lipoproteins via LDLRs, were found to be elevated in the protein corona of CD47-modified LNP.44,45,46,47,48,49 Notably, CD47/LNP-mRNA also shows an increased affinity for serum albumin (Albu), the most abundant plasma protein that has been shown to increase the retention of LNPs in the b…"
+    },
+    {
+      "candidate_id": "OC-1daf0fcc95f65f3e",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-7b5a2eeffa07745b"
+      ],
+      "summary": "LR measures the organ-to-blood ratio of LNP uptake, allowing for a comparison of biodistribution while accounting for differences in blood clearance.11,12 The LR of unmodified LNP-mRNA compared to CD47/LNP-mRNA was significantly higher in the liver by ∼23-fold and in the spleen by ∼11-fold (Mann-Whitney U test, ∗∗p < 0.01)."
+    },
+    {
+      "candidate_id": "OC-0542438cb83e2488",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-082ae5f094a3845c"
+      ],
+      "summary": "We demonstrated in vivo that CD47/LNP-mRNA decreased hepatic uptake compared to unmodified LNPs."
+    },
+    {
+      "candidate_id": "OC-c6493bca975235bb",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-fef434d4cebf805b"
+      ],
+      "summary": "We demonstrated in vivo that CD47/LNP-mRNA decreased hepatic uptake compared to unmodified LNPs."
+    },
+    {
+      "candidate_id": "OC-81b50066fe57cf2c",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-e0fd41e485344259"
+      ],
+      "summary": "We showed that CD47 modification decreased macrophage and hepatic uptake both in vitro and in vivo."
+    },
+    {
+      "candidate_id": "OC-8905bce0f132d493",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-cf6cf88a82065dd1"
+      ],
+      "summary": "−6.88 ± 0.52), which may be a benefit to less non-specific interactions with blood components.13,14,15,16 To examine the potential of CD47/LNP-mRNA to evade phagocytic uptake in vitro, we delivered unmodified LNP-mRNA, CD47/LNP-mRNA, or SIRP-α blockade + CD47/LNP-mRNA, where the mRNA encoded GFP (LNP-GFP), to the SIRP-α expressing mouse macrophage cell line RAW 264.7.17 The SIRP-α blockade was pe…"
+    },
+    {
+      "candidate_id": "OC-e3ecde59804c477e",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-34c399d9d1b379ca",
+        "GP-009-E-54e492e537741a26"
+      ],
+      "summary": "To assess whether elevated lung uptake reflects an enhanced delivery to the lung CD31+ endothelial cells, we injected 1 μg aCD31/tLNP-ZsGreen or CD47+aCD31/tLNP-ZsGreen into the mice i.v.; then, we harvested and dissociated lungs 24 h post-treatment to measure ZsGreen expression in CD45−CD31+ endothelial cells. To quantitatively assess the difference of tissue uptake of tLNP with vs."
+    },
+    {
+      "candidate_id": "OC-b040a28194da874b",
+      "endpoint_family": "uptake",
+      "figure_or_table": null,
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-7750d7fa370684a5"
+      ],
+      "summary": "In accordance, Apoc3 and Apoc4, which act as antagonists to Apoe and inhibit liver uptake of triglyceride-rich lipoproteins via LDLRs, were found to be elevated in the protein corona of CD47-modified LNP.44,45,46,47,48,49 Notably, CD47/LNP-mRNA also shows an increased affinity for serum albumin (Albu), the most abundant plasma protein that has been shown to increase the retention of LNPs in the b…"
+    },
+    {
+      "candidate_id": "OC-e4e395d26a82ad68",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 1c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-2cc8eb8485fe4b9f"
+      ],
+      "summary": "At 24 h after treatment, we imaged the cells and found that cells transfected with CD47/LNP-GFP showed a substantial decrease in GFP expression, suggesting that CD47 modification reduced macrophage uptake of LNP-mRNA (Figure 1C, two center panels)."
+    },
+    {
+      "candidate_id": "OC-28df28a294266792",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 1c",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-03ef0f86d9857a8f"
+      ],
+      "summary": "At 24 h after treatment, we imaged the cells and found that cells transfected with CD47/LNP-GFP showed a substantial decrease in GFP expression, suggesting that CD47 modification reduced macrophage uptake of LNP-mRNA (Figure 1C, two center panels)."
+    },
+    {
+      "candidate_id": "OC-db837d73d7902161",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 1cd47",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-973e023eacdbe2bd"
+      ],
+      "summary": "These data indicate that the impact of CD47 peptide on LNP uptake is largely through the CD47-SIRP-α interaction.Figure 1CD47/LNP-mRNA evades macrophage recognition in vitro and liver uptake in vivo(A) Schematic of decorations of LNP-mRNA with CD47 peptide."
+    },
+    {
+      "candidate_id": "OC-20483474c22f2c3c",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 1g",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-7d9f713a9ff8dd16"
+      ],
+      "summary": "Additionally, CD47/LNP-mRNA-treated mice exhibited a ∼6-fold decrease in liver uptake and a ∼3-fold decrease in spleen uptake compared to those treated with unmodified LNP-mRNA (Figure 1G)."
+    },
+    {
+      "candidate_id": "OC-41af842cca66cb5f",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-77af7ac2944acc87"
+      ],
+      "summary": "Despite the potent depletion of HSCs with aCD117/tLNP-Puma, this agent also caused toxicity due to off-target uptake by the liver.23 We hypothesize that incorporating CD47 modification on the aCD117/tLNP-Puma would diminish Puma-induced liver toxicity while retaining its HSC depletion function (Figure 3A)."
+    },
+    {
+      "candidate_id": "OC-b90eb3b2426e003b",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure 3a",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-d9ac04e0922fd353"
+      ],
+      "summary": "Despite the potent depletion of HSCs with aCD117/tLNP-Puma, this agent also caused toxicity due to off-target uptake by the liver.23 We hypothesize that incorporating CD47 modification on the aCD117/tLNP-Puma would diminish Puma-induced liver toxicity while retaining its HSC depletion function (Figure 3A)."
+    },
+    {
+      "candidate_id": "OC-fe493608b63556dc",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-FC-af06072ff95e570a"
+      ],
+      "summary": "without CD47, we measured the luciferase activity per milligram protein in the desired organs and found lung-specific luciferase expression increased from 1.5E+6 LU/mg protein in the unmodified group to 2E+6 LU/mg protein in the CD47-modified group, demonstrating a ∼33% enhancement; in contrast, liver and spleen uptake was significantly reduced in the CD47-modified group (Figure S2)."
+    },
+    {
+      "candidate_id": "OC-f96456a3d1a1043b",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figure s2",
+      "route_hint": "text",
+      "evidence_ids": [
+        "GP-009-E-b30ec97297726a5b"
+      ],
+      "summary": "without CD47, we measured the luciferase activity per milligram protein in the desired organs and found lung-specific luciferase expression increased from 1.5E+6 LU/mg protein in the unmodified group to 2E+6 LU/mg protein in the CD47-modified group, demonstrating a ∼33% enhancement; in contrast, liver and spleen uptake was significantly reduced in the CD47-modified group (Figure S2)."
+    },
+    {
+      "candidate_id": "OC-5db12202a400d14f",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-FC-d64a3aae8ade8745"
+      ],
+      "summary": "The decreased interaction with Apoe and increased binding to Albu may underlie the reduced liver uptake of CD47-modified LNP-mRNA, as shown in Figures 1F–1J."
+    },
+    {
+      "candidate_id": "OC-d62f5869c26daf98",
+      "endpoint_family": "uptake",
+      "figure_or_table": "figures",
+      "route_hint": "vision",
+      "evidence_ids": [
+        "GP-009-E-c1e2d2174e183b9c"
+      ],
+      "summary": "The decreased interaction with Apoe and increased binding to Albu may underlie the reduced liver uptake of CD47-modified LNP-mRNA, as shown in Figures 1F–1J."
+    }
+  ]
+}

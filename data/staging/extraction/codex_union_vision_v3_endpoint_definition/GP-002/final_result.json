@@ -1,0 +1,1424 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-002",
+  "eligibility": {
+    "decision": "eligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "IDENTIFIABLE_LNP",
+      "SUPPORTED_PAYLOAD",
+      "TARGET_CELL_EVIDENCE",
+      "USABLE_FORMULATION_OUTCOME_LINKAGE"
+    ],
+    "evidence_ids": [
+      "GP-002-FC-22ec84bd5b48a17d",
+      "GP-002-FC-2057f41810c593c3",
+      "GP-002-FC-73bff18b14386f53",
+      "GP-002-FC-8d93ef4368a8c488"
+    ],
+    "explanation": "Original mouse experiments used an identifiable SM-102 mRNA-LNP formulation and directly measured eGFP expression in hepatocytes."
+  },
+  "formulations": [
+    {
+      "formulation_id": "F1",
+      "formulation_name": {
+        "value": "SM-102 eGFP mRNA-LNP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-dd0dd1d716eb04d1",
+          "GP-002-FC-cebb5d700d3f495a"
+        ],
+        "missing_reason": null
+      },
+      "composition": {
+        "value": "50 SM-102/10 DSPC/38.5 cholesterol/1.5 DMG-PEG2000",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "composition_basis": {
+        "value": "lipid molar ratio",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "np_ratio": {
+        "value": 6.8,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-6609d2928401669e"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_id": "C1",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "SM-102",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "ionizable_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 50.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C2",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DSPC",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "helper_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C3",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "cholesterol",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 38.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "component_id": "C4",
+      "formulation_id": "F1",
+      "identity": {
+        "value": "DMG-PEG2000",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "role": {
+        "value": "peg_lipid",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount": {
+        "value": 1.5,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      },
+      "amount_unit": {
+        "value": "molar ratio parts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-2057f41810c593c3"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "E1",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "eGFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "enhanced green fluorescent protein (eGFP)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-a431e2273e1a07f7"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter mRNA; no molecular target reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter-delivery experiment; no therapeutic target cell reported."
+      },
+      "tissue_or_organ": {
+        "value": "liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse (BALB/c)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-db77df3474ab2610"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "healthy",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "μg",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "tail vein intravenous injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 24.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E1-e",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-39062576eea8789d"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "eGFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "enhanced green fluorescent protein (eGFP)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-39062576eea8789d"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter mRNA; no molecular target reported."
+      },
+      "delivery_recipient_cell": {
+        "value": "hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "therapeutic_target_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter-delivery experiment."
+      },
+      "tissue_or_organ": {
+        "value": "healthy mouse liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-39062576eea8789d"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-39062576eea8789d"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "healthy",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-39062576eea8789d"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "μg",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "tail vein intravenous injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 24.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      }
+    },
+    {
+      "experiment_id": "E2-e",
+      "formulation_id": "F1",
+      "payload_type": {
+        "value": "mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "payload_name": {
+        "value": "eGFP mRNA",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "encoded_product": {
+        "value": "eGFP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "molecular_target": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter mRNA; no molecular target reported."
+      },
+      "delivery_recipient_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Liver tissue, not a cell population, was measured."
+      },
+      "therapeutic_target_cell": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Reporter-delivery experiment."
+      },
+      "tissue_or_organ": {
+        "value": "Mdr2 knockout mouse liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "species": {
+        "value": "mouse",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "disease_model": {
+        "value": "Mdr2 knockout fibrosis/cirrhosis model",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4220704b6ff8543d"
+        ],
+        "missing_reason": null
+      },
+      "experimental_context": {
+        "value": "in_vivo",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "dose": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      },
+      "dose_unit": {
+        "value": "μg",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      },
+      "route": {
+        "value": "tail vein intravenous injection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-9e73aa6c0b4a6696"
+        ],
+        "missing_reason": null
+      },
+      "timepoint": {
+        "value": 14.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "timepoint_unit": {
+        "value": "h",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      }
+    }
+  ],
+  "unresolved_items": [
+    "The packet reports multiple disease and xenograft experiments; only the healthy-hepatocyte experiment was extracted to preserve an unambiguous formulation-experiment-outcome link."
+  ],
+  "outcomes": [
+    {
+      "outcome_id": "O1",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "eGFP immunohistochemistry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP staining in hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "uninjected mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-7a4c828bba577cd2"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric hepatocyte-level value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric hepatocyte-level value reported."
+      },
+      "qualitative_outcome": {
+        "value": "Strong eGFP staining was observed in virtually all hepatocytes.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O2",
+      "experiment_id": "E1",
+      "assay": {
+        "value": "RNA sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP transcript counts in liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "uninjected mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 1661.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "average mapped transcript counts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Abundant eGFP transcripts were detected versus negligible background (average 1 count) in uninjected mice; p=0.0079.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "source_run": "codex_union_vision_v3"
+    },
+    {
+      "outcome_id": "O1-2",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "eGFP immunohistochemistry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP staining in hepatocytes",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488",
+          "GP-002-FC-c9b2482b6114a861",
+          "GP-002-E-3b62dd9a6e6a70a1"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "uninjected liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ccefd059ea845769"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 97.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ccefd059ea845769"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% liver-section surface area stained for eGFP (approximately)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ccefd059ea845769"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Strong eGFP staining in virtually all hepatocytes.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-8d93ef4368a8c488"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay",
+      "source_outcome_id": "O1"
+    },
+    {
+      "outcome_id": "O2-2",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "ex vivo fluorescence imaging",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-3fcdf96291407274"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP fluorescence in healthy mouse liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-3fcdf96291407274",
+          "GP-002-FC-14b3f38a567e0b00",
+          "GP-002-E-ce8ccacbfde90c28"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "uninjected mice/background autofluorescence",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-3fcdf96291407274"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 10.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-3fcdf96291407274"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "fold above background (approximately)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-3fcdf96291407274"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Strong and specific liver fluorescence; injected versus uninjected liver fluorescence differed significantly (p<0.0001).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-3fcdf96291407274",
+          "GP-002-E-ce8ccacbfde90c28"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay",
+      "source_outcome_id": "O2"
+    },
+    {
+      "outcome_id": "O3",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "mapped eGFP transcript counts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP transcripts in mouse liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1",
+          "GP-002-E-93abe08615853382"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "uninjected mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 1661.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "mapped transcript counts (average)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Versus average one count in controls; p=0.0079.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-f648b23ecaacc0b1"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O4",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "serum eGFP detection",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP detection in serum",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53",
+          "GP-002-E-919bac300948d680"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": 0.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "of 6 injected mice with detectable serum eGFP",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "eGFP was not detected in serum.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-73bff18b14386f53"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O5",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "ex vivo fluorescence imaging",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-af2c5f84ba2a0f2e"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP fluorescence in Mdr2 knockout mouse liver",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-af2c5f84ba2a0f2e",
+          "GP-002-E-4097afd16c271dd7"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "healthy controls",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-af2c5f84ba2a0f2e"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 3.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-af2c5f84ba2a0f2e"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "fold above background (lower bound)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-af2c5f84ba2a0f2e"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Fluorescence was attenuated twofold relative to healthy controls.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-af2c5f84ba2a0f2e"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O6",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "StainDetectAI analysis of eGFP IHC",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ff2ac8fe407478a4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP-positive surface area in fibrotic/cirrhotic liver sections",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ff2ac8fe407478a4",
+          "GP-002-FC-cd04f283be75f5c1",
+          "GP-002-FC-3386529a4b41301b"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "F3 severe fibrosis versus F4 cirrhosis",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ff2ac8fe407478a4"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 76.0,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ff2ac8fe407478a4"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "% stained surface area in F3 animals (average)",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ff2ac8fe407478a4"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "F4 averaged 60%; staining was negatively associated with fibrosis severity (p=0.0365).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-ff2ac8fe407478a4"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O7",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "western blotting",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-afa1137e1838b514"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP protein abundance in spontaneous HCC tumors and adjacent liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-afa1137e1838b514",
+          "GP-002-FC-4ebd59db853d7de3",
+          "GP-002-E-5413eefe61729990"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "adjacent liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-afa1137e1838b514"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 150.1,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-afa1137e1838b514"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "arbitrary protein density units, tumor average",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-afa1137e1838b514"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Tumor protein abundance was not significantly different from liver tissue (p=0.1430).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-4ebd59db853d7de3"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O8",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "western blotting",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-179d507bd33c279b"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP protein abundance in HuH-7 liver-tumor xenografts and adjacent liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-179d507bd33c279b",
+          "GP-002-FC-f3f0c8aeebb96cfe",
+          "GP-002-E-53d9ffb107aa82ae"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "adjacent liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-179d507bd33c279b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 14.9,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-179d507bd33c279b"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "arbitrary protein density units, tumor average",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-179d507bd33c279b"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "Tumor protein was significantly lower than liver protein (p=0.0158).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-179d507bd33c279b"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O9",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "ex vivo fluorescence imaging",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-1b7a652145682c0a"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP fluorescence in HuH-7 liver-tumor xenografts and liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-1b7a652145682c0a",
+          "GP-002-E-dbac646b3b59178a"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "liver tissue from the same mice",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-dbac646b3b59178a"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 135.4,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-1b7a652145682c0a"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "×10^6 photons/s/cm2/sr, tumor average",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-1b7a652145682c0a"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "No significant liver-versus-tumor fluorescence difference (p=0.3496).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-E-dbac646b3b59178a"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O10",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "western blotting and immunohistochemistry",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-12bc31535bd7c992",
+          "GP-002-FC-8fe9b2db94c602ae"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP protein abundance in A549 and HCT116 secondary liver-tumor xenografts",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-12bc31535bd7c992",
+          "GP-002-FC-8fe9b2db94c602ae",
+          "GP-002-FC-550c30311f263411",
+          "GP-002-FC-ce8042a531ce83db"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "adjacent liver tissue",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-12bc31535bd7c992"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": 33.6,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-12bc31535bd7c992"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "arbitrary protein density units, A549 tumor average",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-12bc31535bd7c992"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "A549 protein did not differ significantly from liver; HCT116 tumor fluorescence was significantly lower than liver (p=0.0002).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-12bc31535bd7c992",
+          "GP-002-FC-550c30311f263411"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O11",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "fluorescence imaging",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-7c5dd449ba3afcc4"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP fluorescence in small lung metastases",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-7c5dd449ba3afcc4",
+          "GP-002-FC-6e82079ab6a2cd40",
+          "GP-002-E-c465d031490bf563"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "normal-lung background fluorescence",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-7c5dd449ba3afcc4"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric fluorescence value reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric fluorescence value reported."
+      },
+      "qualitative_outcome": {
+        "value": "eGFP fluorescence was not detected above background.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-7c5dd449ba3afcc4"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O12",
+      "experiment_id": "E1-e",
+      "assay": {
+        "value": "liver RNA sequencing",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-522e171671ceb0a3"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "PD-L1 (Cd274) expression in liver cells",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-522e171671ceb0a3",
+          "GP-002-E-e3a0e979a0463d80"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": "saline/uninjected controls",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-522e171671ceb0a3"
+        ],
+        "missing_reason": null
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Effect size not reported in packet."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Effect size not reported in packet."
+      },
+      "qualitative_outcome": {
+        "value": "PD-L1 was significantly upregulated (p<0.0001).",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-522e171671ceb0a3"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O13",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "fluorescence imaging and regression",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-873d71975bf645e8"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "association between spontaneous HCC tumor size and fluorescence intensity",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-873d71975bf645e8",
+          "GP-002-FC-7935ac5ad1256fe4",
+          "GP-002-FC-7952fd7163a6618f"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "Correlation analysis; no comparator."
+      },
+      "outcome_value": {
+        "value": 0.0661,
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-873d71975bf645e8"
+        ],
+        "missing_reason": null
+      },
+      "outcome_unit": {
+        "value": "R²",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-873d71975bf645e8"
+        ],
+        "missing_reason": null
+      },
+      "qualitative_outcome": {
+        "value": "No correlation was reported.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-873d71975bf645e8"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    },
+    {
+      "outcome_id": "O14",
+      "experiment_id": "E2-e",
+      "assay": {
+        "value": "fluorescence imaging of tumor cross-sections",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-d3dac83106a06513"
+        ],
+        "missing_reason": null
+      },
+      "endpoint": {
+        "value": "eGFP fluorescence intensity within HuH-7 tumor interiors",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-d3dac83106a06513",
+          "GP-002-E-0db042087730f5ac"
+        ],
+        "missing_reason": null
+      },
+      "comparator": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No comparator reported."
+      },
+      "outcome_value": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric intensity reported."
+      },
+      "outcome_unit": {
+        "value": null,
+        "status": "missing",
+        "evidence_ids": [],
+        "missing_reason": "No numeric intensity reported."
+      },
+      "qualitative_outcome": {
+        "value": "Mostly uniform fluorescence intensity within tumors.",
+        "status": "reported",
+        "evidence_ids": [
+          "GP-002-FC-d3dac83106a06513"
+        ],
+        "missing_reason": null
+      },
+      "source_run": ".overlay"
+    }
+  ]
+}
