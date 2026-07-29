@@ -204,16 +204,45 @@ recovery while the gold-set gate remains below target.
 
 ## Local setup
 
-```bash
-python3 -m venv .venv-rag
-.venv-rag/bin/pip install -r requirements-rag.txt
+Two chains, with different requirements. The evaluation chain needs nothing
+beyond a clone; the ingestion chain needs network access twice.
 
-# --confirm-write is required: these rewrite tracked corpus and report files.
-# --paper-id restricts the run; --skip-missing-xml records a missing source
-# as a warning instead of aborting after earlier papers are already written.
-.venv-rag/bin/python -m src.rag.ingestion --confirm-write
+**Evaluation — runs from a clone, no network, no services, no API quota:**
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pytest -q                       # 675 pass, 1 skips
+.venv/bin/python -m src.extraction.evaluate_final_gold_dynamic --confirm-write
+```
+
+That reproduces the single-run figure. The three union figures are rebuilt by
+`docs/extraction/union_provenance.md` and, for the 13/15 root:
+
+```bash
+AI_LNP_FLAG_RECORD_LEVEL_SALVAGE=1 \
+  .venv/bin/python -m src.extraction.build_union_vision_v3 --confirm-write
+```
+
+**Ingestion — needs network, and a second environment:**
+
+```bash
+# 1. Fetch the open-access packages. They are gitignored: large, and their
+#    licences differ from this repository's.
+.venv/bin/python -m src.screening.retrieve_gold_oa_packages --confirm-write
+
+# 2. Build the block corpus. --skip-missing-xml records a gap as a warning
+#    instead of stopping after earlier papers are already written.
+.venv/bin/python -m src.rag.ingestion --confirm-write --skip-missing-xml
+
+# 3. Retrieval needs torch and faiss, which the extraction path does not.
+python3 -m venv .venv-rag && .venv-rag/bin/pip install -r requirements-rag.txt
 .venv-rag/bin/python -m src.rag.run_pipeline
 ```
+
+Step 2 also reaches the UniParse service at `UNIPARSE_BASE_URL` when
+`uniparse_ingestion` is on, which it is by default. If the service is
+unreachable, ingestion degrades to the PyMuPDF path and records a warning
+rather than failing.
 
 Run local tests:
 

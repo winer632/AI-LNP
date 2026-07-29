@@ -94,7 +94,21 @@ def find_xml(candidate_id: str, pmcid: str) -> Path:
         return package_xml[0]
     matches = sorted(XML_ROOT.glob(f"{candidate_id}_{pmcid}.xml"))
     if not matches:
-        raise FileNotFoundError(f"No PMC XML for {candidate_id} {pmcid}")
+        # Name the bootstrap rather than the missing file. The source packages
+        # are gitignored -- they are large and their licences differ from this
+        # repository's -- so a clone hits this on its first ingestion run, and
+        # a bare FileNotFoundError reads as a broken repository rather than as
+        # "fetch the corpus first".
+        raise FileNotFoundError(
+            f"No PMC XML for {candidate_id} {pmcid}.\n"
+            "The open-access packages are not tracked by Git. Fetch them "
+            "before ingesting:\n"
+            "    python -m src.screening.retrieve_gold_oa_packages "
+            "--confirm-write\n"
+            "That needs network access. To ingest only the papers you already "
+            "have, pass --paper-id, or --skip-missing-xml to record the gap as "
+            "a warning instead of stopping."
+        )
     return matches[0]
 
 
