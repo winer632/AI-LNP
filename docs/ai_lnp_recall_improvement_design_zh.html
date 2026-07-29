@@ -137,8 +137,8 @@
   </div>
 
   <div class="strip">
-    <div class="stat good"><strong>9/9</strong><span>模块已交付</span></div>
-    <div class="stat good"><strong>675</strong><span>测试通过（原 160）</span></div>
+    <div class="stat good"><strong>11/11</strong><span>模块已交付</span></div>
+    <div class="stat good"><strong>791</strong><span>测试通过（原 160）</span></div>
     <div class="stat good"><strong>13/15</strong><span>recall（默认单次跑 11/15）</span></div>
     <div class="stat mid"><strong>2 条</strong><span>缺失（GO-017 / GO-018）</span></div>
   </div>
@@ -391,6 +391,67 @@ format:   html
     <b>但摄取链依赖外部资源这一条修不掉</b>，它不是工程缺陷，是数据分发的现实约束。
   </div>
 
+  <div class="warn">
+    <b>v22 · endpoint 契约补全：对照组推翻了它自己的归因</b><br>
+    <code>OutcomeRecord.endpoint</code> 确实<b>没有任何描述</b>，prompt 里也从未提过它该写什么；
+    而 gold 的 15 条里有 12 条在 endpoint 里同时写明了「测什么 + 在哪个群体上测」，
+    并且 <code>experiments.csv</code> 另有 <code>cell_type</code> 列——
+    <b>标注者是有意冗余地把群体写进 endpoint 的</b>。所以契约缺定义属实。
+    <br><br>
+    <b>但它一开始看到的是全面改善：</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>已匹配结果</th><th class="num">前</th><th class="num">后</th></tr></thead>
+      <tbody>
+        <tr><td>GO-016</td><td class="num">0.700 · 证据<b>不支持</b></td><td class="num yes">1.000 · 证据<b>支持</b></td></tr>
+        <tr><td>GO-011</td><td class="num">0.675</td><td class="num yes">0.781</td></tr>
+        <tr><td>GO-013</td><td class="num">0.711</td><td class="num yes">0.878</td></tr>
+        <tr><td>证据准确率</td><td class="num">7/12</td><td class="num yes">8/12</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>然后它跑了对照组</b>——把开关<b>关闭</b>的那次运行同样合并进去：
+    <b>同样 13/15、同样 8/12、同样的 GO-016 改善。</b>
+    增益来自<b>合并本身</b>，不是来自这个定义。定义自己的贡献是多 17 条记录、
+    precision <b>0.1667 → 0.1368</b>。
+    <blockquote style="margin:.6em 0;padding:.5em .9em;border-left:3px solid #c88;">
+    没有对照组的话，这会被报成「证据准确率 +1 的成功」。
+    </blockquote>
+    <b>假设在根上就错了：</b>按每条记录自己的实验行核对，endpoint 命名群体的比例
+    16/21 → 29/36 确实提升，但 <b>GP-008 的对照组本来就是 5/5</b>——
+    抽取端本来大部分时候就在写群体，<b>没有沉默可打破</b>。
+    <br>否决条件触发（precision 明显下降且无 recall 增益），开关默认关。
+    44 个新测试、14 个变异全部被捕获；description 加在新契约类上而非基线，
+    已提交的九次请求指纹逐位未变。
+  </div>
+
+  <div class="warn">
+    <b>v22 · 九条路的分布，这本身是结论</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>类型</th><th class="num">条数</th><th>结果</th></tr></thead>
+      <tbody>
+        <tr><td>放松匹配标准<br><small>极性等价类 · 词形归并 · 枚举映射 · 分母改动</small></td>
+            <td class="num">4</td><td class="no">全部被自己的对抗检验否决</td></tr>
+        <tr><td>改 prompt 措辞<br><small>细胞类型 · 解释性陈述 · endpoint 定义</small></td>
+            <td class="num">3</td><td class="no">全部 recall +0</td></tr>
+        <tr><td>补新能力<br><small>实体解析前置</small></td>
+            <td class="num">1</td><td class="mid">技术成功，recall +0，证据准确率 +1</td></tr>
+        <tr><td><b>修一个正在丢结果的缺陷</b><br><small>抢救被契约误弃的记录</small></td>
+            <td class="num">1</td><td class="yes"><b>+GO-002 → 13/15</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>唯一有效的那次，不是「想办法多捞」，而是「发现有东西正在被错误丢弃」</b>——
+    一条虚构的 evidence id 出现在 <code>eligibility</code> 里，
+    整个响应连同六条正确记录一起被丢弃，其中一条就是 GO-002。
+    <br><br>
+    <b>剩余两条的性质：</b>GO-017 差一个词元，而那个词元在
+    <code>endpoint_gate</code> 按设计读不到的实验字段里；
+    GO-018 是模型看到证据后主动 abstain——<b>那是 P2 的设计意图在正常工作</b>。
+    要跨过去只剩两种做法，都要跨已被八次实测守住的那条线。
+  </div>
+
   <div class="ok">
     <b>v21 · 实体解析前置：技术上成功，recall 仍 +0，但换来证据准确率 +1</b><br>
     这是八条路里<b>唯一真正做成了它承诺的技术任务</b>的一条。模型完成了那个两跳连接，
@@ -505,7 +566,7 @@ format:   html
   <h3>1. 各部分完成度</h3>
   <p>验收口径：<b>代码存在 · 测试通过 · 已推送 main · 关键链路跑通 · recall 达标</b>。
      百分比为 <b>v19 实测状态（2026-07-29）</b>，非自评——
-     括号内是独立验收 Agent 给的分。测试 <b>675</b> 通过，开关 <b>14 个 / 7 开</b>。</p>
+     括号内是独立验收 Agent 给的分。测试 <b>791</b> 通过，开关 <b>18 个 / 7 开</b>。</p>
 
   <div class="scroll">
   <table>
@@ -1094,7 +1155,7 @@ format:   html
       <tr><td><b>P1</b> uniparse ingestion</td><td class="num">8%</td><td class="yes">✅ 完成</td>
         <td>GP-006 语料 54 → <b>259</b> blocks，<code>pdf_page</code> 消失，<code>table_row</code> 13 个</td></tr>
       <tr><td>工程就绪度 + 开关</td><td class="num">45%</td><td class="yes">✅ 完成</td>
-        <td>测试 160→<b>675</b>；CI 已建；<code>activation_gate</code> 变真开关；<code>.env.example</code> 3→19</td></tr>
+        <td>测试 160→<b>791</b>；CI 已建；<code>activation_gate</code> 变真开关；<code>.env.example</code> 3→19</td></tr>
       <tr><td><b>P3</b> 候选必答</td><td class="num">25%</td><td class="yes">✅ 完成 · <b>默认开</b></td>
         <td>唯一恢复 GO-004 的消融条件；槽位 39 个全回填、168 个退化，大文章需按
             <code>max_slots_per_call</code> 分块</td></tr>
