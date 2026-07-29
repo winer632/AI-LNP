@@ -426,6 +426,36 @@ format:   html
   </div>
 
   <div class="warn">
+    <b>v23 更正 · 「差一个词元」这个说法是错的，我把两次运行的数据混了</b><br>
+    我此前写过：GO-017「差一个词元，而那个词元就在这条记录自己的证据里，
+    在门看不到的字段中」。实测下来<b>两处都不成立</b>：
+    <div class="scroll">
+    <table>
+      <thead><tr><th>我的说法</th><th>实测</th></tr></thead>
+      <tbody>
+        <tr><td>词元在门读不到的实验字段里，读到就能过</td>
+            <td class="no">把 <code>endpoint_gate</code> 改成读实验字段后重测，
+                <b>三个口径一个数字都没变</b></td></tr>
+        <tr><td>那个词元就在记录自己的证据里</td>
+            <td class="no"><code>hsc</code> 在主口径产物的<b>全文分词里根本不存在</b>。
+                它只存在于实体解析那次<b>单独的</b>运行里，而那次运行没有并进主口径</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>把实体解析并进来之后，endpoint 门确实过了</b>——<code>hsc</code> 进来且是罕见词。
+    但<b>只有一条候选过门，而且是错的那条</b>：那是免疫荧光<b>定位</b>记录，
+    卡在 polarity 门（gold 判别词是 <code>eliminated</code>）。
+    <b>真正对的那条杀伤记录反而没拿到群体信息</b>——
+    实体表把 <code>mouse HSC cell line</code> 写进了定位记录，没写进杀伤记录。
+    <br><br>
+    <b>这是我第三次在跨运行比较时把数据搞混。</b>
+    前两次是 precision 全线虚高、以及「匹配器一行未改」。
+    三次都是<b>我先下结论、再被实测推翻</b>。
+    记在这里不是为了自责，是因为这个错误有固定形态：
+    <b>把一次未合并的实验运行的观测，当成了主口径的事实</b>。
+    </div>
+
+  <div class="warn">
     <b>v22 · 九条路的分布，这本身是结论</b>
     <div class="scroll">
     <table>
