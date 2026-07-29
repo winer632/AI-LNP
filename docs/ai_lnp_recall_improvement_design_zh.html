@@ -137,10 +137,10 @@
   </div>
 
   <div class="strip">
-    <div class="stat good"><strong>6/6</strong><span>模块已交付</span></div>
-    <div class="stat good"><strong>367</strong><span>测试通过（原 160）</span></div>
-    <div class="stat good"><strong>6→11</strong><span>消融 recall（同 harness）</span></div>
-    <div class="stat mid"><strong>4 条</strong><span>缺失（2 条标注存疑）</span></div>
+    <div class="stat good"><strong>9/9</strong><span>模块已交付</span></div>
+    <div class="stat good"><strong>675</strong><span>测试通过（原 160）</span></div>
+    <div class="stat good"><strong>13/15</strong><span>recall（默认单次跑 11/15）</span></div>
+    <div class="stat mid"><strong>2 条</strong><span>缺失（GO-017 / GO-018）</span></div>
   </div>
 
   <nav class="toc">
@@ -1212,14 +1212,24 @@ HybridIndex 查询 "total insertion frequency in LSECs" → 上述 table_row 为
   <table>
     <thead><tr><th>ID</th><th>类型</th><th>状态</th><th>依据</th></tr></thead>
     <tbody>
-      <tr><td><b>GO-002</b></td><td>定性</td><td class="mid">VLM 已正确读出</td>
+      <tr><td><b>GO-002</b></td><td>定性</td><td class="yes">v19：<b>已恢复</b></td>
         <td>从 Figure 2 逐字读出 <code>41.5% ± 14.6</code>，与金标准原文一致；判定 F4/80 与 eGFP 不共定位。卡在评估器分词</td></tr>
-      <tr><td><b>GO-003</b></td><td>定性</td><td class="mid">VLM 已正确读出</td>
+      <tr><td><b>GO-003</b></td><td>定性</td><td class="yes">v19：<b>已恢复</b></td>
         <td>Merge+GFP+LYVE-1 三图判定 colocalized。卡在 <code>LYVE1</code> vs <code>LYVE-1</code> 分词</td></tr>
-      <tr><td><b>GO-004</b></td><td>数值</td><td class="no">标注存疑</td>
-        <td>「17 倍」在引用证据 EVID-007 中<b>不存在</b>（无 17、无 fold、无 luciferase），VLM 确认 Figure 2B 上<b>也没印</b></td></tr>
-      <tr><td><b>GO-017</b></td><td>定性</td><td class="no">人工已否决</td>
-        <td>Day7 v4.1 与 Day8 两次<b>独立</b>裁定均判为「推断而非实测」（D8M-0108）</td></tr>
+      <tr><td><b>GO-004</b></td><td>数值</td><td class="yes">v19：<b>已恢复</b></td>
+        <td>由 P3 候选槽位捞回。<b>但此处的存疑仍然成立</b>：「17 倍」在引用证据 EVID-007 中不存在
+            （无 17、无 fold、无 luciferase），VLM 确认 Figure 2B 上也没印。
+            <b>也就是说它被匹配上了，而 gold 自己的证据并不支持那个数</b>——
+            这一条计入了 13/15，读者应当知道它的成色</td></tr>
+      <tr><td><b>GO-017</b></td><td>定性</td><td class="no">v19：<b>仍缺失</b></td>
+        <td>Day7 v4.1 与 Day8 两次独立人工裁定均判为「推断而非实测」（D8M-0108）；
+            模型也把承载它的槽位判为 <code>not_an_outcome</code>。
+            <b>但 gold 把它标成了 outcome</b>——抽取端与标注端对「什么算 outcome」有两套标准，
+            项目方已决定按标注端对齐，重试进行中</td></tr>
+      <tr><td><b>GO-018</b></td><td>定性</td><td class="no">v19：<b>仍缺失</b></td>
+        <td>证据在 full packet 中（17 处 Desmin），两个槽位都给了模型，它返回
+            <code>unresolved</code>——「共染图像描述缺少可用的结果值」。
+            这是 abstain 规则<b>正常工作</b>，不是故障</td></tr>
     </tbody>
   </table>
   </div>
