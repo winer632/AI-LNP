@@ -391,6 +391,50 @@ format:   html
     <b>但摄取链依赖外部资源这一条修不掉</b>，它不是工程缺陷，是数据分发的现实约束。
   </div>
 
+  <div class="ok">
+    <b>v21 · 实体解析前置：技术上成功，recall 仍 +0，但换来证据准确率 +1</b><br>
+    这是八条路里<b>唯一真正做成了它承诺的技术任务</b>的一条。模型完成了那个两跳连接，
+    引用的正是预判的三句话，逐字核对通过：
+    <blockquote style="margin:.6em 0;padding:.5em .9em;border-left:3px solid #8a8;font-size:.92em;">
+    <code>JS-1 cells (m.musculus) | YaJi Biological | YS2162C</code><br>
+    <code>The mouse HSC cell lines were procured from the YaJi Biological…</code><br>
+    <code>JS-1 cells were differentiated with TGF-β1, followed by FAP positivity enrichment</code>
+    </blockquote>
+    → <code>population: "mouse HSC cell lines"</code>、<code>state: "differentiated with TGF-β1…"</code>
+    <br><br>
+    <b>九篇全跑</b>：提出 27 条、保留 22 条、<b>拒绝 5 条</b>、丢弃 3 个字段。
+    GP-003 与 GP-004 一条未建（两篇都没有被表征过的细胞系）。
+    拒绝的例子很能说明它在守规矩——GP-009 的 <code>RAW264.7</code> 被拒，
+    因为<b>它自己引用的那句话没这么拼</b>。
+    <b>接地约束</b>：每条映射必须引用包内存在的证据 id，且 population/state/species
+    的<b>每一个词</b>都要出现在被引证据文本里，只允许单复数差异。
+    <br><br>
+    <b>为什么 recall 仍不涨——定位到了字段级：</b>
+    答案确实传下去也确实进了记录，但进的是<b>实验的</b> <code>therapeutic_target_cell</code>：
+    <code>"FAP+ JS-1 cells (mouse HSC cell line; differentiated with TGF-β1 and FAP-enriched)"</code>。
+    而 <code>endpoint_gate</code> 只读 <code>_result_text(outcome, None)</code>，
+    <b>按设计排除实验字段</b>——因为同一实验下所有 outcome 共享实验字段，纳入后这道门就分不出它们了。
+    <b>差一个词元，而那个词元就在这条记录自己的证据里，在门看不到的字段中。</b>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>指标</th><th class="num">前</th><th class="num">后</th></tr></thead>
+      <tbody>
+        <tr><td>recall</td><td class="num">13/15</td><td class="num">13/15</td></tr>
+        <tr><td>precision</td><td class="num">0.2203</td><td class="num no">0.2097</td></tr>
+        <tr><td><b>证据准确率</b></td><td class="num">7/12</td><td class="num yes"><b>8/12</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <b>那 +1 是真实质量提升</b>：GO-016 从一条得 0.700 但<b>证据不支持</b>的记录，
+    换到一条得 1.000 且<b>证据支持</b>的记录。
+    <br><br>
+    <b>Agent 的一个自我约束值得记：</b>它发现这个字段级缺口后，
+    <b>没有</b>去改 prompt 把 population 挪进 outcome 记录，理由是
+    「我是读 gate 细节才发现的，为它重写规则就是照着答案改」。
+    <b>这个判断是对的，也是这八条路里最难做到的一次克制。</b>
+    <br>745 测试通过，24 个变异全部被捕获，11 次 codex 调用、0 次付费请求。
+  </div>
+
   <div class="warn">
     <b>v20 · 按项目方决定的两次重试，均为负结果</b>
     <div class="scroll">
