@@ -282,7 +282,8 @@ with override(vision_relationship_polarity=True):
 print(r['recovered'], '/', r['total'], r['precision'], r['missing_gold_outcome_ids'])
 "</code></pre>
 
-<h3>摄取链 —— 需要联网两次</h3>
+<h3>摄取链 —— 已验证可从零跑通</h3>
+<p class="sub" style="margin-bottom:.5rem">全新 clone 实测：取数 9/9、建语料 9 篇共 1455 块、块数与仓库已提交的逐篇一致。仅需联网。</p>
 <pre><code># 1. 取开放获取包（体积大、许可不同，未纳入 Git）
 .venv/bin/python -m src.screening.retrieve_gold_oa_packages --confirm-write
 
