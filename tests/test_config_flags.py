@@ -530,3 +530,63 @@ def test_a_rationale_that_quotes_a_recall_figure_reproduces_it():
             f"{name}'s rationale quotes {sorted(unreachable)}, which no "
             f"committed configuration produces. Reachable: {sorted(achievable)}"
         )
+
+
+def test_a_rationale_that_names_a_before_and_after_pair_is_checked_as_a_pair():
+    """The stronger constraint: attribution, not just existence.
+
+    The companion test above verifies that every "N/15" a rationale quotes is
+    a figure some committed configuration produces. That catches an invented
+    number and misses the failure that actually happened: seventeen quoted
+    figures were individually real and attributed to the wrong configuration.
+
+    A rationale that says "X/15 becomes Y/15" is making a causal claim about
+    its own flag, and that one is checkable: toggling the flag on the root the
+    rationale names must actually produce that pair. This test does it for the
+    flags whose rationale states a pair and names a root it can resolve.
+    """
+    import re
+
+    from src.extraction.evaluate_final_gold_dynamic import ROOT, evaluate
+
+    # Roots a rationale may name, by the substring it uses to name them.
+    known_roots = {
+        "codex_union_v1": ROOT / "data/staging/extraction/codex_union_v1",
+    }
+    pair = re.compile(r"(\d{1,2})/15.{0,90}?(?:to|becomes) (\d{1,2})/15")
+
+    checked = 0
+    for flag in registry().values():
+        text = " ".join((flag.rationale or "").split())
+        match = pair.search(text)
+        if not match:
+            continue
+        named = [root for key, root in known_roots.items() if key in text]
+        if not named or not named[0].exists():
+            continue
+        before, after = int(match.group(1)), int(match.group(2))
+
+        with override(**{flag.name: False}):
+            off = evaluate(result_roots=[named[0]])["recovered"]
+        with override(**{flag.name: True}):
+            on = evaluate(result_roots=[named[0]])["recovered"]
+
+        # The flag must produce the claimed pair on the root it names, or be
+        # honest that the effect needs something the root alone does not have.
+        if off == on:
+            assert any(
+                phrase in text
+                for phrase in ("union merge", "appended", "never reads", "no root")
+            ), (
+                f"{flag.name} claims {before}/15 -> {after}/15 on "
+                f"{named[0].name}, but toggling it there changes nothing and "
+                "the rationale does not say why"
+            )
+        else:
+            assert {off, on} == {before, after}, (
+                f"{flag.name} claims {before}/15 -> {after}/15 but produces "
+                f"{off}/15 -> {on}/15 on {named[0].name}"
+            )
+        checked += 1
+
+    assert checked, "no rationale stated a checkable before/after pair"

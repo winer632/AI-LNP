@@ -212,14 +212,18 @@ flags:
     default: false
     status: available
     rationale: >-
-      Available, not default. Its reads are the only source for the four
+      Available, not default. Its reads are the only source for four
       outcomes the text path never produces, and with the relationship
-      enum carried structurally they score: merging the GP-004 and
-      GP-006 reads takes codex_union_v1 from 11/15 at precision 0.2157
-      to 12/15 at 0.2264. Left off because the merge is not uniformly
-      positive -- adding the GP-008 reads gains no outcome and drops
-      evidence coverage from 10 checked to 9, because one-to-one
-      matching reassigns an evidence-bearing record to another gold row.
+      enum carried structurally they score. Attribution matters here and
+      an earlier version of this text got it wrong: toggling this flag
+      on codex_union_v1 changes nothing, because the flag gates the
+      vision pipeline and that root carries no vision records. The gain
+      comes from merging observations into a root -- codex_union_v1 plus
+      the GP-004 and GP-006 reads scores 12/15 at 0.2264 against 11/15
+      at 0.2157, and scoring that needs vision_relationship_polarity,
+      not this flag. Left off because the merge is not uniformly
+      positive: adding the GP-008 reads recovers no outcome and
+      reassigns an evidence-bearing record elsewhere.
     description: >-
       Attach panel crops and the stricter abstain contract to a vision
       read. The route calls SELECTIVE_VISION_MODEL, which today is
