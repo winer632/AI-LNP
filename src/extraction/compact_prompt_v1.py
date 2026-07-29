@@ -1,6 +1,6 @@
 """Short scientific instructions for compact extraction route v1.
 
-Two prompt versions live here.
+Four prompt versions live here.
 
 ``compact-prompt-1.1.0`` (:data:`COMPACT_EXTRACTION_PROMPT`)
     The frozen baseline. Its text and checksum are part of the compact request
@@ -13,6 +13,12 @@ Two prompt versions live here.
     separately -- rather than editing the baseline in place -- is what keeps the
     flag-off request byte-identical, including its prompt cache key.
 
+``compact-prompt-1.3.0`` / ``compact-prompt-1.3.1``
+    Those two verbatim, plus :data:`CELL_IDENTITY_RULE`. Used only when the
+    ``cell_line_identity`` flag is on. Same discipline again: a new version
+    rather than an edit, so both prompts above stay byte-identical when the
+    flag is off.
+
 Call :func:`active_prompt` instead of importing a constant directly, so a call
 site automatically picks up the text, version, and checksum that belong
 together.
@@ -24,6 +30,7 @@ import hashlib
 import re
 from typing import Iterable, NamedTuple
 
+from src.config_flags import is_enabled
 from src.extraction.outcome_coverage_contracts import OutcomeCandidate
 
 
@@ -67,6 +74,30 @@ CANDIDATE_SLOT_RULES = (
 
 CANDIDATE_SLOT_EXTRACTION_PROMPT = COMPACT_EXTRACTION_PROMPT + CANDIDATE_SLOT_RULES
 
+CELL_IDENTITY_FLAG = "cell_line_identity"
+
+# A named cell line and the population it stands for are two different facts,
+# and a record that carries only the line name has dropped the biological one.
+# This asks for both, and only from the packet: the paper is what says what a
+# line is, so a line the packet never characterises stays uncharacterised
+# rather than being filled in from what the model happens to know.
+CELL_IDENTITY_RULE = (
+    " When a record names a cell line, also name the cell type or population "
+    "that line represents and the state it was in when measured, taking both "
+    "from what this packet says about that line. Keep the line's own name "
+    "alongside them rather than replacing it. When the packet does not say "
+    "what a line represents, name the line alone: do not supply the cell type "
+    "from outside knowledge."
+)
+
+CELL_IDENTITY_PROMPT_VERSION = "compact-prompt-1.3.0"
+CELL_IDENTITY_EXTRACTION_PROMPT = COMPACT_EXTRACTION_PROMPT + CELL_IDENTITY_RULE
+
+CELL_IDENTITY_SLOT_PROMPT_VERSION = "compact-prompt-1.3.1"
+CELL_IDENTITY_SLOT_EXTRACTION_PROMPT = (
+    CANDIDATE_SLOT_EXTRACTION_PROMPT + CELL_IDENTITY_RULE
+)
+
 # Enough of the grouped evidence to identify the slot, without re-sending the
 # packet text the model already has in the first user message.
 SLOT_SUMMARY_MAX_CHARS = 400
@@ -90,9 +121,30 @@ def candidate_slot_prompt_sha256() -> str:
     ).hexdigest()
 
 
+def cell_identity_prompt_sha256(candidate_slot_enforcement: bool = False) -> str:
+    text = (
+        CELL_IDENTITY_SLOT_EXTRACTION_PROMPT
+        if candidate_slot_enforcement
+        else CELL_IDENTITY_EXTRACTION_PROMPT
+    )
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
 def active_prompt(candidate_slot_enforcement: bool = False) -> PromptSelection:
     """Return the prompt for this call, with its own version and checksum."""
 
+    if is_enabled(CELL_IDENTITY_FLAG):
+        if candidate_slot_enforcement:
+            return PromptSelection(
+                CELL_IDENTITY_SLOT_EXTRACTION_PROMPT,
+                CELL_IDENTITY_SLOT_PROMPT_VERSION,
+                cell_identity_prompt_sha256(True),
+            )
+        return PromptSelection(
+            CELL_IDENTITY_EXTRACTION_PROMPT,
+            CELL_IDENTITY_PROMPT_VERSION,
+            cell_identity_prompt_sha256(False),
+        )
     if candidate_slot_enforcement:
         return PromptSelection(
             CANDIDATE_SLOT_EXTRACTION_PROMPT,
