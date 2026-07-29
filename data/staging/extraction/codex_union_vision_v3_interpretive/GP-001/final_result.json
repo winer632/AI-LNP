@@ -1,0 +1,22 @@
+{
+  "contract_version": "compact-1.1.0",
+  "paper_id": "GP-001",
+  "eligibility": {
+    "decision": "ineligible",
+    "reason_codes": [
+      "ORIGINAL_EXPERIMENT",
+      "NOT_ELIGIBLE_LNP",
+      "UNSUPPORTED_PAYLOAD"
+    ],
+    "evidence_ids": [
+      "GP-001-E-75bb5b8e8164f65e",
+      "GP-001-E-a2d40855b331cf35"
+    ],
+    "explanation": "The paper reports CTD-loaded solid lipid nanoparticles (GA-FA-CSLNs), not an eligible LNP delivering mRNA, siRNA, saRNA, or circRNA."
+  },
+  "formulations": [],
+  "components": [],
+  "experiments": [],
+  "unresolved_items": [],
+  "outcomes": []
+}

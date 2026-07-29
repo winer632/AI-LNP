@@ -130,28 +130,149 @@ def cell_identity_prompt_sha256(candidate_slot_enforcement: bool = False) -> str
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def active_prompt(candidate_slot_enforcement: bool = False) -> PromptSelection:
-    """Return the prompt for this call, with its own version and checksum."""
+INTERPRETIVE_OUTCOME_FLAG = "interpretive_outcome_admission"
 
-    if is_enabled(CELL_IDENTITY_FLAG):
-        if candidate_slot_enforcement:
-            return PromptSelection(
-                CELL_IDENTITY_SLOT_EXTRACTION_PROMPT,
-                CELL_IDENTITY_SLOT_PROMPT_VERSION,
-                cell_identity_prompt_sha256(True),
-            )
-        return PromptSelection(
-            CELL_IDENTITY_EXTRACTION_PROMPT,
-            CELL_IDENTITY_PROMPT_VERSION,
-            cell_identity_prompt_sha256(False),
+INTERPRETIVE_PROMPT_VERSION = "compact-prompt-1.4.0"
+CANDIDATE_SLOT_INTERPRETIVE_PROMPT_VERSION = "compact-prompt-1.4.1"
+
+# What the two prompts above tell the model an outcome is:
+#
+#   "Extract only directly reported LNP evidence"
+#   "Do not convert a mechanism, hypothesis, or interpretation into a measured
+#    outcome."
+#   "not_an_outcome when the cited evidence is a method, hypothesis, or
+#    interpretation rather than a measured or reported result"
+#
+# Read together those draw the line at *measured*, and the annotation side does
+# not: the frozen gold set records claims a paper states about its own results
+# in prose. So the rule below narrows the prohibition to what it is actually
+# for -- inventing a value the text does not give -- rather than deleting it.
+# Deliberately written about the *kind* of statement and its provenance, with
+# no endpoint, marker, cell type or finding named: naming one would make the
+# prompt an answer key rather than a rule.
+INTERPRETIVE_OUTCOME_RULES = (
+    " Read the rule about interpretation as follows. A sentence stating what "
+    "this paper's own experiments showed is a reportable outcome even when it "
+    "is written as a summary, a conclusion, or an account of how an effect "
+    "works rather than as a measurement. Report it as an outcome record whose "
+    "qualitative_outcome carries that claim in the paper's own terms, with "
+    "outcome_value missing unless the cited evidence itself states a value: "
+    "the prohibition on converting an interpretation into a measured outcome "
+    "forbids inventing a value or a unit for such a claim, not reporting the "
+    "claim. This admits nothing the paper does not assert. A statement "
+    "attributed to earlier work, an aim, a hypothesis, an expectation, a "
+    "proposal, or a description of a method or an assay is still not an "
+    "outcome. Cite the packet evidence that carries the statement, and assert "
+    "no more than that evidence says; a record whose claim goes beyond its own "
+    "cited evidence is worse than no record."
+)
+
+# Only meaningful alongside CANDIDATE_SLOT_RULES, which is the text that
+# defines the three disposition codes in the first place.
+INTERPRETIVE_DISPOSITION_RULES = (
+    " Accordingly a candidate whose cited evidence states something this paper "
+    "found is extracted, or unresolved when the packet gives no usable value "
+    "for it, rather than not_an_outcome; reserve not_an_outcome for evidence "
+    "that reports no finding of this paper at all."
+)
+
+INTERPRETIVE_EXTRACTION_PROMPT = (
+    COMPACT_EXTRACTION_PROMPT + INTERPRETIVE_OUTCOME_RULES
+)
+
+CANDIDATE_SLOT_INTERPRETIVE_EXTRACTION_PROMPT = (
+    CANDIDATE_SLOT_EXTRACTION_PROMPT
+    + INTERPRETIVE_OUTCOME_RULES
+    + INTERPRETIVE_DISPOSITION_RULES
+)
+
+# Enough of the grouped evidence to identify the slot, without re-sending the
+# packet text the model already has in the first user message.
+SLOT_SUMMARY_MAX_CHARS = 400
+
+
+class PromptSelection(NamedTuple):
+    """One prompt with the version and checksum that belong to it."""
+
+    text: str
+    version: str
+    checksum: str
+
+
+def prompt_sha256() -> str:
+    return hashlib.sha256(COMPACT_EXTRACTION_PROMPT.encode("utf-8")).hexdigest()
+
+
+def candidate_slot_prompt_sha256() -> str:
+    return hashlib.sha256(
+        CANDIDATE_SLOT_EXTRACTION_PROMPT.encode("utf-8")
+    ).hexdigest()
+
+
+def _sha256(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+
+def active_prompt(
+    candidate_slots: bool = False,
+    *,
+    interpretive_outcome_admission: bool | None = None,
+    cell_line_identity: bool | None = None,
+) -> PromptSelection:
+    """Pick the prompt for this call from the flags that amend it.
+
+    Two independent switches append to the frozen texts, never rewrite them,
+    so a request made with both off is byte-identical to what shipped. They
+    are checked in a fixed order and both may apply: the interpretive rule
+    changes what counts as an outcome, the cell-identity rule changes how a
+    record names its population, and they do not interact.
+    """
+    if candidate_slots:
+        version = CANDIDATE_SLOT_PROMPT_VERSION
+        text = CANDIDATE_SLOT_EXTRACTION_PROMPT
+    else:
+        version = PROMPT_VERSION
+        text = COMPACT_EXTRACTION_PROMPT
+
+    # An explicit argument beats the flag in both directions, so a caller can
+    # pin a prompt regardless of deployment configuration and a test can
+    # exercise both sides without touching the environment.
+    interpretive = (
+        is_enabled(INTERPRETIVE_OUTCOME_FLAG)
+        if interpretive_outcome_admission is None
+        else interpretive_outcome_admission
+    )
+    cell_identity = (
+        is_enabled(CELL_IDENTITY_FLAG)
+        if cell_line_identity is None
+        else cell_line_identity
+    )
+
+    if interpretive:
+        # Use the prompts the interpretive work assembled rather than
+        # re-appending here: the slotted variant needs its own disposition
+        # rules, not the same rules twice.
+        if candidate_slots:
+            version = CANDIDATE_SLOT_INTERPRETIVE_PROMPT_VERSION
+            text = CANDIDATE_SLOT_INTERPRETIVE_EXTRACTION_PROMPT
+        else:
+            version = INTERPRETIVE_PROMPT_VERSION
+            text = INTERPRETIVE_EXTRACTION_PROMPT
+
+    if cell_identity:
+        version = (
+            CELL_IDENTITY_SLOT_PROMPT_VERSION
+            if candidate_slots
+            else CELL_IDENTITY_PROMPT_VERSION
         )
-    if candidate_slot_enforcement:
-        return PromptSelection(
-            CANDIDATE_SLOT_EXTRACTION_PROMPT,
-            CANDIDATE_SLOT_PROMPT_VERSION,
-            candidate_slot_prompt_sha256(),
-        )
-    return PromptSelection(COMPACT_EXTRACTION_PROMPT, PROMPT_VERSION, prompt_sha256())
+        text = text + CELL_IDENTITY_RULE
+
+    return PromptSelection(
+        text=text,
+        version=version,
+        checksum=hashlib.sha256(text.encode("utf-8")).hexdigest(),
+    )
 
 
 def _summary(text: str) -> str:

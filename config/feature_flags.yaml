@@ -494,6 +494,60 @@ flags:
       - src/extraction/run_codex_one_call.py
       - src/extraction/run_compact_one_call.py
 
+  interpretive_outcome_admission:
+    # No design-document priority id: this is an annotation-policy alignment
+    # rather than a numbered roadmap item.
+    default: false
+    status: available
+    rationale: >-
+      MEASURED, AND THE MEASUREMENT SAYS NO. Available so the
+      measurement is reproducible, off because it bought nothing and
+      cost something. The policy behind it is coherent: the frozen gold
+      set annotates prose claims a paper makes about its own results,
+      the extraction prompt drew the line at "measured", and the two
+      therefore disagreed about what an outcome is. Aligning them does
+      not produce the outcome the disagreement pointed at. One
+      codex-exec turn on GP-008 -- same packet checksum, model,
+      reasoning effort, evidence view and 85 candidate slots as the
+      flag-off run in codex_full_view_v2, prompt 1.3.1 against 1.2.1 --
+      returned 3 outcome records where the control returned 5, and
+      dropped the control's whole in vitro experiment. The slot that
+      motivated this moved off not_an_outcome only as far as
+      unresolved, and not_an_outcome across all 85 slots went up, 25 to
+      43, not down. Swapping only GP-008 into codex_union_vision_v3
+      loses a gold row and takes precision 0.2203 to 0.2105; merging
+      the run in instead keeps every recovered row, leaves recall at
+      13/15, and takes precision to 0.2131 with false additions 46 to
+      48 over 59 records becoming 61. No previously matched outcome
+      changed assignment and evidence accuracy held at 7 of 12 checked,
+      so nothing broke -- there was simply no recall to buy. The
+      admitted interpretive record does not match the gold row it was
+      aimed at: that row carries the paper's own specific claim terms,
+      the record paraphrases them, and it fails both the endpoint and
+      the polarity gate on one shared term. Papers are full of
+      interpretive sentences, matching is one-to-one, and every
+      admitted sentence that does not match is a false addition. n is
+      one run per side; a codex-exec turn is not deterministic, so read
+      the record counts as indicative and the precision arithmetic as
+      exact for these artifacts.
+    description: >-
+      Tell the extraction that a sentence in which a paper states what its own
+      experiments showed is a reportable outcome even when it is phrased as a
+      summary, a conclusion, or a mechanism rather than as a measurement, and
+      that such a candidate slot is therefore extracted or unresolved rather
+      than not_an_outcome. Selects compact-prompt-1.3.0 (or 1.3.1 alongside
+      candidate_slot_enforcement) in place of 1.1.0/1.2.1. It does not touch
+      the evidence requirement: the record still cites packet evidence that
+      exists, still leaves outcome_value missing unless the cited text states
+      one, and statements attributed to earlier work, aims, hypotheses,
+      proposals, methods and assay descriptions remain not outcomes.
+    aliases: [interpretive_outcomes, mechanistic_outcomes]
+    # Files that actually call is_enabled() for this flag. Verified by
+    # test_declared_integration_points_really_read_the_flag, because this
+    # list was wrong in 10 of 16 entries when it was merely aspirational.
+    integration_points:
+      - src/extraction/compact_prompt_v1.py
+
   compact_route:
     priority: baseline
     status: enabled
